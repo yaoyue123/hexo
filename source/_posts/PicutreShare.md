@@ -5,6 +5,9 @@ categories: Life #分类
 tags: [School,Picture,WHU,秋天] #文章标签，可空，多标签请用格式，注意:后面有个空格
 description: 武汉大学的秋天图片分享
 cover: https://gitee.com/ma_cj/Image/raw/master/pic5.jpeg
+password: yaoyue123
+abstract: 这是一篇加密文章，输入密码查看
+message: 输入密码查看全文
 ---
 
 ![樱顶](https://gitee.com/ma_cj/Image/raw/master/pic1.jpeg)

@@ -5,6 +5,9 @@ categories: Code #分类
 tags: [Python,sklearn,文本分类] #文章标签，可空，多标签请用格式，注意:后面有个空格
 description: 国家网络安全学院社会计算实验报告
 cover: https://gitee.com/ma_cj/Image/raw/master/python.jpg
+password: yaoyue123
+abstract: 这是一篇加密文章，输入密码查看
+message: 输入密码查看全文
 ---
 
 # 社会计算实验报告

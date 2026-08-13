@@ -5,6 +5,9 @@ categories: Paper #分类
 tags: [Plato,理想国,感想] #文章标签，可空，多标签请用格式，注意:后面有个空格
 description: 自然导引论文
 cover: http://5b0988e595225.cdn.sohucs.com/images/20180124/a4669ee97d3d48ddb2a5e0fd9a65d00e.jpeg
+password: yaoyue123
+abstract: 这是一篇加密文章，输入密码查看
+message: 输入密码查看全文
 ---
 # 共妻，共产与权智的结合
 
