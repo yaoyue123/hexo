@@ -5,2020 +5,5153 @@ categories: Security
 tags: [安全, 论文解读, ACM CCS, 2025]
 ---
 
-ACM CCS 2025 于 2025 年 10 月 13-17 日在中国台北举行。截至本文发布，CCS 2026 录用名单官方尚未公布，故本文覆盖最新完整一届：CCS 2025 全部 395 篇录用论文（两轮接收），逐一给出中文深度解读，并附上可获取的论文 PDF 链接。解读基于论文摘要（OpenAlex 等收录），部分论文无公开摘要，仅据标题推断并已标注。
+ACM CCS 2025 于 2025 年 10 月在中国台北举行，两轮共录用 395 篇论文。本文按研究方向分类，对每篇论文给出深度解读（含独立分析思考），有 arXiv 全文的基于精读，其余基于摘要，并附可获取的 PDF 链接。
 
-## 全部 395 篇录用论文解读
+## 全部 395 篇录用论文深度解读（按研究方向分类）
 
-### Autonomous Vulnerability Analysis, Triaging, and Repair: A Historical Perspective.
-- **作者**: Giovanni Vigna
-- **解读**: 这篇历史视角的工作指出，支撑关键基础设施的软件普遍存在漏洞，其利用可能导致服务中断、经济损失乃至生命损失。作者以回顾性视角梳理自主漏洞分析、分类与修复领域的发展脉络，为理解该方向的演进与未来走向提供背景。
+### AI/ML安全（44 篇）
 
+#### Hardening Deep Neural Network Binaries against Reverse Engineering Attacks.
 
-### Mechanizing Privacy by Design.
-- **作者**: David A. Basin, François Hublet, Srdan Krstic, Hoàng Nguyen
-- **解读**: 针对「设计即隐私」缺乏落地手段的问题——立法未规定具体实现方式，主流语言与框架也缺少隐私设计支持——作者开发了多种技术方案：一是基于逻辑的工具，在运行时强制执行控制系统相关动作的形式化策略；二是提出支持模型驱动执行的方法与模型。论文汇报了这些方法、工具及实际使用经验。
-
-
-### Oedipus: LLM-enchanced Reasoning CAPTCHA Solver.
-- **作者**: Gelei Deng, Haoran Ou, Yi Liu, Jie Zhang, Tianwei Zhang, Yang Liu
-- **arXiv PDF**: [Oedipus: LLM-enchanced Reasoning CAPTCHA Solver.](https://arxiv.org/pdf/2405.07496)
-- **解读**: 提出名为 Oedipus 的基于大语言模型（LLM）增强的推理型验证码（Reasoning CAPTCHA）求解器，旨在利用 LLM 的推理能力自动破解需要逻辑推理的验证码。（无摘要，据标题推断）
-
-
-### The Odyssey of robots.txt Governance: Measuring Convention Implications of Web Bots in Large Language Model Services.
-- **作者**: Jian Cui, Mingming Zha, XiaoFeng Wang, Xiaojing Liao
-- **解读**: 围绕 robots.txt 对 LLM 服务网络爬虫的治理展开大规模测量，系统分析了 18,582,281 个文件。研究发现与 LLM 服务相关的限制显著增加，尤其集中在金融与新闻类域名；但配置管理因生态复杂、第三方代理介入而困难重重，并发现多起违规案例，包括 LLM 记忆了受限域名内容、忽略或访问受限内容。结果显示当前治理存在缺口，需要可执行的机制来尊重发布者的控制意图。
-
-
-### JsDeObsBench: Measuring and Benchmarking LLMs for JavaScript Deobfuscation.
-- **作者**: Guoqiang Chen, Xin Jin, Zhiqiang Lin
-- **arXiv PDF**: [JsDeObsBench: Measuring and Benchmarking LLMs for JavaScript Deobfuscation.](https://arxiv.org/pdf/2506.20170)
-- **解读**: 提出 JsDeObsBench 基准，用于测量和评估大语言模型在 JavaScript 反混淆任务上的能力，为衡量 LLM 对混淆 JS 代码的还原与理解能力提供标准化测试集。（无摘要，据标题推断）
-
-
-### Quantifying Security Training in Organizations Through the Analysis of U.S. SEC 10-K Filings.
-- **作者**: Jonas Hielscher, Maximilian Golla
-- **解读**: 利用美国 SEC 自 2023 年底生效、要求公司在年报 10-K 中披露安全策略的新规，爬取并分析了 5,286 份文件，通过关键词检索与主题分析量化组织的安全培训实践。结果显示 78% 的公司报告实施了安全意识培训（SAT）、27% 开展钓鱼模拟，比例随行业与规模显著变化，大型企业往往对标 NIST CSF 等标准开展更全面的工作；多因素认证（11%）是最常见的面向员工的安全控制，但许多公司把员工视为风险因素。该研究帮助组织批判性评估厂商说法，为政策制定提供依据，并公开编码数据集与爬取工具支持长期追踪分析。
-
-
-### WhisperTest: A Voice-Control-based Library for iOS UI Automation.
-- **作者**: Zahra Moti, Tom Janssen-Groesbeek, Steven Monteiro, Andrea Continella, Gunes Acar
-- **解读**: 提出 WhisperTest，一个基于语音控制（Voice Control）的 iOS UI 自动化测试库，利用系统语音控制能力驱动界面交互，实现无障碍的移动应用 UI 自动化测试。（无摘要，据标题推断）
-
-
-### The Challenges and Opportunities with Cybersecurity Regulations: A Case Study of the US Electric Power Sector.
-- **作者**: Sena Sahin, Burak Sahin, Robin Berthier, Kate Davis, Saman A. Zonouz, Frank Li
-- **解读**: 以美国电力行业为案例，研究组织如何参与网络安全监管以及面临的实际挑战。论文指出，尽管监管对组织安全态势有重要影响，但此前对组织参与方式与困难缺乏调查；评估这些因素对理解监管的实践影响、进而改进未来监管至关重要。
-
-
-### Automatically Detecting Online Deceptive Patterns.
-- **作者**: Asmit Nayak, Yash Wani, Shirley Zhang, Rishabh Khandelwal, Kassem Fawaz
-- **arXiv PDF**: [Automatically Detecting Online Deceptive Patterns.](https://arxiv.org/pdf/2411.07441)
-- **解读**: 提出 AutoBot 框架，仅凭网站截图即可识别并定位在线欺骗性模式（deceptive patterns），无需依赖底层 HTML 代码。框架采用两阶段流水线：先用专用视觉模型分析截图、识别交互元素并提取文本特征，再由大语言模型结合上下文判断欺骗性模式是否存在；此外还通过教师 LLM 蒸馏知识构建合成数据集训练更小的模型。评测显示其欺骗模式检测 F1 分数达 0.93，为在线欺骗模式提供可用且可扩展的检测方案。
-
-
-### Synthesis of Sound and Precise Leakage Contracts for Open-Source RISC-V Processors.
-- **作者**: Zilong Wang, Gideon Mohr, Klaus von Gleissenthall, Jan Reineke, Marco Guarnieri
-- **arXiv PDF**: [Synthesis of Sound and Precise Leakage Contracts for Open-Source RISC-V Processors.](https://arxiv.org/pdf/2509.06509)
-- **解读**: 针对「泄漏契约」（指令集层面的安全抽象，刻画处理器经微架构侧信道可能泄漏的信息）的构造难题：现有工具能验证处理器是否满足给定契约，但手工推导出既可靠（sound）又精确（precise）的契约困难、耗时且易错，需要对优化引入的时序信道有深入了解。本文研究如何为开源 RISC-V 处理器合成可靠且精确的泄漏契约。
-
-
-### Wanilla: Sound Noninterference Analysis for WebAssembly.
-- **作者**: Markus Scherer, Jeppe Fredsgaard Blaabjerg, Alexander Sjösten, Matteo Maffei
-- **arXiv PDF**: [Wanilla: Sound Noninterference Analysis for WebAssembly.](https://arxiv.org/pdf/2509.08758)
-- **解读**: 提出 Wanilla，一种针对 WebAssembly 的可靠（sound）非干扰（noninterference）分析工具，用于形式化验证 Wasm 程序的信息流安全性，检测秘密数据经程序行为的泄露路径。（无摘要，据标题推断）
-
-
-### Securing Cryptographic Software via Typed Assembly Language.
-- **作者**: Shixin Song, Tingzhen Dong, Kosi Nwabueze, Julian Zanders, Andres Erbsen, Adam Chlipala, Mengjia Yan
-- **arXiv PDF**: [Securing Cryptographic Software via Typed Assembly Language.](https://arxiv.org/pdf/2509.08727)
-- **解读**: 面向密码学软件提出基于类型化汇编语言（TAL）的安全方案：密码代码不应通过时序行为泄露秘密，而 2018 年 Spectre 系列推测执行攻击的披露打破了「遵循行业标准常量时间编码规范即足够」的传统认知，为时序侧信道防护引入新的复杂性，需要更强、可验证的保证。
-
-
-### Formally Verified Correctness Bounds for Lattice-Based Cryptography.
-- **作者**: Manuel Barbosa, Matthias J. Kannwischer, Thing-Han Lim, Peter Schwabe, Pierre-Yves Strub
-- **解读**: 针对基于 Fujisaki-Okamoto 变换的格基 KEM：其安全性直接依赖于解密错误概率被界定在很小的实数范围内。本文提出形式化验证解密错误统计/概率上界的方法，以 ML-KEM 底层 PKE 为主要实例，将文献中启发式近似的论证形式化并确认上界成立；再以 FrodoKEM 展示无需启发式近似即可验证的更广泛适用性，并讨论了其他（非近似）界定解密错误概率的途径。
-
-
-### Enabling Secure and Efficient Data Loss Prevention with a Retention-aware Versioning SSD.
-- **作者**: Weidong Zhu, Carson Stillman, Sara Rampazzi, Kevin R. B. Butler
-- **解读**: 提出一种具有保留期感知（retention-aware）能力的版本化 SSD 设计，用于实现安全且高效的数据防泄漏（DLP）：在存储层通过数据版本化与保留期管理增强对敏感数据的控制与安全删除能力。（无摘要，据标题推断）
-
-
-### Don't Panic! Finding Bugs Hidden Behind Rust Runtime Safety Checks.
-- **作者**: Zeyang Zhuang, Zilun Wang, Wei Meng, Michael R. Lyu
-- **解读**: 指出现有模糊测试工具在 Rust 程序上效果与效率显著受损：编译器隐式插入或开发者显式写入的运行时安全检查会造成大量 panic 崩溃和程序提前终止，使模糊器难以深入这些检查背后的深层代码，潜在漏洞因此漏检。该工作针对这一问题，研究如何越过 Rust 运行时安全检查发现隐藏缺陷。
-
-
-### Hardening Deep Neural Network Binaries against Reverse Engineering Attacks.
 - **作者**: Zheng Zhong, Ruoyu Wu, Junpeng Wan, Muqi Zou, Dave (Jing) Tian
-- **解读**: 针对 DNN 二进制程序被逆向工程窃取的问题：训练完成的模型编译为二进制后可部署在边缘设备与云上，而近年二进制反编译研究表明其可通过逆向技术被窃取。通用混淆虽研究充分，但并非针对 DNN 二进制的独特特征设计，在隐藏模型信息方面存在局限；本文研究针对 DNN 二进制特征进行加固、抵抗逆向工程攻击的混淆方法。
+- **方向**: AI/ML安全
+- **解读**: 
+训练精良的DNN模型是厂商的专有资产——模型蕴含专业知识、机密数据与高昂训练成本，编译成二进制后广泛部署于边缘设备与云端；近期二进制反编译研究显示攻击者可通过逆向工程窃取模型，而通用混淆方案并非针对DNN二进制设计，难以隐藏其特有的结构信息。
+方法上，论文针对DNN二进制的独特特征设计加固/混淆方案，在编译或二进制层面隐藏模型的结构信息（如层结构、权重分布、算子布局），使攻击者难以从反编译结果中恢复可复用的模型（基于摘要推断）。
+结果方面，该方案旨在弥补通用混淆对DNN二进制防护的不足，降低通过逆向工程窃取模型的可行性（具体度量指标未见于摘要）。
+我的思考：模型即资产的时代，"二进制层面的模型保护"是IP保护与MLaaS安全的重要拼图。区别于通用代码混淆，DNN二进制数据密集、结构规整，确有独特攻击面与防护机会。局限是混淆普遍面临"提升逆向成本而非绝对安全"的批评，且可能引入推理开销，需权衡格式兼容性与性能。该工作与模型指纹、水印等方法互补，构成多层防线。
 
 
-### CROSS-X: Generalized and Stable Cross-Cache Attack on the Linux Kernel.
-- **作者**: Dong-ok Kim, Juhyun Song, Insu Yun
-- **解读**: 提出 CROSS-X，一种针对 Linux 内核的通用且稳定的跨缓存（cross-cache）攻击技术，旨在提高内核堆跨缓存利用的泛化能力与稳定性。（无摘要，据标题推断）
+#### CryptGNN: Enabling Secure Inference for Graph Neural Networks.
 
-
-### Uncovering Hidden Paths in 5G: Exploiting Protocol Tunneling and Network Boundary Bridging.
-- **作者**: Altaf Shaik, Robert Jaschek, Jean-Pierre Seifert
-- **解读**: 指出 5G 网络控制面与用户面、各接口及核心网功能之间设计了隔离的信任边界，但当这些边界未严格实施时，攻击者控制的 UE 可利用协议隧道与网络边界桥接绕过隔离，使恶意流量沿非预期路径到达核心网内部敏感组件。该工作演示了此类攻击，揭示 5G 信任边界隔离失效所隐藏的攻击路径。
-
-
-### Finding SSH Strict Key Exchange Violations by State Learning.
-- **作者**: Fabian Bäumer, Marcel Maehren, Marcus Brinkmann, Jörg Schwenk
-- **arXiv PDF**: [Finding SSH Strict Key Exchange Violations by State Learning.](https://arxiv.org/pdf/2509.10895)
-- **解读**: 针对 SSH Terrapin 攻击（USENIX 2024）的缓解措施——OpenSSH 提出的 strict KEX（严格密钥交换）扩展——研究其设计、实现与安全性：用黑盒状态学习分析 10 个流行 SSH 服务器实现、最多 5 种算法共 33 个状态机，由于完整状态机学习不可行，作者改为在启用 strict KEX 的情况下学习握手阶段。结果显示 7 个实现违反规范，并发现两个漏洞：一个可导致专有 Tectia 服务器产生 rogue session，另一个影响 Erlang Open Telecom Platform 的官方实现，可在服务器上下文中实现未认证代码执行。
-
-
-### OCR-APT: Reconstructing APT Stories from Audit Logs using Subgraph Anomaly Detection and LLMs.
-- **作者**: Ahmed Aly, Essam Mansour, Amr M. Youssef
-- **arXiv PDF**: [OCR-APT: Reconstructing APT Stories from Audit Logs using Subgraph Anomaly Detection and LLMs.](https://arxiv.org/pdf/2510.15188)
-- **解读**: 提出 OCR-APT 系统，从系统审计日志（溯源图）重建 APT 攻击故事：先用图神经网络进行子图异常检测，学习节点周围的行为模式而非依赖文件路径、IP 等易碎属性，以降低误报；再用大语言模型对检测到的子图迭代重构多阶段攻击叙事，每个阶段经验证后才继续，保证最终报告可解释。在 DARPA TC3、OpTC、NODLINK 数据集上，其检测精度与告警可解释性均优于现有方法，能生成完整刻画攻击故事的报告。
-
-
-### CITesting: Systematic Testing of Context Integrity Violations in LTE Core Networks.
-- **作者**: Mincheol Son, Kwangmin Kim, Beomseok Oh, CheolJun Park, Yongdae Kim
-- **解读**: 首次系统性地检测 LTE 核心网中的「上下文完整性违规」（CIV）——未认证或认证不当的 UE 修改其他用户内部状态。CITesting 框架遍历多样的流程链、测试广泛的信息元素（IE）并在不同连接状态下验证行为，采用有状态双 UE 控制测试管理受害者、以行为 oracle 进行黑盒检测；在 Open5GS、srsRAN、Amarisoft、Nokia 上分别发现 29、22、16、59 个问题。这些漏洞可发起去附着、IMSI 暴露与存在性检测等远程攻击，且攻击半径在 MME 区域（远大于小区），无需与受害者同小区共址；问题均已负责任披露，并为 Amarisoft 与 Open5GS 提交补丁。
-
-
-### CryptGNN: Enabling Secure Inference for Graph Neural Networks.
 - **作者**: Pritam Sen, Yao Ma, Cristian Borcea
-- **解读**: 提出 CryptGNN，为云端第三方 GNN 模型（以 MLaaS 形式被客户端访问）提供安全推理：核心创新是用分布式安全多方计算（SMPC）实现消息传递与特征变换层，同时保护客户输入数据与图结构不被云方和模型方窃取、保护模型参数不被客户端窃取。方案支持任意数量的 SMPC 参与方、无需可信服务器，即使 P-1 个参与方合谋也可证明安全；理论分析与实验共同验证了其安全性与效率。
+- **方向**: AI/ML安全
+- **解读**: 
+图神经网络（GNN）以MLaaS形式托管于云端，客户端访问第三方模型进行推理；双方互不信任：客户端不想暴露图结构与特征数据，云与模型方不想泄露模型参数。此前的安全推理方案在图上扩展困难，且常依赖可信服务器或固定参与方假设。
+方法上，CryptGNN将GNN的消息传递与特征变换层用分布式多方安全计算（SMPC）实现，保护客户端输入数据与图结构不被云与模型方获知，同时保护模型参数不被客户端获得；支持任意数量的SMPC参与方、无需可信服务器，即使P−1个参与方（共P方）合谋也可证明安全。
+结果方面，理论分析与实验共同验证了CryptGNN的安全性（抗P−1方合谋）与效率，展示了其在云上GNN推理场景的可行性（具体性能数字以论文正文为准）。
+我的思考：把SMPC做成"任意参与方、抗P−1合谋、免可信服务器"的GNN推理底座，安全性假设相当干净，避免了双服务器模型常见的非合谋假设。局限是SMPC的通信开销对大规模图可能仍是瓶颈，GNN层数、图稀疏性的适配需要实验佐证。与TFHE/HE路线相比，CryptGNN走多方分摊路线，在参与方充裕的场景更有吸引力。
 
 
-### PLRV-O: Advancing Differentially Private Deep Learning via Privacy Loss Random Variable Optimization.
-- **作者**: Qin Yang, Nicholas Stout, Meisam Mohammady, Han Wang, Ayesha Samreen, Christopher J. Quinn, Yan Yan, Ashish Kundu, Yuan Hong
-- **解读**: 针对 DP-SGD 中高斯/拉普拉斯等常规噪声机制仅由方差或尺度单一参数决定、导致噪声幅度同时绑定隐私损失与效用损失、无法独立控制的局限，提出 PLRV-O 框架：在更宽的 DP-SGD 噪声分布搜索空间中，对隐私损失随机变量的矩进行精确刻画，并使其可相对隐私损失独立优化，从而按任务需求系统调整批次大小、训练时长、采样策略与微调场景下的裁剪阈值。实验表明，CIFAR-10 上微调 ViT 在 ε≈0.5 时达到 94.03% 准确率（高斯机制为 83.93%），SST-2 上 RoBERTa-large 在 ε≈0.2 时达到 92.20%（高斯机制为 50.25%）。
+#### ZORRO: Zero-Knowledge Robustness and Privacy for Split Learning.
 
-
-### ZORRO: Zero-Knowledge Robustness and Privacy for Split Learning.
 - **作者**: Nojan Sheybani, Alessandro Pegoraro, Jonathan Knauer, Phillip Rieger, Elissa Mollakuqe, Farinaz Koushanfar, Ahmad-Reza Sadeghi
-- **解读**: 提出 ZORRO，一种面向分割学习（split learning）的零知识（zero-knowledge）鲁棒性与隐私方案，旨在以零知识证明等手段在分割学习框架中同时保障对恶意参与的鲁棒性与数据/模型隐私。（无摘要，据标题推断）
+- **方向**: AI/ML安全
+- **解读**: 
+分割学习（split learning）把模型切分到客户端与服务端协作训练/推理，但客户端担心数据与中间激活泄露，服务端担心计算被滥用或结果不可信——现有方案要么牺牲隐私要么牺牲可验证性，缺少同时提供稳健性与隐私的框架（无摘要，据标题推断）。
+方法上，ZORRO以零知识证明为纽带，在分割学习协议中引入对计算正确性与输入隐私的保证：客户端可验证服务端确实执行了规定的模型计算而不暴露自身输入，服务端亦无法从中间表示中反推客户端数据（无摘要，据标题推断）。
+结果方面，论文目标是在分割学习中同时实现零知识级别的隐私与对恶意行为的稳健性，其安全与性能指标需以论文正文为准（无摘要，据标题推断）。
+我的思考："零知识的稳健性与隐私"切中了分割学习的信任断层——客户端把中间表示交给服务端却无法验证计算，ZORRO用ZK证明弥合此缺口，方向正确且与zkML浪潮同频。风险在于ZK证明生成开销在交互式训练场景下可能很大，工程上能否跟上理论设计是关键；与SMPC、同态加密路线的取舍也需看实验数据。
 
 
-### ImportSnare:Directed 'Code Manual' Hijacking in Retrieval-Augmented Code Generation.
-- **作者**: Kai Ye, Liangcai Su, Chenxiong Qian
-- **解读**: 提出 ImportSnare，一种针对检索增强代码生成（RAG）的定向「代码手册」劫持攻击，通过操纵检索到的代码手册/文档内容，诱导大语言模型在生成代码时引入恶意行为。（无摘要，据标题推断）
-
-
-### Generic Anonymity Wrapper for Messaging Protocols.
-- **作者**: Lea Thiemt, Paul Rösler, Alexander Bienstock, Rolfe Schmidt, Yevgeniy Dodis
-- **解读**: 针对即时通讯中端到端加密无法阻止基于元数据（序列号、公钥、明文标识符等）追踪的问题——这些元数据会暴露用户的社交网络与通信模式——研究通用的匿名性封装器。论文指出现有隐藏元数据的方案（Signal 的 Sealed Sender、面向 MLS 类构造（Hashimoto et al., CCS 2022）、网状网络（Bienstock 2023））要么效率较低、要么仅针对特定场景定制，且所有现有实用方案在秘密暴露时都会泄露关键元数据，本文旨在提出可通用的匿名包装方案。
-
-
-### Panther: Private Approximate Nearest Neighbor Search in the Single Server Setting.
-- **作者**: Jingyu Li, Zhicong Huang, Min Zhang, Cheng Hong, Jian Liu, Tao Wei, Wenguang Chen
-- **解读**: 提出 Panther，在单服务器假设下实现高效的私有近似最近邻搜索（ANNS）：客户端只学习查询结果、不向服务器泄露查询内容，避免了此前单服务器方案的高通信成本（Chen et al., USENIX Security 2020）与双非合谋服务器假设（Servan-Schreiber, S&P 2022）。Panther 通过信息检索、秘密共享、混淆电路与同态加密的协同设计实现性能，在四个公开数据集上可 18 秒查询 1000 万点、通信量 284MB，比 Chen et al. 快 7.8 倍以上、通信紧凑 20 倍。
-
-
-### Trout: Two-Round Threshold ECDSA from Class Groups.
-- **作者**: Hila Dahari-Garbian, Ariel Nof, Luke Parker
-- **解读**: 提出 Trout，首个支持任意阈值的分布式两轮 ECDSA 签名协议：每方上传带宽为常数、处理时间随参与方数量线性增长，并实现可识别中止（IA）——协议因故障无法终止时各方可将失败归责到具体参与方。该方案无需可信设置。
-
-
-### Encrypted Matrix-Vector Products from Secret Dual Codes.
-- **作者**: Fabrice Benhamouda, Caicai Chen, Shai Halevi, Yuval Ishai, Hugo Krawczyk, Tamer Mour, Tal Rabin, Alon Rosen
-- **解读**: 研究加密矩阵向量积（EMVP）问题：离线阶段客户端上传矩阵 M（有限域上）的加密并仅保留短密钥，服务器存储密文；在线阶段客户端可反复发送查询向量 q_i 的加密，使服务器能本地计算 M·q_i 的紧凑份额，客户端对矩阵一无所知，输出份额既可被揭示也可作为另一协议输入。该问题源于高效安全计算的需求，本文基于秘密对偶码（secret dual codes）构造解决方案。
-
-
-### KZH-Fold: Accountable Voting from Sublinear Accumulation.
-- **作者**: George Kadianakis, Arantxa Zapico, Hossein Hafezi, Benedikt Bünz
-- **解读**: 面向带宽高效的问责投票协议提出亚线性累积方案：累积方案比递归 SNARK 开销更低，但现有常量大小验证器的累积器与判定器为线性大小。论文（I）提出新的多项式承诺方案 KZH，（II）构建 KZH-fold——首个验证器仅 3 次群标量乘法、累积器大小与判定时间均为 O(n^(1/2)) 的亚线性方案，并可推广到 k·n^(1/k) 复杂度；（III）借助 BCLMS 编译器构建 IVC/PCD 证明判定器；（IV）提出非均匀 IVC 的新方法，每步证明成本与最大指令电路成正比、见证不再随指令数线性增长；（V）在支持百万节点的签名聚合应用上实现并基准测试，2000 个 Poseidon 哈希场景相比 Nova 通信减少约 2000 倍、改进约 50 倍，证明者开销约 3 倍。
-
-
-### SyRA: Sybil-Resilient Anonymous Signatures with Applications to Decentralized Identity.
-- **作者**: Elizabeth C. Crites, Aggelos Kiayias, Markulf Kohlweiss, Amirreza Sarencheh
-- **解读**: 研究 Sybil 弹性匿名签名（SyRA）：允许持有凭证的用户按需生成与任意上下文绑定的不可链接假名，并代表这些假名签发签名。具体地，分布式签发者可将低熵的传统身份或人格标识符转换为高伪熵的唯一关联密钥，用于生成上下文相关凭证；该原语同时满足三个目标：抗 Sybil（每个用户至多一个数字身份）、匿名性（不泄露用户真实身份信息）与非交互式跨上下文凭证创建。
-
-
-### Surpassing the Word Size Limitation of TFHE with Noise Calibration.
-- **作者**: Takumi Nishimura, Kazunari Tozawa, Kunihiko Sadakane
-- **解读**: 针对 TFHE 可编程自举（PBS）只能高效评估小函数域、函数域受 TFHE 字长限制约束（为保障数据安全所必需）的扩展问题：垂直打包技术（Chillotti et al., 2020）虽支持更大评估但依赖昂贵的电路自举，树状方法（Guimarães, 2021）避免电路自举却引入显著开销（W 位域需 O(2^W) 次调用）。本文提出噪声校准（noise calibration）方法突破 TFHE 字长限制，以更低成本扩大 PBS 可评估函数的规模。
-
-
-### QV-net: Decentralized Self-Tallying Quadratic Voting with Maximal Ballot Secrecy.
-- **作者**: Zibo Zhou, Zongyang Zhang, Feng Hao, Bowen Zheng, Zulkarnaim Masyhur
-- **解读**: 针对 DAO 场景中现有二次投票（QV）系统将选票明文与数字签名公开、损害选民隐私并可能影响诚实参与的问题：此前基于加密的选票方案工作在集中式设置、依赖计票机构，而分散式自计票投票中没有第三方。本文提出 QV-net，一种去中心化、自计票且具有最大选票保密性的二次投票方案。
-
-
-### End-to-End Encrypted Git Services.
-- **作者**: Ya-Nan Li, Yaqing Song, Qiang Tang, Moti Yung
-- **解读**: 针对 Git 服务端到端安全缺失的问题：仓库内容及其支撑的代码/数据供应链价值极高，而系统入侵已屡见不鲜，正如消息与云存储领域对端到端安全的关注一样，Git 服务也需要同等安全级别。论文指出现有研究（多为开源项目）存在两类不足：只提供很弱的安全性，或开销巨大，本文旨在给出兼顾安全性与效率的端到端加密 Git 服务方案。
-
-
-### RingSG: Optimal Secure Vertex-Centric Computation for Collaborative Graph Processing.
-- **作者**: Zhenhua Zou, Zhuotao Liu, Jinyong Shan, Qi Li, Ke Xu, Mingwei Xu
-- **解读**: 提出 RingSG，首个在基于 MPC 的顶点中心（vertex-centric）抽象内达到最优通信/计算复杂度的协作图处理系统。其核心范式 Ring-ScatterGather 避免盲目排序等极其昂贵的操作，并保证整体工作负载被最优分解为可并行、互斥的 MPC 任务；实现上通过份额转换引入三方复制秘密共享，并用分组聚合协议优化最耗成本的部分。原型在多种协作设置（不同规模、参与方数、平均顶点度数）下比现有最优方法最多降低运行时间 15.34 倍、单方通信 10.36 倍，在稀疏图上表现尤为出色，与理论成本分析一致。
-
-
-### Nebula:Efficient, Private and Accurate Histogram Estimation.
-- **作者**: Ali Shahin Shamsabadi, Peter Snyder, Ralph Giles, Aurélien Bellet, Hamed Haddadi
-- **解读**: 提出 Nebula，一种高效、隐私保护且准确的直方图估计方法，在满足隐私约束的同时提升直方图统计的精度与计算效率。（无摘要，据标题推断）
-
-
-### Anonymity Unveiled: A Practical Framework for Auditing Data Use in Deep Learning Models.
-- **作者**: Zitao Chen, Karthik Pattabiraman
-- **arXiv PDF**: [Anonymity Unveiled: A Practical Framework for Auditing Data Use in Deep Learning Models.](https://arxiv.org/pdf/2409.06280)
-- **解读**: 针对深度学习模型在用户不知情、未同意的情况下使用抓取的互联网数据（如人脸图像）进行训练的问题：数据需求激励模型创建者从互联网抓取材料，而用户对数据是否被用于训练缺乏控制。论文提出一个实用的审计框架，用于调查深度学习模型中数据的使用情况，回应用户对数据使用控制权的关切。
-
-
-### Posterior Security: Anonymity and Message Hiding of Standard Signatures.
-- **作者**: Tsz Hon Yuen, Ying-Teng Chen, Shimin Pan, Jiangshan Yu, Joseph K. Liu
-- **解读**: 提出数字签名的「后验安全」（posterior security）概念：在原始签名生成之后附加额外的安全特性。该概念受以下场景启发：部分用户将秘密密钥存放在安全硬件中，只能通过标准化接口获得标准签名；本文考虑两种后验特性——匿名性与消息隐藏。
-
-
-### Accuracy for Differentially Private Quotients by Fractional Uncertainties.
-- **作者**: Alejandro Russo, Elisabet Lobo Vesga, Marco Gaboardi
-- **解读**: 针对差分隐私工具普遍缺少精度信息的问题——尤其是均值、DP 求和之商等数据相关计算——提出基于分数不确定性（fractional uncertainties）与不确定度传播原理计算置信区间（α-β 精度）的新方法。该方法识别出解析误差可被预测的条件，揭示两个关键不变量：数据集规模越大精度越高，数值变异性越高所需数据规模越大；并提供调节器（tuners）以快速确定最小规模、在预算与估计可能性之间权衡。理论贡献经多场景实验验证了分数不确定性在具体计算中的适用性。
-
-
-### Sabot: Efficient and Strongly Anonymous Bootstrapping of Communication Channels.
-- **作者**: Christoph Coijanovic, Laura Hetz, Kenneth G. Paterson, Thorsten Strufe
-- **解读**: 提出 Sabot，一种高效且强匿名的通信信道引导（bootstrapping）协议，在信道建立/引导阶段即提供强匿名性，并兼顾效率。（无摘要，据标题推断）
-
-
-### LZKSA: Lattice-Based Special Zero-Knowledge Proofs for Secure Aggregation's Input Verification.
-- **作者**: Zhi Lu, Songfeng Lu
-- **解读**: 提出 LZKSA，一个量子安全的联邦学习安全聚合输入验证系统：在 Bell et al.（CCS 2020）的安全聚合协议上引入验证特性，确保用户输入与加密过程的合规性同时保持隐私。系统基于环学习误差（RLWE）问题设计七个专用零知识证明协议，验证用户是否正确使用聚合密钥、数据的 L∞/L2 范数与余弦相似度是否满足约束，并排除当前及未来的进程。实验表明其 L∞ 约束证明的生成/验证时间（CIFAR10 上 0.02s/0.0062s）约为 RoFL（S&P 2023，94s/29.9s）与 ACORN（USENIX 2023，78.7s/33.9s）的千分之一量级。
-
-
-### A Sea of Cyber Threats: Maritime Cybersecurity from the Perspective of Mariners.
-- **作者**: Anna Raymaker, Akshaya Kumar, Miuyin Yong Wong, Ryan Pickren, Animesh Chhotaray, Frank Li, Saman A. Zonouz, Raheem Beyah
-- **arXiv PDF**: [A Sea of Cyber Threats: Maritime Cybersecurity from the Perspective of Mariners.](https://arxiv.org/pdf/2506.15842)
-- **解读**: 通过用户研究（问卷与半结构化访谈，21 名高级海员）调查海事系统运营者对网络安全威胁的感知与应对：参与者报告了船载网络攻击、GPS 欺骗与扰乱物流的勒索软件等直接经历，证明威胁的现实影响。研究发现系统性的人因问题，如培训与实际需求脱节、检测与响应工具不足、海员安全意识存在严重缺口；论文贡献包括海员视角识别的威胁分类，以及对培训、协议与监管的改进建议。
-
-
-### Measuring and Augmenting Large Language Models for Solving Capture-the-Flag Challenges.
-- **作者**: Zimo Ji, Daoyuan Wu, Wenyuan Jiang, Pingchuan Ma, Zongjie Li, Shuai Wang
-- **arXiv PDF**: [Measuring and Augmenting Large Language Models for Solving Capture-the-Flag Challenges.](https://arxiv.org/pdf/2506.17644)
-- **解读**: 围绕 LLM 自动化求解 CTF 挑战（如 DARPA AIxCC）所需的多重能力（知识、推理、行动），构建聚焦核心知识能力的基准 CTFKnow（3,992 道题）测量 LLM 表现。关键发现：LLM 具备大量相关知识，但在具体场景中准确应用知识、并根据反馈与环境进行适应调整的能力不足，据此提出增强 LLM 解题能力的思路。
-
-
-### Exposing the Roots of DNS Abuse: A Data-Driven Analysis of Key Factors Behind Phishing Domain Registrations.
-- **作者**: Yevheniya Nosyk, Maciej Korczynski, Carlos Gañán, Sourena Maroofi, Jan Bayer, Zul Odgerel, Samaneh Tajalizadehkhoob, Andrzej Duda
-- **解读**: 基于 14.5k 钓鱼域名与 15.4k 良性域名、73 项特征（涵盖注册商属性、主动验证、被动安全实践三大潜在因素）的 GLM 回归分析，系统量化驱动域名滥用的因素：注册费每降低 1 美元对应滥用增加 49%；提供免费捆绑服务（如网页托管）使滥用激增 88%；严格的限制措施可将滥用削减 63%；而提供 API 访问或简化开户流程使钓鱼域名上升 401%。这些结果使注册商、注册局等中介机构能够设计与其经济利益一致的反滥用措施。
-
-
-### Noise and Stress Don't Help With Learning: A Qualitative Study to Inform Design of Effective Cybersecurity Awareness in Manufacturing Environments.
-- **作者**: Lina Brunken, Markus Schöps, Annalina Buckmann, Florian Meißner, M. Angela Sasse
-- **解读**: 通过对 6 个地点 33 名制造业工人的半结构化访谈与定性内容分析，研究车间环境中的网络安全意识培训：多数参与者日常仅偶尔接触「办公」ICT（如经共享的车间自助终端处理工资、假期等人事事务），不认为自己负有安全责任、将其归于「管理层」角色，并把 ICT 视为对工作流程顺畅与生产力的潜在威胁。参与者对安全培训持积极态度，但明确偏好面对面、基于团队、可在现场提问的培训方式，与公司设想的个人电脑端培训（车间嘈杂的环境不适合）截然不同；结果表明成功的意识项目需要结合工人相关的工作价值与实践来定制内容与交付方式。
-
-
-### An Empirical Study Measuring In-The-Wild Cryptographic Microarchitectural Side-Channel Patches.
-- **作者**: Sen Deng, Zhibo Liu, Shuai Wang, Yinqian Zhang
-- **解读**: 首次对真实世界密码学软件中的微架构侧信道补丁进行大规模测量：构建 SideBench 数据集（来自 OpenSSL、WolfSSL、MbedTLS 的 165 个补丁）与 SideEval 自动化分析工具（结合动态污点分析与静态符号执行）。结果显示即使资深开发者编写的补丁也有 25% 不安全、存在多年未被注意的残余泄漏；部分仓促发布的补丁在修复某信道的同时可能针对其他攻击模型引入新的泄漏；不同库修复相同代码模式的开销差异巨大（10%–170%）。论文还测量了近期基于规则与基于 LLM 的工具，并总结出安全高效打补丁的洞见。
-
-
-### Can IOCs Impose Cost? The Effects of Publishing Threat Intelligence on Adversary Behavior.
-- **作者**: Xander Bouwman, Aksel Ethembabaoglu, Bart Hermans, Carlos Gañán, Michel van Eeten
-- **解读**: 首次实证评估「发布威胁情报能向攻击者施加成本」的主张：将两家领先厂商的 IOC 情报流与大规模真实网络流量元数据匹配，回溯生成发布前最多 150 天的恶意活动命中记录。结果显示多数指标资源在发布前已被弃用，限制了其对检测进行中攻击的价值，削弱了「施加成本」的说法；统计建模表明情报状态对命中的解释力很低、存在混杂变量，并观察到攻击者活跃峰值与某厂商发布之间约 30 天的延迟。该研究是首个将攻击者行为与情报发布关联起来的实证评估，连接了计算机科学与国际关系领域。
-
-
-### TEMPEST-LoRa: Cross-Technology Covert Communication.
-- **作者**: Xieyang Sun, Yuanqing Zheng, Wei Xi, Zuhao Chen, Zhizhen Chen, Han Hao, Zhiping Jiang, Sheng Zhong
-- **解读**: 提出 TEMPEST-LoRa，一种基于跨技术隐蔽通信（CTCC）的新型电磁隐蔽信道：攻击者无需部署专用接收设备，而是通过精确操控线缆产生电磁泄漏，使秘密数据可被远处广泛部署的商用 LoRa 节点/网关接收。实验表明可在最大距离 87.5 米、或最高 21.6 kbps 的速率下可靠解码线缆调制信号（传输在显示器关闭的隐蔽条件下进行），揭示了对气隙网络的实际威胁。
-
-
-### MOLE: Breaking GPU TEE with GPU-Embedded MCU.
-- **作者**: Hongyi Lu, Yunjie Deng, J. Sukarno Mertoguno, Shuai Wang, Fengwei Zhang
-- **解读**: 提出 MOLE，一种利用 GPU 内嵌微控制器（MCU）攻破 GPU 可信执行环境（TEE）的攻击，揭示 GPU TEE 隔离机制中由内嵌 MCU 引入的安全弱点。（无摘要，据标题推断）
-
-
-### WireTap: Breaking Server SGX via DRAM Bus Interposition.
-- **作者**: Alexander Seto, Oytun Kuday Duran, Samy Amer, Jalen Chuang, Stephan van Schaik, Daniel Genkin, Christina Garman
-- **解读**: 针对服务器 SGX 的物理攻击：虽然 SGX 旨在对 root 级攻击者提供强完整性与机密性，但许多现实部署处于潜在对抗环境中，节点运营者有经济动机篡改 enclave 内的计算。该工作通过 DRAM 总线插接（interposition）攻破服务器 SGX，并挑战「此类攻击需要昂贵实验室设备、超出爱好者级攻击者能力」的普遍认知。
-
-
-### One Video to Steal Them All: 3D-Printing IP Theft through Optical Side-Channels.
-- **作者**: Twisha Chattopadhyay, Fabricio Ceschin, Marco E. Garza, Dymytriy Zyunkin, Animesh Chhotaray, Aaron P. Stebner, Saman A. Zonouz, Raheem Beyah
-- **arXiv PDF**: [One Video to Steal Them All: 3D-Printing IP Theft through Optical Side-Channels.](https://arxiv.org/pdf/2506.21897)
-- **解读**: 证明仅凭 3D 打印过程的视频录像即可逆向还原底层打印指令：模型跟踪打印头喷嘴的运动并将轨迹映射为 G-code，还能识别进给率、挤出率等正确参数，实现知识产权窃取。论文设计了具有旋转与平移不变性的等价性检查器（区别于归一化均方误差等简单距离度量，能捕捉相机位置不同导致的基准/起点偏移），平均准确率 90.87%，相比现有最优方法生成的错误指令减少 30.20%；并利用该方法从录像打印出功能完整的仿冒物体。
-
-
-### ControlLoc: Physical-World Hijacking Attack on Camera-based Perception in Autonomous Driving.
+#### ControlLoc: Physical-World Hijacking Attack on Camera-based Perception in Autonomous Driving.
 - **作者**: Chen Ma, Ningfei Wang, Zhengyu Zhao, Qian Wang, Qi Alfred Chen, Chao Shen
-- **解读**: 针对自动驾驶摄像头感知提出物理世界劫持攻击 ControlLoc：由于 AD 感知系统不仅包含目标检测还包含多目标跟踪（MOT），后者要求多帧一致的检测才影响跟踪与驾驶决策，单纯对抗补丁攻击检测器的效果受限；此前提出的数字域劫持攻击旨在诱导碰撞等危险场景，但在物理世界效果有限，本文设计在物理世界中有效的劫持攻击。
+- **方向**: AI/ML安全
+- **解读**: 已有研究表明对抗补丁可攻击自动驾驶（AD）相机感知中的目标检测器；但 AD 感知不止检测，还包括多目标跟踪（MOT）——要求跨多帧一致检测才会影响跟踪与驾驶决策，使针对单帧检测的攻击效果大打折扣。此前提出的数字域"劫持"攻击旨在诱导碰撞等危险场景，但在物理世界有效性有限。
+- 论文提出 ControlLoc，一种物理世界劫持攻击：针对相机感知（检测+跟踪）系统，通过精心构造的物理扰动使感知结果被"劫持"到攻击者期望的轨迹/身份，从而在真实驾驶场景中诱发危险局面。
+- 摘要未给出量化数据（原文截断）；核心贡献是在物理世界实现针对"检测+跟踪"完整感知链路的劫持攻击。
+- 把攻击目标从单帧检测升级为"检测+跟踪"联合感知，更贴近真实 AD 系统，是相比对抗补丁研究的实质性推进；物理世界可实现性（打印补丁、光照变化、视角鲁棒性）与端到端驾驶影响（是否真能诱发碰撞）是关键评价维度，与数字域劫持工作的对比、对跟踪鲁棒性的具体攻击成功率有待原文数据。
 
 
-### PipID: Light-Pupillary Response Based User Authentication for Virtual Reality.
-- **作者**: Muchen Pan, Yan Meng, Yuxia Zhan, Guoxing Chen, Haojin Zhu
-- **解读**: 提出 PipID，一种基于光瞳孔反应（对视觉刺激的瞳孔直径响应因人而异）的轻量级 VR 用户认证方法，仅使用头显内置的商用（COTS）眼动追踪器：随机显示不同颜色（波长）的光刺激，利用瞳孔直径响应进行认证。针对精度有限的 COTS 追踪器，方法缓解无关动作与眨眼的影响，并利用左右眼反应差异增强特征粒度；随机化的光序列帮助抵御重放攻击。在头显上以 52 名参与者测试，准确率达 98.65%，7 天与 14 天后分别保持 98% 与 91% 的稳健表现。
-
-
-### RVISmith: Fuzzing Compilers for RVV Intrinsics.
-- **作者**: Yibo He, Cunjian Huang, Xianmiao Qu, Hongdeng Chen, Wei Yang, Tao Xie
-- **arXiv PDF**: [RVISmith: Fuzzing Compilers for RVV Intrinsics.](https://arxiv.org/pdf/2507.03773)
-- **解读**: 针对编译器对 RISC-V 向量扩展（RVV）内建函数（intrinsics）的处理缺陷进行模糊测试：由于编译期信息不足限制了自动向量化性能，程序员常通过 intrinsics 手动操控 SIMD 指令，而编译器对这些内建函数的 bug 会导致错误计算结果、数据丢失、程序崩溃等安全隐患。论文提出 RVISmith 系统化发现此类编译器缺陷。
-
-
-### Fuzzing Processing Pipelines for Zero-Knowledge Circuits.
-- **作者**: Christoph Hochrainer, Anastasia Isychev, Valentin Wüstholz, Maria Christakis
-- **arXiv PDF**: [Fuzzing Processing Pipelines for Zero-Knowledge Circuits.](https://arxiv.org/pdf/2411.02077)
-- **解读**: 针对零知识（ZK）电路处理流水线的正确性验证：ZK 协议（用于认证、在线投票、区块链等）依赖处理 Circom、Noir 等领域特定语言编写的确定性程序（电路）的复杂流水线，其中的逻辑 bug 可能造成身份或资产被盗等灾难性后果。论文研究对 ZK 电路处理流水线进行模糊测试以发现逻辑缺陷的有效技术。
-
-
-### Error Messages to Fuzzing: Detecting XPS Parsing Vulnerabilities in Windows Printing Components.
-- **作者**: Yunpeng Tian, Feng Dong, Junhai Wang, Mu Zhang, Zhiniang Peng, Zesen Ye, Xiapu Luo, Haoyu Wang
-- **解读**: 提出 PrintXPSurge，一个针对 Windows 打印组件中 XPS 文档解析器的覆盖率引导模糊测试系统（此前研究多聚焦 spooler、固件更新等服务控制面，打印机驱动中的文档解析器被忽视）。系统用 LLM 辅助修复方法自动生成符合约束的语义正确 XPS 文件，以渐进式状态重建方法满足服务工作流中各环节的依赖需求，并在崩溃时通过回溯确认其源于解析器；评测中其性能超越现有顶级模糊器，在 10 个主流品牌驱动中发现 102 个 bug，其中 17 个零日漏洞获微软与第三方厂商确认。
-
-
-### SyzSpec: Specification Generation for Linux Kernel Fuzzing via Under-Constrained Symbolic Execution.
-- **作者**: Yu Hao, Juefei Pu, Xingyu Li, Zhiyun Qian, Ardalan Amiri Sani
-- **解读**: 针对 syzkaller 等内核模糊器依赖人工编写的系统调用描述、而现有自动生成方法（多面向设备驱动）对用户输入相关调用缺乏精度或分析范围有限的问题，提出 SyzSpec，用欠约束符号执行（under-constrained symbolic execution）自动生成 Linux 内核模糊测试所需的系统调用规范，以提升描述的精度与完整性。
-
-
-### Validating Interior Gateway Routing Protocols via Equivalent Topology Synthesis.
-- **作者**: Bing Shui, Yufan Zhou, Jielun Wu, Baowen Xu, Qingkai Shi
-- **解读**: 提出 ToDiff，一种针对内部网关协议（IGP）实现的差分验证技术：与定义结构化状态机、便于验证的 TCP/IP 等通信协议不同，IGP 被设计为自动管理拓扑，常规以正确性为核心的验证技术无法直接适用。ToDiff 分三步：(1) 用生成算法创建随机但有效的网络；(2) 用语义引导的程序合成器生成等价拓扑程序；(3) 模拟比较，任何不一致即提示潜在 bug。在 OSPF 与 IS-IS 上评估优于现有方法，已发现 26 个 bug 且全部获开发者确认或修复。
-
-
-### Disa: Accurate Learning-based Static Disassembly with Attentions.
-- **作者**: Peicheng Wang, Monika Santra, Mingyu Liu, Cong Sun, Dongrui Zeng, Gang Tan
-- **arXiv PDF**: [Disa: Accurate Learning-based Static Disassembly with Attentions.](https://arxiv.org/pdf/2507.07246)
-- **解读**: 提出 Disa，一种基于注意力（attention）机制的学习型静态反汇编方法，利用学习模型提高对二进制代码进行静态反汇编的准确率。（无摘要，据标题推断）
-
-
-### Efficient Constant-Size Linkable Ring Signatures for Ad-Hoc Rings via Pairing-Based Set Membership Arguments.
-- **作者**: Min Xie, Zhengzhou Tu, Man Ho Au, Junbin Fang, Xuan Wang, Zoe Lin Jiang
-- **解读**: 针对可链接环签名（LRS）在大规模临时环（ad-hoc ring）场景下的效率问题：LRS 允许匿名代表临时环签名且同一用户的多次签名可被链接，广泛用于电子投票、电子现金等隐私保护应用，需要短签名与快速验证。近期工作（如 DualDory (ESORICS'22)、LLRing (ESORICS'24)）通过离线预计算提升效率，但依赖静态环、限制其在环成员动态变化场景的适用性；基于累加器的常量大小签名方案同样存在局限。本文提出基于配对集合成员论证（pairing-based set membership arguments）的高效常量大小可链接环签名方案。
-
-
-### Forking the RANDAO: Manipulating Ethereum's Distributed Randomness Beacon.
-- **作者**: Ábel Nagy, János Tapolcai, István András Seres, Bence Ladóczki
-- **解读**: 分析以太坊分布式随机信标 RANDAO 在当前机制下的可操纵性：即使实现高效，RANDAO 仍可通过故意从规范链省略区块而被操纵。此前研究显示，经济理性的参与者可在操纵结果带来更大财务收益时实施区块扣留（block withholding）或自私混合（selfish mixing）攻击；本文进一步分析分叉（forking）等操纵路径及其影响。
-
-
-### Mining in Logarithmic Space with Variable Difficulty.
-- **作者**: Loïc Miller, Dorian Pacaud, Nathanël Derousseaux-Lebert, Emmanuelle Anceaume, Romaric Ludinard
-- **解读**: 针对工作量证明区块链的扩展性问题：区块链数据可分为应用部分与共识部分，后者随时间线性增长；文献 [1] 已在静态挖矿难度、固定矿工数量的假设下证明可将存储与通信开销指数级缩减。本文将该方案推广到可变挖矿难度场景，实验结果表明在难度动态变化时仍能保证存储与通信开销。
-
-
-### Bitcoin Under Volatile Block Rewards: How Mempool Statistics Can Influence Bitcoin Mining.
-- **作者**: Roozbeh Sarenche, Alireza Aghabagherloo, Svetla Nikova, Bart Preneel
-- **arXiv PDF**: [Bitcoin Under Volatile Block Rewards: How Mempool Statistics Can Influence Bitcoin Mining.](https://arxiv.org/pdf/2411.11702)
-- **解读**: 研究区块奖励减半后比特币矿工激励的变化及其安全影响：矿工收入由区块奖励与交易费组成，随着协议奖励趋近于零，交易费成为主要收入来源，这一转变引入奖励波动并催生或强化新威胁。既有分析要么采用固定奖励模型、要么采用高度简化的波动模型，忽视了内存池（mempool）行为的复杂性；本文结合内存池统计研究波动奖励下矿工行为如何影响比特币挖矿。
-
-
-### On Frontrunning Risks in Batch-Order Fair Systems for Blockchains.
-- **作者**: Eunchan Park, Taeung Yoon, Hocheol Nam, Deepak Maram, Min Suk Kang
-- **解读**: 对以 Themis（CCS'23）为代表的批量序公平系统的抗前置交易（frontrunning）能力进行批判性分析：Themis 是追求先到先服务（FCFS）排序的高吞吐公平系统的关键参考，论文分析其核心属性「实用批量序公平」并评估其抵抗性，提出 Ambush 攻击——仅需一个恶意节点、攻击成本可忽略即可获得近 100% 成功率，利用系统为追求性能而高度优化的通信模型制造节点间微妙的临时信息不对称。论文揭示了安全与性能间的根本权衡：及时传播（以缓解前置交易）容易带来不可忽视的网络开销、降低整体吞吐，并证明通过将传播延迟到可容忍水平可以在保持高吞吐的同时兼顾两者；提出的延迟八卦（delayed gossiping）机制可以最小改动集成到现有系统。
-
-
-### Aegis: Tethering a Blockchain with Primary-Chain Stake.
-- **作者**: Yogev Bar-On, Roi Bar Zur, Omer Ben-Porat, Nimrod Cohen, Ittay Eyal, Matan Sitbon
-- **arXiv PDF**: [Aegis: Tethering a Blockchain with Primary-Chain Stake.](https://arxiv.org/pdf/2406.05904)
-- **解读**: 研究「系链」（tethering）区块链——以主链代币作为抵押品保障系链安全：抵押品保证运营者按预期行事直至撤出，与使用自身代币抵押的权益证明不同，主链抵押可规避自身代币的波动风险。论文指出现有方案要么依赖中心化、要么依赖极端假设（全同步通信、撤出后运营者仍正确、系链失败时可无限延迟撤出），并证明在部分同步下该问题无解；但在标准假设（部分节点同步）下存在部分解。提出的协议 Aegis 通过引用块定义委员会、检查点延续决策、重置在旧委员会过时后建立新委员会，在快速进展时期保持安全性且延迟低。
-
-
-### Split Unlearning.
-- **作者**: Yanna Jiang, Guangsheng Yu, Qin Wang, Xu Wang, Baihe Ma, Caijun Sun, Wei Ni, Ren Ping Liu
-- **arXiv PDF**: [Split Unlearning.](https://arxiv.org/pdf/2308.10422)
-- **解读**: 提出 Split Unlearning，一种面向分割学习（split learning）框架的机器遗忘方法，使参与方能够在保持分割训练流程的同时从模型中移除特定数据的影响。（无摘要，据标题推断）
-
-
-### Slot: Provenance-Driven APT Detection through Graph Reinforcement Learning.
-- **作者**: Wei Qiao, Yebo Feng, Teng Li, Zhuo Ma, Yulong Shen, Jianfeng Ma, Yang Liu
-- **arXiv PDF**: [Slot: Provenance-Driven APT Detection through Graph Reinforcement Learning.](https://arxiv.org/pdf/2410.17910)
-- **解读**: 提出 Slot，一种基于溯源图（provenance graph）与图强化学习的 APT 检测方法，通过强化学习智能体在图上的决策策略识别多步攻击路径。（无摘要，据标题推断）
-
-
-### Combating Concept Drift with Explanatory Detection and Adaptation for Android Malware Classification.
-- **作者**: Yiling He, Junchi Lei, Zhan Qin, Kui Ren, Chun Chen
-- **arXiv PDF**: [Combating Concept Drift with Explanatory Detection and Adaptation for Android Malware Classification.](https://arxiv.org/pdf/2405.04095)
-- **解读**: 针对基于机器学习的 Android 恶意软件分类中的概念漂移问题（恶意软件快速演化、尤其是新家族出现，可使分类精度跌至近随机水平）：既有研究主要聚焦漂移样本检测与专家主导的标签修订来指导重训练，但方法往往缺乏对概念的全面理解、对有效适应的指导有限，导致人工标注成本高。本文提出具解释性的漂移检测与自适应方法，以更低的标注成本实现有效适应。
-
-
-### Rethinking Machine Unlearning in Image Generation Models.
+#### Rethinking Machine Unlearning in Image Generation Models.
 - **作者**: Renyang Liu, Wenjie Feng, Tianwei Zhang, Wei Zhou, Xueqi Cheng, See-Kiong Ng
+- **方向**: AI/ML安全
+- **解读**: 图像生成模型（如 Stable Diffusion）在带来高保真生成能力的同时引发版权、有害内容等隐私与安全担忧，机器遗忘（MU）被视为低成本解决方案，但图像生成模型遗忘（IGMU）在实践中存在任务划分指引不清、缺乏评估框架、指标不可靠等显著缺口，阻碍了机制理解与实用算法设计。
+- 方法上提出三件套：CatIGMU 分层任务分类框架（全局/局部 × 抽象/具体），为遗忘目标与保留内容给出细致实现指引；EvalIGMU 评估框架，从遗忘、保留、图像质量、鲁棒性、效率五个方面提供量化指标（MultiClf、YOLO v8、CSDR/LPIPS、FID、UnlearnDiffAtk 攻击成功率等）；DataIGM 数据集覆盖 Nudity、Style、Church、Parachute 四个代表性任务，含 REAL/LAION/SD-GEN 三种来源，共 539,278 + 2,860,000 张图像与 800 条提示词，可用于训练内容检测器与基准测试。
+- 结果上，用 EvalIGMU 与 DataIGM 系统重评 ESD、FMN、SPM、AdvUnlearn、MACE、RECE、DoCo、Receler、ConceptPrune、UCE 十个 SOTA 算法，发现多数算法无法在各评估维度上良好完成遗忘，尤其是保留与鲁棒性方面；以 Nudity 任务为例，各方法生成图像的人体检测率在约 61.4% 至 97.6% 之间波动，保留性能参差。数据、代码与模型已开源。
+- 我的思考：该工作的成色在于"元研究"定位——不提出新算法，而是系统化评估标准与测试平台，首次按空间关系与感知属性对遗忘任务分层定义，直击评测不可靠这一痛点。局限是评估仍以显式关键词威胁模型为主，对隐式/语义级遗忘覆盖有限；且"完美遗忘"本身存在主观性与非唯一性，框架给出的是规范化指引而非终极答案。对后续 IGMU 基准构建与指标设计具有奠基意义。
+
 - **arXiv PDF**: [Rethinking Machine Unlearning in Image Generation Models.](https://arxiv.org/pdf/2506.02761)
-- **解读**: 系统反思图像生成模型的机器遗忘（IGMU）：针对任务区分准则不清、缺乏评估框架、指标不可靠等实践缺口，对现有 SOTA 算法与标准进行 exhaustive 评估，发现多项关键缺陷与挑战。论文贡献包括：(1) CatIGMU 分层分类框架，提供详细实现指导并协助构建测试床；(2) EvalIGMU，涵盖五个方面的定量评估指标；(3) DataIGM 高质量数据集，可用于广泛评估与检测器/判定器训练。基准评测显示大多数现有算法难以兼顾不同维度，尤其在保留能力（preservation）与鲁棒性上表现不佳。
 
-
-### TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE.
-- **作者**: Tong Sun, Bowen Jiang, Hailong Lin, Borui Li, Yixiao Teng, Yi Gao, Wei Dong
-- **arXiv PDF**: [TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE.](https://arxiv.org/pdf/2505.22735)
-- **解读**: 针对端侧推理（移动与 IoT 设备本地部署第三方模型）面临的模型窃取（MS）与成员推理攻击（MIA）双重威胁：现有思路将模型整体部署于可信执行环境（TEE），但 TEE 内存受限使其难以在低延迟下实现全模型防护。TensorShield 提出只对关键 DNN 张量进行 TEE 屏蔽的思路，在有限的 TEE 内存下兼顾数据隐私保护与推理延迟。
-
-
-### PoisonSpot: Precise Spotting of Clean-Label Backdoors via Fine-Grained Training Provenance Tracking.
+#### PoisonSpot: Precise Spotting of Clean-Label Backdoors via Fine-Grained Training Provenance Tracking.
 - **作者**: Philemon Hailemariam, Birhanu Eshete
-- **解读**: 提出 PoisonSpot，一种精确检测干净标签后门攻击的系统：受动态污点追踪启发，通过训练过程中的细粒度溯源追踪捕获并分析参数更新，依据样本谱系（lineage）为可疑样本赋予投毒分数，从而准确识别并剔除携带触发器的样本。在多个基准数据集与攻击场景下的评估显示其性能优于现有最优防御，持续保持高真阳率、低假阳率，并能有效缓解自适应对抗策略；在重训练与微调等多种设置下依然高效、稳健、可扩展。
-
-
-### Pool: A Practical OT-based OPRF from Learning with Rounding.
-- **作者**: Alex Davidson, Amit Deo, Louis Tremblay Thibault
-- **解读**: 提出 Pool，一个基于学习取整（LWR）困难假设的简洁后量子不经意伪随机函数（OPRF）协议：在输入无关预处理下达到轮数最优，计算 F_sk(x)=⌈H(x)ᵀ·sk⌋_(q,p)（H 为随机预言）。在 128 位半诚实安全下，在线通信成本仅 11.9 kB、单线程计算时间低于 3 ms（开源实现），比基于知名后量子 PRF 的构造更高效，甚至与基于较弱假设的构造相当；同时为多方隐私集合操作等成熟应用提供高性能变体。
-
-### Zero-Knowledge AI Inference with High Precision.
-- **作者**: Arman Riasi, Haodi Wang, Rouzbeh Behnia, Viet Vo, Thang Hoang
-- **解读**: AIaaS 场景下用户查询服务商托管的模型并接收推理结果，在便利资源受限用户的同时带来可验证性与隐私两方面担忧；零知识证明虽能同时应对，但 AI 中非线性运算导致证明成本高昂，且依赖定点数表示还会造成精度损失。论文针对高精度零知识 AI 推理提出方案，兼顾可验证性、隐私与精度。
-
-
-### New Permutation Decomposition Techniques for Efficient Homomorphic Permutation.
-- **作者**: Xirong Ma, Junling Fang, Chunpeng Ge, Dung Hoang Duong, Yali Jiang, Yanbin Li, Willy Susilo, Lizhen Cui
-- **解读**: 同态置换是批量编码同态加密下隐私保护计算的基础，几乎支撑所有矩阵运算并主导其复杂度，而置换分解这一潜在优化途径此前鲜有探索。论文定义置换的理想形式并给出搜索深度 1 分解的算法，据此证明特定转置（HMT）与乘法（HMM）算法所用置换的完整深度可分解性，带来渐进的提速与旋转密钥减少。将增强版 HMM 组件替换进最佳加密神经网络推理框架后延迟降低最高 3.9 倍；对无法理想分解的置换还设计了新计算方法，在有限预算下较最先进技术提速 1.69 倍。
-
-
-### Leveraging Discrete CKKS to Bootstrap in High Precision.
-- **作者**: Hyeongmin Choe, Jaehyung Kim, Damien Stehlé, Elias Suvanto
-- **解读**: CKKS 全同态加密支持对近似复数向量计算，约 20 位精度通常够用，但为获得 IND-CPA-D 安全性、安全门限 FHE 与电路隐私，已知方法都依赖噪声洪泛，精度需求可能达到 80 位以上，而高精度引导（bootstrapping）因每次乘法都消耗模数、预算有限而极难实现。现有最先进方法 Meta-BTS 通过多次执行中等精度引导实现高精度引导，模数消耗与基础方法相近但损害延迟。论文利用离散 CKKS（discrete CKKS）实现高精度引导。
-
-
-### Grafting: Decoupled Scale Factors and Modulus in RNS-CKKS.
-- **作者**: Jung Hee Cheon, Hyeongmin Choe, Minsik Kang, Jaehyung Kim, Seonghak Kim, Johannes Mono, Taeyeong Noh
-- **解读**: RNS-CKKS 中缩放因子（决定数值精度）与模数（定义密码学结构）被刚性耦合，而二者分别承担正确性与密码学结构两种不同角色，这种依赖导致缺乏合适的 NTT 素数、精度灵活性受限等设计约束并最终造成效率损失。论文提出 Grafting，将 RNS-CKKS 中的缩放因子与模数解耦。
-
-
-### Towards Verifiable FHE in Practice: Proving Correct Execution of TFHE's Bootstrapping using plonky2.
-- **作者**: Louis Tremblay Thibault, Michael Walter
-- **解读**: 论文首次在实践中证明完整的 FHE 引导操作可用 SNARK 验证：设计算术电路并用 plonky2 证明，在 AWS Hpc7a 实例上 20 分钟内完成，证明大小约 200 kB、验证时间不足 10 ms。以 TFHE 可编程引导为基础并做少量修改以更高效地表示运算（保持功能与安全性），并利用 plonky2 的递归能力实现基于递归的 IVC 方案以节省内存。最后在 UC 模型下给出可捕获真实应用主动攻击的安全证明，使可验证 FHE 适配实际应用。
-
-
-### Probabilistic Skipping-Based Data Structures with Robust Efficiency Guarantees.
-- **作者**: Marc Fischlin, Moritz Huppert, Sam A. Markelon
-- **解读**: 哈希表、跳表、treap 等概率数据结构通过随机化层级实现“跳跃”，平均亚线性查询复杂度且结果完全正确，但传统上假设输入与结构内部随机状态独立，该假设在恶意环境中不成立，可能导致复杂度显著上升。论文给出针对三类结构的自适应攻击（哈希表情形可致指数级退化），提出简单修改使原设计获得对自适应对手的可证明安全性，并将论证形式化为自适应对手性质保持（AAPC）概念。实验与理论分析结果吻合。
-
-
-### ShiftPIR: An Efficient PIR System with Gravity Shifting from Client to Server.
-- **作者**: Zihan Wang, Lutan Zhao, Ming Luo, Zhiwei Wang, Haoqi He, Wenzhe Lv, Xuan Ding, Dan Meng, Rui Hou
-- **解读**: 论文提出单服务器 PIR 协议 ShiftPIR，将计算与通信开销从客户端转移到服务端，利用资源受限客户端与计算密集、可并行扩展服务端之间的不对称性。客户端仅传输由预上传种子密文派生的紧凑明文偏移，服务端用同态旋转重构完整查询密文，消除昂贵的密文传输；并设计高并行化、无数据依赖的扩展机制支持 GPU 执行。实验显示客户端延迟降至微秒级、开销保持在非隐私基线 4 倍以内，较先前协议（104–105 倍开销）大幅领先，端到端延迟较最先进 YPIR 降低最多 26 倍。
-
-
-### Updatable aPAKE: Security Against Bulk Precomputation Attacks.
-- **作者**: Dennis Dayanikli, Anja Lehmann
-- **解读**: aPAKE 支持客户端与服务器基于共享口令安全建立密钥并抵抗离线攻击，但标准模型不保证抗预计算攻击；已有协议常依赖加盐口令哈希，盐虽在认证时明文发送，在多用户大规模场景下仍显著增加攻击难度。然而盐的防护是静态的，攻击者可逐步提取口令值。论文提出可更新 aPAKE（updatable aPAKE），针对批量预计算攻击提供更强的安全保证。
-
-
-### Founding Zero-Knowledge Proof of Training on Optimum Vicinity.
-- **作者**: Gefei Tan, Adrià Gascón, Sarah Meiklejohn, Mariana Raykova, Xiao Wang, Ning Luo
-- **解读**: 零知识训练证明（zkPoT）允许一方证明模型在已提交数据集上被正确训练，且不泄露模型或数据集的额外信息。现有协议对完整迭代训练过程做零知识证明，证明者工作量与迭代次数呈线性关系。论文将训练证明建立在最优邻域（optimum vicinity）之上，以突破线性迭代工作量。
-
-
-### Revisiting Keyed-Verification Anonymous Credentials.
-- **作者**: Michele Orrù
-- **解读**: 论文重新审视带密钥验证的匿名凭证（keyed-verification anonymous credentials）方案的设计与性质。「（无摘要，据标题推断）」
-
-
-### Subversion-resilient Key-exchange in the Post-quantum World.
-- **作者**: Kévin Duverger, Pierre-Alain Fouque, Charlie Jacomme, Guilhem Niot, Cristina Onete
-- **解读**: 抗颠覆认证密钥交换（AKE）旨在即使敌手篡改协议实现的部分组件仍保持安全 AKE 的保证，一种实现方式是使用反向防火墙（RF）这一不可信第三方来恢复安全性。近期工作指出为实用信道建立设计 RF 存在挑战。论文在后量子世界中研究抗颠覆密钥交换。
-
-
-### Poisoning Attacks to Local Differential Privacy for Ranking Estimation.
-- **作者**: Pei Zhan, Peng Tang, Yangzhuo Li, Puwen Wei, Shanqing Guo
-- **arXiv PDF**: [Poisoning Attacks to Local Differential Privacy for Ranking Estimation.](https://arxiv.org/pdf/2506.24033)
-- **解读**: 本地差分隐私（LDP）通过对输入扰动提供可否认性，但也因此易受投毒攻击；论文首次提出针对排序估计的投毒攻击，伪造用户并非简单调整目标项频率，而是利用有限数量的伪造用户精准修改频率以改变物品排名、最大化收益。为此引入攻击成本与最优集合概念，针对 kRR、OUE、OLH 协议提出相应策略（迭代选择物品并分配用户、基于频率增量变化确定集合、针对 OLH 的基于预像哈希的调和函数），并给出量化成功概率的置信度策略。理论与实证均验证攻击有效性，代码已公开。
-
-
-### Mitigating Data Poisoning Attacks to Local Differential Privacy.
-- **作者**: Xiaolin Li, Ninghui Li, Boyang Wang, Wenhai Sun
-- **arXiv PDF**: [Mitigating Data Poisoning Attacks to Local Differential Privacy.](https://arxiv.org/pdf/2506.02156)
-- **解读**: LDP 的分布式特性招致数据投毒攻击，威胁其支撑的应用；论文为常用频率估计提出综合防御框架，包含恶意用户检测、攻击模式识别、受损效用恢复等一系列新防御，并考察新出现的自适应攻击活动。所提方法能精确识别伪造报告，使聚合在“干净”数据上进行；当攻击隐蔽、难以直接过滤用户时，可进一步识别隐藏模式辅助服务提供方决策。这些方法无需额外信息、计算开销极小，实验显示性能优异且较先前工作大幅提升，并对后处理恢复方法给出实证分析与实践建议。
-
-
-### Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation.
-- **作者**: Ali Naseh, Yuefeng Peng, Anshuman Suri, Harsh Chaudhari, Alina Oprea, Amir Houmansadr
-- **arXiv PDF**: [Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation.](https://arxiv.org/pdf/2502.00306)
-- **解读**: RAG 使 LLM 借助外部知识库生成有依据的响应，但检索文档进入模型上下文带来成员推理风险；现有成员推断与数据提取攻击多依赖越狱或刻意构造的非自然查询，易被常见查询重写机制检测并挫败。论文提出针对数据存储库的攻击 øurattack：构造仅当目标文档存在时才能回答的自然文本查询，约 30 次查询即可成功且保持隐蔽，现有攻击生成的对抗提示被检测频率比其高约 76 倍。在多种配置下 TPR@1%FPR 较先前攻击提升 2 倍，且每次文档推断成本低于 0.02 美元。
-
-
-### Exploiting the Shared Storage API.
-- **作者**: Alexandra Nisenoff, Deian Stefan, Nicolas Christin
-- **解读**: 为替代第三方 cookie，Google 在 Privacy Sandbox 中引入 Shared Storage API，允许第三方存储不按顶层网站分区的数据但限制其读访问，以保留部分良性功能并缓解跨站用户重识别等隐私危害。论文发现该 API 的实现与设计存在缺陷，既允许跨站重新识别用户，也造成超出 Google 预期的数据泄露。论文给出多种绕过其关键目标的攻击，并讨论扩展与缓解策略；已向 Google 负责任披露，但多数攻击在 Chrome 中仍可能发生。
-
-
-### Fingerprinting SDKs for Mobile Apps and Where to Find Them: Understanding the Market for Device Fingerprinting.
-- **作者**: Michael A. Specter, Mihai Christodorescu, Abbie Farr, Bo Ma, Robin Lassonde
-- **arXiv PDF**: [Fingerprinting SDKs for Mobile Apps and Where to Find Them: Understanding the Market for Device Fingerprinting.](https://arxiv.org/pdf/2506.22639)
-- **解读**: 论文对移动应用生态中类似指纹识别的行为进行大规模分析，采取市场视角聚焦第三方跟踪 SDK。数据集包含 22.8 万余个来自主流 Maven 仓库的 SDK 与 17.8 万个从 Google Play 收集的 Android 应用，静态流水线检测 500 类信号的对外泄露，据作者所知是迄今最大规模的 SDK 研究。
-
-
-### PAnDA: Rethinking Metric Differential Privacy Optimization at Scale with Anchor-Based Approximation.
-- **作者**: Ruiyao Liu, Chenxi Qiu
-- **arXiv PDF**: [PAnDA: Rethinking Metric Differential Privacy Optimization at Scale with Anchor-Based Approximation.](https://arxiv.org/pdf/2509.08720)
-- **解读**: 论文提出 PAnDA，以锚点近似（anchor-based approximation）重新思考大规模场景下的度量差分隐私（metric differential privacy）优化问题。「（无摘要，据标题推断）」
-
-
-### Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites.
-- **作者**: Haichuan Xu, Runze Zhang, Mingxuan Yao, David Oygenblik, Yizhi Huang, Jeman Park, Brendan Saltaformaggio
-- **解读**: Android 无障碍（a11y）服务常被恶意软件滥用，开发者需在原生应用与移动网站中同时保护 a11y 内容访问，但二者保护机制存在错位；先前研究聚焦原生应用内信息的攻防，本文发现应用保护的信息可经其浏览器渲染的网页端被检索，使浏览器用户比应用用户更易受攻击。为此开发自动化分析流水线 SOMBRA 检验受保护应用的浏览器端泄露：分析 294 个服务（其中 29 个部署了应用端保护、256 个视图），在 Chrome、Firefox、Brave、Edge 中分别发现 241、402、244、251 个受保护视图对应元素在网页端暴露，泄露内容含敏感个人信息。SOMBRA 还表明多数服务未采纳防护，因为现有机制要么无效要么妨碍内容可用性。
-
-
-### BACScan: Automatic Black-Box Detection of Broken-Access-Control Vulnerabilities in Web Applications.
-- **作者**: Fengyu Liu, Yuan Zhang, Enhao Li, Wei Meng, Youkun Shi, Qianheng Wang, Chenlin Wang, Zihan Lin, Min Yang
-- **解读**: 越权访问控制（BAC）漏洞长期位列 OWASP Top 10 前列，但有效可靠的检测手段仍然有限；论文提出黑盒检测方法 BACScan。与仅检查读访问的响应相似性 oracle 不同，BACScan 引入反馈驱动 oracle，通过分析操作相关页面与操作反馈推断是否发生了写或修改操作。在 20 个真实应用上发现 89 个漏洞（其中 54 个此前未报告），优于最先进工具，已向受影响厂商报告并获 35 个新 CVE 编号。
-
-
-### Analyzing PDFs like Binaries: Adversarially Robust PDF Malware Analysis via Intermediate Representation and Language Model.
-- **作者**: Side Liu, Jiang Ming, Guodong Zhou, Xinyi Liu, Jianming Fu, Guojun Peng
-- **arXiv PDF**: [Analyzing PDFs like Binaries: Adversarially Robust PDF Malware Analysis via Intermediate Representation and Language Model.](https://arxiv.org/pdf/2506.17162)
-- **解读**: 恶意 PDF 是常见攻击向量，基于机器学习的分类器易受对抗攻击，而底层特征工程过时使鲁棒性问题难以根本解决。论文提出基于 PDF 对象中间表示（PDFObj IR）的新方法：以类汇编语言框架描述 PDF 对象，用预训练模型提取语义特征，并借鉴程序分析构建引用图（Reference Graph）捕捉结构特征，实现语义与结构双特征分析。实验表明分类器在保持强检测性能的同时误报率极低（基线数据集仅 0.07%）。
-
-
-### Local Frames: Exploiting Inherited Origins to Bypass Content Blockers.
-- **作者**: Alisha Ukani, Hamed Haddadi, Alex C. Snoeren, Peter Snyder
-- **arXiv PDF**: [Local Frames: Exploiting Inherited Origins to Bypass Content Blockers.](https://arxiv.org/pdf/2506.00317)
-- **解读**: 论文研究本地帧（即加载 about:blank 等内容 iframe）被大量主流 Web 安全与隐私工具错误处理的现象，用户因此仍暴露于浏览器指纹识别、基于 cookie 的跟踪、数据外泄等其想防御的攻击。各工具以不同方式出错，但根因一致：遗留功能与安全边界以意料之外的方式交互，导致系统性的漏洞。
-
-
-### Enhanced Web Application Security Through Proactive Dead Drop Resolver Remediation.
-- **作者**: Jonathan Fuller, Mingxuan Yao, Saumya Agarwal, Srimanta Barua, Taleb Hirani, Amit Kumar Sikder, Brendan Saltaformaggio
-- **解读**: 论文提出通过主动修复 dead drop resolver（信息投递/解析点）来增强 Web 应用安全性的方案。「（无摘要，据标题推断）」
-
-
-### ForeDroid: Scenario-Aware Analysis for Android Malware Detection and Explanation.
-- **作者**: Jiaming Li, Sen Chen, Chunlian Wu, Yuxin Zhang, Lingling Fan
-- **解读**: Android 恶意软件持续演化，现有检测系统在泛化、细粒度检测与可解释性上存在不足，常依赖僵硬规则或无法恢复完整因果行为路径。论文提出 ForeDroid，将恶意意图建模为功能场景内的不一致性：聚类语义连贯的场景，提取敏感 API 调用链并用 LLM 总结为自然语言，将摘要嵌入后与同场景良性分布做无监督异常检测，高危行为再由 LLM 驱动模块生成解释报告。在时间分割设置下零日检测优于 MaMaDroid、MalScan、DeepRefiner 与持续学习方法，在人工标注的 GPMalware 数据集上 F1 达 0.94 并超越 ProMal。
-
-
-### Logical Relations for Formally Verified Authenticated Data Structures.
-- **作者**: Simon Oddershede Gregersen, Chaitanya Agarwal, Joseph Tassarotti
-- **arXiv PDF**: [Logical Relations for Formally Verified Authenticated Data Structures.](https://arxiv.org/pdf/2501.10802)
-- **解读**: 认证数据结构允许不可信第三方执行操作并生成可用于验证输出的证明，其正确开发与实现颇具挑战；论文为自动生成认证版本的程序库给出安全性与正确性的形式证明。证明基于新的关系分离逻辑，用于推理使用抗碰撞密码哈希函数的程序，并据此构建类型系统的两个语义模型，论证抽象如何强制正确性。利用这些模型还证明了若干优化，并表明手写优化实现与自动生成代码可被可靠地链接；全部结果已在 Rocq 证明器中用 Iris 框架机械化。
-
-
-### Jazzline: Composable CryptoLine Functional Correctness Proofs for Jasmin Programs.
-- **作者**: José Bacelar Almeida, Manuel Barbosa, Gilles Barthe, Lionel Blatter, Gustavo Xavier Delerue Marinho Alves, João Diogo Duarte, Benjamin Grégoire, Tiago Oliveira, Miguel Quaresma, Pierre-Yves Strub, Ming-Hsien Tsai, Bow-Yaw Wang, Bo-Yin Yang
-- **解读**: Jasmin 是面向高速高保证密码学的编程语言，其正确性证明通常在 EasyCrypt 中演绎完成，通用、模块化且可组合，但难以扩展到底层架构相关例程；CryptoLine 提供对代数丰富的密码例程的半自动验证，且自成体系、可集成进高层形式验证。论文展示如何用 CryptoLine 可靠地消解复杂程序功能正确性证明的子目标：扩展注解并给出自动翻译模型（多数变换被认证），同时形式化实现提取语义证明。以 X-Wing 混合 KEM 为用例，给出其首个验证实现。
-
-
-### Breaking and Provably Restoring Authentication: A Formal Analysis of SPDM 1.2 including Cross-Protocol Attacks.
-- **作者**: Cas Cremers, Alexander Dax, Aurora Naska
-- **解读**: SPDM（Security Protocol and Data Model）是 DMTF 制定中的协议标准，获 Broadcom、Cisco、Dell、Google、HP、IBM、Intel、NVIDIA 等主要厂商支持，为 PCIe 与 CXL 等通信场景提供平台安全机制。论文对 SPDM 1.2 进行形式分析，包括跨协议攻击，发现认证破坏并给出可证明的恢复方法。
-
-
-### Approximate Algorithms for Verifying Differential Privacy with Gaussian Distributions.
-- **作者**: Bishnu Bhusal, Rohit Chadha, A. Prasad Sistla, Mahesh Viswanathan
-- **arXiv PDF**: [Approximate Algorithms for Verifying Differential Privacy with Gaussian Distributions.](https://arxiv.org/pdf/2509.08804)
-- **解读**: 采用高斯分布的差分隐私算法验证鲜有研究；论文提出新方法近似计算无环程序中从离散与连续分布（含可计算密度函数，包括 Laplace）采样的概率，并证明这类程序的 (ε,δ)-差分隐私“几乎可判定”，即除有限个 δ 值外判定问题可解。算法结合积分近似与尾界以任意精度计算概率，实现为基于 FLINT 高精度计算的工具 DipApprox，并加入可扩展性优化；在 Sparse Vector Technique 与 Noisy Max 等基础隐私算法上验证了有效性并检测到违例。
-
-
-### ILA: Correctness via Type Checking for Fully Homomorphic Encryption.
-- **作者**: Tarakaram Gollamudi, Anitha Gollamudi, Joshua Gancher
-- **arXiv PDF**: [ILA: Correctness via Type Checking for Fully Homomorphic Encryption.](https://arxiv.org/pdf/2509.11559)
-- **解读**: 基于 RLWE 的全同态加密（FHE）方案在加密时引入小噪声，噪声随同态操作累积，超过临界值即产生错误输出，且有限模数运算还带来回绕错误，使应用开发必须仔细跟踪噪声，而现有库与编译器对噪声的静态支持有限。论文提出 ILA，通过类型检查保证 FHE 电路的正确性。
-
-
-### Protocols to Code: Formal Verification of a Secure Next-Generation Internet Router.
-- **作者**: João C. Pereira, Tobias Klenze, Sofia Giampietro, Markus Limbeck, Dionysios Spiliopoulos, Felix A. Wolf, Marco Eilers, Christoph Sprenger, David A. Basin, Peter Müller, Adrian Perrig
-- **解读**: 论文给出首个经形式验证的互联网路由器，其属于 SCION 架构；路由器在对抗环境中运行用于安全包转发的密码协议。验证同时覆盖协议的网络级安全属性与底层实现：用 Isabelle/HOL 通过细化建立系列模型，并用自动化程序验证器证明路由器的 Go 代码无崩溃、无数据竞争且符合细化中最具体的模型，两层验证被可靠地链接。
-
-
-### SyzParam: Incorporating Runtime Parameters into Kernel Driver Fuzzing.
-- **作者**: Yue Sun, Yan Kang, Chenggang Wu, Kangjie Lu, Jiming Wang, Xingwei Li, Yuhao Hu, Jikai Ren, Yuanming Lai, Mengyao Xie, Zhe Wang
-- **解读**: 论文提出 SyzParam，将运行时参数融入内核驱动模糊测试（fuzzing）以提升覆盖与漏洞发现能力。「（无摘要，据标题推断）」
-
-
-### Reviving Discarded Vulnerabilities: Exploiting Previously Unexploitable Linux Kernel Bugs Through Control Metadata Fields.
-- **作者**: Hao Zhang, Jian Liu, Jie Lu, Shaomin Chen, Tianshuo Han, Bolun Zhang, Xiaorui Gong
-- **解读**: 论文研究通过控制元数据字段（control metadata fields）利用先前被认为不可利用的 Linux 内核缺陷，使被废弃的漏洞重新变得可利用。「（无摘要，据标题推断）」
-
-
-### BASTAG: Byte-level Access Control on Shared Memory using ARM Memory Tagging Extension.
-- **作者**: Junseung You, Jiwon Seo, Kyeongryong Lee, Yeongpil Cho, Yunheung Paek
-- **解读**: 论文提出 BASTAG，利用 ARM 内存标记扩展（Memory Tagging Extension）对共享内存实施字节级访问控制。「（无摘要，据标题推断）」
-
-
-### Intent-aware Fuzzing for Android Hardened Application.
-- **作者**: Seongyun Jeong, Minseong Choi, Haehyun Cho, Seokwoo Choi, Hyungsub Kim, Yuseok Jeon
-- **解读**: Android 应用加固技术的普及使现有分析难以处理加固应用、覆盖率受限，主要原因是难以获取 Intent 的详细信息——Intent 是应用间通信与特定事件执行的关键组件。论文提出面向加固 Android 应用的 Intent 感知模糊测试方法。
-
-
-### Securing Mixed Rust with Hardware Capabilities.
-- **作者**: Jason Zhijingcheng Yu, Fangqi Han, Kaustab Choudhury, Trevor E. Carlson, Prateek Saxena
-- **解读**: Rust 通过所有权、借用与别名异变（AXM）原则防止内存安全缺陷与数据竞争，但实际项目常含 unsafe Rust、FFI、内联汇编等混合代码，编译器无法静态强制这些原则，导致漏洞。论文提出 CapsLock，在机器层面运行时检测原则违规；引入新颖的 revoke-on-use 抽象——通过能力访问对象时隐式失效指向该对象的其他能力，自动提供时间安全而无需软件显式指定失效。原型在 QEMU 上实现，兼容性高（通过 99.7% 内置测试用例与 100 个最流行 crate），并发现 8 个此前未知的 crate 违规。
-
-
-### PromeFuzz: A Knowledge-Driven Approach to Fuzzing Harness Generation with Large Language Models.
-- **作者**: Yuwei Liu, Junquan Deng, Xiangkun Jia, Yanhao Wang, Minghua Wang, Lin Huang, Tao Wei, Purui Su
-- **解读**: 论文提出 PromeFuzz，一种用大语言模型以知识驱动方式生成模糊测试 harness 的方法。「（无摘要，据标题推断）」
-
-
-### Swallow: A Transfer-Robust Website Fingerprinting Attack via Consistent Feature Learning.
-- **作者**: Meng Shen, Jinhe Wu, Junyu Ai, Qi Li, Chenchen Ren, Ke Xu, Liehuang Zhu
-- **解读**: Tor 网络上的网站指纹（WF）攻击通过流量模式识别用户访问的网站，但真实环境网络条件多样且存在 WF 防御，现有最先进方法或假设训练与部署条件一致，或面对防御时性能退化。论文提出迁移鲁棒的 Swallow 攻击：设计一致交互特征（CIF）表示对齐不同采集环境的分布、提取一致特征，并设计三种数据增强算法模拟条件变化。在十个数据集（含自采与公开）的闭/开世界评估中显著优于最先进方法，每网站仅 5 个标签微调即可平均提升准确率 17.50%。
-
-
-### FlowSentry: Accelerating NetFlow-based DDoS Detection.
-- **作者**: Xiaoyu He, Xiaohui Xie, Xin Wang, Lei Zhang, Kun Xie, Lin Chen, Yong Cui
-- **解读**: 基于 NetFlow 的 DDoS 检测被 ISP 广泛用于上游多点场景抗洪泛攻击，但 NetFlow 非即时性（路由器聚合一段时间后才上报）带来固有检测延迟；现有工作聚焦路由器端上报优化，需软硬件升级、部署成本高。论文提出 FlowSentry，在服务器端加速攻击识别：采用双层过滤范式处理高频记录，含 ADWindow（基于 sketch 的滑动窗口，保留可能异常信息、滤除良性流以降低计算开销）与 STAnalyzer（利用跨路由器流量相关性从部分上报中高效推断异常增长模式）。模拟骨干网实验表明准确率更优且延迟较现有方法降低最多 65.63%。
-
-
-### 1BIT: Persistent Path Validation with Customized Noise Signal Characteristics.
-- **作者**: Keji Miao, Jie Yuan, Xinghai Wei, Xingwu Wang, Dongqi Han, Haiguang Wang, Runshan Hu, Xiaoyong Li, Zitong Jin, Wenqi Chen
-- **解读**: 路径感知网络允许发送方选择或影响传输路径，需路径验证机制支撑，但现有方法在安全、协议头开销与计算成本之间存在“三难”权衡。受持久零信任架构启发，论文提出 1BIT 协议：开销降低 57% 以上且数据流安全鲁棒，故障检测需求降低 72% 且位置可精确定位；仅用哈希与少量二进制运算即可获得高吞吐，16 核 CPU 上可处理超过 100 Gbps。
-
-
-### RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox.
-- **作者**: Xiang Li, Mingming Zhang, Zuyao Xu, Fasheng Miao, Yuqi Qiu, Baojun Liu, Jia Zhang, Xiaofeng Zheng, Haixin Duan, Zheli Liu, Yunhai Zhang, Dunqiu Fan
-- **解读**: DNS 缓存投毒攻防持续多年，但尚无工作系统重审基于生日悖论的经典攻击是否仍然有效；论文提出 RebirthDay，针对递归解析器与转发器，利用新发现的、符合协议规范的扩展实现缺陷（如 ECS 选项处理中缺乏或不正确的连贯性检查）绕过旨在防攻击的查询聚合机制。22 款主流软件中 18 款易受攻击，影响 16 个路由器厂商、14 个公共服务与 36.5 万个（15%）开放解析器；已获 BIND、Unbound、PowerDNS、Quad9 等 8 个厂商确认并分配 50 个 CVE 编号。
-
-
-### 5G-RNAKA : A Random Number-based Authentication and Key Agreement Protocol for 5G Systems.
-- **作者**: Hui Li, Haotian Li, Chi Ma, Jingjing Guan, Junchi Zeng, Haonan Feng, Ziming Zhao
-- **解读**: 3GPP 定义的 5G-AKA 协议存在可链接性、同步失败、序列号（SQN）暴露等攻击，威胁用户隐私与服务可用性，而现有改进多沿用 3G 遗留的 SQN 机制，保留缺陷或带来高开销。论文提出 5G-RNAKA：消除计数器，改用 USIM/UE 生成的随机数做会话标识，并将该随机数嵌入网络回复消息以抵御针对 UE 的重放攻击；移除 SQN 机制增强抗链接性，同时支持 UE 认证服务网络（SN）、缓解 SN 冒充。用 Tamarin Prover 形式验证隐私、认证与保密目标，实现评估显示通信效率提升、存储开销降低，其特性也与 6G 演进趋势契合。
-
-
-### Discovering and Exploiting IoT Device Hidden Attributes: A New Vulnerability in Smart Homes.
-- **作者**: Xuening Xu, Chenglong Fu, Xiaojiang Du, Bo Luo
-- **解读**: 论文研究智能家居中 IoT 设备的隐藏属性，发现并利用这一新型漏洞。「（无摘要，据标题推断）」
-
-
-### MM4flow: A Pre-trained Multi-modal Model for Versatile Network Traffic Analysis.
-- **作者**: Luming Yang, Lin Liu, Junjie Huang, Zhuotao Liu, Shiyu Liang, Shaojing Fu, Yongjun Wang
-- **解读**: 网络流量分析中单模态方法对不同任务的适应性不足，且既有预训练仅用 GB 级流量易过拟合；论文提出多模态模型 MM4flow，将流量流分为原始字节流与传输模式两种模态，分别封装内容与行为信息。MM4flow 采用单模态预训练加微调的流程，开发高效采集方案实现 TB 级预训练（真实流量超 70 TB），为每种模态用适配流量的改进 BERT 预训练，下游用基于交叉注意力的模态融合模块整合双模态线索、仅需少量标注数据。在六个公开数据集上精度优于基线，加密隧道下网站识别较单模态模型提升 84%，并显著降低训练数据依赖。
-
-
-### Sylva: Tailoring Personalized Adversarial Defense in Pre-trained Models via Collaborative Fine-tuning.
-- **作者**: Tianyu Qi, Lei Xue, Yufeng Zhan, Xiaobo Ma
-- **解读**: 边缘计算中预训练模型推理广泛部署于移动端，设备易受直接对抗攻击；联邦对抗训练（FAT）可在保护隐私的同时提升鲁棒性，但常产生泛化的全局模型，难应对客户端异构数据分布、个性化不足且通信开销大。论文提出 Sylva 两阶段协作框架：阶段 1 用 LoRA 本地微调实现个性化，仅上传 LoRA 参数进行联邦聚合以大幅降低通信成本；阶段 2 引入基于博弈的层选择策略在良性数据准确率上进一步精化模型，为每个客户端提供平衡的定制防御。基准数据集上效率较最先进算法提升最高 50 倍，准确率提升 29.5% 与 50.4%。
-
-
-### Unmask Tampering: Efficient Document Tampering Localization under Recapturing Attacks with Real Distortion Knowledge.
-- **作者**: Changsheng Chen, Wenyu Chen, Yinyin Lin, Bin Li, Jiwu Huang
-- **解读**: 论文针对重拍攻击（recapturing attacks）场景，利用真实畸变知识高效定位文档篡改区域。「（无摘要，据标题推断）」
-
-
-### RAG-WM: An Efficient Black-Box Watermarking Approach for Retrieval-Augmented Generation of Large Language Models.
-- **作者**: Peizhuo Lv, Mengjie Sun, Hao Wang, XiaoFeng Wang, Shengzhi Zhang, Yuxuan Chen, Kai Chen, Limin Sun
-- **arXiv PDF**: [RAG-WM: An Efficient Black-Box Watermarking Approach for Retrieval-Augmented Generation of Large Language Models.](https://arxiv.org/pdf/2501.05249)
-- **解读**: RAG 广泛用于领域特定、知识密集与隐私敏感任务，但存在被窃取部署或商业化的知识产权（IP）侵权风险；现有数据库水印需白盒访问不适用于 RAG 知识库，且对手 LLM 的后处理会破坏文本水印。论文提出黑盒“知识水印”方案 RAG-WM：采用多 LLM 交互框架（水印生成器、影子 LLM/RAG、判别器），基于实体-关系元组生成文本注入目标 RAG。在三个领域、两个任务、四个基准 LLM 上验证其能有效检测被窃取的 RAG，对释义、无关内容移除、插入、扩展等攻击鲁棒，且能规避检测方法。
-
-
-### Membership Inference Attacks as Privacy Tools: Reliability, Disparity and Ensemble.
+- **方向**: AI/ML安全
+- **解读**: 依赖不可信数据训练使机器学习模型易受后门攻击——攻击者投毒训练数据以植入隐藏行为；现有防御在日益隐蔽的攻击（尤其是干净标签 clean-label 攻击）面前失效，根源在于无法监测单个样本对模型更新的细粒度影响。
+- 论文提出 PoisonSpot，通过训练溯源（provenance tracking）精确检测后门攻击，灵感来自动态污点追踪：捕获并分析训练全过程中的参数更新，依据"血统"（lineage）为可疑样本归因污染分数，从而准确定位并剔除携带触发器的样本。
+- 摘要未给出量化数据（原文截断）；结论是在多个基准数据集与攻击场景下，PoisonSpot 的检测性能优于现有最先进方法。
+- 把动态污点追踪的思想引入训练过程溯源，从"样本→参数更新"的细粒度归因角度检测后门，机制新颖且直击干净标签攻击的隐蔽性；污染分数的可解释性（能指出具体可疑样本）是实用优势；大规模模型上参数更新追踪的计算开销、对分布内良性样本误报的控制，以及与现有后门防御（如频谱分析、激活聚类）的实测对比有待原文数据。
+
+
+#### Sylva: Tailoring Personalized Adversarial Defense in Pre-trained Models via Collaborative Fine-tuning.
+- **作者**: Tianyu Qi; Lei Xue; Yufeng Zhan; Xiaobo Ma
+- **方向**: AI/ML安全
+- **解读**:
+大型预训练模型在边缘计算中的普及使移动端模型推理变得实用，但这些设备上的模型天然易受对抗样本攻击，严重威胁部署模型的鲁棒性与安全性。联邦对抗训练（FAT）被视为兼顾隐私保护的防御手段，但往往只产出泛化的全局模型，难以应对各客户端异构的数据分布，个性化防御不足，且训练过程存在通信开销问题。
+Sylva 提出一个协作微调框架，为每个客户端定制化防御。框架采用两阶段设计：第一阶段（如联合对抗预训练/初始化）建立共享的鲁棒基础，第二阶段针对各客户端本地数据分布进行个性化适配，在保留联邦隐私约束的同时提升每端模型的对抗鲁棒性。
+摘要未给出量化结果，其主张是通过两阶段协作微调平衡"全局共享知识"与"局部个性化需求"，缓解 FAT 泛化模型在异构数据下防御不足的问题，同时优化通信效率。
+我的思考：个性化鲁棒性是联邦对抗训练被长期忽视的维度——真实移动端数据分布差异巨大，一刀切的全局模型必然对部分用户防御失效。Sylva 的两阶段思路与个性化联邦学习（pFL）技术脉络一脉相承，方向正确。但对抗鲁棒性与准确率之间的固有权衡、个性化程度与隐私保护的张力（个性化越细，越可能泄露本地分布信息）都需实验回答；摘要未披露任何数字，贡献成色有待正文验证。
+
+
+#### Membership Inference Attacks as Privacy Tools: Reliability, Disparity and Ensemble.
 - **作者**: Zhiqi Wang, Chengyu Zhang, Yuetian Chen, Nathalie Baracaldo, Swanand Ravindra Kadhe, Lei Yu
+- **方向**: AI/ML安全
+- **解读**:
+
+成员推断攻击（MIA）被广泛用作隐私评估、审计与机器遗忘验证工具，但研究几乎只关注AUC、准确率、TPR@low FPR等聚合指标，忽视了攻击间的差异：在CIFAR-10低FPR（0.1）下，LiRA、Loss Trajectory、Reference等不同攻击检测到的成员集重叠极小，同一攻击（如Class-NN）不同随机种子实例的检测结果也差异巨大。仅依赖单一"最强"攻击或单一实例评估，可能漏报真实隐私风险。
+
+方法上，论文提出基于覆盖度与稳定性分析的框架，系统量化攻击方法间与攻击实例间的差异；分析各MIA依赖的信号特征与随机性来源（数据划分、影子模型训练、初始化等），揭示不同攻击聚焦不同特征样本；进而提出集成框架，包含覆盖导向、稳定性导向、多数投票导向三种策略，组合多随机实例与多攻击方法。
+
+在CIFAR-10上与最强单一MIA相比，集成将ROC AUC与平衡准确率分别提升36%和24%，TPR@0.1% FPR提高5倍；还评估了降低集成计算成本的实用策略。这些结果反证了论文提出的三个问题：表现"较弱"但差异大的攻击仍能发现被其他攻击忽略的风险样本。
+
+我的思考：贡献成色在于把MIA评估从"指标竞赛"转向"可靠性科学"，覆盖/稳定性框架与三策略集成既有方法论价值又实用，36%/24%/5倍的提升可观；局限是集成成本随攻击数量增长，分析主要基于CIFAR-10等基准数据集，对大规模真实模型（如LLM）的差异结构仍需验证。领域影响上，该工作直接挑战用单一MIA做隐私审计与遗忘验证的通行做法，推动更严谨的隐私评估协议；与单纯追求更高AUC的新攻击相比，它为MIA研究提供了评价维度上的反思。
+
 - **arXiv PDF**: [Membership Inference Attacks as Privacy Tools: Reliability, Disparity and Ensemble.](https://arxiv.org/pdf/2506.13972)
-- **解读**: 成员推断攻击（MIA）威胁模型隐私，并被广泛用作评估、审计、遗忘等隐私工具；先前研究多聚焦 AUC、准确率、TPR@low FPR 等性能指标，忽视了不同攻击之间及同一方法不同实例之间的差异，影响 MIA 作为评估工具的可靠性与完整性。论文用基于覆盖度与稳定性分析的新框架系统研究这些差异、成因及其对评估的影响，并提出含三种策略的集成方法综合最先进攻击优势。这不仅构建了更强的攻击，也提供更稳健、全面的评估方法。
+
+#### On Hyperparameters and Backdoor-Resistance in Horizontal Federated Learning.
+- **作者**: Simon Lachnit; Ghassan Karame
+- **方向**: AI/ML安全
+- **解读**:
+横向联邦学习（HFL）对后门攻击尤为脆弱——对手可同时操纵训练数据与训练流程来实施复杂攻击。本文研究超参数选择对 HFL 中后门防御有效性的影响，这是一个长期被社区忽视的系统性因素。
+作者通过分析论证与测量实验表明：良性客户端超参数的选择不仅影响模型精度，也显著影响后门攻击成功率。这与 HFL 安全领域大量文献形成鲜明对比——后者常依赖自定义、特设的客户端超参数设置，导致防御强度被夸大、攻击成功率被低估。
+研究结果表明，正确调节客户端超参数（如学习率、批大小、本地训练轮数）可以显著抑制后门攻击；反过来说，既有防御论文中"恰好有利"的超参数选择可能系统性高估了防御效果。
+我的思考：这是对联邦学习安全评估可信度的一次重要"审计"——实验结果的可复现性与公平性高度依赖超参数，而社区常无意识地把超参数调成对己方防御有利的形态。其"测量 + 分析"的方法论可操作性强，结论对后续 HFL 安全论文的实验规范有纠偏价值。局限：超参数影响的具体机理（如本地轮数如何影响恶意梯度聚合）需要更细的归因，且结论对具体聚合规则（FedAvg 及其变体）的依赖程度有待明确。
 
 
-### Prompt Inference Attack on Distributed Large Language Model Inference Frameworks.
-- **作者**: Xinjian Luo, Ting Yu, Xiaokui Xiao
-- **arXiv PDF**: [Prompt Inference Attack on Distributed Large Language Model Inference Frameworks.](https://arxiv.org/pdf/2503.09291)
-- **解读**: 论文研究针对分布式大语言模型推理框架的提示词（prompt）推断攻击。「（无摘要，据标题推断）」
-
-
-### Differentially Private Access in Encrypted Search: Achieving Privacy at a Small Cost?
-- **作者**: Daniel Pöllmann, Tianxin Tang
-- **解读**: 加密搜索在保护外包数据的同时仍泄漏查询与数据信息，访问模式等泄漏已被泄漏滥用攻击利用以恢复数据，研究重心转向在隐私与性能间寻找平衡；用 ORAM 等结构隐藏访问模式的方案带宽成本高昂。论文研究在加密搜索中引入差分隐私的访问（differentially private access），探讨以较小成本实现隐私。
-
-
-### Silent Threshold Traitor Tracing & Enhancing Mempool Privacy.
-- **作者**: Anirban Chakrabarti, Monosij Maitra, Arup Mondal, Kushaz Sehgal
-- **解读**: DeFi 中加密货币与区块链的商业化使资源雄厚的对手可通过多种最大可提取价值（MEV）策略操纵市场，用户希望在交易执行前隐藏交易细节，待处理交易池（mempool）的隐私因此成为重要目标，去中心化门限加密（TE）系统近期被证明尤为有效。论文提出静默门限叛徒追踪（silent threshold traitor tracing）方案并用于增强 mempool 隐私。
-
-
-### PULSE: Parallel Private Set Union for Large-Scale Entities.
-- **作者**: Jiahui Gao, Son Nguyen, Marina Blanton, Ni Trieu
-- **解读**: 多方私有集合并集（mPSU）允许多方计算输入集合并集而不泄露额外信息；现有高效协议分为基于对称密钥加密（SKE）与基于公钥加密（PKE）两类，但在参与方众多时都不能充分利用计算资源，各阶段存在参与者闲置。论文提出 PULSE，面向大规模参与方的并行私有集合并集协议。
-
-
-### Velox: Scalable Fair Asynchronous MPC from Lightweight Cryptography.
-- **作者**: Akhil Bandarupalli, Xiaoyu Ji, Aniket Kate, Chen-Da Liu-Zhang, Daniel Pöllmann, Yifan Song
-- **解读**: 多数 MPC 库或假设有界同步网络，或因大量公钥运算开销难以扩展到几十方以上；论文提出 Velox 异步 MPC 协议，在对手控制 < n/3 方时实现最优公平性，利用对称密钥加密与哈希等轻量密码原语（比公钥运算快 2-3 个数量级），通信高度高效：相对电路规模线性摊销，仅 O(n³) 域元素附加开销，每方每乘法门仅需 9.33 个域元素、较最先进降低 10 倍以上，且原语保留后量子安全性。在地理分布测试床与广播应用上完整实现并评估：16-64 方下 256 条消息洗牌 4 秒完成，延迟较先前最优低 36 倍/28.6 倍，112 方时 50 秒内完成。
-
-
-### How to Recover a Cryptographic Secret From the Cloud.
-- **作者**: David Adei, Chris Orsini, Alessandra Scafuro, Tanner Verber
-- **解读**: 云端存储密码学秘密（如加密钱包）等于与云共享所有权、使其更吸引内部攻击，但云又提供强可用性与可靠性；论文希望兼得二者：用户 Alice 可方便地在云中存储秘密副本、只有她能恢复，即使丢失设备、忘记全部凭据也不失去秘密机密性。论文提出基于可信执行环境（TEE）的云上秘密恢复机制，机密性始终保证——即使面对恶意配置的 TEE（Alice 仍持有某些信息时），区别于依赖用户记得认证秘密的先前工作。安全性在通用可组合（UC）框架下证明，并实现了协议评估性能。
-
-
-### ML-Cube: Accelerating Module-Lattice-Based Cryptography using Machine Learning Accelerators with a Memory-Less Design.
-- **作者**: Tian Zhou, Fangyu Zheng, Zhuoyu Xie, Wenxu Tang, Guang Fan, Yijing Ning, Yi Bian, Jingqiang Lin, Jiwu Jing
-- **解读**: ML 加速器性能吸引密码学研究者用于加速密码运算，但将其当作黑盒会导致高延迟与严格并发要求、阻碍实际部署；论文深入剖析加速器内部运行机制，提出无内存（memory-less）框架 ML-Cube（ML3）实现模格后量子密码（FIPS 203 ML-KEM 与 204 ML-DSA）：设计定制数学变换加速 (I)NTT 多项式乘法、最小化外部内存依赖，并全面并行化两个方案。Tensor Core 实现较优化 CUDA-core 实现提速 2.03–3.56 倍，相对最先进（CHES'24）提速 10 倍且功耗不足其十分之一，服务器模型下吞吐较 TDSC'24 方法提升 30–55%；核心计算限制在寄存器内，天然缓解缓存侧信道泄露。
-
-
-### NodeShield: Runtime Enforcement of Security-Enhanced SBOMs for Node.js.
-- **作者**: Eric Cornelissen, Musard Balliu
-- **arXiv PDF**: [NodeShield: Runtime Enforcement of Security-Enhanced SBOMs for Node.js.](https://arxiv.org/pdf/2508.13750)
-- **解读**: 软件供应链是日益常见的攻击向量，Node.js 生态因其规模与流行度遭受大量攻击；研究界与业界提出过进程/语言级沙箱、权限系统、污点跟踪等静态与动态机制。论文在此基础上研究 Node.js 应用的安全增强 SBOM（软件物料清单）的运行时强制机制，目标兼顾兼容性、自动化、最小开销与策略简洁。
-
-
-### Passwords and FIDO2 Are Meant To Be Secret: A Practical Secure Authentication Channel for Web Browsers.
-- **作者**: Anuj Gautam, Tarun Kumar Yadav, Garrett Smith, Kent E. Seamons, Scott Ruoti
-- **解读**: 密码管理器自动填充后，恶意客户端脚本与浏览器扩展仍可从网页窃取密码；论文扩展 Stock 与 Johns 的先前工作，展示如何加固密码自动填充以抵御这类本地攻击。在 Firefox 中实现并实验验证该防御能有效抵御 XSS 与扩展攻击，且与 Alexa 前 1000 网站中 97% 兼容；随后推广该设计，提出抵御针对 FIDO2 协议近期攻击的第二套机制，兼容所有网站，仅需 FIDO2 服务器端 2-3 行小改动。
-
-
-### Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications.
-- **作者**: Qiyi Zhang, Fengyu Liu, Zihan Lin, Yuan Zhang
-- **解读**: 基于 URL 的认证通过 URL 路径集中灵活地保护 Java Web 应用敏感资源，但不同组件对路由特性（如移除 /./）处理不一致可被利用绕过检查，造成认证绕过漏洞（UABVulns），使攻击者无需认证即可访问。论文对 53 个真实 UABVuln 做首次深入研究，揭示根因并给出路由与清洗方面的三项关键发现，据此实现基于模式分析的静态检测工具 UABScan。在 529 个流行应用中发现 94 个漏洞（涉及 72 个应用，含 35 个已核实的高危 0-day），人工核查召回率 87.50%、精确率 80.00%，显著优于最先进工具，已获 31 个 CVE 编号。
-
-
-### Same Script, Different Behavior: Characterizing Divergent JavaScript Execution Across Different Device Platforms.
-- **作者**: Ahsan Zafar, Junhua Su, Sohom Datta, Alexandros Kapravelos, Anupam Das
-- **解读**: 论文刻画同一 JavaScript 脚本在不同设备平台上执行行为的分化现象及其安全影响。「（无摘要，据标题推断）」
-
-
-### Conflicting Scores, Confusing Signals: An Empirical Study of Vulnerability Scoring Systems.
-- **作者**: Viktoria Koscinski, Mark Nelson, Ahmet Okutan, Robert Falso, Mehdi Mirakhorli
-- **解读**: 漏洞评估对优先级排序与修复至关重要，但各评分系统目标、方法与输出不同，常导致决策不一致；论文首次对四种公开漏洞评分系统（CVSS、SSVC、EPSS 与 Exploitability Index）做大规模、与结果关联的实证比较，使用来自微软 Patch Tuesday 披露的 600 个真实漏洞数据集，考察评分间关系、各系统分诊层级分类与对利用风险的捕捉能力。研究发现同一漏洞的评分排序存在显著差异，揭示系统间的一致与分歧，并强调组织依赖这些指标做数据驱动、基于风险决策时的含义。
-
-
-### On Hyperparameters and Backdoor-Resistance in Horizontal Federated Learning.
-- **作者**: Simon Lachnit, Ghassan Karame
-- **解读**: 水平联邦学习（HFL）易受后门攻击，对手可操纵训练数据与过程实施复杂攻击；论文研究超参数对 HFL 防御有效性的影响，分析并实测表明良性客户端的超参数选择不仅影响模型精度，还显著影响攻击成功率，与许多依赖自定义临时超参数设置的安全研究形成鲜明对比。结果显示恰当调优客户端超参数（如学习率、批大小、本地轮数）可遏制攻击：例如 50% 生命周期的强 A3FL 后门成功率可降低 98.6%，全程无需任何防御，干净精度仅下降 2.9 个百分点。
-
-
-### Empowering Parents to Support Children's Online Security and Privacy: Findings from a Randomized Controlled Trial.
-- **作者**: Xiaowei Chen, Verena Distler, Chloe Gordon, Yaxing Yao, Ziwen Teuber
-- **解读**: 泛在计算时代，家长常依赖在线资源指导孩子的安全与隐私（S&P）议题，但信息过载使找到高质量、契合需求的内容颇具挑战，家长能力与应对策略的纵向发展也缺乏研究。论文通过随机对照试验（RCT）检验支持家长提升儿童在线安全与隐私能力的干预效果。
-
-
-### Security and Privacy Perceptions of Pakistani Facebook Matrimony Group Users.
-- **作者**: Mah Jan Dorazahi, Deepthi Mungara, Yasemin Acar, Harshini Sri Ramulu
-- **arXiv PDF**: [Security and Privacy Perceptions of Pakistani Facebook Matrimony Group Users.](https://arxiv.org/pdf/2509.08782)
-- **解读**: 巴基斯坦婚恋应用受审查，Facebook 婚恋群组成为成员寻找伴侣的替代虚拟空间，但参与者常分享照片、地址、电话号码等敏感信息，暴露于欺诈、勒索与身份盗窃风险。论文通过 23 次半结构化访谈，探究巴基斯坦婚恋群组用户的安全与隐私认知：他们如何感知风险、什么影响其分享信息的信任，以及文化规范与期望如何塑造群组内行为，为更好地保护这类用户提供依据。
-
-
-### DiveFuzz: Enhancing CPU Fuzzing via Diverse Instruction Construction.
-- **作者**: Zihui Guo, Miaomiao Yuan, Yanqi Yang, Liwei Chen, Gang Shi, Dan Meng
-- **解读**: CPU 模糊测试中对架构状态的全面探索有赖于生成多样测试用例（合理的操作码分布与指令执行结果多样性），但最先进 fuzzer 存在数据重复率高、操作码失衡的问题。论文提出 DiveFuzz：运行时细粒度控制指令操作数并结合关联上下文语义，生成具有语义关联的指令流，并引入变异器监视进程动态调整、消除误报。在五个常用覆盖度量下较 DifuzzRTL 快 204 倍、较 Cascade 快 114 倍；在 XiangShan、CVA6、Rocket、NutShell 四个开源 RISC-V CPU 上发现 26 个新缺陷（15 个已获 CVE 编号）。
-
-
-### Threat from Windshield: Vehicle Windows as Involuntary Attack Sources on Automotive Voice Assistants.
-- **作者**: Penghao Wang, Shuo Huai, Yetong Cao, Chao Liu, Jun Luo
-- **解读**: 车载语音助手（AVA）对利用不可听声音的攻击存在脆弱性，但通常认为攻击者难以从车内发起攻击（信号几乎无法穿透车体、且需声音源与麦克风间存在视线），相关担忧被视为低优先级。论文反驳该共识，提出 ShieldSpear 从车外攻击 AVA：在挡风玻璃外侧放置微型压电元件将其转化为扬声器（兼作麦克风），元件紧凑集成可伪装成贴纸实现隐蔽，具备视线麦克风与行驶中实时攻击能力；并利用玻璃转化的麦克风采集驾驶员声纹以伪造语音命令。在五款主流车辆上的实验表明端到端注入命令成功率 90.9%。
-
-
-### mUOV: Masking the Unbalanced Oil and Vinegar Digital Signature Scheme at First- and Higher-Order.
-- **作者**: Suparna Kundu, Quinten Norga, Angshuman Karmakar, Uttam Kumar Ojha, Anindya Ganguly, Ingrid Verbauwhede
-- **解读**: 多变量二次方程（MQE）后量子签名因签名体积小受关注，不平衡油醋签名（UOV）是二十余年前提出的 MQE 方案，其数学安全性已被充分分析，但实际侧信道攻击（SCA）已在多种签名方案上得到展示。论文分析 UOV 方案中可被被动侧信道（差分功耗分析 DPA）利用的变量，并引入掩码对策：为点积、矩阵-向量乘等全部关键运算设计高效掩码 gadget，在 t-探测模型下给出形式证明并经 maskVerif 机械化验证。实现验证了 UOV-Ip 与 UOV-III 的一阶与任意高阶掩码可行性，签名生成性能较 ML-DSA-44 好最多 62%、较 Falcon-512 好 99%，并采用 TVLA 方法实测验证。
-
-
-### Security-Aware Sensor Fusion with MATE: the Multi-Agent Trust Estimator.
-- **作者**: R. Spencer Hallyburton, Miroslav Pajic
-- **arXiv PDF**: [Security-Aware Sensor Fusion with MATE: the Multi-Agent Trust Estimator.](https://arxiv.org/pdf/2503.04954)
-- **解读**: 论文提出 MATE（多智能体信任估计器），实现安全感知的传感器融合。「（无摘要，据标题推断）」
-
-
-### Adversarially Robust Assembly Language Model for Packed Executables Detection.
-- **作者**: Shijia Li, Jiang Ming, Lanqing Liu, Longwei Yang, Ni Zhang, Chunfu Jia
-- **arXiv PDF**: [Adversarially Robust Assembly Language Model for Packed Executables Detection.](https://arxiv.org/pdf/2509.15499)
-- **解读**: 加壳可执行文件检测是大规模恶意软件分析与杀毒引擎流程的关键环节，用于筛选需要动态脱壳的样本；传统方法依赖高熵、特定二进制模式等经验特征，但这类特征方法日益易被对抗性未知加壳器（如低熵加壳器）规避，且依赖专家特征难以随演化持续。论文提出基于汇编语言模型（assembly language model）的加壳检测方法，面向对抗鲁棒性。
-
-
-### BLACKOUT: Data-Oblivious Computation with Blinded Capabilities.
-- **作者**: Hossam ElAtali, Merve Gülmez, Thomas Nyman, N. Asokan
-- **arXiv PDF**: [BLACKOUT: Data-Oblivious Computation with Blinded Capabilities.](https://arxiv.org/pdf/2504.14654)
-- **解读**: 内存安全缺失与侧信道暴露是安全软件实现的两大持久挑战，内存安全语言能显著减少内存缺陷但使抗侧信道代码更难编写；论文通过为内存安全硬件补充数据无关（data-oblivious）编程能力，同时应对两者：扩展 CHERI 能力架构引入盲化能力（blinded capabilities），支持用户态任务中的数据无关计算，并给出在基于推测乱序 CHERI-Toooba 的 FPGA 软核上的实现 BLACKOUT，扩展了 CHERI 版 Clang/LLVM 编译器与 CheriBSD 操作系统。BLACKOUT 使非数据无关操作显式触发故障、简化编码；评估表明其保障内存经安全分配、使用与回收，且相对基线处理器仅带来 1.5%（几何均值）的性能损失。
-
-
-### Needle in a Haystack: Automated and Scalable Vulnerability Hunting in the Windows ALPC Sea.
-- **作者**: Haoyi Liu, Feng Dong, Yunpeng Tian, Mu Zhang, Xuefeng Li, Fangming Gu, Zhiniang Peng, Haoyu Wang
-- **解读**: Windows 服务经底层高级本地过程调用（ALPC）传输上的 RPC 与 COM 通信，构成显著攻击面；但先前研究多聚焦已知漏洞模式或需耗时逆向工程，阻碍规模化发现。论文开发自动化、可扩展的 ALPC 通信模糊测试工具：采用录制-重放策略捕获全系统实时流量并在 ALPC 层直接重放变异载荷，绕开传统方法手工准备的瓶颈，并集成专门检测技术识别崩溃中心 fuzzer 遗漏的信息泄露漏洞。在多个操作系统版本上评估后确认 12 个微软确认的漏洞（10 个已分配 CVE 编号）。
-
-
-### Styled to Steal: The Overlooked Attack Surface in Email Clients.
-- **作者**: Leon Trampert, Daniel Weber, Christian Rossow, Michael Schwarz
-- **解读**: 电子邮件仍是广泛使用的通信媒介，OpenPGP 与 S/MIME 等标准在兼容现有设施的同时提供加密；在端到端威胁模型中邮件服务器不可信，攻击者可在传输中或通过重发泄露邮件向加密邮件注入恶意 HTML 或 CSS。论文研究这一被忽视的邮件客户端攻击面。
-
-
-### Denial of Sequencing Attacks in Ethereum Layer 2 Rollups.
-- **作者**: Zihao Li, Zhiyuan Sun, Zheyuan He, Jinzhao Chu, Hao Zhou, Xiapu Luo, Ting Chen, Yinqian Zhang
-- **解读**: Layer 2 rollup 是解决以太坊可扩展性的有前景方案，但其中定序器（sequencer）的中心化特性使其易受拒绝服务攻击：敌手以大量无法入块的无效交易压制定序器，耗尽交易处理计算资源；为缓解该威胁，Layer 2 实现合法性检查机制在交易到达定序器前过滤。论文研究此类拒绝排序（denial of sequencing）攻击及其缓解。
-
-
-### Realizing Corrupted-Shard Tolerance: A Sharding Blockchain with Preserving Global Resilience.
-- **作者**: Yizhong Liu, Andi Liu, Zhuocheng Pan, Yuxuan Hu, Jianwei Liu, Song Bian, Yuan Lu, Zhenyu Guan, Dawei Li, Meikang Qiu
-- **解读**: 区块链分片通过将网络划分为并行小分片提升可扩展性，但依赖拜占庭容错协议的现有方案需要大分片满足严格安全阈值、限制扩展性，放松参数又会导致活性与安全性违例。论文提出 Camael，通过有效的检测与处理机制实现受损分片容忍：两阶段报告确认机制准确检测恶意节点伪造的虚假违例，轻量快照机制高效识别隐藏违例，状态确定过程保证全局一致性，恶意节点可被精准定罪并触发定向替换重配。Camael 保持全局 1/3 容错的同时可容忍受损分片（每分片最多 2/3 恶意节点）；2000 个 AWS EC2（4 个区域）实验显示吞吐较 Kronos（NDSS'25）提升 3.56 倍（109.3 ktx/s），违例处理仅需 1.64 秒。
-
-
-### Lite-PoT: Practical Powers-of-Tau Setup Ceremony.
-- **作者**: Lucien K. L. Ng, Pedro Moreno-Sanchez, Mohsen Minaei, Panagiotis Chatzigiannis, Adithya Bhat, Duc Viet Le
-- **arXiv PDF**: [Lite-PoT: Practical Powers-of-Tau Setup Ceremony.](https://arxiv.org/pdf/2503.04549)
-- **解读**: zk-SNARK 因高效性在隐私保护应用、去中心化系统（如区块链）与可验证计算中得到广泛应用，但最高效的 zk-SNARK 常依赖一次性可信设置生成公共参数（Powers-of-Tau 字符串）；τ 秘密参数一旦泄露，攻击者可伪造证明，破坏所有基于它的 zk-SNARK 的可靠性。论文提出 Lite-PoT，使 Powers-of-Tau 设置仪式更实用。
-
-### A Secure Sequencer and Data Availability Committee for Rollups.
-- **作者**: Margarita Capretto, Martín Ceresa, Antonio Fernández Anta, Pedro Moreno-Sanchez, César Sánchez
-- **arXiv PDF**: [A Secure Sequencer and Data Availability Committee for Rollups.](https://arxiv.org/pdf/2509.06614)
-- **解读**: Rollup 依赖排序器（sequencer）与数据可用性委员会（DAC）分别保障交易排序与数据可获取性，二者若作恶或故障将威胁二层网络的正确性；本文研究如何为这两个组件设计安全协议，以抵御恶意行为并保证系统可靠性。（无摘要，据标题推断）
-
-
-### Safeguarding Graph Neural Networks against Topology Inference Attacks.
+#### Safeguarding Graph Neural Networks against Topology Inference Attacks.
 - **作者**: Jie Fu, Yuan Hong, Zhili Chen, Wendy Hui Wang
+- **方向**: AI/ML安全
+- **解读**: **问题**：GNN 隐私研究长期聚焦边级隐私（推断单条边是否存在），而图的整体拓扑——节点与连接的整体结构——泄露的信息远超个别边，可暴露脆弱社群、定位关键人物等敏感关系。作者首次系统研究拓扑级隐私：仅黑盒访问 GNN 模型即可重构训练图结构，且现有边级差分隐私机制无法抵御。
+
+**方法**：提出三类拓扑推断攻击（TIA）：M-TIA 按节点后验概率向量的距离度量取 Top-K_A 相似对、C-TIA 复用 LMIA 分类器按置信度取 Top-K_A、I-TIA 采用 Link-Infiltrator 的成对影响分数；以 Jaccard 相似度定义拓扑隐私泄露（TPL）指标，评估 6 种边级 DP 方法；防御 PGR 将"合成图与训练图边集不相交、且其上训练的 GNN 性能逼近原模型"建模为双层优化，用元梯度（单步截断反传）迭代重构合成图，并扩展 DP-PGR 提供边级 DP 保证。
+
+**结果**：无防御时 I-TIA 在所有数据集上 TPL 达 100%（M-TIA 17.6%–28.1%、C-TIA 10.7%–25.5%）；6 种边级 DP 要么压不住泄露（LapEdge/EdgeRand 的 I-TIA TPL 仍高达 95%+），要么严重损毁效用（GAP 把 Cora 精度从 83.38% 降到 59.43%）；PGR 把 I-TIA 的 TPL 从约 100% 压到 Cora/Citeseer ≤5%、Emory 约 10%，精度损失最大 0.87%（个别情况反升 0.12%）；面对知情自适应攻击 PGR-TIA，TPL 增幅不超过 0.4%；大图场景 I-TIA TPL 降至 0.04%–0.13%，并把边级推断攻击 Infiltrator 精度压到约 50%（随机猜测）。
+
+**我的思考**：首个系统研究 GNN 拓扑级隐私的攻防工作，有力证明"边级安全 ≠ 拓扑安全"；I-TIA 之所以 100% 泄露，在于影响分数与 GNN 消息传递机制天然对齐；PGR 以近乎零效用代价重构出不相交边集，思想新颖且代码开源。局限：主实验基于 100 节点子图、假设攻击者已知边数 K_A、防御效果随图密度下降（稠密的 Emory 最差）、PGR 需先训练原模型，且摘要（0.1%）与正文（0.87%）的精度损失表述不一。对图数据隐私研究是重要提醒。
 - **arXiv PDF**: [Safeguarding Graph Neural Networks against Topology Inference Attacks.](https://arxiv.org/pdf/2509.05429)
-- **解读**: 针对 GNN 隐私研究此前聚焦边级隐私，而图整体结构的机密性（拓扑）是未被充分探索的威胁。本文系统研究 GNN 面临的图级推断攻击风险，提出一类拓扑推断攻击（TIAs），仅凭对 GNN 模型的黑盒访问即可重构目标训练图的结构。实验表明 GNN 对此类攻击高度脆弱，且现有差分隐私机制不足——要么无法缓解风险，要么严重损害效用。
 
-
-### MoEcho: Exploiting Side-Channel Attacks to Compromise User Privacy in Mixture-of-Experts LLMs.
-- **作者**: Ruyi Ding, Tianhong Xu, Xinyi Shen, Aidong Adam Ding, Yunsi Fei
-- **arXiv PDF**: [MoEcho: Exploiting Side-Channel Attacks to Compromise User Privacy in Mixture-of-Experts LLMs.](https://arxiv.org/pdf/2508.15036)
-- **解读**: MoE（混合专家）架构按输入语义将 token 动态路由到不同专家，这种输入相关的激活模式会在硬件执行中留下独特的时空痕迹。MoEcho 利用这些侧信道痕迹推断用户输入语义，从而在推理过程中泄露用户隐私，揭示了自适应路由机制引入的新攻击面。
-
-
-### Removal Attack and Defense on AI-generated Content Latent-based Watermarking.
+#### Removal Attack and Defense on AI-generated Content Latent-based Watermarking.
 - **作者**: De Zhang Lee, Han Fang, Hanyi Wang, Ee-Chien Chang
+- **方向**: AI/ML安全
+- **解读**: **问题**：基于潜空间的 AIGC 水印（PRC、Gaussian Shading）把生成起始点从秘密分布采样，配合伪随机纠错码可做到与未水印对象不可区分且抗白噪声，但"不可区分"并不保证抗恶意移除：水印对象的位置会泄露检测边界信息（最近非水印对象的方向），攻击者据此可用远小于随机扰动的失真移除水印。
+
+**方法**：形式化 known watermark attack 威胁模型（攻击者可查询水印预言机）并定义相对白噪声基线的优势；提出 stealthy 移除攻击：按 |s_i| 升序排列潜变量，在 ℓ2 预算内翻转尽可能多的符号（翻转即改 PRC 码字位），保持高斯分布以维持画质与隐蔽性；另给出最优最小失真攻击（非隐蔽、会破坏画质）。防御是在采样后施加秘密随机正交保范变换隐藏边界，并证明当检测器满足"well-behaved"性质（码字邻域内所有点均判为水印）时，任何攻击者的扰动等价于白噪声。
+
+**结果**：翻转 5% 的比特，stealthy 攻击仅需 ℓ2≈3.0 失真，白噪声需 ≈45.0，即约 15× 缩减；各失真水平下翻转比特数比为白噪声的 5.72–9.80 倍；在 SD 2.1 的三种反演能力（精确/DDIM 带提示/DDIM 空提示）下 stealthy 成功率均超白噪声（AC3、ε=12 时 ASR 0.43 vs 0.14）且 SSIM/RMSE 更优；加防御后 stealthy 效果降为与白噪声相同；防御开销为每图约 1.1s（+8.5%）与约 1.07GB 内存。
+
+**我的思考**：首次揭示潜空间水印的"边界泄漏"并给出攻击与可证明防御，理论（well-behaved 性质 + 定理）与实验互为印证，15× 扰动缩减与隐蔽性设计很巧妙；known boundary 等更强攻击者可能恢复秘密变换，被留作未来工作；防御的 O(d²) 矩阵乘在 SDXL（d=65536）与视频生成场景成本偏高，需寻找满足条件的快速变换。对 Tree-Ring、Gaussian Shading 等潜空间水印的安全性评估有普遍警示意义。
 - **arXiv PDF**: [Removal Attack and Defense on AI-generated Content Latent-based Watermarking.](https://arxiv.org/pdf/2509.11745)
-- **解读**: 潜在空间水印通过在生成过程初始化时从秘密分布采样起点将水印嵌入 AI 生成内容，结合伪随机纠错码后与未水印对象不可区分且对白噪声鲁棒。本文表明不可区分性并不保证对对抗性移除攻击的抵抗力，提出一种利用对象位置泄露的边界信息的新型移除攻击，可将移除水印所需失真降低至多 15 倍（相对白噪声基线），并研究相应的防御措施。
 
+#### VillainNet: Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier.
 
-### VillainNet: Targeted Poisoning Attacks Against SuperNets Along the Accuracy-Latency Pareto Frontier.
 - **作者**: David Oygenblik, Abhinav Vemulapalli, Animesh Agrawal, Debopam Sanyal, Alexey Tumanov, Brendan Saltaformaggio
-- **解读**: 权重共享 SuperNet 在运行时动态激活子网络以实现自适应推理，但攻击者可利用其独特训练范式，只在特定子网络中植入后门，使其在其余数十亿子网络中保持休眠。VillainNet（VNET）提出一种受限后门激活的投毒方法，将后门限制在攻击者选择的部署场景（如车速、天气条件）或子网络配置中；其核心是基于架构与计算相似度度量的距离感知优化，确保后门不会在非目标子网络中激活。
 
+- **方向**: AI/ML安全
 
-### Efficient Fuzzy PSI Based on Prefix Representation.
-- **作者**: Chengrui Dang, Xv Zhou, Bei Liang
-- **解读**: 模糊 PSI 是 PSI 的变体：接收方与发送方分别输入点集，接收方可以学习发送方集合中在特定度量下与其点距离不超过阈值 δ 的元素。本文基于前缀表示来构造高效的模糊 PSI 协议，以降低通信与计算开销。
+- **解读**: 权重共享 SuperNet 可在运行时动态激活子网络，实现不同部署条件下的自适应推理，是高效神经网络的重要范式。但作者发现，敌手可利用其独特的训练与推理范式，只在特定子网络内选择性植入后门，而在其余海量子网络中保持休眠——这种"精准触发"的后门对传统检测手段构成全新威胁。
 
+VillainNet（VNET）是一种新型投毒方法：后门的激活被限制在攻击者选定的、与特定运行场景（如车速、天气条件）或子网络配置绑定的子结构上。其核心创新是距离感知优化过程，利用架构计算相似度指标，确保后门不会在非目标子网络中意外激活，从而迫使防御者面对急剧扩大的搜索空间。
 
-### Armadillo: Robust Single-Server Secure Aggregation for Federated Learning with Input Validation.
-- **作者**: Yiping Ma, Yue Guo, Harish Karthikeyan, Antigoni Polychroniadou
-- **解读**: Armadillo 是一个面向联邦学习（单一强服务器与众多弱客户端迭代训练）的安全聚合系统，具备对抗客户端干扰的鲁棒性：任何恶意客户端联盟只能通过在预定义合法范围内虚报其私有输入来影响聚合结果。相比既有方案（每客户端开销过高或需要对数轮交互），本文借助零知识证明技术并设计出两种更高效的新协议，其中一种简单的两层协议仅需算术级（每客户端）开销。
+在 CIFAR10 与 GTSRB 数据集上对两个 SOTA SuperNet 的评估显示：VNET 达到与传统方法相当的攻击成功率（约 99%），同时显著降低被检测概率。防御者平均需要采样 66 个子网络（高度定向攻击时最多 250 个）才能发现攻击，意味着测试 SuperNet 后门的计算成本增加约 66 倍。
 
+我的思考：该工作首次系统揭示 SuperNet 动态子网络范式的后门投毒风险，攻击面定义清晰、实验量化扎实，"休眠-激活"双态设计具有威胁建模价值。局限在于实验规模（CIFAR/GTSRB 级任务）与真实部署的差距，且投毒训练的控制力假设在开放训练场景下未必成立；防御端可研究按子网络结构分组的检测策略与训练数据净化，是后续有价值的方向。
 
-### The OCH Authenticated Encryption Scheme.
-- **作者**: Sanketh Menda, Mihir Bellare, Viet Tung Hoang, Julia Len, Thomas Ristenpart
-- **解读**: OCH 是首个同时提供 128 位多用户 AE 安全性、上下文承诺（context commitment）、256 位随机数及可选随机数隐私的带关联数据认证加密（AEAD）方案，弥补了现有广泛部署方案的局限。作者以模块化方式构造并形式化分析其安全性，所提炼的变换具有更广的适用性。在 Intel Raptor Lake CPU 上基于 Areion 置换族实现峰值速度 0.62 周期/字节，接近 AES128-GCM（0.38），优于 ChaCha20/Poly1305（1.63）与 TurboSHAKE128-Wrap（3.52）。
 
+#### Prototype Surgery: Tailoring Neural Prototypes via Soft Labels for Efficient Machine Unlearning.
 
-### From OT to OLE with Subquadratic Communication.
-- **作者**: Jack Doerner, Iftach Haitner, Yuval Ishai, Nikolaos Makriyannis
-- **解读**: 不经意线性求值（OLE）是不经意传输（OT）的代数推广：模 q 的 OLE 协议使接收方安全地计算发送方选择的直线 a·X+b 在秘密点 x∈ℤq 上的取值。鉴于 OLE 与 OT 快速扩展技术之间存在巨大效率差距，本文重新审视从 OT 归约构造 OLE 的问题，目标是改进已知归约的通信开销。
-
-
-### Interoperable Symmetric Message Franking.
-- **作者**: Carolina Ortega Pérez, Thomas Ristenpart, Julia Len
-- **解读**: 欧盟 2022 年《数字市场法》（DMA）要求大型消息应用支持可互操作的端到端加密（E2EE）通信，这引发如何在互操作场景中保持安全与隐私的密码协议适配问题，且不仅限于主协议，也涉及滥用缓解机制。本文研究对称消息 franking 协议（最初由 Facebook 提出，用于举报加密消息中的滥用内容并让平台可密码学验证举报的真实性）在互操作设置下的构造与安全。
-
-
-### Gibbon: Faster Secure Two-party Training of Gradient Boosting Decision Tree.
-- **作者**: Lichun Li, Zecheng Wu, Yuan Zhao, Zhihao Li, Wen-jie Lu, Shan Yin
-- **解读**: 面向垂直切分数据集（两方各持同一批样本的不同特征）的安全两方 GBDT 训练场景，本文提出 Gibbon 框架，基于安全多方计算（MPC）让两方在输入保密的前提下联合训练梯度提升决策树。与 SOTA 方案 Squirrel（USENIX Security '23）相比，在大多数参数设置下 Gibbon 将运行时间降低 2–4 倍、通信量降低 2–3 倍。
-
-
-### Breaking and Fixing Content-Defined Chunking.
-- **作者**: Kien Tuong Truong, Simon-Philipp Merz, Matteo Scarlata, Felix Günther, Kenneth G. Paterson
-- **解读**: 内容定义分块（CDC）以内容决定块边界、在数据部分变化时保持边界稳定的方式切分流数据，广泛用于备份、软件补丁和文件托管等去重场景。与压缩类似，CDC 与加密结合时可能引入泄露：指纹攻击可利用长度模式推断数据信息。本文对 CDC 进行安全分析——展示其脆弱性并提出修复方案。
-
-
-### Refined TFHE Leveled Homomorphic Evaluation and Its Application.
-- **作者**: Ruida Wang, Jincheol Ha, Xuan Shen, Xianhui Lu, Chunling Chen, Kunpeng Wang, Jooyoung Lee
-- **解读**: TFHE 是基于环面（torus）的、支持快速自举的全同态加密方案，其可编程自举（PBS）同时完成函数计算与噪声刷新，但操作数随电路深度指数增长。Chillotti 等人（Asiacrypt 2017）提出的 leveled（LHE）模式将计算与自举解耦，可提速数百倍，但剩余的盲旋转（CBS）虽频率线性增长，仍成为性能瓶颈。本文对 TFHE 的 leveled 同态求值进行精炼优化。
-
-
-### CCA-Secure Traceable Threshold (ID-based) Encryption and Application.
-- **作者**: Rishiraj Bhattacharyya, Jan Bormet, Sebastian Faust, Pratyay Mukherjee, Hussien Othman
-- **解读**: Boneh、Partap 与 Rotem（Crypto'24）提出可追踪门限加密：若 t 个以上参与方合谋构造可执行解密的解密盒，可通过少量黑盒查询追踪出至少一名参与方身份，可用于区块链 mempool 隐私等场景以威慑 MEV 合谋。但其定义仅达到 CPA 安全，且未考虑不同参与集合导致的不一致问题。本文构建 CCA 安全的可追踪门限（基于 ID）加密方案并给出应用。
-
-
-### High-Throughput Universally Composable Threshold FHE Decryption.
-- **作者**: Guy Zyskind, Doron Zarchy, Max Leibovich, Chris Peikert
-- **解读**: 门限全同态加密（FHE）支持对加密数据做任意计算，同时把解密能力分布到多个参与方，其主要应用之一是低通信量的多方计算（MPC）。本文研究高吞吐、通用可组合（UC）安全的门限 FHE 解密协议，为低通信 MPC 提供快速且安全的解密基础。
-
-
-### Harnessing Sparsification in Federated Learning: A Secure, Efficient, and Differentially Private Realization.
-- **作者**: Shuangqing Xu, Yifeng Zheng, Zhongyun Hua
-- **解读**: 联邦学习（FL）因传输高维梯度而存在通信瓶颈，同时共享梯度也可能被用于推断私有本地数据。本文提出 Clover 系统框架，采用 top-k 稀疏化（每客户端仅保留幅度最大的 k 个梯度分量参与聚合）缓解通信瓶颈，并在此基础上构建安全且满足差分隐私的机制（基于新兴的分布式信任设置），兼顾通信效率与隐私保护。
-
-
-### Counting Subgraphs under Shuffle Differential Privacy.
-- **作者**: Juanru Fang, Ke Yi
-- **解读**: 分布式设置（每节点仅持局部邻接信息、分析师不可信）下的子图计数是差分隐私（DP）研究热点，shuffle DP 模型依赖可信洗牌器在交给分析师前随机打乱消息。由于洗牌不引入额外风险，任何协议在 shuffle 模型下自动满足（本地）DP，关键问题在于 shuffle DP 能否带来效用提升。在若干基本问题（如计数、频率估计）已有正面结果的基础上，本文研究 shuffle DP 下的子图计数问题。
-
-
-### Managing Correlations in Data and Privacy Demand.
-- **作者**: Syomantak Chaudhuri, Thomas A. Courtade
-- **解读**: 允许用户自选隐私级别的差分隐私工作通常基于异构 DP（HDP）框架，且假设用户数据与隐私需求不相关。本文首先指出当隐私需求相关时标准 HDP 失效，进而提出增删异构差分隐私（AHDP）框架，联合考虑数据与隐私偏好，证明其对数据-隐私相关性的鲁棒性；并从操作假设检验视角形式化其保证。此外表明存在不依赖数据-隐私相关性先验知识的非平凡机制。
-
-
-### BFId: Identity Inference Attacks Utilizing Beamforming Feedback Information.
-- **作者**: Julian Todt, Felix Morsbach, Thorsten Strufe
-- **解读**: WiFi 5 引入的波束成形要求客户端广播其对信道特性的观测（BFI），这构成新的感知信息源并带来此前未被探索的隐私威胁。BFId 是首个基于 BFI 的身份推断攻击，在包含 197 名个体记录的新数据集上评估，结果表明即便跨不同行走风格与视角、甚至在大样本规模下，也能以很高的准确率推断出个体身份。
-
-
-### Systematic Assessment of Tabular Data Synthesis.
-- **作者**: Yuntao Du, Ninghui Li
-- **解读**: 数据合成被视作兼顾数据利用与隐私保护的重要途径，近年涌现大量表格数据合成器，其中部分满足差分隐私，部分只提供启发式隐私。由于评估指标的缺陷以及缺少与利用扩散模型、大语言模型的新兴合成器同 SOTA 统计合成器的正面比较，对这些合成器优劣的全面理解仍然缺失。本文对表格数据合成进行系统性评估。
-
-
-### Peekaboo, I See Your Queries: Passive Attacks Against DSSE Via Intermittent Observations.
-- **作者**: Hao Nie, Wei Wang, Peng Xu, Wei Chen, Laurence T. Yang, Mauro Conti, Kaitai Liang
-- **解读**: 动态可搜索对称加密（DSSE）存在固有信息泄露，现有被动攻击依赖持续监控泄露以推断查询模式，而本文针对更实际的间歇观测威胁模型。Peekaboo 是一个通用攻击框架，核心是推断搜索模式并结合辅助知识，将其实例化到 SOTA 攻击 Sap（USENIX '21）与 Jigsaw（'24）上得到变体 Sap+ 与 Jigsaw+。实验表明其恢复调整兰德指数超过 0.9、查询恢复准确率约 90%（对比 FMA 的约 30%），且攻击能力随观测轮数扩展。
-
-
-### 'Is this a scam?': The Nature and Quality of Reddit Discussion about Scams.
-- **作者**: Elijah Robert Bouma-Sims, Mandy Lanyon, Lorrie Faith Cranor
-- **解读**: 针对社交媒体上的骗局求助讨论（如电商欺诈、钓鱼）研究甚少，本文对 Reddit 四个聚焦骗局讨论社区（主要为 /r/Scams）的 1,525 个帖子进行了多阶段主题分析。发现发帖人主要识别骗局、讨论骗子所用策略并获得受害应对支持，讨论内容多为互联网相关技术中介；用户主要提供信息支持与对受害者的安抚，但部分评论强化了受害者有罪论。不同社区提供支持的类型存在差异，如 /r/Sextortion 被用于情感支持。
-
-
-### Leaky Apps: Large-scale Analysis of Secrets Distributed in Android and iOS Apps.
-- **作者**: David Schmidt, Sebastian Schrittwieser, Edgar R. Weippl
-- **解读**: 移动应用为支撑功能会存储各类秘密，包括 API 密钥与用于认证用户、访问后端服务的加密材料；应用分发后攻击者可对其逆向，使这些秘密暴露，带来数据泄露与服务滥用风险。本文对 Android 与 iOS 应用中分发的秘密进行大规模分析。
-
-
-### 'We just did not have that on the embedded system': Insights and Challenges for Securing Microcontroller Systems from the Embedded CTF Competitions.
-- **作者**: Zheyuan Ma, Gaoxiang Liu, Alex Eastman, Kai Kaufman, Md. Armanuzzaman, Xi Tan, Katherine Jesse, Robert J. Walls, Ziming Zhao
-- **解读**: 微控制器系统支撑车辆、医疗设备、工控等关键应用，保障其安全开发的挑战亟需梳理。以往研究仅聚焦固件分析来识别漏洞，而本文独到地利用 2023–2024 年 MITRE eCTF 竞赛的队伍提交与赛后访谈数据，从技术实现与人员认知两个视角剖析系统开发全生命周期，深入理解漏洞最初是如何产生的。
-
-
-### Walking The Last Mile: Studying Decompiler Output Correction in Practice.
-- **作者**: Joshua Wiedemeier, Simon Klancher, Joel Flores, Max Zheng, Jaehyun Park, Sang Kil Cha, Kangkook Jee
-- **解读**: 本文是首个大规模的人类辅助反编译研究，利用 pylingual.io 的丰富数据（181,646 个二进制、9,003 个用户提交补丁、393 个经准确性验证的补丁）考察逆向工程师如何应对不准确的 PYC 反编译输出，以及哪些因素影响其达成准确反编译的努力。研究还以受控用户实验补充观测结果，以隔离修补不完美反编译结果的技术难度。
-
-
-### A Qualitative Analysis of Fuzzer Usability and Challenges.
-- **作者**: Yunze Zhao, Wentao Guo, Harrison Goldstein, Daniel Votipka, Kelsey R. Fulton, Michelle L. Mazurek
-- **解读**: 模糊测试被广泛用于通过随机或变异测试输入发现软件漏洞，但开发者实际如何使用模糊工具、面临哪些挑战、现有工具何处不足，鲜有研究。本文通过对多个领域 18 名用户的半结构化访谈，考察其工作流、挫败点与期望，揭示关键的可用性缺口与设计机会，可为下一代模糊工具改善用户体验、减少人工投入并更好融入真实工作流提供依据。
-
-
-### It Should Be Easy but... New Users' Experiences and Challenges with Secret Management Tools.
-- **作者**: Lorenzo Neil, Deepthi Mungara, Laurie A. Williams, Yasemin Acar, Bradley Reaves
-- **解读**: 开发者面临 API 密钥、密码等软件秘密泄露的风险，业界与安全指南强烈推荐使用秘密管理工具（SMT，如 HashiCorp Vault、Infisical）在集中位置安全管理秘密，但秘密泄露仍普遍发生，且开发者反映学习与使用 SMT 困难。本文研究新用户使用 SMT 的体验与挑战，考察公开资源（文档、界面）能否有效支持学习，指出缺乏可用的入门引导使快速采用与有效使用不切实际。
-
-
-### CHaRM: Checkpointed and Hashed Counters for Flexible and Efficient Rowhammer Mitigation.
-- **作者**: Ali Hajiabadi, Michele Marazzi, Kaveh Razavi
-- **解读**: Rowhammer 仍是强攻击向量，但 CPU 厂商因确定性缓解需按最脆弱设备支付高昂代价而不愿部署。CHaRM 提出一种 CPU 内缓解方案，通过将大量（行）映射到有限数量的固定哈希计数器来打破（计数表规模随攻击阈值恶化的）依赖；由于多行映射到有限计数器会产生碰撞，CHaRM 部署检查点机制保存被逐出的表状态，当行再次被激活时恢复其检查点值并继续跟踪，避免碰撞引发过度的缓解性刷新。
-
-
-### ZVDetector: State-Guided Vulnerability Detection System for Zigbee Devices.
-- **作者**: Hai Lin, Chenglong Li, Jiahai Yang, Zhiliang Wang, Jiaqi Bai
-- **解读**: Zigbee 设备广泛用于智能家居、农业等领域但存在大量可危害其功能的漏洞；现有研究或分析固件、或通过网络模糊测试发现漏洞，却忽略设备状态与协议的影响、只探索有限空间，因而无法发现由两个状态内部隐藏状态、尤其是状态组合触发的漏洞。ZVDetector 设计状态引导的模糊测试系统，以状态感知模块基于消息关系发现更丰富的未知状态转换、更完整地理解设备内在属性，并开发相应算法来挖掘组合状态漏洞。
-
-
-### ExfilState: Automated Discovery of Timer-Free Cache Side Channels on ARM CPUs.
-- **作者**: Fabian Thomas, Michael Torres, Daniel Moghimi, Michael Schwarz
-- **解读**: 缓存侧信道通常依赖高精度定时器，而现代 ARM CPU 上存在无需定时器的利用途径；本文研究自动化发现 ARM CPU 上无定时器缓存侧信道的方法，以系统化暴露此类微架构泄露。（无摘要，据标题推断）
-
-
-### MileSan: Detecting Exploitable Microarchitectural Leakage via Differential Hardware-Software Taint Tracking.
-- **作者**: Tobias Kovats, Flavien Solt, Katharina Ceesay-Seitz, Kaveh Razavi
-- **解读**: 微架构泄露（如瞬态执行侧信道）是否可利用取决于软硬件两端的细节，本文提出差分硬件-软件污点跟踪方法，将硬件侧与软件侧的污点信息联合比对，以自动检测可利用的微架构信息泄露。（无摘要，据标题推断）
-
-
-### BOLT: Bandwidth-Optimized Lightning-Fast Oblivious Map powered by Secure HBM Accelerators.
-- **作者**: Yitong Guo, Hongbo Chen, Haobin Hiroki Chen, Yukui Luo, XiaoFeng Wang, Chenghong Wang
-- **解读**: 混淆映射（OMAP）能完全隐藏访问模式，但随机重映射与最坏情况填充带来高开销；本文论证这些成本并非本质的。现代带高带宽内存（HBM）的加速器提供新机会：HBM 通道与处理器核密封在同一封装内，窃听困难，适当隔离后可将 HBM 变成数据与访问痕迹都被隐藏的不可观察区域。BOLT 据此重新设计基于 HBM 的 OMAP，实现带宽优化、闪电般快速的不经意映射。
-
-
-### FlexEmu: Towards Flexible MCU Peripheral Emulation.
-- **作者**: Chongqing Lei, Zhen Ling, Xiangyu Xu, Shaofeng Li, Guangchi Liu, Kai Dong, Junzhou Luo
-- **解读**: MCU（微控制器）外设仿真对嵌入式固件分析至关重要，但现有仿真器在外设覆盖与灵活性上受限；本文提出 FlexEmu，追求灵活的 MCU 外设仿真，以支持更广泛的固件动态分析场景。（无摘要，据标题推断）
-
-
-### Rethinking Tamper-Evident Logging: A High-Performance, Co-Designed Auditing System.
-- **作者**: Rui Zhao, Muhammad Shoaib, Viet Tung Hoang, Wajih Ul Hassan
-- **解读**: 现有防篡改日志系统在高负载下开销高、数据丢失严重，且仅提供粗粒度的篡改检测，安装还需重编译内核。本文提出 Nitro 高性能审计系统，支持细粒度日志篡改检测，并利用 eBPF 技术避免内核重编译；作者在新的定义框架下形式化其安全性并给出满足该目标的实用密码学构造，且与以往聚焦处理环节的工作不同，将前后处理与日志处理协同设计以利用系统级优化。评估显示 Nitro 相对基线有 10–25 倍性能提升。
-
-
-### Empirical Security Analysis of Software-based Fault Isolation through Controlled Fault Injection.
-- **作者**: Nils Bars, Lukas Bernhard, Moritz Schloegel, Thorsten Holz
-- **解读**: 浏览器是用户与攻击者之间的关键安全边界，而 JS 引擎的复杂性使 JavaScript 成为主要攻击面；为缓解威胁，引擎日益采用软件故障隔离（SFI），其中 Google 的 V8 堆沙箱是最广泛部署的 SFI 机制，保护着 Chromium 系浏览器及基于 Node.js/Electron 的无数应用。该沙箱将地址空间分为含受信任、安全敏感元数据的部分与沙箱化的内存访问部分。本文通过受控故障注入对这类 SFI 机制进行实证安全分析。
-
-
-### GPU Travelling: Efficient Confidential Collaborative Training with TEE-Enabled GPUs.
-- **作者**: Shixuan Zhao, Zhongshu Gu, Salman Ahmed, Enriquillo Valdez, Hani Jamjoom, Zhiqiang Lin
-- **解读**: 机密协作机器学习让多个互不信任的数据持有者在不泄露私有数据集的前提下联合训练模型，但现有方案在训练中需经较慢的常规链路频繁交换数据，在 LLM 等模型规模指数增长下面临高昂通信成本。本文提出 GPU Travelling 机制，利用新兴的机密 GPU：让（模型）安全地「旅行」到特定持有者处，将数据集直接载入 GPU 受保护内存后返回继续训练，从而消除（中间数据）传输开销。
-
-
-### Sleeping Giants - Activating Dormant Java Deserialization Gadget Chains through Stealthy Code Changes.
-- **作者**: Bruno Kreyssig, Sabine Houy, Timothée Riom, Alexandre Bartel
-- **解读**: Java 反序列化 gadget 链是研究充分的严重软件弱点，绝大多数已知链依赖依赖库中的 gadget，且依赖中的小代码改动即可使链可行，使链检测沦为被动追赶。本文评估依赖演化过程中链被激活的可能性（改动可能出于意外或作为供应链攻击的一部分被故意引入），指出类的可序列化性是随演化强烈波动的属性，研究三种攻击者可隐蔽地将链引入依赖的改动模式，并在 533 个样本上对原始与修改版本运行 SOTA 检测器进行验证。
-
-
-### Parcel Mismatch Demystified: Addressing a Decade-Old Security Challenge in Android.
-- **作者**: Sheng Cao, Hao Zhou, Songzhou Shi, Yanjie Zhao, Haoyu Wang
-- **解读**: Android IPC 机制中的 Parcel Mismatch 漏洞是持续十余年的安全挑战，导致大量提权利用；Google 已实施多种缓解（最终为 Android 13 的 Lazy Bundle），但缺乏对这些漏洞与缓解的系统分析。本文完成首次系统性研究并提出 ParcelTaint 静态检测方法，精确建模跨进程的 Intent 变换以发现攻击向量，揭示 10 个此前未知的高危漏洞（其中 5 个获分配 CVE），包括绕过既有缓解的系统服务链利用方式，且全部得到确认。
-
-
-### Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments.
-- **作者**: Paul Metzger, A. Theodore Markettos, Edward Tomasz Napierala, Matthew Naylor, Robert N. M. Watson, Timothy M. Jones
-- **解读**: 设备驱动是操作系统漏洞的主要来源，OS 日益通过将其移出内核到用户空间实现去特权化，但这通常带来显著开销；GPU 驱动尤其庞大、复杂且性能敏感，主流 OS 中大部分 GPU 驱动以全特权运行。本文研究使用用户空间进程与 CHERI 隔离舱（compartments）高效地对底层 GPU 驱动去特权化的方法。
-
-
-### Towards a Formal Foundation for Blockchain ZK Rollups.
-- **作者**: Stefanos Chaliasos, Denis Firsov, Benjamin Livshits
-- **解读**: 区块链二层方案 ZK-Rollup 在链下处理交易并在主链验证以缓解可扩展性问题，但安全性、抗审查性仍存疑虑：中心化控制与智能合约层机制不足以强制保障这些性质，现有 L2 易受多重签名攻击，可能导致用户资金全部损失。本文用 Alloy 规范语言对关键功能（强制交易队列、安全黑名单、可升级性）进行形式化分析，为区块链 ZK Rollup 建立形式化基础。
-
-
-### Formal Security and Functional Verification of Cryptographic Protocol Implementations in Rust.
-- **作者**: Karthikeyan Bhargavan, Lasse Letager Hansen, Franziskus Kiefer, Jonas Schneider-Bensch, Bas Spitters
-- **解读**: 本文提出一套在统一证明框架内形式化验证 Rust 编写的实用密码协议实现的方法论，可开发运行时安全、解析正确性与安全性等多种性质的机器可检查证明；所有分析由开发者在 Rust 源码中写注解并为其任务选择后端证明器（从通用证明助手 F* 到面向密码的 ProVerif、SSProve）驱动。主要贡献是在 Bert13——一个可移植的后量子 TLS 1.3 实现——上同时验证了安全性与功能正确性，据作者所述这是 Rust 库中首次取得的结果。
-
-
-### Secure Parsing and Serializing with Separation Logic Applied to CBOR, CDDL, and COSE.
-- **作者**: Tahina Ramananandro, Gabriel Ebner, Guido Martínez, Nikhil Swamy
-- **解读**: 低层语言中对安全关键数据格式的错误处理是许多漏洞的根源，可证明正确的解析/序列化工具能帮助缓解。PulseParse 是一个经形式化验证的解析器与序列化器组合库，面向不可变形（non-malleable）二进制格式，其规约与证明基于分离逻辑，提供更抽象、可组合的接口并完整支持验证、解析与序列化；它还支持递归格式，且针对对抗性输入可用常数量的栈空间完成解析。
-
-
-### Looping for Good: Cyclic Proofs for Security Protocols.
-- **作者**: Felix Linker, Christoph Sprenger, Cas Cremers, David A. Basin
-- **解读**: 安全协议常包含循环（如棘轮更新或对归纳定义数据结构的操作），但协议的自动化安全分析难以跟上这些特性，SOTA 方法需要人工构造抽象结构并严重依赖辅助的用户自定义引理。本文提出用循环证明（cyclic proofs）技术直接处理协议中的循环，以减少人工引理负担并推进自动化分析。
-
-
-### Privacy-Preserving Runtime Verification.
-- **作者**: Thomas A. Henzinger, Mahyar Karimi, K. S. Thejaswini
-- **解读**: 运行时验证为系统安全可靠性提供可扩展的保障，但当系统需要第三方监控以验证是否符合规约时，常规方法可能泄露系统的敏感信息（关于系统及其处理数据的受保护信息），甚至暴露「正在被监控」这一事实本身，从而破坏第三方验证的意义。本文研究隐私保护运行时验证，在验证合规性的同时不泄露受保护信息、不暴露监控行为。
-
-
-### Generalized Security-Preserving Refinement for Concurrent Systems.
-- **作者**: Huan Sun, David Sanán, Jingyi Wang, Yongwang Zhao, Jun Sun, Wenhai Wang
-- **解读**: 确保并发系统（如多核 OS 内核等大型代码库）符合信息流安全（IFS）极具挑战，精化（refinement）验证——证明实现保持更抽象规约的某些性质——是应对该挑战的有前景途径，但现有精化式安全验证要么局限于顺序系统，要么缺乏表达复杂安全策略的能力。本文提出面向并发系统的广义安全保持精化方法。
-
-
-### Prototype Surgery: Tailoring Neural Prototypes via Soft Labels for Efficient Machine Unlearning.
 - **作者**: Gaoyang Liu, Xijie Wang, Zixiong Wang, Chen Wang, Ahmed M. Abdelmoniem, Desheng Wang
-- **解读**: 深度神经网络依赖敏感私有数据引发「被遗忘权」担忧，机器遗忘被提出以高效消除特定训练数据的影响，但现有方法在参数量庞大的 DNN 上执行慢、内存消耗高，难以用于大规模模型。本文将注意力转向最终分类层的小权重集合（定义为各类别的「原型」），关键观察是：与被遗忘数据关联的原型发生显著偏移，而无关原型基本不变；据此通过软标签对原型进行「手术」式调整，实现高效的机器遗忘。
+- **方向**: AI/ML安全
+- **解读**:
+深度神经网络依赖敏感私有数据，引发数据隐私与"被遗忘权"的关切；机器遗忘（machine unlearning）旨在高效消除特定训练数据对已训练模型的影响，但现有方法在参数庞大的 DNN 上执行缓慢、内存消耗高，难以规模化应用。
+
+作者将目光转向最后一层分类层的小权重集合——各类的"原型"（prototypes）。关键观察是：与重训练模型对比时，被遗忘类对应的原型发生显著漂移，而无关类的原型仅轻微变化。据此提出 Naive PS：用闭式解近似数据移除的效果；以及 PS：引入软标签信息对所有类微调，实现更有效的遗忘。两种方法都只修改原型权重，规避了大模型参数空间的难题。
+
+在四个数据集上的大量实验表明，该方法显著加速遗忘过程，并在五个指标上取得与重训练相当的性能保证。
+
+"类原型漂移"的观察简洁而深刻，把遗忘问题从全局优化降维到分类层修正，工程上极具吸引力；软标签的引入进一步弥补了闭式解的近似误差。局限在于表达力——特征空间复杂时仅动分类层未必充分。与 SISA、认证遗忘等路线相比，本文在效率与实用性上优势明显。
 
 
-### SafeGuider: Robust and Practical Content Safety Control for Text-to-Image Models.
+#### SafeGuider: Robust and Practical Content Safety Control for Text-to-Image Models.
+
 - **作者**: Peigui Qi, Kunsheng Tang, Wenbo Zhou, Weiming Zhang, Nenghai Yu, Tianwei Zhang, Qing Guo, Jie Zhang
-- **解读**: 文生图模型易受对抗提示攻击从而绕过安全措施生成有害内容，现有防御难以兼顾鲁棒性与实际可用性。作者先对广泛使用的 Stable Diffusion 文本编码器进行实证研究，发现 [EOS] token 充当语义聚合器，良性提示与恶意提示在嵌入空间呈现不同的分布模式；基于该洞察构建 SafeGuider，实现鲁棒且实用的文生图内容安全控制。
+- **方向**: AI/ML安全
+- **解读**:
+文生图模型能根据自然语言生成高质量图像，却极易被对抗提示绕过安全措施、生成有害内容；已有防御策略难以同时满足攻击鲁棒性与真实部署中的实用效用。
+
+作者先对 Stable Diffusion（广泛使用的代表性文生图模型）的文本编码器做实证研究，发现 [EOS] token 充当语义聚合器，良性提示与对抗提示在其嵌入空间呈现不同的分布模式。基于此提出 SafeGuider 两阶段框架：嵌入级识别模型加安全感知的特征擦除束搜索算法，在保持生成质量的同时实现域内与域外攻击的防御。
+
+攻击成功率被压到极低，各场景下最大仅为 5.48%；并且不再简单拒绝生成或输出黑图，而是生成安全且有意义的图像，提升了实用性；方案不限于 SD，可迁移到 Flux 等其他架构。
+
+把 [EOS] 聚合器的统计规律转化为可操作的防御信号，是"先理解后防御"的范例；束搜索擦除比拒绝式防御更贴近可用性诉求。局限在于识别模型可能被自适应攻击反制。与安全过滤、概念擦除（如 ESD）相比，SafeGuider 在跨模型迁移与质量保持上更胜一筹。
 
 
-### SecAlign: Defending Against Prompt Injection with Preference Optimization.
-- **作者**: Sizhe Chen, Arman Zharmagambetov, Saeed Mahloujifar, Kamalika Chaudhuri, David A. Wagner, Chuan Guo
-- **解读**: 提示注入可通过在系统指令或外部内容中混入恶意指令劫持 LLM 行为，本文用偏好优化（preference optimization）方法对模型进行对齐训练，使其更倾向于遵循系统指令而非注入内容，从而防御提示注入攻击。（无摘要，据标题推断）
+#### On the Feasibility of Poisoning Text-to-Image AI Models via Adversarial Mislabeling.
 
-
-### On the Feasibility of Poisoning Text-to-Image AI Models via Adversarial Mislabeling.
 - **作者**: Stanley Wu, Ronik Bhaskar, Anna Yoo Jeong Ha, Shawn Shan, Haitao Zheng, Ben Y. Zhao
-- **解读**: 文生图模型基于互联网海量图像及视觉语言模型（VLM）生成的图文对进行训练，这一数据管道对提供高质量图文对至关重要；但近期工作表明 VLM 易受隐蔽对抗攻击，攻击者可添加扰动误导 VLM 生成错误字幕。本文研究通过对抗性错误标注（adversarial mislabeling）投毒文生图模型训练数据的可行性。
+- **方向**: AI/ML安全
+- **解读**:
+今天的文生图模型依赖从互联网抓取的数百万图文对训练，每张图像配有视觉语言模型（VLM）生成的详细描述；这一管道对提供高质量图文对至关重要。但近期研究显示 VLM 易受隐蔽对抗攻击——对图像添加扰动即可误导其生成错误描述（错误标注）。
+
+本文研究通过对抗性错误标注（adversarial mislabeling）投毒文生图模型的可行性：攻击者先扰动图像使 VLM 产生错误 caption，再让这些被污染的训练数据流入模型训练管道，从源头破坏生成模型的语义能力。
+
+摘要未给出量化数字；工作聚焦于评估该数据管道投毒向量的可行性与影响。
+
+这是"攻击数据供给链"思路的延续：不直接污染像素分布，而是污染标注语义，隐蔽性更强、清洗更难；与同团队此前提出的 Nightshade 数据投毒工作形成互补。VLM 生态的普及放大了该风险面。防御需同时考虑输入净化与鲁棒 VLM 训练，且要警惕投毒规模与触发条件的规模化。
 
 
-### Towards Backdoor Stealthiness in Model Parameter Space.
+#### Towards Backdoor Stealthiness in Model Parameter Space.
+
 - **作者**: Xiaoyun Xu, Zhuoran Liu, Stefanos Koffas, Stjepan Picek
-- **解读**: 后门攻击向机器学习模型注入隐蔽功能，其隐蔽性研究主要聚焦输入空间中不可区分的触发器与特征空间中不可分离的表示，以规避分别检查这两个空间的防御；但现有后门通常只针对单一类型防御设计，未考虑多样化的防御手段。基于此观察，本文提出质疑：面对实际部署的防御时，当前后门是否真正构成现实威胁，并研究参数空间中的后门隐蔽性。
+- **方向**: AI/ML安全
+- **解读**:
+后门攻击向机器学习模型注入隐蔽的恶意功能。后门隐蔽性研究的关键在于增强对防御机制的抵抗能力：近期工作主要在输入空间追求不可区分的触发、在特征空间追求不可分离的表示，以规避检查相应空间的防御。但现有方案通常只针对特定防御类型设计，未考虑防御手段的多样性。
+
+本文转向模型参数空间研究后门隐蔽性，提出自然问题：面对实际部署中的多样化防御时，现有后门是否构成真实威胁？工作聚焦于使后门模型的参数与良性模型难以区分，从而规避参数空间的检查。
+
+摘要未给出量化数字；核心是评估现有后门在多种实际防御下的真实威胁程度。
+
+"是否真实威胁"的问题导向值得肯定——许多后门研究只在单一防御设定下自证，本文把评估推向多样化防御场景。参数空间是 Neural Cleanse 等触发器检测之外的防御新战场，剪枝、微调、蒸馏都可能被纳入博弈。局限在于威胁模型与防御集合的覆盖面，但方向对后门攻防平衡有现实意义。
 
 
-### A Practical and Secure Byzantine Robust Aggregator.
+#### A Practical and Secure Byzantine Robust Aggregator.
+
 - **作者**: De Zhang Lee, Aashish Kolluri, Prateek Saxena, Ee-Chien Chang
-- **解读**: 机器学习安全中常需在计算高维向量均值时剔除离群值：许多数据投毒攻击产生的梯度不在干净梯度分布内，会偏置用于训练模型的均值，因此在求平均前过滤它们是一般性防御策略。拜占庭鲁棒聚合即计算存在 ε 比例向量可能被任意、自适应破坏时的均值，且保证最终结果可证明有界；本文提出一个实用且安全的拜占庭鲁棒聚合器。
+- **方向**: AI/ML安全
+- **解读**:
+机器学习安全中常需在计算高维向量平均值前剔除离群点：数据投毒攻击产生的梯度可能与干净梯度同分布，从而偏置用于训练的平均结果，过滤后再平均是通用防御策略。拜占庭鲁棒聚合是一个基础算法原语：在存在 ε 比例向量被任意且自适应地腐败的情况下计算聚合，使最终结果具有可证明的误差界。
 
+本文提出实用且安全的拜占庭鲁棒聚合器：在保证计算效率与通信友好的同时，为聚合结果提供可证明的有界保证，并明确对抗自适应腐败的威胁模型。
 
-### AD-MPC: Asynchronous Dynamic MPC with Guaranteed Output Delivery.
-- **作者**: Wenxuan Yu, Minghui Xu, Bing Wu, Sisi Duan, Xiuzhen Cheng
-- **解读**: MPC 即服务（MPCaaS）让客户端将隐私保护计算外包给分布式服务器，但传统方案全程依赖固定服务器集合，限制可扩展性；动态 MPC（DMPC）允许参与方在计算中加入或离开，然而现有 DMPC 假设同步网络，在无界网络延迟下会失败。本文提出 AD-MPC，首个异步动态 MPC 协议，在最优弹性 n=3t+1 下保证输出交付，为此引入两个关键组件：一个（使参与方变更与预处理得以异步完成的）预处理机制及相应的异步协议设计。
+摘要未给出量化数字；核心承诺是在自适应攻击下聚合结果可证明有界。
 
+自适应攻击者是关键区分点——多数经典方案（如 Krum、修剪均值）只针对静态腐败，本文的安全性论证更贴合真实训练环境。实用性与理论保证的兼顾，使其有望嵌入联邦学习等真实流水线。局限在于 ε 上界与实际梯度分布假设的匹配度，以及与差分隐私等隐私机制的组合兼容性仍需进一步探索。
 
-### IND-CPA-D of Relaxed Functional Bootstrapping: A New Attack, A General Fix, and A Stronger Model.
-- **作者**: Zeyu Liu, Yunhao Wang, Ben Fisch
-- **解读**: Li 与 Micciancio（Eurocrypt'21）提出 IND-CPA-D 安全性，允许攻击者访问诚实生成密文的解密预言机以强化标准 IND-CPA；Jung 等人（CCS'24）与 Checri（Crypto'24）表明即使 FHEW/TFHE/BGV/BFV 等精确 FHE 方案也可能因自举失败而不安全（此类攻击可借设置可忽略的失败概率来缓解）。Liu 与 Wang（Asiacrypt'24）提出 relaxed functional bootstrapping，性能提升数个数量级且支持自举中免费函数求值。本文针对 relaxed functional bootstrapping 的 IND-CPA-D 安全性给出新攻击、通用修复方案与更强的安全模型。
+#### One Surrogate to Fool Them All: Universal, Transferable, and Targeted Adversarial Attacks with CLIP.
 
-
-### Security Analysis of Privately Verifiable Privacy Pass.
-- **作者**: Konrad Hanff, Anja Lehmann, Cavit Özbay
-- **解读**: Privacy Pass 是由 Davidson 等人（PETS'18）设计的匿名认证协议，用于减少 TOR 用户需解决的 CAPTCHA 数量，签发一次性、可不可链接兑换的 token，签发者与验证者共享对称密钥故为私有可验证；该协议引发学术界与产业界广泛关注并形成 IETF 标准。但 IETF 标准化对该协议做了多处改动，其形式化安全性此前未被检验；本文填补这一空白，分析标准中私有可验证（变体）的安全性。
-
-
-### Threshold ECDSA in Two Rounds.
-- **作者**: Yingjie Lyu, Zengpeng Li, Hong-Sheng Zhou, Xudong Deng
-- **解读**: 本文提出首个阈值最优设置下的两轮 ECDSA 多方签名协议，相比 SOTA（Doerner 等，S&P '24）减少一轮通信，并解决 Groth 与 Shoup（Eurocrypt'22）指出的预签名安全问题，避免了安全性损失随已发布但未使用的预签名数量增加而恶化。构造基于非交互式乘法（NIM，Boyle 等 PKC'25 提出，用 Abram 等 '24 的类群实例化），设置最小且透明（仅两个类群生成元），带宽高效，128 位安全级别下消息大小约 1.9 KiB。
-
-
-### Fast Homomorphic Evaluation of LWR-based PRFs.
-- **作者**: Amit Deo, Marc Joye, Benoît Libert, Benjamin R. Curtis, Mayeul de Bellabre
-- **解读**: 某些全同态加密应用（如转密（transciphering）、通用阈值化、PIR）需要在加密数据域内持续计算的过程中混然（obliviously）生成随机性，且不同计算应使用互不相关、看似独立的随机硬币。本文研究基于 LWR（Learning With Rounding）的伪随机函数（PRF）的快速同态求值，以在密文域中高效地生成所需随机性。
-
-
-### Fast Amortized Bootstrapping with Small Keys and Polynomial Noise Overhead.
-- **作者**: Antonio Guimarães, Hilder V. L. Pereira
-- **解读**: 多数 FHE 方案借助 SIMD 并行处理多条消息，但其安全基于较强假设（超多项式近似因子的近似格问题困难）；另一端的轻量 FHE 自举更快但无 SIMD 能力，安全性仅基于（低次）多项式因子这一更弱假设。Micciancio 与 Sorrell（ICALP'18）提出可一次处理多条消息的摊销自举，使每消息时间呈亚线性，从而兼具两者优点；本文在此基础上实现小密钥、多项式噪声开销的快速摊销自举。
-
-
-### The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives.
-- **作者**: Robin Kirchner, Chris Tsoukaladelis, Martin Johns, Nick Nikiforakis
-- **解读**: Web 归档保存网页历史快照，但其内容会过时，且归档中可能保留旧版脚本、接口等资源；本文研究攻击者如何利用归档特性实施规避与「时代错置」（anachronistic）攻击，例如诱导用户访问含过时脆弱资源的归档版本，从而危害现代用户。（无摘要，据标题推断）
-
-
-### Deep Dive into In-app Browsers: Uncovering Hidden Pitfalls in Certificate Validation.
-- **作者**: Woonghee Lee, Junbeom Hur, Hyunsoo Kwon
-- **解读**: 应用内浏览器（WebView）在提供无缝体验的同时带来证书验证方面的安全隐患，实现不当会使用户暴露于中间人攻击（MITM）或钓鱼风险。本文系统评估 WebView 的验证机制，考察其对 X.509 标准的符合程度以及对撤销与证书透明度（CT）等高级扩展的支持；为在 Android 14+ 上实现可复现的平台特定信任锚控制，开发了统一框架 FAITH（使用物理设备与 iOS 模拟器），并用 115 条精心构造的证书链（含 87 条不合规链）进行测试。
-
-
-### GAPDiS: Gradient-Assisted Perturbation Design via Sequence Editing for Website Fingerprinting Defense.
-- **作者**: Ruotian Xie, Kun Xie, Pengcheng Zhao, Jiajun He, Xin Zeng, Jigang Wen, Yong Xie, Wei Liang, Gaogang Xie
-- **解读**: 基于深度学习的网站指纹（WF）攻击日益精准，而现有防御因包方向序列的离散性使基于梯度的优化不可行，只能采用低效的启发式扰动方案。GAPDiS 引入基于梯度对齐偏移向量余弦相似度的奖励来评估并选择沿梯度方向对齐的候选，并设计并行计算算法提升效率，整合为结合引导与改进禁忌搜索的通用扰动生成方法，实现全局优化；为实际部署，GAPDiS 同时支持（PT 代理桥与）P4 交换机等部署方式。
-
-
-### What Gets Measured Gets Managed: Mitigating Supply Chain Attacks with a Link Integrity Management System.
-- **作者**: Johnny So, Michael Ferdman, Nick Nikiforakis
-- **解读**: Web 持续增长，但依赖监控工具与资源完整性标准明显滞后，目前缺乏稳健、可推广且高性能的资源完整性验证方法，而供应链是应用攻击面中最受攻击的部分之一。本文提出链接完整性管理系统（link integrity management system），通过测量与管控资源完整性来缓解供应链攻击。
-
-
-### In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web.
-- **作者**: Jan Drescher, Sepehr Mirzaei, Soheil Khodayari, David Klein, Thomas Barber, Martin Johns, Giancarlo Pellegrino
-- **解读**: DOM 树是现代 Web 开发的核心，JavaScript 依赖其内容与结构指导程序逻辑与安全决策，但对其可信度的研究很少；此前已知的 script gadget 展示了看似无害的标记注入如何触发良性代码片段执行而被利用。本文表明 gadget 只是冰山一角：看似良性的注入还可触发一类（行为），它们不必然导致 XSS，而是引发更广泛的攻击，如浏览器请求劫持、伪造与用户界面操纵。
-
-
-### Head(er)s Up! Detecting Security Header Inconsistencies in Browsers.
-- **作者**: Jannis Rautenstrauch, Trung Tin Nguyen, Karthik Ramakrishnan, Ben Stock
-- **解读**: 安全头（如防护 XSS、点击劫持与信息泄露的机制）对现代 Web 至关重要，但每个头语法与处理规则各异，浏览器与网站开发者正确实现都很复杂；跨浏览器行为的不一致会损害头的有效性（取决于用户所用浏览器），而兼容性问题又阻碍开发者部署。本文检测浏览器间安全头行为的不一致。
-
-
-### Differentiation-Based Extraction of Proprietary Data from Fine-Tuned LLMs.
-- **作者**: Zongjie Li, Daoyuan Wu, Shuai Wang, Zhendong Su
-- **解读**: 监督微调（SFT）数据集包含宝贵的指令-响应对，成为潜在的提取目标，但此问题此前未被系统研究。本文首次形式化定义该问题，并基于真实场景中数据的独特性质探索各种攻击目标、类型与变体；在分析直接提取行为的基础上，提出专门针对微调模型的差异化数据提取方法 DDE，利用微调模型对（目标数据）的置信度水平及其与预训练基座模型的行为差异来实现专有数据的提取。
-
-
-### One Surrogate to Fool Them All: Universal, Transferable, and Targeted Adversarial Attacks with CLIP.
 - **作者**: Binyan Xu, Xilin Dai, Di Tang, Kehuan Zhang
-- **解读**: 对抗样本的迁移性使攻击者可用代理模型攻击未知目标模型，本文研究以 CLIP 作为通用代理模型，构造通用（universal）、可迁移（transferable）且有目标（targeted）的对抗攻击，即单一代理扰动即可欺骗多个不同目标模型。（无摘要，据标题推断）
+- **方向**: AI/ML安全
+- **解读**:
+
+黑盒对抗攻击通常依赖替代模型（surrogate model）生成可迁移的对抗样本，但替代模型与目标模型之间的分布差异往往限制迁移成功率。本文尝试利用 CLIP 这一大规模图文预训练模型作为统一替代模型，构造同时具备通用性（universal）、迁移性（transferable）与定向性（targeted）的对抗扰动，欺骗多个目标模型。（无摘要，据标题推断）
+
+方法上以 CLIP 的跨模态表征作为梯度来源设计对抗扰动，追求对未见过的目标模型的高迁移率与对指定类别的定向攻击效果，核心假设是 CLIP 的通用表征比任务特定替代模型更具覆盖能力。
+
+无摘要，无法引用具体量化结果；核心主张是"单一替代模型即可通吃多个目标模型"。
+
+若"一个替代模型打遍所有目标模型"成立，将显著降低黑盒对抗攻击的成本——CLIP 在大规模图文数据上预训练的表征可能比其他替代模型更具通用性。该思路与利用 CLIP 做可迁移攻击的既有文献一脉相承。具体迁移率、目标模型集合规模与扰动约束强度需阅读全文确认，这些数字决定其实际威胁程度。
 
 
-### DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy.
+#### DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy.
+
 - **作者**: Wenshu Fan, Minxing Zhang, Hongwei Li, Wenbo Jiang, Hanxiao Chen, Xiangyu Yue, Michael Backes, Xiao Zhang
-- **解读**: 人脸识别（FR）模型的滥用风险催生了反人脸识别（AFR）研究，但本文指出既有文献普遍采用的静态 FR 评估策略无法如实刻画旨在跟踪特定目标身份的跟踪者的实际能力。作者提出 DynTracker 动态策略——模型的 gallery 数据库随新识别到的身份图像迭代更新——并惊讶地发现这一简单做法能使所有现有 AFR 保护失效；为缓解该隐私威胁，主张明确促进 AFR 保护（图像）的多样性，并假设缺乏多样性是现有保护失效的主要原因。
+- **方向**: AI/ML安全
+- **解读**:
+
+人脸识别（FR）模型的广泛部署引发滥用担忧，反人脸识别（AFR）技术旨在保护用户隐私。本文指出：既有文献大多采用静态 FR 策略评估 AFR 效果，无法真实刻画追踪者的实际能力——追踪者的目标是跟踪特定身份，其参考库会随识别过程不断演化。
+
+作者提出 DynTracker 动态策略：模型的画廊（gallery）数据库随新识别出的身份图像迭代更新。令人意外的是，这一简单策略使所有现有 AFR 防护失效。为缓解威胁，作者主张在 AFR 保护中显式促进多样性，并假设缺乏多样性是现有防护失效的主要原因。
+
+摘要截断，未给出具体成功率数字；核心发现是动态画廊更新即可击穿现有全部 AFR 防护，多样性是 AFR 有效性的关键因素。
+
+该工作戳破了 AFR 评估的"静态假设泡沫"——现实攻击者会持续更新参考库，静态评估系统性高估了防护强度。把"多样性"纳入 AFR 设计目标（使模型难以形成稳定的身份表征）是新的防御范式。局限在于多样性提升可能与照片可用性等需求冲突，工程权衡与大规模实验细节需正文讨论。
 
 
-### What's Pulling the Strings? Evaluating Integrity and Attribution in AI Training and Inference through Concept Shift.
+#### What's Pulling the Strings? Evaluating Integrity and Attribution in AI Training and Inference through Concept Shift.
+
 - **作者**: Jiamin Chang, Haoyang Li, Hammond Pearce, Ruoxi Sun, Bo Li, Minhui Xue
-- **解读**: AI 训练与推理的完整性与归因问题（如训练数据投毒、模型行为溯源）难以评估，本文提出通过概念漂移（concept shift）来检验模型行为变化，以评估 AI 训练与推理流程中的完整性与归因可信度。（无摘要，据标题推断）
+- **方向**: AI/ML安全
+- **解读**:
+
+AI 模型的训练与推理过程依赖数据与模型两端的完整性与可归因性，而"模型行为变化由什么引起"这一问题缺乏系统的评估手段。本文提出以概念漂移（concept shift）作为分析工具，评估 AI 训练与推理中的完整性与归因问题——即探究是什么"牵动了模型的弦"，使其行为发生偏移。（无摘要，据标题推断）
+
+方法上利用概念漂移作为透镜，考察训练数据分布变化、模型更新与推理阶段输入变化对模型行为的影响，从而判断行为变化的来源与责任归属，服务于完整性验证与归因审计。
+
+无摘要，无法引用具体量化结果；核心是提出用概念漂移评估 AI 全生命周期完整性与归因的分析框架。
+
+概念漂移通常被视为部署期的性能问题，此处将其用作"完整性/归因审计"的透镜是新颖角度——漂移来源（数据污染、分布变化、模型更新）的归因直接关系 AI 供应链的可信度。作者阵容横跨学术与安全团队，方法或包含大规模实证。具体实验设定、漂移度量的定义与结论需读全文确认。
 
 
-### Busting the Paper Ballot: Voting Meets Adversarial Machine Learning.
+#### Busting the Paper Ballot: Voting Meets Adversarial Machine Learning.
+
 - **作者**: Kaleel Mahmood, Caleb Manicke, Ethan Rathbun, Aayushi Verma, Sohaib Ahmad, Nicholas Stamatakis, Laurent Michel, Benjamin Fuller
-- **解读**: 本文展示在美国选举计票机中使用机器学习分类器所伴随的安全风险：计票的核心分类任务是判定备选竞选中气泡上是否存在标记。Barretto 等人（E-Vote-ID 2021）曾报告卷积神经网络在该任务上是可行的且优于简单特征分类器，本文在此基础上结合对抗机器学习研究这些分类器被对抗操纵的脆弱性。
+- **方向**: AI/ML安全
+- **解读**:
+
+本文展示美国选举计票机使用机器学习分类器所带来的安全风险。计票的核心分类任务是判断备选赛（alternative contest）选票上气泡内是否存在标记；Barretto 等（E-Vote-ID 2021）曾报告卷积神经网络在此任务上可行且优于简单基于特征的分类器，推动了 ML 进入计票环节。
+
+本文对选举计票中的标记检测分类器进行对抗机器学习攻击分析，考察攻击者能否通过构造对抗样本操纵气泡的判定结果，从而影响选票统计。
+
+摘要截断，未给出攻击成功率等具体数字；核心是证明基于 ML 的计票分类器可被对抗攻击操纵。
+
+选举安全属于"高风险、零容错"场景，把对抗 ML 引入计票分析是重要警示——若攻击者能构造"看似空白实则有标记"或相反的气泡，选举结果可信度将受威胁。该工作提醒：用 ML 提升计票效率的同时，必须配套对抗鲁棒性评估与人工审计回退机制。攻击的现实可行性（物理打印质量、扫描噪声等）需正文评估。
 
 
-### FilterFL: Knowledge Filtering-based Data-Free Backdoor Defense for Federated Learning.
+#### FilterFL: Knowledge Filtering-based Data-Free Backdoor Defense for Federated Learning.
+
 - **作者**: Yanxin Yang, Ming Hu, Xiaofei Xie, Yue Cao, Pengyu Zhang, Yihao Huang, Mingsong Chen
-- **解读**: 由于缺乏对不可信客户端的数据审计手段，联邦学习（FL）易受后门攻击，现有防御在极端异构场景下防御效果差，且严重依赖额外数据集、违背 FL 的隐私保护要求。本文提出数据无关的 FL 后门防御 FilterFL：在每个通信轮次，利用两个精心设计的条件生成对抗网络（CGAN）进行（增量）知识提取与过滤，阻止携带后门知识的客户端模型参与聚合操作。
+- **方向**: AI/ML安全
+- **解读**:
+
+由于缺乏对不可信客户端的数据审计手段，联邦学习（FL）易受后门攻击。已有防御方法在极端数据异构（non-IID）场景下表现不佳；更关键的是，这些方法强依赖额外的干净数据集，违背了 FL 的隐私保护要求，限制了其实际可用性。
+
+本文提出数据无关（data-free）的后门防御方法 FilterFL，目标是在每轮聚合前阻止携带恶意知识的客户端模型参与。基于两个精心设计的条件生成对抗网络（CGAN）实现知识提取与过滤方案，从模型更新中提取增量学习知识，据此识别并过滤携带后门知识的客户端更新。
+
+摘要截断，未给出防御成功率与模型精度损失等数字；核心是数据无关、面向极端异构场景的 FL 后门防御框架。
+
+"数据无关"是 FL 防御的硬约束——现实服务器往往没有代表性数据集，用 CGAN 从模型更新中重建知识再行过滤，绕开了数据依赖。极端异构场景下后门知识与正常个性化知识难以区分，正是此前防御失效之处。需评估 CGAN 训练的额外开销、对模型精度的影响，以及面对自适应攻击者时的鲁棒性，这些均依赖正文验证。
 
 
-### Ethics in Computer Security Research: A Data-Driven Assessment of the Past, the Present, and the Possible Future.
-- **作者**: Harshini Sri Ramulu, Helen Schmitt, Bogdan Rerich, Rachel Gonzalez Rodriguez, Tadayoshi Kohno, Yasemin Acar
-- **解读**: 计算机安全研究经常讨论伦理问题，但研究者缺乏关于如何做出、记录与评估伦理决策的清晰指导。本文回顾 2024 年四大顶会的全部 1,154 篇论文，发现伦理报告水平不一致且高度聚焦机构审查委员会批准、人类受试者保护、负责任披露与危害-收益平衡；并报告对 24 名隐私（研究者，其中也包括审稿人、委员会成员或程序主席）的半结构化访谈结果，考察其作为作者与同行评审过程中的决策机制。
+#### UnsafeBench: Benchmarking Image Safety Classifiers on Real-World and AI-Generated Images.
 
-
-### Layered, Overlapping, and Inconsistent: A Large-Scale Analysis of the Multiple Privacy Policies and Controls of U.S. Banks.
-- **作者**: Lu Xian, Van Hong Tran, Lauren Lee, Meera Kumar, Yichen Zhang, Florian Schaub
-- **解读**: 隐私政策通常复杂，而美国金融机构依《格雷姆-里奇-比利雷法案》（GLBA）提供的两页标准化通知是例外；但银行现在运营网站、移动应用等服务，涉及复杂数据共享实践，需要额外隐私通知与 do-not-sell 退出机制。本文大规模分析银行如何响应 GLBA、联邦政策要求及加州消费者隐私法（CCPA，作为州法代表）实施披露与控制，聚焦第三方营销相关等尤其侵犯隐私的做法；收集了 2,067 家最大银行的数据，其中 45.2% 提供多份政策，且同一银行的不同披露之间存在频繁、令人担忧的不一致。
-
-
-### How Blind and Low-Vision Users Manage Their Passwords.
-- **作者**: Alexander Ponticello, Filipo Sharevski, Simon Anell, Katharina Krombholz
-- **解读**: 密码管理对盲人与低视力（BLV）用户仍是开放问题。本文对 33 名 BLV 参与者进行定性访谈研究发现，所有参与者都在一定程度上使用密码管理器并认为其相当可访问，但采用主要受存取密码的便利性驱动；生成强随机密码等优势因缺乏实际可访问性而被回避。密码（管理器）未能满足用户对自主性（agency）的潜在需求，这源于用户在使用不可访问软件时的经历。
-
-### A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends.
-- **作者**: Shakhzod Yuldoshkhujaev, Mijin Jeon, Doowon Kim, Nick Nikiforakis, Hyungjoon Koo
-- **解读**: 研究问题：APT（高级持续性威胁）长期以隐蔽、持续的方式攻击关键行业，业界虽产生了大量公开的 APT 战役文档，但以往工作多聚焦检测、评估、网络情报或数据集构建等具体方面，缺乏对散落档案的纵向梳理。本文对十余年的 APT 文档进行纵向分析与全球趋势研究，系统回顾这些分布式情报档案，为理解 APT 的长期演化与全球格局提供全景式视角。
-
-
-### UnsafeBench: Benchmarking Image Safety Classifiers on Real-World and AI-Generated Images.
 - **作者**: Yiting Qu, Xinyue Shen, Yixin Wu, Michael Backes, Savvas Zannettou, Yang Zhang
-- **解读**: 研究问题：文本到图像模型被滥用的担忧使开发者日益依赖图像安全分类器，但其在真实世界图像与 AI 生成图像上的性能尚属未知。本文提出 UnsafeBench 基准框架：先构建约 1 万张、按 11 类（性、暴力、仇恨等）标注为安全/不安全的图像数据集，再评估 5 个流行分类器及 3 个由通用视觉语言模型驱动的分类器。评估表明现有分类器在全面性与有效性上不足以缓解这一多面问题，且真实与生成图像之间存在质量、风格、版式上的分布偏移导致鲁棒性下降；基于此作者构建了名为 PerspectiveVision 的审核工具以改善分类性能。
+- **方向**: AI/ML安全
+- **解读**:
+
+文生图模型的兴起及其滥用担忧，使开发者日益依赖图像安全分类器来审核生成的不安全图像。然而，现有分类器对真实世界图像与 AI 生成图像的效能如何，目前缺乏系统认知，内容审核这一关键防线缺少可靠的基准参照。
+
+本文提出 UnsafeBench 基准框架，评估图像安全分类器的有效性与鲁棒性，特别关注图像分布差异（真实 vs AI 生成）对性能的影响。作者构建了包含 1 万张标注图像的数据集，按性、暴力、仇恨等 11 个类别标注为安全/不安全，并评估 5 个流行分类器与 3 个由通用视觉语言模型（VLM）驱动的分类器。
+
+评估表明：现有分类器不足以全面有效地缓解这一多面问题；真实世界图像与 AI 生成图像之间存在分布偏移（distribution shift），显著影响分类器性能。
+
+1 万张、11 类别的标注集与 5 + 3 的评估矩阵使该基准成为内容审核领域的参照系。关键发现"分布偏移"直接解释了线上分类器在 AI 生成内容上失准的原因——审核供应链必须针对生成内容再校准。局限在于 VLM 分类器对提示的敏感性、基准集的代表性需要持续更新，对抗鲁棒性评估也有深化空间。
 
 
-### The Importance of Being Discrete: Measuring the Impact of Discretization in End-to-End Differentially Private Synthetic Data.
-- **作者**: Georgi Ganev, Meenatchi Sundaram Muthu Selva Annamalai, Sofiane Mahiou, Emiliano De Cristofaro
-- **解读**: （无摘要，据标题推断）本文聚焦端到端差分隐私（DP）合成数据流程中离散化步骤的影响：测量离散化操作如何改变合成数据的隐私保证与效用权衡，为端到端 DP 合成数据方法的实现选择提供量化依据。
+#### Asymmetry Vulnerability and Physical Attacks on Online Map Construction for Autonomous Driving.
 
-
-### Asymmetry Vulnerability and Physical Attacks on Online Map Construction for Autonomous Driving.
 - **作者**: Yang Lou, Haibo Hu, Qun Song, Qian Xu, Yi Zhu, Rui Tan, Wei-Bin Lee, Jianping Wang
-- **解读**: 研究问题：自动驾驶系统转向基于车载传感器数据的在线高清（HD）地图构建，但其在对抗条件下的鲁棒性未被充分研究。系统性漏洞分析发现这类模型对预测对称道路结构存在固有偏向，在分叉、汇合等非对称场景中常误把直行边界预测成对侧镜像，且该偏向在真实世界可被遮挡等定向干扰可靠触发。基于此提出两阶段攻击框架：先识别受害自动驾驶车辆潜在路线上的脆弱点，再优化相机致盲攻击与补丁攻击的位置与模式；在公开数据集上可使建图平均精度下降 9.9%、44% 的路线不可达、与边界碰撞的不安全规划轨迹率上升 27%，并在实车测试平台验证。作者将对称性偏向归因于训练数据不平衡、模型架构与元素表示，并提出微调作为防御，显著提升鲁棒性。
+- **方向**: AI/ML安全
+- **解读**:
 
+高精（HD）地图为自动驾驶（AD）系统的预测与规划提供精确环境信息。由于标注与维护成本高昂，研究转向用车载传感器数据在线构建 HD 地图，以获得更广覆盖与更及时更新；但这类在线地图构建模型在对抗条件下的鲁棒性此前鲜有研究，其安全影响却被低估——地图错误直接影响规划层。
 
-### Pixnapping: Bringing Pixel Stealing out of the Stone Age.
-- **作者**: Alan Wang, Pranav Gopalkrishnan, Yingchen Wang, Christopher W. Fletcher, Hovav Shacham, David Kohlbrenner, Riccardo Paccagnella
-- **解读**: 研究问题：像素窃取攻击使恶意网站能够泄露受害网站展示的敏感内容，其思想（Stone, 2013）是通过内嵌 iframe 并利用 SVG 滤镜基于那些网站的像素进行计算，从而构造侧信道。作者指出，得益于现代浏览器对跨源 cookie 共享的严格限制，像素窃取攻击目前几乎已被完全缓解；本文旨在让该攻击类别摆脱这一几乎被终结的'石器时代'现状，探索使其在现代浏览器环境中重新可行的方法。
+本文对在线 HD 地图构建模型进行系统漏洞分析，发现模型对对称道路结构存在固有预测偏向：在分叉、汇合等非对称场景中，模型常错误地把直线边界镜像到对侧。作者证明该偏向在真实世界持续存在，并可被目标操控可靠触发，构成物理攻击。
 
+摘要截断，未给出攻击成功率等数字；核心发现是非对称场景下的系统性预测偏向及其可被可靠触发的物理攻击路径。
 
-### HW-Spy: Handwriting Inference by Tracing Pen-Tail Movements.
-- **作者**: Long Huang, Kang G. Shin
-- **解读**: 研究问题：键盘输入推断攻击已被大量研究，而同样会泄露敏感信息的手写输入推断受到的关注很少。本文提出新型手写推断攻击 HW-Spy：当笔尖与书写面都处于攻击者摄像头视野之外（例如受害者在线上会议中多任务处理、或银行/经销商/房产中介等公共场所的监控摄像头录制远程行为）时，通过追踪受害者笔尾的运动来推断其书写内容，评估了这一被低估的隐私泄露渠道。
+自动驾驶安全研究中，感知模型（目标检测、分割）的攻击研究众多，在线地图构建这一新兴模块被忽视——而地图错误比单帧感知错误影响更持久，会持续误导规划层。对称性偏向的发现说明训练数据分布（对称道路居多）塑造了模型先验，攻击者可利用该先验以低成本干扰地图输出。物理攻击的实现条件与对规划后果的推演需正文深入验证。
 
-
-### Combating Falsification of Speech Videos with Live Optical Signatures.
-- **作者**: Hadleigh Schwartz, Xiaofeng Yan, Charles J. Carver, Xia Zhou
-- **解读**: 研究问题：高知名度演讲视频因易获取且影响力大而成为伪造攻击的主要目标。本文提出 VeriLight，一种低开销、无感的系统：与纯数字化的伪造检测方法不同，它在活动现场通过不可感知的调制光创建动态物理签名并将其嵌入所有视频录制中，签名编码事件独有的语义特征（含说话者动作）并经密码学保护以防止欺骗，下游可从任意录制中提取并对照内容校验其完整性。关键组件包括基于局部敏感哈希生成极紧凑（150 位）姿态不变特征的框架，以及实时传输速率大于 200 bps 且不引人注意的光学调制方案；实验显示其检测伪造视频的 AUC 不低于 0.99、真阳性率达 100%，并对录制条件、后处理技术及白盒对抗攻击下的特征提取方法高度鲁棒。
-
-
-### ConTest: Taming the Cyber-physical Input Space in Fuzz Testing with Control Theory.
-- **作者**: Jinwen Wang, Hongchao Zhang, Chuanrui Jiang, Andrew Clark, Ning Zhang
-- **解读**: 研究问题：网络物理系统（CPS）的模糊测试面临物理输入与网络输入构成的巨大搜索空间这一开放难题。本文借鉴控制理论，利用物理信息模型引导输入空间探索，设计并实现模糊测试工具 ConTest：用 Lyapunov 函数建模系统动态，通过参数化突变实现高效的检测与变异，并在有界动态误差下提供漏洞发现有效性的可证明保证。原型在 ArduPilot 与 PX4 两个代表性机器人与载具平台上部署，共发现 253 个时空验证类缺陷，其中 58 个为零日缺陷、54 个获厂商确认。
-
-
-### RISCover: Automatic Discovery of User-exploitable Architectural Security Vulnerabilities in Closed-Source RISC-V CPUs.
-- **作者**: Fabian Thomas, Eric García Arribas, Lorenz Hetterich, Daniel Weber, Lukas Gerlach, Ruiyi Zhang, Michael Schwarz
-- **解读**: （无摘要，据标题推断）本文针对闭源 RISC-V CPU 提出自动化发现用户可利用架构安全漏洞的方法，无需厂商源码即可系统挖掘 RISC-V 处理器中的架构级安全缺陷，以覆盖闭源实现的安全盲区。
-
-
-### PickleBall: Secure Deserialization of Pickle-based Machine Learning Models.
-- **作者**: Andreas D. Kellas, Neophytos Christou, Wenxin Jiang, Penghui Li, Laurent Simon, Yaniv David, Vasileios P. Kemerlis, James C. Davis, Junfeng Yang
-- **解读**: （无摘要，据标题推断）基于 pickle 的机器学习模型序列化格式存在固有的反序列化安全隐患（恶意载荷可执行任意代码），本文提出 PickleBall 方案，为 pickle 格式 ML 模型提供安全反序列化机制，在加载模型时防护恶意构造的 pickle 数据。
-
-
-### Give LLMs a Security Course: Securing Retrieval-Augmented Code Generation via Knowledge Injection.
-- **作者**: Bo Lin, Shangwen Wang, Yihao Qin, Liqian Chen, Xiaoguang Mao
-- **解读**: 研究问题：检索增强代码生成（RACG）利用外部知识提升 LLM 代码合成的功能正确性，但现有系统普遍忽视安全，被投毒的知识库可误导 LLM 生成不安全代码。本文提出安全加固框架 CodeGuarder，将范式从'仅检索代码示例'转变为同时纳入代码与安全知识：基于 ReposVul 数据集分析真实漏洞构建知识库，检索器把查询分解为细粒度子任务并获取相关优先级指导，引入利用 LLM 对不同漏洞类型敏感性的重排序与过滤机制，并将过滤后的知识无缝注入提示词。评估显示 CodeGuarder 显著提升安全修复率：相对标准 RACG 平均提升 20.12%，两种不同场景下分别提升 31.53% 与 21.91%，且不损害正确性，并在目标语言知识匮乏时仍表现出强泛化能力。
-
-
-### Beyond Tag Collision: Cluster-based Memory Management for Tag-based Sanitizers.
-- **作者**: Mengfei Xie, Yan Lin, Hongtao Wu, Jianming Fu, Chenke Luo, Guojun Peng
-- **解读**: （无摘要，据标题推断）基于标签（tag）的消毒器（sanitizer）依赖标签管理内存，标签冲突之外的分配策略同样影响其安全与性能；本文提出基于簇的内存管理方案，改进标签消毒器的内存布局与管理，以降低开销并减少误报。
-
-
-### Recover Function Signature from Combined Constraints.
-- **作者**: Haohui Huang, Yue Liu, Yuxi Cheng, Haiyang Wei, Jiamu Liu, Yu Wang, Linzhang Wang
-- **解读**: 研究问题：函数签名恢复是二进制程序分析的基石，现有方法要么依赖反汇编约束（跨架构兼容性与可扩展性差），要么采用资源密集且常不准确的学习方法。本文提出从组合约束出发恢复函数签名，通过联合多种约束来源兼顾跨架构适用性、可扩展性与准确性，弥补两类现有方法的不足。
-
-
-### Dangers Behind Access Control: Understanding and Exploiting Implicit Permissions in Kubernetes.
-- **作者**: Nanzi Yang, Xingyu Liu, Wenbo Shen, Jinku Li, Kangjie Lu
-- **解读**: 研究问题：作为容器编排事实标准的 Kubernetes 被广泛部署，其安全至关重要。本文定义了一个新的攻击面——隐式权限（implicit permission）：显式授予的权限在执行过程中动态地导致对其他资源的操作，使实际权限超出预期范围。这类权限可被利用创建漏洞，攻击者可借此攻陷整个集群。
-
-
-### Tide: An Efficient Kernel-level Isolation Execution Environment on AArch64 via Dynamically Adjusting Output Address Size.
-- **作者**: Shiyang Zhang, Chenggang Wu, Chengxuan Hou, Jinglin Lv, Yinqian Zhang, Qianyu Guo, Yuanming Lai, Mengyao Xie, Yan Kang, Zhe Wang
-- **解读**: 研究问题：内核级隔离执行环境（IEE）用于保护关键资源与监控器，但现有 IEE 为隔离 IEE 内存都必须充当引用监视器对页表更新进行校验，带来显著性能开销。本文提出 Tide，基于 AArch64 的输出地址大小硬件特性，将此类校验卸载到硬件；同时针对灵活性与安全挑战，利用 stage-2 地址翻译灵活扩展物理范围以映射内存并施加额外内存访问控制，并设计新颖的门（gate）机制——通过临时禁用该特性安全地进入（sneak）IEE，确保只在固定位置被执行。实验表明 Tide 在保护内核结构方面比现有工具更具性能优势。
-
-
-### Accountable Liveness.
-- **作者**: Andrew Lewis-Pye, Joachim Neu, Tim Roughgarden, Luca Zanolini
-- **解读**: 研究问题：安全性与活性是共识协议的两大经典属性，近年研究用可问责性（accountability）强化了安全性——任何违规发生时，可证明相当比例的敌对节点是违规者；本文研究类似的可问责保证在活性上能达到什么程度。为此引入同步模型与部分同步模型之间的插值，称为 x-部分同步网络模型：直观上，在足够长的时间区间内最多 x 个时间步是异步的。作者证明了对活性可问责性可达参数区间的精确刻画，并参数化问题陈述，提供证据表明其分析达到近最优（作为敌对节点数 f 的函数），为以太坊等采用的 'inactivity leaks' 类活性可问责启发式提供了严格的理论基础。
-
-
-### How to Beat Nakamoto in the Race.
-- **作者**: Shu-Jie Cao, Dongning Guo
-- **解读**: 研究问题：本文研究有界网络延迟下的工作量证明（PoW）Nakamoto 共识协议，回答两个长期悬而未决的问题：给定确认延迟时对区块安全最有效的攻击是什么？相应的违规概率是多少？作者引入马尔可夫决策过程（MDP）框架精确刻画系统状态（含区块树与所有已挖区块的时间）、对手的潜在动作及对抗动作与随机到达过程带来的转移，提出并证明一种称为 bait-and-switch 的最优攻击，它通过'赢得赛跑'最大化违反安全的概率；利用链分析计算出任意确认深度下该违规概率的精确值，为延迟、共识规则与安全之间的相互作用提供了新见解。
-
-
-### Committee Selection with Non-Proportional Weights.
-- **作者**: Yucheng Sun, Haifeng Yu, Ruomu Hou
-- **解读**: 研究问题：委员会被广泛用于各类权益证明（PoS）区块链设计，理想情况下委员会应尽量小且按腐败比例恰当地代表整个系统；现有选择方案均遵循比例性原则（成员既不超额代表也不欠额代表其持有的权益）。本文研究采用非比例权重的委员会选择方案，探讨偏离比例性原则时的选择机制及其对代表性与安全性的影响。
-
-
-### Elastic Restaking Networks: United we fall, (partially) divided we stand.
-- **作者**: Roi Bar Zur, Ittay Eyal
-- **解读**: 研究问题：许多基于区块链的去中心化服务要求验证者（运营商）抵押权益，违约即被罚没；再质押（restaking）网络通过复用同一笔权益来保护多个服务，已迅速获得应用（管理超过 200 亿美元）。但再质押引入新的攻击向量：验证者可以协调在多个服务间同时作恶，只被罚没一次却能提取数字资产。本文分析这一'联合则倒、部分分开则立'的弹性再质押网络中的攻击与防御权衡。
-
-
-### Time Tells All: Deanonymization of Blockchain RPC Users with Zero Transaction Fee.
-- **作者**: Shan Wang, Ming Yang, Yu Liu, Yue Zhang, Shuaiqing Zhang, Zhen Ling, Jiannong Cao, Xinwen Fu
-- **解读**: 研究问题：RPC 服务已成为用户访问公链的主要网关，但现有去匿名化攻击要么不适用于区块链场景，要么假设主动网络窃听者并产生交易费用等成本。本文提出可将用户 IP 地址与其假名关联的新攻击：分析揭示账本上记录的确认时间戳与受害者查询状态时发送的 TCP 包时间戳之间存在时间相关性。攻击假设具备基础设施的强被动对手（可监控边界路由器与互联网交换点的流量），通过分析账本与数据包相关性即可识别假名发起者，且零费用；作者对方法进行数学建模、大规模测量并在真实世界验证，对以太坊、比特币、Solana 等多种网络中的正常用户成功率超过 95%。
-
-
-### Breaking Omertà: On Threshold Cryptography, Smart Collusion, and Whistleblowing.
-- **作者**: Mahimna Kelkar, Aadityan Ganesh, Aditi Partap, Joseph Bonneau, S. Matthew Weinberg
-- **解读**: 研究问题：密码协议常作诚实性假设——例如 n 个参与者中少于 t 个是敌对的——但在实践中，尤其是存在金钱激励促使参与者共谋并偏离协议时，该假设难以保证。本文研究阈值密码学中的'聪明共谋'问题，并探讨参与者作为告密者（whistleblowing）揭发共谋的机制，以缓解诚实性假设失效带来的风险。
-
-
-### Harnessing Vital Sign Vibration Harmonics for Effortless and Inbuilt XR User Authentication.
-- **作者**: Tianfang Zhang, Qiufan Ji, Md Mojibur Rahman Redoy Akanda, Zhengkun Ye, Ahmed Tanvir Mahdad, Cong Shi, Yan Wang, Nitesh Saxena, Yingying Chen
-- **解读**: 研究问题：XR 头显日益成为敏感数据的仓库与 Web 应用的入口，传统的口令/PIN 方案不适合其手势/语音界面且易受肩窥攻击，双因素认证又需第二台设备上的额外操作。本文提出首个无感、内置的 XR 用户认证系统，利用用户生命体征激发的振动谐波：呼吸与心跳产生低频机械振动使颅骨振动并产生谐波信号，当头显佩戴时这些信号携带与佩戴者头部结构与软组织相关的丰富生物特征，可由头显运动传感器捕获。系统不直接使用原始信号，而是提取不同频率间比值以捕捉佩戴者独特的头部/面部衰减特性（这些特性在周期性与幅度波动时保持稳定），并设计自适应滤波器减轻常见交互中的身体扰动，结合带注意力机制的深度学习模型实现跨场景的有效鲁棒认证。10 个月、52 名受试者、两款主流头显的评估显示：认证真阳性率超过 95%，拒绝未授权用户达 98% 的阴性率，且长期保持稳定。
-
-
-### AgentSentinel: An End-to-End and Real-Time Security Defense Framework for Computer-Use Agents.
-- **作者**: Haitao Hu, Peng Chen, Yanpeng Zhao, Yuqi Chen
-- **解读**: 研究问题：LLM 驱动的计算机使用代理可自主操作系统工具完成任务，但其输出固有的不稳定与不可预测性可能发出非预期命令或错误输入，导致有害操作；与源于不安全用户提示的传统风险不同，LLM 决策的执行结果带来贯穿代理全部组件的新挑战。本文提出 AgentSentinel，端到端、实时的防御框架：在代理相关服务中拦截敏感操作并暂停执行，直至完成全面审计；审计机制引入将当前任务上下文与执行期间产生的系统轨迹关联起来的新型检查过程。作者构建 BadComputerUse 基准（60 个攻击场景、6 类），显示四个 SOTA LLM 的平均攻击成功率为 87%，而 AgentSentinel 的防御成功率达 79.6%，显著优于基线防御。
-
-
-### Sentry: Authenticating Machine Learning Artifacts on the Fly.
+#### Sentry: Authenticating Machine Learning Artifacts on the Fly.
 - **作者**: Andrew Gan, Zahra Ghodsi
-- **解读**: 研究问题：ML 系统日益依赖第三方创建或托管的开源工件（数据集、模型），这种对外部预训练工件的依赖使系统暴露于供应链攻击——工件可在交付前被投毒，根源是现有 ML 系统缺乏任何真实性验证。哈希与签名等密码学方案可降低风险，但基于这些技术的完整性框架在应用到 SOTA 模型规模时开销巨大且不兼容 GPU 平台。本文开发 Sentry，基于 GPU 的框架，将模型实现与开发者身份和签名绑定，在加载到内存时即时执行认证，数据移动通过 NVIDIA GPUDirect 绕过 CPU；结合 Merkle 树与格哈希等哈希构造加速、内存优化与资源分区方案实现高吞吐。评估表明 Sentry 使 ML 系统获得实用的认证能力，相比 CPU 基线实现数量级的加速。
+- **方向**: AI/ML安全
+- **解读**:
+机器学习系统越来越依赖开源数据集与模型等第三方创建或托管的工件，这使系统暴露于供应链攻击：工件可能在送达终端用户前被投毒。现有 ML 系统缺乏任何真实性验证；而加密哈希/签名等完整性方案在 SOTA 模型规模上开销显著，且与 GPU 平台不兼容。
+
+Sentry 是一个基于 GPU 的新型框架，在模型加载到内存时即时验证其身份：将开发者身份与数字签名绑定，通过 NVIDIA GPUDirect 绕过 CPU 直接在 GPU 数据通路上完成认证；集成了哈希构造加速（Merkle 树、格哈希）、内存优化与资源分区方案，以支撑高吞吐。
+
+评估表明 Sentry 相比 CPU 基线实现数量级的加速，使 ML 工件认证在实际部署中切实可行。
+
+把认证计算塞进 GPU 数据通路、避免 CPU 往返，是解决"完整性验证开销"的正确工程路线，也补齐了 ML 供应链安全中最缺失的一环；局限是依赖 NVIDIA GPUDirect 生态（可移植性受限），且只覆盖模型工件——数据集与训练管线的认证仍需配套方案，密钥管理基础设施的落地成本也未在摘要中体现。
 
 
-### Training Robust Classifiers for Classifying Encrypted Traffic under Dynamic Network Conditions.
-- **作者**: Yuqi Qing, Qilei Yin, Xinhao Deng, Xiaoli Zhang, Peiyang Li, Zhuotao Liu, Kun Sun, Ke Xu, Qi Li
-- **解读**: 研究问题：现有基于深度学习的加密流量分类方法在真实部署中因动态网络条件（环境变化、混淆）而性能下降——训练与测试阶段呈现不同的特征模式。本文提出 MetaTraffic，基于元学习的通用深度学习框架，增强监督模型对动态条件的鲁棒性；核心观察是相同行为在不同条件下共享语义特征（可视为稳定表示），因此 MetaTraffic 通过最小化不同条件下表示方式的差异来学习稳定表示，并设计三个创新模块提升性能。在覆盖多类流量的公开与新建大规模数据集上，MetaTraffic 使准确率提升 8.94%、F1-Macro 提升 12.55%。
-
-
-### Adversarial Observations in Weather Forecasting.
+#### Adversarial Observations in Weather Forecasting.
 - **作者**: Erik Imgrund, Thorsten Eisenhofer, Konrad Rieck
-- **解读**: 研究问题：基于 AI 的天气预报系统（如 Google 的 GenCast）正重新定义预报技术并接近取代传统气象方法，但也把新漏洞引入预报流程。本文针对自回归扩散模型（即这类系统所使用的）提出新型攻击：通过注入与自然噪声统计上不可区分的细微观测扰动来操纵预报、编造事件，包括飓风、热浪与强降雨，扰动对测量值的改变小于 0.1%——相当于篡改单颗卫星的数据。鉴于现代预报系统集成近 100 颗卫星及许多其他来源的数据，这一发现凸显可能导致大规模破坏并削弱公众对预报信任的严重安全风险。
+- **方向**: AI/ML安全
+- **解读**:
+AI 天气系统（如 Google 的 GenCast）近期重新定义了天气预报的技术水平，在常规与极端事件预报上更准确、更及时，即将取代传统气象方法。但它们也引入新漏洞：本文研究针对自回归扩散模型（如 GenCast 所用）的对抗观测攻击——攻击者可通过操纵观测数据伪造天气事件，包括飓风、热浪与强降雨。
+
+攻击向观测数据注入细微扰动，这些扰动在统计上与自然噪声不可区分，变化量小于观测值的 0.1%——约相当于篡改单颗卫星的数据。
+
+鉴于现代气象系统集成近一百颗卫星及许多其他来源、由不同国家运营，该攻击可能造成大规模破坏并削弱公众对天气预报的信任——这正是本文强调的核心风险。
+
+对"关键基础设施级 AI"的攻击分析很有价值：0.1% 扰动即能伪造极端天气，说明此类系统的输入验证远未成熟。局限是攻击可行性依赖对观测-预报链路的访问模型（谁能篡改卫星数据？），摘要未展开威胁模型细节；防御方向（观测异常检测、多源冗余校验、鲁棒聚合）值得后续研究。
 
 
-### Co-Prime: A Co-design Framework for Privacy Preserving Machine Learning on FPGA.
-- **作者**: Shuo Xu, Jiming Xu, Pengfei Xue, Xinyao Wang, Lei Ju, Wei Zhang
-- **解读**: 研究问题：在多方协同采集数据的隐私敏感机器学习应用中，秘密共享协议是隐私保护机器学习（PPML）的主流策略，但其在训练各线性/非线性阶段产生大量不平衡的通信负载，且该不平衡在硬件加速器降低延迟时被进一步放大。本文提出 Co-Prime，基于 FPGA 的三方（3PC）高效框架，无需第三方协助：集成协议协同优化以缓解瓶颈，提出新颖的格式转换技术并自适应地选择 PPML 偏好的格式，提供加速器友好的原语与系统级设计空间探索，并通过重叠网络通信实现延迟隐藏。实验表明在 LAN/WAN 环境下对多种神经网络模型相比现有框架取得 2-18 倍的推理加速。
-
-
-### Fuzzy Extractors are Practical: Cryptographic Strength Key Derivation from the Iris.
-- **作者**: Amey Shukla, Luke Demarest, Benjamin Fuller, Sohaib Ahmad, Caleb Manicke, Alexander Russell, Sixia Chen
-- **解读**: 研究问题：设备级生物识别认证长期存在理论与实践之间的鸿沟——理论构造原则上可用密码学安全的公开注册数据提供认证，但具体实现在真实世界参数下未能兑现安全性，导致部署算法依赖会公开泄露生物特征隐私的数据，系统被迫引入可信执行环境等外部措施。本文在虹膜上实现具备密码学强度密钥派生的实用模糊提取器，弥合这一理论与实践的差距。
-
-
-### May the ForceNotBe With You: Brute-Force Resistant Biometric Authentication and Key Reconstruction.
-- **作者**: Alexandra Boldyreva, Deep Inder Mohan, Tianxin Tang
-- **解读**: （无摘要，据标题推断）针对生物识别认证中生物特征数据可被暴力破解的风险，本文提出抗暴力破解的生物识别认证与密钥重建方案，使从生物特征重建的密钥在泄露场景下仍保持安全性。
-
-
-### Committed Vector Oblivious Linear Evaluation and Its Applications.
-- **作者**: Yunqing Sun, Hanlin Liu, Kang Yang, Yu Yu, Xiao Wang, Chenkai Weng
-- **解读**: 本文引入承诺向量不经意线性求值（C-VOLE）概念：持有预承诺值的一方可与多方就同一值生成 VOLE 关联。它是一个统一工具，可用于基于值的零知识证明（ZKP）、恶意安全多方计算、私有集合交集（PSI）等场景。
-
-
-### Lodia: Towards Optimal Sparse Matrix-Vector Multiplication for Batched Fully Homomorphic Encryption.
-- **作者**: Jiping Yu, Kun Chen, Xiaoyu Fan, Yunyi Chen, Xiaowei Zhu, Wenguang Chen
-- **解读**: 研究问题：加密矩阵向量乘是众多隐私保护应用的基础组件，现有基于全同态加密（FHE）的算法通常用批处理（batching）提升计算效率却忽视矩阵稀疏性，而直接移植明文'跳过零元素'的寻址方式又无法利用批处理优势并引入额外开销。本文针对批量 FHE 场景设计稀疏矩阵向量乘（SpMV）方案 Lodia，向最优计算效率逼近。
-
-
-### Separating Broadcast from Cheater Identification.
-- **作者**: Yashvanth Kondi, Divya Ravi
-- **解读**: 研究问题：达到可识别中止（IA）的 MPC 协议保证：若诚实方被拒绝获得输出，将被告知至少一个腐败方的身份，作弊者识别在协议失败时提供追责手段，在某些场景（如密钥管理）甚至比保证输出交付更受青睐。但与更弱的 abort 安全设置不同，IA 协议实质性使用广播信道；本文研究广播信道与作弊者识别能否分离。
-
-
-### Correlation-Aware Secure Sorting and Permutation for Iterative Two-Party Graph Analysis.
-- **作者**: Yunyi Chen, Jiping Yu, Kun Chen, Xiaoyu Fan, Xiaowei Zhu, Wenguang Chen
-- **解读**: 研究问题：安全多方计算支持对联合图进行深度分析同时保护数据隐私，但在两方场景下，现有方法因消息传递所需的冗余安全排序或昂贵洗牌操作而低效，部分工作通过差分隐私或引入辅助方来放宽安全假设。本文提出关联感知的安全排序与置换方法，用于迭代式两方图分析，在保持安全性的同时减少冗余操作开销。
-
-
-### Timing Attacks on Differential Privacy are Practical.
-- **作者**: Zachary Ratliff, Nicolás Berrios, James Mickens
-- **解读**: 研究问题：差分隐私（DP）已成为计算隐私保护统计的标准方法，但在交互式设置中，DP 查询的可观测运行时间可能无意泄露敏感信息，违反隐私保证。本文表明流行的 DP 库（diffprivlib、OpenDP、PyDP）频繁引入此类时序信道，导致可测量的隐私退化；漏洞不仅存在于常用机制（私有求和、计数、均值、选择），也存在于过滤、排序等预处理步骤中——这些看似无害的操作在个体数据是否存在及其输入顺序影响下表现出不同的运行时间。
-
-
-### SlicedPIR: Offloading Heavyweight Work with NTT.
-- **作者**: Jonathan Weiss, Yossi Gilad
-- **解读**: 本文提出 SlicedPIR，一种分布式私有信息检索（PIR）协议：通过把服务器负载卸载到多个不可信的客户端机器上，有效缓解服务器的计算瓶颈，且相比先前工作只带来适度的网络开销。其通信节省源于利用 PIR 协议中通常使用的同态加密方案的多项式编码，创造性地使用数论变换（NTT）把多项式上的点作为数据'切片'分发；客户端对各自切片执行递归查询并返回简洁结果，服务器利用 Schwartz-Zippel 引理（作者针对该场景做了适配）验证客户端结果。作者将其集成进私密消息系统（写入消息后秘密查询好友的消息），原型实验显示其随客户端数量与数据库规模良好扩展，相比 SOTA 带宽消耗降低超过 95%。
-
-
-### Byte by Byte: Unmasking Browser Fingerprinting at the Function Level using V8 Bytecode Transformers.
-- **作者**: Pouneh Nikkhah Bahrami, Dylan Cutler, Igor Bilogrevic
-- **解读**: 研究问题：浏览器指纹识别通过细微技术实现跨站持久追踪，常绕过传统防御，而脚本级拦截对策又会导致网站损坏，因此需要兼具函数级精度（以减少误伤）与对代码混淆、URL 操纵固有鲁棒性的检测方法。本文提出利用 V8 字节码转换器在函数级揭示浏览器指纹识别行为的方法。
-
-
-### Optimal Mechanisms for Quantum Local Differential Privacy.
-- **作者**: Ji Guan
-- **解读**: 研究问题：集中式差分隐私已成功应用于量子计算与量子信息处理，用于保护相邻状态连接间的信息泄漏；新提出的量子局部差分隐私（QLDP）类似经典场景中所有状态均被视作本地数据的隐私保护框架，但其探索仍处早期、以概念为主，给保障状态隐私的实用实现带来挑战。本文研究量子局部差分隐私的最优机制设计。
-
-
-### Competing for Attention: An Interview Study with Participants of Cryptography Competitions.
-- **作者**: Ivana Trummová, Juliane Schmüser, Nicolas Huaman, Sascha Fahl
-- **解读**: 研究问题：密码学竞赛常推动新密码学的发展与标准化，帮助从候选方案中选出安全高效的原语与算法，过去数十年 NIST 等机构举办的竞赛产出了对称/非对称加密、哈希、数字签名乃至近期抗量子密码的标准。尽管竞赛催生了大量针对提交方案的技术研究，人们对密码学竞赛过程中的人类因素（它们如何塑造结果、对安全性的感知影响）知之甚少；本文通过对竞赛参与者的访谈研究来填补这一空白。
-
-
-### THOR: Secure Transformer Inference with Homomorphic Encryption.
-- **作者**: Jungho Moon, Dongwoo Yoo, Xiaoqian Jiang, Miran Kim
-- **解读**: 研究问题：大语言模型在云端部署日益普遍，隐私问题突出。本文提出 THOR，基于同态加密的非交互式安全 Transformer 推理框架：首先提出基于对角主导编码与紧凑密文打包的高效矩阵乘法算法，并扩展为支持明文-密文（PC-MM）并行子矩阵计算与采用 baby-step giant-step 策略的密文-密文（CC-MM）计算；同时结合先进逼近技术与自适应迭代方法设计 softmax、LayerNorm、GELU、Tanh 等非线性函数的求值策略。相比 SOTA 方法，THOR 在 PC-MM（ℝ768×ℝ768×128）上比 BOLT 快最多 5.3 倍、在 CC-MM（ℝ64×128×ℝ128×128）上比 Powerformer 快最多 9.7/12 倍，并能在单 GPU 上约 10 分钟完成 128 token 的 BERT-base 推理，同时保持与 GLUE 任务相当（comparable）的精度。
-
-
-### Optimistic, Signature-Free Reliable Broadcast and Its Applications.
-- **作者**: Nibesh Shrestha, Qianyu Yu, Aniket Kate, Giuliano Losa, Kartik Nayak, Xuechao Wang
-- **解读**: 研究问题：可靠广播（RBC）是容错分布式系统的关键原语，无签名 RBC 协议因计算高效而受青睐，现有协议在容忍 f<n/3 个拜占庭故障的同时需最优的 3 步才能达成决策。本文提出乐观协议：在特定条件（至少⌈(n+2f-2)/2⌉个非广播方诚实）下仅需 2 步即可终止，同时保持原有容错能力；并证明实现 2 步终止所需诚实方数量的匹配下界。
-
-
-### GhostCache: Timer- and Counter-Free Cache Attacks Exploiting Weak Coherence on RISC-V and ARM Chips.
-- **作者**: Yu Jin, Minghong Sun, Dongsheng Wang, Pengfei Qiu, Yinqian Zhang, Shuwen Deng
-- **解读**: 研究问题：微架构侧信道攻击常依赖高分辨率定时器，新兴处理器架构试图通过限制细粒度定时器访问来缓解；本文验证多个 RISC-V/ARM 芯片的 L1 缓存中弱一致性广泛存在，并利用它绕过这类缓解，提出 GhostCache，构造无需定时器、无需计数器的指令侧信道攻击。它引入两个新颖且广泛适用的攻击原语 Modify+Recall 与 Call+ModifyCall，适用于 RISC-V 与 ARM，影响 6 个商用与 3 个开源大处理器，是此类攻击的首次演示；作者还识别出未披露的特性（如 next-three-line 预取机制、从数据缓存直接转发被驱逐指令）。基于此开发了 4 种隐蔽信道，最高达 1.68 MB/s、错误率 0.01%；并实现三种真实攻击：端到端网站指纹攻击（100 类上 92.02% 准确率）、内核信息泄漏（发现新的 Spectre 披露 gadget，函数指针泄漏准确率 92.91%）以及加密密钥重建；最后提出针对这些架构的潜在对策。
-
-
-### Heracles: Chosen Plaintext Attack on AMD SEV-SNP.
-- **作者**: Benedict Schlüter, Christoph Wech, Shweta Shinde
-- **解读**: （无摘要，据标题推断）本文提出 Heracles，一种针对 AMD SEV-SNP 的选择明文攻击（CPA），通过可控的明文输入利用 SEV-SNP 内存加密与完整性保护机制的弱点，实现机密性破坏。
-
-
-### Towards Real-Time Defense against Object-Based LiDAR Attacks in Autonomous Driving.
+#### Towards Real-Time Defense against Object-Based LiDAR Attacks in Autonomous Driving.
 - **作者**: Yan Zhang, Zihao Liu, Yi Zhu, Chenglin Miao
-- **解读**: 研究问题：基于 LiDAR 的目标检测是自动驾驶感知的基石，但易受基于物体的对抗攻击——环境中策略性放置的物理物体操纵点云误导模型，此类攻击实用、隐蔽且无需专用硬件，而现有防御方法计算开销大、泛化性差、无法实时运行。本文提出首个针对自动驾驶中此类攻击的实时防御机制：解决方案对模型与攻击均无关（无需先验知道物体数量、形状、大小或位置），置于自动驾驶流水线的传感与感知模块之间，实时处理点云，采用新颖的生成模型高效识别并移除可疑区域中的点。模拟与真实世界环境的实验表明该方法显著降低攻击成功率且延迟极小。
+- **方向**: AI/ML安全
+- **解读**:
+基于 LiDAR 的目标检测是自动驾驶感知系统的基石，现代方案依赖深度神经网络从 3D 点云学习几何特征。然而近期研究显示这些系统易受基于物体的对抗攻击（object-based adversarial attacks）——攻击者把物理物体策略性地放置在环境中，操纵点云误导模型。这类攻击实际、隐蔽、无需专用硬件，对自动驾驶的安全与可靠性构成严重威胁。
+
+现有防御手段存在高计算开销、泛化能力有限、无法实时运行等显著缺陷。本文提出首个面向自动驾驶的实时防御机制：它既模型无关又攻击无关，无需关于攻击物体数量、形状、大小或位置的先验知识；部署在感知模块之间，通过新颖的生成模型高效识别并移除可疑区域中的点。
+
+在模拟与真实环境的实验中，该方案在保持极低延迟的同时显著降低攻击成功率，为这一安全问题提供了实用且鲁棒的解决方案。
+
+我的思考：实时性+模型/攻击无关是本工作的核心卖点——防御不绑定特定检测器或攻击形式，工程落地可能性更高；生成模型做"可疑区域识别与点移除"的范式比传统统计过滤更灵活。与随机点丢弃、离群点剔除等朴素防御相比，其对精心构造的物理对抗物（如遮挡板、伪装物体）应更有效。局限：摘要未给出攻击成功率的量化降幅与延迟数值；生成模型的推理开销与对抗性更强的攻击（如自适应攻击）下的鲁棒性仍需原文验证。
 
 
-### RMPocalypse: How a Catch-22 Breaks AMD SEV-SNP.
-- **作者**: Benedict Schlüter, Shweta Shinde
-- **解读**: （无摘要，据标题推断）本文揭示 AMD SEV-SNP 中一个'两难困境'（Catch-22）式的设计矛盾——即某一防护机制的存在恰好构成可利用的条件——并利用该矛盾攻破 SEV-SNP 的安全保证。
-
-
-### Dynamic Vulnerability Patching for Heterogeneous Embedded Systems Using Stack Frame Reconstruction.
-- **作者**: Ming Zhou, Xupu Hu, Zhihao Wang, Haining Wang, Hui Wen, Limin Sun, Peng Zhang
-- **解读**: 研究问题：现有动态漏洞修补技术不适合嵌入式设备，尤其是医疗设备等任务关键系统——它们算力内存有限却要求服务不中断，常缺乏足够空闲时间打补丁，且系统架构多样使补丁触发器难以跨内核与硬件平台兼容。本文提出热补丁框架 StackPatch，基于栈帧重建促进补丁开发，引入不同触发策略以更新存储单元中的程序，并利用处理器普遍提供的异常处理机制增强 StackPatch 的适配性与控制流重定向能力。在涵盖 ARM、RISC-V、Xtensa 三种主流 MCU 架构的平台上评估：成功修复 102 个实时操作系统（RTOS）中公开披露的漏洞，并应用于软 PLC 与网络服务，每次修复在 260 个 MCU 时钟周期内完成。
-
-
-### Chekhov's Gun: Uncovering Hidden Risks in macOS Application-Sandboxed PID-Domain Services.
-- **作者**: Minghao Lin, Jiaxun Zhu, Tingting Yin, Zechao Cai, Guanxing Wen, Yanan Guo, Mengyuan Li
-- **解读**: 研究问题：macOS 将许多高特权操作委托给专用 PID-domain 服务，应用可通过 IPC 注册并与之通信；该架构提升用户态稳定性与安全性，但也为攻击者提供了有吸引力的攻击面。本文系统分析这些服务，发现一个被忽视的攻击向量：即使服务与调用应用受相同的应用沙箱（Application Sandbox）限制，仍可因微妙的 entitlement 差异而被利用。
-
-
-### A System Framework to Symbolically Explore Intel TDX Module Execution.
-- **作者**: Pansilu Pitigalaarachchi, Xuhua Ding
-- **解读**: 本文提出 TDXplorer，首个针对 Intel TDX Module（TDX 的软件可信计算基）的动态符号分析系统。无需硬件，构建于 TDXplorer 之上的分析器既能控制与插桩 Module 的执行，也能进行执行路径探索与安全功能推理，两种能力被无缝集成，直接作用于二进制代码与运行时状态（由相关技术塑造）。作者在 Linux 上实现并在真实平台执行上验证其性能与正确性；对安全 EPT 创建与 KeyHole 区域管理的建模案例展示了该工具支持多种分析任务的通用性。
-
-
-### Windows plays Jenga: Uncovering Design Weaknesses in Windows File System Security.
-- **作者**: Dong-uk Kim, JunYoung Park, Sanghak Oh, Hyoungshick Kim, Insu Yun
-- **解读**: 研究问题：近期一系列攻击利用文件系统触发权限提升等严重安全威胁，但微软一直以针对性补丁而非根本性重设计应对，如同在摇摇欲坠的地基上堆叠措施的'叠叠乐'游戏。本文提出五步综合分析方法：首先分析 Windows 文件系统与 Linux 的差异；其次调查这些差异如何导致真实应用的漏洞，发现 13 个高影响漏洞（其中 11 个此前未知）；第三，证明当前兼容层与编程语言无法正确处理相关语义——检查 6 个实现发现 27 处不合规与 9 处不一致，使其不可靠；第四，对 21 名有经验开发者的用户研究表明他们对操作系统级细节不熟悉、很少实施适当缓解；最后考察现有对策并讨论其局限。研究揭示 Windows 文件系统设计中关键但被掩盖的风险，并建议重新思考其安全策略。
-
-
-### Forward to Hell? On the Potentials of Misusing Transparent DNS Forwarders in Reflective Amplification Attacks.
-- **作者**: Maynard Koch, Florian Dolzmann, Thomas C. Schmidt, Matthias Wählisch
-- **解读**: 研究问题：DNS 基础设施因反射放大攻击而臭名昭著，虽已部署服务器屏蔽、访问控制、限速与协议限制等对策，威胁仍随服务器部署持续存在。本文报告并评估一个常被忽视的来源——透明转发器（transparent forwarder），这类广泛部署但功能不完整的组件在转发请求时不重建具有正确源地址的数据包，从而把请求馈入（主要是强大的 anycast）开放递归解析器，使后者被迫参与分布式拒绝服务攻击。作者展示透明转发器如何轻易规避限制措施、通过 anycast 获得额外的可扩展放大（实测放大系数最高达 14 倍），还能协助绕过保护某些实体的防火墙规则，使这些受保护实体成为全球攻击面的一部分，对互联网基础设施构成严重威胁。
-
-
-### Training with Only 1.0 ‰ Samples: Malicious Traffic Detection via Cross-Modality Feature Fusion.
+#### Training with Only 1.0 ‰ Samples: Malicious Traffic Detection via Cross-Modality Feature Fusion.
 - **作者**: Chuanpu Fu, Qi Li, Elisa Bertino, Ke Xu
-- **解读**: 研究问题：基于机器学习的恶意流量检测系统需从大规模数据集学习才能识别未知攻击，但在每个网络部署都要构建大规模训练集代价高昂。本文研究用极少量样本在新环境中实现准确检测：开发 tFusion，把流量视为包含包、流、主机三种模态特征的多模态数据，设计专用跨模态注意力模型融合细粒度逐包序列与粗粒度逐流/逐主机统计特征，综合不同粒度特征间的相关性；此外用拓扑驱动的对比方法预训练模型、减少拓扑相关偏差，从而在不同网络间获得泛化能力。作者在机构网络部署并测量五天：只需人工标注 1.0‰ 的流量，检测攻击时准确率达 99.82%，并优于 14 种现有方法（提升 12.76%）。
+- **方向**: AI/ML安全
+- **解读**:
+基于机器学习的恶意流量检测能从大规模数据集中学习并识别未见过的网络攻击，但在每个新网络中部署都需投入大量人力构建训练集，跨网络推广成本高昂。本文针对"极少标注样本"场景，目标是在全新环境中仅凭极小比例的标注数据实现准确检测，从而消除数据集构建的昂贵人工成本。
+
+作者提出 tFusion：把流量视为由包、流、主机三种感知模态构成的多模态数据，设计跨模态注意力模型，融合细粒度的逐包序列特征与粗粒度的逐流、逐主机统计特征，综合不同粒度特征间的相关性；此外用拓扑驱动的对比学习方法进行预训练，降低拓扑相关偏差，使模型能够泛化到各种网络。
+
+在机构网络部署实测 5 天，仅需人工专家标注 1.0‰ 的流量，检测攻击的准确率达 99.82%；同时优于 14 个现有方法，平均提升 12.76%。
+
+我的思考：1.0‰ 标注即可达到 99.82% 准确率，是"少样本+多模态+对比预训练"组合的出色实证，实用价值突出——它把流量检测的部署成本从"每网重建数据集"降到"少量人工标注"，扫清了跨网络落地的最大障碍。跨模态注意力融合包/流/主机三级特征的设计契合网络流量的层级本质；拓扑对比学习降低网络间偏差是少样本泛化的关键技巧。局限：部署场景为单一机构网络，99.82% 与 12.76% 提升的外部效度需更多网络验证；对抗性流量（刻意规避特征）下的表现亦待考察。
 
 
-### Fingerprinting Deep Packet Inspection Devices by their Ambiguities.
-- **作者**: Diwen Xue, Armin Huremagic, Wayne Wang, Ram Sundara Raman, Roya Ensafi
-- **解读**: 研究问题：深度包检测（DPI）设备的商品化使审查、限速、拦截等网络干扰从少数资源丰富的国家级行为者扩展到几乎所有运营商，但我们对 DPI 及其在互联网上的部署了解有限——作为中间设备，DPI 对传统基于主机的扫描工具无响应，且厂商积极掩盖产品进一步妨碍测量。本文提出利用 DPI 设备的歧义（ambiguities）行为对其进行指纹识别，以测绘 DPI 部署。
+#### Provable Repair of Deep Neural Network Defects by Preimage Synthesis and Property Refinement.
 
-
-### Don't Look Up: There Are Sensitive Internal Links in the Clear on GEO Satellites.
-- **作者**: Wenyi Morty Zhang, Annie Dai, Keegan Ryan, Dave Levin, Nadia Heninger, Aaron Schulman
-- **解读**: 研究问题：地球同步（GEO）卫星链路为公用事业、电信、政府、军事与商业用户的远程关键基础设施提供 IP 回程，但此前学术研究只聚焦少量卫星的特定用例。本文用消费级设备对 39 颗 GEO 卫星、25 个不同经度、411 个转发器进行首次广域流量扫描，并克服先前工作受困的弱信号质量、构建能处理异构端点多样化协议的通用解析器。结果发现 50% 的扫描流量包含明文内容：虽然链路层加密已成为电视传输数十年的标准做法，这些链路通常在链路层和网络层都缺乏加密；这为观察这些组织的内部安全实践提供了独特视角，作者观测到多家运营商的未加密蜂窝流量（含通话与短信内容）、公用事业工业控制系统的作业调度、军事资产跟踪、全球零售门店库存管理以及机上 Wi-Fi 等敏感明文。
-
-
-### Here Comes the AI Worm: Preventing the Propagation of Adversarial Self-Replicating Prompts Within GenAI Ecosystems.
-- **作者**: Stav Cohen, Ron Bitton, Ben Nassi
-- **解读**: （无摘要，据标题推断）本文研究生成式 AI 生态系统中对抗性自复制提示（'AI 蠕虫'）的传播机理，并提出防止其在 GenAI 代理与工具链间自主复制与扩散的防护机制。
-
-
-### Deep Learning from Imperfectly Labeled Malware Data.
-- **作者**: Fahad Alotaibi, Euan Goodbrand, Sergio Maffeis
-- **解读**: 研究问题：深度学习在恶意软件分类与检测上表现优异，但依赖大规模、准确标注的数据集；实践中多数数据集是自动利用杀毒引擎输出标注的，这一过程常引入显著标签噪声，严重损害深度模型的泛化能力。本文研究如何从不完美标注的恶意软件数据中学习，以缓解标签噪声对模型性能的破坏。
-
-
-### PreferCare: Preference Dataset Copyright Protection in LLM Alignment by Watermark Injection and Verification.
-- **作者**: Jian Lou, Chenyang Zhang, Xiaoyu Zhang, Kai Wu
-- **解读**: 研究问题：LLM 对齐训练依赖代价高昂的偏好数据集，这些数据集是使 LLM 遵循人类偏好的关键，其生成与标注成本高、劳动密集，亟需保护其版权免遭未授权使用。本文提出 PreferCare，首个专为偏好数据集版权保护设计的框架，包含两个阶段：注入阶段通过基于风格迁移的信号双层优化过程把水印嵌入数据集；验证阶段用统计检验判定可疑模型是否未经授权使用了含水印数据。在多个流行模型上的大量实验表明其在有效性、无害性、可迁移性与鲁棒性上表现良好，且能在 20 次查询内成功完成验证。
-
-
-### SCOPE: Expanding Client-Side Post-Processing for Efficient Privacy-Preserving Model Inference.
-- **作者**: Shenchen Zhu, Kai Chen, Yue Zhao, Cheng'an Wei
-- **解读**: 研究问题：隐私保护推理（PPI）使用户在不泄露敏感输入的情况下利用强大机器学习模型，但现有 SOTA 方案因显著的计算与通信开销而难以实用。本文提出 SCOPE，通过扩展客户端侧后处理来提升隐私保护模型推理的效率。
-
-
-### Phalanx: An FHE-Friendly SNARK for Verifiable Computation on Encrypted Data.
-- **作者**: Xinxuan Zhang, Ruida Wang, Zeyu Liu, Binwu Xiang, Yi Deng, Ben Fisch, Xianhui Lu
-- **解读**: 研究问题：加密数据上的可验证计算（VCoed）有两大流行范式——SNARK-FHE（用 SNARK 证明 FHE 运算）与 FHE-SNARK（同态求值 SNARK 证明），现有工作表明后者相比 SNARK-FHE 具有更好的效率。本文提出 Phalanx，一种面向加密数据可验证计算的 FHE 友好 SNARK。
-
-
-### Practical Zero-Knowledge PIOP for Maliciously Secure Multiparty Homomorphic Encryption.
-- **作者**: Intak Hwang, Hyeonbum Lee, Jinyeong Seo, Yongsoo Song
-- **解读**: 研究问题：同态加密（HE）是隐私增强密码学的基础技术，面向多方应用推广的同态加密原语（MPHE）近年受到广泛研究；从 MPHE 构造半诚实安全协议是直接的，但实现恶意安全仍具挑战，因为它需要针对密文与公钥的零知识知识论证（ZKAoK）。本文提出用于恶意安全多方同态加密的实用零知识 PIOP（多项式交互式预言证明）。
-
-
-### Practical TFHE Ciphertext Sanitization for Oblivious Circuit Evaluation.
-- **作者**: Intak Hwang, Seonhong Min, Jinyeong Seo, Yongsoo Song
-- **解读**: 研究问题：全同态加密（FHE）支持对加密数据求值任意电路，其广泛应用之一是盲目电路求值——发送方在接收方的私有数据上求值，涵盖推理与 PRF 协议等场景；但该场景下安全仅保证对发送方的隐私，发送方的隐私并非仅由 HE 派生（密文可能泄露发送方输入信息）。本文提出实用的 TFHE 密文净化（sanitization）方案，以支撑安全盲目的电路求值。
-
-
-### Multi-Party Private Set Operations from Predicative Zero-Sharing.
-- **作者**: Minglang Dong, Yu Chen, Cong Zhang, Yujie Bai, Yang Cao
-- **解读**: 研究问题：多方私有集合运算（MPSO）使 m>2 方能在各自集合上安全计算交集、并集等运算，但典型协议只实现非常有限的功能，多数工作聚焦一两个具体功能，导致方案孤立、缺乏统一研究框架。本文提出统一框架，使各方能在各自持有的集合上安全计算任意公式（有限个二元运算的任意组合，含交集、差集），通用性高、可实例化适应广泛场景，是首个在无需通用 MPC 技术下达到此灵活性与通用性的 MPSO 方案。通信复杂度随集合大小 n 线性增长，对广泛使用的 MPSI、MPSI-card、MPSI-card-sum 达到相对朴素方案的（准）最优，半诚实模型下时间表现优秀；实例化主要依赖对称密钥技术，MPSI、MPSI-card、MPSI-card-sum、MPSU 的在线性能或超越或匹配 SOTA。技术核心是名为 predicative zero-sharing 的新原语，它捕获了 MPC 可组合性的普适性，可能具有独立研究价值。
-
-
-### WPC: Weight Plaintext Compression for CNN Inference based on RNS-CKKS.
-- **作者**: Guiming Shi, Yuchen Wei, Shengyu Fan, Xianglong Deng, Liang Kong, Xianbin Li, Jingwei Cai, Shuwen Deng, Mingzhe Zhang, Kaisheng Ma
-- **解读**: 研究问题：基于 RNS-CKKS 的 CNN 推理支持对加密数据的安全处理，但带来巨大的权重规模开销——明文权重可达数十到数百 GB，现有压缩方法要么计算成本高、要么压缩率低。本文提出 WPC 权重明文压缩方案：作者观察到模型向明文格式的转换涉及类似离散傅里叶变换的操作，在时域与频域间切换的同时保留周期离散数据中的冗余信息；据此引入周期传输定理（Periodic Transmit Theorem），说明周期模式在转换过程中可被保留从而支持压缩，并设计 Channel Innermost 打包方案与旋转填充（Rotation Padding）对权重重排。结果表明 WPC 在 A100 GPU 上取得 1.25-2.18 倍加速与 46.08-139.11 倍压缩率。
-
-
-### FlippedRAG: Black-Box Opinion Manipulation Adversarial Attacks to Retrieval-Augmented Generation Models.
-- **作者**: Zhuo Chen, Yuyang Gong, Jiawei Liu, Miaokun Chen, Haotan Liu, Qikai Cheng, Fan Zhang, Wei Lu, Xiaozhong Liu
-- **解读**: 研究问题：检索增强生成（RAG）通过动态检索外部知识减少幻觉，但现有对抗研究多为白盒场景或启发式黑盒攻击，未充分探究检索阶段的脆弱性，且多聚焦可被先进 LLM 轻易纠正的事实型问答。本文研究更现实的威胁场景：针对争议性话题的 RAG 意见操纵。作者提出 FlippedRAG，一种基于迁移的攻击：先对 RAG 系统底层检索器进行反向工程与近似（枚举查询、候选与答案）以训练替代检索器，再利用替代检索器制作目标投毒触发器，修改极少量文档即可操纵检索与后续生成，并迁移到原始模型。大量实验表明 FlippedRAG 显著优于基线（平均成功率提升 16.7%），在四个不同领域使 RAG 生成响应的极性发生 50% 的方向性偏移，最终造成 20% 的用户认知改变；作者还评估了多种潜在防御措施，结论是现有缓解策略不足以抵御此类攻击。
-
-
-### Mosformer: Maliciously Secure Three-Party Inference Framework for Large Transformers.
-- **作者**: Ke Cheng, Yuheng Xia, Anxiao Song, Jiaxuan Fu, Wenjie Qu, Yulong Shen, Jiaheng Zhang
-- **解读**: 研究问题：BERT、GPT 等 Transformer 模型作为云推理服务部署时存在严重隐私问题，常用安全多方计算（MPC）同时加密用户输入与模型参数，但现有 MPC Transformer 协议多在半诚实安全模型下设计，扩展至恶意安全因安全求值复杂非线性函数带来的开销而极具挑战。本文提出 Mosformer，首个恶意安全三方（3PC）推理框架，高效支持 GPT 等大型 Transformer：设计带恶意安全性的常数轮比较与查找表原语（基于可验证分布式点函数 VDPF），在此基础上构建一整套 3PC 高效求值原语，并结合优化的模数转换大幅降低开销且保持精度。实验表明 vanilla block 上 Mosformer 相比先前协议实现最高 5.3 倍加速与 4.3 倍通信减少，且尽管安全性更强，其在线性能仍堪比或优于 BOLT、BumbleBee、SHAFT、Ditto 等半诚实 2PC 框架，并支持全规模 GPT-2。
-
-
-### DPImageBench: A Unified Benchmark for Differentially Private Image Synthesis.
-- **作者**: Chen Gong, Kecen Li, Zinan Lin, Tianhao Wang
-- **解读**: 研究问题：差分隐私（DP）图像合成旨在生成保留敏感数据集特性又不泄露个体隐私的人工图像，但各研究使用的评估协议不一致甚至存在缺陷，阻碍方法理解与领域进展。本文提出 DPImageBench，从多个维度精心设计：(1) 方法——研究 12 种代表性方法，按模型架构、预训练策略与机制系统刻画；(2) 评估——纳入 9 个数据集与 7 个指标全面评估；特别地，指出'在测试集上选准确率最高的下游分类器'这一常见实践违反 DP 并高估效用，DPImageBench 对其予以修正；(3) 平台——为多样化评估协议提供标准化接口，以统一框架容纳不同实现。基准还产生重要发现：与'公开数据通常有益'的常识相反，公开数据与目标数据的分布相似性显著影响性能，预训练并不总能带来改进。
-
-
-### What Lurks Within? Concept Auditing for Shared Diffusion Models at Scale.
-- **作者**: Xiaoyong (Brian) Yuan, Xiaolong Ma, Linke Guo, Lan Zhang
-- **解读**: 研究问题：参数高效微调（PEFT，如 LoRA）使任何人都能以极少算力定制强大的预训练扩散模型，但公开平台上大量共享的微调模型可能有意或无意生成版权材料、个人形象、有害内容等敏感内容，尽管监管关注增加，仍缺少部署前系统性审计这些模型的实用工具。本文研究概念审计问题：判定扩散模型是否已学会生成特定目标概念。现有方法依赖提示词构造与基于输出的图像分类，受提示不确定性、概念漂移与可扩展性差等限制；作者提出 PAIA（Prompt-Agnostic Image-Free Auditing），一种以模型为中心的新框架：把对象视作内部模型行为进行直接分析，无需优化提示词或生成图像，集成两个关键组件——通过分析晚期去噪阶段行为来缓解提示敏感性的提示无关策略，以及将模型与其基础版本动态比较、基于条件校准误差的无图像检测方法；假设可访问 DMs 但无需专有数据或用户提示词，与托管平台审计上传模型的方式一致。在 320 个受控训练模型与 771 个来自公开平台的真实社区模型上评估（覆盖名人、卡通角色、游戏实体、电影引用等概念），准确率超过 90%、耗时较现有基线减少 18-40 倍，且对自适应攻击保持鲁棒；这是首个可扩展的部署前扩散模型审计方案。
-
-
-### Provable Repair of Deep Neural Network Defects by Preimage Synthesis and Property Refinement.
 - **作者**: Jianan Ma, Jingyi Wang, Qi Xuan, Zhen Wang
-- **解读**: 研究问题：深度神经网络在各类安全威胁（后门攻击、对抗攻击、安全属性违反）下可能表现出危险行为，攻防双方持续军备竞赛。本文提出互补视角，利用近期'神经网络修复'的进展，在统一框架内修复源自不同威胁的多类缺陷：提出 ProRepair，一种由形式化原像合成与属性精化驱动的可证明修复框架。核心直觉：(i) 合成精确的代理盒（proxy box）刻画特征空间中原像，可导出有界距离项以充分指导后续修复步骤走向正确输出；(ii) 执行精化以实现大规模复杂任务上的外科手术式修正。在 4 个任务、6 个基准上评估，ProRepair 在有效性、效率与可扩展性上均优于现有方法：点式修复在保持性能、泛化显著改善的同时，较现有方法加速 5×-2000×；区域式修复成功修复全部 36 个违规实例（最佳基线仅 8 个），并能处理 18 倍更高维的空间。
+
+- **方向**: AI/ML安全
+
+- **解读**: 深度神经网络在后门攻击、对抗攻击与安全属性违反等威胁下会展现危险行为，攻防双方长期处于军备竞赛。作者提出互补视角：用"神经网络修复"统一缓解不同威胁来源造成的缺陷，目标是以一个框架提供可证明的修复保证，克服现有技术缺保证、扩展性差、开销大等局限。
+
+ProRepair 由形式化前像合成（preimage synthesis）与属性精化（property refinement）驱动：核心直觉一是合成精确的代理盒（proxy box）刻画特征空间前像，导出有界距离项以引导网络朝正确输出修复；二是通过精化实现大规模复杂任务上的外科手术式修正。
+
+在四个任务六个基准上，ProRepair 在有效性、效率与可扩展性上全面超越现有方法：逐点修复在保持性能的同时实现显著更好的泛化，较既有方法提速 5–2000 倍；区域修复成功修复全部 36 个违规实例（对比最强基线仅 8 个），并能处理高 18 倍的输入维度空间。
+
+我的思考：用"前像+精化"把修复问题形式化为可证明的约束优化，一举兼顾保证、规模与性能，36/36 对 8/36 的对比极具说服力。局限：可证明性依赖形式化方法本身的求解能力，超大规模网络仍是挑战；修复对鲁棒性与泛化的长期影响（如灾难性遗忘）摘要未展开。该工作把"修复"提升为可与检测、防御并列的一等安全机制，方向值得重视。
 
 
-### DCMI:A Differential Calibration Membership Inference Attack Against Retrieval-Augmented Generation.
-- **作者**: Xinyu Gao, Xiangtao Meng, Yingkai Dong, Zheng Li, Shanqing Guo
-- **解读**: 研究问题：RAG 通过集成外部知识库减少幻觉，但也引入成员推断攻击（MIA）风险，尤其在处理敏感数据的系统中；现有针对 RAG 数据库的 MIA 多依赖模型响应，却忽视非成员检索文档对 RAG 输出的干扰，限制其有效性。本文提出 DCMI，一种差分校准的成员推断攻击：利用成员与非成员检索文档在查询扰动下的敏感度差异，生成扰动查询以隔离成员检索文档的贡献、同时最小化非成员文档的干扰。在渐进放宽假设的实验中 DCMI 持续优于基线——例如对 Flan-T5 系统达到 97.42% 的 AUC 与 94.35% 的准确率，比 MBA 基线高出 40% 以上；在 Dify、MaxKB 等真实平台上保持 10%-20% 的优势，凸显 RAG 系统显著的数据泄露隐私风险。
+#### GASLITEing the Retrieval: Exploring Vulnerabilities in Dense Embedding-based Search.
 
-
-### Can Personal Health Information Be Secured in LLM? Privacy Attack and Defense in the Medical Domain.
-- **作者**: Yujin Kang, Eunsun Kim, Yoon-Sik Cho
-- **解读**: （无摘要，据标题推断）本文聚焦医疗领域 LLM 中的个人健康信息（PHI）隐私：研究针对医学 LLM 的隐私攻击（如成员推断、训练数据提取）并探索相应的防御机制，评估 PHI 在 LLM 中能否得到保护。
-
-
-### One-Sided Bounded Noise: Theory, Optimization Algorithms and Applications.
-- **作者**: Hanshen Xiao, Jun Wan, Elaine Shi, Srinivas Devadas
-- **解读**: 研究问题：与常规隐私保护统计发布不同，混淆侧信道信息的随机化常受基础设施限制，实际场景可能只允许正的、有界的扰动——例如延长处理时间或发送/存储伪消息数据通常是可行的，而反向的修改因硬件容量、通信协议与数据管理系统限制而难以实现。本文在差分隐私（DP）、最大泄露（MaxL）与 PAC 隐私三个语义框架下建立单侧有界噪声机制的理论基础，给出刻画近似分布的一系列结果（受二阶矩预算与最大幅度约束），并开发高效工具求解底层优化问题。实验表明现有技术（如截断偏置拉普拉斯噪声）是次优的、造成过度性能退化：在一个 25 万消息预算的匿名系统中，优化后的 DP 方案相比传统方法减少 21 倍消息数并降低 18 倍延迟开销。
-
-
-### PIIxel Leaks: Passive Identification of Personally Identifiable Information Leakage through Meta Pixel.
-- **作者**: Paschalis Bekos, Panagiotis Papadopoulos, Nicolas Kourtellis, Michalis Polychronakis
-- **解读**: 研究问题：Web 像素是跟踪转化与用户行为的主流技术，Meta Pixel（使用最广的像素）被集成进网站后可收集访客敏感信息并与他们的 Facebook 或 Instagram 档案匹配；除详细浏览历史外，它还收集访客在网站在线表单中输入的 PII（如邮箱、电话号码）。本文提出被动识别此类经 Meta Pixel 发生的 PII 泄露的方法。
-
-
-### Amigo: Secure Group Mesh Messaging in Realistic Protest Settings.
-- **作者**: David Inyangson, Sarah Radway, Tushar M. Jois, Nelly Fazio, James Mickens
-- **解读**: 研究问题：大规模抗议期间，压制性政府常断网阻断抗议者通信；智能手机网状网络通过短距离、可能短暂的无线电连接转发消息，使抗议者无需中心化基础设施即可通信，但先前工作在断网场景下提供安全通信的方案未充分考虑抗议者需求——未能支持高效私密的群组通信（抗议的关键需求），也未在准确反映链路抖动、物理频谱竞争与真实抗议场景移动模型的网络环境中评估。本文提出 Amigo，一种新型消息系统，通过去中心化的持续密钥协商支持私密群组通信，并利用路由协议转发消息，专门应对动态拓扑、节点移动使密钥协商变得困难的 ad-hoc 场景。广泛模拟表明朴素方法的可扩展性差、Amigo 的抗议专用优化带来收益，但数千参与者规模网络的扩展问题仍有待解决。
-
-
-### Exposing Privacy Risks in Anonymizing Clinical Data: Combinatorial Refinement Attacks onk-Anonymity Without Auxiliary Information.
-- **作者**: Somiya Chhillar, Mary K. Righi, Rebecca E. Sutter, Evgenios M. Kornaropoulos
-- **解读**: （无摘要，据标题推断）本文针对经 k-匿名化处理的临床数据提出组合精化攻击：在无需任何辅助信息的条件下，通过组合式地精化准标识符取值来逐步缩小匿名等价类、重新识别个体，从而暴露 k-匿名化临床数据中未被充分认识的隐私风险。
-
-### Digital Safety for Children with Intellectual Disabilities When Using Mobile Devices from Parents' and Teachers' Perspectives.
-- **作者**: Janice Jianing Si, Xin Lin, Haorui Cui, Xiaobo Zhou, Kanye Ye Wang
-- **解读**: 针对智力障碍（ID）儿童使用移动设备时的数字安全问题，该工作通过半结构化访谈家长与特殊教育教师等关键监护角色，归纳出四类核心担忧：模仿危险行为、误操作设备、欺诈风险与网络欺凌暴露。应对策略主要依赖预防性教育辅以技术管控与设备限制。作者呼吁随环境演变调整实践，并将经验推广至其他弱势用户群体。
-
-
-### VirtualReality,RealProblems: A Longitudinal Security Analysis of VR Firmware.
-- **作者**: Vamsi Shankar Simhadri, Yichang Xiong, Habiba Farrukh, Xiaokuan Zhang
-- **解读**: 针对 VR 设备固件开展长期安全分析，覆盖多厂商与多版本以刻画固件安全的纵向演进趋势。旨在发现 VR 生态中系统性、持续存在的固件安全问题（无摘要，据标题推断）。
-
-
-### Hidden in Plain Bytes: Investigating Interpersonal Account Compromise with Data Exports.
-- **作者**: Julia Nonnenkamp, Naman Gupta, Abhimanyu Dev Gupta, Rahul Chatterjee
-- **解读**: 面向技术助推虐待（TFA）幸存者，研究如何用数据可携权下的数据导出补充账户安全界面（ASI），以调查账户是否被他人入侵，尤其是人际威胁情境。作者在六个流行平台模拟四类攻击并分析导出的数据，发现数据导出普遍包含比 ASI 更细粒度的登录历史与设备/网络标识，部分还能将密码修改等安全动作关联到特定设备，具备取证价值。最后讨论了数据导出在 TFA 干预中的可用性与实际挑战。
-
-
-### How to Design Secure Honey Vault Schemes.
-- **作者**: Zhenduo Hou, Tingwei Fan, Fei Duan, Ding Wang
-- **解读**: 研究蜜罐保险库（honey vault）方案的安全设计原则，先识别出三类主要漏洞，并基于严格理论提出对应准则：采用精确概率模型（PPM）的自然语言编码器抵御分布感知区分攻击、用序列化 PPM 抵御重用模式编码攻击、隐藏用户真实保险库相关的自适应 PPM 提取。据此提出 VaultGuard 与 HE-Adaptive 等创新组件，真实数据评估显示攻击者需多执行 1.10–3.98 倍在线验证才能确定真库，并给出客户端侧高效概念验证实现。
-
-
-### Phishing Susceptibility and the (In-)Effectiveness of Common Anti-Phishing Interventions in a Large University Hospital.
-- **作者**: Jan Tolsdorf, David Langer, Luigi Lo Iacono
-- **解读**: 在德国一所大学医院对 7,044 个账户开展大规模钓鱼模拟，分析医疗、护理、行政、IT 等不同员工群体的易感性差异，以及邮件时机、语气、上下文与说服性框架对易感性的影响，并评估 11 种常见现场干预的效果。结果显示各群体与干预的效果差异显著，即使少量邮件也构成持续约三天的实质风险；最有效的干预是垃圾过滤与邮件内警告等稳健技术检测，而显示名抑制与 [EXTERNAL] 标记无效。调查还发现员工出现恐惧、羞耻、内疚与敌意等情绪反应，凸显模拟演练的伦理挑战，研究为医院等复杂组织的韧性建设提供可操作指导。
-
-
-### YouthSafe: A Youth-Centric Safety Benchmark and Safeguard Model for Large Language Models.
-- **作者**: Yaman Yu, Yiren Liu, Yuqi Zhang, Yun Huang, Yang Wang
-- **解读**: 指出青少年与 LLM 交互的独特脆弱性与风险画像未得到现有安全基准和审核系统充分覆盖。作者构建首个面向青少年–LLM 交互的基准数据集 Youth AI Risk（YAIR），含 12,449 条标注对话片段、78 类细粒度危害类型，基于诱骗、边界侵犯、身份困惑、过度依赖等青少年特有危害分类法；系统评估发现现有方法在检测青少年中心风险上明显不足。据此提出实时检测模型 YouthSafe，在多项分类指标上显著优于既有系统。
-
-
-### GASLITEing the Retrieval: Exploring Vulnerabilities in Dense Embedding-based Search.
 - **作者**: Matan Ben-Tov, Mahmood Sharif
-- **解读**: 研究稠密嵌入文本检索（包括 RAG 场景）对搜索引擎优化（SEO）类攻击的脆弱性。作者指出已有工作多采用放宽的威胁模型、针对单查询、使用基线攻击方法且评估规模小，掩盖了对检索器最坏情况行为的全面理解，并旨在以更严格的威胁模型和大规模攻击评估揭示其最坏情况表现（摘要截断）。
 
+- **方向**: AI/ML安全
 
-### The Phantom Menace in Crypto-Based PET-Hardened Deep Learning Models: Invisible Configuration-Induced Attacks.
+- **解读**: 稠密嵌入检索以深度学习编码实现语料相关文档检索，达到 SOTA 效果并支撑 RAG 流行，但与其他方法一样可能遭受搜索引擎优化式（SEO）攻击——攻击者通过引入对抗语料推广恶意内容。已有工作证明此类 SEO 可行，但大多针对检索集成系统（如 RAG）、威胁模型宽松（如单查询）、使用基线攻击且评估规模小，掩盖了检索器的真实最坏情况。
+
+本文系统探索稠密嵌入检索器自身的脆弱性：在更严苛、更贴近实际的威胁模型下（多查询、强攻击、大规模评估）刻画检索器的攻击面与最坏行为。
+
+摘要在此截断，未给出攻击成功率、查询/语料规模或与基线攻击的量化对比，无法引用具体数字。
+
+我的思考：把攻击焦点从"RAG 集成系统"收回到"检索器本身"，是更基础也更危险的视角——若嵌入检索器自身可被对抗语料系统性地劫持，则所有基于它的上层应用（RAG、搜索）都继承该漏洞。GASLITE 式命名暗示方法上可能利用嵌入空间的几何/优化弱点。局限与价值均取决于全文的实验设计（语料规模、查询分布、防御评估）；该工作对"嵌入检索的稳健性"这一新兴话题是重要补强。
+
+#### The Phantom Menace in Crypto-Based PET-Hardened Deep Learning Models: Invisible Configuration-Induced Attacks.
 - **作者**: Yiteng Peng, Dongwei Xiao, Zhibo Liu, Zhenlan Ji, Daoyuan Wu, Shuai Wang, Juergen Rahmel
-- **解读**: 针对同态加密、安全多方计算、零知识证明等加密型隐私增强技术（CPET）与深度学习结合的 CPET-DL 框架（如 CrypTen、TenSEAL、EZKL），揭示这些框架中看似无害的可配置参数可引入隐蔽漏洞。此类由错误配置诱导的攻击难以检测：明文模型本身无漏洞，且现有审计工具难以适用于 CPET 加固模型，形成"本应保护隐私的技术反而可被配置操纵破坏"的悖论。
+- **方向**: AI/ML安全
+- **解读**:
+隐私保护深度学习的兴起促使社区采用基于密码学的隐私增强技术（CPET），如全同态加密（HE）、安全多方计算（MPC）、零知识证明（ZKP），并通过 CrypTen、TenSEAL、EZKL 等专用框架与深度学习集成（CPET-DL）。这些框架提供可配置参数来平衡隐私保护操作中的模型精度与计算效率，但看似无害的配置恰恰可能引入隐蔽漏洞。本文提出配置诱导攻击：通过操纵配置在 CPET-DL 模型中植入不可见的安全弱点。
+
+此类攻击难以检测的原因有二：一是明文模型本身不含漏洞，二是现有审计工具几乎无法适用于 CPET 加固后的模型。由此形成悖论——本意是保护隐私的机制，反而可能因配置被操纵而遭到暗中削弱。攻击面存在于框架暴露给用户的"无害"参数，攻击者无需接触密文或密钥即可破坏安全性保证。
+
+摘要未给出具体量化结果，攻击威力、受影响框架范围与真实系统验证有待正文补充。核心贡献在于揭示"配置层"作为 CPET-DL 攻击面的可能性，并以隐秘性论证（明文无漏洞、工具不可审计）说明威胁为何长期被忽视。
+
+我的思考：这项工作把安全分析视角从密码原语转向工程化框架的配置面，与"库/框架误用"研究一脉相承，但对隐私计算尤为重要，因为安全证明通常假设"按规范使用"。其局限在于尚未展示具体攻击实例与利用链；若配置诱导能绕过证明假设（如安全参数、舍入模式、噪声规模），将直接影响 CPET-DL 可信度。未来审计工具如何在密文域验证配置正确性，是值得跟进的开放问题。
 
 
-### Evaluating the Robustness of a Production Malware Detection System to Transferable Adversarial Attacks.
+#### Evaluating the Robustness of a Production Malware Detection System to Transferable Adversarial Attacks.
 - **作者**: Milad Nasr, Yanick Fratantonio, Luca Invernizzi, Ange Albertini, Loua Farah, Alex Petit-Bianco, Andreas Terzis, Kurt Thomas, Elie Bursztein, Nicholas Carlini
-- **解读**: 以 Gmail 恶意文件检测管线为案例，研究针对其中 ML 组件（开源的文件类型识别模型 Magika）的对抗攻击如何降级或绕过整个生产级检测系统。作者仅修改 13 字节即可在 90% 的情况下骗过 Magika 并成功通过 Gmail 上传文件；随后提出防御方案，使高资源攻击者需约 50 次尝试才能达到 20% 成功率，该防御已在 Google 工程师协作下部署于线上分类器。
+- **方向**: AI/ML安全
+- **解读**:
+随着深度学习模型作为组件被广泛部署到大型生产系统中，单个模型的缺陷可能升级为具有真实世界影响的系统级漏洞。本文以 Gmail 的恶意文件检测流水线为案例，研究针对机器学习组件的对抗攻击如何在系统层面降级或绕过整个生产级恶意软件检测系统。Gmail 使用开源模型 Magika 将每个可疑样本路由到专门的分类器以提高准确率与性能，这个路由环节成为攻击的支点。
+
+方法上，作者通过设计对抗样本使模型误路由，将样本导向不合适的检测器，从而增大整体逃逸检测的概率。攻击者只需修改样本的少量字节即可造成系统级误判，随后作者转向防御研究，提出缓解方案以降低这类攻击的严重程度。
+
+实验数据显示：仅修改 13 字节即可在 90% 的情况下成功逃逸 Magika，从而允许文件通过 Gmail 发送；在部署防御后，拥有充足资源的攻击者需要修改 50 字节才能达到 20% 的攻击成功率。该防御已实现，并在 Google 工程师的协作下部署到生产分类器中。
+
+我的思考：这篇工作的价值在于把对抗鲁棒性研究从"模型精度"提升到"系统级安全影响"：组件交互（路由→分类）创造了模型本身没有的攻击面，转移性攻击在生产环境中的可行性被量化证实。防御方案落地到真实生产系统并获得 2.5 倍以上的成本提升（13→50 字节），体现了从研究到部署的闭环。局限在于案例集中于单一流水线的路由环节，更复杂的多组件交互仍有探索空间。
 
 
-### Cascading Adversarial Bias from Injection to Distillation in Language Models.
-- **作者**: Harsh Chaudhari, Jamie Hayes, Matthew Jagielski, Ilia Shumailov, Milad Nasr, Alina Oprea
-- **解读**: 研究对抗者如何通过训练期极少量数据投毒向教师模型注入细微偏见，该偏见在蒸馏到更小的学生模型时被显著放大。作者识别出非定向（影响多任务）与定向（聚焦单任务且其他行为正常）两种传播模式，仅 25 个毒样本（0.25%）即可使定向场景下 76.9% 的响应带偏见（教师为 69.4%），非定向场景中学生模型在未见任务上偏见率高 5.7–29.2 倍。现有防御（困惑度过滤、检测系统、LLM 自动评审）均证明无效，作者据此提出构建有效缓解策略的设计原则。
-
-
-### You Can't Steal Nothing: Mitigating Prompt Leakages in LLMs via System Vectors.
-- **作者**: Bochuan Cao, Changjiang Li, Yuanpu Cao, Yameng Ge, Ting Wang, Jinghui Chen
-- **解读**: 针对 LLM 系统提示泄露风险，指出"禁用模型重复上下文"等现有对策仍易被新型未知泄露技术攻破，并先提出一种简单有效的攻击，可提取 GPT-4o、Claude 3.5 Sonnet 等 SOTA 模型应用的系统提示。受此启发提出 SysVec，用内部表示向量而非原始文本编码系统提示，在最小化未授权泄露风险的同时保留核心能力，实验显示不仅能有效缓解泄露攻击，还提升了一般指令跟随能力并缓解长上下文遗忘问题。
-
-
-### Exact Robustness Certification of k-Nearest Neighbors.
+#### Exact Robustness Certification of k-Nearest Neighbors.
 - **作者**: Francesco Ranzato, Ahmad Shakeel, Marco Zanella
-- **解读**: 为 k-NN 分类器提供精确（完备）的鲁棒性认证框架。既有认证方法 sound 但不完备，会漏掉许多真正鲁棒的输入；该工作将超立方体空间分解与基于邻近优先关系图的新颖图论分析结合，实现扰动下鲁棒性的完全覆盖。在常用数据集上的大规模评估表明，认证率显著优于现有技术且保持可扩展性，弥合了可靠性与完备性之间的差距。
+- **方向**: AI/ML安全
+- **解读**:
+鲁棒性保证对于在安全关键环境中部署机器学习模型至关重要，因为对抗攻击构成严重威胁。虽然深度神经网络的鲁棒性认证已有大量进展，但 k 近邻（k-NN）这类非参数模型受到的关注较少——尽管它们具有可解释性且常被用于高保障环境。此前针对 k-NN 的认证方法虽然可靠（sound）但不完备（incomplete），导致许多真正鲁棒的输入无法获得认证。本文提出一个针对 k-NN 分类器的完备框架，能够针对扰动提供精确（exact）鲁棒性保证。
 
+方法上，该框架将超立方体空间分解与基于邻近优先图（proximity precedence graph）的新颖图论分析相结合，实现对扰动区域的完全覆盖。图论抽象将 k-NN 决策边界的分析转化为对空间区域与邻近关系的结构分析，从而精确刻画鲁棒性条件。
 
-### IOValve: Leakage-Free I/O Sandbox for Large-Scale Untrusted Data Processing.
-- **作者**: Sangho Lee, Jules Drean, Yue Tan, Marcus Peinado
-- **解读**: 面向大规模不可信数据处理场景，提出无泄漏的 I/O 沙箱方案。该方案在隔离不可信 I/O 的同时保证不产生任何信息泄漏（无摘要，据标题推断）。
+在广泛使用的数据集上的大量评估表明，该方法显著提升了相对现有技术的认证率，同时保持了可扩展性。通过在完备性（completeness）上补齐缺口，该工作缩小了 sound 与 complete 认证之间的差距。
 
+我的思考：本文的贡献在于把 k-NN 认证从"可靠但可能漏报"推进到"精确"：对真正鲁棒的输入给出确定性证明，不再有悬而未决的区域。与神经网络认证相比，k-NN 无参数、决策边界简单，但其扰动分析在高维与大数据量下仍有挑战。作为可解释且可证明的模型，k-NN 在医疗、工业控制等需要可审计性的高保障场景中可能重获青睐；该框架也为其他非参数模型（如决策树、SVM）的精确认证提供了方法论参照。
 
-### BadAML: Exploiting Legacy Firmware Interfaces to Compromise Confidential Virtual Machines.
-- **作者**: Satoru Takekoshi, Manami Mori, Takaaki Fukai, Takahiro Shinagawa
-- **解读**: 揭示机密虚拟机（CVM）中一个此前被忽视的攻击面：恶意云提供商可利用遗留但广泛采用的 ACPI 固件接口，通过 ACPI Machine Language（AML）向客户机内核注入二进制代码并影响启动完整性证明，且不受具体配置限制。作者在 Linux 与 Windows 上完成概念验证，分析了多种缓解措施的效力与局限，并提出 AML 沙箱化防御，在 18 个真实实例上验证了其设计、实现与有效性。
 
+#### Poster: Towards Intelligent Assurance for Autonomous AI Pentesters: Concurrent Compliance Auditing and Self-Augmentation via Execution Trace Analysis.
+- **作者**: Gustavo Sánchez; Adam Lundqvist
+- **方向**: AI/ML安全
+- **解读**:
+随着人工智能日益驱动自主进攻性安全工具（AI Pentester），在人工监督有限甚至缺失的情况下，确保其运行完整性、监管合规性（如欧盟《人工智能法案》）与伦理行为变得至关重要——自主渗透测试工具一旦失控或越界，其破坏力不亚于真实攻击。论文针对这一治理空白，提出智能保障系统（Intelligent Assurance System, IAS），为完全自主的 AI 渗透测试者提供持续问责能力。
 
-### Protocol-Aware Firmware Rehosting for Effective Fuzzing of Embedded Network Stacks.
-- **作者**: Moritz Bley, Tobias Scharnowski, Simon Wörner, Moritz Schloegel, Thorsten Holz
-- **解读**: 针对嵌入式网络协议栈模糊测试，提出协议感知的固件重托管方法 Pemu：通过自动推导可用协议并透明生成封装模糊数据的合法数据包，使测试输入直接流入更深层的协议逻辑，实现逐层深入的目标化分析。评估显示 Pemu 在三个工具/协议栈上一致提升代码覆盖率，重新发现了多个已知漏洞并找到 5 个未知缺陷，验证了其在网络暴露代码上的漏洞挖掘能力。
+方法上，IAS 通过监控执行轨迹（execution traces）实现"并发合规审计"：在工具执行的同时审计其行为是否符合预定义规则与法规要求；同时通过轨迹分析实现"自我增强"（self-augmentation），即在审计过程中获取反馈、持续改进自身策略。系统设计强调资源高效，避免审计开销拖累渗透测试本身。
 
+摘要未给出量化评估，贡献主要体现在保障框架的设计与概念层面。
 
-### Dynamic Detection of Vulnerable DMA Race Conditions.
-- **作者**: Brian Johannesmeyer, Raphael Isemann, Cristiano Giuffrida, Herbert Bos
-- **解读**: 提出 DMARacer，一种动态检测内核代码中 DMA 相关竞态条件的检测器：在内核整个生命周期内跟踪 DMA 访问并结合多种指标分析，检测到竞态后进一步用污点追踪评估其影响，识别可能引发的内存破坏或拒绝服务等漏洞。对 Linux 驱动的大规模扫描表明该问题具有系统性，共检出 817 个可疑操作与 344 个易受攻击操作。
+我的思考：这篇工作的选题非常及时——AI 智能体的自主性越强，安全治理越不能依赖"事后追责"，而应在执行过程中持续保障。其"并发审计 + 自我增强"的组合，把合规约束从外部审查变成了智能体内生的持续机制，方向正确。局限在于：合规规则如何从欧盟 AI 法案等抽象法规转化为可执行的轨迹断言是巨大工程；"自我增强"若设计不当也可能放大合规漏洞。与同类 AI 安全治理工作相比，其聚焦自主攻击工具这一高风险场景，实用价值独特，但目前仍处于早期概念阶段。
 
 
-### Attestable Builds: Compiling Verifiable Binaries on Untrusted Systems using Trusted Execution Environments.
-- **作者**: Daniel Hugenroth, Mario Lins, René Mayrhofer, Alastair R. Beresford
-- **解读**: 提出"可证明构建"（attestable builds）范式，用 TEE 沙箱化容器保证给定二进制确实由特定源码快照正确构建，为软件制品提供强的源码到二进制对应关系。相比可复现构建只需最少项目改动且提供近乎即时的验证，评估显示构建开源库的启动延迟为 42 秒、构建时长增加约 14%，并成功构建 LLVM/Clang 等复杂项目而无需修改其构建脚本。作者还形式化建模了该设计，证明其能抵御资源充足的对抗者。
-
-
-### Augmenting Search-based Program Synthesis with Local Inference Rules to Improve Black-box Deobfuscation.
-- **作者**: Vidal Attias, Nicolas Bellec, Grégoire Menguy, Sébastien Bardin, Jean-Yves Marion
-- **解读**: 面向黑盒去混淆，提出将基于搜索的程序合成与局部推理规则结合的新方法 Smir（Search Modulo Inference Rules），在保持通用性与灵活性的同时提升合成能力。作者将其实例化为针对混合布尔算术等难题的工具 XSmir，在真实二进制与合成基准上显著优于先前去混淆器：混淆表达式合成率 76%–84%（非混淆恢复率 63%–55%），误报减少 2–3 倍且压缩率略有提升。
-
-
-### Right the Ship: Assessing the Legitimacy of Invalid Routes in RPKI.
-- **作者**: Andong Chen, Yangyang Wang, Jia Zhang, Mingwei Xu
-- **解读**: 针对 RPKI 部署阻力，评估 ROV 判定为 invalid 的路由中有多少其实合法。全球仍有超过 40% 的路由缺乏 RPKI 保护，部分网络不愿部署的关键顾虑正是担心过滤掉合法路由会损害网络服务质量与连通性；该工作旨在量化无效路由的合法性，为运营商决策提供依据。
-
-
-### Exploring and Analyzing Cross Layer DoS Attack Against UDP-based Services on Linux.
-- **作者**: Dashuai Wu, Yunyi Zhang, Baojun Liu, Xiang Li, Eihal Alowaisheq, Haixin Duan
-- **解读**: 研究 TCP/IP 分层架构中共享资源管理不当引入的跨层资源风险 SocketFilled：链路层对传输层 UDP 发送缓冲的不安全使用可中断上层应用的服务响应，形成 DoS。作者系统分析了相关协议标准并审查主流开源操作系统实现，实验表明 Linux、FreeBSD 上的 BIND9、PowerDNS、Nginx 等最新版本服务均受影响，造成显著丢包乃至完全中断。实测估计 17.3% 的开放解析器与 54.3% 的 Tranco Top 100K 权威服务器受影响，作者已向社区负责任披露。
-
-
-### Off-Path TCP Exploits: PMTUD Breaks TCP Connection Isolation in IP Address Sharing Scenarios.
-- **作者**: Xuewei Feng, Zhaoxi Li, Qi Li, Ziqiang Wang, Kun Sun, Ke Xu
-- **解读**: 揭示 PMTUD 在设计上未妥善处理 IP 地址共享，使攻击者得以实施 off-path TCP 劫持：通过观察服务器为共享地址确定的路径 MTU 值，Internet 上的攻击者与恶意设备协作即可推断同一地址上其他合法设备连接的序号。攻击平均 220 秒完成、成功率 70%，SSH DoS、FTP 流量投毒与 HTTP 注入等案例展示了实际威胁；在 50 个真实共享网络（Wi-Fi、VPN、5G 等）中 38 个受影响，作者已向 IETF、Linux、Cisco 负责任披露并提出对策。
-
-
-### SISTAR: An Efficient DDoS Detection and Mitigation Framework Utilizing Programmable Data Planes.
-- **作者**: Junjie Hu, Feng Guo, Qihang Zhou, Yixin Zhang, Zibo Gao, Yinglong Han, Zhiqiang Lv
-- **解读**: 提出基于可编程数据平面（PDP）的 DDoS 检测与缓解框架 SISTAR，集成改进的决策树-约束阈值分割（DT-CTS）模型，在保持线速吞吐的同时提升检测精度并最小化硬件资源占用。通过多交换机分布式部署增强对协同攻击的韧性，并可与告警回推机制结合降低资源消耗；原型在真实测试床上评估，效率优于现有模型。
-
-
-### ScannerGrouper: A Generalizable and Effective Scanning Organization Identification System Toward the Open World.
-- **作者**: Xin He, Enhuan Dong, Jiyuan Han, Zhiliang Wang, Hui Zhang, Liang Liu, Lianyi Sun, Supei Zhang, Pengfei Xue, Guanglei Song, Han Li, Xiaowen Quan, Jiahai Yang
-- **解读**: 针对互联网主动扫描泛滥现象，研究识别扫描行为背后组织身份的问题。作者指出既有研究虽已分析扫描源，但尚未能在真实场景中有效且泛化地识别扫描组织，提出 ScannerGrouper 系统，面向开放世界实现通用有效的扫描组织识别。
-
-
-### On the Security of SSH Client Signatures.
-- **作者**: Fabian Bäumer, Marcus Brinkmann, Maximilian Radoy, Jörg Schwenk, Juraj Somorovsky
-- **解读**: 对 SSH 客户端签名密钥的安全性开展纵向研究：从 GitHub、GitLab 等公开来源收集 31,622,338 个公钥并系统化测试，发现相比以往研究，生态明显从 RSA 转向 EdDSA；但截至 2025 年 1 月仍发现 98 个短密钥、139 个弱随机性密钥与 149 个含公共小因子的密钥。作者首次证明确定性 nonce 的危险性：在 NIST P-521 曲线下仅凭 58 个有效签名即可恢复 PuTTY 的私钥，该发现被确认为 CVE-2024-31497，PuTTY 随后更换了 nonce 生成算法。
-
-
-### Toss: Garbled PIR from Table-Only Stacking.
-- **作者**: Lucien K. L. Ng, Vladimir Kolesnikov
-- **解读**: 提出基于"纯表堆叠"（table-only stacking）技术的乱码 PIR（GPIR）新构造 Toss，用于在两方都不知道索引的情况下，用乱码电路高效地在公开数组/数据库上按私有索引查值。由于 GPIR 直接蕴含公开查表（LUT）函数的求值，该构造可显著提升这类安全两方计算场景的效率。
-
-
-### Secure Noise Sampling for Differentially Private Collaborative Learning.
-- **作者**: Olive Franzese, Congyu Fang, Radhika Garg, Xiao Wang, Somesh Jha, Nicolas Papernot, Adam Dziedzic
-- **解读**: 针对协作学习（CL）中 DP-SGD 的噪声注入时机问题：聚合前注入（分布式 DP）需更多总噪声、损害模型效用，聚合中注入（经安全聚合）虽保效用但需 MPC 协议，而现有 MPC 噪声生成方法因参与方众多每样本耗时数百秒，无法用于每步数千样本的实际训练。该工作旨在设计安全且高效的噪声采样方案，使协作学习中的差分隐私保护实用化（摘要截断）。
-
-
-### Post-Quantum Threshold Ring Signature Applications from VOLE-in-the-Head.
-- **作者**: James Hsin-yu Chiang, Ivan Damgård, William R. Duro, Sunniva Engan, Sebastian Kolby, Peter Scholl
-- **解读**: 基于 AES 加密的单向性与 VOLE-in-the-Head 零知识证明系统，构造高效的后量子门限环签名，可扩展到大型环并支持可链接范式；作者定义并构造密钥绑定确定性标签实现链接性，并将其用于类 Monero 的匿名账本交易。进一步借助近似下界论证实现无需 SNARK 的简洁聚合，得到近似多签名，全部构造仅依赖对称密钥原语。
-
-
-### Distance-Aware OT with Application to Fuzzy PSI.
-- **作者**: Lucas Piske, Jaspal Singh, Ni Trieu, Vladimir Kolesnikov, Vassilis Zikas
-- **解读**: 提出距离感知随机 OT（da-ROT）并基于其构建模糊私密集合交集（PSI）的模块化框架，主要依赖高效对称密钥原语：da-ROT 使发送方获得两个串、接收方按关键词是否 δ-接近决定获得哪一个，是传统 OT 的自然扩展。构造支持 Chebyshev、Euclidean 与 Manhattan 度量，相比先前最优协议通信成本最高降低 14 倍、计算成本最高降低 54 倍，并可扩展至基数、连接等 PSI 相关功能，全部协议在半诚实模型下安全。
-
-
-### MegaBlocks: Breaking the Logarithmic I/O-Overhead Barrier for Oblivious RAM.
-- **作者**: Gilad Asharov, Eliran Eiluz, Ilan Komargodski, Wei-Kai Lin
-- **解读**: 针对分层 ORAM 虽渐近最优却长期被认为不可实用的现状，作者利用近期进展（FutORAMa, CCS'23）表明客户端内存充足时可高效实现 ORAM 方案。据此提出新构造，在不要求大量本地存储的前提下实现实用性能，突破分层 ORAM 的对数 I/O 开销屏障（摘要截断）。
-
-
-### CuKEM: A Concise and Unified Hybrid Key Encapsulation Mechanism.
-- **作者**: Yiting Liu, Biming Zhou, Haodong Jiang
-- **解读**: 提出简洁统一的混合密钥封装机制（KEM），组合经典与后量子算法。以统一接口在单一机制内兼顾抗量子安全性升级与性能权衡（无摘要，据标题推断）。
-
-
-### Demo: Stopping Production Testing: A Graphical RPKI Test-Suite.
-- **作者**: Tobias Kirsch, Haya Schulmann, Niklas Vogel
-- **解读**: 演示一个图形化 RPKI 对象测试工具套件：可解析任意 DER/base64 编码对象、编辑其内容结构，并针对现行验证软件实现做实时测试，以探测不一致结果、错误乃至漏洞，帮助运营商在生产部署前发现错误配置。以 2023 年 Amazon 事件（约 6000 个前缀险些因特定验证器实现而暴露于劫持）说明动机；工具已开源并提供托管 Web 应用。
-
-
-### Demo: Reverse Engineering Android Apps with Code Coverage.
-- **作者**: Aleksandr Pilgun
-- **解读**: 演示借助代码覆盖率信息辅助 Android 应用逆向工程的方法。以覆盖率指导分析路径、聚焦实际执行代码，提升逆向分析的效率与针对性（无摘要，据标题推断）。
-
-
-### Demo: Exploring Utility and Attackability Trade-offs in Local Differential Privacy.
-- **作者**: Haoying Zhang, Abhishek Kumar Mishra, Héber Hwang Arcolezi
-- **解读**: 演示 LDP-Toolbox，首个交互式、基于 Web 的工具箱（Python 实现），对本地差分隐私在隐私损失预算（ε）、效用损失与攻击脆弱性之间的权衡进行实用化、可分析的可视化探索，并支持基于真实世界数据集（如离散个人属性与位置类数据）的演示。该工具降低了 LDP 实际部署的门槛，已开源并发布至 PyPI 与 GitHub。
-
-
-### Poster: ERIS: Evaluating ROV via ICMPv6 Rate Limiting Side Channels.
-- **作者**: Renrui Tian, Yahui Li, Han Zhang, Xinzhe Liu, Xia Yin, Xingang Shi, Zhiliang Wang, Jilong Wang
-- **解读**: 提出 ERIS，利用 ICMPv6 速率限制侧信道来测量评估 RPKI 路由源验证（ROV）的真实部署情况。既有测量或依赖控制平面数据导致覆盖与精度受限，或需要受控 IP 前缀与大规模观测点，且大多聚焦 IPv4；该工作旨在填补 IPv6 下 ROV 部署状态研究的空白。
-
-
-### Poster: Longitudinal Analysis of Romance Scam Infrastructure Evolution: Evidence of Strategic Legitimization.
-- **作者**: Nayeon Ryu, Heeyeong Suh, Seyoung Lee
-- **解读**: 对 11,674 个情感诈骗档案（2012–2024，ScamDigger 数据）做 12 年基础设施演化分析，发现 2019 年出现明显拐点：诈骗者并非单纯技术升级，而是战略性迁移向合法基础设施——传统 ISP 使用率大幅上升，代理使用率从 2019 年前的平均 90.6% 降至 53.1%。地理上呈现专业化分工（尼日利亚、加纳等西非 ISP 运营基地与美、德等欺骗性西方云服务），基础设施多样性收缩 31.3%，表明该犯罪生态正通过"合法性利用"走向工业化，需相应调整检测方法。
-
-
-### Poster:LLMalware: An LLM-Powered Robust and Efficient Android Malware Detection Framework.
-- **作者**: Zijing Ma, Leming Shen, Xinyu Huang, Yuanqing Zheng
-- **解读**: 提出基于大语言模型（LLM）的 Android 恶意软件检测框架。利用 LLM 的语义理解能力，旨在提升检测的鲁棒性与效率（无摘要，据标题推断）。
-
-
-### Poster: Adaptive Gradient Clipping with Personalized Differential Privacy for Heterogeneous Federated Learning.
-- **作者**: Hao Zhou, Hua Dai, Siqi Cai, Geng Yang, Yang Xiang
-- **解读**: 提出 GC-DP 联邦学习框架，通过自适应调整梯度裁剪阈值实现个性化差分隐私：用代理数据集学习从隐私预算（ε）到最优裁剪阈值（C*）的客户端特定映射，同时允许各客户端依据自身梯度的 L2 范数实时调整本地裁剪界。这种双重自适应性在异构联邦学习（FL）场景中显著改善隐私保护与模型效用之间的平衡。
-
-
-### Poster: Recapture Detection Using Disparity Map Obtained from Dual-Pixel Image Sensors.
-- **作者**: Tetsu Ishizue, Sara Rampazzi, Takeshi Sugawara
-- **解读**: 针对用相机翻拍显示器攻击图像来源验证与深度伪造防御的问题，利用智能手机相机中常见用于快速对焦的双像素（DP）图像传感器提取深度线索，无需额外硬件。信号处理流水线由立体匹配算法获取视差图与平面拟合评估场景平坦度两部分组成；概念验证在数据集上以 100% 准确率检测翻拍，并能以高于 98% 的准确率区分深度伪造图像。
-
-
-### Poster: Black-box Attacks on Multimodal Large Language Models through Adversarial ICC Profiles.
-- **作者**: Chengbin Sun, Hailong Sun, Guancheng Li, Jiashuo Liang
-- **解读**: 提出 ICCAdv，一种无需模型参数或梯度的黑盒攻击：利用 ICC 色彩管理流程中人类观察者感知的是经 ICC 配置文件变换渲染后的图像、而 MLLM 直接处理原始 RGB 值的差异，向图像文件嵌入恶意 ICC 配置，在不破坏人眼观感的前提下操纵模型感知到的语义。初步实验表明该攻击能有效攻击保持 SOTA 防御的模型。
-
-
-### Poster: Towards Intelligent Assurance for Autonomous AI Pentesters: Concurrent Compliance Auditing and Self-Augmentation via Execution Trace Analysis.
-- **作者**: Gustavo Sánchez, Adam Lundqvist
-- **解读**: 面向由 AI 驱动的自主渗透测试工具（AI Pentesters），提出智能保障系统（IAS）：通过监控执行轨迹提供持续问责，并在直接人类监督有限或缺失时实施合规审计（如欧盟 AI 法案）、实时反馈与自我改进。该系统以资源高效的方式增强完全自主渗透测试工具的可信度与道德规范性。
-
-
-### Poster: Code HarvETHter: Corpus-Driven Decompilation of Ethereum Smart Contracts.
-- **作者**: Jens-Rene Giesen, Christian Scholz, Lucas Davi
-- **解读**: 提出 HarvETHter，面向以太坊、BNB、Polygon 等 EVM 平台的智能合约反编译器。作者提出"语料完备性假设"并借此展开研究：利用 HarvETHter 掌握的以太坊区块链源码知识库，将合约反编译回 Solidity 源码。
-
-
-### Poster: We must talk about RPKI Repositories.
-- **作者**: Haya Schulmann, Niklas Vogel
-- **解读**: 指出 RPKI 的防护效果依赖于存放在公共仓库中的对象的可用性与安全性，但人们对这些仓库的技术细节知之甚少：使用何种实现、软件是否得到维护、是否存在持续漏洞。回答这些问题对评估当前 RPKI 架构的韧性至关重要，该工作旨在系统调查 RPKI 仓库的安全状况。
-
-
-### Poster: Insecure Coding Habits Die Hard. Can PEFT Really Turn LLMs into Secure Coders?
-- **作者**: Sangjun Chae, Jangseop Choi, Taeyang Kim, Eun Jung, Sanghak Oh, Hyoungshick Kim
-- **解读**: 提出"安全优先构建"（secure-by-construction）的框架，用参数高效微调（PEFT）让 LLM 生成安全代码：自动修复 CodeNet 中 37,540 个 C 样本的 7 类高危漏洞构建安全训练集（CWE 降低 95.36%），再对四个开源模型做提示前缀微调（更新参数少于 1%）。在 LLMSeC-Eval 基准上，安全生成比例从 20% 提升到 36%（StarCoder2-3B）、从 10% 提升到 27%（CodeGen-6B），证明 PEFT 无需全量重训即可实质改善代码安全。
-
-
-### Poster: PainNOVA: Privacy-Aware Voice-Based Pain-Level Detection.
-- **作者**: Andrew Lu, Mashrafi Kajol, Wei Lu, Dean Sullivan
-- **解读**: 提出隐私感知的基于语音的疼痛等级检测框架：从音频中提取频域特征，移除与性别等敏感属性相关的特征，再用 CNN 进行 3 级分类。基于 TAME Pain 数据集的初步分析表明 log-Mel 谱图与过零率是两种有前景的语音特征；进一步在非言语数据集 VIVAE 上验证了该方法对言语与非言语患者的适用性。
-
-
-### Poster: Public Key Encryption with Exclusionary Subset Keyword Search from Lattices.
-- **作者**: Yi-Fan Tseng, Jheng-Jia Huang, Guan-Yu Chen, Ting-Hsiang Su
-- **解读**: 提出一种支持新型搜索模式——排斥性子集搜索——的公钥可搜索加密（PKSE）方案，使用户能检索不含指定关键词集合的密文，在需排除少量关键词的场景下更直观高效，且该模式无法由现有 PKSE 方案平凡实现。构造基于格，支持恒定大小陷门，在性能上优于既有基于格的方案。
-
-
-### Poster: The Rocky Road Towards RPKI Algorithm Agility.
-- **作者**: Katharina Miesch, Haya Schulmann, Niklas Vogel
-- **解读**: 指出 RPKI 目前仅支持 RSA-2048 签名，禁止其他算法与密钥长度，阻碍了算法敏捷性。作者实证表明引入更小更高效的算法（如椭圆曲线密码 ECC）可显著获益，同时说明现行算法迁移计划将因带宽限制、验证开销与补丁管理问题而难以满足后量子迁移需求。据此提出新的敏捷流程：采用独立仓库版本并新增混合树与遗留树，实现算法的增量部署，且相比现有方法也让早期采用者受益。
-
-
-### Poster: Leveraging Large Language Models to Effectively and Efficiently Identify Vulnerability Patches for WordPress Plugins.
-- **作者**: Xue Leng, Hai Zhang, Tiantian Zhu, Jianguo Sun
-- **解读**: 针对 WordPress 插件生态中漏洞补丁识别困难的问题：既有方法多依赖规则匹配，不适用于缺乏统一开发标准的插件生态；结合漏洞描述与代码变化的预测方法虽有潜力，但现有模型缺乏深度语义理解，难以把握代码变更背后的含义。该工作旨在利用 LLM 提升补丁识别的有效性与效率（摘要截断）。
-
-
-### Poster: Exploring the Landscape of RPKI Relying Parties.
-- **作者**: Donika Mirdita, Haya Schulmann, Michael Waidner
-- **解读**: 首次系统研究 RPKI 依赖方（RP）——负责在路由器上收集与执行 RPKI 校验的组件——的部署图景：映射其地理位置、配置参数与漏洞分布，并比较相隔三年的两次测量以刻画演化。分析显示三年内依赖方流量增长 45% 且 89% 来自单一软件类型，运维者强烈偏好自托管但安全缓解率不足。
-
-
-### Poster: When Logs Misbehave: Retrieving Known APTs from Noisy Graphs.
-- **作者**: Guo-Wei Wong, Yi-Ting Huang, Ying-Ren Guo, Ming-Chuan Yang, Shou-De Lin, Wang-Chien Lee, Meng Chang Chen
-- **解读**: 将已知高级持续性威胁（APT）活动检索任务形式化为带噪声、部分观测图上的近似子图匹配：节点为 MITRE ATT&CK 技术、边编码时间或资源关系，而真实场景中目标图常因检测缺失、技术误分类与良性行为结构噪声而含噪。作者提出基于嵌入的初步检索方法，向鲁棒实用的现实 APT 检索框架推进。
-
-
-### Poster: Computer Security Researchers' Experiences with Vulnerability Disclosures.
-- **作者**: Harshini Sri Ramulu, Anna Lena Rotthaler, Jost Rossel, Rachel Gonzalez Rodriguez, Dominik Wermke, Sascha Fahl, Tadayoshi Kohno, Juraj Somorovsky, Yasemin Acar
-- **解读**: 调研安全研究人员在漏洞披露过程中的实际经历：研究者常难以确定受影响方及其联系方式，还可能被忽视或面临敌意。作者提取最佳实践，并向研究人员、其雇佣机构、行业与监管者提出建议，以促成更有效的漏洞披露。
-
-
-### Poster: Reconsidering DNS-Based Domain Verification: Privacy and Overhead Implications.
-- **作者**: Eunbee Hwang, Hyunsoo Kim, Ted Taekyoung Kwon
-- **解读**: 指出基于 DNS TXT 记录的域名验证（DV）虽已成为各类在线服务证明域名所有权的关键机制，但会无意泄露敏感的商业关系、增大 DNS 响应体积并加重解析器基础设施负担。对超过 250 万条记录的测量凸显了臃肿记录的普遍性；该工作作为初步问题陈述，为设计隐私高效的新型 DV 机制提供动机。
-
-
-### Poster: Impulse in the Clickstream: Behavioral Insights from Browsing History.
-- **作者**: Shubham Malaviya, Anuj Bagad, Manish Shukla, Sachin Lodha
-- **解读**: 针对钓鱼攻击利用用户冲动性导致不经评估即点击恶意链接的问题，提出用浏览器历史数据刻画用户冲动性的新方法。会话级分析显示用户行为具有情境性与上下文依赖性；研究为基于实时行为的自适应安全干预提供可操作的洞见。
-
-
-### Poster: An Obfuscation Framework for Mitigating Topology Probing Attacks in Cloud-Native Systems.
-- **作者**: Xue Leng, Kaiwen Shen, Chengxuan Zhu, Xing Li, Jianguo Sun
-- **解读**: 针对云原生系统中微服务远程调用通信侧信道被用于拓扑探测攻击（如 DDoS 前置）的问题，提出 MeshGuard 混淆框架：构建服务级动态迷宫以自适应避免泄露流量模式，对混淆后的拓扑用定制参数伪装，并设计基于标签的机制确保不影响正常微服务。初步结果显示 MeshGuard 能以可接受的资源开销有效保护服务。
-
-
-### Poster: GLog: Self-Evolving Log Anomaly Type Prediction via Instruction-Tuned LLM and Clustering.
-- **作者**: Junwei Zhou, Yuyang Gao, Cheng Tan, Yanchao Yang, Jianwen Xiang
-- **解读**: 提出 GLog，端到端的日志异常类型预测框架：先用正常/异常标签微调指令微调 LLM，在原始未解析序列上实现高精度检测；再对检测到的异常聚类自动生成伪描述，用于第二阶段微调，使模型能输出可解释的具体异常类型。通过利用完整语义并动态更新知识库，GLog 降低标注成本并适应大规模环境中的演化行为。
-
-
-### Poster: PQ Noise Explorer.
-- **作者**: Animesh Thakur, Mikael Asplund
-- **解读**: 发布 PQ Noise Explorer，一个用于设计、形式化验证与实现后量子 Noise 协议模式的 Rust 仓库。该工具可验证任意模式并将其翻译为自动化验证模型，同时提供 Rust 编写的软件实现。
-
-
-### Poster: Obfuscating Function Activity States to Enhance Privacy in Serverless Applications.
-- **作者**: Xue Leng, Fengming Zhu, Xing Li, Ye Tian, Jianguo Sun, Yan Chen
-- **解读**: 针对无服务器（FaaS）计算中函数实例共享物理基础设施、共驻攻击可经侧信道泄露函数活动状态的问题，提出 FaaSGuard 混淆框架：采用自适应策略选择机制提升灵活性，通过流量伪装使混淆流量与正常流量不可区分，并以标签机制避免影响正常函数。初步评估显示能以可忽略的资源开销隐藏函数活动状态。
-
-
-### Poster: Model-driven Privacy Analysis of Messaging Platforms.
-- **作者**: Muqaddas Naz, Muhammad Taimoor Khan, Muhammad Waqas
-- **解读**: 针对即时通讯平台隐私分析中需求重叠且相互冲突（保密性、匿名性、不可链接性、用户同意等）的难点，提出基于复合模型的框架以捕获这些需求间的相互依赖，实现隐私违规与法律影响的系统化识别。应用于 WhatsApp 等平台背后的实时通信服务器 Ejabberd，聚焦保密性与同意驱动问题（含知情权与删除权），验证了该方法在技术分析与合规问责之间架桥的有效性。
-
-
-### Poster: Agentic Shell Honeypot Using Structured Logging.
+#### Poster: Agentic Shell Honeypot Using Structured Logging.
 - **作者**: Kai Wei, Guangjing Wang
-- **解读**: 提出 HoneyAgents，基于智能体的 shell 蜜罐系统：以角色委派架构与策略智能体协同应对提示注入，用结构化日志实现长时记忆以保持交互一致性，并在多智能体协作中采用分层规划生成可挖掘的动态响应。评估显示其在鲁棒性、真实感与效率上均优于传统规则蜜罐与既有 LLM 蜜罐，使 LLM 驱动的蜜罐更适用于安全运维。
+- **方向**: AI/ML安全
+- **解读**:
 
+蜜罐通过模拟命令行接口来记录攻击者行为，是威胁情报收集的重要工具，但传统蜜罐依赖静态、基于规则的响应，无法捕捉真实世界多轮对抗交互的复杂性；近年出现的 LLM 驱动蜜罐在提示注入、状态不一致和响应延迟方面仍不够真实。
 
-### Poster: An Improved Quantum Attack on the Two-round Even-Mansour Cipher with Independent Permutations and Keys.
-- **作者**: Rentaro Shiba, Tetsu Iwata
-- **解读**: 提出针对两轮迭代 Even-Mansour 密码（含两个独立置换与三个子密钥）的量子攻击，采用 Q1 模型：敌手进行经典在线查询与量子离线查询。攻击复杂度为 O(2^(n/2))（n 为分组大小），而该变体此前最优攻击复杂度为 O(2^(3n/5))，显著改善了计算复杂度。
+该海报针对这三个缺陷提出 HoneyAgents。方法上有三项创新：(i) 角色委派架构，由多个策略智能体协同应对提示注入；(ii) 结构化日志机制实现长期记忆，维持多轮交互对齐；(iii) 多智能体协作中的分层规划，生成可利用的动态响应，以在对抗交互中争取时间与信息优势。
 
+评估表明系统在鲁棒性、真实感与效率上均有提升，使 LLM 驱动的蜜罐在安全运营中更具可行性；摘要未给出具体数值指标。
 
-### Poster: Post-Quantum Readiness in EdDSA Chains.
-- **作者**: Kostas Kryptos Chalkias
-- **解读**: 评估 EdDSA 签名链的后量子迁移准备情况。探讨在证书链、信任链等依赖 EdDSA 的场景中升级至后量子签名方案的可行性与挑战（无摘要，据标题推断）。
+我的思考：该工作把 LLM 蜜罐从"单模型聊天"推进到"多智能体工程化"，结构化日志既解决状态一致性又天然可审计，方向正确；但海报缺少注入成功率、延迟毫秒数等定量证据，说服力受限，未来需要与真实攻击语料和传统蜜罐的对比评估。
 
-
-### Poster: Reducing Hull Dimensions for Efficient Permutation Recovery in Code-Based Cryptography.
-- **作者**: Keita Ishizuka
-- **解读**: 研究线性码置换等价问题（PEP）中支撑分裂算法（SSA）的效率与 hull 维数的关系：SSA 需要坐标置换下不变的 hull，但可改用其他内积来降低维数。作者给出完整刻画——置换不变双线性形式恰为 aI + bJ 结构矩阵，并证明这些 hull 维数可至少降低一维且给出降维条件；该改进使枚举复杂度获得因子 q 的加速，对 LESS、SPECK 等方案的代码分类、密码分析与参数选择有实际价值。
-
-
-### Poster: LogCraft: Crafting CVE-Aware Synthetic Worlds (Logs).
-- **作者**: Kai-Xian Wong, Chan-Jien Tan, Yi-Ting Huang, Ying-Ren Guo, Yu-Zih Jheng, Guo-Wei Wong, Meng Chang Chen
-- **解读**: 提出 LogCraft，基于 CVE 知识生成"感知 CVE"的合成日志数据（Synthetic Worlds/Logs）。旨在为日志异常检测等安全分析提供可控、带标注的训练与评估数据（无摘要，据标题推断）。
-
-
-### Poster: High-Fidelity and Contextual User Activity Memory Forensics.
-- **作者**: Min-Chieh Wu, Jui-An Chang, Yu-Sung Wu
-- **解读**: 提出 RAM-Weaver 内存取证系统，支持对内存转储中用户活动文件的情境化查询：先从原始转储中提炼关键信息，并借助 LLM 导航其中晦涩的数据结构以支持交互式查询。该提炼过程可将数据量减少达 99.9%、信噪比提升近 37 dB，使其可在更小的离线模型上运行；与云端全规模模型结合时能以极高精度检索用户活动。
-
-
-### Poster: LogCADA: Cross-System Log Anomaly Detection based on Two-Stage Multi-Source Domain Adaptation.
+#### Poster: LogCADA: Cross-System Log Anomaly Detection based on Two-Stage Multi-Source Domain Adaptation.
 - **作者**: Junwei Zhou, Ying Zhu, Linhao Wang, Jianwen Xiang, Cheng Tan, Yanchao Yang
-- **解读**: 提出 LogCADA，基于迁移学习的跨系统日志异常检测框架：通过双层对抗训练获取公共特征，并以多源域对比对齐区分不同域的特有特征，以联合优化迁移效果与模型泛化能力。结果表明该方法可适配双源与单源场景，有效克服传统方法的固有限制，在真实日志分析场景中具有实用价值。
+- **方向**: AI/ML安全
+- **解读**:
 
+基于深度学习的日志异常检测需要大量标注数据，新兴系统日志稀缺时难以落地；迁移学习可从数据丰富的源域借力，但现有跨域研究难以同时优化迁移效果与模型泛化能力，两者往往此消彼长。
 
-### Poster: Efficient Threshold ML-DSA up to 6 Parties.
-- **作者**: Sofía Celi, Rafaël del Pino, Thomas Espitau, Guilhem Niot, Thomas Prest
-- **解读**: 提出首个与 NIST 后量子标准 ML-DSA（Module-Lattice-based Digital Signature Algorithm）兼容的门限签名方案，支持最多 6 方协同签名且不泄露各方的秘密份额。该工作采用先进的短秘密共享技术并优化拒绝采样，以在分布式场景中平衡通信量与正确性；Go 实现经本地、LAN 与 WAN 基准测试，适用于多设备加密货币钱包、TLS、Tor 目录机构等实际应用。
+作者提出 LogCADA：基于（对抗）学习的双阶段多源域自适应框架，通过双层对抗训练提取跨域公共特征，再通过多源域对比对齐来区分各域特有特征，从而在保持泛化的同时获得更好的迁移效果。
 
+结果表明，该方法可适配双源域与单源域场景，克服传统方法的固有局限，在真实日志分析场景中具有实用价值；摘要未给出具体准确率数值。
 
-### Poster: Scalable Privacy-Preserving Linear Regression Training via Homomorphic Encryption.
-- **作者**: Yena Cho, Hyoungshick Kim
-- **解读**: 提出 PP-LR，端到端基于 CKKS 的线性回归训练协议，支持梯度下降的特征级并行与条件自举。相比标准同态加密实现，训练速度最高提升 15.7 倍，且在四个真实数据集上与明文模型的精度差距保持在 0.2% 以内。
+我的思考：将"对抗训练 + 对比学习"系统化引入日志异常检测，直击"源域标签多、目标域标签少"的现实痛点，与 LogCraft 等合成数据工作可互补；缺少 F1/PR 等量化数字是海报的常见取舍，跨系统泛化的实际收益仍需正文数据支撑。
 
-
-### Poster: Adversarial Habituation Attack: A Psychological Extension and Re-framing of Boiling Frog Attack.
+#### Poster: Adversarial Habituation Attack: A Psychological Extension and Re-framing of Boiling Frog Attack.
 - **作者**: Tashi Stirewalt, Assefaw Hadish Gebremedhin
-- **解读**: 从心理学视角对"煮青蛙攻击"（Boiling Frog Attack）进行延伸与重新框定，提出"对抗性习惯化攻击"概念。研究通过渐进、微小的恶意调整使目标逐渐习惯并忽视异常，从而在长时间尺度上降低安全警觉的攻击模式（无摘要，据标题推断）。
+- **方向**: AI/ML安全
+- **解读**:
 
+（无摘要，据标题推断）"沸水煮蛙攻击"（Boiling Frog Attack）刻画一类渐变式攻击：攻击者通过缓慢、逐次逼近的变化使检测系统逐渐"习惯化"而丧失警觉，如同温水煮蛙——青蛙因水温变化缓慢而最终被煮熟。本工作从心理学角度扩展并重新框定这一攻击，将其与"习惯化"（habituation）这一心理机制联系起来。
 
-### Poster: The Art of Deception: Crafting Chimera Images for Covert and Robust Semantic Poisoning Attacks.
+方法上，据标题推断，作者将习惯化形式化为对抗攻击框架，分析其对基于行为的检测系统（如连续认证、异常检测）的威胁，并可能讨论心理层面用户对渐进威胁的感知麻木如何被攻击者利用。
+
+由于没有摘要，无法引用具体数据与结论。
+
+我的思考：把心理学概念引入对抗性机器学习，为"渐变式逃逸"攻击提供统一理论视角，立意新颖；但此类概念性工作若无量化实验（如渐变速率、检测阈值与逃逸成功率的关系）支撑，说服力有限，解读仅基于标题推断，期待后续给出量化证据。
+
+#### Poster: The Art of Deception: Crafting Chimera Images for Covert and Robust Semantic Poisoning Attacks.
 - **作者**: Lin Li, Youyang Qu, Jiayang Ao, Ming Ding, Chao Chen, Jun Zhang
-- **解读**: 提出利用生成式 AI 制作隐蔽且鲁棒的毒样本"奇美拉图像"（Chimera Images）：融合两个目标类别的视觉特征生成保持外观保真度的混合对象，以带正确标签的"正常"样本悄然扭曲模型决策边界而不引起怀疑。CIFAR-10 与 Flowers 数据集上的实验表明该方法能降低目标类准确率、保持其他类性能，并对 SOTA 防御策略免疫；作者还发现近期提出的快照检测机制对 AI 生成样本无效。
+- **方向**: AI/ML安全
+- **解读**:
 
+媒体数据价值不断增长，数据投毒攻击成为针对这些资产的持久威胁；但传统投毒样本往往带有明显痕迹、可被察觉，限制了攻击的隐蔽性。
 
-### Poster: Randomness Unmasked: Towards Reproducible and Fair Evaluation of Shift-Aware Deep Learning NIDS.
+作者提出利用生成式 AI 构造"奇美拉图像"（Chimera Images）：将两个目标类别的视觉特征无缝融合为保持外观保真的混合对象，作为带正确标签的"正常"样本参与训练，悄悄扭曲模型决策边界而不引起怀疑。
+
+在 CIFAR-10 与 Flowers 数据集上的大量实验表明：该方法 i) 降低目标类准确率，ii) 保持其他类别性能，iii) 对现有最先进防御策略具有免疫性；作者还将其用于内容检测机制，发现近期提出的快照（snapshot）技术对 AI 生成样本无效。
+
+我的思考："正确标签 + 生成式视觉融合"的语义投毒思路新颖，规避了传统投毒样本"人眼可辨"的弱点；但实验规模（CIFAR-10/Flowers）偏小，真实场景分布更复杂，对防御"免疫性"的结论也需要更全面的防御谱系验证，后续在更大规模与更多防御下的验证值得期待。
+
+#### Poster: Randomness Unmasked: Towards Reproducible and Fair Evaluation of Shift-Aware Deep Learning NIDS.
 - **作者**: Lucy Steele, Fahad Alotaibi, Sergio Maffeis
-- **解读**: 研究随机性与环境变化对深度学习网络入侵检测系统（NIDS）评估的影响，聚焦可检测并适应分布漂移的 shift-aware 模型（代表长期部署的 SOTA 系统）。作者在受控变化下考察两个基线并分析各随机因素对结果可复现性与公平性的影响，发现即使微小的变化也会让 F1 分数大幅波动，且所有因素都显著影响部分结果；据此提出支持可复现、公平评估学习型 NIDS 的实用建议。
+- **方向**: AI/ML安全
+- **解读**:
 
+深度学习被越来越多地用于网络入侵检测系统（NIDS），但其评估常假设数据分布静态，忽视随机性与环境变化的影响，导致报告的性能无法反映真实部署行为，也造成不同论文之间难以公平比较。
 
-### Poster: Inferring On-Screen Keyboard Input via Gamepad-based Mouse Movement Traces.
-- **作者**: Gyujeong Jin, Seyoung Lee
-- **解读**: 研究通过基于手柄（gamepad）的鼠标移动轨迹推断屏幕键盘输入的旁路攻击。利用输入设备控制方式引入的移动模式侧信道泄露击键信息，威胁触摸/屏幕键盘场景下的输入机密性（无摘要，据标题推断）。
+该工作系统研究随机性因素（如训练种子、数据划分、超参数随机性等）对 NIDS 性能的影响，聚焦能检测并适应分布漂移的 shift-aware 系统（当前长期部署研究中的 SOTA）；他们在受控变化下考察两个基线，逐一分析各因素对可复现性与公平性的影响。
 
+结果显示 F1 分数会因这些（哪怕是微小的）变化而大幅波动，所有被探索的因素都会显著影响某些系统的性能；基于发现，作者给出支持可复现、公平评估的实用建议。
 
-### Poster: Decoding Social Engineering: A Multi-Level Framework for Tactic Generation, Annotation, and Evaluation.
-- **作者**: Yicun Tian, Youyang Qu, Ming Ding, Shigang Liu, Pei-Wei Tsai, Jun Zhang
-- **解读**: 针对钓鱼邮件中嵌入的复杂社会工程（SE）策略，开发生成、标注与评估三层级 SE 策略的方法：以"生成—交叉验证—高亮"流水线构建标注可靠的语料，保证标签与嵌入策略的语义对齐，再将触发片段聚类合成为细粒度模式，刻画策略在浅层（L1）、中等（L2）与深层（L3）的表现。基于 LLM 的实验显示检测准确率随策略复杂度增加而下降，验证了框架的分层能力及其在培训、仿真与策略感知设计中的用途。
+我的思考：这是一篇方法论反思型工作，用实证量化随机性带来的方差，比口号式呼吁更有说服力，呼应安全社区对结果不可复现的长期担忧；局限在于仅覆盖两个基线，建议的普适性有待更多系统验证。
 
+#### Exploring the Janus Face of Synthetic Images: From Privacy-secure Biometrics Applications to Deepfake Detection for Misinformation-Free Social Networks.
 
-### Addressing Vulnerabilities and Opacities in Quantum Service Providers.
-- **作者**: Rupshali Roy
-- **解读**: 针对 NISQ 时代第三方量子云服务的增长，指出其安全与不透明问题：不可信的编译器、映射器与分配器可能让用户电路易受攻击或为节省资源而故意降低执行质量；通信信道缺少端到端加密、电路实际执行位置不可见，这些漏洞可能导致数据泄露、设计者知识产权损失、访问控制失效与程序破坏。作者的博士工作旨在识别这些漏洞并制定防御策略，以维护量子软件栈的完整性。
-
-### AI-Augmented Static Analysis: Bridging Heuristics and Completeness for Practical Reverse Engineering.
-- **作者**: Monika Santra
-- **解读**: 针对逆向工程中代码与数据交错、符号/类型/栈帧缺失、激进编译优化及多种混淆导致传统启发式静态分析不可靠的问题，论文提出融合 AI 与尽力而为（best-effort）完整性分析的思路：用 AI 替代脆弱的启发式规则以增强泛化能力，同时以启发式手段补充完整性，满足安全关键型二进制分析的可靠性要求。研究聚焦指令边界识别、函数控制流图（CFG）构建（特别是间接调用目标识别）三项被学术研究与现有工具忽视的任务，目标是构建端到端的反汇编框架。
-
-
-### Hardware-assisted Memory Isolation.
-- **作者**: Hongyi Lu
-- **解读**: 论文研究以 Intel MPK、Arm POE、RISC-V PMP 为代表的硬件辅助内存隔离机制，此类机制可为关键数据与执行上下文提供保护，且避免了纯软件方案的开销。同时指出其共性局限：可用的保护域（domain）数量有限，且主要聚焦 CPU 内存，与外设交互相关的内存访问得不到保护，由此引出待解决的研究问题。
-
-
-### S2S-SED: A Speech-to-Speech Approach for Detection of Social Engineering Attacks in Audio Conversations.
-- **作者**: Leonardo Erlacher
-- **解读**: 针对依赖生成式语音合成、神经语音克隆与心理自适应操纵的语音社会工程攻击日益复杂，论文指出基于转录文本的 LLM 欺诈检测遗漏了重音、紧迫感与对话动态等韵律和交互线索，构成根本性局限。为此提出 S2S-SED 语音到语音检测框架：直接处理原始音频，编码为隐式保留韵律模式、情绪与语义内容的潜在表示，由统一推理模型评估话轮转换等对话动态，不依赖中间文本。研究还计划构建领域标注的语音社会工程数据集，用于训练与评估音频原生的 LLM。
-
-
-### Security and Privacy Measurements in Cellular Networks: Novel Approaches in a Global Roaming Context.
-- **作者**: Gabriel K. Gegenhuber
-- **解读**: 论文以蜂窝网络作为全球通信骨干为背景，指出其因架构创新（如 VoIP、eSIM）与漫游、虚拟运营商、零费率等商业动态而日益复杂，但缺乏开放、可扩展、地理多样化的测量工具，导致相关安全与隐私状况难以理解。研究旨在全球漫游情境下提出新的测量方法，填补这一工具与认识上的空白。
-
-
-### Postmortem Voice Cloning: Individuals Perspectives of Ownership and Deceptive Harms.
-- **作者**: Jennifer Vander Loop
-- **解读**: 论文研究逝者语音克隆（postmortem voice cloning）的滥用风险：语音克隆仅需数秒音频即可复刻他人声音，已用于冒充诈骗，而克隆逝者声音可能被用于冒充逝者或对遗属实施情感操纵。研究采用问卷与访谈相结合的混合方法，在既有危害分类学指导下开展主题分析，考察个体对所有权、隐私预期及监管的看法。目标是产出关于人去世后语音的防护措施、法律保护与平台责任方面的认知与建议。
-
-
-### Towards Explainable and Robust Deepfake Detection and Attribution: Enhancing Multimedia Forensics for the Next Generation of Synthetic Media.
-- **作者**: Raphael Antonius Frick
-- **解读**: 针对生成式 AI 使合成音视频几乎无法与真实媒体区分、而现有深度伪造检测多为数据驱动的二元分类、难以满足高利害场景下归因与可解释性需求的问题，论文提出构建鲁棒、可泛化、可解释的取证框架：(1) 不仅能检测 AI 生成媒体，还能将攻击归因到特定模型或方法；(2) 为法律场景提供可解释证据；(3) 对对抗性操纵保持韧性。研究整合基于模型的技术并利用外部数据、延续多媒体取证既有工作，论文报告了关键挑战、目标与早期发现。
-
-
-### Scalable Cryptography for Trustworthy Machine Learning in the LLM Era.
-- **作者**: Gefei Tan
-- **解读**: 论文指出 MPC 与零知识证明虽能提供可证明的安全保证，但通用协议在大规模机器学习（尤其大模型时代）中不切实际，并提出核心主张：针对具体 ML 子任务结构协同设计的协议，可在不牺牲隐私或可验证性的前提下达到实用效率。研究分三条线展开：(1) 机密外包训练——定制 MPC 将昂贵步骤转移至本地计算，使资源受限的数据所有者能在不可信云上安全训练；(2) 面向大数据集的可扩展原语——混淆洗牌、隐私连接、稀疏线性代数等可证明构件以弥合大规模隐私管线的性能差距；(3) 可验证再训练——以"最优性证明"框架认证微调模型（如 LoRA 适配器）满足所需性质，无需重放训练过程即可高效、可审计地部署。
-
-
-### Turning Uncertainty into Efficiency: Toward Practical, Quantum-Resistant Verifiable Privacy Tools.
-- **作者**: Jie Xu
-- **解读**: 论文针对可验证随机函数（VRF）与不经意伪随机函数（OPRF）等隐私保护应用（匿名认证、隐私集合求交、去中心化身份）中现有构造依赖数论假设、易受量子攻击的问题，研究基于格的高效实用构造以实现后量子安全。其关键障碍是零知识证明（尤其是区间证明）在规模与证明者复杂度上的开销，为此探索放宽精确正确性的概率技术，如利用多项式环自同构进行近似代数变换、以乘法模拟内积论证。目标是构建更可扩展的 VRF（含群/上下文绑定变体）与 OPRF，并使其具备可部署性。
-
-
-### On Defining Reproducible Outcomes for the Computer Security Community.
-- **作者**: Daniel Olszewski
-- **解读**: 论文以计算可复现性为核心，指出安全社区虽然日益重视通过发布工件让他人独立复现结果，但现有做法是否切实有效仍是开放问题。研究拟测量既有可复现性举措的影响、构建提升可复现成果的框架与工具，并系统分析已有的实践路径。目标是向安全研究者提供简化研究复现的手段。
-
-
-### Towards Explainable and Effective Anti-Money Laundering for Cryptocurrency.
-- **作者**: Qishuang Fu
-- **解读**: 论文针对加密货币洗钱检测中现有方法缺乏可解释性或难以有效处理隐私币的问题，提出两个研究方向：其一，通过交易语义解析与基于大语言模型的分类，构建面向非隐私币的可解释反洗钱（AML）框架；其二，研究涉及门罗币（Monero）等隐私币的非法资金流追踪，聚焦提升去匿名化精度并识别跨链路径。初步结果表明语义感知模块与微调模型在检测复杂行为上具有可行性。
-
-
-### Towards Solving Real-world Problems of Post-quantum Cryptography.
-- **作者**: Suparna Kundu
-- **解读**: 论文以基于大整数分解与椭圆曲线离散对数问题的公钥密码易受大规模量子计算机攻击为背景，指出 NIST 发布 PQC 标准方案虽是里程碑，但相关研究相比成熟数十年的传统密码方案仍不成熟。研究聚焦广泛部署前必须解决的开放问题：侧信道等物理攻击分析及其对策、面向特定应用的方案修改、资源受限设备上的轻量级实现，以及与各类安全协议的集成。目标是弥合 PQC 从理论到实践之间的差距。
-
-
-### Dissertation Research Description: The Potential of SBOMs to Increase Software Supply Chain Security.
-- **作者**: Lukas Gehrke
-- **解读**: 论文以 XZ Utils 事件等供应链攻击为背景，指出立法推动（美国行政令 14028、欧盟 2024 年《网络弹性法案》2027 年强制 SBOM）与工程实践脱节：从业者难以真正使用 SBOM，普及与流程集成面临多重挑战，且生成工具的准确性问题突出。围绕"SBOM 能带来何种收益、还能如何进一步提升安全性"提出四项贡献：系统化梳理 SBOM 的历史与相关计算机科学概念；构建包含参与方的 SBOM 使用模型，为实践提供理论基础；开发 BOM2VULN 工具将 SBOM 映射到漏洞，帮助工程师快速查找并评估漏洞相关性；以及提出评估第三方代码风险的"Nutri Score"评分方法。
-
-
-### Exploring the Janus Face of Synthetic Images: From Privacy-secure Biometrics Applications to Deepfake Detection for Misinformation-Free Social Networks.
 - **作者**: Tanusree Ghosh
-- **解读**: 论文聚焦生成式 AI 的"双面性"：一方面，合成超逼真人脸可为生物识别系统长期面临的隐私与数据稀缺难题提供解决方案，这是有前景但尚未充分探索的应用方向；另一方面，同一技术被武器化用于制造深度伪造，在在线社交网络（OSN）上助长虚假信息，威胁信息完整性。研究将同时探索这两个方向——隐私安全的生物识别应用与面向无虚假信息社交网络的深度伪造检测。
+- **方向**: AI/ML安全
+- **解读**:
+生成式 AI 的崛起为数字社会带来深刻的"雅努斯两面性"：一方面，合成超逼真人脸的能力为生物识别系统长期面临的隐私保护与数据稀缺难题提供了强大解决方案——这是一个有前景但未被充分探索的应用方向；另一方面，同一技术被武器化为"深度伪造"，在在线社交网络（OSN）上助长虚假信息传播，对信息生态完整性构成重大威胁。
+
+论文拟对合成图像的两个面向展开系统研究：一是将合成人脸用于隐私安全的生物识别应用，利用生成技术规避真实人脸数据的隐私风险与采集成本；二是面向无虚假信息社交网络的深度伪造检测，识别平台上的合成内容并遏制其滥用。
+
+结果方面（摘要未给出量化实验数据），论文确立了"双刃剑"的问题框架，并明确了两个研究方向各自的技术挑战。
+
+我的思考：同一技术"攻防并举"的视角是本文的鲜明特色，也意味着工作量横跨生成、识别与检测多条技术栈，广度与深度之间存在张力。合成数据用于生物识别时，其与真实分布的域差异、以及攻击者可能针对"合成数据训练的识别器"发起对抗攻击，都是值得深挖的风险点；而 deepfake 检测的攻防对抗升级目前仍是开放问题。
+
+#### AISec '25: 18th ACM Workshop on Artificial Intelligence and Security.
+
+- **作者**: Maura Pintor; Matthew Jagielski; Ruoxi Jia
+- **方向**: AI/ML安全
+- **解读**:
+人工智能与机器学习已成为近年最突出的技术进步，其实时分析海量数据流的能力使它们成为包括网络安全在内的众多领域的利器——例如 ML 能够识别人类难以通过硬编码规则察觉的恶意软件模式。然而，AI 在安全相关领域的使用也引发了对其可信性与鲁棒性的合理担忧，尤其是在面对自适应攻击者时；同时，隐私威胁正成为需要恰当测试与缓解的关键问题，以防止敏感信息被窃取或泄露。
+
+AISec 工作坊作为第 18 届会议，为展示与讨论安全与 ML 交叉领域的新进展提供了平台，聚焦"用 AI 做安全"与"保 AI 安全"两个方向。
+
+结果方面（摘要为综述性陈述，无量化数据），明确列出了 ML 在恶意软件检测等安全任务中的价值，以及对抗鲁棒性与隐私两大隐患。
+
+我的思考：AISec 是 AI×安全领域的老牌学术节点，其定位从"ML 用于安全"扩展到"ML 自身的信任、鲁棒与隐私"，反映了领域认知的成熟。自适应攻击者假设是评估 ML 安全方案的关键标尺，这一点在摘要中被明确强调，说明社区共识已成型；本届由鲁棒性与隐私方向的知名学者组织，议题导向有保障。
+
+#### ARTMAN '25: Third Workshop on Recent Advances in Resilient and Trustworthy MAchine learning-driveN systems.
+
+- **作者**: Gregory Blanc; Takeshi Takahashi; Zonghua Zhang
+- **方向**: AI/ML安全
+- **解读**:
+机器学习驱动的应用与系统已渗透交通、航空航天、医疗、能源、金融等行业，这些系统的弹性（resilience）与可信性（trustworthiness）成为安全隐私研究必须直面的问题，尤其是在人机协作场景中。
+
+ARTMAN 工作坊汇聚来自安全与隐私、机器学习等领域的学术研究者与工业从业者，共同探讨弹性与可信的学习型应用与系统，欢迎 ML 在各行业的基础与应用两方面贡献，既关注 AI 驱动的性能与效率提升，也关注可靠、安全的算法设计，尤其鼓励知识驱动的（knowledge-informed）方法以提升鲁棒性与信任，特别是人机伙伴关系与交互场景。
+
+结果（摘要为定位性陈述，无量化数据）：明确"性能效率"与"安全可靠"双线并重的议程框架。
+
+我的思考："知识-informed"是本文的关键词——纯数据驱动模型在安全敏感场景中往往脆而不稳，融合领域知识是提升可信度的重要路径，这一取向与工业界对可解释、可验证 AI 的需求相契合。跨行业适用性既是特色也是挑战：不同行业的监管与失效代价差异巨大，统一的方法论能否落地有待检验。
+
+#### LAMPS '25: ACM CCS Workshop on Large AI Systems and Models with Privacy and Security Analysis.
+
+- **作者**: Kwok-Yan Lam; Xiaoning Liu; Derui Wang; Bo Li; Wenyuan Xu; Jieshan Chen; Minhui Xue; Xingliang Yuan; Guangdong Bai; Shuo Wang
+- **方向**: AI/ML安全
+- **解读**:
+大型 AI 系统与模型（LAMs）在各类应用中扮演越来越重要的角色，其对关键基础设施的隐私与网络安全影响已成为紧迫关切——大模型的幻觉、越狱、数据泄露等风险一旦作用于电力、交通、医疗等关键领域，后果远超普通应用。
+
+LAMPS 工作坊致力于应对这些新兴挑战，汇聚全球顶尖专家，深入探讨各行业 LAMs 面临的复杂风险：参会者可了解创新解决方案、交流最佳实践，并共同塑造未来研究议程；其核心主张是在推进技术发展与保障数字和物理基础设施安全之间取得关键平衡。
+
+结果（摘要为框架性陈述，无量化数据）：确立"LAMs × 关键基础设施风险图谱 + 研究议程塑造"的双重目标。
+
+我的思考：组织者阵容横跨安全、AI 与系统多个方向（Bo Li、Wenyuan Xu 等均为领域权威），议题聚焦"大模型 + 关键基础设施"这一复合风险地带，正是当前政策与工业界最焦虑的环节。其"安全与发展平衡"的表述也呼应了全球 AI 治理的主流话语框架；具体落地成效取决于能否从议程讨论走向可复现的评测与防御基准。
+
+#### 3D-Sec '25: The 1st ACM Workshop on Deepfake, Deception, and Disinformation Security.
+
+- **作者**: Simon S. Woo; Shahroz Tariq; Sharif Abuadbba; Kristen Moore; Tim Walita; Bimal Viswanath; Mario Fritz
+- **方向**: AI/ML安全
+- **解读**:
+（无摘要，据标题推断）深度伪造、欺骗与虚假信息已成为数字时代威胁信息生态完整性的三大共生现象：AI 生成的伪造媒体被用于操纵舆论、身份欺诈与网络攻击，其检测与治理是安全研究的前沿难题。该首届研讨会专门聚焦这三类威胁的安全维度。
+
+方法上，据标题推断，工作坊将汇集深度伪造检测、欺骗识别与虚假信息治理方向的研究者，探讨跨媒体、跨平台的攻防技术与治理框架。
+
+结果：无具体数据可引用，论文细节无法从标题进一步确认。
+
+我的思考：组织者堪称深度伪造检测领域的权威阵容——Simon Woo、Bimal Viswanath 与 Mario Fritz 团队在伪造检测与对抗攻防方面有大量代表性工作。deepfake 检测面临的核心困境是"检测器与生成器持续军备竞赛"，通用且可解释的检测方法仍是开放问题；该工作坊将 deepfake、欺骗与虚假信息三者合并讨论，也提示社区正从"检测单张图"走向"评估系统性影响"。
+
+### 大模型安全（23 篇）
+
+#### Oedipus: LLM-enchanced Reasoning CAPTCHA Solver.
+
+- **作者**: Gelei Deng, Haoran Ou, Yi Liu, Jie Zhang, Tianwei Zhang, Yang Liu
+
+- **方向**: 大模型安全
+
+- **解读**: 推理型 CAPTCHA（旋转、Bingo、3D 逻辑等）被设计为"人类易、AI 难"，是 Web 安全人机对抗的最新防线，但随着多模态大模型推理能力跃升，其有效性面临挑战。作者通过实证研究回答"LLM 能否解推理 CAPTCHA、瓶颈何在"，为这场军备竞赛提供系统证据。
+
+实证阶段对 5 类 50 个商用 CAPTCHA、GPT-4 与 Gemini 两种模型、零样本与 CoT 两种策略共 1000 次试验：任务理解率高达 90.1%/86.2%，但零样本成功率仅 16.5%/12.0%，CoT 也仅 21.0%/17.1%；单准则搜索成功率 80.8%，多准则骤降至 25.0%。据此设计 CAPTCHA DSL（search/reason/locate/operate 四个关键字），语法约束保证每个子操作都是 LLM 易解任务，配合微调 DSL 生成器、本地语法验证器反馈、自然语言翻译，构成端到端框架 OEDIPUS。
+
+在 2022 年四类商用 CAPTCHA 上，OEDIPUS-GPT-4 平均成功率 63.5%，优于 Gemini 版 51.2%、miniGPT-4 版 14.3% 与重构的 VTT（24.8%）；Gemini 版成本低至每 100 个 3.1 美元。对 2023 年两类新 CAPTCHA 迁移成功率 51.3%/36.8%，无需重新训练；DSL 反馈机制将脚本生成成功率从 59.8% 提升至 93.7%。
+
+我的思考：核心贡献是把"AI-hard 任务分解为 AI-easy 子任务"形式化为可验证的 DSL，免训练、可迁移，思想干净、工程完整。但 63.5% 成功率仍低于人类 90% 的基准，且商用求解服务价格更低；视觉定位（尤其方向识别）仍是短板，出于伦理只发布部分方案。作者提出的三条反制设计策略（复杂推理链、对抗样本、超出现有 LLM 概念范围的任务）对 CAPTCHA 厂商有直接参考价值。
+
+- **arXiv PDF**: [Oedipus: LLM-enchanced Reasoning CAPTCHA Solver.](https://arxiv.org/pdf/2405.07496)
+
+#### The Odyssey of robots.txt Governance: Measuring Convention Implications of Web Bots in Large Language Model Services.
+
+- **作者**: Jian Cui, Mingming Zha, XiaoFeng Wang, Xiaojing Liao
+- **方向**: 大模型安全
+- **解读**: 
+Web内容是LLM服务训练与推理的关键数据源，发布者越来越多地通过 robots.txt 这一老牌协议管理LLM厂商爬虫的访问；然而ChatGPT-User、Google-Extended等专有爬虫的兴起引发透明度与合规担忧——这些爬虫是否真的遵守 robots.txt 规则、对整体治理有何影响，此前缺乏系统性认识。
+方法上，作者对 18,582,281 个 robots.txt 文件展开大规模系统性测量，分析LLM相关爬虫规则的引入趋势、不同行业域名的采纳差异以及爬虫的实际遵守情况，并考察内容访问与治理机制之间的张力。
+结果方面，研究发现与LLM服务相关的 robots.txt 规则显著增加，尤其是金融、新闻类域名；尽管规则集成度提高，仍出现LLM记忆受限域名内容、忽略已访问内容等不遵守情况，凸显现行治理的缺口，说明需要可执行机制来真正尊重发布者意图并实现控制。
+我的思考：大规模实测数据让"爬虫是否遵守协议"的争论有了证据基础，金融与新闻域名的集中趋势也说明利益相关方已感知到内容被LLM吸收的风险。局限在于 robots.txt 本质是"君子协定"，测量只能反映规则文本与实际访问的匹配，难以量化绕过手段，且结论随时间漂移。该工作为"协议加可执行机制"的治理讨论提供了量化起点。
 
 
-### ACM CCS Young Scholars Development Program.
-- **作者**: F. Betül Durak, Fengjun Li, Sophie Stephenson
-- **解读**: 该文介绍 ACM CCS 青年学者发展计划（YSDP）：一项由专门主席团队发起并组织、旨在支持计算机安全领域早期研究者的新举措。计划通过讲座、专题讨论、分组技术交流等结构化活动促进合作、沟通与职业成长，强调技能培养与人脉构建，帮助青年学者融入更广泛的学术生态。文章详述了该计划的规划、选拔与执行过程，并指出其对塑造更强研究环境的作用。
+#### ImportSnare:Directed 'Code Manual' Hijacking in Retrieval-Augmented Code Generation.
+
+- **作者**: Kai Ye, Liangcai Su, Chenxiong Qian
+- **方向**: 大模型安全
+- **解读**: 
+检索增强生成（RAG）被广泛用于代码生成——模型从文档/手册等外部语料检索上下文后生成代码；若攻击者能篡改或劫持这些被检索的"代码手册"，就能让模型生成含漏洞或恶意逻辑的代码，形成针对开发者的供应链攻击（无摘要，据标题推断）。
+方法上，ImportSnare提出"定向代码手册劫持"攻击：针对目标代码或库，精心构造恶意手册内容，使其在RAG检索中被高概率命中并引导模型采用不安全实现，实现定向投毒（无摘要，据标题推断）。
+结果方面，该工作展示了攻击者仅通过污染文档语料即可劫持RAG代码生成的方向性攻击能力（具体成功率与影响范围以论文正文为准）（无摘要，据标题推断）。
+我的思考：代码RAG把文档语料变成了隐式的"可信执行流"——ImportSnare揭示的正是这条供应链的脆弱点：开发者信任模型生成的代码，而模型信任检索到的文档。相比提示注入，这是更隐蔽、更难以察觉的投毒面。局限是攻击依赖检索命中的可控性，真实语料库（如GitHub、包管理器文档）的清洗与验证机制将是缓解关键。
 
 
-### AISec '25: 18th ACM Workshop on Artificial Intelligence and Security.
-- **作者**: Maura Pintor, Matthew Jagielski, Ruoxi Jia
-- **解读**: 该文介绍第 18 届 ACM 人工智能与安全研讨会（AISec'25）：AI/ML 已成为网络安全领域的重要工具（如通过发现人眼与硬编码规则难以察觉的模式来识别恶意软件），但其可信性与鲁棒性在面临自适应攻击者时引发担忧，隐私威胁也日益凸显，需要恰当的测试与可能的缓解手段以防敏感信息被窃取或泄露。研讨会为探讨安全与机器学习交叉领域的新进展提供交流平台。
+#### Measuring and Augmenting Large Language Models for Solving Capture-the-Flag Challenges.
+- **作者**: Zimo Ji, Daoyuan Wu, Wenyuan Jiang, Pingchuan Ma, Zongjie Li, Shuai Wang
+- **方向**: 大模型安全
+- **解读**:
+
+CTF竞赛是网络安全教育与训练的核心载体，随着LLM进化，人们越来越关注其自动化求解CTF挑战的能力（DARPA自2023年起举办AIxCC即为代表）。但完整求解需要知识、推理、行动等多重复合能力，现有基准未能深入拆解解题各阶段能力。论文抓住"技术知识"这一关键使能因素：知识能否准确映射到具体场景，是决定LLM解题成败的重要因素。
+
+方法上，作者从近五年0CTF、UIUCTF、GoogleCTF等顶级比赛约1,086篇write-up中用GPT-4提取近2,000个CTF核心知识点，构造包含1,996道单选题与1,996道开放式问题的基准CTFKnow，并用另一开源LLM过滤、人工复核。测量GPT-3.5/4/4o、Llama3、Mixtral五个模型后，提出CTFAgent框架：两阶段RAG在理解与利用阶段供给知识，交互式环境增强（EA）提供命令行与安全工具。
+
+结果表明，LLM在单选题中展现出较强的CTF技术知识储备，但在开放式问题中匹配知识到具体场景的能力差，难题尤甚；与既有基准的关联分析及执行日志显示，工具缺失与不友好环境是重要瓶颈。CTFAgent在Intercode-CTF上将解题数从39/100提升至73/100（约85%提升），在NYU CTF数据集提升超120%，并在picoCTF2024中位列近7,000支队伍的前23.6%（对比NYU框架的47.2%）。
+
+我的思考：贡献成色在于提供首个聚焦CTF技术知识维度的可扩展基准，并验证"测量驱动增强"的闭环价值，picoCTF的真实名次很有说服力；局限是基准只覆盖知识环节，未完整耦合推理与行动能力，RAG对高难挑战增益有限，CTFAgent发布受限也反映自动化攻击工具被滥用的风险。与Intercode-CTF、NYU CTF等端到端基准相比，CTFKnow把评测粒度推进到解题阶段内部，为LLM+CTF研究提供了更精细的工具与安全知识迁移新视角。
+
+- **arXiv PDF**: [Measuring and Augmenting Large Language Models for Solving Capture-the-Flag Challenges.](https://arxiv.org/pdf/2506.17644)
+
+#### Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation.
+- **作者**: Ali Naseh, Yuefeng Peng, Anshuman Suri, Harsh Chaudhari, Alina Oprea, Amir Houmansadr
+- **方向**: 大模型安全
+- **解读**: RAG 让 LLM 无需改动参数即可利用外部知识库生成有依据的回答，但这也使检索文档暴露在成员推理风险之下；已有成员推理/数据提取攻击依赖越狱或精心构造的非自然查询，容易被查询改写与现成检测器识破并拦截。
+- 方法上，提出 Interrogation Attack（IA）：借鉴 IR 领域 doc2query 思想，用少样本提示引导 LLM 为每篇目标文档生成"只有该文档存在才能回答"的自然语言提问，通过核对 RAG 回答的正确性聚合多查询信号，判断目标文档是否在数据存储中；全程黑盒，不依赖检索器/生成器内部信息，每条查询均为自然文本。
+- 结果上，在多种检索器/生成器组合下，IA 仅需约 30 条查询即可完成推断，AUC 达 0.984（NFCorpus、Gemma-2 2B + GTE 配置，另一配置达 0.991），远超 S2-MIA（0.759）与 MBA（0.710）；检测率低至 5%，而既有攻击大多超过 90%（被检出频率最高达 76×）；TPR@1%FPR 较此前最优攻击提升约 2 倍，单文档推断成本低于 0.02 美元。失败案例分析发现部分场景下 LLM 无需文档也能作答，质疑了 RAG 的必要性。
+- 我的思考：该攻击的优雅之处在于"以自然性对抗检测"——把成员推理转化为可验证的问答任务，规避越狱等显式恶意痕迹，是黑盒、高效、隐身三者兼得的代表性工作。局限是查询生成依赖商用 LLM 且需文档内容先验，对强查询改写与新数据分布的鲁棒性需再评估；作者也自揭"无 RAG 也能答"的失败模式。相比 S2-MIA、MBA 等基线，其 TPR@1%FPR 的 2 倍提升与检测率数量级差异使其更具现实威胁，也为 RAG 隐私审计提供了实用工具。
+
+- **arXiv PDF**: [Riddle Me This! Stealthy Membership Inference for Retrieval-Augmented Generation.](https://arxiv.org/pdf/2502.00306)
+
+#### RAG-WM: An Efficient Black-Box Watermarking Approach for Retrieval-Augmented Generation of Large Language Models.
+- **作者**: Peizhuo Lv, Mengjie Sun, Hao Wang, XiaoFeng Wang, Shengzhi Zhang, Yuxuan Chen, Kai Chen, Limin Sun
+- **方向**: 大模型安全
+- **解读**:
+
+RAG系统（检索器+知识库）构建成本高昂（如CyC约1.2亿美元、DBpedia约510万美元、YAGO约1000万美元），易被窃取商用，IP保护至关重要。但数据库水印需白盒访问知识库内容，而攻击者部署的RAG通常只暴露黑盒输出；文本水印又会被攻击者LLM的后处理破坏。WARD等既有方案对改写攻击不鲁棒且易被"盗印"式攻击反制。
+
+方法上，RAG-WM提出黑盒"知识水印"：从知识库提取高频实体与关系生成水印实体-关系元组，经仅属主知晓的带密钥哈希处理增强隐蔽性；用多LLM交互框架（水印生成器、Shadow LLM&RAG、判别器）基于元组生成高质量水印文本，再以相关文本拼接技术注入知识库易被检索位置。检测时向可疑LLM发起水印问题查询，对响应做二项检验判定侵权。
+
+在NQ、HotpotQA、MS-MARCO三个领域任务与TREC-COVID、NF-Corpus两个隐私敏感任务、四个基准LLM（GPT-3.5-Turbo、PaLM 2、Llama-2-7B、Vicuna-13B）上，对被窃RAG实现100%验证成功率且对无辜RAG无误报；主任务性能保持率平均97.87%；对改写、无关内容删除、知识插入、知识扩展攻击后仍保持100%验证成功；隐蔽性上困惑度检测成功率仅13.05%、重复文本过滤为0%。
+
+我的思考：贡献成色在于首个黑盒RAG知识水印方案，多LLM交互生成保证水印文本质量、实体-关系元组增强隐蔽性，100%成功率与97.87%保真度的组合很有说服力；局限是需主动向目标知识库注入内容，对不采信注入知识的攻击者、以及大规模知识库的注入成本与语义污染程度讨论不足。领域影响上，RAG正成为企业LLM标配，该工作把IP保护从模型/文本层推进到知识层；与WARD相比，知识水印对改写的鲁棒性明显更强，是RAG IP保护的重要一步。
+
+- **arXiv PDF**: [RAG-WM: An Efficient Black-Box Watermarking Approach for Retrieval-Augmented Generation of Large Language Models.](https://arxiv.org/pdf/2501.05249)
+
+#### Prompt Inference Attack on Distributed Large Language Model Inference Frameworks.
+- **作者**: Xinjian Luo, Ting Yu, Xiaokui Xiao
+- **方向**: 大模型安全
+- **解读**:
+
+现代LLM推理需要海量计算资源，Petals等分布式推理框架借鉴分割学习把LLM各层分布到多方协同推理，客户端与服务端之间需传输中间序列嵌入。输入提示词常含医疗症状、企业销售数据等敏感信息，中间嵌入的隐私泄露此前未被系统研究。既有分割学习攻击面向图像与训练阶段，句子嵌入反转方法又受长度约束（如<15词）与错误传播问题制约。
+
+方法上，论文观察到不同LLM层的中间嵌入在嵌入空间中形成不同簇，据此设计三个攻击：A1（无限查询+辅助数据同分布）将提示重构转为分类问题，训练MLP分类器；A2（无限查询+分布不同的辅助数据）分析序列长度与词构成对嵌入的影响，提出序列嵌入合成方法扩充训练数据；A3（有限查询+无辅助数据）用三阶段框架：近邻搜索加半监督学习识别关键概念，再用约束束搜索重构细节。
+
+在Phi-3.5、Llama-3.2、GPT-2、BERT上，A1与A2的重构准确率（RA）超过90%，A3在最小查询预算|T_all|下浅层RA>50%（深层下降）；A1的RA随层数增加而降低，编码器型BERT比解码器LLM更易攻破；A2用WikiText-2训练在SQuAD2.0/Midjourney上带来约20%提升（查询成本约为A1的30倍）；早期层嵌入比后期层更易泄露。
+
+我的思考：贡献成色在于首个针对分布式LLM推理的提示词推断攻击系列，把攻击从训练阶段（影子模型）推进到推理阶段，且无需训练影子模型、不受长度约束、不依赖上下文；>90%的RA说明中间嵌入泄露严重。局限是A2查询成本高、A3深层准确率低，分类式重构依赖封闭词表假设，对开放词汇与多语言提示的泛化性未验证。领域影响上，结果直接警示Petals等分布式框架部署的隐私风险——早期层最脆弱，防御应优先保护浅层嵌入；与句子嵌入反转相比，该方法更轻量且LLM无关，为该方向确立了新基线。
+
+- **arXiv PDF**: [Prompt Inference Attack on Distributed Large Language Model Inference Frameworks.](https://arxiv.org/pdf/2503.09291)
+
+#### MoEcho: Exploiting Side-Channel Attacks to Compromise User Privacy in Mixture-of-Experts LLMs.
+- **作者**: Ruyi Ding, Tianhong Xu, Xinyi Shen, Aidong Adam Ding, Yunsi Fei
+- **方向**: 大模型安全
+- **解读**: **问题**：MoE 架构按输入语义把 token 动态路由到专家子网络（如 DeepSeek-V2 Lite 有 64 个专家、每 token 仅激活 6 个，推理算力节省 85%），这种输入相关的激活模式在硬件执行中留下时间（专家执行时长）与空间（访存模式）痕迹，可被同机恶意进程或云上恶意共驻者窃听，进而推断用户提示、重建模型输出乃至输入图像内容。这是 MoE 首次被系统性揭示的运行时架构级攻击面。
+
+**方法**：提出四条架构侧信道：CPU 上用 Cache Occupancy（L1+L2）测量专家负载 L、Pageout+Reload 测量专家序列 S；GPU 上用性能计数器（Nsight，可按 context ID 归因进程）测负载、TLB Evict+Reload 测序列。基于负载/序列两类足迹设计四个攻击：提示推断（PIA）、响应重建（RRA）、视觉属性推断（VIA）、视觉重建（VRA，条件 GAN 图像修复）；流程为离线插桩建档 → 侧信道采集 → 变更点检测翻译为足迹 → MLP/SVM/逻辑回归推断。
+
+**结果**：T 检验显示不同疾病输入间有 353/85 个专家负载差异显著、不同输出 token 间有 333/87 个；PIA 在 DeepSeek-V2-Lite 模板输入下疾病 Top-1 达 99.9%（随机仅 0.86%），非结构化输入为 56.5%，粗粒度 TinyMixtral 仅 9.5%；RRA 直接信道 ASR 超 90%（93.6%/91.5%/91.9%）；VIA 平均 85.34%，300 人身份推断 Top-1 25.0%、Top-5 54.4%；端到端（DeepSeek-V2 Lite）：PIA 99.9%→CPU/GPU 均 99.8%，RRA 93.6%→CPU 92.8%、GPU 82.5%；侧信道翻译精度：缓存占用相关 0.901、GPU 计数器 0.993、Pageout+Reload 99.2%、TLB Evict+Reload 94.3%；系统噪声下序列恢复降至 81.4%/68.3% 后饱和。
+
+**我的思考**：首个把 MoE 动态路由确认为侧信道攻击面的运行时架构级分析，覆盖 CPU/GPU、LLM/VLM，端到端数字强、威胁模型贴合云共驻与恶意软件现实；与深密模型对比凸显"按需计算"的隐私代价。局限：建档阶段需访问模型库与插桩、攻击随系统噪声明显退化、PIA 依赖模板/结构化输入、实验以 DeepSeek 架构为主。论文未给出防御方案，专家激活混淆、噪声注入与租户隔离是重要后续方向。
+- **arXiv PDF**: [MoEcho: Exploiting Side-Channel Attacks to Compromise User Privacy in Mixture-of-Experts LLMs.](https://arxiv.org/pdf/2508.15036)
+
+#### SecAlign: Defending Against Prompt Injection with Preference Optimization.
+
+- **作者**: Sizhe Chen, Arman Zharmagambetov, Saeed Mahloujifar, Kamalika Chaudhuri, David A. Wagner, Chuan Guo
+- **方向**: 大模型安全
+- **解读**:
+提示注入（prompt injection）是 LLM 集成应用面临的核心安全威胁：攻击者将恶意指令混入用户或外部内容中，诱导模型执行违背开发者意图的操作。现有防御多为检测或过滤式，难以根治。
+
+据标题推断，SecAlign 采用偏好优化（preference optimization）训练模型：构造"服从良性指令/拒绝注入指令"的偏好数据，通过对齐目标使模型学会区分可信指令与注入内容，从行为层面提升鲁棒性。（无摘要，据标题推断）
+
+摘要缺失，无法给出量化结果；方法核心在于用偏好学习内化防御策略而非依赖外部规则。
+
+把提示注入防御从"外挂护栏"转向"模型内禀对齐"，与 DPO 等偏好优化技术一脉相承，理论上更抗绕过；但泛化到未见过的注入模式、以及偏好数据构造质量是关键挑战。与结构化提示、指令层次等方法相比，SecAlign 提供了可训练、可扩展的新路径，值得关注其在不同模型规模上的表现。
 
 
-### CPSIoTSec'25: The 7th Joint Workshop on CPS & IoT Security and Privacy.
-- **作者**: Kassem Fawaz, Daisuke Mashima
-- **解读**: 该文介绍第 7 届 CPS 与 IoT 安全隐私联合研讨会（CPSIoTSec'25，2025 年 10 月 17 日于台北与 CCS'25 同地举办）：该研讨会由 2019 年两个分别聚焦网络物理系统与 IoT 安全隐私的研讨会合并而来，旨在为学术界、工业界与政府部门搭建协作论坛。本届征稿涵盖全文、进展中工作与一页摘要，议程包括九篇 CPS/IoT 全文或短文及一篇虚拟网络安全测试床演示论文，并邀请 Daniel Xiapu Luo 教授就汽车网络安全作主题演讲。
+#### Differentiation-Based Extraction of Proprietary Data from Fine-Tuned LLMs.
+
+- **作者**: Zongjie Li, Daoyuan Wu, Shuai Wang, Zhendong Su
+- **方向**: 大模型安全
+- **解读**:
+
+领域专属与人类对齐的大语言模型（LLM）需求推动了监督微调（SFT）的广泛采用，而 SFT 数据集通常包含价值极高的指令-响应对，成为数据提取攻击的理想目标。该问题此前从未被系统研究——既有工作多关注预训练数据的记忆效应，忽视微调阶段专有数据的定向提取风险。
+
+本文首次形式化定义并刻画该问题，基于真实场景数据的特性探索多种攻击目标、攻击类型与变体；在分析直接提取行为的基础上，提出专为微调模型设计的差异化数据提取方法 DDE（Differentiated Data Extraction），利用微调模型对专有数据的置信度水平及其与预训练模型的行为差异来定位并提取目标数据。
+
+摘要截断，未给出提取成功率等数字；核心是首个针对 SFT 专有数据提取的形式化框架与系统方法。
+
+SFT 数据是模型厂商的核心资产，利用"微调模型与预训练模型的行为差异"作为提取信号是巧妙思路——置信度差异可作为"该数据是否被微调引入"的判别依据。该研究兼具双重含义：既揭示数据泄露风险，也可能推动防御（如差分隐私微调、异常置信度检测）。攻击的实用性与查询预算需正文数据评估。
 
 
-### ARTMAN '25: Third Workshop on Recent Advances in Resilient and Trustworthy MAchine learning-driveN systems.
-- **作者**: Gregory Blanc, Takeshi Takahashi, Zonghua Zhang
-- **解读**: 该文介绍第三届"弹性可信机器学习驱动系统"研讨会（ARTMAN'25）：旨在汇聚安全隐私与机器学习领域及交通、航空航天、医疗、能源、金融等行业的研究者与从业者，共同探讨可信且有韧性的学习驱动应用与系统。研讨聚焦 AI/ML 领域，欢迎基础与应用两方面的 ML 贡献，尤其关注知识驱动的可靠安全算法，以提升人机协作等场景下的弹性与信任。
+#### Give LLMs a Security Course: Securing Retrieval-Augmented Code Generation via Knowledge Injection.
+- **作者**: Bo Lin, Shangwen Wang, Yihao Qin, Liqian Chen, Xiaoguang Mao
+- **方向**: 大模型安全
+- **解读**:
+检索增强代码生成（RACG）利用外部知识提升大语言模型（LLM）的代码合成能力，改善生成代码的功能正确性，但现有 RACG 系统普遍忽视安全；被投毒的知识库可误导 LLM 生成不安全输出，对现代软件开发构成重大威胁。
+
+作者提出面向 RACG 系统的安全加固框架 CodeGuarder，把范式从"仅检索示例"转变为"同时注入示例与安全知识"。它基于真实漏洞数据集 ReposVul 构建安全知识库；对每个查询，检索器将查询分解为细粒度子任务并获取相关优先级指导，再引入利用 LLM 对不同漏洞类型敏感性的重排序过滤机制，最后将过滤结果无缝注入提示词。
+
+评估表明 CodeGuarder 在多种场景下显著提升漏洞修复率：较标准 RACG 平均提升 20.12%，在两种不同场景下分别提升 31.53% 与 21.91%，且不损害生成代码的正确性；即使在目标语言安全知识缺失时仍表现出良好的泛化能力。
+
+以"安全知识注入+检索重排序"改造 RACG 管线，实用且即插即用，不要求重训模型，工程落地价值高；局限是效果依赖 ReposVul 知识库的覆盖度与质量，重排序机制对 LLM 本身对不同漏洞的敏感性较为敏感，面对新型漏洞或投毒对抗时稳定性仍需检验。
 
 
-### WATCH '25: First Workshop on Analytics, Telemetry, and Cybersecurity for HPCC.
-- **作者**: Massimo Cafaro, Eric Chan-Tin, Jerry Chou, Jinoh Kim
-- **解读**: 该文介绍首届面向 HPCC（高性能计算与通信）的分析、遥测与网络安全研讨会（WATCH'25），主题围绕高性能计算与通信系统上的数据分析与遥测采集，及其在网络安全中的应用。（无摘要，据标题推断）
+#### AgentSentinel: An End-to-End and Real-Time Security Defense Framework for Computer-Use Agents.
+- **作者**: Haitao Hu, Peng Chen, Yanpeng Zhao, Yuqi Chen
+- **方向**: 大模型安全
+- **解读**:
+大语言模型（LLM）越来越多地集成进 computer-use agent，可自主操作用户计算机上的工具完成复杂任务。但由于 LLM 输出天然不稳定、不可预测，可能发出非预期的工具命令或错误输入，导致有害操作；这类风险不同于传统的不安全提示词风险，源自 LLM 决策的执行结果，且遍布 agent 的各个组件。
+
+提出 AgentSentinel——一个端到端、实时的安全防御框架：在 agent 相关服务内拦截敏感操作，并暂停执行直至完成全面审计。其审计机制引入新颖的检查过程：将当前任务上下文与执行期间产生的系统踪迹（system traces）相关联，判断操作是否与任务意图一致。
+
+作者构建 BadComputerUse 基准，含 6 类共 60 个攻击场景，四个 SOTA LLM 在该基准上的平均攻击成功率为 87%；AgentSentinel 的防御成功率达到 79.6%，显著优于基线防御。
+
+把"上下文-系统踪迹"关联审计用于 agent 安全，比单纯检测危险命令更智能，能覆盖利用上下文混淆的复杂攻击；79.6% 对 87% 的攻防对抗表明还有提升空间。局限是审计机制本身可能成为性能瓶颈（实时性要求高），且面对零日攻击模式与更高级的上下文伪造仍需持续演化。
 
 
-### SCORED '25: Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses.
-- **作者**: Aditya Sirish A Yelgundhalli, Behnaz Hassanshahi, Dennis Roellke, Drew Davidson, Kathleen Moriarty, Lorenzo De Carli, Marcela S. Melara, Santiago Torres-Arias, Sarah Evans, Yuchen Zhang
-- **解读**: 该文介绍软件供应链攻防研究研讨会（SCORED'25），主题涵盖针对软件供应链的攻击性研究（offensive research）与生态系统层面的防御机制。（无摘要，据标题推断）
+#### Here Comes the AI Worm: Preventing the Propagation of Adversarial Self-Replicating Prompts Within GenAI Ecosystems.
+- **作者**: Stav Cohen, Ron Bitton, Ben Nassi
+- **方向**: 大模型安全
+- **解读**:
+（无摘要，据标题推断）生成式 AI 生态系统（如智能体网络、邮件助手、协作式 LLM 应用）中，攻击者可以通过注入对抗性自复制提示（adversarial self-replicating prompts，即"AI 蠕虫"）实现跨应用、跨用户的自动传播——一条恶意提示在被某个 AI 应用执行后，会诱导其把同样或变异的恶意提示转发给其他应用与用户，形成类似计算机蠕虫的传播链。本文关注如何阻止这类传播。
+
+防御方向通常包括：对输入提示与模型输出进行恶意模式检测与过滤、识别自复制结构的语义特征、在智能体交互链路上实施传播控制（如限制自动转发、对生成内容做安全扫描）、以及为 AI 生态建立类似杀毒软件的"提示疫苗"机制。
+
+摘要缺失，无法提供具体防御机制的实现细节、检测率或传播抑制效果的量化数据；该团队此前曾提出 Morris II 等概念性 AI 蠕虫演示，本文应为其防御侧延伸。
+
+我的思考：AI 蠕虫的威胁在于其传播不依赖传统漏洞利用，而是利用"模型会遵从指令、智能体会自动行动"的语义弱点，这在多智能体协作日益普及的背景下是真实的规模化风险。防御难点在于自复制提示与正常提示在语义上高度相似，简单关键词过滤无效，需要行为级检测与跨应用信誉机制。与提示注入攻击（prompt injection）研究相比，本工作聚焦传播动力学与阻断策略，视角更系统；但缺少实证数据使有效性存疑，且"防传播"与"保可用"之间的权衡是落地关键，细节须以论文全文为准。
 
 
-### HAIPS '25: First ACM CCS Workshop on Human-Centered AI Privacy and Security.
-- **作者**: Tianshi Li, Toby Jia-Jun Li, Yaxing Yao, Sauvik Das
-- **解读**: 该文介绍首届以人为中心的 AI 隐私与安全研讨会（HAIPS'25）：AI/ML 的进展既带来新型隐私安全挑战（生成式 AI 产生有害内容、编程助手生成不安全代码、向 ChatGPT 过度分享、LLM 智能体意外泄露信息），也为解决长期存在的终端用户问题、赋能从业者采纳更好实践提供了新机会。研讨会旨在凝聚关注人本视角议题的研究社区，推动把"人"这一要素纳入考量的跨学科研究议程。
+#### PreferCare: Preference Dataset Copyright Protection in LLM Alignment by Watermark Injection and Verification.
+
+- **作者**: Jian Lou, Chenyang Zhang, Xiaoyu Zhang, Kai Wu
+
+- **方向**: 大模型安全
+
+- **解读**: 大模型对齐训练高度依赖人工偏好数据集，而这类数据的生成与标注成本高昂、劳动密集，使其成为需要保护版权的核心资产；一旦被第三方未经授权用于微调，原作者难以举证。此前缺少专门面向"对齐数据集"的保护框架，这是本文要填补的空白。
+
+PreferCare 采用两阶段设计：第一阶段是"基于风格迁移的信号双层优化"（style transfer-based signal bi-level optimization），把可验证的水印信号嵌入数据集；第二阶段是验证——用统计检验判定可疑模型是否未经授权使用了含水印数据。该设计把"嵌入"与"验证"解耦，验证阶段仅需查询模型输出，无需访问训练过程。
+
+在多种设置下的大量实验表明，PreferCare 兼具有效性（effectiveness）、无害性（harmlessness，水印不影响对齐效果）、可迁移性与鲁棒性，并且能在 20 次查询以内成功完成水印验证。
+
+我的思考：这是首个面向 LLM 对齐偏好数据集的水印保护框架，把传统数据水印思路迁移到偏好数据上，切中"数据即资产"的现实痛点，验证效率（20 次查询）具备实用潜力。局限在于：摘要未披露面对微调、蒸馏等破坏性后处理的鲁棒性上限，且验证依赖对可疑模型的查询接口；与模型水印（面向权重）互补但无法对抗"完全从头重训"的攻击者。后续可关注其对数据质量的真实影响量化。
 
 
-### WPES '25: 24th Workshop on Privacy in the Electronic Society.
+#### FlippedRAG: Black-Box Opinion Manipulation Adversarial Attacks to Retrieval-Augmented Generation Models.
+
+- **作者**: Zhuo Chen, Yuyang Gong, Jiawei Liu, Miaokun Chen, Haotan Liu, Qikai Cheng, Fan Zhang, Wei Lu, Xiaozhong Liu
+
+- **方向**: 大模型安全
+
+- **解读**: RAG 通过动态检索外部知识降低幻觉、满足实时信息需求，但检索阶段成为新的攻击面。现有对抗研究多聚焦白盒或启发式黑盒，且以事实型问答为主——这类任务因复杂度低易被 LLM 纠正。作者转向更现实、危害更大的威胁场景：针对争议性话题的"观点操纵"（opinion manipulation）。
+
+FlippedRAG 是迁移式黑盒攻击：先通过枚举查询、候选与答案逆向近似底层检索器，训练代理检索器；再据此构造目标投毒触发器，仅改动极少量文档即可同时操纵检索与后续生成，并将攻击迁移回原始模型。
+
+实验表明 FlippedRAG 平均成功率比基线提升 16.7%；在四个不同领域上使 RAG 生成回答实现 50% 的方向性极性转变，进而造成约 20% 的用户认知改变。作者还评估了多种潜在防御措施，结论是现有缓解策略不足以抵御此类攻击。
+
+我的思考：把攻击目标从"答错事实题"升级为"改变用户对争议话题的立场"，威胁模型更贴近真实信息战风险，且黑盒+少文档投毒的设定攻击性很强。20% 的认知改变若在真实平台放大，社会影响可观。局限：攻击依赖代理检索器的拟合质量，检索器结构变化可能削弱迁移性；防御评估覆盖有限。该工作为检索投毒防御（鲁棒检索、来源验证）敲响警钟。
+
+
+#### What Lurks Within? Concept Auditing for Shared Diffusion Models at Scale.
+
+- **作者**: Xiaoyong (Brian) Yuan, Xiaolong Ma, Linke Guo, Lan Zhang
+
+- **方向**: 大模型安全
+
+- **解读**: LoRA 等参数高效微调使普通用户能以极小成本定制扩散模型（DM），但这些模型在开放平台大规模共享，可能无意或有意地生成版权、隐私或有害内容。监管日益收紧，却缺乏部署前系统审计模型"是否学到了特定概念"的实用工具。
+
+作者提出 PAIA（Prompt-Agnostic Image-Free Auditing），一个以模型为中心的审计框架：把概念审计当作"对象检查"，直接分析模型内部行为而非依赖优化提示词或生成图像。它由两部分构成——提示无关策略（分析晚期去噪阶段的模型行为以规避提示敏感性）与基于条件校准误差的图像无关检测（对比微调模型与基座版本的去噪动态差异）。设定仅需访问模型本身，与平台审计上传模型的现实场景一致。
+
+在 320 个受控训练模型与 771 个真实社区模型上（覆盖名人、卡通角色、游戏实体、电影引用等概念），PAIA 准确率超过 90%，耗时比现有基线减少 18–40 倍，且对自适应攻击保持稳健。作者称这是首个可规模化的部署前扩散模型审计方案。
+
+我的思考：绕开"提示词工程"直接读模型内部，从方法论上解决了审计的可扩展性痛点，90%+ 准确率与两个数量级的加速构成强证据链。局限：模型内部访问假设排除黑盒场景；"条件校准误差"对微调方式（全参 vs LoRA vs 概念漂移）的敏感性需更多验证；概念粒度（组合概念）审计仍开放。为生成式 AI 治理提供了可落地的技术底座。
+
+
+#### DCMI:A Differential Calibration Membership Inference Attack Against Retrieval-Augmented Generation.
+
+- **作者**: Xinyu Gao, Xiangtao Meng, Yingkai Dong, Zheng Li, Shanqing Guo
+
+- **方向**: 大模型安全
+
+- **解读**: RAG 通过引入外部知识库降低幻觉，却也为成员推断攻击（MIA）打开了新窗口——尤其在处理敏感数据的系统中。现有针对 RAG 数据库的 MIA 多依赖模型响应，却忽略了非成员检索文档对输出的干扰，导致攻击精度受限。
+
+DCMI 提出差分校准（differential calibration）的 MIA：利用成员与非成员检索文档在查询扰动下的敏感度差异，生成扰动查询以隔离成员文档的贡献、同时最小化非成员文档的干扰，从而更精确地判定目标文档是否在 RAG 知识库中。
+
+在逐步放宽假设的实验中，DCMI 稳定优于基线：对 Flan-T5 系统达到 97.42% 的 AUC 与 94.35% 的准确率，比 MBA 基线提升超 40%；在 Dify、MaxKB 等真实平台上仍保持 10–20% 的优势。
+
+我的思考：把"文档级成员判定"从响应层面下沉到"差分敏感度"层面，巧妙绕开检索噪声，在真实平台上的跨系统优势说明其鲁棒性不限于实验室。97% 的 AUC 意味着 RAG 知识库的文档级隐私几乎无遮拦，对使用私有知识库的 RAG 服务是明确警示。局限：假设攻击者能构造查询扰动并观测检索-生成联合输出，对严格封装检索过程的平台适用性需验证。防御（检索日志匿名、差分隐私检索）亟待跟进。
+
+
+#### Can Personal Health Information Be Secured in LLM? Privacy Attack and Defense in the Medical Domain.
+
+- **作者**: Yujin Kang, Eunsun Kim, Yoon-Sik Cho
+
+- **方向**: 大模型安全
+
+- **解读**: 医疗是 LLM 落地最快的领域之一，而个人健康信息（PHI）是法律与伦理保护最严格的敏感数据。当 LLM 在诊疗、健康咨询等场景处理 PHI 时，其是否真能"守住"这些信息——训练记忆泄露、提示注入、成员推断等都可能让 PHI 外泄，构成现实而紧迫的隐私威胁（无摘要，据标题推断）。
+
+本文从标题看同时研究攻击与防御两面：一方面考察针对医疗域 LLM 的隐私攻击手段（如何从模型交互中提取或推断 PHI），另一方面探索相应的防御机制，回答"PHI 在 LLM 中是否可被真正保护"这一根本问题（无摘要，据标题推断）。
+
+由于该条目没有摘要，本文无法引用任何量化实验结果；具体的方法设计、数据集与评估指标需查阅原文确认（无摘要，据标题推断）。
+
+我的思考：选题切中医疗 AI 合规刚需，攻击-防御一体化的框架有助于形成闭环认知。但缺少摘要使技术贡献成色难以判断——隐私攻击领域已有成员推断、提取攻击等成熟范式，医疗场景的增量可能在"PHI 特有的语义特征"与"医疗数据分布"上。风险在于攻击假设的现实性（如攻击者对模型/数据的知情程度）与防御的效用损失；建议对照全文评估其与差分隐私、机器遗忘等路线的关系。
+
+
+#### YouthSafe: A Youth-Centric Safety Benchmark and Safeguard Model for Large Language Models.
+
+- **作者**: Yaman Yu, Yiren Liu, Yuqi Zhang, Yun Huang, Yang Wang
+
+- **方向**: 大模型安全
+
+- **解读**: 青少年日益依赖 LLM 获取情感支持、创意表达与学业帮助，但其特有的脆弱性与风险画像（如被诱导、身份困惑、过度依赖）在现有安全基准与内容审核系统中严重缺位，使这一群体暴露于不成比例的伤害风险。
+
+作者构建 YAIR——首个面向青少年-LLM 交互评估与改进的基准数据集：包含 12,449 条标注对话片段、覆盖 78 种细粒度风险类型，并以青少年特定伤害分类体系（如诱骗 grooming、边界侵犯、身份困惑、过度依赖）为基础。在此基础上系统评测广泛使用的模型，发现现有方法在检测青少年中心风险上明显不足，常漏掉语境微妙但具发展危害的内容。
+
+为此提出 YouthSafe，一个面向青少年-GenAI 场景优化的实时风险检测模型，在多项分类指标上显著超越既有系统。
+
+我的思考：把"青少年风险"从通用安全基准中独立出来并形式化为 78 类细粒度分类体系，是数据与治理层面的双重贡献——通用审核模型对青少年风险的漏检有实证支撑，说明"一刀切"安全对齐的边界。局限：数据集规模与标注者构成（是否含青少年/专家）摘要未披露，检测模型对上下文长期依赖（grooming 常跨多轮）的表现需细读；"保护 vs 过度保护"的尺度本身也是设计张力。对青少年在线保护监管有直接参考价值。
+
+
+#### Cascading Adversarial Bias from Injection to Distillation in Language Models.
+- **作者**: Harsh Chaudhari, Jamie Hayes, Matthew Jagielski, Ilia Shumailov, Milad Nasr, Alina Oprea
+- **方向**: 大模型安全
+- **解读**:
+模型蒸馏已成为构建可部署语言模型的关键手段，但其广泛部署引发了对对抗操纵鲁棒性的担忧。本文研究攻击者如何在教师模型训练期间通过极少量数据投毒注入细微偏差，这种偏差随后传播到较小的蒸馏学生模型并被显著放大。作者识别出两种传播模式：非定向模式（影响多个任务）与定向模式（聚焦特定任务同时在别处保持正常行为）。
+
+方法上，攻击仅需在训练数据中混入极少量恶意样本。实验覆盖六种偏差类型（定向广告、钓鱼链接、叙事操纵、不安全编码实践等），并在文本与代码两种生成模态、多种蒸馏方法下验证，确认偏差会沿蒸馏链级联放大。
+
+量化结果表明：仅 25 个投毒样本（0.25% 投毒率）即可在定向场景下以 76.9% 的概率生成带偏差响应，而教师模型为 69.4%；非定向模式下学生模型在新任务上的偏差率比教师高 5.7–29.2 倍。更关键的是，现有防御手段——包括困惑度过滤、检测系统与 LLM 自动评审器——均被证明无法抵御这类攻击。
+
+我的思考：本文的核心贡献在于揭示"级联放大"这一现象：蒸馏本是为压缩与部署服务，却无意中成为偏差的放大器，且攻击成本极低（25 个样本）。这提醒我们蒸馏链的每一环都可能继承并强化教师模型的隐秘弱点。局限在于攻击面向训练期投毒，需要攻击者具备一定训练管线访问能力；其提出的防御设计原则（而非具体防御机制）为后续研究提供了方向，但实用性验证仍是开放问题。
+
+
+#### You Can't Steal Nothing: Mitigating Prompt Leakages in LLMs via System Vectors.
+- **作者**: Bochuan Cao, Changjiang Li, Yuanpu Cao, Yameng Ge, Ting Wang, Jinghui Chen
+- **方向**: 大模型安全
+- **解读**:
+大语言模型（LLM）已被广泛部署于各类应用，依赖定制系统提示词（system prompt）执行多样化任务。面对提示词泄漏风险，模型开发者通常采取"禁用模型在遇到已知攻击模式时重复上下文"的策略来阻止泄漏，但对新的、未曾预见的提示词窃取技术仍然脆弱。本文首先提出一种简单而有效的泄漏揭示方法，能够从 LLM 应用中提取系统提示词，即使是对 GPT-4o、Claude 3.5 Sonnet 这类最先进的模型也有效。
+
+这些发现促使作者寻求"上下文中根本没有秘密"的根本性解决方案。为此提出 SysVec：将系统提示词编码为内部表示向量而非原始文本。由于秘密不以明文形式存在于上下文中，被提取的风险被最小化，同时保留 LLM 的核心能力。
+
+实验结果显示 SysVec 不仅能有效缓解各类提示词窃取攻击、保持功能完整性，还意外地提升了模型的通用指令遵循能力，并有助于缓解长上下文场景下的遗忘问题。安全性增强与能力提升兼得，是该方法的一个重要亮点。
+
+我的思考：现有防线是"检测攻击模式并拒绝"，本质上是猫鼠游戏；SysVec 转向"让秘密不可见"的表示层方案，从根上切断窃取通道，思路值得肯定。其"同时改善指令遵循"的副效应暗示向量化提示词可能比冗长文本更高效。开放问题包括：向量表示的可解释性与调试难度、跨模型可迁移性、以及内部向量本身是否可能被更高级的模型内部状态读取技术提取——这类后续攻击将是该方向的关键考验。
+
+
+#### Poster: Black-box Attacks on Multimodal Large Language Models through Adversarial ICC Profiles.
+- **作者**: Chengbin Sun; Hailong Sun; Guancheng Li; Jiashuo Liang
+- **方向**: 大模型安全
+- **解读**:
+多模态大语言模型（MLLM）在视觉-语言任务上表现卓越，但对抗样本威胁依然严峻。论文指出，现有攻击大多依赖基于梯度的像素扰动，且需要白盒访问模型参数，实际攻击场景中难以满足。作者提出 ICCAdv，一种完全黑盒、无需任何模型参数或梯度的攻击方法。
+
+ICCAdv 的核心洞察在于利用人类与 MLLM 在图像感知上的不一致：在颜色管理（color management）流程中，人类观察者看到的是经 ICC 色彩配置文件变换后渲染的图像，而 MLLM 通常绕过该流程、直接处理原始 RGB 值。攻击者将对抗性 ICC 配置文件嵌入图像文件，即可在保持图像自然外观的同时操纵人类所感知的语义内容，从而诱导 MLLM 产生错误理解。
+
+作为海报论文，摘要未给出量化攻击成功率，贡献集中在攻击面发现与方法框架上。
+
+我的思考：该工作揭示了一个此前少有人注意的攻击面——图像文件的"元数据/色彩管线"层。其价值在于：攻击完全不依赖模型内部信息，对部署在真实管道（图像经浏览器/相册色彩管理后进入模型）中的 MLLM 服务具有现实威胁。局限方面，攻击效果高度依赖目标 MLLM 的预处理是否真的绕过色彩管理，不同模型管线差异可能导致攻击失效；此外 ICC 文件本身可能被清理。与像素级对抗相比，这类"感知域"攻击为 MLLM 安全研究开辟了新的维度，值得后续系统化探索。
+
+
+#### Poster: Insecure Coding Habits Die Hard. Can PEFT Really Turn LLMs into Secure Coders?
+- **作者**: Sangjun Chae; Jangseop Choi; Taeyang Kim; Eun Jung; Sanghak Oh; Hyoungshick Kim
+- **方向**: 大模型安全
+- **解读**:
+大语言模型（LLM）极大推进了自动化代码生成，但其输出常携带严重安全缺陷（缓冲区溢出、内存泄漏、不安全的文件处理等）。既有研究多聚焦"事后检测"（生成后扫描修复），而论文提出"构建即安全"（secure-by-construction）的路线：通过参数高效微调（PEFT）从源头减少不安全代码的生成。
+
+方法上，作者构建了安全训练数据集：从 CodeNet 选取 37,540 个 C 语言样本，自动修复其中 7 类高影响漏洞，实现 95.36% 的 CWE 缺陷率削减；随后对四个开源模型（CodeGen-16B/6B-multi、StarCoder2-7B/3B）应用前缀提示微调（prompt prefix tuning），仅更新不到 1% 的参数。在 LLMSeC-Eval 基准上，安全生成数从 20 提升到 36（StarCoder2-3B）、从 10 提升到 27（CodeGen-6B）。
+
+这些结果表明：即便参数更新极少，PEFT 也能显著改善 LLM 的安全编码能力，为资源受限场景下的安全代码生成提供了可行路径。
+
+我的思考：该工作的价值在于用数据证明了"轻量微调足以改变安全行为"，其自动化漏洞修复的数据构建管线（95.36% 的 CWE 削减）本身就是可复用的贡献。局限也很明显：仅覆盖 C 语言与 7 类漏洞、评估集中于 LLMSeC-Eval 单一基准，泛化性存疑；"安全性提升"是否伴随功能正确性下降也需考察。与依赖推理时检测/修复的方案相比，"构建即安全"从源头减少风险，两者互补，后者更具前瞻性。
+
+
+### Web安全（12 篇）
+
+#### Exploiting the Shared Storage API.
+- **作者**: Alexandra Nisenoff, Deian Stefan, Nicolas Christin
+- **方向**: Web安全
+- **解读**: 
+为替代第三方Cookie，Google在"Privacy Sandbox"中提出Shared Storage API：允许第三方存储不按顶级网站分区（partition）的数据，但限制对这些数据的读取权限，意图在保留部分良性功能的同时阻止跨站用户重识别。API已在Chrome中部署，主要广告商与追踪者已走完获取API的流程。
+
+论文发现该API的实现与设计存在缺陷，可同时造成跨站重识别与超出Google预期的数据泄漏，并给出多种绕过其核心目标的攻击。作者已向Google负责任披露，但多数攻击在Chrome中仍可实施，并讨论了扩展攻击面与缓解策略。
+
+摘要未给出攻击成功率的量化数字；核心发现是：被设计为隐私保护的API，实际可被用于实现其明确想阻止的跨站追踪。
+
+在第三方Cookie退场之际，隐私沙箱各API成为追踪者的新战场，本文对Shared Storage API的攻击是重要警示：设计目标与实现细节的落差会让"隐私保护"名存实亡。Nisenoff与Christin在Web隐私测量上经验丰富，发现可信度高。局限：攻击依赖特定浏览器行为，缓解策略的落地与API迭代的对抗升级值得继续观察。此类研究对浏览器厂商的隐私设计审查有直接价值。
+
+
+#### BACScan: Automatic Black-Box Detection of Broken-Access-Control Vulnerabilities in Web Applications.
+- **作者**: Fengyu Liu, Yuan Zhang, Enhao Li, Wei Meng, Youkun Shi, Qianheng Wang, Chenlin Wang, Zihan Lin, Min Yang
+- **方向**: Web安全
+- **解读**: 
+越权访问控制（BAC）漏洞连续多年位居OWASP Top 10前列，攻击者可借此绕过访问控制执行未授权操作，威胁敏感业务与用户数据。尽管备受关注，可靠的自动化检测手段仍然匮乏——现有基于响应相似度的oracle只检查读操作，覆盖面有限。
+
+BACScan提出新颖的黑盒检测方法：不同于只验证读访问的响应相似度oracle，它引入反馈驱动的oracle，通过分析操作依赖页面上的操作反馈，判断写/修改操作是否真的发生，从而识别越权写操作。该方法无需源码与白盒信息，直接面向应用行为。
+
+在20个真实应用上评估，成功识别89个BAC漏洞，其中54个此前未被报告；已向相关厂商报告，截至论文写作已有35个新CVE编号分配——显著优于现有最优工具。
+
+越权写操作（如修改他人数据）长期缺乏有效检测手段，BACScan的反馈驱动oracle直击这一盲区，54个未报告漏洞与35个CVE是实打实的贡献。局限：黑盒方法依赖操作反馈的可观察性，对无反馈或异步操作的应用可能失效；20个应用的规模也提示泛化性待验证。总体是BAC检测方向近年最有实效的工作之一。
+
+
+#### Local Frames: Exploiting Inherited Origins to Bypass Content Blockers.
+- **作者**: Alisha Ukani, Hamed Haddadi, Alex C. Snoeren, Peter Snyder
+- **方向**: Web安全
+- **解读**: 内容屏蔽工具（广告与追踪拦截）依赖过滤列表和来源判断保护用户，但"本地框架"（src 为 about:blank 等非 URL 源的 iframe）被广泛流行工具错误处理，用户仍暴露于浏览器指纹、Cookie 追踪与数据外传等本欲防范的攻击之下。
+- 方法上，围绕内容屏蔽工具的四项核心能力设计穿透测试，应用到 6 款流行 Web 隐私/安全工具；根因分析表明：按 HTML 规范本地框架应继承创建文档的来源，但多数工具从 iframe 的 src 提取来源，导致对第三方上下文误判、拦截被绕过；并爬取流行网站量化实际暴露程度，提取工具误处理的共同模式。
+- 结果上，6 款工具每款至少发现 1 个漏洞、共 19 个；测量显示 56% 的流行网站使用本地框架，其中 73.7% 的本地框架请求本应被流行过滤列表拦截却实际放行；全部爬取网站中 14.3% 在本地框架内发出应被拦截的请求。漏洞已向工具作者披露，并讨论了共同修补的经验与影响。
+- 我的思考：该工作的价值在于揭示了一种"合法功能的边界交互"型系统性漏洞——不是单个实现缺陷，而是 origin 继承这一遗留机制与隐私边界设计碰撞的产物，波及所有主流工具，且攻击面真实、已被广泛利用。局限是研究聚焦拦截类能力测试，对脚本注入、资源替换等更复杂防御的组合绕过未穷尽；19 个漏洞的披露-修复循环也说明此类问题的持久性。与 Web 指纹、反广告拦截研究相比，它为"隐私工具的自我审计"树立了方法样板。
+
+- **arXiv PDF**: [Local Frames: Exploiting Inherited Origins to Bypass Content Blockers.](https://arxiv.org/pdf/2506.00317)
+
+#### Enhanced Web Application Security Through Proactive Dead Drop Resolver Remediation.
+- **作者**: Jonathan Fuller, Mingxuan Yao, Saumya Agarwal, Srimanta Barua, Taleb Hirani, Amit Kumar Sikder, Brendan Saltaformaggio
+- **方向**: Web安全
+> （无摘要，据标题推断）
+- **解读**: 
+"死信解析器"（dead drop resolver）是网络攻击中的基础设施组件：攻击者控制的域名解析指向无辜的第三方服务，使C2通信等恶意流量伪装成对合法服务的访问，以规避信誉检测。此类技术此前被用于隐蔽信道与僵尸网络控制等场景。（无摘要，据标题推断）
+
+论文提出主动式死信解析器修复（proactive dead drop resolver remediation）以增强Web应用安全：应是在攻击者利用之前主动识别、清除或遏制被滥用的解析器，压缩攻击者的隐蔽信道空间，属于把修复从"被动响应"前移到"主动预防"的思路。（无摘要，据标题推断）
+
+摘要缺失，无法引用量化结果；据标题推断，论文提供死信解析器的检测/修复方法学、系统实现与效果评估。（无摘要，据标题推断）
+
+死信解析器攻击利用"域名解析与内容托管分离"的信任缺口，被动防御难以应对；主动修复的思路在对抗隐蔽基础设施上具有前瞻性。作者团队（Saltaformaggio组）在网络与移动安全、取证方向有积累。局限：无摘要，具体机制、检测准确率与部署成本均待全文确认；若修复策略涉及对第三方服务的处置，法律与责任边界也是现实问题。（无摘要，据标题推断）
+
+
+#### Be Aware of What You Let Pass: Demystifying URL-based Authentication Bypass Vulnerability in Java Web Applications.
+- **作者**: Qiyi Zhang; Fengyu Liu; Zihan Lin; Yuan Zhang
+- **方向**: Web安全
+- **解读**:
+基于 URL 的认证是 Java Web 应用保护敏感资源的集中式、灵活方案——通过按 URL 路径强制认证检查实现。然而，各组件在处理路由特性（如去除 /./ 等路径规范化）时的行为不一致，可能被利用来绕过认证检查，产生认证绕过漏洞（UABVulns），使攻击者无需认证即可访问受限资源，导致严重安全事件。
+本文对 53 个真实世界 UABVulns 进行了首次深入研究，揭示其根因，并归纳出关于路由处理与净化（sanitization）的三项关键发现——即哪些组件间不一致会被实际利用、典型触发模式是什么。
+基于这些发现，作者设计并实现了 UABScan，一个通过模式化分析检测"认证中间件与路由匹配不一致"的静态分析工具，并在 529 个样本上进行了评估。
+我的思考：UABVuln 属于"组件行为不一致"型漏洞，根因是 Web 框架生态中认证过滤器与路由分发器的路径解析语义漂移，这在 Java 生态尤为普遍。53 个真实案例的根因归纳为该类漏洞的自动检测提供了实证基础，UABScan 把知识固化为静态分析是自然的落地形态。局限：模式化检测依赖已知不一致模式，面对新框架或新规范化行为可能漏报；529 样本的构成（真实应用 vs 合成）与误报率需正文核实。
+
+
+#### Same Script, Different Behavior: Characterizing Divergent JavaScript Execution Across Different Device Platforms.
+- **作者**: Ahsan Zafar; Junhua Su; Sohom Datta; Alexandros Kapravelos; Anupam Das
+- **方向**: Web安全
+- **解读**:
+同一段 JavaScript 代码在不同设备平台（如不同浏览器引擎、不同操作系统、不同硬件环境）上执行时，行为可能产生分歧——包括 API 行为差异、执行结果差异、错误处理差异等。这类"同脚本、异行为"现象对 Web 安全检测、恶意脚本分析及跨平台兼容性都有重要影响。（无摘要，据标题推断）
+该工作对跨平台的 JavaScript 执行分歧进行系统性刻画：通过在不同平台组合上运行脚本并对比执行轨迹/结果，归纳分歧的类型、频率与触发原因，理解平台差异如何导致安全相关的行为漂移。
+这类研究通常涵盖真实网页语料或恶意样本的测量，以量化分歧的普遍性，并讨论其对依赖"脚本行为一致性"假设的安全机制（如蜜罐、客户端检测、指纹识别对抗）的威胁。
+我的思考：安全分析工具往往隐式假设脚本行为跨平台一致，而浏览器引擎分化（引擎优化、API 实现差异、硬件能力探测）恰恰可能打破这一假设——恶意脚本可利用平台差异实施环境定向攻击，检测系统则可能因平台偏差产生误判。此类刻画性研究对 Web 安全社区的价值在于提供实证基线。摘要缺失，其测量规模、分歧分类体系与安全影响的具体论证有待正文，但选题本身切中跨平台 Web 生态的现实痛点。
+
+
+#### The Power to Never Be Wrong: Evasions and Anachronistic Attacks Against Web Archives.
+
+- **作者**: Robin Kirchner, Chris Tsoukaladelis, Martin Johns, Nick Nikiforakis
+- **方向**: Web安全
+- **解读**:
+
+网络存档服务（如 Wayback Machine）被广泛用于取证、溯源与"历史证据"，其"永远正确"的权威形象使存档内容常被当作不可篡改的事实来源。然而，如果攻击者能够操纵存档服务抓取到的内容或污染存档的回放记录，存档作为证据的可信度将被根本性破坏。该问题此前关注不足。
+
+本文研究针对网络存档的规避（evasion）与"时代错置"（anachronistic）攻击——即攻击者可能诱导存档服务收录被操控的页面内容，或让旧存档被新内容覆盖、污染，从而改变存档所呈现的"历史事实"。（无摘要，据标题推断）
+
+无摘要，无法引用具体量化结果；核心是刻画针对存档完整性的攻击类别与实现路径。
+
+网络存档是安全研究与法律取证的重要基础设施，针对其抓取与回放机制的攻击此前研究很少。Kirchner 与 Nikiforakis 团队的这项工作延续了对存档完整性的攻击研究线，若攻击成立，将影响所有把存档当作不可篡改证据的依赖方。具体攻击路径、影响范围与缓解建议需阅读全文确认。
+
+
+#### Deep Dive into In-app Browsers: Uncovering Hidden Pitfalls in Certificate Validation.
+
+- **作者**: Woonghee Lee, Junbeom Hur, Hyunsoo Kwon
+- **方向**: Web安全
+- **解读**:
+
+应用内浏览器（WebView）让用户无需跳出 App 即可访问网页，体验无缝，但也带来安全隐忧：证书校验若实现不当，用户将暴露于中间人（MITM）或钓鱼攻击。本文系统评估应用内浏览器的证书校验机制，考察其对 X.509 标准的符合程度，以及对吊销（revocation）与证书透明度（CT）等高级扩展的支持情况。
+
+为保证可复现性并解决平台特定信任锚控制的难题（在 Android 14 及更高版本上颇具挑战性），作者开发了统一测试框架 FAITH，使用物理设备与 iOS 模拟器，构造 115 条精心设计的证书链（其中包含 87 条不合规链）进行系统性测试。
+
+基于 115 条构造证书链（含 87 条非合规链）的测试揭示了校验机制在 X.509 符合性及吊销、CT 等高级扩展支持上的具体问题（摘要截断，未给出受影响应用比例）。
+
+应用内浏览器常被开发者当作"自带浏览器"，其证书校验薄弱点（忽略吊销、缺失 CT 校验）会让用户面临静默 MITM。FAITH 框架解决了 Android 14+ 信任锚控制的复现难题，方法可复现，对平台方与开发者均有指导价值。87/115 的非合规比例暗示问题面较广，但受影响应用的具体分布需正文确认。
+
+
+#### In the DOM We Trust: Exploring the Hidden Dangers of Reading from the DOM on the Web.
+
+- **作者**: Jan Drescher, Sepehr Mirzaei, Soheil Khodayari, David Klein, Thomas Barber, Martin Johns, Giancarlo Pellegrino
+- **方向**: Web安全
+- **解读**:
+
+DOM 树是现代 Web 开发的核心，JavaScript 依赖它读取页面内容与结构，但很少有研究系统考察 DOM 的可信度，尽管它广泛用于引导程序逻辑与安全决策。此前最著名的相关工作（script gadgets）展示了攻击者如何通过看似无害的标记注入触发良性代码片段的执行。
+
+本文指出 script gadgets 只是冰山一角：看似良性的注入可以触发一类新攻击（攻击类别名称在摘要中被截断），这类攻击不一定会导致跨站脚本（XSS）漏洞，而是引发更广泛的攻击面，例如浏览器请求劫持、请求伪造与用户界面操纵。
+
+摘要截断，未给出量化结果；核心是刻画"从 DOM 读取"这一信任假设下、超出 gadget 范畴的更大攻击类别。
+
+把"从 DOM 读取"本身视为攻击面，而非仅关注脚本注入，是视角升级——许多防御只盯 XSS，忽视了 DOM 内容被污染后引发的请求劫持与 UI 操纵。这对浏览器厂商（如 Trusted Types 的演进）与 Web 框架开发者均有警示意义。新攻击类别的覆盖面、真实站点中的可利用性以及现有防御的失效程度，需正文验证。
+
+
+#### Head(er)s Up! Detecting Security Header Inconsistencies in Browsers.
+
+- **作者**: Jannis Rautenstrauch, Trung Tin Nguyen, Karthik Ramakrishnan, Ben Stock
+- **方向**: Web安全
+- **解读**:
+
+在现代 Web 中，安全头（如 CSP、X-Frame-Options 等）对防范跨站脚本、点击劫持与信息泄漏至关重要。每个安全头使用不同语法并有独特的处理规则，浏览器开发者与网站开发者正确实现都很复杂；行为不一致会削弱保护效果，而兼容性问题又可能阻碍开发者部署安全头。
+
+本文系统检测浏览器之间安全头处理行为的不一致性（inconsistencies），比较主流浏览器对安全头的解析与执行差异，量化"同一配置在不同浏览器中实际保护效果不同"的问题。
+
+摘要截断，未给出不一致的具体数量与评级；核心产出是浏览器安全头行为不一致性的系统化检测与刻画。
+
+安全头"写了不等于生效"——不同浏览器解析差异导致保护覆盖不完整，是实际 Web 安全中隐蔽的弱点，且用户浏览器环境越多样，风险越不可控。该研究若给出不一致清单与影响评级，可直接指导开发者编写跨浏览器一致的配置，也推动相关标准澄清。需关注测试覆盖的安全头集合与浏览器版本范围是否足够代表现实生态。
+
+
+#### Pixnapping: Bringing Pixel Stealing out of the Stone Age.
+- **作者**: Alan Wang, Pranav Gopalkrishnan, Yingchen Wang, Christopher W. Fletcher, Hovav Shacham, David Kohlbrenner, Riccardo Paccagnella
+- **方向**: Web安全
+- **解读**:
+像素窃取（pixel stealing）攻击使恶意网站能够窃取受害网站中展示的敏感内容。该思想由 Stone 于 2013 年提出：攻击者在恶意页面中嵌入 iframe，并利用 SVG 滤镜对这些跨站网页的像素进行计算，从而构建以目标像素为函数的侧信道，把"看不见"的跨域内容逐位还原，危害极大。
+
+论文将这一"石器时代"的攻击思路重新带到现代浏览器环境下系统化审视：研究像素窃取在当前 Web 平台中是否仍有生存空间，并探索绕过现有缓解措施的路径与新的窃取通道。
+
+论文指出，得益于现代浏览器对跨域 cookie 共享的严格限制（如第三方 cookie 隔离），这类攻击在今天几乎已被全部缓解——这正是像素窃取长期未能卷土重来的根本原因。
+
+本文的价值在于以现代眼光重新评估这一经典攻击面，厘清"哪些缓解真正生效、哪些隔离边界仍可被利用"，为浏览器安全机制（存储分区、跨源隔离）的设计提供实证依据；局限是摘要未给出攻击复活的量化证据，最终结论需以全文为准。
+
+
+#### PIIxel Leaks: Passive Identification of Personally Identifiable Information Leakage through Meta Pixel.
+
+- **作者**: Paschalis Bekos, Panagiotis Papadopoulos, Nicolas Kourtellis, Michalis Polychronakis
+
+- **方向**: Web安全
+
+- **解读**: Web 像素是网站追踪转化与用户行为的主流技术，Meta Pixel 作为使用最广的像素，不仅收集访客的详细浏览历史，还会抓取访客在网站表单中输入的邮箱、电话等个人身份信息（PII），并与其 Facebook/Instagram 档案关联，构成跨越站点边界的系统性隐私泄露。
+
+本文的目标是被动识别（passive identification）这类 PII 泄露：通过被动测量/检测手段，发现哪些网站通过 Meta Pixel 向 Meta 平台泄露了访客输入的 PII，从而为隐私监管与用户知情提供规模化证据。
+
+摘要在此截断，未提供泄露规模、受影响网站数量或检测方法的量化结果，无法引用具体数据。
+
+我的思考：Meta Pixel 抓取表单 PII 的问题此前已有零星报道与监管处罚，本文的价值在于将其系统化——被动、可规模化的检测方法对隐私执法（GDPR 等）与合规审计有直接工具价值。需关注其检测方法是否依赖已知规则（字段名匹配）或行为指纹、对加密/混淆脚本的鲁棒性，以及是否区分"用户主动授权"与"被动抓取"的语义边界；完整结果需查原文。
+
+
+### 恶意软件与二进制分析（13 篇）
+
+#### JsDeObsBench: Measuring and Benchmarking LLMs for JavaScript Deobfuscation.
+
+- **作者**: Guoqiang Chen, Xin Jin, Zhiqiang Lin
+
+- **方向**: 恶意软件与二进制分析
+
+- **解读**: 混淆被广泛用于隐藏 JS 恶意行为：超过 40% 的线上 JS 被混淆或压缩，且混淆使恶意 JS 检测器假阴性率提升 21.8%。反混淆对漏洞检测、恶意代码分析至关重要，但此前既无可执行验证的带 ground truth 数据集，也缺乏衡量语法、语义、简化度、可读性的综合评价体系，LLM 在此任务上的能力长期未被评估。
+
+作者从 CodeNet 58,395 个 JS 程序经执行过滤、长度过滤、功能去重得到 1,298 个高质量程序，用 JavaScript-Obfuscator 的 7 种变换（代码压缩、名称混淆、字符串混淆、死代码注入、控制流平坦化、调试保护、自防御）及组合生成 36,260 个唯一混淆程序与 4,515 个混淆恶意 JS。设计四元评估链：语法（esprima 解析）、执行（Docker 隔离 + Node 测试用例）、简化（Halstead 长度下降率）、相似度（CodeBLEU），评测 CodeLlama、Llama-3.1、Codestral、Mixtral、DeepSeek-Coder、GPT-4o 六个模型，对比 JS-deobfuscator 与 Synchrony 两个基线。
+
+GPT-4o 综合最佳（执行正确率 0.9342、简化分 0.3825、CodeBLEU 0.6702），Codestral 是开源模型最佳；但 LLM 平均语法失败率 2.76%、执行失败率 37.40%，远高于基线（0% 与 16.25%）；LLM 简化分平均比基线高 12.13%（Codestral 组合场景 0.6320 vs Synchrony 0.3703）；恶意代码上执行正确率从 62.60% 跌至 14.89%，GPT-4o 因安全过滤频繁拒答；超过 6 个变换组合时所有方法接近失效，LLM 速度比基线慢约 20 倍。
+
+我的思考：这是首个大规模、可执行验证的 LLM 反混淆基准，四评估器设计严谨、可复现、附排行榜，是领域基础设施级贡献。结果揭示清晰能力图谱：LLM 擅长代码简化与可读性恢复（命名/类型推断），但语义保真不足，尚不能替代规则工具，两者互补。局限包括仅用单一混淆器、源码取自编程竞赛而非真实混淆网页、恶意样本 ground truth 通过行为痕迹代理；后续可在变换多样性、真实恶意样本与专门微调上深入。
+
+- **arXiv PDF**: [JsDeObsBench: Measuring and Benchmarking LLMs for JavaScript Deobfuscation.](https://arxiv.org/pdf/2506.20170)
+
+#### Can IOCs Impose Cost? The Effects of Publishing Threat Intelligence on Adversary Behavior.
+- **作者**: Xander Bouwman, Aksel Ethembabaoglu, Bart Hermans, Carlos Gañán, Michel van Eeten
+- **方向**: 恶意软件与二进制分析
+- **解读**: 曝光入侵行动已成为地缘政治工具：政府与商业机构公开威胁情报报告，披露攻击者的手法（modus operandi）；美国官员将此举解释为不仅是防御实践，更是"给攻击者施加成本"——迫使其更换基础设施、工具与战术。但这一主张缺乏实证检验。
+- 论文实证考察 IOC（失陷指标）发布前后攻击者行为的变化：使用两家头部威胁情报提供商的 IOC 订阅，与大规模真实网络流量元数据做匹配，从而回溯生成"目击"记录，可捕获发布前最多 150 天的恶意活动，与以往只关注发布后行为的研究形成对照。
+- 方法覆盖两家 IOC 提供商、可回溯 150 天的活动目击；具体行为变化结论因摘要截断未完整呈现。
+- 这是对"发布情报以施加成本"政策叙事的一次罕见实证检验，方法论上"回溯目击"设计巧妙，能同时观察发布前后的攻击者适应行为；结论对情报发布策略、制裁与威慑决策有现实含义，但需注意 IOC 订阅覆盖与流量数据代表性可能带来的测量偏差，攻击者成本的实际货币化也难以精确量化。
+
+
+#### Disa: Accurate Learning-based Static Disassembly with Attentions.
+- **作者**: Peicheng Wang, Monika Santra, Mingyu Liu, Cong Sun, Dongrui Zeng, Gang Tan
+- **方向**: 恶意软件与二进制分析
+- **解读**:
+
+反汇编是漏洞检测、恶意软件分析、二进制加固等安全任务的基础，其根本挑战在于识别指令与函数边界。经典线性扫描或递归遍历结合架构特定启发式的方法在混淆二进制上常产生不完整、不准确的输出；机器学习方法此前使用加权树或RNN/BERT模型，但函数入口识别未必优于规则方法，且缺乏对下游分析的支持。
+
+Disa利用超集指令信息通过多头自注意力学习指令间相关性，从而推断函数入口点与指令边界；进一步识别与内存块边界相关的指令，支撑基于块内存模型的value-set分析，生成精确的控制流图（CFG）。这种统一恢复边界并服务下游指针分析的设计，将反汇编与静态分析衔接为整体。
+
+实验表明，Disa在函数入口点识别上超越先前深度学习方案，在反汇编失同步混淆与源码级混淆二进制上分别取得9.1%和13.2%的F1提升；内存块精度提升18.5%，由此生成的CFG平均间接调用目标（AICT）比最先进启发式方法降低4.4%，说明更准的边界直接改善了指针分析与CFG质量。
+
+我的思考：贡献成色在于把自注意力机制用于反汇编，并在同一框架内打通边界识别与下游CFG/点分析，量化证明学习式边界恢复能直接惠及静态分析精度；局限是评估主要基于x64 ELF二进制，对PE/x86及未见过的混淆技术泛化性有限。领域影响上，它为"反汇编+静态分析联合优化"提供了范式，对混淆对抗下的二进制安全分析有实际价值；与XDA、biRNN等模型相比，Disa在混淆鲁棒性与下游任务衔接上更胜一筹。
+
+- **arXiv PDF**: [Disa: Accurate Learning-based Static Disassembly with Attentions.](https://arxiv.org/pdf/2507.07246)
+
+#### Combating Concept Drift with Explanatory Detection and Adaptation for Android Malware Classification.
+- **作者**: Yiling He, Junchi Lei, Zhan Qin, Kui Ren, Chun Chen
+- **方向**: 恶意软件与二进制分析
+- **解读**:
+
+基于机器学习的安卓恶意软件分类器在平稳环境中精度很高，但概念漂移（尤其新恶意家族快速涌现）可把精度压低至接近随机水平。现有研究大多聚焦漂移检测（统计方法或对比学习识别异常样本），随后由专家标注并重训练，但缺乏对恶意软件概念的全面理解，导致检测不稳定、人工标注成本高昂。
+
+论文提出Dream系统，将分类器知识与专家知识统一到单一模型中：在对比自编码器的潜在空间中嵌入恶意软件解释（概念），并用分类器预测约束样本重建。由此两路受益：漂移检测能抓住目标分类器的特性选择更有效样本；概念修订可扩展分类器语义、为适应提供更强指导。实时漂移检测不再依赖训练数据，并提供基于行为的漂移解释器支持概念修订。
+
+实验在多个恶意软件数据集与分类器上显示，Dream提升了漂移检测精度并减少了适应阶段的专家分析工作量；尤其更新广泛使用的Drebin分类器时，Dream用比现有最佳方法少76.6%的新标注样本就达到相同精度。
+
+我的思考：贡献成色在于首次把可解释性系统性地嵌入"漂移检测-适应"闭环，用概念空间同时服务检测与重训，76.6%的标注节约直击该领域人工成本痛点；局限是概念修订仍依赖专家参与，自动化程度有限。领域影响上，它为主动学习在安全机器学习中的应用提供了新范式，模型感知的漂移检测比CADE等方案更贴合分类器实际，对安卓恶意软件防护的长期运营有直接价值。
+- **arXiv PDF**: [Combating Concept Drift with Explanatory Detection and Adaptation for Android Malware Classification.](https://arxiv.org/pdf/2405.04095)
+
+#### Analyzing PDFs like Binaries: Adversarially Robust PDF Malware Analysis via Intermediate Representation and Language Model.
+- **作者**: Side Liu, Jiang Ming, Guodong Zhou, Xinyi Liu, Jianming Fu, Guojun Peng
+- **方向**: 恶意软件与二进制分析
+- **解读**: 恶意 PDF 是 Web 攻击的常见载体（约 70% 的钓鱼邮件 PDF 可绕过网络防御、15% 绕过端点防护），ML 分类器易受对抗攻击；根因在于特征工程停留在关键词统计、结构路径等表层，且特征提取严重依赖解析器，对畸形"坏 PDF"往往失效。
+- 方法上，借鉴二进制分析范式：提出 PDFObj IR——把 PDF 对象转换成类似汇编语言的中间表示，并开发新解析器 Poir 容忍并自动修复畸形 PDF；用预训练语言模型（PDFObj2Vec，比较 BERT、Word2Vec、PV-DM 等嵌入）从 IR 提取语义特征；构造对象引用图（ORG）捕获结构特征，最终用图同构网络（GIN）进行恶意/良性分类。
+- 结果上，最强分类器在基线数据集上准确率 99.93%、扩展数据集 96.62%；相对不使用 PDFObj IR 的版本，扩展数据集准确率提升 2.2%–8.9%；面对最强可实现对抗样本攻击保持 100% 鲁棒性，且假阳性率仅 0.07%——具有可比鲁棒性的 SOTA 分类器假阳性率高出约 71 倍。
+- 我的思考：该工作的新颖点在于"把 PDF 当作二进制来分析"：中间表示+引用图让特征兼具语义与结构双重稳定性，从源头缓解对抗扰动与解析失败，是特征工程层面的正本清源。局限是 IR 转换本身仍是攻击者可研究的表面，对象级注入对抗样本的深度测试仍有空间；LLM 嵌入语料规模（20k/65k）影响泛化。相比对抗训练类方案（引文报告重训练后假阳性率可高达 85%），本工作 0.07% 的 FPR 与 100% 鲁棒性的组合极具实用吸引力。
+
+
+#### ForeDroid: Scenario-Aware Analysis for Android Malware Detection and Explanation.
+- **作者**: Jiaming Li, Sen Chen, Chunlian Wu, Yuxin Zhang, Lingling Fan
+- **方向**: 恶意软件与二进制分析
+- **解读**: 
+Android恶意软件持续演化，现有检测系统在泛化性、细粒度检测与可解释性上均面临挑战：刚性规则缺乏对未知恶意样本的泛化能力，难以恢复完整因果行为路径，也无法解释检测结论。
+
+ForeDroid提出基于场景感知的统一可解释检测框架：把恶意意图建模为功能场景内部的不一致。它先聚类语义连贯的场景，提取敏感API调用链，用LLM把调用链总结为自然语言，再将摘要嵌入并与同一场景的良性分布对比，进行无监督异常检测；对语义不一致性强烈的高风险行为，由LLM驱动模块生成解释报告。
+
+在零日（时间切分）设置下优于MaMaDroid、MalScan、DeepRefiner及基于持续学习的方法；在人工标注的GPMalware数据集上F1达0.94，超过ProMal。
+
+该工作把"场景一致性"作为恶意判据，用LLM桥接低层图分析与高层语义推理，同时解决泛化与可解释两大痛点，设计思路新颖，F1 0.94与零日设置下的优势提供实证支撑。局限：LLM摘要环节引入开销与不确定性，检测延迟与部署成本未在摘要体现；场景聚类质量直接影响下游效果。总体是Android恶意检测可解释化方向的高质量工作。
+
+
+#### Adversarially Robust Assembly Language Model for Packed Executables Detection.
+- **作者**: Shijia Li, Jiang Ming, Lanqing Liu, Longwei Yang, Ni Zhang, Chunfu Jia
+- **方向**: 恶意软件与二进制分析
+- **解读**:
+
+检测加壳可执行文件是大规模恶意软件分析与杀毒引擎工作流的关键环节，用于筛选需要昂贵动态脱壳的样本。传统方法依赖经验特征：熵检测假设压缩/加密数据熵高（阈值7.0），但Mantovani等发现超30%恶意样本用多种编码技巧把熵降到7.0以下；签名方法只能识别已知壳（TrickGate持续演化逃避检测超6年）。特征依赖专家经验，难以应对对抗与未知加壳技术。
+
+方法上，受语言学区分"真词与伪词"的启发，Pack-ALM把加壳检测重构为区分合法指令与"伪指令"的分类任务：将原生数据与加壳数据预处理为伪指令，设计预训练汇编语言模型学习加壳数据特征。相比逐字节输入的XDA等模型，指令级输入与指令分类粒度使其对低熵加壳与模型未见过的壳更鲁棒。
+
+在超37,000个样本上，Pack-ALM在指令/数据与原生/加壳数据分类任务上全面领先：F1、精确率、召回率最高超出XDA分别12.8%、1.78%、23.93%；四种低熵加壳技术（转置92.45%、编码94.85%、单表替换96.00%、多表替换96.40%）检测率远超jTrans/XDA/PalmTree，而熵方法全部为0%；对三种未见壳，Pack-ALM(K)真阳性率99.05%、假阴性率0.95%、F1达97.95%，对比PackGenome（F1 38.53%）、DIE（33.12%）、熵7.0阈值（26.35%），并额外识别出12,552个签名工具漏检的样本。
+
+我的思考：贡献成色在于把汇编语言模型引入加壳检测，指令分类框架对低熵加壳的鲁棒性（熵方法0% vs Pack-ALM 92%以上）证明了范式转变的价值，37K样本与多种未见壳的评估较扎实；局限是依赖反汇编质量（混淆可能破坏指令切分），预训练语料与真实恶意软件分布的偏差未充分讨论，对抗攻击下的稳定性需更多验证。领域影响上，为杀毒引擎的加壳检测提供了可替代熵启发式的学习式方案；与PalmTree、jTrans等汇编模型相比，任务定制（伪指令分类）使其在加壳检测上显著更优，也展示了领域化预训练的价值。
+
+- **arXiv PDF**: [Adversarially Robust Assembly Language Model for Packed Executables Detection.](https://arxiv.org/pdf/2509.15499)
+
+#### Walking The Last Mile: Studying Decompiler Output Correction in Practice.
+
+- **作者**: Joshua Wiedemeier, Simon Klancher, Joel Flores, Max Zheng, Jaehyun Park, Sang Kil Cha, Kangkook Jee
+
+- **方向**: 恶意软件与二进制分析
+
+- **解读**: Python 的流行催生了对 PYC 字节码反编译的强烈需求，而反编译器的输出常常不够准确，逆向工程师需要人工修正。此前缺乏对"人类如何修正反编译输出"的大规模实证研究，阻碍了反编译器改进方向的确立。
+
+本文利用 pylingual.io 平台的海量数据，开展首个关于真实世界人工辅助反编译的大规模研究：覆盖 181,646 个二进制文件、9,003 个用户提交的补丁，以及 393 个经过准确性验证的补丁，并辅以一个受控用户实验来隔离修正不完美反编译的技术难度。
+
+作者分析逆向工程师如何应对不准确的反编译输出、哪些因素影响他们投入精力以获得准确反编译，把观测性发现与受控实验结合，给出反编译器需要优先改进的环节。
+
+我的思考：该工作以罕见的数据规模（18 万+二进制、9 千+补丁）把反编译研究从"算法基准"扩展到"人机协作现实"，对反编译器设计者（哪些错误最让用户头痛）与逆向工程教学都有直接价值。局限在于 pylingual.io 用户群体的自选择性、补丁准确性验证的覆盖率（393 个已验证 vs 9,003 个提交）可能引入偏差；与反编译大模型（如 LLM 辅助反编译）的对比是自然的后续方向。
+
+
+#### Deep Learning from Imperfectly Labeled Malware Data.
+- **作者**: Fahad Alotaibi, Euan Goodbrand, Sergio Maffeis
+- **方向**: 恶意软件与二进制分析
+- **解读**:
+深度学习方法在恶意软件分类与检测上取得了显著性能，但其成功依赖于大规模、准确标注的数据集——这在恶意软件领域是既关键又难以满足的要求。实践中，大多数数据集使用杀毒引擎（AV）的扫描输出自动标注，这一过程常引入显著标签噪声（不同引擎结论冲突、误报漏报、家族标注不一致），严重损害深度模型的泛化能力。本文针对这一现实问题研究从不完美标注数据中学习的方法。
+
+论文探讨如何在存在标签噪声的训练数据上训练恶意软件分类模型，使模型对噪声鲁棒。摘要未详述具体技术路线（如噪声鲁棒损失函数、样本加权、标签修正或多引擎一致性的利用），但核心目标是压缩自动标注噪声对模型泛化性的负面影响。
+
+摘要未提供数据集规模、噪声比例或与干净标注基线对比的量化结果。
+
+我的思考：标签噪声是恶意软件深度学习从论文走向产业的最大隐性障碍——产业界几乎不可能人工复核海量样本，AV 标注的噪声是常态而非例外，因此"能容忍噪声"比"用干净数据刷精度"更具工程价值。与学习理论中的标签噪声方法（如 peer loss、co-teaching、置信度加权）相比，恶意软件领域的特点是标签来源（多 AV 引擎）可提供结构化先验，值得利用。局限：摘要缺技术细节与数据，噪声鲁棒性提升的幅度、对特定噪声类型（系统性偏差 vs 随机噪声）的适应面需原文确认；若能与公开基准（如 EMBER、Microsoft 恶意软件分类数据集）对照则更具说服力。
+
+#### Augmenting Search-based Program Synthesis with Local Inference Rules to Improve Black-box Deobfuscation.
+- **作者**: Vidal Attias, Nicolas Bellec, Grégoire Menguy, Sébastien Bardin, Jean-Yves Marion
+- **方向**: 恶意软件与二进制分析
+- **解读**:
+代码混淆旨在保护程序免受逆向工程，应用涵盖知识产权保护与恶意软件加固。近期黑盒分析工作提出利用程序合成来推断高度混淆代码块的语义：由于完全黑盒，这些方法不受语法复杂度影响，能够绕过标准混淆机制。但它们受限于只能处理语义简单的代码块，这解释了为何其主要应用于虚拟机处理器（VM handler）——那里行为通常足够简单。将去混淆规模化推广到虚拟化之外仍是开放问题，因为现有方法无法合成涉及任意常量值或混合布尔算术（MBA）表达式中仿射多项式关系等复杂语义的代码。
+
+本文展示如何将基于搜索的合成与局部推理规则相结合，得到新方法 Smir（Search Modulo Inference Rules），在保持通用性与灵活性的同时提升合成能力。作者将 Smir 实例化为处理 MBA 等难题的工具 XSmir。
+
+在合成代码、真实二进制与合成基准上的实验表明，XSmir 显著优于此前去混淆器：对混淆表达式的整体合成率达到 76%（此前方法为 63%），非混淆场景达到 84%（此前为 55%），同时误报减少 2–3 倍，压缩率略有提升。
+
+我的思考：把"局部推理规则"注入"全局搜索合成"是聪明的结合——规则负责削减搜索空间（处理常量与代数关系），搜索保留对未知结构的通用覆盖，二者互补使黑盒去混淆越过 MBA 这一长期瓶颈。误报降低 2–3 倍对逆向工程工具的实际可用性至关重要。局限在于推理规则需要专家针对每类混淆模式定制，规则库的完备性决定上限；向状态混淆、控制流平坦化等更复杂结构的扩展仍是后续挑战。
+
+
+#### Poster:LLMalware: An LLM-Powered Robust and Efficient Android Malware Detection Framework.
+- **作者**: Zijing Ma; Leming Shen; Xinyu Huang; Yuanqing Zheng
+- **方向**: 恶意软件与二进制分析
+- **解读**:
+（无摘要，据标题推断）Android 恶意软件数量持续增长且混淆与对抗技术不断进化，传统基于静态特征或人工规则的检测方法在鲁棒性与泛化能力上日益吃紧。本文提出 LLMalware，一个以大语言模型（LLM）驱动的 Android 恶意软件检测框架，目标是在保持检测效率的同时提升对未知样本与对抗样本的鲁棒性。
+
+从标题推断，方法上应是用 LLM 对 Android 应用的特征（如 API 调用序列、权限、字节码/反编译代码语义）进行深层语义理解，替代或增强传统特征工程，并结合效率优化手段使模型能在端侧或大规模场景下实用化。具体技术细节（模型选择、特征表示、训练数据）由于缺少摘要无法确认。
+
+由于缺乏摘要，本文没有可引用的量化结果，标题中的"Robust and Efficient"暗示作者在鲁棒性与效率两个维度上都有所侧重。
+
+我的思考（基于标题的保守推断）：LLM 用于恶意软件检测是近年热门方向，其优势在于语义理解与少样本泛化，但开销大、可解释性差、对对抗样本的固有脆弱性都是现实挑战。与基于静态分析或图神经网络的方案相比，LLM 方案的差异化价值取决于其是否真正解决了"效率"与"鲁棒性"两个痛点。由于信息有限，建议读者以摘要或全文为准进一步核实其方法与数据。
+
+
+#### SURE '25: The 1st ACM Workshop on Software Understanding and Reverse Engineering.
+
+- **作者**: Zion Leonahenahe Basque; Ati Priya Bajaj
+- **方向**: 恶意软件与二进制分析
+- **解读**:
+软件创造速度的急剧提升与我们对代码进行分析、推理的能力之间，正出现日益扩大的差距——大量软件无人理解其真实行为，而这正是安全风险与逆向工程瓶颈的根源。
+
+首届软件理解与逆向工程工作坊（SURE）与 CCS 2025 同期举办，程序包括主旨演讲、论文报告、海报展示与逆向工程挑战赛，旨在弥合这一差距。工作坊共收到 15 篇投稿，录用 9 篇论文（录用率 60%）。
+
+结果（摘要中明确给出的量化数据）：15 篇投稿、9 篇录用、60% 录用率；除程序本身外，工作坊还致力于厘清"什么是软件理解"的定义，整合零散的方法，为这一领域凝聚更强、更连贯的研究议程。
+
+我的思考：60% 的录用率对安全顶会工作坊而言相当宽松，反映出新兴领域"先聚人、再立规"的发展策略。其深层价值在于定义问题本身——"软件理解"长期散落在逆向工程、程序分析、语义学等子领域，缺乏统一框架；SURE 尝试给出更清晰的定义并搭建跨传统主题的讨论桥梁，是为领域奠基的关键一步。
+
+#### CheckMATE '25: Research on Offensive and Defensive Techniques in the Context of Man At The End (MATE) Attacks.
+
+- **作者**: Sébastien Bardin; Michele Ianni; Hyungon Moon
+- **方向**: 恶意软件与二进制分析
+- **解读**:
+端到端人（Man-At-The-End, MATE）攻击者拥有对软件或硬件目标的完全访问权，可以观察、分析并修改运行中的系统，以提取秘密或改变行为——DRM 破解、移动支付逆向、恶意软件分析都属此列。此类攻击者假设比远程攻击者更强，防御难度也更高。
+
+CheckMATE 工作坊同时探索该领域的攻防两端：进攻侧包括揭示真实攻击技术的测量研究与工具，防御侧涵盖混淆、防篡改、水印、白盒密码学与硬件辅助保护等。其目标是以严谨、可复现的研究连接学术进展与工业实践。
+
+结果（摘要为定位性陈述，无量化数据）：明确"攻防并重 + 学术工业衔接"的会议框架。
+
+我的思考：MATE 威胁的现实性在商业软件保护、内容分发与移动支付中尤为突出，但学术研究与工业实践长期脱节——本工作坊的定位直指这一断层。MATE 场景下传统"黑盒"安全假设完全失效，防御必须在完全敌对环境（攻击者拥有全部权限与时间）中设计；白盒密码与代码混淆的"可证明安全"至今仍是难题，Sébastien Bardin 等组织者在程序分析与软件保护领域深耕多年，为讨论质量提供了保障。
+
+### 漏洞挖掘与利用（15 篇）
+
+#### Autonomous Vulnerability Analysis, Triaging, and Repair: A Historical Perspective.
+
+- **作者**: Giovanni Vigna
+- **方向**: 漏洞挖掘与利用
+- **解读**: 
+支撑关键基础设施的软件组件充斥着漏洞，一旦被利用可能导致服务中断、经济损失乃至人员伤亡；面对日益庞大的代码规模与攻击面，漏洞的发现、分诊与修复迫切需要走向自动化。本文以历史视角系统回顾这一领域的发展脉络，说明其重要性。
+方法上，作为一篇历史性回顾，作者梳理自主漏洞分析从早期到当下的演进，涵盖漏洞挖掘、自动化分诊（triaging）与自动修复（repair）三个环节的研究路径与代表性思路，分析推动该领域变化的技术与生态因素，并指出其与关键基础设施安全的关联。
+结果方面，摘要强调漏洞利用可造成服务中断、经济损失与生命危险等严重后果，凸显自主化处理的必要性；论文在此基础上以历史视角总结既有方法的演进、成功与不足（该文未提供具体量化数据）。
+我的思考：此类回顾性论文的价值在于为社区提供坐标系，厘清自动化漏洞治理的来龙去脉，避免重复造轮子；作为观点性综述而非新系统，其判断带有作者个人色彩，缺乏可复现实验证据。其影响主要在于整合分散在分析、分诊、修复各分支的工作，为下一代自主漏洞治理研究划定方向。
+
+
+#### Don't Panic! Finding Bugs Hidden Behind Rust Runtime Safety Checks.
+
+- **作者**: Zeyang Zhuang, Zilun Wang, Wei Meng, Michael R. Lyu
+- **方向**: 漏洞挖掘与利用
+- **解读**: 
+Rust凭借内存与并发安全保证被广泛用于软件与系统开发，模糊测试是检验其正确性与健壮性的主流手段；然而作者发现当前最先进的模糊器被运行时安全检查（编译器隐式插入或开发者显式添加）严重阻碍，导致大量panic崩溃与过早终止，模糊器无法深入安全检查背后的深层代码，潜在漏洞被漏检。
+方法上，论文识别并分析运行时安全检查阻碍Rust模糊测试的机制，据此设计对策，使模糊器能够处理或消解panic路径、引导能量分配转向检查点之后的深层代码区域（具体手段基于摘要推断）。
+结果方面，实验显示绕过或消解运行时安全检查的干扰后，模糊器能更有效地探索深层代码，发现被传统设置掩盖的漏洞；具体检出数量与覆盖率数据以论文正文为准（摘要未提供具体数字）。
+我的思考：指出"安全检查本身成为模糊测试的障碍"是反直觉但真实的工程痛点，与C/C++模糊中assert/abort干扰问题同构，而在Rust中因安全检查无处不在而更突出。价值在于提醒社区：语言安全护栏可能掩盖逻辑错误与unsafe代码漏洞。局限是缓解手段对程序语义的侵入性、以及绕过检查是否引入误报需要仔细权衡。该工作有望改进Rust生态模糊器的标配策略。
+
+
+#### Error Messages to Fuzzing: Detecting XPS Parsing Vulnerabilities in Windows Printing Components.
+- **作者**: Yunpeng Tian, Feng Dong, Junhai Wang, Mu Zhang, Zhiniang Peng, Zesen Ye, Xiapu Luo, Haoyu Wang
+- **方向**: 漏洞挖掘与利用
+- **解读**: Windows 打印服务仍是攻击的重要入口；以往研究主要针对打印服务的控制面（如 spooler、固件更新）寻找漏洞，却忽视了数据面——打印机驱动中的文档解析器，这是过往研究的一个盲区。
+- 论文构建覆盖引导模糊测试系统 PrintXPSurge，专门挖掘 XPS 驱动解析函数中的弱点：为生成语义正确的 XPS 文件，采用大语言模型辅助的修复方法自动生成满足格式约束的文件；为让模糊测试真正触达驱动解析逻辑，提出渐进式状态重建方法，处理各依赖项的需求。
+- 摘要未给出量化数据（原文截断）；贡献为面向 XPS 解析的覆盖引导模糊测试系统及其 LLM 辅助生成与状态重建机制。
+- 把模糊测试火力引向被忽视的文档解析攻击面，与"LLM 修复格式约束 + 状态重建打通驱动交互"的组合拳是方法论亮点，也呼应了打印服务漏洞的高危历史；发现漏洞的数量、严重性（是否可远程利用）与 LLM 辅助生成的实际增益有待原文数据，与既有 Windows 打印模糊测试工作（如针对 spooler）的对比也值得关注。
+
+
+#### SyzSpec: Specification Generation for Linux Kernel Fuzzing via Under-Constrained Symbolic Execution.
+- **作者**: Yu Hao, Juefei Pu, Xingyu Li, Zhiyun Qian, Ardalan Amiri Sani
+- **方向**: 漏洞挖掘与利用
+- **解读**: 模糊测试是发现大型复杂程序（尤其是操作系统内核）漏洞最有效、最广泛的技术之一，syzkaller 是典范——已发现 Linux 内核 6,800 多个 bug，其中 5,500 多个已修复。其成功的关键在于系统调用描述集合，而这些描述通常由人类专家手工提供。
+- 论文针对"用户输入处理"类 syscall 描述生成的难点：已有自动生成方法多面向设备驱动，面对用户输入时要么精度不足、要么分析范围有限，导致描述不完整。SyzSpec 采用欠约束符号执行（under-constrained symbolic execution）自动生成内核模糊测试规范，兼顾精度与覆盖范围。
+- 背景数据：syzkaller 已发现 6,800+ 内核 bug、5,500+ 已修复；SyzSpec 对描述生成精度与范围的改进结论因摘要截断未完整量化。
+- 解决 syzkaller 的"人工描述瓶颈"是长期难题，欠约束符号执行在"精度 vs 可扩展性"间的权衡是核心挑战；若能自动生成高质量用户输入相关描述，可显著扩大内核模糊测试覆盖面；与既有驱动描述生成（如 DIFUZE、KMAX）的具体对比、生成描述的质量统计与发现的新 bug 数有待原文数据。
+
+
+#### SyzParam: Incorporating Runtime Parameters into Kernel Driver Fuzzing.
+- **作者**: Yue Sun, Yan Kang, Chenggang Wu, Kangjie Lu, Jiming Wang, Xingwei Li, Yuhao Hu, Jikai Ren, Yuanming Lai, Mengyao Xie, Zhe Wang
+- **方向**: 漏洞挖掘与利用
+> （无摘要，据标题推断）
+- **解读**: 
+内核驱动模糊测试（如syzkaller）依赖系统调用序列生成，但许多驱动的行为由运行时参数（ioctl命令、设备配置、内存映射选项等）决定，静态生成的参数难以覆盖深层逻辑。SyzParam把运行时参数纳入内核驱动模糊测试，目标应是提升驱动代码覆盖率与漏洞发现能力。（无摘要，据标题推断）
+
+论文应在syzkaller类框架中引入运行时参数的建模与反馈机制：在执行过程中收集、变异并回注影响驱动行为的参数，扩大驱动代码覆盖。（无摘要，据标题推断）
+
+摘要缺失，无法引用量化结果；据标题推断，论文报告了参数感知模糊测试相对基线在覆盖率或漏洞发现上的提升。（无摘要，据标题推断）
+
+驱动是内核漏洞高发区，而参数空间是传统系统调用级模糊测试的盲区，该选题切中实际痛点。作者含Kangjie Lu（内核漏洞挖掘知名团队），方法可信度较高。局限：无摘要，具体机制（参数识别、反馈回路）与效果需全文确认；运行时参数的可变性与状态依赖也可能增加测试复杂度。（无摘要，据标题推断）
+
+
+#### Reviving Discarded Vulnerabilities: Exploiting Previously Unexploitable Linux Kernel Bugs Through Control Metadata Fields.
+- **作者**: Hao Zhang, Jian Liu, Jie Lu, Shaomin Chen, Tianshuo Han, Bolun Zhang, Xiaorui Gong
+- **方向**: 漏洞挖掘与利用
+> （无摘要，据标题推断）
+- **解读**: 
+许多Linux内核漏洞在被发现时被认为"不可利用"而被丢弃，但其后往往被更精巧的利用技术复活——"控制元数据字段"（control metadata fields）是这类复活的钥匙，即对象头部或管理结构中的元数据（如引用计数、链表指针、大小字段等）可被操纵以构造利用原语。（无摘要，据标题推断）
+
+论文研究通过控制元数据字段利用此前被认为不可利用的内核漏洞：应是把"疑似不可利用"的bug转化为实际可利用原语的技术路径系统化，可能伴随对具体漏洞案例的完整利用链演示。（无摘要，据标题推断）
+
+摘要缺失，无法引用量化结果；据标题推断，论文以真实内核漏洞案例展示复活利用的技术路径与可行性。（无摘要，据标题推断）
+
+"不可利用"是动态判定——随着利用技术演进，旧漏洞常被重新激活，本文把这一现象系统化，对漏洞严重性分级与补丁优先级有现实意义。局限：无摘要，具体漏洞案例、元数据字段类型与利用成功率待全文确认；此类研究的双面性（防御者受益，攻击者也可借鉴）也是公开讨论点。（无摘要，据标题推断）
+
+
+#### PromeFuzz: A Knowledge-Driven Approach to Fuzzing Harness Generation with Large Language Models.
+- **作者**: Yuwei Liu, Junquan Deng, Xiangkun Jia, Yanhao Wang, Minghua Wang, Lin Huang, Tao Wei, Purui Su
+- **方向**: 漏洞挖掘与利用
+> （无摘要，据标题推断）
+- **解读**: 
+模糊测试的覆盖率与效果高度依赖测试驱动（harness）的质量，而harness编写是专家工作、劳动密集。大语言模型（LLM）具备代码理解与生成能力，为自动化harness生成带来可能。（无摘要，据标题推断）
+
+PromeFuzz提出知识驱动的LLM harness生成方法：应是通过融合库API知识、目标代码语义与模糊测试约束，引导LLM生成高质量harness，并可能结合反馈迭代优化。（无摘要，据标题推断）
+
+摘要缺失，无法引用量化结果；据标题推断，论文报告了PromeFuzz相对基线harness在覆盖率或漏洞发现上的提升。（无摘要，据标题推断）
+
+LLM驱动的模糊测试是当前研究热点，harness生成是其高价值应用点——把"人写驱动"变为"机器生成"，可显著降低模糊测试门槛并规模化。局限：无摘要，知识来源、生成-验证回路与效果数据待全文确认；LLM生成代码的正确性与可编译性、以及知识库的覆盖度是决定成败的关键。该方向对库级模糊测试的自动化有广阔前景。（无摘要，据标题推断）
+
+#### Conflicting Scores, Confusing Signals: An Empirical Study of Vulnerability Scoring Systems.
+- **作者**: Viktoria Koscinski; Mark Nelson; Ahmet Okutan; Robert Falso; Mehdi Mirakhorli
+- **方向**: 漏洞挖掘与利用
+- **解读**:
+准确评估软件漏洞对优先级排序与修复决策至关重要。现有多种公开漏洞评分系统并存，但它们在目标、方法论与输出上各不相同，往往导致不一致的处置决策。本文首次对四种主流公开系统进行大规模、结果关联（outcome-linked）的实证比较：CVSS、SSVC、EPSS 与 Exploitability Index。
+研究基于 600 个来自微软数月 Patch Tuesday 披露的真实漏洞数据，考察这些评分之间的相互关系，评估它们如何将漏洞划分到不同的分诊（triage）层级，并检验其捕获真实利用风险的能力。
+结论层面的核心主张是：不同系统给出的分数/分类相互冲突，向安全团队发出"混乱信号"，且系统对实际被利用风险的预测能力存在显著差异，依赖单一系统的决策可能产生系统性偏差。
+我的思考：评分系统生态的"信号冲突"是行业痛点——CVSS 反映静态严重性、EPSS 预测利用概率、SSVC 面向利益相关方决策，目标本就不同，但企业在分诊时往往混用，导致资源错配。600 例真实漏洞 + 利用结果的关联分析使结论具备实证说服力。局限：Patch Tuesday 样本覆盖美国大型软件商生态，对开源/其他行业漏洞的推广性有限；"整合多系统信号"的改进建议若能在文中给出可操作的决策框架，实用价值将更高。
+
+
+#### DiveFuzz: Enhancing CPU Fuzzing via Diverse Instruction Construction.
+- **作者**: Zihui Guo; Miaomiao Yuan; Yanqi Yang; Liwei Chen; Gang Shi; Dan Meng
+- **方向**: 漏洞挖掘与利用
+- **解读**:
+CPU 模糊测试对架构状态的全面探索，本质上要求生成多样化的测试用例——包含合理的操作码分布与多样化的指令执行结果（通常以写回数据衡量）。但作者对现有最优模糊器的分析发现：它们生成的数据高度重复，且操作码分布失衡，导致大量架构状态未被触及。
+DiveFuzz 通过"多样化指令构造"解决该问题：在运行时精细控制指令的操作数，并耦合相关上下文语义，生成具有语义关联的指令流，从而提升指令级多样性。
+此外，DiveFuzz 引入新型变异器与监视器（mutator monitor）机制，动态调整变异策略并准确消除误报。评估显示其显著提升测试用例多样性、实现更均衡的操作码分布，并相对现有模糊器取得明显收益。
+我的思考：CPU 模糊测试的瓶颈常在于"覆盖率看似增长但架构状态探索停滞"——重复数据与失衡操作码正是深层 bug 逃逸的原因。从"指令构造多样性"切入，比单纯堆覆盖率引导更本质，监视器消除误报也解决了 CPU 模糊器可扩展性的现实痛点。局限：语义关联构造依赖对目标 ISA 的建模，扩展到新架构（RISC-V、GPU 等）的成本未知；发现的真实漏洞数量与严重性是衡量其最终价值的硬指标，摘要未披露。
+
+
+#### Needle in a Haystack: Automated and Scalable Vulnerability Hunting in the Windows ALPC Sea.
+- **作者**: Haoyi Liu; Feng Dong; Yunpeng Tian; Mu Zhang; Xuefeng Li; Fangming Gu; Zhiniang Peng; Haoyu Wang
+- **方向**: 漏洞挖掘与利用
+- **解读**:
+使用 RPC 与 COM 技术、运行在底层 ALPC（Advanced Local Procedure Call）传输之上的 Windows 服务构成了巨大的攻击面。但已有研究要么聚焦已知漏洞模式，要么依赖耗时的手工逆向，难以支撑规模化漏洞发现。
+该工作开发了自动化、可扩展的 ALPC 通信模糊测试工具：采用"录制-重放"（record-and-replay）策略，先捕获系统范围内实时的 ALPC 流量，再直接在 ALPC 层重放变异后的载荷，从而绕开传统方法手工准备接口信息（如 IDL 逆向）的可扩展性瓶颈。
+工具还集成了专门检测技术，识别崩溃中心型模糊器难以发现的信息泄露类漏洞——即输出回传数据中泄露敏感信息的情况，弥补了"只见崩溃、不见泄露"的检测盲区。
+我的思考：ALPC 是 Windows 本地提权攻击链的高频入口（多起在野 0day 均涉及其协议处理），自动化模糊 ALPC 的规模化思路直击痛点——录制系统真实流量避免了逐接口逆向，信息泄露检测的加入也拓宽了漏洞类别覆盖。局限：录制-重放依赖目标服务在系统真实运行中出现，覆盖度受限于被录制场景；变异后的载荷能否稳定命中深层状态机、以及新发现的漏洞数量与危害等级，是评价其真实产出的核心指标，摘要未披露。
+
+#### A Qualitative Analysis of Fuzzer Usability and Challenges.
+
+- **作者**: Yunze Zhao, Wentao Guo, Harrison Goldstein, Daniel Votipka, Kelsey R. Fulton, Michelle L. Mazurek
+
+- **方向**: 漏洞挖掘与利用
+
+- **解读**: 模糊测试（fuzzing）通过生成随机或变异的测试输入来触发意外行为，是广泛采用的漏洞发现技术。然而，开发者实际如何使用模糊测试工具、面临哪些挑战、现有工具在哪些环节存在不足，此前缺乏系统了解——理解"人"的因素是提升模糊测试落地效果的关键。
+
+作者对来自不同领域的 18 名模糊测试用户进行半结构化访谈，探讨其工作流程、挫败点与对模糊测试的期望，覆盖从工具选择、配置、语料维护到崩溃分析与修复的完整使用链路。
+
+访谈分析揭示出关键的可达性缺口与设计机会，例如配置复杂度、运行效率感知、崩溃报告可理解性、与现有 CI/开发流程集成等痛点，为下一代模糊测试工具改进用户体验、减少人工投入、更好地融入真实工作流提供依据。
+
+我的思考：模糊测试的学术成果与工业采用之间存在明显落差，这篇来自人因安全研究团队（Mazurek、Votipka）的质性研究精准填补了"用户视角"的空白，其建议对 OSS-Fuzz 类平台与开源工具的迭代有实操价值。局限在于 18 个样本的覆盖面与自我报告偏差，访谈对象多为有经验用户，新手入门障碍可能被低估；与大规模遥测数据结合做混合方法验证是自然的后续。
+
+#### Sleeping Giants - Activating Dormant Java Deserialization Gadget Chains through Stealthy Code Changes.
+
+- **作者**: Bruno Kreyssig, Sabine Houy, Timothée Riom, Alexandre Bartel
+- **方向**: 漏洞挖掘与利用
+- **解读**:
+Java 反序列化 gadget chain 是研究充分的关键软件弱点，绝大多数已知链依赖依赖库中的 gadgets；已有研究表明，依赖库中的微小代码改动即可启用这些链，使检测变成纯粹被动的竞赛——即使某个依赖的部署管道启用了检测，其他依赖仍可能引入风险。
+
+作者评估依赖演化中代码改动启用 gadget chain 的可能性，这些改动既可能是无意的，也可能是供应链攻击的一部分。研究首先展示类的可序列化性是随演化强烈波动的属性，进而考察三种攻击者可隐蔽引入 gadget 的改动模式；对 533 个改动应用并运行多个 SOTA 检测器，比较改动前后的检测效果。
+
+检测器在应用修改后成功启用或注入 26.08% 的被选中链；进一步验证新检测到的链，识别出 53 个仅通过微小修改即可添加的潜伏 gadget，证明该攻击向量覆盖面广且收益可观。
+
+把 gadget chain 研究从"发现现有链"推进到"预测未来链"，揭示依赖演化是隐蔽的后门载体，对供应链安全有直接警示意义。局限在于检测器能力决定了评估上限，且 533 个改动样本的代表性需谨慎；防御上应推动序列化面收缩与依赖级监控。
+
+
+#### ConTest: Taming the Cyber-physical Input Space in Fuzz Testing with Control Theory.
+- **作者**: Jinwen Wang, Hongchao Zhang, Chuanrui Jiang, Andrew Clark, Ning Zhang
+- **方向**: 漏洞挖掘与利用
+- **解读**:
+随着网络物理系统（CPS）深入日常生活，其安全性日益迫切。模糊测试被视为自动发现漏洞的 promising 方法，但物理输入与网络输入构成的搜索空间极其庞大，如何高效探索仍是开放性挑战。
+
+ConTest 借鉴控制理论，利用物理信息模型引导输入空间探索：使用 Lyapunov 函数同时建模检测过程与变异过程，以参数化方式高效执行变异，并在有界动态误差下给出漏洞发现有效性的可证明保证——这是将形式化保证引入模糊测试的关键设计。
+
+作者实现了 ConTest 原型，并在两个代表性机器人载具（RV）平台 ArduPilot 与 PX4 上部署，用于发现时空验证类漏洞。共发现 253 个漏洞，其中 58 个为零日漏洞，54 个已获厂商确认。
+
+以 Lyapunov 稳定性理论为 fuzzer 提供可证明的有效性边界，明显区别于经验驱动的灰盒模糊测试，是方法层面的亮点；实际发现量（58 个零日）也印证了工程价值。局限在于依赖 CPS 物理模型质量，模型不准确时保证与效率都会打折，向其他 CPS 类型迁移需要重新建模。
+
+
+#### Protocol-Aware Firmware Rehosting for Effective Fuzzing of Embedded Network Stacks.
+- **作者**: Moritz Bley, Tobias Scharnowski, Simon Wörner, Moritz Schloegel, Thorsten Holz
+- **方向**: 漏洞挖掘与利用
+- **解读**:
+嵌入式系统最大的攻击面之一是网络接口，这些接口用于与其他设备通信。与通用系统不同，嵌入式设备面向专门用途设计，其网络协议栈独特且多样。现有评估这些协议栈安全性的方法要么需要大量人工、要么依赖真实硬件，且通常只覆盖系统的小部分。固件重托管（firmware rehosting）是有前景的替代方案：通过泛化地模拟物理硬件，对完整系统进行模糊测试。但现有重托管方法往往难以有效探索复杂、多层的输入格式，限制了发现深层嵌套软件缺陷的能力。
+
+本文提出 Pemu，一种自动检测并处理协议的新方法：通过推断可用的协议，Pemu 能够透明地生成封装模糊测试数据的合法报文，使测试流量直达更深层的协议逻辑，从而对以往难以测试的组件进行更深入、更有针对性、逐层推进的分析。
+
+评估表明，Pemu 在三种工具与协议栈上一致地提升了代码覆盖率，并重现若干已知漏洞、发现 5 个未知缺陷，凸显其发现网络暴露代码中缺陷的有效性。
+
+我的思考：协议感知重托管把"能跑起来"推进到"能深入跑"，解决的是嵌入式模糊测试中报文封装导致流量无法穿透多层协议栈的老问题。与纯黑盒硬件测试相比，重托管+协议生成具备可扩展性优势；与通用网络协议模糊相比，其针对性生成更贴合固件特有的私有协议。局限在于协议推断的准确性决定探索深度，对未知或加密协议可能失效；5 个新漏洞也提示该方向仍有大量攻击面等待同类工具挖掘。
+
+
+#### Poster: Leveraging Large Language Models to Effectively and Efficiently Identify Vulnerability Patches for WordPress Plugins.
+- **作者**: Xue Leng; Hai Zhang; Tiantian Zhu; Jianguo Sun
+- **方向**: 漏洞挖掘与利用
+- **解读**:
+漏洞补丁识别是开源软件（OSS）漏洞管理的基石——准确找到"哪次提交修复了哪个漏洞"直接影响补丁部署与漏洞数据库质量。论文指出，现有方法多依赖规则匹配，难以适应 WordPress 插件这类缺乏统一开发标准的生态；而将漏洞描述与代码变更结合的方法展现出更大潜力，但现有预测模型缺乏深层语义理解，无法真正领会代码变更背后的含义。
+
+方法上，该工作利用大语言模型（LLM）同时建模"漏洞描述文本"与"代码变更（diff）"，通过深层语义对齐判断某次提交是否修复了描述中的漏洞。LLM 的语义理解能力被用来弥合自然语言漏洞描述与代码变更之间的鸿沟，替代脆弱的规则模板。
+
+作为海报论文，摘要未给出数据集规模、准确率等量化结果。
+
+我的思考：WordPress 插件生态漏洞频发、维护水平参差，补丁识别的自动化需求真实而迫切。与依赖 CVE-commit 配对规则或浅层特征的方法相比，LLM 方案的差异化在于语义理解，能处理描述与代码表述不一致的模糊情形。局限方面：LLM 的判断可解释性差、可能产生幻觉性匹配；补丁识别本质是"少样本正例"问题（多数提交与漏洞无关），类别不平衡与误报控制是实用化关键。该方向与软件供应链安全（补丁延迟部署导致 0-day 窗口拉长）直接相关，值得期待后续量化评估。
+
+
+### 网络与协议安全（29 篇）
+
+#### Finding SSH Strict Key Exchange Violations by State Learning.
+
+- **作者**: Fabian Bäumer, Marcel Maehren, Marcus Brinkmann, Jörg Schwenk
+
+- **方向**: 网络与协议安全
+
+- **解读**: Terrapin 攻击（USENIX 2024）利用 SSH 握手期可注入可选消息（如 IGNORE）破坏通道完整性，业界普遍采用 OpenSSH 提出的 strict KEX 扩展缓解：协商后任何可选/非法消息必须导致握手失败。但该要求并无密码学强制，实现是否真正合规不可见；而完整状态机学习因可选消息导致状态爆炸，此前研究只能学排除可选消息的部分模型——恰是 Terrapin 攻击利用的关键部分。
+
+本文首次对 strict KEX 启用时的完整握手状态机做黑盒学习：构建 SSH 历史上最大的 94 符号字母表（覆盖全部已定义与未定义消息类型，含"禁用"符号）；自研 Java SSH 实现作 mapper，能依据密码状态动态构造任意合法/非法消息；学习器采用 TTT 算法，等价查询创新性地提出 happy-flow mutation（向正常流程插入至多 n 个符号）配合随机查询，高效从深路径发现意外状态转换。
+
+对 10 个实现、5 种密钥交换流程共学习 33 个状态机：7 个实现违规，归为四类——C1 早期注入、C2 流程依赖注入、C3 部分硬化（黑名单式遗漏）、C4 晚期注入（NEWKEYS 后过早解除限制）；仅 OpenSSH 与 Golang x/crypto/ssh 完全合规。发现两个高危漏洞：Tectia SSH（C1+C3）允许握手期注入认证请求，导致 rogue session 攻击（CVE-2025-32942，CVSS 6.8，获 2000 欧元赏金）；Erlang OTP SSH（C3）接受握手期 CHANNEL_OPEN/exec，实现未认证远程代码执行（CVE-2025-32433，CVSS 10.0，Shodan 上 169 台暴露服务器）。
+
+我的思考：方法论的工程化突破（动态 mapper、含禁用符号的大字母表、针对性等价查询）使完整握手覆盖首次可行，并直接产出两个高危漏洞，证明了方法价值。局限：部分实现（Tectia、LANCOM、libssh-DHGEX）学习不收敛，一小时后采用最后假设；合规不等于安全（taint-based 实现的讨论）。该工作也警示：strict KEX 这类无密码学保证的缓解需要全转录验证（类似 TLS verify_data）才更可靠。
+
+- **arXiv PDF**: [Finding SSH Strict Key Exchange Violations by State Learning.](https://arxiv.org/pdf/2509.10895)
+
+#### Sabot: Efficient and Strongly Anonymous Bootstrapping of Communication Channels.
+- **作者**: Christoph Coijanovic, Laura Hetz, Kenneth G. Paterson, Thorsten Strufe
+- **方向**: 网络与协议安全
+- **解读**: 匿名通信系统的"引导"（bootstrapping）阶段——即用户如何安全、匿名地建立与匿名网络的连接——是保护用户身份的关键环节，也是现实中最易受攻击与去匿名化的部分（无摘要，据标题推断）。
+- 据标题推断，Sabot 提出一种高效且强匿名的通道引导协议，可能通过巧妙的密码学握手设计（如基于不经意传输、带外秘密或去中心化信任锚）在低开销下建立强匿名连接（无摘要，据标题推断）。
+- （无摘要，据标题推断）——暂无可用量化结果；作者组合（Paterson 为著名密码学家、Strufe 深耕匿名通信）预示其安全定义与证明较为严谨。
+- 引导阶段是匿名网络的薄弱点（如 Tor 的引导/桥接机制），"强匿名+高效"的引导协议对抵御全局观察者与审查有现实意义；核心问题是引导时信任假设是否比运行时更弱、以及与现有匿名网络的兼容性与部署成本。
+
+
+#### Exposing the Roots of DNS Abuse: A Data-Driven Analysis of Key Factors Behind Phishing Domain Registrations.
+- **作者**: Yevheniya Nosyk, Maciej Korczynski, Carlos Gañán, Sourena Maroofi, Jan Bayer, Zul Odgerel, Samaneh Tajalizadehkhoob, Andrzej Duda
+- **方向**: 网络与协议安全
+- **解读**: 攻击者长期依赖域名开展钓鱼、垃圾邮件、恶意软件分发与僵尸网络运营，为支撑恶意活动不断注册新域名；此前研究只发现注册高度集中在少数注册商与顶级域（TLD），却无人系统分析究竟是什么因素驱动了滥用性注册，留下关键认知空白。
+- 论文从数据驱动角度"提炼"攻击者在注册钓鱼域名时的偏好与回避倾向：构建含 14.5k 个钓鱼域名与 15.4k 个良性域名的列表，为全部域名收集 73 维特征，归纳为三大潜在因素簇——域名属性、主动验证、被动安全实践。
+- 数据集规模为 14.5k 钓鱼对 15.4k 良性域名，特征维度 73，覆盖三类潜在因素；具体回归/分类结论因摘要截断未完整呈现。
+- 这是对注册滥用根因的首次系统化大规模分析，结论对注册商风控、注册局政策与 WHOIS/RDAP 治理有直接参考价值；73 维特征的设计与"主动验证/被动安全实践"的区分是方法论亮点，但需警惕特征相关性与因果性之间的混淆，以及钓鱼域名生命周期短带来的样本偏差。
+
+
+#### Validating Interior Gateway Routing Protocols via Equivalent Topology Synthesis.
+- **作者**: Bing Shui, Yufan Zhou, Jielun Wu, Baowen Xu, Qingkai Shi
+- **方向**: 网络与协议安全
+- **解读**: 路由器依赖路由协议决定数据包如何在互联网上传输，是现代网络的骨干；协议实现若有漏洞可能导致流量泄漏、网络拥塞等严重后果。论文聚焦内部网关协议（IGP）这一关键类别的实现验证——与 TCP/IP 这类有结构化状态机、以正确性验证为主的通信协议不同，IGP 旨在自动管理拓扑，常规验证技术无法直接套用。
+- 论文提出 ToDiff，一种差分验证技术，分三步挖掘 IGP 实现 bug：(1) 用生成算法构造随机但有效的网络拓扑；(2) 应用语义引导的程序合成器生成……（摘要截断，后续步骤未完整呈现）；整体思路是通过合成"等价拓扑"制造差分场景来暴露实现不一致。
+- 摘要未给出量化数据（原文截断）；贡献为针对 IGP 的差分验证方法与三步式流程。
+- IGP（OSPF、IS-IS、RIP 等）实现复杂且错误隐蔽，差分验证是发现其语义偏差的恰当范式；"随机有效拓扑生成 + 语义引导合成"兼顾了覆盖与真实性；发现的具体协议实现 bug 类型、数量与真实路由器软件（如 FRR、Quagga）上的验证效果有待原文数据，与网络协议形式化验证工作（如状态机学习）的互补关系也值得讨论。
+
+
+#### Bitcoin Under Volatile Block Rewards: How Mempool Statistics Can Influence Bitcoin Mining.
+- **作者**: Roozbeh Sarenche, Alireza Aghabagherloo, Svetla Nikova, Bart Preneel
+- **方向**: 网络与协议安全
+- **解读**:
+
+比特币的安全性深度依赖矿工激励机制（区块奖励+交易费）。随着减半事件推进，协议奖励趋近于零，交易费将成为矿工主要收入来源（2023年12月与2024年4月已出现手续费等于甚至超过协议奖励的时期），区块奖励由此变得波动，催生或加剧安全威胁。以往分析要么假设固定区块奖励，要么采用过度简化的波动模型，忽略了真实mempool行为的复杂性。
+
+论文提出基于强化学习的分析工具：用异步优势Actor-Critic（A3C）算法在模拟任意时期真实mempool行为的环境中推导近优挖矿策略，支持难度调整前后的自私挖矿、undercutting等对抗策略分析。作者指出WeRLman环境赋予攻击者"预测能力"（可预知鲸鱼交易到达），导致其报告的安全阈值被低估；并构建基于区块生成时间与手续费正相关的简化MDP模型做更精细分析。
+
+结果表明，在波动奖励模型下自私挖矿攻击启动即可盈利，无需承受固定奖励模型下至少两周的难度调整损失期；当协议奖励趋零、对抗通信能力为50%时，安全阈值降至16%，已落入当前矿池算力份额区间。
+
+我的思考：贡献成色在于用RL+真实mempool模拟把激励安全分析推进到更贴近现实的水平，首次分析难度调整前的安全阈值并修正了WeRLman的低估问题，16%的阈值警示意义很强；局限是简化模型状态空间有限、决策限于出块事件，所得阈值是实际值的上界。领域影响上，研究揭示手续费时代比特币激励稳定性的潜在风险，对矿池行为预判与协议费用机制设计有参考价值。
+
+- **arXiv PDF**: [Bitcoin Under Volatile Block Rewards: How Mempool Statistics Can Influence Bitcoin Mining.](https://arxiv.org/pdf/2411.11702)
+
+#### Aegis: Tethering a Blockchain with Primary-Chain Stake.
+- **作者**: Yogev Bar-On, Roi Bar Zur, Omer Ben-Porat, Nimrod Cohen, Ittay Eyal, Matan Sitbon
+- **方向**: 网络与协议安全
+- **解读**:
+
+新兴区块链面临自身代币价值未定的"鸡生蛋"困境：PoS链只有抵押品价值足够高才算安全，而代币价值又依赖链的成功与安全。近年EigenLayer、Babylon等系统实现了"tethering"——用主链代币作为抵押品来保障附属链的安全，从而屏蔽自身代币波动。但现有方案要么依赖中心化，要么作出极端假设：全同步通信、操作者退出后仍保持正确、或可无限期延迟提款。
+
+论文首先证明在部分同步模型下该问题无解；随后在"与主链通信同步、链内节点部分同步"这一标准假设下给出可解方案Aegis。Aegis通过区块引用主链区块来定义委员会，在主链上设置检查点延续决策，并用重置机制在旧委员会过时时建立新委员会。
+
+Aegis在任何时候都保证安全性，且在链内节点延迟较低时实现快速进展（活性），形式化刻画了tethering问题的可解性边界与可达方案。
+
+我的思考：贡献成色在于用不可能性定理精确划定了tethering的边界，并给出第一个在现实假设下同时满足安全与活性的协议，理论严谨性突出；局限是依赖"与主链同步访问"这一关键假设，主链自身故障或拥堵时附属链的保证未被覆盖，实践中的提款延迟问题也需工程化处理。领域影响上，它为EigenLayer、Babylon等已管理数十亿美元质押资产的系统提供了安全委员会轮换的理论支撑；与PoS自抵押相比，主链抵押天然免疫代币波动，是L2与新兴链安全的重要方向。
+
+- **arXiv PDF**: [Aegis: Tethering a Blockchain with Primary-Chain Stake.](https://arxiv.org/pdf/2406.05904)
+
+#### Swallow: A Transfer-Robust Website Fingerprinting Attack via Consistent Feature Learning.
+- **作者**: Meng Shen; Jinhe Wu; Junyu Ai; Qi Li; Chenchen Ren; Ke Xu; Liehuang Zhu
+- **方向**: 网络与协议安全
+- **解读**:
+网站指纹（WF）攻击通过分析 Tor 网络上的流量模式来识别用户访问的网站，对用户隐私构成显著威胁。现实中用户面对多样化的网络条件，且服务端普遍部署 WF 防御，导致攻击难度大幅上升。现有最优方法要么依赖"分类器训练与部署环境一致"的强假设，要么在防御下性能明显退化，难以迁移到真实环境。
+Swallow 提出一种迁移鲁棒的 WF 攻击框架。核心是新的流量表示 Consistent Interaction Feature（CIF），通过对齐不同抓取环境下的分布来提取跨环境一致的交互特征，使分类器不再绑定单一网络条件；在此基础上设计了三种数据增强手段，进一步扩大训练分布覆盖，使攻击能够快速迁移到新环境，同时保持对各种 WF 防御的鲁棒性。
+摘要未给出具体数值，但实验定位于"快速迁移 + 抗防御"双目标：相比依赖同分布假设的 SOTA，Swallow 在跨网络条件下保持稳定识别率；面对典型 WF 防御时退化幅度显著小于基线。结论是流量级一致特征学习可以同时缓解分布漂移与防御干扰两个问题。
+我的思考：该工作把迁移学习思想引入 WF 攻击，抓住了现实部署中"训练集与攻击现场不一致"这一被 SOTA 长期回避的痛点，思路扎实。但 WF 对抗本身是攻防螺旋，防御方可针对性破坏 CIF 所依赖的跨环境一致性，其长期有效性存疑；且摘要未披露开销，若特征学习需要大量标注数据，部署门槛会抵消迁移收益。总体是问题选得好、方法设计完整的一篇攻防研究。
+
+
+#### FlowSentry: Accelerating NetFlow-based DDoS Detection.
+- **作者**: Xiaoyu He; Xiaohui Xie; Xin Wang; Lei Zhang; Kun Xie; Lin Chen; Yong Cui
+- **方向**: 网络与协议安全
+- **解读**:
+分布式拒绝服务（DDoS）攻击通过洪泛流量威胁在线服务稳定性。基于 NetFlow 的检测系统被 ISP 广泛部署于上游多点场景以对抗大流量攻击，但 NetFlow 并非即时机制——路由器需要先聚合、汇总一段时间内的流记录再上报，这给检测带来固有延迟，直接影响响应时效。
+已有研究主要聚焦在路由器侧优化上报机制，但无论软件还是硬件改造都需要升级设备，短期部署成本高昂，ISP 难以承受。FlowSentry 提出一个不依赖路由器升级的框架，在 NetFlow 上报链路之外加速攻击识别，把检测时延问题从设备改造转移到系统侧方案上。
+摘要未给出具体数字，其价值在于"零设备升级"前提下的提速路径：面向 ISP 上游多点部署的现实约束，避免传统方案的高成本改造，直接缩短从流记录产生到攻击告警的时间窗口，从而更早触发缓解措施。
+我的思考：该工作的现实意义在于对准了部署经济学——安全方案若要求更换网络设备，即使技术上更优也难落地。FlowSentry 以纯系统侧方式加速检测，工程可行性高。但加速空间受限于 NetFlow 自身采样与聚合粒度，检测精度的代价（如漏报、误报）未在摘要中体现；与 ML 检测器结合时的准确率权衡值得后续关注。
+
+
+#### 1BIT: Persistent Path Validation with Customized Noise Signal Characteristics.
+- **作者**: Keji Miao; Jie Yuan; Xinghai Wei; Xingwu Wang; Dongqi Han; Haiguang Wang; Runshan Hu; Xiaoyong Li; Zitong Jin; Wenqi Chen
+- **方向**: 网络与协议安全
+- **解读**:
+路径感知网络允许发送方主动选择或影响数据包的转发路径，是新兴研究热点，而路径验证机制是其必要支撑，由 IETF 路径感知网络工作组推动，对增强端主机对转发的控制至关重要。然而现有方法在安全性、协议头开销与计算成本之间难以兼得，形成"三难困境"。
+受持久化零信任架构启发，1BIT 提出一个基于定制噪声信号特征的路径验证协议。协议在头部引入极低的开销：相比现有方案头部开销降低超过 57%，同时保持稳健的数据流安全；故障检测需求降低 72%，并支持故障定位能力，兼顾安全与效率。
+摘要强调其在开销、安全性与故障定位三方面的平衡：更少的头部字节意味着更小的带宽与处理代价，而定制噪声信号特征让接收端能持续验证路径的完整性，使路径验证从一次性检查升级为持久化验证。
+我的思考：把零信任的"持续验证"思想引入网络层路径验证很有新意，57% 的开销削减与 72% 的故障检测需求下降是实打实的工程收益。不过噪声信号特性若可被观测，可能引入新的侧信道或伪造面；协议兼容性（与现有路由器/中间盒的交互）和真实部署测试是落地关键，摘要对此着墨有限。
+
+
+#### RebirthDay Attack: Reviving DNS Cache Poisoning with the Birthday Paradox.
+- **作者**: Xiang Li; Mingming Zhang; Zuyao Xu; Fasheng Miao; Yuqi Qiu; Baojun Liu; Jia Zhang; Xiaofeng Zheng; Haixin Duan; Zheli Liu; Yunhai Zhang; Dunqiu Fan
+- **方向**: 网络与协议安全
+- **解读**:
+DNS 缓存投毒是一场持久的攻防博弈。社区已投入大量工作发现、检测并缓解各类增大投毒风险的漏洞，但没有人系统性地重新审视：基于生日悖论的经典投毒思路（自 2002 年起即被认为已失效）在今天的实现中是否依然有效。
+RebirthDay 针对递归解析器与转发器提出新型攻击，复活了这条经典路线。其关键发现是：在扩展（extension）实现的处理中，存在此前未暴露的、符合协议规范的弱点（例如 ECS 选项），可以绕过本用于防御投毒的查询聚合机制——这一机制的行为此前并未被充分理解。
+结果显示 22 款主流软件中有 18 款存在漏洞，根因集中在缺乏或错误实现 ECS 选项等扩展的处理逻辑。攻击者据此重新利用生日悖论放大猜测成功率，使"现代解析器已免疫经典投毒"的共识被推翻。
+我的思考：这是典型的"旧攻击、新实现"式再发现，价值在于揭示了协议扩展实现与安全机制之间的鸿沟——防御设计得再好，落地实现的偏差也会让经典攻击复活。18/22 的高漏洞率说明生态整体不设防，影响面真实。局限是攻击条件（对投毒窗口、网络位置的依赖）在摘要中未量化，实际可利用性有待论文正文评估。
+
+
+#### MM4flow: A Pre-trained Multi-modal Model for Versatile Network Traffic Analysis.
+- **作者**: Luming Yang; Lin Liu; Junjie Huang; Zhuotao Liu; Shiyu Liang; Shaojing Fu; Yongjun Wang
+- **方向**: 网络与协议安全
+- **解读**:
+网络流量分析是网络安全的基石，但现有方法大多依赖单一模态，存在两个显著局限：一是面向特定任务调优的方法难以适配多样化分析任务；二是已有预训练模型仅在 GB 级流量上训练，规模不足带来过拟合风险，制约整体性能上限。
+MM4flow 提出面向通用流量分析的多模态预训练模型。它将每条流划分为两种模态——原始字节流与传输模式，分别封装内容信息与行为信息，再通过多阶段框架（预训练 + 任务适配）学习跨模态的通用表示，使同一模型可服务于多种下游分析任务。
+摘要未给出具体指标，核心主张是"多模态 + 大规模预训练"能同时缓解单模态适配性差与 GB 级训练过拟合两个问题，让模型在不同任务间共享知识，从而获得更强的泛化能力与任务迁移能力。
+我的思考：把多模态预训练范式（类似 NLP 的 BERT 路线）引入流量分析是大方向正确的一步——流量数据天然具备"载荷内容 + 时序行为"的双重语义，显式建模比单模态端到端更符合直觉。但流量数据与文本不同，存在加密流量、协议异构、隐私合规等现实约束，预训练语料的规模与多样性从何而来、跨任务评测是否充分，是判断其真实领先程度的关键；"versatile"的宣称需要更多任务覆盖来支撑。
+
+
+#### Styled to Steal: The Overlooked Attack Surface in Email Clients.
+
+- **作者**: Leon Trampert, Daniel Weber, Christian Rossow, Michael Schwarz
+
+- **方向**: 网络与协议安全
+
+- **解读**: 电子邮件至今仍是广泛使用的通信方式，尤其在专业场景中。OpenPGP 与 S/MIME 等标准在兼容现有基础设施的同时提供端到端加密，但其威胁模型假设邮件服务器不可信——这为攻击者创造了在传输过程中实时向加密邮件注入恶意 HTML/CSS 的机会，例如重发泄露的邮件，而终端用户对此攻击面几乎毫无察觉。
+
+作者系统研究邮件客户端如何渲染加密邮件中的 HTML/CSS，考察注入内容能否绕过安全过滤、欺骗 UI 或窃取数据。其思路是把邮件客户端当作浏览器类渲染器进行攻击面分析：利用标准化的样式与布局机制构造混淆与数据外泄载体，评估主流客户端的实际防护边界，从而把"加密即安全"的直觉打破——加密保护的是内容机密性，而非渲染层的完整性。
+
+论文揭示攻击者可在不破坏加密的前提下，通过注入样式代码实施钓鱼、视觉欺骗与信息窃取等攻击，具体影响面取决于客户端对 HTML/CSS 子集的支持与过滤策略。这一定量刻画了端到端加密邮件生态中被长期忽视的薄弱环节，证明"传输安全"与"展示安全"之间存在显著落差。
+
+我的思考：该工作的价值在于把安全分析视角从密码学层下移到渲染层，指出 E2EE 承诺之外的真实攻击面，对 OpenPGP/S/MIME 生态有直接警示意义。局限在于攻击依赖客户端渲染行为与用户交互，真实利用条件尚需更细化的实验支撑；与 Web 安全中 CSS 注入攻击的既有结论存在呼应，未来可结合邮件客户端沙箱与严格内容安全策略（CSP）给出缓解方案。
+
+
+#### Denial of Sequencing Attacks in Ethereum Layer 2 Rollups.
+
+- **作者**: Zihao Li, Zhiyuan Sun, Zheyuan He, Jinzhao Chu, Hao Zhou, Xiapu Luo, Ting Chen, Yinqian Zhang
+
+- **方向**: 网络与协议安全
+
+- **解读**: Layer 2 Rollup 是缓解以太坊可扩展性瓶颈的主流方案，但排序器（sequencer）的集中化设计使其成为拒绝服务攻击的目标：攻击者可用大量无法进入区块的无效交易淹没排序器，耗尽其在交易处理上的计算资源，导致合法用户交易无法被排序与打包，直接威胁 L2 的活性与可用性。
+
+为缓解这一威胁，作者为 L2 引入合法性检查机制，在无效交易到达排序器之前将其过滤掉。方法的核心是在交易进入排序队列的入口处建立预检查层，依据协议规则与状态约束快速判别交易合法性，从而把攻击者的资源消耗转移到廉价、可并行的检查路径上，保护排序器的有限算力。
+
+论文通过原型实现与实验评估了过滤机制的有效性与开销，展示在攻击流量下的交易处理能力对比：合法交易能够保持正常排序，而无效交易被拦截的比例显著提升，排序器资源占用大幅下降，量化了防御带来的吞吐与延迟收益。
+
+我的思考：该工作直面 Rollup 生态中真实且高影响的安全问题，切入点小而准，机制设计务实。局限在于摘要层面的描述较简略，过滤机制的完备性（能否被更复杂伪造交易绕过）与对排序器性能的额外开销尚待细看；与 MEV、交易费用博弈等经济维度结合后，攻击面会更复杂，未来可在去中心化排序器与抗 DoS 证明机制方向上延伸。
+
+
+#### Realizing Corrupted-Shard Tolerance: A Sharding Blockchain with Preserving Global Resilience.
+
+- **作者**: Yizhong Liu, Andi Liu, Zhuocheng Pan, Yuxuan Hu, Jianwei Liu, Song Bian, Yuan Lu, Zhenyu Guan, Dawei Li, Meikang Qiu
+
+- **方向**: 网络与协议安全
+
+- **解读**: 区块链分片通过把网络划分为多个并行分片来提升可扩展性，但依赖拜占庭容错（BFT）协议的现有方案要求很大的分片规模以满足严格安全阈值，限制了扩展收益；而放松安全参数又会导致活性与安全性违规。如何在分片规模缩小的同时保持全局鲁棒性，是分片链落地的核心矛盾。
+
+作者提出 Camael，一个能容忍"分片被攻陷"的安全分片区块链，通过有效的检测与处理机制解决两类违规：针对恶意节点伪造的假违规，采用两阶段报告-确认机制精确识别；针对被掩盖的违规，利用轻量级快照机制高效发现。状态确定流程确保系统整体一致性，恶意节点被准确定罪后触发针对性重配置替换，从而在分片级别容忍敌手。
+
+实验在 4 个区域、2000 台 AWS EC2 节点上开展：与基线 Kronos（NDSS'25）相比吞吐量提升 3.56 倍，达到 109.3 ktx/sec；检测违规仅需 1.64 秒；同时保持全局 1/3 的敌手容忍度，而每个分片可容纳高达 2/3 的恶意节点。
+
+我的思考：Camael 首次在维持全局 1/3 鲁棒性的前提下实现 corrupted-shard 容忍，把检测、定罪与重配置闭环起来，实验规模与量化指标都有说服力，是分片共识的重要进展。局限在于两阶段报告机制引入的通信与延迟开销、轻量快照的同步一致性细节尚需全文验证；与 Kronos 等近期工作的对比也提示该方向竞争激烈，未来可关注跨分片交易与激励兼容性的工程落地。
+
+
+#### A Secure Sequencer and Data Availability Committee for Rollups.
+- **作者**: Margarita Capretto, Martín Ceresa, Antonio Fernández Anta, Pedro Moreno-Sanchez, César Sánchez
+- **方向**: 网络与协议安全
+- **解读**: **问题**：L2 Rollup（Optimium/Validium）为节省 L1 空间只上链批次哈希，需排序器 + 数据可用性委员会（DAC，合称 arranger）把哈希翻译回交易批次。arranger 能同时影响 L2 的安全性与活性：可无视交易、上链不合法批次、拒绝翻译哈希。例如控制 S 个副本后可发布仅自己知道的批次哈希并拒绝披露，配合恶意 STF 上链"盗走全部代币"的区块而无人能挑战。现有 L2 没有任何检测或惩罚 arranger 违约的机制。
+
+**方法**：基于 Refereed Delegation of Computation 提出六类欺诈证明机制（Certifiability、Validity、Integrity×2、Uniqueness、Data availability），由 L1 合约仲裁，两玩家押金博弈（棋盘钟计时）；与现有乐观 Rollup 对任意程序轨迹逐指令仲裁不同，本文对预定义算法的高层模块仲裁，步数更少、更易形式化；配套激励（签名/上链/翻译报酬、罚没押金）；用约 5000 行 LEAN4 机械化证明诚实玩家的必胜策略；分析拜占庭/腐败/诚实细分下的三类对手模型。
+
+**结果**：定理 1：单个诚实代理即可在 L1 证明 arranger 违反安全性质，迫使违约批次连同其 L2 区块被丢弃；对 4096 叶 Merkle 树成员证明，多步成员 FP 每方仅 4 步 vs WASM 轨迹二分的 21 步，一步 FP 仅 1 步；LEAN4 形式化证明单个诚实代理足以阻止错误断言。局限是活性性质（Termination）违反无法在 L1 检测，用户只能直接上链 L1 绕过。
+
+**我的思考**：首次为 arranger（排序器 + DAC）引入欺诈证明与激励并给出 LEAN4 机械验证，把 L2 安全保证从"执行正确性"扩展到"数据提交正确性"；对 Arbitrum Nova 等 Optimium/Validium 有落地价值。局限是属协议设计与形式化工作、无系统性能实验；数据可用性挑战需上链压缩批次（较贵），ZK 条件支付协议在副本沉默时无保证，只能作为回退手段。相比通用执行仲裁，对预定义算法仲裁的模块化思路值得推广。
+- **arXiv PDF**: [A Secure Sequencer and Data Availability Committee for Rollups.](https://arxiv.org/pdf/2509.06614)
+
+#### Training Robust Classifiers for Classifying Encrypted Traffic under Dynamic Network Conditions.
+- **作者**: Yuqi Qing, Qilei Yin, Xinhao Deng, Xiaoli Zhang, Peiyang Li, Zhuotao Liu, Kun Sun, Ke Xu, Qi Li
+- **方向**: 网络与协议安全
+- **解读**:
+现有基于深度学习的加密流量分类方法在真实部署中常因动态网络条件（如环境变化、混淆/obfuscation）而性能显著下降——训练与测试阶段呈现不同的特征模式，导致模型失效。
+
+提出 MetaTraffic，一个基于元学习（meta-learning）的通用深度学习框架，增强有监督流量分类模型对动态条件的鲁棒性。关键观察：同一网络行为在不同条件下共享语义特征，可作为稳定表征。MetaTraffic 通过最小化不同条件下表征方式的差异来学习这类稳定表示，并集成三个创新模块进一步提升效果。
+
+在公开数据集与新的多类型大规模数据集上，MetaTraffic 将准确率提升 8.94%、F1-Macro 提升 12.55%，同时两个退化指标分别下降 28.85% 与 33.52%。
+
+用元学习显式对齐"条件不变表征"直击流量分类部署失效的根因，思路简洁有力，且作为通用框架可叠加于现有模型之上；局限是训练需要覆盖多种条件的多域数据，对训练时未见过的全新条件其泛化能力仍需验证，且摘要对"下降 28.85%/33.52%"两个指标的具体含义交代不清，需全文确认。
+
+
+#### Forward to Hell? On the Potentials of Misusing Transparent DNS Forwarders in Reflective Amplification Attacks.
+- **作者**: Maynard Koch, Florian Dolzmann, Thomas C. Schmidt, Matthias Wählisch
+- **方向**: 网络与协议安全
+- **解读**:
+DNS 基础设施因促成反射放大攻击而臭名昭著，业界已部署服务器屏蔽、访问控制、限速与协议限制等多种反制措施，但威胁依然随着服务器部署而持续存在。本文报告并评估一个常被忽视的威胁源：透明转发器（transparent forwarders）——一类广泛部署但功能不完整的组件，它们在转发请求时不重建带有正确源地址的数据包。
+
+这一缺陷使得透明转发器把流量"喂给"（主要是 anycast 部署的）开放递归解析器，令后者被无辜卷入分布式拒绝服务（DDoS）攻击。作者展示了如何借此对互联网基础设施构成严重威胁：透明转发器可轻易绕过限速机制，并借助 anycast 获得额外且可扩展的放大效果，经验验证其放大行为可达 14 倍；它们还能帮助攻击者绕过保护屏蔽实体的防火墙规则，使本应被隔离的实体成为全球攻击面的一部分。
+
+摘要未给出全局扫描规模与受影响转发器数量的量化数据，核心结论为放大因子最高 14、可规避限速并扩大攻击面。
+
+我的思考：透明转发器是 DNS 生态中"功能残缺却广泛存在"的组件，其不重建源地址的行为在常态下只是低效，在攻击者手里却成了天然的放大与流量整形工具——这再次印证"中间设备的安全语义必须完整"的原则。与 memcached、NTP 等经典 DRDoS 向量相比，本工作的独特之处在于攻击者不需要控制开放解析器，只需利用转发器的转发行为；anycast 放大因子 14 的实证很有说服力。缓解方向（转发器规范化源地址、解析器端源验证）成本可控，值得部署方重视。
+
+
+#### Fingerprinting Deep Packet Inspection Devices by their Ambiguities.
+- **作者**: Diwen Xue, Armin Huremagic, Wayne Wang, Ram Sundara Raman, Roya Ensafi
+- **方向**: 网络与协议安全
+- **解读**:
+全球用户正面临日益加剧的网络干扰（审查、限速、拦截），其主要推手是深度包检测（DPI）设备的商品化与普及——干扰能力从少数资源雄厚的国家行为体扩散到几乎任何运营商。然而学界对 DPI 设备及其在互联网上的部署状况了解甚少：作为中间设备，DPI 不响应常规的主机扫描；厂商又积极掩盖产品信息，进一步阻碍测量工作。本文试图破解这一测量困境。
+
+核心思路是"利用 DPI 的歧义性进行指纹识别"：向设备发送精心构造、存在解析歧义的流量，观察其处理行为（放行/拦截/改写）的差异，从而在无主动响应的情况下推断设备的存在、类型与配置。
+
+摘要截断，未提供设备种类数量、指纹准确率等量化结果，贡献集中在方法论的建立与初步部署测量。
+
+我的思考：DPI 的"隐身"特性使它成为网络测量的盲区，而歧义探测（ambiguity probing）正是绕过"不响应"这一障碍的聪明策略——协议解析器的行为差异天然暴露其实现指纹，类似 TLS 指纹与 TCP/IP 栈指纹的思路。Ensafi 团队在审查测量（如 ICLab 系列）上积累深厚，其方法论可信度较高。局限：歧义探测的覆盖率受限于协议种类与设备策略配置差异，量化评估需原文数据；该工作对透明度研究与对抗审查工具设计都有直接价值。
+
+
+#### Right the Ship: Assessing the Legitimacy of Invalid Routes in RPKI.
+- **作者**: Andong Chen, Yangyang Wang, Jia Zhang, Mingwei Xu
+- **方向**: 网络与协议安全
+- **解读**:
+资源公钥基础设施（RPKI）通过提供 IP 前缀与其授权来源自治系统（AS）之间的安全映射来防止前缀劫持。近年来 RPKI 的路径来源验证（ROV）部署显著增长，但全球路由表中仍有超过 40% 的路由缺乏 RPKI 保护。其中一个关键原因是部分网络不愿部署 ROV：它们担心被判定为 invalid 的路由可能是合法的，过滤这些路由会损害网络服务质量，尤其影响连通性。
+
+本文针对这一核心顾虑，系统性评估 ROV-invalid 路由的合法性——即被验证软件标记为无效的路由，究竟有多少实际上是由合法的来源 AS 通告的。通过量化"无效但合法"路由的比例与分布，为运营商决定是否启用严格过滤模式提供事实依据。
+
+摘要未给出具体的量化结果，但问题的核心数据点已明确：全球超过 40% 的路由仍无 RPKI 保护，而对误过滤的担忧正是部署意愿低下的重要原因之一。研究预期通过合法性评估缓解这一"信任障碍"。
+
+我的思考：RPKI 的采用率瓶颈从来不只是技术问题，而是"过滤风险 vs 劫持风险"的运营权衡：若 invalid 路由中相当比例确为合法，严格 ROV 将造成真实断连。这类量化评估研究对社区决策（如是否默认启用 ROA 之外的宽松策略、是否推广"Invalid 但可见"的运营模式）有直接价值。局限在于合法性判断依赖对路由通告来源的历史与上下文分析，误判风险依然存在；其方法论若能与劫持事件数据集交叉验证，说服力会更强。
+
+
+#### Exploring and Analyzing Cross Layer DoS Attack Against UDP-based Services on Linux.
+- **作者**: Dashuai Wu, Yunyi Zhang, Baojun Liu, Xiang Li, Eihal Alowaisheq, Haixin Duan
+- **方向**: 网络与协议安全
+- **解读**:
+TCP/IP 协议栈的分层架构使各层能够独立灵活实现，但当共享资源在不同层之间管理不当时，会引入潜在安全风险。本文研究一个被忽视的跨层资源风险，称为 SocketFilled：利用传输层 UDP 发送缓冲的不安全使用，由链路层发起攻击，导致上层应用层的响应包中断。为探究协议栈实现中 DoS 漏洞的根源，作者系统分析了标准、地址解析流程，并审查了主流开源操作系统。
+
+作者在多种系统（如 Linux、FreeBSD）与多种服务（DNS、QUIC）上进行了全面的实验评估。结果显示，最新版本的 BIND9、PowerDNS、Nginx 等软件均受影响，造成显著丢包甚至完全中断。
+
+野外影响范围估算表明：SocketFilled 影响 17.3% 的开放解析器、Tranco Top 100K 域名中 54.3% 的权威服务器，以及这些知名域名中 3.8% 的 HTTP/3 服务（在排除云服务器影响后，可能包括 Bing、Amazon、Shopee 等）。作者已向相关社区进行负责任披露，并强调机制攻击的有效性，呼吁关注复杂协议栈实现中的跨层资源管理。
+
+我的思考：SocketFilled 属于"共享资源耗尽"家族，但跨层视角（链路层地址解析流程与传输层发送缓冲的交互）是此前研究较少触及的盲区，且影响面（超半数顶级域名权威服务器）说明这不是边缘问题。与经典 SYN flood 相比，这类攻击利用的是协议栈内部实现细节而非协议语义，防御需在内核层面对资源限额做跨层协调。局限在于实验主要覆盖 Linux 系，其他操作系统（如 Windows、BSD 变体）的受影响程度未知；DNS/HTTP3 之外的 UDP 服务也待验证。
+
+
+#### Off-Path TCP Exploits: PMTUD Breaks TCP Connection Isolation in IP Address Sharing Scenarios.
+- **作者**: Xuewei Feng, Zhaoxi Li, Qi Li, Ziqiang Wang, Kun Sun, Ke Xu
+- **方向**: 网络与协议安全
+- **解读**:
+路径 MTU 发现（PMTUD）与 IP 地址共享是现代互联网基础设施的组成部分。本文研究 PMTUD 在普遍存在的地址共享实践中的安全漏洞：PMTUD 在设计上未充分处理地址共享场景，使攻击者能够执行 off-path TCP 劫持攻击。攻击过程是：通过观察服务器为某个公开共享地址（多个设备共用）确定的路径 MTU 值，互联网上的攻击者可与恶意设备协作，推断同一地址上其他合法设备所建立 TCP 连接的序列号，进而实施攻击，严重危害受影响连接。
+
+攻击分两步：先识别源自共享地址的目标连接，再推断该连接的序列号。作者在各种网络配置下全面评估了攻击影响，实验显示平均执行时间为 220 秒，成功率 70%。案例研究涵盖 SSH DoS、FTP 流量投毒、HTTP 注入等，凸显其对各类应用的威胁。
+
+作者还在 50 个真实世界的地址共享网络（包括 Wi-Fi、VPN、5G）中评估，发现其中 38 个存在漏洞。最后，他们负责任地披露了漏洞，并获得 IETF、Linux、Cisco 等组织的认可，同时提出了相应缓解对策。
+
+我的思考：off-path TCP 攻击通常需要注入或观测流量，而本文利用 PMTUD 的路径 MTU 值作为侧信道，把"共享地址"这一常见部署转化为序列号推断的跳板，攻击链精巧且成功率高（70%）。值得注意的风险在于：IP 共享（NAT、运营商级 NAT、5G）在现实中极普遍，而 MTU 行为难以按连接隔离，修复涉及协议层与实现层协同（IETF 层面已有关注）。局限是攻击依赖恶意设备协作，威胁模型要求共享地址内部存在共谋者；但 SSH/FTP/HTTP 场景案例足以证明其现实威胁。
+
+
+#### SISTAR: An Efficient DDoS Detection and Mitigation Framework Utilizing Programmable Data Planes.
+- **作者**: Junjie Hu, Feng Guo, Qihang Zhou, Yixin Zhang, Zibo Gao, Yinglong Han, Zhiqiang Lv
+- **方向**: 网络与协议安全
+- **解读**:
+DDoS 攻击已成为最严重的网络安全威胁之一，尤其是应用层攻击。可编程数据平面（PDP）的出现使保持线速吞吐的同时实现高检测率成为可能，成为应对 DDoS 的关键技术。然而，由于攻击的复杂性，检测仍属资源密集型，整体网络防御效果受限；这一限制在需要协调防御的集群环境中尤为突出。本文提出 SISTAR，一个利用 PDP 进行高效 DDoS 检测与缓解的创新框架。
+
+SISTAR 集成了改进的决策树-约束阈值分割（DT-CTS）模型，在最小化硬件资源占用（如交换机内存与处理资源）的同时实现高检测精度。通过跨多台交换机的分布式部署，框架增强了对攻击的弹性，支持快速响应；结合告警回推（alert pushback）机制，进一步减少攻击引起的资源消耗。
+
+作者实现了原型并在真实测试平台上评估性能，实验结果显示其在效率上超越现有模型；配合告警回推机制后，能有效降低 DDoS 造成的资源消耗。摘要未给出具体数值，但宣称在检测效率与资源开销上优于已有方案。
+
+我的思考：应用层 DDoS 的难点在于流量特征与正常流量高度相似，且需在交换机线速下完成检测。SISTAR 的 DT-CTS 把决策树检测与硬件友好的阈值分割结合，是面向 P4 等数据平面约束的务实设计；分布式协调与告警回推解决集群场景的单点局限。局限在于摘要缺乏量化对比（误报率、吞吐、资源占用），评估仅限测试平台；机器学习模型在可编程交换机上的资源预算与更新机制，仍是其规模化部署的关键工程问题。
+
+
+#### ScannerGrouper: A Generalizable and Effective Scanning Organization Identification System Toward the Open World.
+- **作者**: Xin He, Enhuan Dong, Jiyuan Han, Zhiliang Wang, Hui Zhang, Liang Liu, Lianyi Sun, Supei Zhang, Pengfei Xue, Guanglei Song, Han Li, Xiaowen Quan, Jiahai Yang
+- **方向**: 网络与协议安全
+- **解读**:
+近年来，许多扫描组织部署大量扫描器主动探测互联网，识别这些扫描活动背后的组织具有重要价值。对扫描来源的分析已有若干研究，但据作者所知，在真实世界场景中有效且通用地识别扫描器所属组织的问题仍未解决——尤其是面对"开放世界"：新组织不断出现、已有组织行为随时间漂移、样本类别不固定。
+
+本文提出 ScannerGrouper，一个面向开放世界的通用且有效的扫描组织识别系统。方法上可推断其采用基于扫描行为特征的聚类/分类框架，并针对开放世界设定处理未知组织类别与概念漂移问题，从而在无需预知全部组织集合的情况下完成识别。
+
+摘要未给出量化结果，其宣称的贡献在于"通用性"与"有效性"——即跨不同扫描器类型、不同时间窗口的泛化识别能力，这是此前研究的主要短板。
+
+我的思考：扫描组织归因的价值在于威胁情报：识别出扫描来自哪个组织（研究机构、商业测绘、恶意团伙），可支撑网络防御的优先级决策。开放世界设定是这类工作的分水岭——封闭世界分类器面对新组织会强制误分。ScannerGrouper 的难点在于特征工程：仅靠源 IP 聚类易碎片化，而行为指纹（端口模式、速率、目标分布）又面临反侦察干扰。期待正文给出其面对未知组织与行为漂移时的量化表现。
+
+
+#### Demo: Stopping Production Testing: A Graphical RPKI Test-Suite.
+- **作者**: Tobias Kirsch, Haya Schulmann, Niklas Vogel
+- **方向**: 网络与协议安全
+- **解读**:
+RPKI 正越来越多地保护全球 BGP 路由，主要参与者也在推动大规模采用。RPKI 的保护依赖于对象的正确发布与有效性：如果某个前缀没有有效的覆盖对象（例如对象无效或过期），该前缀就无法免受劫持。与此同时，发布对象的 AS 缺乏任何关于其对象是否被所有验证软件正确处理的反馈。这反复导致运营问题，其中一些问题至今仍持续存在；问题往往只在生产环境中、在已对路由造成损害后才被发现。
+
+一个突出案例是 2023 年 Amazon 的事件：特定验证软件实现导致其 6000 个前缀暴露在劫持风险之下。本文提出一套新颖的工具套件，允许对 RPKI 对象进行全面测试，使运营商能够在投入生产前发现错误配置：工具可解析任意 DER/base64 编码的对象、编辑内容结构，并针对现行实现进行实时测试，以探测不一致的结果、错误乃至漏洞。
+
+工具以开源形式发布，并提供托管 Web 应用供社区使用。该工作为保障配置弹性、促进 RPKI 安全性的未来研究奠定了重要基础。
+
+我的思考：RPKI 的信任链依赖验证器对所有对象做出一致、正确的判定，而"验证器实现差异"正是现实中最隐蔽的失效模式——Amazon 事件表明单一验证软件的行为差异即可使大量前缀失去保护。此演示的价值在于把"生产事故后修复"前移为"上线前测试"，是 RPKI 检查工具的工程化升级。局限在于测试覆盖取决于所支持的验证软件集合与对象类型；将结果反哺验证器实现规范化（如一致性测试套件）或许是更有深远影响的延伸。
+
+
+#### Poster: ERIS: Evaluating ROV via ICMPv6 Rate Limiting Side Channels.
+- **作者**: Renrui Tian; Yahui Li; Han Zhang; Xinzhe Liu; Xia Yin; Xingang Shi; Zhiliang Wang; Jilong Wang
+- **方向**: 网络与协议安全
+- **解读**:
+资源公钥基础设施（RPKI）通过启用路由来源验证（ROV）来抵御 BGP 前缀劫持，是当前最重要的路由安全机制之一。然而 ROV 的真实部署率有限，严重削弱了 RPKI 的实际防护效果，因此测量 ROV 的部署与实践状况对评估其影响至关重要。论文指出现有测量方法存在明显短板：依赖控制面数据的方法在覆盖范围与准确性上受限，而另一些方法需要受控 IP 前缀和大规模探测点；此外绝大多数研究聚焦 IPv4，IPv6 下的 ROV 状态几乎未被探索。
+
+ERIS 的核心思路是利用 ICMPv6 限速（rate limiting）行为作为侧信道来评估 ROV：当路由器对来源不合法的前缀执行过滤时，其 ICMPv6 响应（如不可达或超限）的限速特征会与未启用 ROV 的情况不同，通过观察这些细微的速率特征即可间接推断目标网络是否执行了 ROV 校验，从而避免了对受控前缀和大规模探测点的依赖。
+
+作为海报论文，摘要未给出量化结果，贡献主要在方法论层面：为 IPv6 环境下的 ROV 部署测量提供了一条无需受控资源的被动式路径，填补了该方向的空白。
+
+我的思考：利用协议限速机制做侧信道测量思路巧妙，属于"测量即攻击面"的典型范式，成本低、可扩展性强。但其可靠性取决于 ICMPv6 限速行为在不同厂商实现与网络策略下的一致性，误判风险需要与地面真值对照验证；同时单点测量难以区分"未启用 ROV"与"其他过滤策略"。总体而言，该方法是对现有 ROV 测量的有力补充，而非替代。
+
+
+#### Poster: We must talk about RPKI Repositories.
+- **作者**: Haya Schulmann; Niklas Vogel
+- **方向**: 网络与协议安全
+- **解读**:
+资源公钥基础设施（RPKI）日益成为抵御路由攻击的关键机制，而 RPKI 的安全保障建立在 RPKI 对象的机密性与可用性之上——这些对象（如 ROA、证书）存储在公开的 RPKI 仓库（repositories）中。论文指出，尽管这些仓库处于整个体系的核心位置，其技术细节却鲜为人知：它们使用哪些实现？软件是否得到维护与及时更新？是否存在长期未修复的漏洞？回答这些问题对于评估当前 RPKI 架构的韧性至关重要。
+
+方法上，该工作对 RPKI 仓库展开系统性测量研究：识别实际运行的仓库实现与版本、检查其软件维护状态与已知漏洞暴露情况，从而刻画仓库生态的技术构成与安全状况。
+
+作为海报论文，摘要未给出量化结果，属于问题驱动型的实证测量工作。
+
+我的思考：RPKI 的研究多聚焦于 ROV 部署率、验证器行为或证书管理，而仓库层（RPKI 对象存储与分发的关键链路）确实是盲区。若仓库实现集中度极高且维护滞后，则单点漏洞可能威胁整个 RPKI 体系的可用性——这正是该工作价值所在。结合同一团队的系列 RPKI 测量工作，本研究的差异化在于把安全审计视角对准"存储与分发"环节。局限在于测量只能反映可达仓库，未公开或受控的仓库不在视野内；后续若能结合漏洞验证与影响评估，将更具说服力。
+
+
+#### Poster: The Rocky Road Towards RPKI Algorithm Agility.
+- **作者**: Katharina Miesch; Haya Schulmann; Niklas Vogel
+- **方向**: 网络与协议安全
+- **解读**:
+资源公钥基础设施（RPKI）已保护约 50% 的已宣告 BGP 前缀，其中 28% 的系统在路由决策中强制执行 RPKI 有效性校验。RPKI 将前缀所有权绑定到证书内的公钥，而证书由签发方签名；论文指出，当前 RPKI 的签名与密钥算法被限定为 RSA-2048，禁止其他算法与密钥长度——这一"算法单一性"制约了系统的效率与未来演进空间。
+
+方法上，作者通过实证展示算法灵活性（algorithm agility）可带来的收益：若允许更小、更高效的椭圆曲线密码（ECC）等算法，验证开销与带宽占用将显著下降。论文进一步论证，向量子安全（quantum-secure）算法的迁移在当前约束下几乎不可行——由于带宽限制、验证开销以及补丁管理问题，现行"只支持 RSA-2048"的架构将成为向抗量子密码过渡的瓶颈。
+
+作为海报论文，摘要未给出完整量化数据，但指出"从观测中"得出上述结论。
+
+我的思考：算法敏捷性（crypto agility）是基础设施安全的经典难题，RPKI 是典型案例：单一算法虽简化了互操作，却同时锁死了效率优化与抗量子迁移两条路。该工作的价值在于用测量数据把"算法迁移不可行"从抽象担忧变成可论证的工程结论。局限在于：摘要信息有限，ECC 带来的具体增益幅度与量子迁移的量化阻碍未展示；此外算法多元化本身会引入新的互操作与信任锚管理复杂度，收益与成本的全面权衡仍需完整论文支撑。
+
+
+#### Poster: Exploring the Landscape of RPKI Relying Parties.
+- **作者**: Donika Mirdita; Haya Schulmann; Michael Waidner
+- **方向**: 网络与协议安全
+- **解读**:
+资源公钥基础设施（RPKI）是当前全球关键互联网基础设施中部署最成功的路由防御机制：近期研究表明其已覆盖超过 55% 的全球前缀资源，且至少 27% 的协议强制执行 RPKI 校验。然而，负责在路由器上收集并执行 RPKI 决策的关键组件——依赖方（Relying Party, RP）——此前从未被系统研究过。论文首次调查 RP 的部署格局：其地理位置分布、参数配置、漏洞分布，并描述相隔三年的两个测量周期内的演化趋势。
+
+方法上，作者对 RP 生态开展大规模测量，通过探索性分析刻画网络运营商的偏好配置模式。关键发现包括：三年间 RP 流量增长了 45%，而其中 89% 的流量来自单一软件类型——揭示了明显的实现集中度。
+
+这一集中度发现对 RPKI 生态韧性构成警示：若主流 RP 软件出现漏洞或故障，将同时影响绝大多数 RPKI 强制执行路径。
+
+我的思考：RP 是 RPKI 信任链中"最后一公里"的执行者，却长期处于研究盲区，本工作填补了重要空白。45% 流量增长反映 RPKI 采纳加速，而 89% 单一实现集中度则是典型"多样性缺失"风险，与既有对 CA、仓库集中度的担忧形成互补图景。局限在于测量只能覆盖可观测的 RP 行为，参数配置推断也可能存在误判。总体而言，这是对 RPKI 生态韧性研究的重要实证增量，其集中度结论对协议社区与部署方都有明确的警示价值。
+
+
+#### WATCH '25: First Workshop on Analytics, Telemetry, and Cybersecurity for HPCC.
+
+- **作者**: Massimo Cafaro; Eric Chan-Tin; Jerry Chou; Jinoh Kim
+- **方向**: 网络与协议安全
+- **解读**:
+（无摘要，据标题推断）高性能计算与通信（HPCC）环境规模庞大、架构复杂，其安全态势感知与传统 IT 系统差异显著，数据分析与遥测技术是发现异常与攻击的关键手段。该首届研讨会旨在为 HPCC 场景下的分析、遥测与网络安全研究提供专门交流平台。
+
+方法上，据标题推断，工作坊将聚焦如何利用系统遥测数据与分析方法实现 HPCC 环境的威胁检测、性能监控与安全防御，并汇聚相关研究者分享经验与工具。
+
+结果：无具体数据可引用，论文细节无法从标题进一步确认。
+
+我的思考：HPC 安全是相对细分但重要度上升的领域——超算集群长期被忽视安全投入，而其算力与数据价值极高，遥测驱动的异常检测是务实路线。组织者中有多位网络测量与分布式系统方向学者，技术底色可靠；作为首届会议，其价值更多在于为这一细分社区建立常态交流机制。此外，遥测与分析数据本身也可能成为攻击目标（对手可伪造监控数据以掩盖入侵），数据完整性与分析结果的可信度同样是值得纳入议程的新问题。
+
+### 密码学与协议（85 篇）
+
+#### Formally Verified Correctness Bounds for Lattice-Based Cryptography.
+
+- **作者**: Manuel Barbosa, Matthias J. Kannwischer, Thing-Han Lim, Peter Schwabe, Pierre-Yves Strub
+- **方向**: 密码学与协议
+- **解读**: 
+基于Fujisaki-Okamoto变换的KEM安全性直接依赖解密错误概率被界定在一个极小实数范围内，因此解密错误率上界是格基密码正确性论证的基石；文献中这些界往往通过启发式近似获得，缺乏严格的形式化验证，ML-KEM等标准化方案的数学根基存在隐患。
+方法上，本文提出形式化验证格基KEM解密错误统计/概率上界的方法，将文献中对ML-KEM所依赖PKE加密方案进行启发式近似的论证形式化，确认其给出的上界正确；并以FrodoKEM作为额外案例，展示无需启发式近似的验证途径，还讨论了其他非近似的错误界推导方法。
+结果方面，作者确认了文献中用于ML-KEM的启发式近似上界是正确的，并在FrodoKEM上展示了该方法可推广、可脱离启发式假设完成验证（摘要未给出具体数值界）。
+我的思考：用形式化验证支撑密码方案的"正确性常数"，是NIST标准化路线下高价值的基础性工作——启发式近似即便在数学上"碰巧对了"，其证明缺口也是隐患。局限是形式化成本高、每套方案需定制，正文中的工具链与自动化程度决定其推广性。此类工作与侧信道安全证明一道，把标准密码方案推向"可证明正确"的新基准。
+
+
+#### Generic Anonymity Wrapper for Messaging Protocols.
+
+- **作者**: Lea Thiemt, Paul Rösler, Alexander Bienstock, Rolfe Schmidt, Yevgeniy Dodis
+- **方向**: 密码学与协议
+- **解读**: 
+现代即时通讯用端到端加密保护消息内容，即使密钥短暂泄露内容也安全；但加密挡不住元数据追踪——序列号、公钥、明文标识等元数据泄露用户的社交网络与通信模式。现有隐藏元数据的方案（Signal的Sealed Sender、MLS类构造Hashimoto等CCS 2022、网状网络Bienstock 2023）效率较低且只为特定场景定制，且所有实用方案在密钥泄露时都会暴露关键信息。
+方法上，本文提出一个通用的匿名性包装器（generic anonymity wrapper），可套接在不同消息协议之上提供元数据隐藏，并目标在密钥泄露场景下维持更强保障（基于摘要推断）。
+结果方面，该构造面向通用性设计，旨在以更低开销为各类消息协议统一提供匿名性，并改善密钥暴露场景下的元数据安全（具体性能以论文正文为准）。
+我的思考：现有匿名消息方案"一协议一方案"的局面导致效率低、复用难，通用包装器若能成立，可让Signal、MLS等协议按需叠加元数据保护，工程价值显著。关键考验在于通用性是否牺牲特定场景的优化空间，以及"密钥泄露下的保障"如何定义与证明。该工作是匿名通信形式化研究的自然延续。
+
+
+#### Trout: Two-Round Threshold ECDSA from Class Groups.
+
+- **作者**: Hila Dahari-Garbian, Ariel Nof, Luke Parker
+- **方向**: 密码学与协议
+- **解读**: 
+门限ECDSA允许多方协作签名而不暴露私钥，是多签钱包、去中心化托管的核心原语；但已有分布式ECDSA协议多为两轮通信加高带宽，或限制门限结构，难以同时满足任意门限、低通信与故障可追责。
+方法上，Trout（Two-ROUnd Threshold）是首个支持任意门限的分布式两轮ECDSA签名协议：每方上传带宽恒定、处理时间与参与方数量线性相关；并实现了可识别中止（Identifiable Abort, IA）——协议因故障无法完成时，各方能把失败归因到具体参与方；且不需要可信设置。
+结果方面，Trout达成两轮通信、常数带宽、线性计算与可识别中止的组合，且免除可信设置，显著优于此前协议在门限与轮次上的限制（摘要未给出具体性能数字）。
+我的思考："任意门限+两轮+IA+无可信设置"是一个很紧的组合目标，此前工作往往只能做到其中几项，尤其是IA通常需要额外轮次或牺牲效率；基于类群（class groups）的构造避免了可信设置，理论贡献清晰。局限是协议能否支撑大规模参与方与真实网络延迟下的实际吞吐需实现验证；与门限Schnorr相比，ECDSA的非线性特性使分布式构造本就困难，Trout填补了实用空白。
+
+
+#### Encrypted Matrix-Vector Products from Secret Dual Codes.
+
+- **作者**: Fabrice Benhamouda, Caicai Chen, Shai Halevi, Yuval Ishai, Hugo Krawczyk, Tamer Mour, Tal Rabin, Alon Rosen
+- **方向**: 密码学与协议
+- **解读**: 
+高效安全计算需要支持"加密矩阵-向量乘"（EMVP）这样的批处理原语：客户端离线上传加密矩阵，服务器在线对多个查询向量求积，全程不泄露矩阵与查询内容，输出可安全共享。
+方法上，论文基于秘密对偶码（secret dual codes）构造EMVP：离线阶段客户端上传矩阵M（属于有限域F的m×ℓ）的加密形式，仅保留短密钥；服务器存储M；在线阶段客户端反复发送查询向量q_i（F的ℓ维）的加密，服务器可本地计算紧凑共享的M·q_i，客户端学不到矩阵信息，共享输出可被揭示或交给另一协议继续处理。
+结果方面，该构造实现离线/在线分离的EMVP：服务器在无交互的情况下本地计算乘积的紧凑份额，支持重复查询，通信与存储代价受短密钥与紧凑共享的约束（摘要未给出具体复杂度数字）。
+我的思考：EMVP把"昂贵的矩阵乘法"转化为"一次性离线预处理+在线本地计算"，正是安全推理与隐私查询场景渴求的形态；秘密对偶码路线在理论上连接了编码理论与MPC，思路优雅。局限是维度与码的参数选择决定实际效率，通用矩阵上的性能与同态加密方案相比仍需实现验证。作为理论原语，其影响在于为上层协议提供干净接口。
+
+
+#### KZH-Fold: Accountable Voting from Sublinear Accumulation.
+
+- **作者**: George Kadianakis, Arantxa Zapico, Hossein Hafezi, Benedikt Bünz
+- **方向**: 密码学与协议
+- **解读**: 
+累加方案（accumulation schemes）比递归SNARK开销更低，可实现分布式与增量可验证计算；但现有常数规模验证器的累加器判定器（decider）是线性规模的，生成的证明在带宽受限场景（如可追责投票）中不实用。
+方法上，论文提出：(I) 新的多项式承诺方案KZH；(II) KZH-fold，首个具有次线性规模验证器（仅3次群标量乘）与O(n^{1/2})累加器规模及判定时间的方案，并可推广到k·n^{1/k}复杂度；(III) 利用BCLMS编译器构建具有次线性判定器的IVC/PCD证明系统；(IV) 提出非均匀IVC新方法，单步证明成本与最大指令规模成正比。
+结果方面，KZH-fold实现验证器3次群标量乘、累加器与判定器O(n^{1/2})（推广后k·n^{1/k}），并以之为基础构建面向可追责投票的带宽高效IVC/PCD系统。
+我的思考：把累加器判定从线性压到次线性是递归证明领域的关键瓶颈突破——判定器越小，链式证明越短，落地应用（投票、rollup）的带宽越可控。KZH本身作为承诺方案的通用性也是加分项。局限是次线性常数与具体电路、Fiat-Shamir实例化的安全性需实现与审计验证；与Nova等工程成熟的累加方案相比，实际吞吐是最终裁判。
+
+
+#### SyRA: Sybil-Resilient Anonymous Signatures with Applications to Decentralized Identity.
+
+- **作者**: Elizabeth C. Crites, Aggelos Kiayias, Markulf Kohlweiss, Amirreza Sarencheh
+- **方向**: 密码学与协议
+- **解读**: 
+去中心化身份需要解决女巫攻击（一人多身份）与隐私的张力：凭证体系要么暴露真实身份、要么允许无限伪造身份。论文研究女巫弹性匿名（Sybil-Resilient Anonymous, SyRA）签名：获凭证用户可按需为任意上下文生成不可关联的假名并以其名义签名。
+方法上，SyRA允许分布式签发者把低熵的传统身份/人格标识符转换为唯一关联的高伪熵密钥，用于在各上下文生成假名，达成三个目标：1) 女巫弹性——每个用户至多拥有一个数字身份；2) 匿名性——不泄露用户真实身份信息；3) 非交互式上下文切换——用户可跨上下文自行创建凭证。
+结果方面，SyRA同时实现女巫弹性、匿名性与非交互上下文切换三个目标，为去中心化身份提供一次性注册、多场景匿名的密码学基础设施（摘要未给出具体性能数据）。
+我的思考：SyRA精准击中DeFi/DAO治理与去中心化身份的核心矛盾——既要"一人一票"式的女巫防护，又不牺牲隐私。低熵身份到高伪熵假名密钥的转换是关键创新点，使现实世界的实名凭证能匿名化复用。局限是分布式签发流程的可用性、以及女巫弹性强度依赖签发机构对身份源的把关；该原语对匿名投票、空投防刷、声誉系统均有直接应用前景。
+
+
+#### Surpassing the Word Size Limitation of TFHE with Noise Calibration.
+
+- **作者**: Takumi Nishimura, Kazunari Tozawa, Kunihiko Sadakane
+- **方向**: 密码学与协议
+- **解读**: 
+环面全同态加密（TFHE）以低计算成本与简单设置著称，其可编程自举（PBS）能在小定义域上高效求值任意函数；但PBS的定义域受TFHE字长限制（为保安全不可回避），限制了函数规模的可扩展性。既有方案要么依赖昂贵的电路自举（垂直打包，Chillotti等2020），要么引入显著开销（树方法，Guimarães等2021）。
+方法上，本文提出基于噪声校准（noise calibration）的方法突破TFHE字长限制：通过精细控制与管理自举过程中的噪声增长，使PBS能支撑更大定义域的函数求值，避免或减轻对电路自举的依赖。
+结果方面，与垂直打包和树方法相比，噪声校准路线在扩展PBS定义域的同时控制开销，实现更高效的超字长函数求值（具体性能对比以论文正文为准）。
+我的思考：PBS是TFHE实用性的心脏，其"小定义域"限制一直把许多应用挡在门外；噪声校准比电路自举更轻量，方向务实。关键问题是校准带来的噪声预算管理是否影响安全性余量、以及在最大字长与精度上的收益边界。若能显著拓宽PBS定义域且不牺牲安全参数，将对FHE应用开发（比较、查找表、神经网络）产生直接推动。
+
+
+#### QV-net: Decentralized Self-Tallying Quadratic Voting with Maximal Ballot Secrecy.
+
+- **作者**: Zibo Zhou, Zongyang Zhang, Feng Hao, Bowen Zheng, Zulkarnaim Masyhur
+- **方向**: 密码学与协议
+- **解读**: 
+去中心化电子投票依托区块链实现无受信中心的透明选举，DAO治理依赖链上代币投票；二次投票（QV）通过边际成本递增机制抑制大额持币者支配，已被许多DAO采用。但现网QV系统以明文公开选票与数字签名，任何人的选择都暴露，损害投票者隐私并影响诚实参与；已有密码学加密方案又依赖中心化计票机构。
+方法上，QV-net提出去中心化的自计票（self-tallying）二次投票协议，达到最大选票保密性（maximal ballot secrecy）：无需可信计票权威，投票结束后系统可公开自计票，同时最大化选票内容的保密。
+结果方面，该协议在无中心计票机构的前提下实现自计票与最大选票保密，兼顾DAO二次投票的公平性与隐私（具体协议效率与安全性证明以论文正文为准）。
+我的思考：自计票与最大保密性在去中心化环境下很难兼得——自计票要求选票可聚合、保密性要求选票不可见，QV-net若同时成立则是DAO治理密码学的实质进步。风险在于最大保密性通常伴随"弃权或撤销困难"与合谋模型限制，且区块链上的计算/存储成本需权衡。该工作与KZH-Fold（可追责投票）互为补充，共同推动隐私投票落地。
+
+#### RingSG: Optimal Secure Vertex-Centric Computation for Collaborative Graph Processing.
+- **作者**: Zhenhua Zou, Zhuotao Liu, Jinyong Shan, Qi Li, Ke Xu, Mingwei Xu
+- **方向**: 密码学与协议
+- **解读**: 协作图计算指多方对互联图数据做联合分析，既要用到各方图数据又需保护隐私；现有方法以安全多方计算（MPC）实现 vertex-centric 抽象，但因某些计算密集的密码学构造，最先进方案在通信复杂度上渐近次优，实际开销显著。
+- 论文提出 RingSG，号称首个在 MPC 顶点中心抽象下达到最优通信/计算复杂度的协作图处理系统。其核心是 Ring-ScatterGather 新范式，能够避开极昂贵的操作（如 oblivious sort），同时保证整体复杂度最优；摘要指出这是其达到最优性的关键归因。
+- 摘要未给出量化数据（原文截断），主要结论是 RingSG 相对 SOTA 在渐近通信/计算复杂度上的最优性，以及由此带来的实际开销下降。
+- 把图处理算法与 MPC 深度融合、以"避免昂贵原语"的思路达成渐近最优，是清晰的理论贡献，对隐私保护的图分析（社交网络、金融网络等）有应用价值；但真实系统的端到端开销、可扩展性与多方部署成本仍需原文实验支撑，与同期 MPC 图处理系统的实测对比也值得关注。
+
+
+#### Posterior Security: Anonymity and Message Hiding of Standard Signatures.
+- **作者**: Tsz Hon Yuen, Ying-Teng Chen, Shimin Pan, Jiangshan Yu, Joseph K. Liu
+- **方向**: 密码学与协议
+- **解读**: 论文引入数字签名的"后验安全"（posterior security）概念：指原始签名生成之后附加的额外特性。动机场景是用户把私钥存放在安全硬件中、只能通过标准化接口获得标准签名，因此无法在生成阶段获得环签名、盲签名等高级功能。
+- 方法上考虑两种后验特性：匿名性（anonymity）与消息隐藏（message hiding），即在不改变签名生成流程的前提下，对已生成的标准签名做后处理/转换，使其获得这些额外属性。
+- 摘要未给出量化结果（原文截断）；贡献主要在于提出"后验安全"这一新概念框架并给出相应构造，使硬件受限环境也能享受高级签名特性。
+- 该工作的概念切入点新颖：把高级特性从"生成阶段"挪到"后验阶段"，贴合安全硬件与标准化接口的现实约束；其与环签名、盲签名、可撤销匿名等既有原语的关系与效率对比是评价关键，若能证明后验变换几乎零成本，则对硬件钱包等场景很有吸引力。
+
+
+#### LZKSA: Lattice-Based Special Zero-Knowledge Proofs for Secure Aggregation's Input Verification.
+- **作者**: Zhi Lu, Songfeng Lu
+- **方向**: 密码学与协议
+- **解读**: 从分布式系统安全收集并聚合数据的需求日益增长，但仅依赖加密传输的方案难以追责恶意用户——用户可能提交异常、越界甚至投毒数据，而聚合服务器无法验证。联邦学习中的安全聚合（SA）正面临这一信任缺口。
+- 论文增强 Bell et al.（CCS 2020）的安全聚合协议，引入输入验证能力：基于环带误差学习（RLWE）问题设计七种零知识证明（ZKP）协议，验证用户是否正确使用 SA 密钥、其数据的 L∞ 范数、L2 范数与余弦相似度是否满足指定约束，从而排除异常输入，且不泄露明文，构成量子安全的输入验证系统。
+- 摘要未给出量化数据（原文截断）；贡献为七个面向聚合约束的格基 ZKP 协议及其与 Bell 等 SA 协议的集成。
+- 把"输入合规性验证"引入安全聚合，堵住了恶意/异常输入这一 SA 盲区，且格基方案具备量子安全性，方向务实；七个协议的证明/验证开销、与 SA 协议的兼容性以及在大规模联邦学习中的实测性能是评价要点，相比基于其他假设的 SA 验证方案是否更优需原文数据。
+
+
+#### Fuzzing Processing Pipelines for Zero-Knowledge Circuits.
+- **作者**: Christoph Hochrainer, Anastasia Isychev, Valentin Wüstholz, Maria Christakis
+- **方向**: 密码学与协议
+- **解读**:
+
+零知识（ZK）协议已广泛应用于认证、在线投票与区块链系统，其核心是由编译、见证生成、证明生成、验证等环节构成的高度复杂流水线，处理用Circom、Noir等DSL编写的确定性程序（电路）。流水线中的逻辑bug可能造成灾难性后果，例如攻击者窃取身份或资产——Gnark与Corset流水线是存放约8.5亿美元加密资产的Linea链的核心组件，即便Gnark两年内接受了8次外部审计，bug仍难以杜绝。
+
+Circuzz是首个系统化的ZK流水线模糊测试工具：先生成中间语言表示的随机电路（该中间语言刻画了Circom、Noir等语言的共性特征），再施加变质变换（如交换交换律算子参数）得到语义等价的电路C2；将C1与C2翻译为具体ZK语言后，用相同输入跑完整个流水线，若任何阶段输出不一致即触发变质测试oracle，检测出逻辑bug。
+
+实验针对四个差异显著的流水线（Circom、Corset、Gnark、Noir）进行，共发现16个逻辑bug，且全部四个流水线中都有发现；由于严重性，其中15个已被流水线开发者修复。
+
+我的思考：贡献成色在于把编译器测试中成熟的变质测试思想系统引入ZK领域，用语义等价oracle绕过了ZK管线的"神谕"难题，开源工具Circuzz让社区可直接复用，16个bug中15个被修复印证其有效性。局限是中间语言到各ZK语言需手工翻译、覆盖语义子集有限，随机电路与真实电路结构差异可能漏检特定类别bug。领域影响上，鉴于Gnark/Corset承载数十亿美元链上资产，该工具对区块链与去中心化金融安全有直接价值；与形式化验证相比，模糊测试以更低成本提供实用正确性保障。
+
+- **arXiv PDF**: [Fuzzing Processing Pipelines for Zero-Knowledge Circuits.](https://arxiv.org/pdf/2411.02077)
+
+#### Efficient Constant-Size Linkable Ring Signatures for Ad-Hoc Rings via Pairing-Based Set Membership Arguments.
+- **作者**: Min Xie, Zhengzhou Tu, Man Ho Au, Junbin Fang, Xuan Wang, Zoe Lin Jiang
+- **方向**: 密码学与协议
+- **解读**: 可链接环签名（LRS）允许用户代表临时（ad-hoc）环匿名签署消息，同时保证同一用户的多次签名可被链接，广泛用于电子投票、电子现金等隐私保护应用；要支撑大群体系统，签名短、验证快至关重要。
+- 近期工作如 DualDory（ESORICS'22）与 LLRing（ESORICS'24）通过离线预计算提升效率，但依赖静态环，限制了其在动态环场景的适用性；基于累加器的常量大小签名方案也有局限。论文改用基于配对的集合成员论证（pairing-based set membership arguments）构造常量大小、支持 ad-hoc 环的 LRS，兼顾签名长度与验证效率。
+- 摘要未给出量化数据（原文截断）；核心结论是相对 DualDory/LLRing 在动态环场景的适用性提升，以及相对累加器方案的效率改进。
+- 把"预计算换效率"的静态环方案推进到 ad-hoc 动态环，是务实的方向选择；配对集合成员论证在签名大小与验证开销间的权衡是性能关键，具体比特级签名长度、验证时间与 DualDory/LLRing 的实测对比有待原文数据；对电子投票、e-cash 大群体场景的部署价值取决于这些数字。
+
+
+#### Forking the RANDAO: Manipulating Ethereum's Distributed Randomness Beacon.
+- **作者**: Ábel Nagy, János Tapolcai, István András Seres, Bence Ladóczki
+- **方向**: 密码学与协议
+- **解读**: 权益证明（PoS）共识常依赖分布式随机信标（DRB）为领导者选举生成随机性；以太坊的 DRB 实现 RANDAO 虽有高效机制，却仍易受操纵——攻击者可故意从规范链中省略区块（block withholding）来影响随机输出。
+- 论文分析 RANDAO 在当前机制下的可操纵性：既有研究已表明经济理性的参与者可在操纵结果带来更大财务收益时扣留区块（区块扣留攻击）或参与"自私混合"（selfish mixing）；本工作系统刻画这些操纵在以太坊现有参数下的可行性与收益。
+- 摘要未给出量化数据（原文截断）；核心结论是 RANDAO 在现有机制下仍可被经济理性参与者操纵。
+- 对以太坊随机性信标的经济安全分析有重要现实意义——RANDAO 的随机输出决定验证者选举与 proposer 分配，操纵可转化为 MEV 收益；论文的价值在于量化操纵成本-收益边界与参数影响；但需注意以太坊后续演进（如引入额外随机性来源）对结论时效性的影响，与既有 RANDAO 操纵研究的增量（更精细的参数建模、实测数据）有待原文确认。
+
+
+#### Mining in Logarithmic Space with Variable Difficulty.
+- **作者**: Loïc Miller, Dorian Pacaud, Nathanël Derousseaux-Lebert, Emmanuelle Anceaume, Romaric Ludinard
+- **方向**: 密码学与协议
+- **解读**: 区块链可扩展性关乎其广泛采用，而区块链数据可分为应用部分与共识部分，其中共识部分随时间线性增长，存储与通信成本不断累积，构成规模化瓶颈。
+- 文献[1]的工作已在工作量证明（PoW）区块链语境下证明该问题可解：其方案在存储与通信上实现指数级缩减，但假设挖矿难度静态、矿工数量固定；本文在此基础上改进，支持可变挖矿难度，更贴近真实 PoW 网络的动态环境。
+- 摘要未给出量化数据（原文截断）；实验结果表明改进方案在可变难度下仍能保证所需的存储/通信性质。
+- 把"对数空间挖矿"从理想化假设（静态难度、固定矿工）推广到现实的可变难度场景，是缩小理论与部署差距的关键一步；PoW 节点全量存储共识数据是长期痛点，指数级缩减极具吸引力；可变难度下安全性与正确性证明的严谨性、与经典轻节点/状态最小化方案的对比（带宽、验证成本）有待原文数据。
+
+
+#### On Frontrunning Risks in Batch-Order Fair Systems for Blockchains.
+- **作者**: Eunchan Park, Taeung Yoon, Hocheol Nam, Deepak Maram, Min Suk Kang
+- **方向**: 密码学与协议
+- **解读**: 在 DeFi 等时序敏感区块链应用中，节点间实现先到先服务（FCFS）交易排序对防止抢先交易（frontrunning）至关重要；Themis（CCS'23）作为最先进的 FCFS 系统，已成为高吞吐公平排序的关键参照，影响多个后续提案与真实 rollup/排序器设计。
+- 论文批判性分析 Themis 的核心系统属性——实用批量序公平——并评估其抗性主张：提出 Ambush 攻击，一种新技术，仅凭单个恶意节点、以可忽略的攻击成本即可对 Themis 取得近乎 100% 的成功率；其机制是利用高度优化导致节点间出现微妙的暂时信息不对称。
+- 关键结果：Ambush 攻击对 Themis 接近 100% 成功率，仅需单个恶意节点，攻击成本可忽略。
+- 这是对"批量序公平"范式的一记重击：Themis 类系统声称的公平性在其优化实现下可被低成本攻破，对依赖该设计的 rollup 与排序器有直接警示；"暂时信息不对称"这一根因分析深化了对 FCFS 公平系统安全边界的理解；修复方向（收紧批量序定义、消除信息不对称窗口）与对其他公平排序方案（如 Aequitas、Pianist）的推广性是后续重点。
+
+
+#### Pool: A Practical OT-based OPRF from Learning with Rounding.
+- **作者**: Alex Davidson, Amit Deo, Louis Tremblay Thibault
+- **方向**: 密码学与协议
+- **解读**: 不经意伪随机函数（OPRF）是隐私增强技术的核心原语（用于密码管理器、隐私集合求交、私密信息检索等）；后量子（PQ）安全的 OPRF 构造此前或效率不足、或依赖较不为人熟知的困难假设，缺少既实用又基于主流假设的方案。
+- 论文提出 Pool：概念简洁的基于不经意传输（OT）的后量子 OPRF，轮次最优（支持与输入无关的预处理）、实用高效，安全性基于广为研究的带舍入学习（LWR）问题。其设计支持计算 LWR 型函数 F_sk(x)=⌈H(x)ᵀ·sk⌋_{q,p}（H 为随机预言机，sk 为均匀选取的向量）。
+- 128 位半诚实安全下，Pool 的在线通信成本仅 11.9 kB，单线程计算运行时间小于 3 ms（开源软件实现）；相比基于知名 PQ 伪随机函数的构造，在通信或运行时间上更高效，与仅依赖较冷门假设的构造也具竞争力。
+- 该工作在"主流假设（LWR）+ 简单设计 + 高实用性"三点上同时达标，11.9 kB 通信与 <3 ms 计算是令人信服的工程数字，且附开源实现，对隐私工程有直接价值；局限在于半诚实安全模型与预处理阶段成本，恶意安全扩展及与 OT 扩展实现的端到端对比有待原文后续工作。
+
+#### Zero-Knowledge AI Inference with High Precision.
+- **作者**: Arman Riasi, Haodi Wang, Rouzbeh Behnia, Viet Vo, Thang Hoang
+- **方向**: 密码学与协议
+- **解读**: 
+AI即服务（AIaaS）让资源受限用户得以查询服务商托管的模型并获取推理结果，但也带来可验证性与隐私的双重顾虑：客户端难以确信推理结果正确，输入数据与模型本身也需要保护。零知识证明技术理论上可同时解决这两类问题，然而AI中的非线性运算令证明成本居高不下，且现有方案普遍依赖定点数表示实数，存在精度损失，高精度与低开销难以兼得。
+
+论文面向高精度零知识AI推理设计新的证明方案，核心目标是同时缓解非线性运算带来的证明代价与定点表示导致的精度损失。摘要未披露具体技术路线细节，其思路应是在电路表示、数值编码或证明系统层面进行针对性改造，使证明过程在保持安全性的同时支持更高精度的推理计算。
+
+摘要未给出量化实验数据，论文的贡献主要体现在问题定位与方案设计层面：将高精度作为零知识AI推理的一等需求而非事后修补，其宣称的效果需以全文实验为准。
+
+该工作的价值在于正视了ZKML实践中常被忽视的精度维度——多数方案只关心"能否证明"，不关心证明所覆盖的数值结果是否够准。局限是摘要信息有限，缺乏与同类系统的量化对比；若能在证明规模、端到端时延与精度-开销权衡上给出数据，将更具说服力。该方向对AIaaS落地意义直接，值得跟进其完整版本。
+
+
+#### New Permutation Decomposition Techniques for Efficient Homomorphic Permutation.
+- **作者**: Xirong Ma, Junling Fang, Chunpeng Ge, Dung Hoang Duong, Yali Jiang, Yanbin Li, Willy Susilo, Lizhen Cui
+- **方向**: 密码学与协议
+- **解读**: 
+同态置换（homomorphic permutation）是基于批量编码同态加密的隐私保护计算的基础操作，几乎支撑所有矩阵运算并主导其复杂度。置换分解作为优化这一关键组件的手段长期缺乏系统研究，论文正是填补这一空白。
+
+论文先为置换定义了一种"理想形式"，并据此给出搜索深度1分解的算法；在此基础上证明了特定转置（HMT）与乘法（HMM）算法中使用的置换具有全深度可分解性，从而在渐近意义上提升速度并减少旋转密钥数量。此外，针对无法理想分解的弱结构，论文设计了新的计算方法，构造出超越常规范围的网络结构。
+
+在加密神经网络推理框架中，用增强版HMM替换原组件后，端到端延迟最多降低3.9倍；在有限密钥预算下，新方法比现有最优技术快1.69倍。
+
+置换分解直接作用于HE计算的核心瓶颈，旋转密钥缩减与渐近改进对实际系统意义重大，3.9倍延迟降低是实打实的收益。局限在于分解算法的搜索开销与特定参数集的适配性；与同期优化批量编码计算的工作相比，本文胜在系统性与可证明的分解深度。该成果可迁移至矩阵转置、卷积等场景，实用价值较高。
+
+
+#### Leveraging Discrete CKKS to Bootstrap in High Precision.
+- **作者**: Hyeongmin Choe, Jaehyung Kim, Damien Stehlé, Elias Suvanto
+- **方向**: 密码学与协议
+- **解读**: 
+CKKS全同态加密支持对近似复数向量的计算，约20比特的中等精度通常够用，但许多应用——如IND-CPA-D安全、安全阈值FHE与电路隐私——需要噪声洪泛（noise flooding），精度要求可能高达80比特以上。高精度难以实现的主因是自举：每次乘法都会消耗模数预算，而高精度下多数自举算法消耗过大，迫使参数膨胀。
+
+现有最优方法Meta-BTS（Bae, CCS'22）通过多次执行中等精度自举来支撑高精度，模数消耗与基础方案相当，但严重损害延迟。本文的思路是借助离散型CKKS（discrete CKKS）实现高精度自举，在保持模数效率的同时避免Meta-BTS的延迟代价。
+
+摘要聚焦于问题与动机分析，未给出具体性能数字；核心主张是相较Meta-BTS在相近模数消耗下显著改善延迟，为高精度CKKS应用提供更实用的自举路径。
+
+高精度FHE是通向可证明安全（噪声洪泛）的必经之路，本文把离散CKKS引入高精度自举，方向准确且动机扎实。局限是缺少量化对比数据，自举精度与开销的具体权衡需全文验证；若其延迟改进显著，将直接利好阈值解密、电路隐私等应用，是CKKS实用化的重要一步。
+
+
+#### Grafting: Decoupled Scale Factors and Modulus in RNS-CKKS.
+- **作者**: Jung Hee Cheon, Hyeongmin Choe, Minsik Kang, Jaehyung Kim, Seonghak Kim, Johannes Mono, Taeyeong Noh
+- **方向**: 密码学与协议
+- **解读**: 
+CKKS支持对加密复数的近似运算，主流实现采用RNS表示并精心选择参数以平衡精度、效率与安全。然而RNS-CKKS存在一个关键限制：缩放因子（决定数值精度）与模数（决定密码学结构）被刚性耦合，二者本应各司其职，这种依赖却带来设计约束——例如合适的NTT素数不足、精度调节缺乏灵活性，最终导致效率损失。
+
+Grafting提出将缩放因子与模数解耦的设计，使精度与密码学参数可以独立配置。摘要未展开具体机制，其核心思想应是打破RNS-CKKS中"每次乘法后缩放与模数同步缩减"的绑定关系，从而放宽素数选取约束、提高精度弹性。
+
+摘要聚焦于动机与设计缺陷分析，未给出实验数据；论文的贡献在于识别并化解一个长期存在的结构性约束，其收益（精度灵活性、参数选择空间）需以全文实验量化。
+
+该工作来自Cheon团队（CKKS提出者之一），对RNS-CKKS内部机制的理解具有权威性。解耦缩放与模数是FHE工程中"少有人走但正确"的路，可能显著改善高精度场景的参数可用性。局限是摘要未披露安全性与精度权衡的细节；若解耦在保持安全性的同时提升灵活性，将成为RNS-CKKS实现层面的基础性改进。
+
+
+#### Towards Verifiable FHE in Practice: Proving Correct Execution of TFHE's Bootstrapping using plonky2.
+- **作者**: Louis Tremblay Thibault, Michael Walter
+- **方向**: 密码学与协议
+- **解读**: 
+可验证FHE是让密文计算输出可被公开验证的关键能力，但此前从未有人在实践中用SNARK证明完整的FHE自举操作——自举电路规模巨大，证明开销令人望而却步。这一能力对恶意敌手环境下的真实应用至关重要。
+
+论文首次在实践中用SNARK证明完整的FHE自举：以TFHE的可编程自举为基础设计算术电路，用plonky2证明系统实现，并对若干处电路进行修改以更高效地表示运算（保持功能与安全）。为节省内存，论文利用计算结构的特性与plonky2自身的递归能力实现基于递归的IVC方案；最后在UC模型下给出安全性证明，刻画真实应用中的主动攻击。
+
+在AWS Hpc7a实例上证明时间小于20分钟，证明大小约200 kB，验证时间小于10毫秒——首次证明完整自举可达到实用量级。
+
+这是一项里程碑式工程成果：200 kB证明、毫秒级验证让"外包密文计算+公开验证"变得现实，IVC递归与UC安全证明表明作者同时考虑了效率与形式化保障。局限在于TFHE自举仅覆盖单次操作，扩展到完整电路仍需可观成本，且证明端20分钟仍偏重。总体而言，该工作为可验证FHE确立了首个实用基线，后续优化空间明确。
+
+
+#### Updatable aPAKE: Security Against Bulk Precomputation Attacks.
+- **作者**: Dennis Dayanikli, Anja Lehmann
+- **方向**: 密码学与协议
+- **解读**: 
+非对称口令认证密钥交换（aPAKE）让客户端与服务器用共享口令安全建立密钥，并提供抗离线攻击的保障。但标准aPAKE模型不保证抗预计算攻击——它假设口令一旦泄露即被攻破。Dayanikli与Lehmann（EuroS&P'24）观察到许多实际协议依赖加盐口令哈希，独特盐值使攻击更困难。
+
+盐值在认证过程中明文发送、攻击者易得，但在每台服务器拥有数百万账户的多用户场景中，攻击者为批量破解所有用户口令，必须代表每个用户开启认证会话以获取盐值——这限制了攻击效率，但静态盐仍可被逐步提取。本文提出"可更新aPAKE"（Updatable aPAKE），通过周期性更新盐值等手段对抗批量预计算攻击，把现实协议中"隐性"的抗预计算强度显式化、形式化。
+
+摘要聚焦安全模型与动机，未给出性能数字；核心贡献是定义并证明满足抗批量预计算攻击的aPAKE安全模型与构造。
+
+该工作把实践中真实存在、模型却未覆盖的安全性质（盐值带来的抗预计算）正式纳入aPAKE安全定义，弥合了理论模型与现实协议之间的鸿沟，学术价值明确。局限：更新机制的部署成本（盐更新同步、服务器状态管理）与可用性权衡需全文考察；与Opaque等部署广泛的方案相比，其增量在于威胁模型更贴近海量用户服务器的现实。
+
+
+#### Founding Zero-Knowledge Proof of Training on Optimum Vicinity.
+- **作者**: Gefei Tan, Adrià Gascón, Sarah Meiklejohn, Mariana Raykova, Xiao Wang, Ning Luo
+- **方向**: 密码学与协议
+- **解读**: 
+零知识训练证明（zkPoT）允许一方在不泄露模型与数据集额外信息的前提下，证明模型是在已承诺数据集上正确训练得到的。现有zkPoT协议对整个训练过程做零知识证明——即证明最终模型是由数据与随机种子经迭代算法逐轮得到的，这要求证明者工作量与迭代轮数成线性关系，代价高昂。
+
+本文把zkPoT建立在"最优邻域"（optimum vicinity）之上：不再逐轮证明训练的每个中间状态，而是以训练收敛至最优解附近这一性质为核心构造更高效的证明。摘要未展开具体协议细节，其方向应是利用优化问题的结构特征取代对迭代轨迹的逐轮验证。
+
+摘要聚焦问题与思路，未给出量化结果；核心主张是以亚线性（相对迭代轮数）的证明代价实现训练正确性证明。
+
+打破"逐轮证明"范式是zkPoT的重要思路创新——迭代轨迹验证是此前方案的共同瓶颈，抓住"最优邻域"这一优化本质有望显著降低证明开销。作者阵容（Meiklejohn、Wang、Raykova等）保证技术深度。局限：证明模型必须落入"最优邻域"假设，对非凸、早停等真实训练场景的适配性存疑；安全与完备性的形式化细节待全文检验。
+
+
+#### Revisiting Keyed-Verification Anonymous Credentials.
+- **作者**: Michele Orrù
+- **方向**: 密码学与协议
+> （无摘要，据标题推断）
+- **解读**: 
+匿名凭证允许用户向验证者出示属性证明而不泄露身份，是可认证隐私的关键原语。"密钥化验证"（keyed-verification）匿名凭证把验证能力绑定到特定验证者密钥上，防止凭证被任意第三方离线验证或关联，在隐私保护与防滥用之间取得平衡。（无摘要，据标题推断）
+
+论文重新审视该原语，应是对其安全模型、构造效率或可用性进行再考察——可能指出现有模型或构造的缺陷，并给出修订后的定义或更优方案。（无摘要，据标题推断）
+
+摘要缺失，无法引用具体结果；据标题推断，论文至少提供对既有keyed-verification匿名凭证方案的系统性再分析，并可能伴随新的构造或安全证明。（无摘要，据标题推断）
+
+作者Michele Orrù在密码学协议（尤其匿名凭证与PAKE）领域有系列工作，此类"revisiting"论文通常带来模型修正或新构造，对协议的形式化分析有长期价值。局限在于无法从标题判断具体贡献方向；若为安全模型修正，则需警惕其结论对既有部署方案的影响范围。（无摘要，据标题推断）
+
+
+#### Subversion-resilient Key-exchange in the Post-quantum World.
+- **作者**: Kévin Duverger, Pierre-Alain Fouque, Charlie Jacomme, Guilhem Niot, Cristina Onete
+- **方向**: 密码学与协议
+- **解读**: 
+抗颠覆认证密钥交换（subversion-resilient AKE）的目标是：即使敌手篡改了协议实现的部分组件，仍能获得安全AKE的保证。一种实现路径是反向防火墙（Reverse Firewalls, RFs）——由不可信的第三方设备在协议端点处过滤或修正被颠覆的协议行为，从而恢复安全性。
+
+近期工作指出，为实际的信道建立流程设计反向防火墙存在诸多挑战。本文把抗颠覆AKE带到后量子世界：需要同时应对实现级颠覆与量子计算威胁，RF设计须与后量子KEM/签名方案的代数结构兼容，且不能破坏现有握手机制。
+
+摘要聚焦动机与挑战分析，未给出具体构造与数据；核心贡献应是面向后量子AKE的反向防火墙/抗颠覆构造或其可行性分析。
+
+抗颠覆性是"实现安全"的极致要求，现实中固件后门、供应链植入正是此类威胁，选题现实意义强。后量子化使问题更难：ML-KEM等方案的验证与再随机化性质需重新审视。局限：摘要信息有限，RF的部署假设（可信第三方位置、哪些算法被颠覆）决定方案实用性；该方向理论性强，落地距离尚远，但为后量子迁移提供了安全基线。
+
+
+#### ILA: Correctness via Type Checking for Fully Homomorphic Encryption.
+- **作者**: Tarakaram Gollamudi, Anitha Gollamudi, Joshua Gancher
+- **方向**: 密码学与协议
+- **解读**:
+
+RLWE类全同态加密（FHE，如BGV/BFV/TFHE）加密时注入小噪声，噪声随同态运算累积，一旦超过临界值电路即输出错误；有限模算术还会产生回绕（wraparound）错误。现有FHE库与编译器既无法静态跟踪噪声，也没有库能同时推理RLWE噪声与数值溢出，且噪声溢出还是私钥恢复攻击的入口，开发者难以自信地构建FHE应用。
+
+方法上，ILA是一种面向正确性的中间表示（IR）与类型系统：类型携带密文噪声界、数值范围等低层定量界，且不需要私钥。核心洞察是RLWE类方案共享同态运算与噪声管理操作的高层特征，因此核心类型系统不绑定具体方案，而是公理化一个FHE模型，再实例化到BGV、BFV、TFHE三个绝对方案，自动获得功能正确性定理（良类型电路的同态求值加解密等价于明文求值）。还提出用类型检查器作为验证框架的模切换（MS）放置推断算法。
+
+评估覆盖乘法深度达约22层、宽度达约8000个乘法门的电路（SEAL的881位系数模数对应深度21，OpenFHE深度超22即失败；d=32768时8000个密文需超50GB内存），以及PSI、1000行数据库的PIR、1000×1000矩阵图像处理等复杂应用，深度超预算时全部能检测溢出。类型检查器声音性（无漏报）且噪声估计紧，静态方法比最先进动态方法快多个数量级。
+
+我的思考：贡献成色在于首个方案无关的FHE正确性验证IR，把"噪声+数值溢出"统一进类型系统并给出可证明的正确性判据，MS放置推断兼具实用价值；局限是仅覆盖绝对方案（不含CKKS近似方案），保守的噪声估计可能拒绝部分可行电路。领域影响上，FHE落地长期受正确性调试困扰，ILA把调试从昂贵的电路模拟变成免私钥的静态检查，显著降低开发成本；与HELM等库内噪声追踪相比，ILA提供的是经过形式证明的正确性保证而非启发式估算。
+
+- **arXiv PDF**: [ILA: Correctness via Type Checking for Fully Homomorphic Encryption.](https://arxiv.org/pdf/2509.11559)
+
+#### Silent Threshold Traitor Tracing & Enhancing Mempool Privacy.
+- **作者**: Anirban Chakrabarti; Monosij Maitra; Arup Mondal; Kushaz Sehgal
+- **方向**: 密码学与协议
+- **解读**:
+加密货币与区块链在 DeFi 应用中的商业化程度日益提高，普通用户需要防御拥有巨大资源、可通过各种最大可提取价值（MEV）策略恶意影响市场的参与者。在典型场景中，终端用户希望在交易被确认执行前隐藏其交易细节，因此保障待处理交易池（mempool）中交易的隐私成为重要目标。
+为此，去中心化的阈值加密（threshold encryption, TE）系统近期被证明尤为有效——通过将解密密钥分片给多方，只有达到阈值数量的参与者协作才能解密交易，从而在交易上链前对其保密。
+本文的工作方向是"无声（silent）"阈值叛徒追踪：在多方协作解密过程中，若某参与者泄露其秘密份额（叛徒），系统应能静默地识别并追踪泄露来源，同时增强 mempool 隐私方案的安全属性——即不仅防外部窃听，还能对内部作恶者问责。
+我的思考：mempool 隐私方案的最大软肋恰是"内部共谋或单点泄露"，阈值加密解决了单点信任问题，但无法防止参与者主动泄露；叠加叛徒追踪使方案具备问责能力，这是对 MEV 防护体系的重要补强。"silent"（不干扰正常协议流程）的设计目标也切合实用需求。不过叛徒追踪的数学构造与通信开销在摘要中未展开，能否在 DeFi 的高吞吐、低延迟约束下落地是主要悬念。
+
+
+#### PULSE: Parallel Private Set Union for Large-Scale Entities.
+- **作者**: Jiahui Gao; Son Nguyen; Marina Blanton; Ni Trieu
+- **方向**: 密码学与协议
+- **解读**:
+多方隐私集合求并（mPSU）允许多方在不泄露额外信息的前提下计算各自输入集的并集，是隐私计算的基础原语。现有高效 mPSU 协议可分为基于对称密钥加密（SKE）与基于公钥加密（PKE）两大类，但两者在参与方数量较多时都难以高效扩展。
+核心瓶颈在于计算资源利用不充分：协议执行的不同阶段中，大量参与方处于空闲状态，没有并行利用可用算力，导致整体吞吐受限于串行环节。
+PULSE 旨在解决这一可扩展性问题——通过重新设计协议执行流程，让参与方在各阶段充分并行化计算，减少空闲等待，使 mPSU 能够支撑大规模参与方场景，同时保持通信与计算开销的可控性。
+我的思考：mPSU 的扩展性问题确实是隐私计算落地（如多方数据融合、联邦场景）的关键障碍，已有协议多聚焦两方或小规模多方，面向"大规模实体"的并行化改造方向明确且实用。SKE 与 PKE 两条技术路线的取舍（安全模型、通信复杂度差异）与并行度提升的量化收益是评价要点；摘要未给出具体规模与加速比，协议在真实网络带宽下的表现有待正文验证。
+
+
+#### Velox: Scalable Fair Asynchronous MPC from Lightweight Cryptography.
+- **作者**: Akhil Bandarupalli; Xiaoyu Ji; Aniket Kate; Chen-Da Liu-Zhang; Daniel Pöllmann; Yifan Song
+- **方向**: 密码学与协议
+- **解读**:
+安全多方计算（MPC）允许多个互不信任的参与方在不泄露各自私密输入的前提下计算任意函数，应用覆盖匿名广播、拍卖等场景，被视为分布式密码学的基石。但多数现有库要么强依赖有界同步网络假设，要么因大量使用昂贵的公钥操作而开销巨大，难以扩展到几十个参与方以上。
+Velox 提出一个异步模型下的 MPC 协议，在无需同步假设的同时实现公平性（fairness），并在该模型下达到最优的恶意方容错比例。其核心卖点是"轻量密码学"——大幅减少公钥操作的使用，让协议能够支撑更大规模的参与方集合。
+异步模型下同时实现公平性与最优容错是公认难点：异步环境中无法依赖超时判断，公平性保证需要精巧的协议设计，而轻量密码学的引入进一步降低了每方计算负担，为规模化部署铺路。
+我的思考：异步 MPC 兼顾公平性、最优容错与轻量开销是近年的研究热点，Velox 的定位精准地打在现有库的痛点（同步假设 + 公钥开销）上。能否与同类异步公平 MPC（如基于 VSS/ACS 框架的构造）拉开实质差距、公平性在真实网络延迟抖动下的表现，是判断其工程价值的核心；摘要未给出具体参与方规模与开销对比数据，需要正文支撑。
+
+
+#### How to Recover a Cryptographic Secret From the Cloud.
+- **作者**: David Adei; Chris Orsini; Alessandra Scafuro; Tanner Verber
+- **方向**: 密码学与协议
+- **解读**:
+云存储凭借强大的可用性与可靠性取代了大多数本地备份，但云并不适合（也不应该）用于存放密码学秘密——秘密可能控制金融资产（如加密钱包），存在云端相当于把所有权交给云服务商，使其成为内部攻击的高价值目标。问题在于：能否兼得两者之优——用户 Alice 可以方便地在云端保存秘密副本，却只有她自己能恢复？
+该工作利用可信执行环境（TEE）构造云端的秘密恢复机制：即使 Alice 丢失设备、忘记所有凭据，也能恢复秘密；同时无论云服务商（即使存在恶意内部人员）如何作恶，秘密的机密性始终有保障——即"云只负责保管，不获得任何解密能力"。
+机制的关键是把恢复流程中涉及秘密的操作放入 TEE 的受保护执行环境，使云方即使物理接触服务器也无法读出秘密，从而在"丢失凭据可恢复"与"云不可信"之间同时成立。
+我的思考：这是针对"冷钱包备份/社交恢复"痛点的实用密码学+系统研究。亮点在于把可恢复性与机密性解耦：云可用性提供冗余，TEE 隔离提供机密性。风险在于 TEE 本身的安全假设（侧信道、微码漏洞、厂商信任链）成为新信任根，且若 TEE 被攻破，秘密保护随之失效；此外跨云迁移、TEE 供应与密钥轮换等工程细节也需评估。方向务实，但"信任 TEE"的隐含前提值得反复权衡。
+
+
+#### ML-Cube: Accelerating Module-Lattice-Based Cryptography using Machine Learning Accelerators with a Memory-Less Design.
+- **作者**: Tian Zhou; Fangyu Zheng; Zhuoyu Xie; Wenxu Tang; Guang Fan; Yijing Ning; Yi Bian; Jingqiang Lin; Jiwu Jing
+- **方向**: 密码学与协议
+- **解读**:
+AI 技术爆发推动机器学习加速器（如 GPU/TPU/NPU）性能大幅跃升，密码学研究者开始探索用这类加速器加速密码运算。但把加速器当作黑盒使用会带来高延迟与严格的并发要求，阻碍实际部署——加速器面向神经网络批量计算设计，与密码算法的数据依赖结构并不天然契合。
+ML-Cube（ML3）提出一个"无内存"（memory-less）框架，用于在 ML 加速器上实现模格基后量子密码——FIPS 203 ML-KEM 与 FIPS 204 ML-DSA。其收益来自对加速器内部工作机制的深入剖析：不再将其视为黑盒，而是拆解其运算机理，为密码运算定制数学映射与数据排布。
+"memory-less"设计意味着针对加速器片上内存受限的特点，重新组织计算以最小化对外部存储的依赖，从而规避黑盒方案的高延迟与并发瓶颈，让密码运算贴合加速器的执行模型。
+我的思考：后量子密码标准化后，如何在各类硬件上高效实现成为工程热点；把庞大规模算力（AI 加速器）用于 PQC 是有想象力的方向，且"解剖加速器内部、定制化映射"明显优于黑盒调用。局限在于：依赖特定加速器架构的定制难以通用化；ML-KEM/ML-DSA 的 NTT 运算与张量核的适配收益、与专用硬件（ASIC/FPGA）方案的性能差距，需要量化的实验对比才能服众。
+
+
+#### mUOV: Masking the Unbalanced Oil and Vinegar Digital Signature Scheme at First- and Higher-Order.
+- **作者**: Suparna Kundu; Quinten Norga; Angshuman Karmakar; Uttam Kumar Ojha; Anindya Ganguly; Ingrid Verbauwhede
+- **方向**: 密码学与协议
+- **解读**:
+在寻找额外后量子设计的进程中，基于多元二次方程（MQE）的方案因签名体积小而备受关注。Unbalanced Oil and Vinegar（UOV）是二十多年前提出的 MQE 类数字签名方案，其数学安全性已被充分分析，但多类数字签名方案上都出现过实际侧信道攻击（SCA），UOV 的侧信道防护仍需补强。
+该工作首先对 UOV 签名过程中可被被动侧信道攻击（特别是差分功耗分析 DPA）利用的中间变量进行透彻分析，明确哪些敏感成分需要保护。
+其次，作为对策，作者引入掩码（masking）技术保护敏感组件，为全部关键运算（包括点积、矩阵-向量乘法）设计了高效的掩码门（masked gadgets），并证明其掩码在 t 阶（一阶及更高阶）下满足安全要求。
+我的思考：NIST 后量子签名（如 ML-DSA）之外，MQE 方案因签名短被寄予厚望，而掩码实现是其实际部署的必备前提——Ingrid Verbauwhede 团队在该领域积累深厚，门级设计的安全性论证通常严谨。价值在于为 UOV 提供了首个系统性的低阶与高阶掩码方案。局限：掩码的随机数需求与性能开销（尤其高阶）需与 Falcon/ML-DSA 等已标准化方案的实现开销对比，否则"签名小"的优势可能被掩码成本抵消；更高阶次下的具体开销数据是评价实用性的关键。
+
+
+#### Lite-PoT: Practical Powers-of-Tau Setup Ceremony.
+- **作者**: Lucien K. L. Ng, Pedro Moreno-Sanchez, Mohsen Minaei, Panagiotis Chatzigiannis, Adithya Bhat, Duc Viet Le
+- **方向**: 密码学与协议
+- **解读**: **问题**：最高效的 zk-SNARK 依赖一次性可信设置生成 Powers-of-Tau（PoT）公共参数，秘密参数 τ 一旦泄露，攻击者即可伪造证明、破坏所有基于该参数体系的健全性。现有去中心化仪式（Nikolaenko et al.）借助以太坊智能合约协调贡献，但每次贡献需 O(d) 次昂贵的配对曲线群运算：即使仅 2^10 阶参数，单次贡献也需 1150 万 gas（约 $315），高昂成本阻碍参与，也限制了可支持的幂次规模。
+
+**方法**：Lite-PoT 提出两大协议降低参与成本。(i) 欺诈证明协议：更新只验证贡献者知道所用随机数 r（知识证明），不再主动验证参数良构性；任何人事后可提交简洁欺诈证明（O(log d) 次哈希 + 2 次配对），智能合约验证后撤销无效更新并回滚到上一有效版本，把每次贡献的链上群运算降到 O(1)。(ii) 证明聚合：不可信操作者将 m 份贡献聚合成 3 个群元素的常数大小证明，链上成本由 O(m·d) 降为 O(d)，与批次数无关；针对 BLS 式聚合的 rogue-key 攻击设置多重对策，并在代数群模型（AGM）下证明安全。
+
+**结果**：基于 BN254/Keccak256、Rust 离链 + Solidity 合约实现，更新 gas 较 [24] 降低约 16 倍（改进因子 3.30×–35.53×），首次在以太坊上支持 2^15 阶 PoT 字符串，满足 ProtoDanksharding（需 2^12–2^15）等应用；欺诈证明仅 33 万 gas（约 $2）；离链并行验证在 6 核机器上提速约 6×，且不再受 EVM 不支持 G2 运算的限制。
+
+**我的思考**：把"主动验证"转为"乐观接受 + 事后欺诈证明"的范式移植到设置仪式，gas 降低一个数量级并首次支撑 2^15 幂次，工程价值扎实；局限是无效参数可短暂留链（需挑战窗口兜底）、并发与前跑攻击问题未解决、安全性依赖 AGM 假设。相比 [24] 的 O(md)，聚合方案把链上成本与贡献者数量解耦，是向大规模无许可仪式迈出的务实一步。
+- **arXiv PDF**: [Lite-PoT: Practical Powers-of-Tau Setup Ceremony.](https://arxiv.org/pdf/2503.04549)
+
+#### Efficient Fuzzy PSI Based on Prefix Representation.
+
+- **作者**: Chengrui Dang, Xv Zhou, Bei Liang
+
+- **方向**: 密码学与协议
+
+- **解读**: 模糊隐私集合交集（Fuzzy PSI）是 PSI 的变体：接收方与发送方各持有一个点集，双方希望接收方仅获知发送方集合中与其点距离在阈值 δ（在特定度量下）以内的点，而不泄露集合的其他信息。它支撑着拼写纠错、相似用户匹配、生物特征认证等真实应用，而现有方案的通信与计算开销限制了其规模化使用。
+
+本文的核心思路是用前缀表示（prefix representation）来刻画"距离在 δ 内"这一模糊匹配关系：把每个点映射为若干前缀编码，使两个点在阈值内相邻当且仅当它们共享某个前缀，从而把模糊匹配转化为精确的集合交集操作，再叠加 OPRF 等密码学工具隐藏无关信息、保证双方隐私。
+
+作者给出基于该表示的高效 Fuzzy PSI 协议，显著降低通信复杂度，并分析不同度量与阈值参数下的性能特性，展示其相对朴素方案（逐点距离比较 + 标准 PSI）的优势。
+
+我的思考：用前缀编码把几何/度量距离转化为集合成员的组合学技巧简洁而有通用性，直接落点于通信开销这一 PSI 的关键瓶颈，是实用价值明确的工程化贡献。局限在于摘要细节有限，前缀表示对高维或非均匀分布点集的有效性、阈值 δ 的粒度与误报/漏报权衡仍需全文评估；与 Cuckoo 哈希、不经意编程等优化结合后有望进一步提升，是值得关注的应用密码学工作。
+
+
+#### Armadillo: Robust Single-Server Secure Aggregation for Federated Learning with Input Validation.
+
+- **作者**: Yiping Ma, Yue Guo, Harish Karthikeyan, Antigoni Polychroniadou
+
+- **方向**: 密码学与协议
+
+- **解读**: 联邦学习中单个强大服务器与大量计算能力弱的客户端迭代协作训练模型，而恶意客户端可能通过上报非法输入破坏聚合结果。Armadillo 是一个具有抗破坏（disruptive）能力的单服务器安全聚合系统：任意恶意客户端联盟只能在预先定义的合法取值范围内虚报私有输入来影响结果，无法实施更严重的破坏。
+
+以往考虑 n 方抗破坏的工作要么每客户端开销过高（Chowdhury 等，CCS'22），要么轮数随 n 对数增长（Bell，USENIX Security'23）。Armadillo 在通用零知识证明技术（本文亦使用）之外设计了两种新构造：一是简单的两层协议，仅需算术计算；二是通过一致性机制（agreement）在低轮复杂度的同时消除破坏影响，从而把轮数降为常数 3。
+
+作者宣称 Armadillo 只需 3 轮（复杂度与客户端数 n 无关），且客户端计算轻量，兼顾了鲁棒性、低轮数与低客户端开销三个此前难以兼得的性质。
+
+我的思考：把"输入合法性验证"与安全聚合结合，从机制上划定恶意客户端的破坏能力边界，思路直接且实用；常数轮与轻客户端特性对齐了联邦学习的真实部署约束。局限在于摘要未给出具体运行时间与通信量的量化对比，两层协议与 ZKP 方案的实际开销、恶意服务器场景的覆盖程度待全文验证；与后量子或更高并发客户端规模的适配也是后续方向。
+
+
+#### The OCH Authenticated Encryption Scheme.
+
+- **作者**: Sanketh Menda, Mihir Bellare, Viet Tung Hoang, Julia Len, Thomas Ristenpart
+
+- **方向**: 密码学与协议
+
+- **解读**: 认证加密（AEAD）是现代安全通信的基石，但主流部署方案存在结构性缺陷：多用户场景下的安全退化、缺少上下文承诺（context commitment）导致跨协议/跨密钥重用攻击、随机数长度不足带来的碰撞风险等。OCH 是首个同时提供 128 位多用户 AE 安全、上下文承诺、256 位随机数（可选随机数隐私）的 AEAD 方案，直面这些广泛部署方案的紧迫局限。
+
+作者以模块化方式形式化构造并分析 OCH 的安全性，将方案拆解为具有更广泛适用性的变换组件分别证明，降低了整体安全论证的复杂度，也便于其他方案复用这些变换。
+
+在 Intel Raptor Lake CPU 上，基于 Areion 置换族的 OCH 峰值速度达 0.62 周期/字节（cpb），接近 AES128-GCM 的 0.38 cpb，明显优于 ChaCha20/Poly1305（1.63 cpb）与 TurboSHAKE128-Wrap（3.52 cpb），在提供更强安全属性的同时保持了有竞争力的性能。
+
+我的思考：OCH 把多用户安全、上下文承诺与长随机数三个实战需求首次整合进单一 AEAD，并由密码学权威团队给出模块化证明，是设计-安全-性能三角的标杆性工作。局限在于 Areion 置换的新颖性使其密码分析积累有限，实际部署尚需生态采纳与更多第三方分析；与 AES-GCM-SIV、Rocca 等方案的横向比较、以及硬件加速场景下的表现值得后续研究。
+
+
+#### From OT to OLE with Subquadratic Communication.
+
+- **作者**: Jack Doerner, Iftach Haitner, Yuval Ishai, Nikolaos Makriyannis
+
+- **方向**: 密码学与协议
+
+- **解读**: 不经意线性求值（OLE）是不经意传输（OT）的代数推广：模 q 上的 OLE 使接收方能安全求值发送方选择的线性函数 a·X+b 在秘密点 x∈ℤq 上的结果。OLE 是众多新兴应用（如安全机器学习、隐私保护数据库查询）的核心构件，但 OT 与 OLE 之间存在巨大的效率鸿沟——OT 已有成熟的快速扩展技术，而 OLE 的构造成本高企。
+
+本文重新审视"从 OT 归约到 OLE"这一经典问题，目标是改进已知归约的通信开销。作者从代数与信息论结构入手，设计更紧凑的编码与协议流程，使从 OT 构造 OLE 所需的通信量从二次或更高阶降到次二次（subquadratic）水平。
+
+论文给出了新的归约构造并分析其通信复杂度，展示相对于既有 OT→OLE 归约的渐进改进，为缩小 OT 与 OLE 之间的效率差距提供了理论基础。
+
+我的思考：OLE 是众多高级安全计算协议的"原材料"，其通信瓶颈长期制约上层应用的性能；本文把归约成本压到次二次，是从基础设施层面撬动整个 MPC 生态的贡献。局限在于摘要未给出具体常数与实现验证，次二次的渐进优势在小实例上未必体现，且归约的在线/离线阶段划分、与现有 OT 扩展栈的兼容性有待全文评估；该方向对安全计算实用化具有长尾价值。
+
+
+#### Interoperable Symmetric Message Franking.
+
+- **作者**: Carolina Ortega Pérez, Thomas Ristenpart, Julia Len
+
+- **方向**: 密码学与协议
+
+- **解读**: 欧盟 2022 年通过的《数字市场法》（DMA）要求拥有庞大用户基数的消息应用支持可互操作的端到端加密（E2EE）通信，这对密码协议如何在保持安全与隐私的前提下适配提出了大量新问题——不仅限于主流 E2EE 协议本身，也延伸到滥用缓解机制，例如 Facebook 首先提出的对称消息 franking 协议：它用密码学手段让平台能对举报的 E2EE 消息做可验证的真伪核验。
+
+互操作场景下，不同消息平台各自运行 E2EE 与 franking 机制，而跨平台消息需要同时满足双方的举报验证需求，且不能向第三方平台泄露过多元数据或允许一方伪造举报证据。本文为这一场景形式化定义可互操作对称 franking 的安全模型。
+
+作者提出满足互操作性的对称 franking 构造并给出安全证明，说明如何在多平台交叉验证下保持举报证据的不可伪造性与隐私边界。
+
+我的思考：该工作把法规驱动的新场景（DMA 互操作）转化为严谨的密码学建模，延续了 franking 方向的形式化传统，对监管合规下的安全设计有直接参考价值。局限在于摘要层面缺乏具体构造细节与效率数据，跨平台信任假设（密钥分发、滥用数据库共享）的现实可行性仍需讨论；与匿名凭证、阈值举报等机制的集成是未来值得探索的扩展点。
+
+
+#### Gibbon: Faster Secure Two-party Training of Gradient Boosting Decision Tree.
+
+- **作者**: Lichun Li, Zecheng Wu, Yuan Zhao, Zhihao Li, Wen-jie Lu, Shan Yin
+
+- **方向**: 密码学与协议
+
+- **解读**: 梯度提升决策树（GBDT）及其变体在工业界广泛应用，在众多机器学习竞赛与实际业务中表现优异。安全多方计算（MPC）允许多个数据拥有者在保护各自输入隐私的前提下联合计算函数；本文聚焦纵向切分数据上的安全两方 GBDT 训练——双方持有同一批样本的不同特征，在不泄露特征与标签的前提下协作训练模型，这是跨机构联合建模的典型场景。
+
+Gibbon 针对纵向两方设置设计高效协议：通过精心设计的秘密共享、比较与直方图聚合方案，减少训练每棵树的通信轮次与数据传输量，并针对 GBDT 的分裂点寻找、叶子值计算等核心环节做协议级优化。
+
+与 SOTA 系统 Squirrel（USENIX Security'23）相比，在大多数参数设置下，Gibbon 的训练运行时间降低 2-4 倍，通信量降低 2-3 倍，显著提升了安全 GBDT 训练的实用性。
+
+我的思考：GBDT 是产业界最常用的模型之一，其安全训练的效率直接决定隐私计算落地的可行性；Gibbon 把纵向两方训练提速 2-4 倍是实打实的工程推进。局限在于两方设置限制了推广到多方联邦的通用性，且实验参数范围与安全假设（半诚实/恶意）的覆盖需全文确认；与横向联邦 GBDT、以及结合可信执行环境的混合方案对比，是后续可关注的方向。
+
+
+#### Refined TFHE Leveled Homomorphic Evaluation and Its Application.
+
+- **作者**: Ruida Wang, Jincheol Ha, Xuan Shen, Xianhui Lu, Chunling Chen, Kunpeng Wang, Jooyoung Lee
+
+- **方向**: 密码学与协议
+
+- **解读**: TFHE 是环面上的全同态加密方案，以快速自举著称，其主求值机制基于门自举与可编程自举（PBS）——在刷新噪声的同时计算函数。PBS 模式对小型电路友好高效，但所需操作数随电路深度指数增长，无法支撑大规模电路求值。
+
+为高效评估大规模电路，Chillotti 等人在 Asiacrypt 2017 提出 leveled（LHE）模式：把乘法与 PBS 解耦，获得相对门级方法数百倍的加速；然而剩余的电路自举（CBS）仍成瓶颈——虽出现频率是线性的，但单次 CBS 成本高昂。本文对 leveled 求值做精细化优化：从噪声增长与自举开销两个维度重新设计求值策略，降低 CBS 的调用成本与噪声预算消耗，并把优化后的方案应用到实际任务中验证端到端性能收益。
+
+论文给出优化后的求值协议与复杂度分析，并通过应用实验展示相对既有 leveled TFHE 实现的加速效果，证明精细化噪声管理与自举调度带来的实际性能提升。
+
+我的思考：TFHE 的自举性能是 FHE 实用化的关键命门，本文瞄准 leveled 模式下 CBS 这一真实瓶颈做"最后一公里"优化，工程价值直接。局限在于摘要未给出具体加速倍数与参数集，优化对门级/向量级操作类型的选择性、以及与传统 PBS 模式的适用边界需全文确认；与电路编译器的协同优化、GPU 加速的适配是后续可期待的方向。
+
+
+#### CCA-Secure Traceable Threshold (ID-based) Encryption and Application.
+
+- **作者**: Rishiraj Bhattacharyya, Jan Bormet, Sebastian Faust, Pratyay Mukherjee, Hussien Othman
+
+- **方向**: 密码学与协议
+
+- **解读**: Boneh、Partap 与 Rotem（Crypto'24）提出可追踪阈值加密：若 t 个或更多方合谋构造一个执行解密的黑盒，则仅需少量黑盒查询即可追踪出至少一方的身份。该原语对区块链 mempool 隐私有重要应用——合谋通过 MEV 攫取巨额收益而无需承担后果，而可追踪性可以威慑合谋。但原定义存在利用空间：只达到 CPA 安全，且未考虑不同参与集合导致的不一致性。
+
+本文强化该原语的安全模型：在 CCA 安全下定义可追踪阈值加密，并处理"不同参与集合执行解密可能产生不一致结果"这一实际威胁，同时把构造推广到基于身份（ID-based）的设置。
+
+作者给出满足 CCA 安全与一致性要求的可追踪阈值（基于身份的）加密构造及其安全证明，并展示其在区块链 mempool 隐私等场景中的应用方式。
+
+我的思考：把可追踪阈值加密从 CPA 提升到 CCA、并补齐集合不一致性这一现实漏洞，是让该原语真正可部署的关键一步，对 MEV 治理与区块链隐私有直接意义。局限在于 CCA 构造带来的效率开销、以及 ID-based 变体的具体性能数据需全文验证；与阈值签名、匿名凭证的组合，以及防"陷害"（frame）的取证问题仍是开放方向。
+
+
+#### High-Throughput Universally Composable Threshold FHE Decryption.
+
+- **作者**: Guy Zyskind, Doron Zarchy, Max Leibovich, Chris Peikert
+
+- **方向**: 密码学与协议
+
+- **解读**: 阈值全同态加密（Threshold FHE）允许在加密数据上执行任意计算，同时把解密能力分散到多方，任何少于阈值的合谋都无法解密。其主要应用是低通信多方计算（MPC）：借助 FHE 的批处理能力，各参与方只需少量交互即可完成大规模联合计算，而快速、安全的阈值 FHE 解密协议是这一范式的性能咽喉。
+
+本文面向高吞吐场景设计通用的组合安全（UC）阈值 FHE 解密协议，目标是把解密阶段的开销压到最低，使低通信 MPC 的总成本由 FHE 求值主导而非解密主导。
+
+作者给出协议构造与 UC 安全证明，分析其在多方设置下的通信与计算复杂度，展示相对既有阈值解密方案在吞吐量上的改进。
+
+我的思考：作者阵容（Zyskind、Peikert）意味着该工作兼具产业背景（低通信 MPC 部署）与理论深度，UC 模型下的安全保证为模块化组合提供了坚实接口。局限在于摘要未给出具体吞吐数字与参数实验，协议对诚实多数/恶意敌手模型的适配、以及大参与方数下的扩展性需全文确认；与分布式密钥生成、可验证解密证据的结合是部署时不可回避的工程问题。
+
+
+#### Peekaboo, I See Your Queries: Passive Attacks Against DSSE Via Intermittent Observations.
+
+- **作者**: Hao Nie, Wei Wang, Peng Xu, Wei Chen, Laurence T. Yang, Mauro Conti, Kaitai Liang
+
+- **方向**: 密码学与协议
+
+- **解读**: 动态可搜索对称加密（DSSE）允许在动态加密数据库上执行安全搜索，但固有地泄露访问模式与搜索模式等元数据。既有被动攻击依赖对泄露的持续监控来推断查询模式，而本文针对更实际的威胁模型——间歇性观察：攻击者只能断断续续地观测数据库状态，这显著增加了推断难度。
+
+作者提出 Peekaboo，一个通用的攻击框架：核心设计是从间歇观测中推断搜索模式，再将其与辅助知识结合。框架能实例化现有 SOTA 攻击（Sap, USENIX'21；Jigsaw, S&P'24），派生出增强变体 Sap+ 与 Jigsaw+。
+
+大量实验表明：Peekaboo 达到超过 0.9 的调整兰德指数（ARI），查询恢复准确率约 90%，而基线 FMA（CCS'23）仅约 30%；攻击的扩展性随观测轮数与查询数量增长，且能抵抗常见对策——在超过 40% 的文件大小填充与超过 80% 的混淆下依然有效。
+
+我的思考：把 DSSE 攻击从"持续监控"推广到"间歇观测"大幅拓宽了威胁模型的现实性，统一框架还能复现并增强多个 SOTA 攻击，工程与实验都很扎实。局限在于实验数据集与查询分布的规模、以及辅助知识获取的假设强度需全文审视；对 DSSE 设计者而言，该工作提示仅靠填充与混淆难以彻底防御，从协议层限制搜索模式泄露仍是根本出路。
+
+
+#### BOLT: Bandwidth-Optimized Lightning-Fast Oblivious Map powered by Secure HBM Accelerators.
+
+- **作者**: Yitong Guo, Hongbo Chen, Haobin Hiroki Chen, Yukui Luo, XiaoFeng Wang, Chenghong Wang
+- **方向**: 密码学与协议
+- **解读**:
+可信执行环境（TEE）为安全云计算提供坚实基础，却仍易受访问模式泄露攻击。Oblivious Map（OMAP）通过完全隐藏访问模式来缓解，但因随机重映射与最坏情况填充而开销高昂。作者认为这些成本并非本质性的：Vaswani 等人（OSDI'18）指出 HBM 信道与处理器核封装在一起、窃听困难，Hunt（NSDI'20）进一步表明在适当隔离下 HBM 可成为数据与访问痕迹都被隐藏的不可观察区域。
+
+BOLT 利用带安全 HBM 的现代加速器重新思考 OMAP 设计，把 HBM 作为不可观察区域，从而规避随机重映射与最坏情况填充，围绕带宽优化实现轻量级的不经意映射。
+
+摘要层面未给出量化数字，主张 HBM 支撑的 OMAP 方案可突破传统性能极限，让不经意数据结构真正可部署。
+
+把"物理封装不可观察性"作为安全前提是巧妙的信任模型转移，但该假设的稳健性（如侧信道探测、封装攻击）需要更严格论证；与 Path ORAM、Ring ORAM 等经典方案相比，BOLT 以带宽换延迟的权衡切中 TEE 场景痛点。其可用性取决于带安全 HBM 加速器的普及，短期内或限于特定云平台。
+
+
+#### Towards a Formal Foundation for Blockchain ZK Rollups.
+
+- **作者**: Stefanos Chaliasos, Denis Firsov, Benjamin Livshits
+- **方向**: 密码学与协议
+- **解读**:
+比特币、以太坊等区块链推动了数字交易变革，但可扩展性问题持续存在。作为 Layer 2 方案，ZK-Rollup 链下处理交易、链上验证，然而其安全与审查抗性仍受质疑：中心化控制、以及缺乏通过智能合约强制相关属性的机制；当前形态的 L2 易受多重签名（multisig）攻击，可能导致用户资金全部损失。
+
+作者用 Alloy 规范语言对强制交易队列、安全黑名单、可升级性等关键设计功能进行形式分析；识别现有设计中的缺陷，提出增强模型并通过模型检查验证其正确性；最后提出一套完整的端到端方法论，基于手动翻译基于属性的测试不变量来分析 Rollup 的抗性。
+
+研究识别出现有 ZK-Rollup 设计中的具体缺陷，增强后的模型通过模型检查验证；摘要层面未给出量化指标。
+
+形式化方法介入 DeFi 基础设施正当其时，multisig 单点风险是真实存在的高危面；Alloy 基于有限界模型检查，虽不能证明无限状态性质，但足以发现设计级缺陷。该方法论若推广到其他 L2 架构，有望把 Rollup 安全从"审计靠人"推向"证明靠机"。
+
+
+#### AD-MPC: Asynchronous Dynamic MPC with Guaranteed Output Delivery.
+
+- **作者**: Wenxuan Yu, Minghui Xu, Bing Wu, Sisi Duan, Xiuzhen Cheng
+- **方向**: 密码学与协议
+- **解读**:
+
+MPC-as-a-Service（MPCaaS）系统让客户端把隐私计算外包给分布式服务器，可按需配置协议满足不同安全需求；但传统 MPC 在整个计算过程中依赖固定服务器集合，可扩展性受限。动态 MPC（DMPC）允许参与方在计算中途加入或退出，然而现有 DMPC 均假设同步网络，在无界网络延迟下会失效。如何让动态参与在真实异步网络中仍然安全，是尚未解决的问题。
+
+本文提出 AD-MPC，首个异步动态 MPC 协议，并在最优容错（n = 3t + 1）下保证输出交付（guaranteed output delivery）。为实现这一目标，作者引入了两个关键组件，其一为预处理机制，用于支撑参与方的动态加入与退出；具体构造细节在摘要中被截断。
+
+协议在异步网络模型下实现保证输出交付，容错能力达到最优阈值 n = 3t + 1，这是异步动态 MPC 的首次实现，填补了"动态参与"与"异步网络"两项特性无法并存的空白。
+
+把动态成员与异步网络同时纳入 MPC 设计是实质性贡献：真实 MPCaaS 部署中服务器在线状态不稳定，两者缺一不可。不过摘要截断使预处理细节、通信复杂度以及与同步 DMPC 的开销对比无法评估，性能数据有待正文验证。该协议对跨机构隐私计算等在线状态波动明显的场景有直接价值。
+
+
+#### IND-CPA-D of Relaxed Functional Bootstrapping: A New Attack, A General Fix, and A Stronger Model.
+
+- **作者**: Zeyu Liu, Yunhao Wang, Ben Fisch
+- **方向**: 密码学与协议
+- **解读**:
+
+全同态加密（FHE）应用广泛。Li 与 Micciancio（Eurocrypt'21）提出的 IND-CPA-D 安全性比标准 IND-CPA 更强，允许攻击者访问诚实生成密文的解密预言机。Jung 等（CCS'24）与 Checri（Crypto'24）已证明即使 FHEW/TFHE/BGV/BFV 等精确 FHE 方案也可能不安全（利用 bootstrapping 失败），但这类攻击可通过把失败概率降到可忽略来缓解。与此同时，Liu 与 Wang（Asiacrypt'24）提出的 relaxed functional bootstrapping 性能提升多个数量级，还允许在 bootstrapping 过程中免费计算函数，其安全性尚未被审视。
+
+本文对 relaxed functional bootstrapping 的 IND-CPA-D 安全性展开分析，提出一个新攻击，并给出通用修复方案，同时提出一个更强的安全模型，使结论不局限于具体构造。
+
+摘要截断未给出攻击成功率与性能开销的具体数字；可确认的核心结果是发现新攻击、给出通用修复，并将安全模型强化。
+
+该工作的价值在于填补"高效 FHE 构造"与"强安全模型"之间的空白——性能提升若以牺牲可证明安全为代价，后果严重。通用修复与更强模型使结果具备推广性，可能推动 relaxed bootstrapping 的安全部署。遗憾是摘要截断使攻击实用性与修复代价无法评估，需阅读正文确认。
+
+
+#### Security Analysis of Privately Verifiable Privacy Pass.
+
+- **作者**: Konrad Hanff, Anja Lehmann, Cavit Özbay
+- **方向**: 密码学与协议
+- **解读**:
+
+Privacy Pass 是 Davidson 等（PETS'18）设计的匿名认证协议，最初用于减少 TOR 用户需要解决的 CAPTCHA 数量，提供单次使用、不可关联（unlinkable）的令牌兑换保证，签发者与验证者共享对称密钥，实现私有验证。该协议获得学界与业界关注并进入 IETF 标准化，但标准版本对原协议引入了多处修改，其形式化安全性从未被检验，形成"被证明安全的协议"与"实际部署的标准"之间的缺口。
+
+本文填补该空白，对 IETF 标准的私有可验证版本进行形式化安全分析，检验标准引入的改动是否破坏原协议的安全保证。
+
+摘要截断，未给出分析结论的具体细节（是证明安全还是发现漏洞），核心产出是对标准化版本的首次形式化安全分析。
+
+标准与原始协议之间的安全缺口是常见问题——形式化证明的对象往往并非实际部署版本。该工作的意义在于把安全保证落实到 IETF 标准本身，其结论将直接影响 Privacy Pass 的大规模部署决策。若标准改动确实引入了攻击面，该分析将具有紧迫的现实影响；具体发现需读全文确认。
+
+
+#### Threshold ECDSA in Two Rounds.
+
+- **作者**: Yingjie Lyu, Zengpeng Li, Hong-Sheng Zhou, Xudong Deng
+- **方向**: 密码学与协议
+- **解读**:
+
+门限 ECDSA 让多方联合生成 ECDSA 签名，通常需要多轮交互；此前最优轮数的方案（Doerner 等，S&P'24）需要三轮。此外，Groth 和 Shoup（Eurocrypt'22）指出了预签名（presigning）机制的安全问题，且安全损失随预发布而未使用的预签名数量增长，成为各方案共有的隐患。
+
+本文提出首个阈值最优设置下的两轮多方 ECDSA 签名协议，构建于 Non-Interactive Multiplication（NIM，Boyle 等 PKC'25 提出，允许在一轮内完成秘密共享值的乘法）之上，采用 Abram 等基于类群（class groups）的实例化。系统设置最小且透明，仅需两个类群生成元，并规避了 Groth-Shoup 指出的预签名损失。
+
+相比 S&P'24 的最先进方案减少一轮交互，消息大小约 1.9 KiB，带宽高效（摘要截断处可见）；同时消除了随未使用预签名数量增长的安全损失。
+
+两轮是门限 ECDSA 部署的硬指标——每少一轮就减少一次同步与故障窗口。用 NIM/类群实例化在消除预签名安全隐患的同时保持透明设置，兼具理论价值与实践效率。后续需关注类群假设的强度、大规模参与方下的带宽增长以及恶意模型下的鲁棒性，这些细节依赖正文验证。
+
+
+#### Fast Homomorphic Evaluation of LWR-based PRFs.
+
+- **作者**: Amit Deo, Marc Joye, Benoît Libert, Benjamin R. Curtis, Mayeul de Bellabre
+- **方向**: 密码学与协议
+- **解读**:
+
+全同态加密的若干应用（如转加密 transciphering、通用阈值器、PIR）需要在加密数据上操作时使用随机性，而这些随机性必须被"盲目地"在密文域内生成并全程保持，且不同计算之间应产生独立表象的随机币。这类"密文域内随机性"的生成成本直接决定相关应用的性能。
+
+本文研究基于 LWR（Learning With Rounding）假设的伪随机函数（PRF）的高效同态求值，使 FHE 应用能够在密文域内低成本地生成所需随机性。
+
+摘要被截断，未给出具体性能数字；核心产出是 LWR 型 PRF 的高效同态求值方案，可用于转加密、阈值化与 PIR 等场景的盲随机性生成。
+
+密文域内安全生成随机性是转加密等应用的关键瓶颈，同态求值 PRF 的成本决定"盲随机性"的实际开销。LWR 型 PRF 相比 LWE 型具有更紧的格假设与更低带宽，若能以较小噪声开销同态求值，将显著改善 PIR 与转加密的吞吐。摘要截断使加速比未知，需对照正文确认与既有同态 PRF 方案的具体对比。
+
+
+#### Fast Amortized Bootstrapping with Small Keys and Polynomial Noise Overhead.
+
+- **作者**: Antonio Guimarães, Hilder V. L. Pereira
+- **方向**: 密码学与协议
+- **解读**:
+
+多数 FHE 方案利用 SIMD 技术并行处理多条消息，但安全性依赖较强的假设（如超多项式近似因子的近似格问题）；另一端的轻量 FHE 引导速度快但没有 SIMD，安全性只依赖（低次）多项式因子，假设更弱。Micciancio 与 Sorrell（ICALP'18）提出的摊还方案可一次处理多条消息、单条消息亚线性时间，但在噪声与密钥尺寸上仍有改进空间。
+
+本文的目标是兼顾两类方案的优点：在摊还引导（amortized bootstrapping）框架下实现小密钥与多项式级噪声开销，使弱假设方案同时获得并行性与可控的噪声增长。
+
+摘要被截断，未给出具体数字；可确认的核心贡献是快速的摊还引导方案，密钥尺寸小，噪声开销为多项式级而非指数级。
+
+摊还引导的噪声增长是"弱假设 + 无 SIMD"方案走向实用的关键障碍。若噪声从指数降到多项式且密钥尺寸可控，这类方案在安全假设与并行效率的组合上首次具备竞争力。但多项式噪声的常数大小、引导精度损失与真实吞吐决定实际可用性，这类理论常数往往是落地成败的分水岭，需正文数据验证。
+
+
+#### Accountable Liveness.
+- **作者**: Andrew Lewis-Pye, Joachim Neu, Tim Roughgarden, Luca Zanolini
+- **方向**: 密码学与协议
+- **解读**:
+安全性与活性是共识协议的两大经典安全性质。近期工作以"问责制"（accountability）强化安全性：一旦发生违规，可证明相当比例的敌手节点为协议违规者。本文研究的是：对活性这一性质，能否实现类似力度的问责保证。
+
+为揭示该问题的全部复杂性，作者引入介于同步与部分同步模型之间的插值模型——x-部分同步网络模型：在足够长的区间内至多 x 个时间步处于异步状态（且此后通过时间未知）。论文证明了一个精确的参数化刻画：当且仅当敌手控制节点数少于 n/2 时，问责活性可实现；并进一步参数化"违规被识别"的问题表述，给出近乎最优的证据。
+
+本文为以太坊等采用的"不活跃泄漏"（inactivity leaks）等活性问责启发式提供了严格的理论基础。
+
+把共识安全性中"安全可问责"的成果推广到"活性可问责"，并给出可实现性的精确阈值，是理论贡献扎实的工作；"inactivity leaks"在以太坊已实际部署，本文为其正当性补上证明，实用价值直接。局限在于 x-部分同步模型是理想化抽象，真实网络行为与模型假设的偏差可能影响结论的直接迁移。
+
+
+#### How to Beat Nakamoto in the Race.
+- **作者**: Shu-Jie Cao, Dongning Guo
+- **方向**: 密码学与协议
+- **解读**:
+论文在有界网络延迟下研究工作量证明（PoW）的 Nakamoto 共识，试图回答区块链安全领域的两个长期问题：给定确认延迟，对区块安全最有效的攻击是什么？该攻击导致的违规概率是多少？
+
+作者引入马尔可夫决策过程（MDP）框架，精确刻画系统状态（包括区块树及所有区块的挖矿时间）、敌手的潜在行动以及由敌手行动和随机到达过程引起的状态转移，从而把最优攻击问题转化为可计算的决策问题。他们提出一种最优攻击"诱饵与切换"（bait-and-switch），并证明它能通过"赢得竞赛"最大化违规概率；再利用链分析推导出任意深度下该违规概率的精确计算公式。
+
+论文给出了确认延迟、分叉规则与安全之间相互作用的定量新见解；摘要未列具体数值。
+
+以 MDP 形式化求解最优攻击，使"攻击上界"分析首次有了精确而非启发式的答案，方法本身可复用到其他共识变体；bait-and-switch 对理解 PoW 安全边界很有启发。局限是模型假设（延迟有界、挖矿为泊松到达）与现实网络的差距，以及结果对参数估计误差的敏感性需全文评估。
+
+
+#### Committee Selection with Non-Proportional Weights.
+- **作者**: Yucheng Sun, Haifeng Yu, Ruomu Hou
+- **方向**: 密码学与协议
+- **解读**:
+委员会机制广泛用于各类权益证明（PoS）区块链设计：委员会是从系统节点中随机选出的小规模子集。理想委员会应尽可能小，同时按腐败比例正确代表整个系统。现有选择方案都遵循"比例原则"（proportionality）——成员既不过度代表也不低度代表其所持权益。
+
+论文研究非比例权重下的委员会选择问题。摘要在此截断，推测其核心是构造目标函数或可行性条件，刻画在放弃严格比例性后、委员会既能保持小规模又能维持安全代表性的选择机制。
+
+摘要未给出量化结果；预期贡献在于新的选择方案及其对委员会规模与腐败容忍度的理论刻画。
+
+比例原则在直观上合理，但可能并非最优——本文挑战这一默认假设，若能在不牺牲安全性的前提下显著缩小委员会，将直接降低 PoS 协议的通信与计算成本，具有实际意义。局限是摘要信息过少，非比例选择是否引入新的操纵空间（如权益集中攻击）是必须回答的问题，需以全文理论证明为准。
+
+
+#### Elastic Restaking Networks: United we fall, (partially) divided we stand.
+- **作者**: Roi Bar Zur, Ittay Eyal
+- **方向**: 密码学与协议
+- **解读**:
+许多基于区块链的去中心化服务要求验证者（运营商）存入质押金（抵押品），行为不端则被罚没（slash）。再质押网络通过复用同一笔质押同时保障多个服务，已迅速普及，撬动的资金规模超过 200 亿美元。然而再质押引入新的攻击向量：攻击者可在多个服务上同时协调作恶，一次性提取数字资产，却只被罚没一次。
+
+论文分析"弹性再质押网络"（elastic restaking networks）中的攻击与安全权衡——标题"团结则倒，分裂则立"暗示：当攻击者的质押被弹性分散/集中到不同服务时，系统安全边界会发生根本变化。摘要截断，具体模型化方式与机制设计无法确认。
+
+摘要未给出量化数据；贡献预计包括对再质押聚合风险的正式刻画及相应的安全条件。
+
+EigenLayer 等再质押协议正快速成长，其"聚合质押、分散服务"的架构把单点罚没风险放大为系统性风险，本文对其安全边界的建模恰逢其时。局限在于摘要信息不全，"弹性"（elastic）一词的准确含义需要全文确认；对这类经济安全论文，模型假设与真实激励的匹配度决定结论效力。
+
+
+#### Breaking Omertà: On Threshold Cryptography, Smart Collusion, and Whistleblowing.
+- **作者**: Mahimna Kelkar, Aadityan Ganesh, Aditi Partap, Joseph Bonneau, S. Matthew Weinberg
+- **方向**: 密码学与协议
+- **解读**:
+密码协议通常依赖诚实假设——例如 n 个参与者中少于 t 个为敌手。实践中该假设难以保证，尤其是当参与者存在合谋或偏离协议的金钱激励时，信任假设可能被系统性侵蚀。
+
+论文研究阈值密码学中的"聪明合谋"（smart collusion）与"吹哨"（whistleblowing）现象。摘要截断，推测核心思想是：利用合谋者之间的信息不对称与激励差异，设计"吹哨"机制使个别合谋者主动揭发违规行为，从而在不引入新信任方的前提下威慑合谋。
+
+摘要未给出量化结果；预期贡献在于对阈值协议中合谋博弈的形式化分析及防合谋机制设计。
+
+把博弈论激励引入密码协议分析是一个有吸引力的方向——协议安全不再只依赖"敌手数量上限"，还依赖"合谋的激励结构"。局限是摘要信息过少，"吹哨"机制通常需要额外假设（如合谋者间无法传递可信承诺），其可行性边界需全文确认；若机制成立，对门限签名/分布式密钥管理的现实部署有直接意义。
+
+
+#### Fuzzy Extractors are Practical: Cryptographic Strength Key Derivation from the Iris.
+- **作者**: Amey Shukla, Luke Demarest, Benjamin Fuller, Sohaib Ahmad, Caleb Manicke, Alexander Russell, Sixia Chen
+- **方向**: 密码学与协议
+- **解读**:
+设备级生物认证长期存在理论与实践之间的鸿沟：理论上的模糊提取器（fuzzy extractor）构造原则上能提供"公开注册数据也密码学安全"的认证，但具体实现在真实安全参数下一直未能达成目标；结果导致部署中的算法依赖的数据会直接泄露生物特征的隐私信息，系统被迫依赖可信执行环境等外部措施来兜底。
+
+论文宣称让模糊提取器"走向实用"：以虹膜为生物特征源，实现密码学强度的密钥派生。摘要截断，推测其贡献在于构造达到真实安全参数的模糊提取器实例，或给出理论与实践差距的精确刻画。
+
+摘要未给出量化数据；预期成果是首个在现实参数下达标的虹膜模糊提取器实现及其安全性论证。
+
+若真能实现"公开注册数据不泄露生物信息+密码学强度密钥"，将从根本上改变生物认证的信任模型，替代 TEE 兜底方案；但这类工作历史上屡屡折戟于熵估计与纠错参数的过度乐观，安全参数与实测熵的严谨性至关重要。局限是摘要过短，无法确认其安全模型与评估方法论，需以全文为准。
+
+
+#### Committed Vector Oblivious Linear Evaluation and Its Applications.
+- **作者**: Yunqing Sun, Hanlin Liu, Kang Yang, Yu Yu, Xiao Wang, Chenkai Weng
+- **方向**: 密码学与协议
+- **解读**:
+向量不经意线性求值（VOLE）是零知识证明（ZKP）、主动安全多方计算（MPC）、隐私集合求交（PSI）等现代协议中生成相关随机性的核心原语，其效率直接决定上层协议性能。然而现有 VOLE 构造普遍不支持对值的承诺，难以在多参与方场景中安全复用。本文引入承诺向量不经意线性求值（C-VOLE）概念，解决这一基础原语层面的缺口。
+
+C-VOLE 允许持有预承诺值的一方与多个参与方直接生成 VOLE 相关性，将"承诺"与"相关性生成"耦合进单一协议，省去逐方分别承诺与校验的额外轮次。作者将其定位为统一工具，展示其在 ZKP、主动安全 MPC、PSI 等场景中的应用方式，论证了概念的通用性。
+
+该论文摘要文本质量较差、多处语句残缺，未给出具体量化性能数据。定性而言，其贡献在于提出新原语并打通若干经典应用场景的接入路径，为后续高效实例化提供理论框架。
+
+我的思考：VOLE 族原语（如 Wolverine、QuickSilver 等）近年是高效 ZK/MPC 的基石，C-VOLE 把承诺与相关性生成合并的思路在减少交互与通信上有真实价值，方向正确。但缺乏实例化效率数据与安全证明细节，成色难以充分评估；且摘要缺失使本文的独立贡献边界（与现有多方 VOLE、可验证 VOLE 的差异）不够清晰，建议以原文为准进一步核对。
+
+
+#### Lodia: Towards Optimal Sparse Matrix-Vector Multiplication for Batched Fully Homomorphic Encryption.
+- **作者**: Jiping Yu, Kun Chen, Xiaoyu Fan, Yunyi Chen, Xiaowei Zhu, Wenguang Chen
+- **方向**: 密码学与协议
+- **解读**:
+密文矩阵-向量乘法是大量隐私保护应用（机器学习推理、数据分析等）的基础组件。现有基于全同态加密（FHE）的算法普遍使用批处理（batching）提升吞吐，却忽视了实际场景中矩阵天然存在的稀疏性；而把明文领域的"跳过零元素"优化直接移植到密文上会因数据结构与 SIMD 布局不匹配而失效，甚至引入额外开销。本文针对这一问题研究批量 FHE 场景下稀疏矩阵-向量乘法的优化。
+
+Lodia 的核心思路是让算法显式感知矩阵稀疏性，在密文批处理布局中只对非零元素对应的槽位执行必要运算，从而减少密文上的无效乘加与旋转操作，逼近稀疏性带来的理论收益上界。
+
+摘要文本截断，未提供具体的加速比或基准测试数据，仅说明其相对现有批处理方法在效率上的优势。
+
+我的思考：稀疏性与 FHE 批处理的结合是性能优化的正确方向——真实负载中稀疏矩阵极为常见，而密文运算昂贵，任何按稀疏度裁剪的工作量都能直接换算为端到端加速。同类工作（如面向 SIMD 布局的 SpMV 优化、基于对角编码的矩阵乘法）已证明编码策略是成败关键，Lodia 的价值取决于其编码与调度设计是否真正达到"最优"；可惜摘要缺失实验数据，需阅读原文验证其声称的最优性。
+
+
+#### Separating Broadcast from Cheater Identification.
+- **作者**: Yashvanth Kondi, Divya Ravi
+- **方向**: 密码学与协议
+- **解读**:
+安全多方计算（MPC）协议的可识别中止（Identifiable Abort, IA）保证：若诚实方被拒绝输出，则至少被告知一个腐败方的身份。作弊者识别为协议失败提供追责途径，在密钥管理等场景中甚至比保证输出交付（GDO）更受青睐。但与仅中止安全相比，IA 协议被普遍认为必须实质性地使用广播信道。本文从理论层面研究广播与作弊者识别这两个安全要素之间是否可分离。
+
+作者考察在何种信任与网络假设下，IA 可以不依赖广播实现，或者广播在本质上是必需的，从而刻画两类安全保证之间的理论边界。
+
+摘要残缺，未给出具体定理陈述或量化结果；其贡献属于理论密码学层面的可行性/不可行性结论，澄清 IA 协议对广播信道的依赖根源。
+
+我的思考：这类分离性结果对 MPC 模型有基础性意义——它告诉我们"更强的安全保证需要付出哪些通信模型代价"，直接指导实际协议在选择 IA 或 GDO 时的信道假设。与 Dolev-Strong 及各类"广播可替代性"结果一脉相承。但摘要过短使结论强度不明，无法判断是全部设置下的分离还是部分构造；此外"作弊者识别优先于 GDO"的动机论证（密钥管理场景）值得在原文中细看。
+
+
+#### Correlation-Aware Secure Sorting and Permutation for Iterative Two-Party Graph Analysis.
+- **作者**: Yunyi Chen, Jiping Yu, Kun Chen, Xiaoyu Fan, Xiaowei Zhu, Wenguang Chen
+- **方向**: 密码学与协议
+- **解读**:
+安全多方计算使双方能在保护隐私的前提下对联合图数据做深入分析，图通常包含完整拓扑信息与扩展属性。在两方设置下，现有方法因迭代式图算法中反复需要的安全排序或昂贵的洗牌（shuffle）操作而效率低下；部分工作通过引入差分隐私或辅助参与方来放松安全假设换取效率。本文在不引入第三方、不放松两方安全模型的前提下改进这一瓶颈。
+
+核心思路是"相关性感知"：利用迭代图分析过程中数据与操作序列的固有相关性，减少冗余的安全排序调用，或让置换操作利用已知结构以更低成本完成，从而压缩每轮迭代的密码学开销。
+
+摘要截断，未提供量化性能数据，仅说明其相对现有方法在通信与计算上的改进方向。
+
+我的思考：在保持纯两方、不依赖辅助方和差分隐私的前提下做优化，是更"干净"的安全路径，工程价值明确——图分析迭代轮数多，单轮排序/洗牌成本的常数级改进会被放大为整体的大幅提速。与差分隐私方案相比，本文不牺牲准确性，这是显著卖点。但缺乏实验数据无法评估实际收益，且"相关性感知"的具体机制（如何跨轮复用相关性而不泄露信息）是安全论证的关键难点，需要原文确认。
+
+
+#### Optimistic, Signature-Free Reliable Broadcast and Its Applications.
+- **作者**: Nibesh Shrestha, Qianyu Yu, Aniket Kate, Giuliano Losa, Kartik Nayak, Xuechao Wang
+- **方向**: 密码学与协议
+- **解读**:
+可靠广播（RBC）是容错分布式系统中的关键原语，其效率提升惠及广泛的应用（区块链、状态机复制等）。免签名 RBC 因计算开销低而颇具吸引力，但现有协议在容忍 f < n/3 个拜占庭故障（n 为参与方数）的前提下，达到决策需要最优的 3 步（通信步数）。本文研究在乐观条件下能否进一步压缩步数。
+
+作者提出乐观协议：保持原有 f < n/3 容错能力不变，但在"至少 ⌈(n+2f−2)/2⌉ 个非广播方诚实行为"的乐观条件下，将终止步数从 3 步压缩到 2 步；同时证明了实现 2 步终止所需诚实方数量的匹配下界，表明该乐观条件在某种意义上是最优的。
+
+摘要未提供具体实验数据，贡献以协议设计与复杂度分析为主；协议面向签名免费设置，计算效率是其卖点。
+
+我的思考：乐观快速路径（optimistic fast path）在 BFT 共识中已有丰富先例（如 PBFT 的快速路径、HotStuff 变体），将其系统化引入免签名 RBC 并给出匹配下界，是扎实的理论+系统贡献。2 步 vs 3 步的常数改进在低延迟网络（如数据中心）与区块链底层广播中意义明显。免签名设置下的攻击面（无认证消息）使得乐观路径的安全性论证更微妙；与 Dolev-Strong 类协议及同作者在 RBC 上的系列工作相比，其定位清晰，具体应用场景的增益幅度需看原文。
+
+
+#### Phalanx: An FHE-Friendly SNARK for Verifiable Computation on Encrypted Data.
+
+- **作者**: Xinxuan Zhang, Ruida Wang, Zeyu Liu, Binwu Xiang, Yi Deng, Ben Fisch, Xianhui Lu
+
+- **方向**: 密码学与协议
+
+- **解读**: 密文上的可验证计算（VCoed）有两种主流范式：SNARK-FHE（用 SNARK 证明 FHE 运算的正确性）与 FHE-SNARK（同态地求值 SNARK 证明本身）。两者在效率上各有瓶颈，如何兼顾"对密文计算的可验证性"与"实际运行效率"是这一领域的核心难题。
+
+Phalanx 定位为一个对 FHE 友好的 SNARK：从标题与摘要判断，它针对 SNARK-FHE 路线中"证明 FHE 运算"开销过大的痛点，通过设计适配 FHE 运算结构的证明系统来提升效率，使验证者能够以较低代价确认同态计算结果确实正确。
+
+摘要指出，与现有工作相比，Phalanx 在效率上显著优于 SNARK-FHE 范式；但摘要表述简略，未给出具体的证明/验证时间、证明大小或通信量等量化数字。
+
+我的思考：FHE 与 SNARK 的组合是"可验证密文计算"的理论基石，Phalanx 聚焦证明效率这一工程痛点，方向正确；但摘要信息量有限，难以判断其技术增量（新的多项式承诺？专门算术化？）与适用电路类型。这类工作通常受限于 FHE 噪声与 SNARK 算术化之间的张力，其可扩展性与是否支持实际规模的电路，需结合全文评估。
+
+
+#### Practical Zero-Knowledge PIOP for Maliciously Secure Multiparty Homomorphic Encryption.
+
+- **作者**: Intak Hwang, Hyeonbum Lee, Jinyeong Seo, Yongsoo Song
+
+- **方向**: 密码学与协议
+
+- **解读**: 同态加密（HE）是隐私增强密码学的基石，而面向多方应用的多方同态加密（MPHE）近年来备受关注。从 MPHE 构造半诚实安全协议相对直接，但要达到恶意安全，必须对密文与公钥的正确生成提供零知识证明（ZKAoKs），这是公认的难点：证明开销大、协议效率低。
+
+本文的目标是构造面向恶意安全 MPHE 的实用零知识证明系统。从标题看，技术路线是基于多项式交互式预言机（PIOP）构建 ZK 论证，以高效地证明"密文/公钥是按协议要求正确生成的"，从而把半诚实 MPHE 协议升级为恶意安全版本。
+
+摘要为动机性陈述，未给出具体的证明大小、运行时间或与现有方案的量化对比结果，因此无法引用实验数据。
+
+我的思考：恶意安全是 MPC 从理论走向可信部署的必经门槛，而 ZKAoKs 正是 HE 场景下最重的开销来源；本文以 PIOP 为切入点做实用化，定位精准。同路线竞争激烈（如基于 VOLE、MPC-in-the-head 的方案），其差异化价值在于"PIOP 结构带来的证明与验证效率"是否具有实质优势；建议对照全文的基准实验与安全模型（UC？）来判断其落地潜力。
+
+
+#### Practical TFHE Ciphertext Sanitization for Oblivious Circuit Evaluation.
+
+- **作者**: Intak Hwang, Seonhong Min, Jinyeong Seo, Yongsoo Song
+
+- **方向**: 密码学与协议
+
+- **解读**: FHE 支持在密文上计算任意电路，其典型应用是不经意电路求值：发送方在接收方数据的密文上计算自己的私有电路，覆盖模型推理、PRF 协议等场景。然而，发送方的隐私并不能仅由 HE 本身保证——密文形态与计算痕迹可能泄露发送方的电路信息，这是容易被忽视的安全缺口。
+
+本文提出面向 TFHE 的实用密文净化（sanitization）技术：对参与计算的密文进行再随机化/重封装处理，抹去与发送方电路相关的统计痕迹，从而在不经意电路求值中强化发送方的隐私保护，同时控制净化带来的开销。
+
+摘要为动机性描述，未披露净化开销、安全性证明框架或与既有净化方案的量化对比，无法引用具体数字。
+
+我的思考：密文净化是 FHE 应用中"表面安全但实际泄漏"问题的关键补丁——HE 保证的是输入隐私，而非"谁计算了什么"的侧信道式隐私；把净化从理论概念推向实用（尤其对 TFHE 的快速引导）有明确价值。与本文作者另一篇 MPHE 工作同源，说明其研究主线聚焦 FHE 恶意/隐私语义的完整化；建议全文关注净化的噪声增长与电路规模的代价关系。
+
+
+#### Multi-Party Private Set Operations from Predicative Zero-Sharing.
+
+- **作者**: Minglang Dong, Yu Chen, Cong Zhang, Yujie Bai, Yang Cao
+
+- **方向**: 密码学与协议
+
+- **解读**: 多方私密集合运算（MPSO）让 m>2 个参与方在各自集合上安全计算交集、并集等结果，但现有协议大多只支持一两种特定功能，方案彼此孤立、缺乏统一框架，研究人员难以组合多种集合操作。本文旨在打破这一碎片化现状。
+
+作者提出一个通用框架，允许每个参与方持有集合，安全计算任意公式——即有限个二元操作（包括交集、差集等）的任意组合。技术核心是新引入的原语"谓词零共享"（predicative zero-sharing），它捕获了 MPC 可组合性的普遍性质，且实例化主要依赖对称密钥技术，避免了通用 MPC 的重型开销。
+
+通信复杂度随集合大小 n 线性增长，在半诚实模型下对 MPSI、MPSI 基数（MPSI-card）、基数求和（MPSI-card-sum）与 MPSU 等常用功能达到与朴素方案同阶的最优通信；在线性能在多数场景下超越或追平现有最先进方案。作者称这是首个无需通用 MPC、达到如此通用性的 MPSO 框架。
+
+我的思考：把"任意公式组合的集合运算"统一到一个原语之下，是典型的"一个原语打天下"式贡献，对称密钥实例化保证了理论优雅与实用效率兼得；predicative zero-sharing 本身可能成为后续工作的公共构件。需要关注的局限：半诚实模型下成立，恶意安全性是否顺延；线性通信的常数因子与在线/离线拆分；以及对差集、并集等非对称操作的专门优化空间。
+
+
+#### On the Security of SSH Client Signatures.
+- **作者**: Fabian Bäumer, Marcus Brinkmann, Maximilian Radoy, Jörg Schwenk, Juraj Somorovsky
+- **方向**: 密码学与协议
+- **解读**:
+管理员与开发者使用 SSH 客户端密钥签名进行认证，例如访问互联网骨干服务器或在 GitHub 等平台提交代码。然而与服务器不同，客户端无法通过互联网扫描来测量其密钥安全状况。本文分两步填补这一空白：首先收集公开密钥——此类密钥经常由所有者在 GitHub、GitLab 等开放平台公开发布，作者对这些密钥进行了系统化梳理，结合各类安全测试做了纵向研究；其次，通过一系列黑盒实验，分析了 24 个流行的 Linux、Windows、macOS 系统中签名算法实现的安全性。
+
+作者从三个来源提取了 31,622,338 个密钥。与以往工作相比，明显趋势是放弃 RSA、转向 EdDSA 签名。但截至 2025 年 1 月，仍发现 98 个损坏的短密钥、139 个由弱随机性生成的密钥、149 个含公共小因子的密钥——不过绝大多数检索到的密钥未暴露弱点。
+
+弱随机性不仅能危及密钥本身，还可能连带危及同一密钥的其他用途。众所周知 ECDSA 随机 nonce 的偏差会泄露私钥，本文首次证明确定性随机数同样危险：仅凭 58 个有效签名（使用 NIST 曲线 P-521），就恢复了 PuTTY 的私有签名密钥。该发现被确认为 CVE-2024-31497，PuTTY 随后更换了 nonce 生成算法。
+
+我的思考：客户端密钥无法远程测量是 SSH 生态的盲区，本文用"公开发布密钥+黑盒实验"开辟了可操作路径：3000 万级密钥规模让统计结论稳健。确定性随机数（RFC 6979 风格）通常被视为弱随机性的解药，本文证明其实现（如 PuTTY 的 nonce 生成）反而可成为新攻击面——这是对"确定性即安全"直觉的重要修正。局限在于样本来自自选公开平台，未必代表所有客户端；但 CVE-2024-31497 的实际修复已证明其安全价值。
+
+
+#### Toss: Garbled PIR from Table-Only Stacking.
+- **作者**: Lucien K. L. Ng, Vladimir Kolesnikov
+- **方向**: 密码学与协议
+- **解读**:
+混淆电路（GC）是安全两方计算（2PC）的基础原语。基于 GC 的私有信息检索（GPIR）是用 GC 技术查找公开数组或数据库（DB）中、以私有索引定位的元素的技术，且该索引对双方都未知。GPIR 直接蕴含对以公开查找表（LUT）形式实现的函数的求值——即函数以查找表形式公开、输入私有时，通过 GPIR 即可在双方间安全计算函数值。本文提出 Toss，一种基于"纯表格堆叠"（table-only stacking）的混淆 PIR 构造。
+
+方法上，"table-only stacking"暗示其核心思想是仅通过将查找表进行堆叠/组合来构造 GPIR，从而避免复杂的密码学开销，使协议更接近混淆电路原语的本质。摘要极短，未给出通信量、计算开销等量化数据，也未明确与既有 GPIR 方案的对比。
+
+从标题与摘要推断，其贡献应在于以更简洁、统一的构造方式实现 Garbled PIR，并相应提升 LUT 函数安全求值的效率。具体性能指标有待正文补充。
+
+我的思考：GPIR 是 2PC 中"查表型函数求值"的高频子例程，其效率直接影响上层协议。Toss 的价值取决于"纯表格堆叠"是否真的能以更少的电路规模或通信轮数达到同等功能——若成立，将简化实现并惠及依赖 LUT 求值的应用（如 PSI、隐私求值、混淆电路优化）。摘要信息量过少，难以判断其相对状态（与 Kolesnikov 团队此前的 PIR 工作、以及函数秘密共享类方案）的具体优势，需阅读正文验证。
+
+
+#### Post-Quantum Threshold Ring Signature Applications from VOLE-in-the-Head.
+- **作者**: James Hsin-yu Chiang, Ivan Damgård, William R. Duro, Sunniva Engan, Sebastian Kolby, Peter Scholl
+- **方向**: 密码学与协议
+- **解读**:
+本文提出高效的、后量子安全的门限环签名（threshold ring signature），其安全性建立在 AES 加密的单向性以及 VOLE-in-the-Head 零知识证明系统之上。方案能够高效扩展到大规模环，并扩展了可链接（linkable）范式：作者定义并构造了密钥绑定（key-binding）的确定性标签以实现可链接性——同一签名者多次签名可被关联，但身份仍然隐藏。
+
+在此基础上，作者将方案扩展以实现在 Monero 精神下的匿名账本交易：环签名保证发送者匿名，可链接性防止双重花费，二者结合构成隐私币的核心密码机制。此外，方案还支持使用近似下界参数论证（approximate lower bound arguments of knowledge）实现简洁聚合，从而无需 SNARK 即可构造（近似）多重签名。
+
+所有构造仅假设对称密钥原语（AES 等），这是该方案的重要特性：相比依赖格或配对的后量子方案，对称密钥基础意味着更简单、更保守的安全假设与更小的实现足迹。
+
+我的思考：环签名与可链接性（如 Monero 的链接环签名）在隐私支付中扮演核心角色，而后量子迁移是当前密码学界的主线议题。基于 VOLE-in-the-Head 的方案以对称密码为唯一假设，规避了格假设的不确定性，且"无 SNARK 的简洁聚合"绕开繁重的通用证明系统，工程吸引力强。局限在于摘要未给出签名大小、签名/验证开销等量化数据，与现有后量子环签名（如基于格、基于 MPC-in-the-Head 的同类方案）的具体效率对比待正文验证；门限设置下的鲁棒性与可撤销性也需进一步审视。
+
+
+#### Distance-Aware OT with Application to Fuzzy PSI.
+- **作者**: Lucas Piske, Jaspal Singh, Ni Trieu, Vladimir Kolesnikov, Vassilis Zikas
+- **方向**: 密码学与协议
+- **解读**:
+两方模糊私有集合交集（fuzzy PSI）协议中，Alice 与 Bob 分别持有输入集合 A 与 B，双方只学习 B 中与 A 的某个点在度量空间 dist 下"δ-接近"的点，即 {b | dist(a,b) ≤ δ, a ∈ A, b ∈ B}，且不泄露 Alice 集合的其他信息。模糊 PSI 在需要基于不精确或测量型数据（如 GPS 坐标、医疗数据）计算交集时极具价值。此前方案依赖非对称密码原语、混淆电路等通用 2PC 技术或函数秘密共享方法，均计算密集、具体效率不佳。
+
+本文提出新的模块化模糊 PSI 框架，主要构建于高效对称密钥原语之上。核心创新是新型不经意传输变体——距离感知随机 OT（da-ROT）：发送方获得两个字符串 (r0, r1)，接收方根据其关键字与发送方的关键字是否 δ-接近而获得其中一个值。da-ROT 是传统 OT 的自然扩展，其选择条件（接近性而非选择比特）对接收方可知。
+
+作者提出基于标准假设、面向小型定制域、支持 Chebyshev、Euclidean 与 Manhattan 范数的构造。集成后，方案在集合规模 2^8 到 2^16 范围内，相比此前的先进协议实现最高 14 倍的通信量降低与 54 倍的计算加速。作者还将其扩展至基数计算（cardinality）与连接（join）等 PSI 相关功能，所有协议在半诚实模型下安全。
+
+我的思考：把 OT 的选择比特泛化为"距离条件"是优雅的抽象，使模糊匹配从通用 2PC（昂贵）下沉到对称密钥原语，换来 14×/54× 的显著提升——这正是隐私计算走向实践所需的效率突破。局限在于构造针对小型定制域优化，超大域或高维度量空间的扩展性有待观察；半诚实安全模型意味着面对恶意参与者时需额外加固。GPS/医疗等真实场景的端到端集成将是其价值的最终检验。
+
+
+#### MegaBlocks: Breaking the Logarithmic I/O-Overhead Barrier for Oblivious RAM.
+- **作者**: Gilad Asharov, Eliran Eiluz, Ilan Komargodski, Wei-Kai Lin
+- **方向**: 密码学与协议
+- **解读**:
+不透明随机访问机（ORAM）是使内存访问模式不泄露数据访问位置的核心密码原语。在现有 ORAM 范式中，分层（hierarchical）ORAM 虽具有渐近最优性，却长期被认为不切实际；然而近期进展（FutORAMa，CCS'23）表明，在客户端内存充足的前提下，基于 ORAM 的方案可以变得高效。本文在此基础上提出新构造 MegaBlocks，在无需大规模本地客户端内存的情况下实现实用性能，并打破对数 I/O 开销屏障——即从经典的 O(log² N) 或更高的 I/O 复杂度进一步降低。
+
+方法上可推断：MegaBlocks 借鉴分层 ORAM 的"哈希桶+重新洗牌"框架，但通过块级（block-level）的批量处理与重新组织，将 I/O 开销从对数因子压缩，使每个访问的平均 I/O 成本接近常数；"无需大客户端内存"意味着其效率不依赖昂贵的客户端存储假设，更贴近真实部署。
+
+摘要截断，未给出具体量化结果（如带宽开销、与 FutORAMa 的对比数据）。其宣称的贡献点明确：突破对数 I/O 开销屏障且不要求大客户端内存。
+
+我的思考：ORAM 的实用化是"安全硬件/安全处理器内存访问"落地的关键，FutORAMa 证明了分层范式的复活，MegaBlocks 则继续压缩其 I/O 常数——对磁盘型 ORAM（存储大）尤其重要，因为 I/O 开销直接决定吞吐。值得关注的是其安全模型（客户端内存大小、敌手观察粒度）与真实带宽数字：若常数因子大幅降低，将为安全处理器、隐私数据库等应用打开新空间。需要正文给出与 FutORAMa、递归 ORAM 等方案的公平对比。
+
+
+#### CuKEM: A Concise and Unified Hybrid Key Encapsulation Mechanism.
+- **作者**: Yiting Liu, Biming Zhou, Haodong Jiang
+- **方向**: 密码学与协议
+- **解读**:
+（无摘要，据标题推断）CuKEM 提出一种"简洁且统一"的混合密钥封装机制（Hybrid KEM）。混合 KEM 是后量子迁移中的标准工程手段：将经典 KEM（如 X25519/ECDH）与后量子 KEM（如 ML-KEM/Kyber）组合，使安全性在至少一个组件未被攻破时依然成立，从而兼顾抗量子威胁与对经典密码实现缺陷的防御。标题中的"简洁"（Concise）暗示其追求小尺寸、低开销与简单实现，"统一"（Unified）暗示其以统一框架涵盖多种组合方式（如顺序组合、密钥拆分等）。
+
+方法上可推断：CuKEM 设计了一种将两个底层 KEM 的封装/解封装流程整合为单一接口的方案，通过精巧的密钥派生与组合逻辑（类似 HKDF 链或 X-Wing 的"简单组合"思路），在保持 IND-CCA 安全性的同时最小化实现复杂度与带宽。
+
+由于无摘要，无法引用量化结果；按标题保守推断其贡献为：给出一个可论证安全、实现简洁的混合 KEM 构造，可作为标准化的候选参考实现。
+
+我的思考：NIST 后量子标准落地后，"如何组合经典与后量子 KEM"成为部署层核心问题——X-Wing、Hybridized Kyber 等方案已在 IETF/CFRG 讨论中。CuKEM 若能以更简洁的统一接口覆盖主流组合策略，将降低实现者的安全风险（组合不当反而削弱安全性）。其安全性证明质量（是否含组合器定理、能否抵抗"降级到经典"类攻击）是评判关键；这类工作真正价值在于能否进入标准化流程并获得社区采纳。
+
+
+#### Poster: Public Key Encryption with Exclusionary Subset Keyword Search from Lattices.
+- **作者**: Yi-Fan Tseng; Jheng-Jia Huang; Guan-Yu Chen; Ting-Hsiang Su
+- **方向**: 密码学与协议
+- **解读**:
+公钥可搜索加密（PKSE）让用户在不解密的前提下在加密数据上检索关键词，是密文数据管理与云外包场景的核心原语。论文指出，现有 PKSE 方案无法平凡地实现一种新的搜索模式——排他性子集搜索（exclusionary subset search）：即检索"不包含"指定关键词集合的密文。在许多场景中，排除少量关键词比正向匹配更为直观高效（例如检索不含"机密"标记的所有文档）。
+
+方法上，作者基于格（lattices）构造了支持该新模式的 PKSE 方案，并支持常数大小的陷门（constant-size trapdoors），相比现有基于格的构造在效率上具有优势。排他性搜索的难点在于：标准的合取/析取关键词搜索技术难以直接取反，需要设计专门的编码与匹配机制使"非包含"关系可在密文上验证。
+
+作为海报论文，摘要未给出参数规模、性能基准等量化数据。
+
+我的思考：该工作的学术价值在于拓展了可搜索加密的功能边界——排他性搜索在策略检索、敏感词排除等场景有真实需求，此前缺乏专门的构造。基于格的设计还天然具备抗量子优势。局限方面：常数大小陷门与排他语义往往以更大的密文或更高计算开销为代价，缺少与现有方案在真实数据上的性能对比难以判断实用性；此外"不包含"匹配在安全证明中通常比"包含"更棘手，安全性模型需仔细审视。总体是密码学原语层面的有意义增量，工程落地仍需评估。
+
+
+#### Poster: PQ Noise Explorer.
+- **作者**: Animesh Thakur; Mikael Asplund
+- **方向**: 密码学与协议
+- **解读**:
+后量子（post-quantum, PQ）密码方案中，噪声分布的设计与采样直接影响方案的安全性与效率，而手工设计噪声模式极易出错——错误的高斯参数可能使方案在量子攻击下崩溃，或造成不必要的性能损耗。论文提出 PQ Noise Explorer，一个用 Rust 实现的工具仓库，用于设计、形式化验证并实现任意噪声模式。
+
+方法上，Explorer 支持对任意噪声模式进行验证：可将模式翻译为形式化模型，交由自动化验证工具检查其正确性（如参数边界、分布性质），并同时生成 Rust 软件实现。这一"验证 + 实现"一体化流程，把噪声模式从"论文中的公式"变成"经过机器验证的可用代码"，降低了后量子密码落地中的工程风险。
+
+作为海报/工具论文，摘要未给出具体验证案例与性能数据。
+
+我的思考：后量子密码的标准化推进中，工程正确性与可验证性是落地关键——噪声参数差之毫厘，安全性谬以千里。该工具的定位是连接"密码学设计"与"可部署实现"的桥梁，与形式化验证密码学（如 hacspec、EasyCrypt 工具链）的理念一脉相承。局限在于：工具价值取决于其支持的验证性质与自动化程度，若仅支持特定模式的参数检查，覆盖范围有限；与主流 PQ 库（如 liboqs）的集成度也影响实用性。总体是务实的基础设施类贡献，对研究者和实现者都有用。
+
+
+#### Poster: An Improved Quantum Attack on the Two-round Even-Mansour Cipher with Independent Permutations and Keys.
+- **作者**: Rentaro Shiba, Tetsu Iwata
+- **方向**: 密码学与协议
+- **解读**:
+
+两轮迭代 Even-Mansour 分组密码（由两个独立置换与三个子密钥构成）的量子安全性是该构造能否继续使用的关键问题。此前该变体在 Q1 模型（敌手只能做经典在线查询、可自由做离线量子查询）下的最优攻击复杂度为 O(2^(3n/5))，其中 n 为分组大小。
+
+作者提出改进的量子攻击，仍处于 Q1 模型，利用经典在线查询与离线量子查询的组合，将计算复杂度降至 O(2^(n/2))，显著优于已知结果。
+
+这一改进说明两轮 Even-Mansour 在 Q1 模型下几乎逼近通用分组密码的生日界 O(2^(n/2))，剩余"量子安全余量"很小，对该构造的可证明安全性提出了更紧的约束。
+
+我的思考：复杂度从 O(2^(3n/5)) 到 O(2^(n/2)) 是实质性进步，且符合直觉上界，理论干净；但海报口径未给出查询数、内存等完整细节，三轮情形与随机置换模型的推广仍待后续工作；该结果也为评估 Even-Mansour 系列构造在量子敌手下的安全余量提供了更紧的参考，并为后续更一般密钥调度情形的分析奠定了基础。
+
+#### Poster: Post-Quantum Readiness in EdDSA Chains.
+- **作者**: Kostas Kryptos Chalkias
+- **方向**: 密码学与协议
+- **解读**:
+
+（无摘要，据标题推断）EdDSA 是区块链、加密货币签名链中广泛使用的签名算法，随着量子计算发展，评估其"后量子就绪性"成为紧迫问题——例如公钥长期暴露给 Shor 算法提供的攻击面、大量签名收集可能泄露密钥信息，以及链式签名场景中密钥管理与轮换的风险。
+
+方法上，据标题推断，该海报系统梳理 EdDSA 在链式使用场景（多签、交易链、跨链签名）中的量子威胁暴露点，并讨论迁移到格基签名或与后量子方案混合的可行路径与工程代价。
+
+由于没有摘要，无法引用任何具体数据或结论。
+
+我的思考：该工作的价值在于把"后量子迁移"这一宏大话题落到 EdDSA 链这一具体且高价值的场景，属于评估与路线图型工作；但无摘要使其可验证性有限，具体判断需以正文为准，此处解读仅基于标题的保守推断；后续尤其需要结合具体链生态的密钥生命周期来量化量子威胁窗口。
+
+#### Poster: Reducing Hull Dimensions for Efficient Permutation Recovery in Code-Based Cryptography.
+- **作者**: Keita Ishizuka
+- **方向**: 密码学与协议
+- **解读**:
+
+线性码的置换等价问题（PEP）是编码理论与现代密码学（如 LESS、SPECK 等基于码的签名方案）的基础问题，其求解难度直接决定这些方案的安全参数。支撑分裂算法（SSA）是实际最有效的求解方法，其效率关键取决于 hull 维数。
+
+作者指出，SSA 要求置换不变的 hull，但可以通过选取替代内积来降低维数：他们给出了完整刻画——置换不变的内积恰好对应结构矩阵形如 aI + bJ 的双线性型，并证明这些维数最多只能降低 1，同时给出何时发生降低的精确条件。
+
+虽然这一上界限制了其对密码安全性的直接影响，但该改进在枚举复杂度上带来 q 倍的加速，对码分类和密码分析细化仍有实际意义。
+
+我的思考：理论贡献完整且边界清晰，既给出刻画又诚实标注了安全影响的上限；q 倍加速在码等价性分类的大规模枚举中可累积，与 LESS/SPECK 的参数选择直接挂钩，是扎实的密码分析增量工作；总体而言是一篇精细的密码分析理论工作。
+
+#### Poster: Efficient Threshold ML-DSA up to 6 Parties.
+- **作者**: Sofía Celi, Rafaël del Pino, Thomas Espitau, Guilhem Niot, Thomas Prest
+- **方向**: 密码学与协议
+- **解读**:
+
+阈值签名允许一群用户协作产生数字签名而不泄露各自的份额，是密钥分散与高可用签名的核心工具；在 NIST 后量子标准化推进的当下，缺乏高效、实用的标准化后量子阈值签名变体阻碍了采用。
+
+作者提出首个与 ML-DSA（Module-Lattice-based Digital Signature Algorithm）标准兼容的阈值方案，支持最多 6 方参与；采用先进的短秘密共享技术，并针对分布式环境下的拒绝采样进行优化，以平衡通信开销与正确性；他们用 Go 实现该构造，并在本地、LAN 与 WAN 三种部署下进行了基准测试。
+
+结果表明该方案对真实应用（多设备加密货币钱包、TLS、Tor 目录权威）切实可行；摘要未给出延迟与通信量的具体数值。
+
+我的思考：作者团队贴近后量子迁移工程实践，"与标准兼容"和"支持 6 方"是明确的实用卖点；但 6 方上限距通用 t-of-n 仍有距离，且缺少与通用 MPC/多方方案的量化对比，工程细节有待正文披露，后续可期待更一般参与方数与门槛结构的推广。
+
+#### Scalable Cryptography for Trustworthy Machine Learning in the LLM Era.
+- **作者**: Gefei Tan
+- **方向**: 密码学与协议
+- **解读**:
+
+多方计算（MPC）与零知识证明（ZKP）提供强可证明的安全保证，但通用协议对生产规模的机器学习（尤其 LLM 时代）仍不实用，开销巨大。
+
+作者提出核心论点：与具体 ML 子任务的结构协同设计的密码学协议，可以在不牺牲隐私或可验证性的前提下达到实用效率。论文发展三条研究主线：(1) 机密外包训练——定制 MPC 将昂贵步骤转移到本地计算，使资源受限的数据所有者能在不可信云上安全训练；(2) 大数据集的可扩展原语——如 oblivious shuffle、私有连接、稀疏线性代数例程，弥合隐私保护管线的性能差距；(3) 可验证重训练——不再逐步证明，而是用"最优性证明"框架证明训练/微调后的模型（如 LoRA 适配器）满足所需性质，实现无需重执行训练的高效可审计部署。
+
+这是论文计划，无实验数据。
+
+我的思考："与应用结构协同设计"是密码学实用化的正确路线，proof-of-optimality 思路新颖，可规避逐步验证的爆炸开销；LLM 时代的机密推理与训练是热点，后续需要真正的工程落地与基准来证明其主张。
+
+#### Turning Uncertainty into Efficiency: Toward Practical, Quantum-Resistant Verifiable Privacy Tools.
+- **作者**: Jie Xu
+- **方向**: 密码学与协议
+- **解读**:
+
+可验证随机函数（VRF）与不经意伪随机函数（OPRF）是匿名认证、隐私集合求交（PSI）、去中心化身份等隐私应用的核心原语，但现有构造依赖易受量子攻击的数论假设，后量子化改造迫在眉睫。
+
+作者（博士研究）的目标是构造高效实用的格基 VRF 与 OPRF，保证后量子安全；关键障碍是零知识证明（尤其范围证明）在大小与证明者复杂度上的开销。为此他们探索概率性技术来放宽精确正确性：例如近似代数变换、利用多项式环的自同构通过乘法模拟内积参数证明等，从而获得更可扩展的 VRF（包括群/上下文约束变体）与 OPRF。
+
+这是论文计划阶段，无实验数据。
+
+我的思考："用可量化的不确定性换效率"的立意清晰，是格基隐私原语实用化的务实路线；正确性概率的精确分析与安全参数设定是成败关键，与标准数论构造的对比实验将决定其实际价值，也期待其在效率与安全上的系统对比。
+
+#### Towards Solving Real-world Problems of Post-quantum Cryptography.
+
+- **作者**: Suparna Kundu
+- **方向**: 密码学与协议
+- **解读**:
+公钥密码是数字数据安全与完整性的基石，但当前主流方案基于整数分解与椭圆曲线离散对数问题，面对拥有大规模量子计算机的对手不堪一击。NIST 发布首批后量子（PQC）标准是"分水岭时刻"，但 PQC 的研究与开发成熟度仍远不及数十年历史的老方案，从标准到真实部署之间横亘着大量未解问题。
+
+该博士论文旨在弥合 PQC 理论与实践之间的鸿沟，逐一处理这些现实问题：物理攻击（侧信道）分析及其对策、面向特定应用场景的方案修改、面向资源受限设备的轻量级实现、以及 PQC 与不同安全协议的集成。方法上以开放问题清单为纲，逐项攻关。
+
+结果部分（基于摘要陈述，无量化实验数据）指出：即便 NIST 标准化已迈出关键一步，上述物理攻击、轻量实现、协议集成等开放问题仍需在广泛部署前解决，这是论文面向的研究空间。
+
+我的思考：选题精准锁定 PQC 落地的"最后一公里"，侧信道防护与轻量级实现正是实战化部署的最大短板，务实且具有现实紧迫性。作为博士论文，其贡献更偏向研究路线图与系统性攻关而非单一突破；与纯理论密码学工作相比，这篇工作的价值在于把"标准"变成"能安全跑在真实设备上的实现"。
+
+#### QSec '25: Workshop on Quantum Security and Privacy.
+
+- **作者**: Muhammad Taqi Raza; Jakub Szefer
+- **方向**: 密码学与协议
+- **解读**:
+量子技术带来了双重议题：一方面，量子计算对现有密码体系构成根本性威胁；另一方面，量子系统自身（量子计算机、量子网络）的安全也亟待保障。这两类问题在传统安全社区中常被割裂讨论。
+
+QSec 工作坊致力于建立一个聚焦量子时代威胁的专门平台：汇集后量子密码、网络安全、量子密钥分发（QKD）与量子计算架构等方向专家，分析具备量子能力或被量子增强的对手如何破坏经典系统，同时展示混合密码方案、QKD 等量子原生协议、硬件级防护等创新防御手段；并通过主旨演讲、技术会议与蓝天空想（blue-sky）讨论勾画未来研究路线图，弥合密码学、网络、架构与信息科学社区之间的隔阂。
+
+结果（摘要为框架性陈述，无量化数据）：明确"威胁分析 + 量子原生防御 + 跨社区路线图"三大支柱。
+
+我的思考：将"量子系统自身的安全"（如量子设备侧信道、量子网络协议安全）与经典的"抗量子"议题并置，是本文的独特角度——Jakub Szefer 团队在量子密码实现的侧信道分析方面有代表性工作，因此这一视角有实打实的技术支撑。混合密码方案与 QKD 的并存路线，也反映了"渐进迁移 + 量子原生"的现实主义策略。
+
+#### QRSec 2025: ACM CCS First Workshop on Quantum-Resistant Cryptography and Security.
+
+- **作者**: Ashish Kundu; Attila A. Yavuz; Cristina Nita-Rotaru
+- **方向**: 密码学与协议
+- **解读**:
+量子计算带来变革性机遇与挑战，密码学首当其冲。2024 年 NIST 发布首批后量子（PQC）标准化方案，标志着标准化进程取得里程碑式进展，但如何将 PQC 真正集成进安全系统——工程实现、部署策略与合规迁移——仍是紧迫问题。
+
+QRSec 2025 作为首届聚焦量子抗性密码学与安全的工作坊，为研究者、从业者与行业领袖提供探讨 PQC 集成进展的论坛：覆盖理论基础、算法设计、工程实现与部署策略，并纳入机器学习密码分析、量子抗性网络、区块链、物联网与云安全等新兴主题；程序包括领域权威主旨演讲、技术论文报告与连接学界、工业界、政府部门的互动圆桌。
+
+结果：依托 NIST 首批标准（2024 年发布）这一时间锚点，确立"从标准到迁移与合规"的议程主线（无进一步量化数据）。
+
+我的思考：与 QSec 侧重"量子时代威胁全景"不同，QRSec 更聚焦"抗量子密码落地的工程化路径"。把机器学习密码分析列为新兴主题颇有前瞻性——AI 驱动的密码分析可能加速某些经典假设的失效；而面向区块链、IoT、云的 PQC 集成讨论，则直面这些异构场景中性能与兼容性的现实约束。
+
+#### WAHC 2025: 13th Workshop on Encrypted Computing & Applied Homomorphic Cryptography.
+
+- **作者**: Flávio Bergamaschi; Yuriy Polyakov; Kurt Rohloff
+- **方向**: 密码学与协议
+- **解读**:
+（无摘要，据标题推断）加密计算与同态密码学允许在密文上直接进行计算，是实现"数据可用不可见"的核心技术，也是隐私保护计算（联邦学习、外包计算、隐私查询等）的关键基础设施。该工作坊已举办至第 13 届，聚焦同态密码学的实际应用。
+
+方法上，据标题推断，会议将涵盖同态加密方案的实现优化、编译工具链、标准化进展以及在真实场景（如安全外包计算、隐私数据统计）中的部署案例。
+
+结果：无具体数据可引用，具体论文内容无法从标题确认。
+
+我的思考：同态加密从理论走向实用已有显著进展，但性能开销与工程复杂性仍是规模化部署的门槛；Polyakov 与 Rohloff 是 OpenFHE/PALISADE 等主流开源同态加密库的核心推动者，组织者的工程背景意味着该工作坊偏重"能跑起来"的实现与标准化，而非纯理论。对行业而言，这类聚焦落地的交流平台价值在于缩短从论文到生产代码的距离。
+
+### 隐私保护（43 篇）
+
+#### Mechanizing Privacy by Design.
+
+- **作者**: David A. Basin, François Hublet, Srdan Krstic, Hoàng Nguyen
+- **方向**: 隐私保护
+- **解读**: 
+"默认隐私设计"（privacy by design）要求在系统设计之初就融入数据保护，而非事后补救；但相关立法并未规定如何落地，主流语言与框架也缺乏对隐私设计的原生支持，导致该原则长期停留在口号层面。本文试图把这一原则机械化、工程化。
+方法上，作者开发了多条互补的技术路线：其一，基于逻辑的强大工具，在运行时强制执行形式化隐私策略，对相关系统行为进行控制；其二，提出基于模型的方法与建模手段，实现模型驱动的隐私强制（model-driven enforcement）。论文报告了这些方法、工具及实际使用经验。
+结果方面，论文总结了其方法、工具与在真实系统中的实践经验（摘要未提供具体量化指标），说明基于形式化逻辑的运行时策略强制与模型驱动方法相结合，可以在实际系统中落地隐私设计。
+我的思考：本文的价值在于把"隐私设计"从原则转化为可执行的形式化机制，并同时探索运行时强制与模型驱动两条路线，覆盖面较广。局限是摘要信息有限，工具的可扩展性、对现有系统的侵入性与实际部署效果有待正文验证；与GDPR等法规"适法性"的对接也始终是此类工作的难点。整体上为隐私工程提供了务实参考。
+
+
+#### PLRV-O: Advancing Differentially Private Deep Learning via Privacy Loss Random Variable Optimization.
+
+- **作者**: Qin Yang, Nicholas Stout, Meisam Mohammady, Han Wang, Ayesha Samreen, Christopher J. Quinn, Yan Yan, Ashish Kundu, Yuan Hong
+- **方向**: 隐私保护
+- **解读**: 
+DP-SGD是深度学习隐私保护的标准方法，通常用高斯机制扰动梯度；但高斯、拉普拉斯等常规机制只由方差或尺度一个自由度参数化，噪声幅度与效用损失被绑定，无法独立控制两者；当组合轮数T与批次大小B跨任务变化时，隐私-效用权衡发生任务相关漂移，参数微调即可不成比例地影响模型精度。
+方法上，PLRV-O提出一个定义广义DP机制搜索空间的框架，以隐私损失随机变量（Privacy Loss Random Variable）为对象进行优化，使隐私预算与噪声形态（从而效用损失）解耦，允许针对具体T、B组合搜索更优的机制。
+结果方面，框架旨在在不同组合轮数与批次规模下稳定并改善隐私-效用权衡，降低小参数变化对精度的敏感度；实验效果以论文正文的量化结果为准（摘要未给出具体数字）。
+我的思考：把"单自由度噪声"拓展为"隐私损失随机变量空间上的优化"是对DP-SGD机制设计的实质升级——隐私分析本质上是随机变量过程的组合，直接在该空间优化比修修补补高斯机制更根本。局限是搜索空间变大后的计算成本与理论保证复杂度，与zCDP等现代隐私账本如何衔接也值得关注。若落地良好，可成为DP训练框架的新默认机制。
+
+
+#### Panther: Private Approximate Nearest Neighbor Search in the Single Server Setting.
+
+- **作者**: Jingyu Li, Zhicong Huang, Min Zhang, Cheng Hong, Jian Liu, Tao Wei, Wenguang Chen
+- **方向**: 隐私保护
+- **解读**: 
+近似最近邻搜索（ANNS/向量检索）是推荐系统、生物识别、机器学习等应用的基础构件；私有ANNS要求客户端只能学到查询结果、服务器无法得知查询内容。此前方案要么通信开销过高（Chen等，USENIX Security 2020），要么依赖两个不合谋服务器的更强假设（Servan-Schreiber等，S&P 2022）。
+方法上，Panther在更弱的单服务器设置下实现高效私有ANNS，通过对信息检索（PIR）、秘密共享、混淆电路与同态加密多种原语进行新颖的协同设计（co-design）达成性能目标。
+结果方面，实验表明Panther在单服务器假设下实现了可用的通信与计算效率（具体数字以论文正文为准），显著改善此前方案对双服务器或高通信开销的限制。
+我的思考：单服务器私有检索是"假设最干净、实现最难"的设置，Panther用多原语协同设计破解这一难题，方向与经典私有信息检索工作一脉相承。PIR/GC/HE混合路线通常面临"哪个环节拖后腿"的系统调优问题，其端到端性能与扩展性（向量维度、数据集规模）是评判关键。若数据扎实，将成为私有向量检索的有力基线。
+
+
+#### Nebula:Efficient, Private and Accurate Histogram Estimation.
+- **作者**: Ali Shahin Shamsabadi, Peter Snyder, Ralph Giles, Aurélien Bellet, Hamed Haddadi
+- **方向**: 隐私保护
+- **解读**: 直方图估计是数据分析与统计发布的基础原语，在隐私保护场景下需要同时满足高效、私密与准确三个目标，三者往往此消彼长（无摘要，据标题推断）。
+- 据标题推断，Nebula 是一个兼顾效率、隐私与准确性的直方图估计系统，可能基于差分隐私框架设计噪声注入与估计策略，在隐私预算、通信开销与估计误差之间寻求最优平衡（无摘要，据标题推断）。
+- （无摘要，据标题推断）——暂无可用量化结果；作者团队在差分隐私领域有深厚积累（Shamsabadi、Bellet、Haddadi），预计有扎实的理论保证与实验评估。
+- 直方图是隐私发布的"积木"型原语，此类工作对浏览器遥测、去重统计等大规模隐私计算场景有直接价值；标题中"高效+私密+准确"三重约束的权衡刻画是其看点，具体隐私模型（本地/集中式 DP）与误差保证有待原文确认。
+
+
+#### Anonymity Unveiled: A Practical Framework for Auditing Data Use in Deep Learning Models.
+
+- **作者**: Zitao Chen, Karthik Pattabiraman
+
+- **方向**: 隐私保护
+
+- **解读**: 深度学习对训练数据的巨大需求催生了未经同意抓取个人数据训练模型的现象（如 Clearview.ai 抓取数十亿张社交照片），违反 GDPR 等隐私法规；但数据持有者缺少实用工具审计自己的数据是否被用于训练。现有成员推断（MI）在低假阳性率（FPR）下真阳性率（TPR）很低——即便用 128 个影子模型校准的 LiRA 也只有 27.21% TPR@0.1% FPR；基于数据投毒的方法要求篡改训练标签，远超普通用户能力。
+
+MembershipTracker 分两步：①轻量数据标记——将离群特征（OOD 样本混合，m=0.7）与过程化 Perlin 噪声（δ=8/255）组合注入目标样本，使模型强记忆这些标记样本同时保留视觉信息；②基于集合的 MI 验证——用每个用户全部样本的平均预测损失作信号（实例级仅 57.8% TPR@1% FPR，集合级达 100% TPR），用非成员集合标定阈值控制 FPR，全程黑盒查询、无需影子模型与标签控制。
+
+只需标记训练集的 0.005%~0.1%，在六个数据集（CIFAR100、CIFAR10、ArtBench、CelebA、TinyImageNet、ImageNet-1k）与六种架构上平均 100% TPR@0% FPR，模型精度损失 <1%；在 128 万样本的全尺寸 ImageNet-1k 训练（ResNet50 75.09%、Swin 80.29% 精度）中，0.005% 标记比例仍保持 100% TPR@0% FPR。对六类对抗措施（DPSGD、对抗增强、微调、剪枝、OOD 检测、输出扰动/标签-only）多数情况下 FPR@100% TPR 极低（如 DPSGD σ=0.01 时 0.01%、Mixup 0%、剪枝 70% 时 0.02%）；但多目标+微调可将 FPR 推至 42.84%。
+
+我的思考：该工作首次让普通用户在无模型训练能力、无标签控制条件下实现可靠的数据使用审计，并首次规模化到 ImageNet 级训练，工程与实验扎实；对 Wenger 等工作 FPR 低估的分析（真实 FPR 从 0% 到 >30%）也有方法论价值。局限：要求数据在训练前发布标记版本（对已在线数据无效）、标记数据可能被 OOD 检测识别（实际部署 AUC 仅 0.66）、部分对抗场景下性能显著下降。作为 GDPR"被遗忘权"与诉讼取证的支撑工具，实用意义明确。
+
+- **arXiv PDF**: [Anonymity Unveiled: A Practical Framework for Auditing Data Use in Deep Learning Models.](https://arxiv.org/pdf/2409.06280)
+
+#### Accuracy for Differentially Private Quotients by Fractional Uncertainties.
+- **作者**: Alejandro Russo, Elisabet Lobo Vesga, Marco Gaboardi
+- **方向**: 隐私保护
+- **解读**: 差分隐私（DP）通过注入校准噪声保护数据分析，但现有 DP 工具大多只关注隐私保证、很少提供精度信息，尤其对平均值、DP 和之商这类数据依赖型计算，误差难以刻画，用户无法判断结果可信度。
+- 论文提出一种计算置信区间（α-β accuracy）的新方法，借用不确定度传播（uncertainty propagation）原理分析误差；方法识别出解析误差可被预测的条件，并揭示两个关键不变量：误差随数据集规模增大而改善；数值变异性越高，需要更大的样本量才能准确估计。为便于采用，还提出 tuners 帮助快速确定参数。
+- 摘要未给出量化数据（原文截断）；核心结论是误差可预测性条件与两条不变量规律，以及调参工具对采用门槛的降低。
+- 把不确定度传播引入 DP 精度分析是方法论上的创新，让 DP 从"只保证隐私"走向"可声明精度"，对 DP 工具链的实际可用性有实质提升；局限在于条件性结论（需满足可预测条件）与数据依赖计算的普适性，与现有 DP 库（如 OpenDP）的集成是后续看点。
+
+
+#### Split Unlearning.
+- **作者**: Yanna Jiang, Guangsheng Yu, Qin Wang, Xu Wang, Baihe Ma, Caijun Sun, Wei Ni, Ren Ping Liu
+- **方向**: 隐私保护
+- **解读**:
+
+GDPR等法规赋予个人"被遗忘权"，要求机器学习系统支持数据删除，这催生了机器遗忘技术。但在分裂学习（Split Learning）中，客户端与服务器模型紧密耦合：频繁的双向信号传播与跨所有客户端的迭代训练违反了SISA（分片、隔离、切片、聚合）原则中的"Isolated"要求，使SISA式独立高效遗忘无法实现，尤其在部分客户端缺席时更为困难。
+
+论文提出SPLITWIPER框架，利用SL天然的"Sharded"结构设计one-way-one-off传播方案，解耦客户端与服务器之间的神经信号传播，从而在客户端缺席场景下也能实现完整的SISA遗忘；进一步提出SPLITWIPER+，融合差分隐私与标签扩展策略，防御服务器及其他对手窃取客户端标签隐私。
+
+实验表明，SPLITWIPER对被遗忘标签实现0%精度（完全遗忘），对保留标签的精度比非SISA遗忘方法高8%；one-way-one-off传播保持恒定开销，计算与通信成本降低99%；SPLITWIPER+在与服务器共享掩码标签时保留90%的标签隐私。该工作获得CCS'25杰出论文奖。
+
+我的思考：贡献成色在于首次在SL框架中落地完整SISA遗忘，用精巧的传播重设计同时解决遗忘效率、缺席客户端与标签隐私三个问题，99%成本削减与8%精度提升的数据很有说服力；局限是0%遗忘精度在特定数据分布下测得，真实复杂流式数据场景仍需验证，DP机制也会引入效用-隐私权衡。领域影响上，它为分布式学习合规提供了可落地的工程路径，将"遗忘"与"隐私保护"两个需求统一在同一框架内；与重训练、微调、梯度上升、知识蒸馏等非SISA方法相比，在有效性与效率间取得了更好的平衡。
+
+- **arXiv PDF**: [Split Unlearning.](https://arxiv.org/pdf/2308.10422)
+
+#### ShiftPIR: An Efficient PIR System with Gravity Shifting from Client to Server.
+- **作者**: Zihan Wang, Lutan Zhao, Ming Luo, Zhiwei Wang, Haoqi He, Wenzhe Lv, Xuan Ding, Dan Meng, Rui Hou
+- **方向**: 隐私保护
+- **解读**: 
+私密信息检索（PIR）允许客户端在不泄露查询内容的前提下从服务器获取记录，但传统单服务器PIR把大量计算与通信压在客户端。随着客户端资源受限、服务器算力可并行扩展的趋势加剧，这种"重力分布"日益不合理。
+
+ShiftPIR把计算与通信开销从客户端"重力转移"到服务器：客户端仅发送由预上传种子密文派生的紧凑明文偏移，服务器用同态旋转重建完整查询密文，省去客户端昂贵的密文传输；同时设计高度可并行的扩展机制，去除数据依赖，支持GPU高效执行。
+
+实验显示客户端延迟降至微秒级，总代价保持在非私有基线的4倍以内——远优于先前协议10^4–10^5倍的典型开销；相比当前最优YPIR，端到端延迟最多降低26倍。
+
+该工作精准捕捉到"胖服务器、瘦客户端"的现实趋势，把PIR的瓶颈从客户端彻底移除，微秒级客户端延迟使PIR首次接近可交互使用。局限在于依赖预上传种子与服务器重建，带宽模型与大规模数据库场景的扩展性需细看；GPU并行化思路务实。总体而言，这是PIR工程化的重要进展，对隐私查询类应用价值显著。
+
+
+#### Poisoning Attacks to Local Differential Privacy for Ranking Estimation.
+- **作者**: Pei Zhan, Peng Tang, Yangzhuo Li, Puwen Wei, Shanqing Guo
+- **方向**: 隐私保护
+- **解读**: 本地差分隐私（LDP）依赖用户端扰动实现可否认性，也因此易受投毒攻击；已有攻击多针对频率估计，而排名估计攻击更复杂——攻击者并非简单抬高目标项频率，而是用有限数量的假用户精确改写频率分布，以篡改项目排名获取最大收益。
+- 方法上，引入攻击代价（attack cost）与最优攻击项（集）概念，针对 kRR、OUE、OLH 三种协议设计策略：kRR 迭代选取最优攻击项并分配假用户；OUE 迭代确定最优攻击项集合并考虑不同集合间的频率增量变化；OLH 基于哈希原像构造调和代价函数，以支持更多有效攻击项；另提出基于置信度的攻击策略（MPOIA），更精确地量化攻击成功概率与迭代次数。
+- 结果上，在合成 Zipf 数据集（100 项、100,000 用户）与 Adult、Fire 两个真实数据集上验证：OIA 一致优于随机输入攻击（RIA）与随机输出攻击（ROA）；攻击 OLH 时仅 OIA 获得显著收益；整体增益随假用户占比 β（10⁻³→10⁻¹）增大而上升，随隐私预算 ε（0.5→6）增大而下降；MPOIA 与 OIA 效果相当，且置信度一般不宜超过 0.9；攻击者知识受限时攻击策略依然有效。
+- 我的思考：该工作把 LDP 攻击从频率估计推进到排名估计这一更贴近真实应用的目标，形式化"攻击代价"并为各协议给出自适应构造，理论结合实证，是攻击侧的高质量贡献。局限是仍以掌握频率先验的统计型攻击者为主，未与检测/防御构成对抗迭代；冷启动场景下攻击项选择受限。与 MGA 等频率攻击相比，其增量在于目标函数非线性和假用户分配的最优化，也为防御研究提供了更现实的威胁模型。
+
+- **arXiv PDF**: [Poisoning Attacks to Local Differential Privacy for Ranking Estimation.](https://arxiv.org/pdf/2506.24033)
+
+#### Mitigating Data Poisoning Attacks to Local Differential Privacy.
+- **作者**: Xiaolin Li, Ninghui Li, Boyang Wang, Wenhai Sun
+- **方向**: 隐私保护
+- **解读**: LDP 的分布式特性招致数据投毒攻击，威胁其支撑的应用；已有防御多作为攻击研究的附属存在，假阳性高、需额外知识、计算开销大，且未考虑自适应隐蔽攻击，缺少系统性缓解方案。
+- 方法上，面向 GRR、OUE、OLH、HST 等主流频率 oracle（CFO）提出完整缓解框架：差分统计异常检测精准识别伪造报告，使 LDP 聚合在"干净"数据上进行；当攻击变得隐蔽、直接过滤困难时，提出基于 LDP 内在特性的异常统计检测识别隐藏的对抗模式，辅助服务提供方决策；两种检测零样本、不依赖攻击细节与额外数据；此外对 LDP 后处理（post-processing）损坏数据恢复做实证分析，并提出新的后处理方法。
+- 结果上，恶意用户检测在 MGA 攻击下多数场景 F1 从先前工作的约 0.3 提升到约 0.8，并首次在自适应 MGA 场景实现假用户识别；异常统计检测在几乎所有测试场景准确率达 100%；两者计算开销最小，适合时延敏感应用；后处理实验揭示不同协议在攻击/无攻击场景下的表现差异，给出协议选择建议与未来设计原则。
+- 我的思考：该工作的价值在于把 LDP 投毒研究从"攻击发现"补全到"系统防御"，覆盖检测、模式识别、效用恢复全链路，且强调零样本与低开销，工程可用性强。局限是评估主要面向频率估计场景，向排名估计等任务的迁移性未验证；隐蔽攻击检测以统计异常为前提，对精心伪装分布的强自适应攻击效果存疑。与攻击侧工作互为补充，其提出的自适应攻击也反向丰富了威胁模型，具有攻防闭环意义。
+
+- **arXiv PDF**: [Mitigating Data Poisoning Attacks to Local Differential Privacy.](https://arxiv.org/pdf/2506.02156)
+
+#### PAnDA: Rethinking Metric Differential Privacy Optimization at Scale with Anchor-Based Approximation.
+- **作者**: Ruiyao Liu, Chenxi Qiu
+- **方向**: 隐私保护
+- **解读**: 度量差分隐私（mDP）把 LDP 扩展到度量空间，可按距离精细控制不可区分性、减少噪声注入，但基于线性规划（LP）的优化机制决策变量随 |X||Y| 二次增长，此前多数 LP 方法仅能处理 100 条以内的秘密域，最新方法也仅约 1,000 条，难以满足真实场景需求。
+- 方法上，提出 PAnDA（基于锚点的分布式近似扰动）两阶段框架：每个用户只选取少量锚点记录，服务器在缩减后的域上求解紧凑 LP，从而大幅降低计算开销；给出三种锚点选择策略——指数衰减（PAnDA-e）、幂律衰减（PAnDA-p）、逻辑衰减（PAnDA-l），并在放宽的"概率 mDP（PmDP）"隐私概念下建立隐私与效用的理论保证。
+- 结果上，在真实地理位置数据集上的实验表明，PAnDA 可扩展到最多 5,000 条记录的秘密域，是此前 LP 方法的 2 倍，同时为隐私与效用提供理论保证；相比预先定义噪声分布的拉普拉斯/指数机制，优化式机制能更好地建模扰动方向上的效用损失差异。
+- 我的思考：该工作的贡献是把 mDP 优化从"只能算小域"推进到"锚点近似大域"，用概率性隐私概念换取可扩展性，思路直接有效。局限也明显：PmDP 是松弛保证，锚点选择引入的近似误差与效用损失缺少与最优解的紧致界分析；5,000 条记录相对真实 LBS 场景（百万级位置）仍有距离。与层级索引、优化分解等其它扩展路线相比，锚点法实现简单、理论可证，是实用导向的平衡选择。
+
+- **arXiv PDF**: [PAnDA: Rethinking Metric Differential Privacy Optimization at Scale with Anchor-Based Approximation.](https://arxiv.org/pdf/2509.08720)
+
+#### Differentially Private Access in Encrypted Search: Achieving Privacy at a Small Cost?
+- **作者**: Daniel Pöllmann; Tianxin Tang
+- **方向**: 隐私保护
+- **解读**:
+加密搜索（encrypted search）在保护外包数据的同时支持私有查询。标准加密搜索算法虽然高效，但会泄露关于查询与数据的一些信息，访问模式（access pattern）泄露即为一例。近年来的泄漏滥用攻击（leakage-abuse attacks）已利用这类看似无害的泄露成功恢复数据与查询，研究重心随之转向在隐私与性能之间寻找平衡。
+已有方案借助不经意 RAM（ORAM）等结构隐藏访问模式，但通常带来高昂的带宽开销。本文标题抛出核心问题：能否以"小代价"实现差分隐私意义上的访问隐私？
+该工作探索在加密搜索中加入差分隐私（DP）机制来扰动访问模式，以可控的隐私预算换取比 ORAM 低得多的带宽成本，从而在泄漏滥用攻击面前提供可证明的隐私保障，同时保持查询效率。
+我的思考：用差分隐私替代/补充 ORAM 是加密搜索隐私-效率权衡中的务实路线——ORAM 的对数因子带宽开销在实践中代价极大，而 DP 化的访问模式可在统计意义上模糊真实访问。关键问题是 DP 噪声注入对查询结果准确性的影响、隐私预算在多次查询下的累积消耗，以及面对自适应泄漏滥用攻击时的实际保障强度；标题的问号本身暗示结论可能并非无代价，需要谨慎评估。
+
+
+#### Breaking and Fixing Content-Defined Chunking.
+
+- **作者**: Kien Tuong Truong, Simon-Philipp Merz, Matteo Scarlata, Felix Günther, Kenneth G. Paterson
+
+- **方向**: 隐私保护
+
+- **解读**: 内容定义分块（CDC）算法把数据流切分为小块（chunk），并在流部分变化时保持块边界稳定，广泛用于备份去重、软件补丁系统与文件托管平台等场景。但与压缩类似，CDC 与加密结合时可能引入泄露：指纹攻击利用长度模式推断数据内容，威胁用户隐私。
+
+本文首先"打破"CDC：系统分析基于长度模式（块序列、块大小分布）的指纹攻击如何从加密的 CDC 输出中提取敏感信息，揭示现有方案在隐私维度上的脆弱性并量化泄露程度；随后"修复"：在保持去重收益的同时抑制长度泄露——通过调整分块策略或引入填充/随机化机制，使攻击者无法从分块长度序列恢复数据指纹，并分析安全-效率权衡。
+
+论文给出攻击与修复两端的定量实验，证明修复方案在可接受的去重与性能代价下显著降低指纹攻击成功率，为 CDC 生态提供了首个系统性的隐私加固路线。
+
+我的思考：该工作把"去重-隐私"矛盾摆上台面，指出广泛部署的 CDC 基础设施存在被忽视的侧信道，攻击建模与修复设计形成完整闭环，且出自密码学团队使形式化严谨性有保障。局限在于修复对去重率的具体影响、与现有系统（备份软件、存储平台）的兼容性尚待全文数据；与加密方案（如 RCE、HCE）联合设计是更根本的方向。
+
+
+#### Harnessing Sparsification in Federated Learning: A Secure, Efficient, and Differentially Private Realization.
+
+- **作者**: Shuangqing Xu, Yifeng Zheng, Zhongyun Hua
+
+- **方向**: 隐私保护
+
+- **解读**: 联邦学习（FL）让多客户端只共享梯度更新而非原始数据来联合训练模型，但高维梯度的传输造成严重通信瓶颈；同时，共享的梯度也可能被利用来推断客户端的私有本地数据集，隐私仍是 FL 的核心关切。如何在通信高效、计算安全与差分隐私三个维度同时满足，是 FL 落地的关键难题。
+
+作者提出 Clover：一种通信高效、安全且满足差分隐私的 FL 系统框架。针对通信瓶颈，Clover 采用业界标准的 top-k 稀疏化——每个客户端只保留幅度最大的 k 个梯度分量参与聚合；针对隐私与安全，在"三方服务器"的分布式信任设置下设计定制机制，既能高效地把各客户端的稀疏向量聚合成稠密向量，又能隐藏非零元素的值与索引，相比通用 ORAM 基线在服务器端运行时间上快若干数量级且开销更小。
+
+Clover 进一步集成轻量级噪声生成以提供模型级差分隐私保证，并针对恶意服务器设计一系列完整性校验机制。实验表明，其效用可与不使用 top-k 稀疏化的普通中心化 DP 相媲美，隐私增强带来的客户端-服务器通信开销可忽略，计算开销相比半诚实版本也只是适度增加。
+
+我的思考：Clover 把稀疏化、安全聚合与 DP 三件事在一个框架内协同设计，而非简单叠加，且"稀疏向量→稠密聚合"的专用协议相对 ORAM 的数量级优势很有说服力；对真实 FL 部署而言通信与隐私常是矛盾项，该工作给出了一条可行路径。局限在于三方分布式信任假设的部署前提、恶意服务器场景下完整性校验的具体强度仍需全文验证；与隐私预算长期消耗、拜占庭鲁棒性的联合优化是后续方向。
+
+
+#### Counting Subgraphs under Shuffle Differential Privacy.
+
+- **作者**: Juanru Fang, Ke Yi
+
+- **方向**: 隐私保护
+
+- **解读**: 子图计数是理解图数据复杂结构与关系的基础任务，在差分隐私（DP）下开展子图计数近年备受关注，尤其在分布式场景：每个节点只掌握自身邻域信息，而分析者不可信。文献中针对该场景有两个 DP 模型——本地 DP（LDP）与 shuffle DP（后者借助可信洗牌器在交给分析者前随机打乱消息）。由于洗牌不引入额外风险，任何协议自动满足 LDP，关键问题是 shuffle DP 能否带来实质的效用改进。
+
+此前已在三角形计数、频率估计、不同元素计数等基础问题上获得正面结果，但更复杂子结构（如 4-环、3-hop 路径）是否也能受益仍悬而未决。
+
+本文推进了这一理解：针对包括三角形、4-环、3-hop 路径在内的多种子图给出新的 shuffle DP 协议，在渐近复杂度和具体常数上都优于既有协议，证明 shuffle DP 在分布式子图计数上确实能提供超越 LDP 的效用收益，为该模型的实际应用提供更坚实的证据。
+
+我的思考：该工作延续"shuffle 模型能否超越本地模型"这一理论主线，并把答案扩展到更复杂的子图族，兼具理论意义与分布式图分析的应用价值。局限在于摘要未给出具体的误差界与实验数据，协议对图规模、稀疏度与节点度分布的敏感性尚待全文评估；与集中式 DP 的效用差距、以及去信任化洗牌器的工程实现是后续可探索的方向。
+
+
+#### Managing Correlations in Data and Privacy Demand.
+
+- **作者**: Syomantak Chaudhuri, Thomas A. Courtade
+
+- **方向**: 隐私保护
+
+- **解读**: 差分隐私文献中允许用户自选隐私等级的工作通常采用异构 DP（HDP）框架，且普遍假设用户数据之间、数据与隐私需求之间互不相关。作者首先证明：当隐私需求允许相互关联（correlated demands）时，标准 HDP 会失效——用户独立选择的隐私参数无法提供预期的联合保证。
+
+为弥补这一缺陷，作者提出新的框架"增删异构 DP"（AHDP），联合刻画用户的隐私偏好：即使数据与隐私需求之间存在任意相关性，AHDP 也能保持鲁棒的安全保证，并用操作性假设检验视角形式化其隐私语义。作者进一步证明存在非平凡机制，无需先验掌握数据-隐私相关性知识即可工作，并将其应用于均值估计、频率估计、线性回归等核心统计任务，机制实现简单、建模假设最少，适合真实部署。
+
+论文用 LLM 生成的合成数据集对这些机制做实证评估，刻画隐私-效用权衡，并承诺公开数据集以支持后续研究。
+
+我的思考：把"相关性"这一现实但常被假设掉的因素纳入异构 DP 的形式化框架，并用假设检验语义给出严格解释，是理论严谨性突出的工作；对真实场景中用户偏好与数据分布天然相关的应用（如医疗、金融）有直接指导意义。局限在于摘要层面缺少具体的隐私-效用量化结果，AHDP 相对 HDP 的效用代价、以及合成数据集能否代表真实分布仍需全文检验；与本地模型、shuffle 模型的交叉是未来方向。
+
+
+#### Systematic Assessment of Tabular Data Synthesis.
+
+- **作者**: Yuntao Du, Ninghui Li
+
+- **方向**: 隐私保护
+
+- **解读**: 数据合成被视为在利用数据的同时保护隐私的重要途径。近年来涌现了大量表格数据合成器（synthesizer）：有的满足差分隐私（DP），有的以启发式方式宣称隐私保护。然而，由于评估指标存在缺陷、缺少与新方法的头对头比较，学界对这些合成器优劣势的全面认识仍然缺失。
+
+作者对表格数据合成进行系统评估：把新近兴起的、利用扩散模型与大语言模型的合成器与最先进的统计合成器放在统一基准上做头对头比较，并针对既有评估指标的缺陷提出更可靠的评价方式。
+
+论文给出跨合成器类别、跨数据集的多维评估结果，揭示不同技术路线（统计模型、生成对抗网络、扩散模型、LLM 辅助）在数据保真度、效用与隐私权衡上的真实差异，为研究人员与从业者选择合成器提供实证依据。
+
+我的思考：表格合成领域工具繁多但缺乏可信的横向比较，这篇由 Ninghui Li（DP 领域权威）参与的系统评估有望成为该领域的参考基准，对"启发式隐私"与"可证明 DP"之争给出数据支撑。局限在于评估结论高度依赖所选数据集与指标设计，合成数据的下游任务效用与隐私攻击实验的覆盖范围需全文审视；建立可持续更新的统一基准社区是后续更有价值的延伸。
+
+
+#### GPU Travelling: Efficient Confidential Collaborative Training with TEE-Enabled GPUs.
+
+- **作者**: Shixuan Zhao, Zhongshu Gu, Salman Ahmed, Enriquillo Valdez, Hani Jamjoom, Zhiqiang Lin
+- **方向**: 隐私保护
+- **解读**:
+机密协作机器学习让多个互不信任的数据持有方在保护各自私有数据机密性（出于监管或竞争原因）的同时联合训练模型。但现有工作需要在训练中通过较慢的常规链路频繁交换数据，随着 LLM 等现代工作负载的模型规模指数级增长，通信成本变得高不可攀。
+
+GPU Travelling 利用新出现的机密 GPU：数据持有方将数据集安全地"旅行"到 GPU 的受保护内存中直接加载，训练完成后返回，从而消除训练中的频繁传输，支持数据中心级别的数据流动。作者基于 Intel TDX 与 NVIDIA H100 构建原型，并在 llm.c（基于 CUDA 的 LLM 项目）上评估。
+
+在传输 512 MiB 数据块的情境下，相比传统传输方案获得至少 4 倍的速度提升，同时保持强安全保证。
+
+"让数据去找模型"反转了"让模型去找数据"的常规范式，把 TEE 隔离与 GPU 加速结合，直击联邦学习类方案的通信瓶颈。局限在于初始数据装载仍需一次传输、安全假设完全依赖 TDX/H100 的硬件可信根，且多轮动态调度策略尚待完善。整体上为机密计算下的协作训练提供了务实的新思路。
+
+
+#### Privacy-Preserving Runtime Verification.
+
+- **作者**: Thomas A. Henzinger, Mahyar Karimi, K. S. Thejaswini
+- **方向**: 隐私保护
+- **解读**:
+运行时验证（runtime verification）为系统安全性与可靠性提供可扩展的保障手段，但需要第三方监控合规的系统往往包含敏感信息，常规运行时验证会泄露受保护的系统状态与处理数据；甚至"正在被监控"这一事实本身被揭示，也会破坏第三方验证的意义。
+
+本文提出隐私保护的运行时验证：在监控过程中保护系统敏感信息，使第三方可以在不了解受保护数据的情况下完成规范符合性验证，同时避免暴露监控行为本身。
+
+摘要未给出量化数字；核心在于建立隐私保护监控的形式化框架。
+
+把隐私纳入在线监控的威胁模型是及时的方向——云化部署让第三方监控成为常态，而数据最小化与验证需求天然冲突；可预期的实现路径包括加密计算、MPC 与 TEE 的权衡。"监控事实泄露"这一维度在现有文献中少被讨论，是理论贡献点。局限在于隐私保护监控的开销与实用性验证。
+
+
+#### GAPDiS: Gradient-Assisted Perturbation Design via Sequence Editing for Website Fingerprinting Defense.
+
+- **作者**: Ruotian Xie, Kun Xie, Pengcheng Zhao, Jiajun He, Xin Zeng, Jigang Wen, Yong Xie, Wei Liang, Gaogang Xie
+- **方向**: 隐私保护
+- **解读**:
+
+基于深度学习的网站指纹（WF）攻击日益精准，用户隐私风险上升。现有防御面临的核心困难是：数据包方向序列是离散的，梯度优化无法直接应用，导致扰动生成只能依赖低效的启发式方案。
+
+本文提出新的防御框架，引入基于"梯度对齐的偏移向量余弦相似度"的奖励机制来评估并筛选候选扰动，使候选与梯度方向对齐；进一步设计并行计算算法提升效率，并将其集成进 GAPDiS——一种结合梯度引导与改进禁忌搜索（tabu search）的通用全局优化扰动生成方法。为便于实际部署，GAPDiS 支持 PT（Pluggable Transport）桥接等多种形态。
+
+摘要截断，未给出防御成功率与带宽/延迟开销的具体数字；可确认的核心是梯度引导 + 禁忌搜索的通用扰动生成框架及其并行加速。
+
+把离散序列问题重新表述为可梯度引导的搜索问题，是 WF 防御的关键思路突破——此前"梯度不可用"是主要障碍。梯度引导与禁忌搜索的结合兼顾了搜索方向性与全局最优性。实际价值取决于扰动对分类准确率的压制幅度与带宽/延迟开销的权衡，以及其在 Tor 等真实流量上的可用性，这些均需正文数据支撑。
+
+
+#### Layered, Overlapping, and Inconsistent: A Large-Scale Analysis of the Multiple Privacy Policies and Controls of U.S. Banks.
+
+- **作者**: Lu Xian, Van Hong Tran, Lauren Lee, Meera Kumar, Yichen Zhang, Florian Schaub
+- **方向**: 隐私保护
+- **解读**:
+
+隐私政策通常复杂难懂，一个例外是美国金融机构依据《格雷姆-里奇-比利雷法案》（GLBA）必须提供的两页标准化通知。但银行如今运营网站、移动应用等多种服务，涉及复杂的数据共享实践，需要额外的隐私通知与"不出售"（do-not-sell）选择退出机制。本文考察银行如何响应 GLBA、联邦政策要求与 CCPA（州法的关键示例）来实施披露与控制。
+
+作者对 2067 家最大银行的披露与控制集进行大规模分析，聚焦第三方营销相关目的等尤其侵犯隐私的实践，比较同一银行在不同政策文本中的披露一致性。
+
+在收集的 2067 家最大银行中，45.2% 提供多份隐私政策；同一银行的不同披露之间存在频繁且令人担忧的不一致。
+
+多政策并存造成的"分层、重叠、不一致"直接损害用户知情权——不同页面说法矛盾时，用户无法做出有效的数据共享决策。45.2% 的多政策比例说明这是常态而非例外。该研究为 GLBA/CCPA 监管执法提供了系统性证据，也提示了政策一致性检查工具的需求；2067 家的覆盖面与聚焦第三方营销的设定使结论务实可操作。
+
+
+#### The Importance of Being Discrete: Measuring the Impact of Discretization in End-to-End Differentially Private Synthetic Data.
+
+- **作者**: Georgi Ganev, Meenatchi Sundaram Muthu Selva Annamalai, Sofiane Mahiou, Emiliano De Cristofaro
+- **方向**: 隐私保护
+- **解读**:
+
+差分隐私（DP）合成数据是隐私保护数据发布的代表性技术，但端到端管线的隐私保证依赖各环节的精确实现。离散化（discretization）是数据发布中的常见处理步骤，若处理不当，隐私分析所基于的假设可能与实际发布的数据不符，导致隐私-效用权衡偏离预期。（无摘要，据标题推断）
+
+本文对端到端 DP 合成数据管线中离散化的影响进行系统性测量，量化不同离散化粒度与方式对合成数据隐私保证与效用的影响，标题暗示以实验测量为核心方法。
+
+无摘要，无法引用具体量化结果；核心是测量并揭示离散化在端到端 DP 合成数据中的影响。
+
+端到端 DP 合成数据的隐私保证高度依赖实现细节，离散化常在"隐私分析"与"实际发布"之间引入偏差——若噪声注入与离散化顺序或粒度不当，实际隐私泄漏可能超出预算声称。该团队（De Cristofaro 组）在 DP 合成数据方向积累深厚，这类测量工作对实践者有直接指导价值：选择何种离散化策略可在保证隐私的同时最大化效用。具体结论需读全文确认。
+
+
+#### Time Tells All: Deanonymization of Blockchain RPC Users with Zero Transaction Fee.
+- **作者**: Shan Wang, Ming Yang, Yu Liu, Yue Zhang, Shuaiqing Zhang, Zhen Ling, Jiannong Cao, Xinwen Fu
+- **方向**: 隐私保护
+- **解读**:
+远程过程调用（RPC）服务已成为用户访问公链的主要网关，带来巨大便利的同时也引入隐私挑战。现有去匿名化攻击要么不适用于区块链场景，要么假设主动网络窃听者并产生交易费用等成本。
+
+论文提出一种新攻击，可将用户 IP 与其假名（pseudonym）关联起来，且零交易费用。核心发现是链上记录的交易确认时间戳与受害者在查询状态时发出的 TCP 包时间戳之间存在时间相关性；攻击者假定为具备基础设施的强被动敌手，可在边界路由器与互联网交换点监控流量。作者对方法进行数学建模，开展大规模测量，并进行真实世界验证。
+
+真实世界实验表明，针对以太坊、比特币、Solana 等网络上的普通用户，攻击成功率超过 95%。
+
+攻击无需任何费用且完全被动，即可把 RPC 用户的网络身份与链上假名打通，威胁真实且难以察觉；超过 95% 的成功率说明时间相关性在真实网络中足够强。缓解并不容易——交易确认时间由共识决定、无法隐藏，用户侧需引入流量混淆或专用隐私 RPC。局限是攻击依赖边界路由器/IXP 的流量可见性，对使用代理或 VPN 的用户效果可能下降，且摘要未给出不同网络条件下的成功率分布。
+
+
+#### Co-Prime: A Co-design Framework for Privacy Preserving Machine Learning on FPGA.
+- **作者**: Shuo Xu, Jiming Xu, Pengfei Xue, Xinyao Wang, Lei Ju, Wei Zhang
+- **方向**: 隐私保护
+- **解读**:
+在多方协同采集数据的隐私敏感机器学习应用中，安全多方计算（MPC）是隐私保护机器学习（PPML）的可行方案，秘密共享是其主流策略。实际部署的关键挑战是各线性/非线性计算阶段间严重不平衡的通信负载，而硬件加速器在降低延迟的同时还会进一步放大这种不平衡。
+
+Co-Prime 是一个基于 FPGA 的 3PC（三方计算）框架，无需第三方辅助。它集成协议级协同优化以缓解通信瓶颈；提出新颖的共享格式转换技术，可在不同秘密共享格式间无缝转换，自适应地选择更优的 PPML 方案；提供加速器友好的原语与系统级设计空间探索，通过重叠网络通信实现延迟隐藏；并让数据流在 FPGA 模块间直接交互，减少额外开销。
+
+实验表明，相比现有框架，Co-Prime 在 LAN/WAN 环境下对多种神经模型的推理实现 2-18 倍加速。
+
+软硬件协同设计直击 MPC 通信瓶颈——把"格式转换"做成硬件原语、用重叠通信隐藏延迟，是工程上很有价值的系统贡献，2-18x 的加速幅度说明瓶颈确实在通信而非计算；局限是 FPGA 开发与部署门槛高、3PC 架构要求三方在线，且摘要未给出安全模型（恶意/半诚实）细节，安全性声明需全文确认。
+
+
+#### Timing Attacks on Differential Privacy are Practical.
+- **作者**: Zachary Ratliff, Nicolás Berrios, James Mickens
+- **方向**: 隐私保护
+- **解读**:
+差分隐私（DP）已成为计算隐私保护统计量的标准方法，但在交互式设置下，DP 查询可观测的运行时间可能无意中泄露敏感信息，破坏隐私保证。已有工作证明时间侧信道可攻破特定设置，本文则将这一威胁推广到主流实现层面：系统性地检验 diffprivlib、OpenDP、PyDP 等流行 DP 库是否频繁引入此类信道。
+
+作者不仅分析常用机制（私有求和、计数、均值、选择），还覆盖预处理步骤（过滤、排序）等看似无害的操作，考察其运行时间是否依赖个体数据是否存在以及数据的输入顺序，从而刻画泄露面的大小。
+
+结果表明上述库中确实普遍存在依赖个体数据存在性与输入排序的运行时差异，导致可测量的隐私退化——即形式化的 ε-差分隐私保证在交互式实际部署中被打折。
+
+我的思考：这是"形式化保证 ≠ 实现保证"的又一实证，价值在于把 DP 侧信道从个案上升到库级系统性问题，并指出过滤、排序等"非机制"代码同样危险。局限是此类攻击需要交互式查询的精确计时观测，在批处理或远程场景中利用难度不一；对 DP 库的启示是采用恒定时间实现与查询规范化。与先前针对特定机制的时序攻击相比，本工作的覆盖面更广，对 DP 标准化与工程实践有直接警示意义。
+
+
+#### SlicedPIR: Offloading Heavyweight Work with NTT.
+- **作者**: Jonathan Weiss, Yossi Gilad
+- **方向**: 隐私保护
+- **解读**:
+私密信息检索（PIR）允许用户在不暴露查询内容的前提下从服务器数据库取回记录，但其核心瓶颈是服务器端的巨额计算开销。SlicedPIR 提出分布式 PIR 协议，把服务器负载卸载到多台不可信的客户端机器上，且相较此前工作只引入适度的网络开销。
+
+其关键技巧是利用 PIR 协议常用同态加密方案的多项式编码，创造性地使用数论变换（NTT）把多项式上的点作为"切片"分发出去——客户端各自对切片执行递归查询并返回简洁结果，服务器则借助 Schwartz-Zippel 引理（针对本场景作了适配）验证客户端返回结果的正確性。作者还将协议集成进私密消息系统：把消息写入数据库后秘密查询好友的消息。
+
+原型实验表明其随数据库规模扩展良好，相比现有最优方案，服务器计算负载降低超过 95%。
+
+我的思考：把 PIR 计算从单服务器卸载到不可信客户端并保持可验证性，是缓解 PIR 实用化瓶颈的聪明路径——NTT 切片让"分而治之"与"概率验证"自然结合，Schwartz-Zippel 验证方案简洁优雅。相比 OnionPIR 等单服务器方案，本工作牺牲了部分网络带宽换服务器算力，适合服务器资源受限的部署。局限在于客户端参与的信任模型与带宽假设需要仔细权衡，且 95% 的数字针对特定参数，泛化性需以原文实验为准。
+
+
+#### Byte by Byte: Unmasking Browser Fingerprinting at the Function Level using V8 Bytecode Transformers.
+- **作者**: Pouneh Nikkhah Bahrami, Dylan Cutler, Igor Bilogrevic
+- **方向**: 隐私保护
+- **解读**:
+浏览器指纹（browser fingerprinting）通过细微的行为与技术特征实现跨站持久追踪，常能绕过传统防御；而脚本级（script-level）拦截反制又容易误伤、导致网站功能破坏。因此需要既具备函数级精度以最小化误报，又对代码混淆与 URL 操纵具有内在鲁棒性的检测方法。
+
+本文提出基于 V8 字节码变换器（bytecode transformer）的方案，在 JavaScript 引擎字节码层面对网页脚本进行函数级分析与变换，从而在更底层、更不易被混淆掩盖的粒度上识别指纹行为。
+
+摘要文本截断，未给出检测准确率、误报率等量化数据，也未说明具体的检测特征集合。
+
+我的思考：函数级、字节码层的检测粒度是对现有启发式/脚本级指纹检测（如 FP-Inspector、FPMON 等）的重要推进——混淆与 URL 重写很难掩盖字节码层的模式，函数级定位也能把拦截粒度从"整脚本禁掉"细化到"单函数打补丁"，显著降低网站破坏风险。V8 字节码作为检测面还有跨版本稳定性问题，且摘要缺少评估数据，实际效果需依赖原文的测量结果。
+
+
+#### Optimal Mechanisms for Quantum Local Differential Privacy.
+- **作者**: Ji Guan
+- **方向**: 隐私保护
+- **解读**:
+集中式差分隐私已被成功应用于量子计算与量子信息处理，防止相邻量子状态之间的信息连接造成泄漏。在此基础上新近提出的本地量子差分隐私（QLDP）希望在本地场景下以类似经典 LDP 的方式保护状态隐私，但目前 QLDP 框架的探索仍处于早期、以概念性为主，距离实际部署保护状态隐私还有明显差距。
+
+本文研究量子本地差分隐私下的最优机制设计问题，即构造在给定隐私预算下实现最优隐私-效用权衡的随机化机制，为 QLDP 提供理论上的最优性刻画。
+
+摘要较为简略，未给出机制的具体形式与量化效用数据，核心贡献是理论层面的最优机制存在性/构造结果。
+
+我的思考：量子版 LDP 是隐私保护向量子时代延伸的必要步骤——量子计算一旦普及，量子态本身携带的信息就需要形式化的隐私语义。本文把经典 LDP 的最优机制理论（如随机响应、截断拉普拉斯机制的最优性）推广到量子设置，理论价值明确；但"早期概念阶段"的定位意味着距离实用仍有距离，机制实现所需的量子操作与噪声注入开销也未讨论。与经典 LDP 最优机制理论的对照将是后续工作的关键参照系。
+
+
+#### THOR: Secure Transformer Inference with Homomorphic Encryption.
+- **作者**: Jungho Moon, Dongwoo Yoo, Xiaoqian Jiang, Miran Kim
+- **方向**: 隐私保护
+- **解读**:
+大语言模型日益部署在云环境中，用户数据与模型权重的隐私成为突出问题。THOR 提出一个非交互式（non-interactive）的同态加密安全 transformer 推理框架，使云端能在密文上完成推理而无需用户参与多轮交互。
+
+方法层面，THOR 首先提出基于对角主导编码（diagonal-major encoding）与紧凑密文打包的高效矩阵乘法算法，并将其扩展为两类基础运算：支持并行子矩阵计算的明文-密文矩阵乘（PC-MM）与采用 baby-step giant-step 策略的密文-密文矩阵乘（CC-MM）；对 softmax、LayerNorm、GELU、Tanh 等非线性函数，则结合先进近似技术与自适应迭代方法设计求值策略，克服 HE 无法直接计算非多项式的困难。
+
+实验显示，PC-MM（ℝ768×ℝ768×128）相比 BOLT（Pang 等，IEEE S&P 2024）最高加速 5.3 倍，CC-MM（ℝ64×128 × ℝ128×128）相比 Powerformer 最高加速约 9.7 倍乃至 12 倍；THOR 可在单张 GPU 上约 10 分钟内完成 BERT-base 模型 128 个 token 的推理，并在 GLUE 任务上保持与明文相近的精度。
+
+我的思考：THOR 是 HE 隐私推理在 transformer 上的端到端里程碑——打包与 BSGS 是经典技巧，但将其系统化到整个 transformer 层栈并给出可复现的 BERT 推理时间是实打实的工程贡献；非线性函数的近似质量与推理精度的权衡处理是亮点。局限：10 分钟/128 token 的延迟离实时交互仍远，且非交互式假设限制了其在多轮对话场景的适用性；与同类工作（BOLT、Powerformer、HELIUS 等）的对比显示其在矩阵乘法路径上领先，但通信与密钥设置开销需以原文为准。
+
+
+#### SCOPE: Expanding Client-Side Post-Processing for Efficient Privacy-Preserving Model Inference.
+
+- **作者**: Shenchen Zhu, Kai Chen, Yue Zhao, Cheng'an Wei
+
+- **方向**: 隐私保护
+
+- **解读**: 隐私保护推理（PPI）让用户在不泄露敏感输入的前提下使用机器学习模型，是隐私计算落地的关键场景；然而现有最优方案的巨大计算与通信开销使其在实践中难以部署，"开销"成为 PPI 从论文走向产品的最大障碍，这是本文着力解决的问题。
+
+从标题与摘要推断，SCOPE 的核心思路是扩展客户端侧后处理（client-side post-processing）环节：将部分原本在服务端完成的工作转移到客户端执行，从而削减端到端推理过程中的通信量与计算负担。摘要未给出具体技术细节，但方向明确指向"以客户端算力换取整体效率"的架构性优化。
+
+摘要仅陈述了动机层面的结论——现有 SOTA 方案因计算与通信开销过大而不实用，未提供量化的对比数据，因此无法引用具体实验结果。
+
+我的思考：把后处理逻辑下沉到客户端是一种务实的工程思路，与现有"服务端密文计算+客户端解密"分工形成互补，原理上能直接压缩通信瓶颈。可惜摘要截断，无法评估其安全性假设（客户端可信边界、后处理泄漏风险）与收益幅度；其价值取决于是否保持了与半诚实/恶意模型一致的隐私保证。建议结合全文验证其与同路线方案（如部分解密、客户端重加密）的实质差异。
+
+
+#### WPC: Weight Plaintext Compression for CNN Inference based on RNS-CKKS.
+
+- **作者**: Guiming Shi, Yuchen Wei, Shengyu Fan, Xianglong Deng, Liang Kong, Xianbin Li, Jingwei Cai, Shuwen Deng, Mingzhe Zhang, Kaisheng Ma
+
+- **方向**: 隐私保护
+
+- **解读**: 基于 RNS-CKKS 的 CNN 推理能保护密文数据，但权重明文在打包格式下体积可达数十至数百 GB，通信与存储负担远超模型本身；现有压缩方法要么引入高计算开销，要么压缩率低，成为安全推理落地的瓶颈。
+
+作者观察到：模型权重转换为打包格式的过程类似离散傅里叶变换，在时域与频域间转换的同时保留了周期离散数据中的冗余信息。基于此提出"周期传输定理"（Periodic Transmit Theorem），证明模式可在打包过程中被保留从而支持压缩；再设计 Channel Innermost 打包方案与旋转填充（Rotation Padding）将压缩理论落地到 CNN 推理管线。
+
+在 A100 GPU 上，WPC 实现 1.25–2.18 倍的推理加速，压缩率达到 46.08–139.11 倍。
+
+我的思考：把打包变换与 DFT 的数学结构联系起来解释冗余来源，并以"定理+打包方案"组合落地，思想有深度且结果亮眼（上百倍压缩、两倍以上加速）。需注意压缩率与精度/安全性的权衡：高压缩可能改变明文噪声结构，需验证其对 CKKS 解密正确性的影响；CNN 之外的模型（transformer）可推广性也值得考察。总体是工程价值很高的系统级贡献。
+
+
+#### Mosformer: Maliciously Secure Three-Party Inference Framework for Large Transformers.
+
+- **作者**: Ke Cheng, Yuheng Xia, Anxiao Song, Jiaxuan Fu, Wenjie Qu, Yulong Shen, Jiaheng Zhang
+
+- **方向**: 隐私保护
+
+- **解读**: BERT、GPT 等 transformer 模型作为云推理服务部署时，用户输入与模型参数都面临隐私泄露风险，MPC 是常用防护手段；但现有 MPC transformer 协议大多只保证半诚实安全。扩展到恶意安全面临巨大挑战——对抗鲁棒性所需的复杂非线性函数在安全计算下开销极高。
+
+Mosformer 是首个恶意安全三方（3PC）推理框架，可高效支持 GPT 等大型 transformer。其技术核心包括：基于可验证分布式点函数（VDPFs）构造恶意安全的常数轮比较与查表协议，并据此构建 transformer 中各类非线性函数的高效安全求值，配合优化的模数转换降低整体开销。
+
+实验显示，与先前协议相比，Mosformer 单 transformer 块获得最高 5.3 倍加速与 4.3 倍通信量下降；尽管提供更强的安全保证，其在线性能仍与 BOLT（Oakland 2024）、BumbleBee（NDSS 2025）、SHAFT、Ditto（ICML）等半诚实 2PC 框架相当甚至更优，并支持全规模 GPT-2。
+
+我的思考：以"更强的恶意安全+不逊于半诚实的在线性能"同时达成，是该领域少见的双优结果，VDPF 驱动的常数轮比较是聪明的杠杆。局限：3PC 设定本身依赖非共谋假设，部署门槛高于 2PC；加速主要体现在在线阶段，离线预处理成本需权衡。该工作为恶意安全大模型推理设立了新标杆，后续可与 2PC 恶意协议及硬件加速路线对比验证其普适性。
+
+
+#### DPImageBench: A Unified Benchmark for Differentially Private Image Synthesis.
+
+- **作者**: Chen Gong, Kecen Li, Zinan Lin, Tianhao Wang
+
+- **方向**: 隐私保护
+
+- **解读**: 差分隐私图像合成旨在生成保留敏感数据集统计特性、同时保护个体隐私的人工图像。然而该领域评估协议不一致甚至存在缺陷，导致方法对比失真、阻碍领域进步。本文以统一基准回应这一方法论危机。
+
+DPImageBench 从三个维度设计：方法维度系统刻画 12 种主流方法（按模型架构、预训练策略、机制分类）；评估维度覆盖 9 个数据集与 7 项指标；平台维度提供标准化接口，将多样评估协议统一到同一框架。作者特别指出并修正了一个常见错误：在测试集上挑选下游分类器最高准确率的做法违反 DP、会高估效用。
+
+基准还带来反直觉的发现：与"公共数据总是有益"的普遍认知相反，公共数据与目标数据之间的分布相似性对合成性能影响显著，公共数据并不总能带来提升。
+
+我的思考：这是一份"方法论的自我审计"式贡献——把评估协议本身的缺陷当作研究对象，比再提一个新生成方法更具领域价值；修正 DP 违规的评估实践有望成为后续工作的标准。局限：基准覆盖的方法与数据集规模仍有限，且"效用度量如何与隐私预算联动"等问题仍需社区继续探索。对"公共数据效果"的发现尤其值得数据增强与迁移学习社区注意。
+
+
+#### One-Sided Bounded Noise: Theory, Optimization Algorithms and Applications.
+
+- **作者**: Hanshen Xiao, Jun Wan, Elaine Shi, Srinivas Devadas
+
+- **方向**: 隐私保护
+
+- **解读**: 经典隐私保护统计发布依赖"双向"随机化，但现实基础设施往往只允许单向有界扰动：例如延长处理时间、发送或存储虚拟消息/数据是可行的，而反向修改（缩短时间、删除数据）受硬件容量、通信协议与数据管理系统的限制。这种"单侧有界噪声"约束下的效用-隐私最优权衡是本文研究的核心问题。
+
+作者在三个语义框架——差分隐私（DP）、最大泄漏（Maximal Leakage）与 PAC 隐私——下建立单侧噪声机制的理论基础，在二阶矩预算与最大扰动幅度的约束下刻画噪声的近似分布，并开发高效工具求解相应的优化问题。
+
+实验表明，现有技术（如截断有偏拉普拉斯噪声）是次优的、造成过度的性能退化；在一个 25 万消息预算的匿名系统中，优化后的 DP 方案比传统方法减少 21 倍的消息量、降低 18 倍的延迟开销。
+
+我的思考：把"基础设施约束"引入隐私噪声设计，是对传统 DP 机制"理论优美但工程不可行"的重要修正——单侧扰动的数学刻画（二阶矩+最大幅度）为延迟/流量混淆类系统提供了可证明的最优解，21×/18× 的增益说明理论优化的工程回报巨大。局限：理论结果对应用场景的语义假设（如攻击者模型）敏感，跨框架（DP/MaxL/PAC）的结论是否一致需细读；其对真实网络流量统计特性的适配程度也待验证。
+
+
+#### Exposing Privacy Risks in Anonymizing Clinical Data: Combinatorial Refinement Attacks onk-Anonymity Without Auxiliary Information.
+
+- **作者**: Somiya Chhillar, Mary K. Righi, Rebecca E. Sutter, Evgenios M. Kornaropoulos
+
+- **方向**: 隐私保护
+
+- **解读**: k-匿名是临床数据发布中最广泛使用的匿名化技术之一，其安全性长期依赖"攻击者拥有辅助信息"的假设。本文研究更危险的场景：即使攻击者没有任何外部辅助信息，仅凭匿名化数据集自身的结构，能否通过组合精化（combinatorial refinement）手段重新识别个体、击穿 k-匿名保证——这是对匿名化数据"结构安全"的底层质疑（无摘要，据标题推断）。
+
+从标题推断，方法核心是组合精化攻击：利用 k-匿名分组内的组合约束（如属性取值组合在组内的分布），反复细化候选个体集合，在无辅助信息条件下逐步逼近真实个体（无摘要，据标题推断）。
+
+由于该条目没有摘要，本文无法引用任何量化实验结果；攻击成功率、数据规模与匿名化参数的敏感性等均需查阅原文确认（无摘要，据标题推断）。
+
+我的思考：这个威胁模型挑战了 k-匿名研究的主流假设——若无需辅助信息的组合攻击可行，则大量基于"辅助信息有限"的 k-匿名安全性论证需要重估，对临床数据发布实践（去标识化合规）影响直接。风险在于：组合攻击是否依赖特定数据分布（如属性基数、记录唯一性），对一般临床数据集的普适性待验证；且 k-匿名常与其他机制（l-多样性、t-接近）联用，攻击对后者的穿透力未知。建议对照原文的威胁模型形式化与实验范围判断成色。
+
+
+#### Secure Noise Sampling for Differentially Private Collaborative Learning.
+- **作者**: Olive Franzese, Congyu Fang, Radhika Garg, Xiao Wang, Somesh Jha, Nicolas Papernot, Adam Dziedzic
+- **方向**: 隐私保护
+- **解读**:
+差分隐私随机梯度下降（DP-SGD）通过向更新添加随机噪声，为机器学习模型的训练集提供形式化隐私保证。在协同学习（CL）中——多个参与方联合训练一个模型——噪声添加发生在两个时点之一：聚合之前，或安全聚合期间。前者用于分布式 DP 方法，需要更多总量噪声才能达到同等安全级别，导致模型效用下降；后者保持效用但要求安全多方计算（MPC）协议。现有 MPC 方法由于参与方数量众多，每个样本的运行时长达数十至数百秒，使其在协同学习中不切实际——因为每步通常涉及数千甚至更多样本。
+
+方法上，本文针对这一瓶颈研究安全噪声采样：在 MPC 框架内高效生成 DP 所需噪声，使"聚合中加噪"的效用优势与可接受开销兼得。具体协议细节在摘要中未展开，目标是显著降低每样本的噪声生成成本。
+
+摘要未给出方案的量化结果，动机数据明确：现有 MPC 方案每样本需数十至数百秒，难以支撑每步数千样本的协同训练。预期贡献是以更高效的安全采样协议使 DP-SGD 在协同学习中变得实用。
+
+我的思考：分布式 DP 与安全聚合加噪的权衡是协同学习隐私研究的核心张力：前者牺牲效用换简单，后者保效用但代价高昂。本文卡在"让后者变便宜"的关键节点——若噪声采样的 MPC 开销降到接近可忽略，DP-SGD 在协同场景的效用-隐私曲线将整体改善。局限在于摘要未披露协议细节与实测数据，其加速比、通信开销与安全假设有待正文；与既有安全聚合系统的整合方式也是落地关键。
+
+
+#### Demo: Exploring Utility and Attackability Trade-offs in Local Differential Privacy.
+- **作者**: Haoying Zhang; Abhishek Kumar Mishra; Héber Hwang Arcolezi
+- **方向**: 隐私保护
+- **解读**:
+本地差分隐私（LDP）无需可信聚合方即可提供强形式化的隐私保证，是隐私保护数据收集与分析的有力工具。然而论文指出，尽管研究浩繁，实践者往往难以理解如何调整 LDP 参数（如隐私预算 ε）并预判这些参数对效用损失与攻击脆弱性的实际影响，参数选择的"黑箱"感阻碍了 LDP 的落地应用。这一可用性缺口正是本文要解决的问题。
+
+方法上，作者演示了 LDP-Toolbox——一个基于 Python 实现的交互式 Web 工具箱，能够对隐私预算 ε、效用损失与攻击脆弱性之间的权衡进行实用、可分析的图形化展示。工具箱支持使用来自不同领域的真实数据集进行探索，演示重点聚焦于离散个人属性与基于位置的数据等典型 LDP 场景，帮助实践者在具体场景中直观比较不同参数配置的效果。
+
+作为演示（Demo）论文，摘要未给出量化结果，其价值主要体现在工具与可视化层面：把抽象的理论权衡转化为可交互的工程界面，降低了 LDP 的参数调优门槛。作者团队在 LDP 领域有扎实的学术积累，工具的可信度较高。
+
+我的思考：这篇工作的成色在于"补齐理论与实践之间的桥梁"，但其影响取决于工具箱后续是否开源、是否支持真实部署的规模数据。局限也很明显——演示规模小，"攻击性（attackability）"指标的定义与度量口径未见细节，不同攻击模型下的结论可能差异很大。与同类 LDP 分析工具相比，其差异化在于同时刻画效用与攻击风险两个维度，这在教学与工程选型场景中颇具价值。
+
+
+#### Poster: Adaptive Gradient Clipping with Personalized Differential Privacy for Heterogeneous Federated Learning.
+- **作者**: Hao Zhou; Hua Dai; Siqi Cai; Geng Yang; Yang Xiang
+- **方向**: 隐私保护
+- **解读**:
+联邦学习（FL）中，差分隐私（DP）是保护客户端梯度隐私的主要手段，但传统方法通常对所有客户端施加固定的梯度裁剪界，在数据异构的现实场景中难以兼顾隐私保护强度与模型效用：裁剪过紧会损害模型精度，过松则削弱隐私保证。论文提出 GC-DP 框架，将个性化差分隐私引入异构联邦学习，解决"一刀切"裁剪界的问题。
+
+方法的核心是双重自适应性：首先利用代理数据集（proxy dataset）为每个客户端学习从隐私预算 ε 到最优裁剪阈值 C* 的个性化映射；其次允许各客户端依据自身梯度的 L2 范数实时调整本地裁剪界。这种"预算感知 + 梯度感知"的双层调节机制，使每个客户端在自身数据分布与隐私需求下获得更优的隐私-效用平衡。
+
+摘要未给出具体量化结果，贡献主要体现在机制设计层面：将个性化 DP 从理论概念落地为可操作的裁剪阈值学习框架，并兼容异构客户端。
+
+我的思考：个性化裁剪是 DP-FL 中务实且少见的切入点，其"代理数据集学习映射 + 实时 L2 自适应"的组合具有工程可行性，相比固定裁剪或纯理论个性化方案更贴近真实部署。局限在于代理数据集与真实客户端分布的偏差可能使学到的映射失真；此外 ε 的个性化解释与总隐私账本的核算仍需谨慎。与同类工作相比，其亮点是把"裁剪"这一常被当作超参数的环节变成了可学习的自适应机制，对后续研究有启发意义。
+
+
+#### Poster: PainNOVA: Privacy-Aware Voice-Based Pain-Level Detection.
+- **作者**: Andrew Lu; Mashrafi Kajol; Wei Lu; Dean Sullivan
+- **方向**: 隐私保护
+- **解读**:
+疼痛等级检测对确定恰当治疗方案至关重要，但现有基于自我报告、行为观察或图像的方法要么依赖专业人员和临床设备、成本高昂，要么存在敏感信息泄露风险——攻击者可能从中推断出患者的性别、年龄段甚至潜在健康状况。论文提出 PainNOVA，一个隐私感知的、基于语音的疼痛等级检测框架，试图在降低成本的同事规避隐私泄露。
+
+方法上，框架从音频文件中提取频域特征（初步实验采用 log-Mel 频谱图），首先识别并移除其中的性别敏感特征，再训练卷积神经网络（CNN）执行三级疼痛等级分类。实验基于常用公开数据集 TAME Pain 数据集，初步分析显示 log-Mel 频谱特征具备区分能力（具体准确率未在摘要中给出）。
+
+摘要未提供量化结果，属于初步研究（preliminary）阶段。
+
+我的思考：该工作的亮点是"隐私设计进模型"——不是事后匿名化，而是在特征层面主动剔除性别线索，兼顾了医疗 AI 的实用性与隐私伦理。语音疼痛检测本身是低成本、可远程部署的方向，与图像/临床方案相比部署门槛低。局限在于：性别特征与疼痛相关声学特征高度纠缠，简单特征剔除可能同时损伤分类性能；TAME 数据集的规模与人群多样性也限制结论外推。与同类语音健康监测工作相比，其隐私显式建模的思路值得借鉴，但距离临床落地仍有距离。
+
+
+#### Poster: Reconsidering DNS-Based Domain Verification: Privacy and Overhead Implications.
+- **作者**: Eunbee Hwang; Hyunsoo Kim; Ted Taekyoung Kwon
+- **方向**: 隐私保护
+- **解读**:
+基于 DNS TXT 记录的域名验证（Domain Verification, DV）已成为各类在线服务证明域名所有权的必备机制，例如证书签发与第三方服务绑定。论文指出，这一普遍实践存在被忽视的代价：TXT 记录内容会无意中泄露敏感的商业关系（如企业使用了哪些第三方服务），增大了 DNS 响应体积，并加重了解析器基础设施的负担。
+
+方法上，作者对超过 250 万个 DNS TXT 记录开展测量，刻画了臃肿记录（bloated records）的普遍程度——大量服务在 TXT 中存放远超验证所需的冗余信息，既造成隐私泄露面，也带来资源开销。
+
+该工作定位为"初步问题陈述"（preliminary problem statement），旨在唤起社区对 DV 机制隐私与效率成本的关注，并推动隐私保护、高效率的 DV 替代机制研究。
+
+我的思考：DV 机制常被视为"无副作用的轻量验证"，这篇工作用 250 万级测量戳破了这一假设：验证元数据本身即隐私泄露渠道（揭示服务依赖关系）与资源负担。其价值在于提出量化证据并定义问题空间，为 ACME 等替代验证途径的设计提供动机。局限方面：作为问题陈述，缺少对泄露风险的攻击场景化论证与替代方案的具体设计；TXT 内容分类也可能存在误判。总体而言，这是对"看似无害的基础设施惯例"的一次有价值的重新审视。
+
+
+#### Poster: Model-driven Privacy Analysis of Messaging Platforms.
+- **作者**: Muqaddas Naz; Muhammad Taimoor Khan; Muhammad Waqas
+- **方向**: 隐私保护
+- **解读**:
+分析互联网消息应用的隐私违规极具挑战性：隐私需求相互重叠甚至冲突——保密性、匿名性、不可链接性（unlinkability）与用户同意（consent）彼此交织，单一需求的分析容易顾此失彼。论文指出，现有静态分析技术通常只针对隐私的孤立侧面，范围受限，难以捕捉需求间的相互依赖。
+
+方法上，作者提出一个基于复合模型（composite model）的框架，显式建模各隐私需求之间的相互依赖关系，从而实现对技术违规及其法律含义的系统化识别——包括对数据保护法规与数字权利的侵犯。该框架被应用于 Ejabberd——一个被 WhatsApp 等平台采用的实时通信服务器，分析聚焦于保密性与同意驱动的关切，如知情权（right to be informed）与删除权（erasure）等 GDPR 相关要求。
+
+作为海报论文，摘要未给出发现的违规清单等具体结果。
+
+我的思考：该工作的价值在于把隐私分析从"单点检查"提升为"需求依赖网络"上的系统推理，并显式关联技术违约与法律后果，呼应了 GDPR 等法规的合规审计需求。选择 Ejabberd 作为对象具有代表性，其开放源码特性也使分析可复现。局限方面：复合模型的表达能力决定分析深度，隐私需求的形式化本身就可能漏掉隐性依赖；静态分析对运行期数据流与第三方 SDK 行为的覆盖有限。与同类隐私静态分析工具相比，其"模型驱动 + 法律映射"的视角是差异化亮点，但工程化与规模化仍是挑战。
+
+#### Poster: Scalable Privacy-Preserving Linear Regression Training via Homomorphic Encryption.
+- **作者**: Yena Cho, Hyoungshick Kim
+- **方向**: 隐私保护
+- **解读**:
+
+线性回归是数据分析的基础模型，广泛用于金融、医疗等领域，但在加密数据上训练因同态加密（HE）的巨额开销而极其昂贵，制约了隐私保护机器学习的落地。
+
+作者提出 PP-LR：一个端到端基于 CKKS 的协议，支持特征级并行（feature-level parallelism）的梯度下降，并引入条件自举（conditional bootstrapping）技术，只在必要时刷新密文噪声，从而控制开销。
+
+实验在四个真实数据集上进行：与标准 HE 实现相比，训练速度最高提升 15.7 倍，同时模型精度与明文训练模型相差在 0.2% 以内。
+
+我的思考：15.7 倍加速与 0.2% 精度损失是漂亮的工程结果，特征级并行和条件自举是针对性优化而非通用技巧，体现出对 HE 噪声预算的精细管理；但线性回归结构相对简单，能否推广到逻辑回归乃至深度模型、以及通信量与端到端时延如何，仍需后续工作验证；此外，不同安全参数与密文打包策略下的性能敏感性也值得系统研究，其对噪声预算的精细管理思路也可为其他 HE 训练协议借鉴。
+
+#### WPES '25: 24th Workshop on Privacy in the Electronic Society.
+
 - **作者**: Jianying Zhou
-- **解读**: 该文介绍第 24 届电子社会隐私研讨会（WPES'25，与 ACM CCS 会议同期举办）：对隐私意识的政策、法规与技术的需求已获广泛认可，研讨会围绕全球互联社会中的隐私问题及可能的解决方案展开讨论。作为面向当代电子社会各类隐私议题的年度论坛，WPES'25 延续了 24 年来对隐私议题的持续关注。
+- **方向**: 隐私保护
+- **解读**:
+在全球互联的社会中，隐私意识强的政策、法规与技术的必要性已获得广泛认可。然而，隐私保护在技术实现、法律合规与用户体验之间仍存在大量张力，需要在社区层面持续讨论。
+
+WPES（电子社会隐私工作坊）正是讨论全球互联社会中隐私问题与可能解决方案的年度论坛；2025 年举办的第 24 届会议与 ACM CCS 同期举行，覆盖当今电子社会各个层面的隐私议题。
+
+结果（摘要为定位性陈述，无量化数据）：本届延续了二十余年的年度学术交流传统，议题覆盖政策、法规与技术多重维度。
+
+我的思考：作为拥有 24 年历史的隐私领域老牌工作坊，WPES 见证了隐私研究从边缘走向主流的过程——从匿名通信、数据最小化到今天的差分隐私、隐私计算，其议题演变本身就是一部隐私研究简史。在各国隐私立法密集出台的当下，连接学术技术成果与合规实践仍是其核心价值所在。
+
+### 系统与操作系统安全（21 篇）
+
+#### Enabling Secure and Efficient Data Loss Prevention with a Retention-aware Versioning SSD.
+
+- **作者**: Weidong Zhu, Carson Stillman, Sara Rampazzi, Kevin R. B. Butler
+- **方向**: 系统与操作系统安全
+- **解读**: 
+数据丢失防护（DLP）需要在删除、覆盖等操作后仍能恢复数据，以应对误删与勒索场景，但传统文件系统级版本管理开销大且难以防绕过，固态盘存储层的安全与效率往往难以兼得（无摘要，据标题推断）。
+方法上，论文提出"保留感知的版本化SSD"，在闪存存储层直接实现数据的版本化与保留管理，使SSD自身具备按版本留存数据的能力，从而以较低开销支持DLP语义并兼顾安全属性（无摘要，据标题推断）。
+结果方面，该设计旨在让SSD在提供数据丢失防护的同时保持存储效率，通过存储层版本化降低对上层系统的依赖（具体性能指标未见于摘要）（无摘要，据标题推断）。
+我的思考：把版本管理下沉到SSD固件层是合理的架构选择——存储层天然掌握物理页生命周期，能以设备能力实现"难以绕过的"数据保留。风险在于固件复杂度、磨损均衡与版本元数据的持久性开销，以及与现有文件系统/SSD接口的兼容性。若实现扎实，可为DLP与勒索防护提供新的硬件级原语，但也需警惕固件漏洞被利用后的放大面。
 
 
-### SURE '25: The 1st ACM Workshop on Software Understanding and Reverse Engineering.
-- **作者**: Zion Leonahenahe Basque, Ati Priya Bajaj
-- **解读**: 该文介绍首届 ACM 软件理解与逆向工程研讨会（SURE'25，与 CCS 2025 同地举办）：针对软件快速创建与我们对代码分析和推理能力之间日益扩大的差距，研讨会设有主题演讲、论文环节、海报与圆桌挑战。会议收到 15 篇投稿并录用 9 篇（录用率 60%），汇聚了多样化方法、凸显了共同挑战，并开始厘清"软件理解"研究的定义，为该关键领域更清晰、更连贯的研究议程奠定了基础。
+#### CROSS-X: Generalized and Stable Cross-Cache Attack on the Linux Kernel.
+
+- **作者**: Dong-ok Kim, Juhyun Song, Insu Yun
+- **方向**: 系统与操作系统安全
+- **解读**: 
+跨缓存攻击（cross-cache attack）是一种针对内核堆内存的侧信道/利用技术，通过跨缓存层级或缓存集的物理页操纵实现对象重叠与提权；此类攻击在真实内核上往往不稳定、难推广，受页表分配与缓存行为干扰大（无摘要，据标题推断）。
+方法上，CROSS-X提出"通用且稳定"的跨缓存攻击方法，针对Linux内核进行泛化与稳定化——通过改进物理页分配控制、缓存行为建模与对象放置策略，使攻击在不同内核版本与配置下可复现、可扩展（无摘要，据标题推断）。
+结果方面，该工作以在Linux内核上实现通用、稳定的跨缓存攻击为目标，相比既有同类攻击在成功率、稳定性与适用版本范围上应有提升（具体数据以论文正文为准）（无摘要，据标题推断）。
+我的思考：跨缓存攻击是把物理页操纵从"演示"推向"实战"的关键技术，其稳定性正是落地利用的最大瓶颈。若CROSS-X真能通用化，将对内核加固（如页分配随机化、更细粒度隔离）形成直接压力。此类工作的价值在于把"不稳定攻击"变成可复现的测量工具，倒逼内核侧缓解措施，同时也需要注意披露流程与道德边界。
 
 
-### CheckMATE '25: Research on Offensive and Defensive Techniques in the Context of Man At The End (MATE) Attacks.
-- **作者**: Sébastien Bardin, Michele Ianni, Hyungon Moon
-- **解读**: 该文介绍 MATE（终端攻击者）攻防技术研讨会（CheckMATE'25）：MATE 攻击者拥有对软件或硬件目标的完全访问权，能够观察、分析、修改运行中的系统，提取机密并改变行为。研讨会同时关注攻防两侧——揭示现实攻击技术的测量研究与工具，以及混淆、防篡改、水印、白盒密码与硬件辅助保护等防御手段，旨在汇聚严谨可复现的研究，弥合学术进展与工业实践之间的差距。
+#### Slot: Provenance-Driven APT Detection through Graph Reinforcement Learning.
+- **作者**: Wei Qiao, Yebo Feng, Teng Li, Zhuo Ma, Yulong Shen, Jianfeng Ma, Yang Liu
+- **方向**: 系统与操作系统安全
+- **解读**:
+
+高级持续性威胁（APT）是长期潜伏、以窃取数据或破坏为目的的复杂攻击，如Sandworm对22家丹麦能源公司的协调攻击、Grayling长达四个月的窃密行动。现有检测方法难以识别系统行为间多层次的隐藏关系（因果、上下文、间接），难以自动构建攻击链，对抗攻击鲁棒性也不足。
+
+Slot基于来源图与图强化学习：嵌入模块用伯努利多臂老虎机算法把节点的语义与拓扑特征编码为向量，聚合相似节点并过滤伪装实体；用高效标签相似度计算实现半监督学习，以MLP与隔离森林（iForest）综合识别APT；最后通过聚类算法自动重建攻击链，辅助防御策略制定。
+
+在StreamSpot、CADETS等多个公开APT数据集上，Slot的整体检测精度约99%，全面超越现有最先进方法，且检测更快；针对Goyal等人提出的篡改攻击图邻域以伪装良性节点的对抗策略，Slot凭借图强化学习机制展现出更强的抵抗能力；案例研究验证了攻击链追踪与防御支持的有效性。
+
+我的思考：贡献成色在于率先把图强化学习引入来源图APT检测，兼顾准确性、效率、适应性、鲁棒性四方面，并自动化了攻击链构建这一对防御至关重要的环节，约99%的精度与对抗鲁棒性数据都很有说服力；局限是半监督仍需少量标签、大规模来源图的训练开销与实时性有待评估，单数据集高分也可能受数据集规模限制。领域影响上，它为APT自动化检测与响应提供了实用工具，对能源、制造等被APT重点针对的行业有现实价值；与Threatrace、Unicorn等来源图方案相比在多个指标上领先。
+
+- **arXiv PDF**: [Slot: Provenance-Driven APT Detection through Graph Reinforcement Learning.](https://arxiv.org/pdf/2410.17910)
+
+#### TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE.
+- **作者**: Tong Sun, Bowen Jiang, Hailong Lin, Borui Li, Yixiao Teng, Yi Gao, Wei Dong
+- **方向**: 系统与操作系统安全
+- **解读**: 端侧推理把第三方模型部署到移动/IoT 设备以保护用户数据，但模型本身面临模型窃取（MS）与成员推理攻击（MIA）两大威胁；将整个模型放入可信执行环境（TEE）可缓解，然而 TEE 安全内存受限，难以同时实现全模型保护与低延迟推理。
+- 方法上，TensorShield 首次只屏蔽模型中的关键张量而非全部：基于 XAI 的注意力迁移分析评估张量关键性，仅将关键张量放入 TEE 执行；用 JS 散度度量中间特征对成员信息的泄露程度，只对隐私相关特征做一次性掩码（OTP）；并提出延迟感知放置，联合建模硬件平台能力与张量/特征关键性，求解最小化推理延迟的放置策略。
+- 结果上，在 4 个模型、4 个数据集、两块平台（Hikey960 与树莓派 3B+）上，TensorShield 取得与全屏蔽几乎相同的保护（MS、MIA 精度分别仅为全屏蔽基准的 1.03× 与 1.00×），推理速度比 GroupCover 最高快 25.35×（平均 5.85×）、比 Occlumency 最高快 16.89×（平均 4.32×），能耗最高降低 91.35%；相比部分层屏蔽方法，MS 精度最高降低 45.97%、MIA 最高降低 38.33%，且无精度损失。
+- 我的思考：核心洞察是"模型安全取决于决策能力所在的关键张量，而非层的深浅"，把问题从"屏蔽多少"转向"屏蔽什么"，XAI 与 JS 散度的组合在可解释性与隐私度量上都有据可依。局限是部署策略依赖离线安全分析，超出黑盒查询+内存转储的威胁模型需重新评估；关键性阈值（如 0.1）有一定经验性。相比 ShadowNet、Occlumency 等全屏蔽方案，本工作确立了"部分屏蔽+等价安全"的效率范式，对 TEE 资源受限场景有直接价值。
+
+- **arXiv PDF**: [TensorShield: Safeguarding On-Device Inference by Shielding Critical DNN Tensors with TEE.](https://arxiv.org/pdf/2505.22735)
+
+#### BASTAG: Byte-level Access Control on Shared Memory using ARM Memory Tagging Extension.
+- **作者**: Junseung You, Jiwon Seo, Kyeongryong Lee, Yeongpil Cho, Yunheung Paek
+- **方向**: 系统与操作系统安全
+> （无摘要，据标题推断）
+- **解读**: 
+ARM内存标记扩展（MTE）以硬件粒度标记内存地址，用于检测内存安全错误；但MTE的标准用法以标签匹配为主，难以在共享内存上提供细粒度的访问控制。BASTAG提出基于MTE的共享内存字节级访问控制方案。（无摘要，据标题推断）
+
+论文应利用MTE的标签机制为共享内存的不同字节或区域赋予访问权限，使进程间共享数据的访问控制下沉到硬件层，兼顾安全性与性能。（无摘要，据标题推断）
+
+摘要缺失，无法引用量化结果；据标题推断，论文报告了BASTAG在性能开销、安全性与兼容性上的评估。（无摘要，据标题推断）
+
+共享内存是高性能进程间通信的基石，但软件级访问控制开销高，硬件化（MTE）方案思路新颖，且字节级粒度超出MTE常规用法，有技术挑战性。局限：无摘要，具体机制（标签管理、权限粒度、兼容性）与开销数据待全文确认；MTE标签位数有限（4/8位），如何在有限标签空间内表达字节级权限是核心难点。（无摘要，据标题推断）
 
 
-### CCSW '25: Cloud Computing Security Workshop.
-- **作者**: Paolo Palmieri, Shivam Bhasin
-- **解读**: 该文介绍第 16 届云计算安全研讨会（CCSW'25，2025 年 10 月 17 日于台北与 CCS 同地举办）：议程包含六篇云环境安全与隐私方向的全文，涵盖基于人工智能的入侵检测测试、面向数据与计算外包的高级密码学、安全编码与网络等主题，并邀请 Tianwei Zhang 博士与 Matthias Kannwischer 作两场主题演讲。
+#### Securing Mixed Rust with Hardware Capabilities.
+- **作者**: Jason Zhijingcheng Yu, Fangqi Han, Kaustab Choudhury, Trevor E. Carlson, Prateek Saxena
+- **方向**: 系统与操作系统安全
+- **解读**: 
+Rust通过所有权、借用与别名互斥（AXM）三条原则静态防止内存安全漏洞与数据竞争。但真实项目多为混合代码——包含unsafe Rust、FFI与内联汇编，编译器无法在这些代码上静态执行上述原则，漏洞由此滋生。
+
+CapsLock提出在机器码层面运行时执行Rust原则的强制机制：保持足够简单以适配基于能力（capability）的硬件抽象，提供低开销空间安全；其核心是新颖的"revoke-on-use"抽象——通过能力访问对象时会隐式失效指向它的其他能力，从而无需软件显式指定失效即可自动获得时间安全，成为首个能跨语言执行Rust原则的方案。
+
+原型在QEMU上实现，与现有代码高度兼容：通过99.7%的内置测试用例与100个最流行crate的测试，能标记真实世界中的unsafe用法或内联汇编，并在实验中发现了8个此前未知的crate缺陷。
+
+混合Rust（unsafe/FFI/asm）是内存安全争论的焦点，CapsLock用硬件能力机制把Rust原则延伸到编译器管不到的代码，revoke-on-use自动时间安全的设计优雅且免去软件标注负担，兼容性数据（99.7%、100个crate）很有说服力，8个新发现缺陷证明实用性。局限：依赖能力硬件（如CHERI类），通用平台部署尚远；空间/时间安全覆盖的完整性（能力失效的边界条件）需进一步分析。
 
 
-### QSec '25: Workshop on Quantum Security and Privacy.
-- **作者**: Muhammad Taqi Raza, Jakub Szefer
-- **解读**: 该文介绍量子安全与隐私研讨会（QSec'25）：旨在建立专门探讨量子技术引入的新型威胁以及量子系统自身安全问题的学术阵地。研讨会汇聚后量子密码、网络安全与量子计算（含量子密钥分发架构）等领域专家，分析拥有量子或量子增强能力的对手如何破坏经典系统，并展示混合密码方案、量子原生协议、QKD 与硬件级保护等创新防御手段。此外还致力于搭建密码学、网络、架构与信息科学等社区间的桥梁，并通过主题演讲、技术环节与蓝天空想讨论绘制未来研究路线图。
+#### Empirical Security Analysis of Software-based Fault Isolation through Controlled Fault Injection.
+
+- **作者**: Nils Bars, Lukas Bernhard, Moritz Schloegel, Thorsten Holz
+- **方向**: 系统与操作系统安全
+- **解读**:
+浏览器每天处理来自未知来源的脚本、媒体与可执行代码，是用户与攻击者之间的关键安全边界。JavaScript 攻击面庞大，引擎越来越多地采用软件故障隔离（SFI）缓解威胁；Google 的 V8 heap sandbox 是最广泛部署的 SFI 机制，保护着数十亿 Chromium 用户及大量基于 Node.js、Electron 的应用。
+
+该沙箱将地址空间分为两部分：可信的、含安全敏感元数据的区域，与不可信代码可访问的沙箱内存；技术上通过翻译表解析对可信对象的引用、移除裸指针来强制隔离，使攻击者即使完全控制数据也无法破坏可信数据。尽管部署如此广泛，此类机制却鲜有系统测试，本研究通过受控故障注入对其进行经验性安全分析。
+
+摘要未给出量化数字，研究以受控故障注入系统评估 SFI 机制面对数据控制攻击时的实际安全性。
+
+故障注入把"攻击者控制数据"的威胁模型显式化，比单纯 fuzzing 更贴近沙箱的真实威胁；类似方法论此前用于评估 CFI 等防护，本文将其带到最广泛部署的沙箱之上。局限在于注入模型与实际漏洞利用路径的差距，但结果为 V8 沙箱的后续加固提供了实证依据。
 
 
-### QRSec 2025: ACM CCS First Workshop on Quantum-Resistant Cryptography and Security.
-- **作者**: Ashish Kundu, Attila A. Yavuz, Cristina Nita-Rotaru
-- **解读**: 该文介绍首届 ACM CCS 抗量子密码与安全研讨会（QRSec 2025）：在 NIST PQC 标准化进程于 2024 年发布首批标准的背景下，研讨会为研究者、从业者与产业领袖探讨后量子密码（PQC）向安全系统的集成提供平台。议程覆盖理论基础、算法设计、工程与部署策略，以及机器学习密码分析、抗量子网络、区块链、物联网、云安全等新兴主题，并通过主题演讲、技术环节与互动讨论促进学术界、工业界与政府间的对话，旨在推进该领域现状并为量子时代的迁移与合规绘制可行路径。
+#### Deprivileging Low-Level GPU Drivers Efficiently with User-Space Processes and CHERI Compartments.
+
+- **作者**: Paul Metzger, A. Theodore Markettos, Edward Tomasz Napierala, Matthew Naylor, Robert N. M. Watson, Timothy M. Jones
+- **方向**: 系统与操作系统安全
+- **解读**:
+设备驱动是操作系统 bug 与漏洞的主要来源，源于硬件厂商的市场压力使其急于访问特权资源。操作系统越来越多地将驱动移出内核、在用户空间去特权化，但普遍认为这带来显著开销；GPU 驱动堪称"完美风暴"：体积巨大、逻辑复杂又高度性能敏感，因此主流操作系统中大部分 GPU 驱动仍以全特权运行。
+
+作者结合用户空间进程与 CHERI 能力隔离（compartments），对低层 GPU 驱动进行高效去特权化，以 CHERI 的细粒度内存能力在保持性能的同时收紧驱动权限。
+
+摘要未给出量化数字，性能与安全性评估结果在论文正文中呈现。
+
+用能力机（capability machines）解决"去特权化 vs 性能"的经典矛盾是优雅的方向，CHERI 的细粒度授权比传统进程隔离更适合驱动这种共享状态密集的组件。局限在于 CHERI 硬件（如 Morello、CHERI-RISC-V）的可用性与 GPU 厂商驱动的适配成本；若落地，可显著缩小 GPU 驱动这一高危内核攻击面。
 
 
-### LAMPS '25: ACM CCS Workshop on Large AI Systems and Models with Privacy and Security Analysis.
-- **作者**: Kwok-Yan Lam, Xiaoning Liu, Derui Wang, Bo Li, Wenyuan Xu, Jieshan Chen, Minhui Xue, Xingliang Yuan, Guangdong Bai, Shuo Wang
-- **解读**: 该文介绍大型 AI 系统与模型隐私安全分析研讨会（LAMPS'25）：随着大型 AI 系统与模型（LAMs）在各行业应用中作用日益突出，其对关键基础设施隐私与网络安全的影响已成为紧迫议题。研讨会汇聚全球专家，深入探讨各行业面临的复杂风险，交流创新解决方案与最佳实践，强调在推进 AI 技术的同时守护数字与物理基础设施安全之间的平衡，并共同塑造未来研究议程。
+#### Beyond Tag Collision: Cluster-based Memory Management for Tag-based Sanitizers.
+- **作者**: Mengfei Xie, Yan Lin, Hongtao Wu, Jianming Fu, Chenke Luo, Guojun Peng
+- **方向**: 系统与操作系统安全
+- **解读**:
+基于内存标签（tag）的消毒器是缓解内存安全错误的重要工具，但标签空间有限导致"标签碰撞"（tag collision）——不同对象共享同一标签——会削弱检测能力或引发误报，成为限制其实用性的核心瓶颈。（无摘要，据标题推断）
+
+论文提出超越标签碰撞的聚类式内存管理策略：不再单纯依赖标签匹配，而是根据对象的内存生命周期与访问模式进行聚类，将共享标签的对象组织到可控的组内，从而在不扩大标签位宽的前提下维持检测精度，并降低标签分配与回收的开销。（无摘要，据标题推断）
+
+摘要缺失，无法给出量化结果；预期贡献在于新的内存管理算法及其对消毒器检测能力、误报率与运行时开销的综合改进。（无摘要，据标题推断）
+
+内存标签技术的核心矛盾是"标签位数有限 vs 对象数量无限"，从内存管理侧化解碰撞比简单增加标签位更聪明，且兼容现有硬件标签方案（如 ARM MTE）。局限在于聚类策略可能引入新的空间/时间开销，聚类错误本身也可能造成新的误报；缺少摘要使得具体机制与实验规模只能留待全文确认。
 
 
-### DeFi '25: 5th ACM Workshop on Decentralized Finance and Security.
-- **作者**: Hao Chung, Yajin Zhou, Liyi Zhou
-- **解读**: 该文介绍第 5 届去中心化金融与安全研讨会（DeFi'25）：DeFi 已从利基市场发展为涵盖去中心化交易所、借贷平台、稳定币、衍生品、收益优化、预测市场及代币混币器等隐私增强技术的复杂金融生态，约 770 亿美元的总锁定价值（TVL）在彰显其重要性的同时凸显了强化安全措施的必要性。研讨会汇聚密码学、博弈论、经济学与网络安全专家，通过跨学科对话严格审视现状，预期产出优先研究议程、新的合作倡议与战略路线图。本届议程包括 Vassilis Zikas 教授的主题演讲、两个最佳论文奖（理论与应用方向）得主的邀请报告及四篇原创论文展示。
+#### Tide: An Efficient Kernel-level Isolation Execution Environment on AArch64 via Dynamically Adjusting Output Address Size.
+- **作者**: Shiyang Zhang, Chenggang Wu, Chengxuan Hou, Jinglin Lv, Yinqian Zhang, Qianyu Guo, Yuanming Lai, Mengyao Xie, Yan Kang, Zhe Wang
+- **方向**: 系统与操作系统安全
+- **解读**:
+为在内核中实施特权分离，内核级隔离执行环境（IEE）成为近年研究热点，可保护关键资源与监控器。但研究发现，现有 IEE 若要隔离自身内存，都必须扮演引用监视器角色去校验页表更新，由此带来显著的性能开销。
+
+Tide 基于 AArch64 的"输出地址大小"（output address size）硬件特性，把页表校验这类安全检查卸载到硬件，消除引用监视器开销。针对该特性在灵活性与安全性上的挑战，Tide 利用 stage-2 翻译灵活扩展物理地址范围来映射内存并实施额外访问控制；并设计新颖的"门"机制：临时禁用该特性以安全"潜入"（sneak into）IEE，保证受保护代码只在固定位置执行。
+
+实验表明，在保护内核结构方面 Tide 比现有工具性能更优；摘要未给出具体数字。
+
+把安全校验下沉到硬件特性、用 stage-2 翻译兼得灵活性与访问控制，是优雅的系统设计；"门"机制以固定入口换取进入安全，思路与 SGX 的 ENCLU 入口约束异曲同工。局限是强依赖 AArch64 特定硬件特性，可移植性有限，且内核改动深度与真实负载下的收益需全文数据验证。
 
 
-### The 20th Workshop on Programming Languages and Analysis for Security (PLAS 2025).
-- **作者**: Abhishek Bichhawat, Jana Hofmann
-- **解读**: 该文介绍第 20 届安全编程语言与分析研讨会（PLAS 2025，首届于 2007 年在圣地亚哥举办）：论坛探讨如何运用编程语言与程序分析技术保障从编译器、机器学习模型到智能合约等各类软件系统的安全，鼓励新颖、前瞻性的想法，对已知或新技术的实践评估，以及对新兴威胁与问题的讨论，并接纳激进、面向未来的立场论文。本届设有 Limin Jia 与 Jan Reineke 两场主题演讲和五场论文报告。
+#### Heracles: Chosen Plaintext Attack on AMD SEV-SNP.
+- **作者**: Benedict Schlüter, Christoph Wech, Shweta Shinde
+- **方向**: 系统与操作系统安全
+- **解读**:
+（无摘要，据标题推断）AMD SEV-SNP 是云环境中最主流的机密计算（confidential computing）技术之一，承诺保护虚拟机内存的机密性与完整性免受不可信 hypervisor 攻击。本文针对 SEV-SNP 提出选择明文攻击（Chosen Plaintext Attack, CPA），即攻击者能够选择并观察特定明文在加密状态下的密文行为，从而削弱或破坏其加密内存的机密性保证。
+
+此类攻击通常利用硬件/固件在特定操作路径上对可控输入的处理方式（如页表、内存加密引擎对特定地址或数据的处理差异）来建立明文-密文对应关系，逐步推断受保护数据。
+
+摘要缺失，无法提供具体的攻击路径、成功率或受影响场景的量化数据；结合该团队此前对 SEV-SNP 的系列研究（如 RMPocalypse 等），其工作普遍聚焦于 RMP 管理与固件接口的设计缺陷。
+
+我的思考：对 SEV-SNP 的 CPA 意味着其"加密即机密性"的前提受到挑战——若攻击者能构造受控明文场景并观测密文行为，VMPC 加密的防篡改/防窥探价值就被削弱。此类攻击通常依赖特定硬件行为（如错误注入、页状态迁移时的加密边界），修复难度大且涉及固件更新。与同团队 RMPocalypse 及先前 SEV 系列攻击（如 WeSee、BadRAM 相关研究）并列来看，AMD 的缓解响应速度和覆盖面将成为机密计算可信度的关键考验；具体技术细节须以论文全文为准。
 
 
-### RICSS'25: 3rd International Workshop on Re-design Industrial Control Systems with Security.
-- **作者**: Ruimin Sun, Mu Zhang
-- **解读**: 该文介绍第 3 届"以安全重新设计工业控制系统"国际研讨会（RICSS'25）：ICS 及其软件触及工业、学术界与政府所依赖的关键基础设施的方方面面，但这些系统在设计之初并未考虑安全，随着互联扩展与新威胁出现，从业者只能依赖零散补丁式防护。研讨会的目标有二：收集重新设计（部分）ICS 生态、使安全内建于设计的想法；同时征集安全开源软件的设计、集成与维护贡献，弥补商业专有方案之外自由开源方案鲜为人知的空白。
+#### RMPocalypse: How a Catch-22 Breaks AMD SEV-SNP.
+- **作者**: Benedict Schlüter, Shweta Shinde
+- **方向**: 系统与操作系统安全
+- **解读**:
+（无摘要，据标题推断）AMD SEV-SNP 依赖反向映射表（Reverse Map, RMP）管理虚拟机页面的所有权、状态与访问权限，RMP 与固件的校验逻辑共同构成其完整性保证的核心。标题中的"Catch-22"暗示本文发现的是一种循环依赖式的设计困境：某个安全操作必须满足的前提条件本身又依赖该操作要保护的属性，形成无法两全的逻辑矛盾，攻击者借此打破 SEV-SNP 的安全边界。
+
+此类缺陷通常位于固件对 RMP 更新的校验路径上：固件在某个状态转换中信任了本应由 RMP 保证的属性，而 RMP 条目的合法性又依赖该状态转换，攻击者利用这一环环相扣的检查链构造出违反安全不变式的状态。
+
+摘要缺失，无法给出具体攻击流程、受影响固件版本或利用成功率的量化数据；从标题判断其与同团队的 Heracles 论文同属对 SEV-SNP 设计缺陷的系统性挖掘。
+
+我的思考：SEV-SNP 的设计哲学是"以固件校验为中心"，但状态机越复杂，校验路径中的循环依赖越容易被武器化——Catch-22 式缺陷正说明安全不变式之间需要全局一致性验证而非局部检查。与 Heracles、先前 SEV 系列攻击（如 SEVered、WeSee）相比，本工作聚焦于逻辑层而非侧信道，更接近"设计漏洞"而非"实现漏洞"，修复往往需要固件层面重构。此类发现对云机密计算的可信度是持续打击，也再次证明对 TCB 固件做形式化验证的必要性；细节须以全文为准。
 
 
-### 3D-Sec '25: The 1st ACM Workshop on Deepfake, Deception, and Disinformation Security.
-- **作者**: Simon S. Woo, Shahroz Tariq, Sharif Abuadbba, Kristen Moore, Tim Walita, Bimal Viswanath, Mario Fritz
-- **解读**: 该文介绍首届 ACM 深度伪造、欺骗与虚假信息安全研讨会（3D-Sec'25），主题围绕深度伪造的检测与防御、欺骗（deception）识别，以及虚假信息（disinformation）的安全对抗等议题。（无摘要，据标题推断）
+#### Dynamic Vulnerability Patching for Heterogeneous Embedded Systems Using Stack Frame Reconstruction.
+- **作者**: Ming Zhou, Xupu Hu, Zhihao Wang, Haining Wang, Hui Wen, Limin Sun, Peng Zhang
+- **方向**: 系统与操作系统安全
+- **解读**:
+现有动态漏洞修补技术不适合嵌入式设备，尤其是医疗设备等任务关键系统：它们计算与内存资源受限、要求服务不中断，往往没有足够的空闲窗口进行离线修补；同时嵌入式系统的异构架构（不同内核与硬件平台）使补丁触发器难以跨平台兼容。本文提出热补丁（hot patching）框架 StackPatch，解决这些问题。
+
+StackPatch 基于栈帧重建（stack frame reconstruction）技术，引入不同的触发策略来更新存储在闪存单元中的程序；并利用处理器中普遍可用的异常处理机制来增强控制流重定向（跳转到补丁代码）的适应性，从而兼容不同处理器架构。
+
+实验覆盖 ARM、RISC-V、Xtensa 三大主流 MCU 架构，成功修复 102 个在实时操作系统（RTOS）中公开披露的漏洞；还应用于软 PLC（可编程逻辑控制器）与网络服务等场景，每次修复均在 260 个 MCU 时钟周期内完成。
+
+我的思考：用异常处理机制做控制流劫持式补丁是巧妙且低成本的设计——异常在几乎所有处理器上都存在，天然提供了跨架构的兼容层；260 个时钟周期的开销对实时系统几乎无感。修复 102 个真实漏洞、覆盖三大架构的实验体量也较有说服力。局限：栈帧重建对编译器优化、内联与栈布局敏感，复杂漏洞（涉及全局状态或并发）的热补丁难度更高；且闪存写入寿命与原子性也是长期运行的嵌入式系统需考虑的问题。总体而言是任务关键嵌入式安全中实用价值很高的系统工作。
 
 
-### SaTS '25: The 3rd ACM Workshop on Security and Privacy of AI-Empowered Mobile Super Apps.
-- **作者**: Luyi Xing, Yue Xiao
-- **解读**: 该文介绍第 3 届 AI 赋能移动超级应用安全与隐私研讨会（SaTS'25）：超级应用将微信、支付宝、Grab、TikTok 等平台的支付、消息、电商与娱乐功能集于一身，同时采集处理海量敏感个人数据，功能的高度集中既带来商业机遇也引发显著的安全隐私风险。LLM 集成正将这些应用转变为可编排外部服务、代表用户执行特权任务的智能体系统，进一步扩大攻击面并引入数据暴露、权限滥用与对抗操纵等新问题。研讨会征集安全架构设计、权限框架、威胁建模、隐私保护方法与真实部署案例等贡献，为更安全可信的 LLM 赋能应用（乃至一般应用）奠定基础。
+#### Chekhov's Gun: Uncovering Hidden Risks in macOS Application-Sandboxed PID-Domain Services.
+- **作者**: Minghao Lin, Jiaxun Zhu, Tingting Yin, Zechao Cai, Guanxing Wen, Yanan Guo, Mengyuan Li
+- **方向**: 系统与操作系统安全
+- **解读**:
+macOS 把许多高权限操作委托给专用的 PID-domain 服务，应用程序可以注册这些服务并通过进程间通信（IPC）与之交互。该架构提升了用户态稳定性与安全性，但也为攻击者引入了诱人的攻击面。本文系统化地分析这类服务，揭示一个被忽视的向量：那些与调用应用受完全相同 Application Sandbox 限制的服务，仍可能因细微的 entitlement 差异而被利用。
+
+"Chekhov's Gun"（契诃夫之枪，指叙事中前文埋设的伏笔必然在后文被使用）暗示这些 entitlement 差异是系统设计中埋下的、注定会被触发的隐患。作者的分析聚焦于沙箱配置与 entitlement 授权之间的错位，展示攻击者如何借助 IPC 接口跨越本应一致的权限边界。
+
+摘要截断，未提供具体的受影响服务数量、漏洞列表或利用链的量化数据。
+
+我的思考：沙箱"看起来一样"不代表"实际一样"——entitlement 是 macOS 权限模型的细粒度来源，同名限制在不同服务上的语义差异正是经典的安全悖论。这与先前 macOS 沙箱逃逸研究（如对 com.apple.* 服务的滥用、XPC 攻击面）一脉相承，但聚焦于 PID-domain 服务与 entitlement 错位的新角度。局限在于摘要缺实验细节，受影响面（多少系统服务、多少内置应用可被触及）与利用复杂度需原文确认；对 Apple 的启示是 sandbox 配置的审计应纳入 entitlement 差分检查。
 
 
-### WAHC 2025: 13th Workshop on Encrypted Computing & Applied Homomorphic Cryptography.
-- **作者**: Flávio Bergamaschi, Yuriy Polyakov, Kurt Rohloff
-- **解读**: 该文介绍第 13 届加密计算与应用同态密码研讨会（WAHC 2025），主题聚焦同态密码等加密计算技术的进展及其实际应用。（无摘要，据标题推断）
+#### Windows plays Jenga: Uncovering Design Weaknesses in Windows File System Security.
+- **作者**: Dong-uk Kim, JunYoung Park, Sanghak Oh, Hyoungshick Kim, Insu Yun
+- **方向**: 系统与操作系统安全
+- **解读**:
+文件系统是操作系统的关键组件，Windows 作为最主流的平台之一，其文件系统近年被一系列攻击利用，触发提权等严重安全威胁；过去数年间已有数十个此类漏洞被报告，甚至出现野外利用。但微软持续以针对性补丁而非根本性重新设计来应对，如同"抽积木"（Jenga）游戏——安全措施被堆叠在不稳定的地基上。本文对 Windows 文件系统的设计弱点进行五步式综合分析。
+
+首先分析 Windows 与 Linux 文件系统的设计差异；其次考察这些差异如何导致真实应用中的漏洞，发现 13 个高影响漏洞，其中 11 个是此前未知的；第三，证明现有兼容层与编程语言无法正确处理这些差异——检查 6 个兼容层/语言后找到 27 处不合规与 9 处不一致，使其行为不可靠；第四，通过 21 位经验开发者的用户研究发现他们普遍不熟悉 OS 级细节、很少实施适当的缓解措施；最后讨论现有对策及其局限。
+
+结果揭示出因文件系统设计缺陷导致的、严重且很大程度上被忽视的风险，并建议微软重新思考其缓解策略。
+
+我的思考：把"补丁打地鼠"现象系统化为设计层分析，是比单个漏洞挖掘更深刻的贡献——13 个漏洞（含 11 个 0-day）体量可观，兼容层 27 处不合规说明问题深植于平台生态而非单一实现。用户研究揭示"开发者不熟悉 OS 语义"是漏洞蔓延的人为放大器，这一跨层视角很有价值。局限：攻击面是否覆盖更多文件系统操作未穷尽；对微软的改进建议落地阻力大，但这份证据清单本身就是推动变革的资本。
 
 
-### free5GC '25: The 1st free5GC World Forum.
-- **作者**: Jyh-Cheng Chen, K. K. Ramakrishnan
-- **解读**: 该文介绍首届 free5GC 世界论坛：面向研究者、业界人士与开源贡献者，探讨 5G 核心网的挑战与最新进展，重点聚焦安全以及由 Linux 基金会托管、完全符合 3GPP 标准的领先独立组网（SA）平台 free5GC 的变革性作用。该平台为开发者与企业提供下一代连接解决方案的快速原型环境，诸如旨在显著降低控制面时延同时保持 3GPP 合规的 L25GC+ 等架构，正体现了其在生产级核心网上开发与测试前沿想法的价值。论坛为交流思想、协作开发并塑造移动网络未来方向提供了契机。
+#### IOValve: Leakage-Free I/O Sandbox for Large-Scale Untrusted Data Processing.
+- **作者**: Sangho Lee, Jules Drean, Yue Tan, Marcus Peinado
+- **方向**: 系统与操作系统安全
+- **解读**:
+（无摘要，据标题推断）在大规模不可信数据处理场景中，安全沙箱需要同时满足两个看似矛盾的要求：既要允许处理程序执行必要的 I/O 操作，又要保证数据不会经由 I/O 通道泄漏给不可信方。IOValve 提出一种"无泄漏 I/O 沙箱"，为大规模不可信数据处理提供系统级的 I/O 隔离机制。该团队来自微软研究院（Sangho Lee、Marcus Peinado 等），其工作通常面向实际云基础设施的安全原语。
+
+方法上可推断：沙箱对进程的 I/O 行为进行细粒度管控——将文件、网络、设备等 I/O 通道划分为受控的"阀"，只允许数据流向经过授权的目的地，从根上阻断恶意或缺陷代码通过隐蔽通道外传数据；"无泄漏"意味着即使在处理任意不可信输入时，也无法通过 I/O 接口把机密数据带出。
+
+由于缺少摘要，无法引用量化结果；推测其面向大规模并行处理场景，重点权衡隔离强度与 I/O 吞吐性能。威胁模型应涵盖恶意数据处理代码与不可信输入共同作用导致的数据外泄。
+
+我的思考：与传统的系统调用过滤（seccomp）、沙箱（gVisor、Firecracker）不同，IOValve 若以"数据流导向"而非"能力列表"为抽象，将更贴合数据处理管线的语义。这类工作适合与数据泄露防护（DLP）结合，作为机密计算之外的非密码学补充。其实际效能取决于对间接 I/O（如通过共享内存、/proc 接口）的封堵是否彻底，这是此类沙箱普遍面临的工程挑战。
 
 
-### CSCS '25 - Cyber Security in CarS Workshop.
-- **作者**: Hans-Joachim Hof, Mario Fritz, Christoph Krauß
-- **解读**: 该文介绍第二届车载网络安全研讨会（CSCS'25，2025 年 10 月 17 日于台北与 CCS'25 同地举办）：作为 2017 至 2023 年年度科学研讨会的延续，会议汇聚研究者、从业者与开发者，共同应对现代车辆面临的复杂网络安全问题。除展示当前研究贡献外，研讨会还提供人脉交流、联合头脑风暴与解决方案开发的平台，讨论车辆技术及其应用的新进展。
+#### BadAML: Exploiting Legacy Firmware Interfaces to Compromise Confidential Virtual Machines.
+- **作者**: Satoru Takekoshi, Manami Mori, Takaaki Fukai, Takahiro Shinagawa
+- **方向**: 系统与操作系统安全
+- **解读**:
+机密虚拟机（CVM）是一种新兴的可信执行环境形态，允许现有操作系统在无需信任云提供商的情况下安全运行：通过基于硬件的内存加密保证运行时机密性，通过密码学证明在启动时验证完整性。然而，本文揭示了一个此前被忽视的攻击向量，它允许恶意提供商绕过 CVM 的保证，在客户机内执行任意代码，且与具体配置无关。攻击 BadAML 利用高级配置与电源管理接口（ACPI）——一个遗留但被广泛采用的固件接口——中的 ACPI 机器语言（AML）向客户机操作系统内核注入二进制代码，且不破坏启动证明。
+
+攻击的关键在于 ACPI 即使在虚拟化环境中仍是必需组件，这使得 BadAML 成为一种强大的、可移植的、与特定机密计算技术无关的攻击。作者在 Linux 与 Windows 两种环境中演示了概念验证。随后系统分析了可能的缓解措施及其效力与局限，并提出 AML 沙箱化（AML sandboxing）这一实用防御：在既定威胁模型下将 AML 对硬件的访问限制在安全区域内。
+
+AML 沙箱化的设计、实现与评估在 18 个真实实例上完成，把信任边界从"CPU 与内存加密"延伸到"固件接口交互"。
+
+我的思考：BadAML 的价值在于指出 CVM 安全证明的"时间盲区"——证明覆盖启动镜像，但启动后 AML 解释器与固件的动态交互不在证明范围内，恶意提供商借此在证明之后注入代码，与传统 TEE 研究中"证明后攻击"一脉相承。AML 沙箱化是务实的缓解方向，但其能否覆盖全部 AML 能力（如内存映射 I/O、DMA 访问）是关键；18 个实例的评估规模偏小，真实固件多样性与解释器实现差异可能引入更多绕过面。
+
+
+#### Dynamic Detection of Vulnerable DMA Race Conditions.
+- **作者**: Brian Johannesmeyer, Raphael Isemann, Cristiano Giuffrida, Herbert Bos
+- **方向**: 系统与操作系统安全
+- **解读**:
+现代操作系统中的驱动程序使用直接内存访问（DMA）与外设高效通信。DMA 访问的内存是驱动程序与设备之间的共享资源，因此可能产生竞态条件；而外设通常不可信，这些竞态为攻击者打开了针对可信操作系统内核的新攻击向量。本文提出 DMARacer，一个针对内核代码中 DMA 竞态的动态检测器：它在内核整个生命周期内跟踪 DMA 访问，并分析多种风险指标；一旦检测到竞态，还利用污点跟踪追踪其影响，识别可能被触发的漏洞，如内存破坏或拒绝服务。
+
+方法的核心在于将"共享内存的并发访问"这一静态难以判定的问题转化为运行时动态观测：通过跟踪 DMA 缓冲区在内核生命周期内的读写访问模式，结合指标分析判定是否存在可利用的竞态窗口，再用污点分析把竞态与具体漏洞后果关联起来。
+
+作者用 DMARacer 搜索 Linux 错误，发现这是系统性问题：在扫描的驱动中总计检测到 817 处有问题的竞态，其中 344 处属于可利用（vulnerable）操作。
+
+我的思考：DMA 竞态是内核安全中长期存在但工具支持薄弱的一类缺陷：静态分析难以建模设备侧的异步访问，而现有动态工具多聚焦于 CPU 侧并发。DMARacer 把设备侧 DMA 与内核代码统一纳入动态观测，并直接以漏洞后果（污点影响）作为严重性判据，工程价值突出。局限在于动态检测的覆盖依赖运行时路径与驱动加载情况，未执行的代码路径会被漏过；817/344 的发现规模也说明此类缺陷在内核中普遍存在，值得推动其成为 CI 级检测工具。
+
+
+#### Poster: GLog: Self-Evolving Log Anomaly Type Prediction via Instruction-Tuned LLM and Clustering.
+- **作者**: Junwei Zhou; Yuyang Gao; Cheng Tan; Yanchao Yang; Jianwen Xiang
+- **方向**: 系统与操作系统安全
+- **解读**:
+日志异常检测对保障复杂云微服务环境的可靠性与可观测性至关重要。论文指出现有方法三大短板：多限于二分类（只能判断"异常与否"，无法给出异常类型）、难以适应动态演化的日志模式、以及因日志解析（parsing）造成的语义损失。论文提出 GLog，一个端到端框架，实现无需人工标注的异常类型预测。
+
+方法上，GLog 两阶段推进：第一阶段，用正常/异常标签微调指令微调大语言模型（instruction-tuned LLM），直接在原始、未解析的日志序列上实现高精度异常判定，规避解析带来的语义损失；第二阶段，对检测出的异常进行聚类，自动生成伪描述（pseudo descriptions），再用于二阶段微调，使模型能够输出具体异常类型且结果可解释。该"自演化"闭环让模型随新异常的出现不断自我提升。
+
+作为海报论文，摘要未给出具体准确率数据。
+
+我的思考：GLog 的价值在于把日志异常检测从"二分类"推进到"可解释的类型预测"，且通过聚类-伪标注-再微调实现免人工标注的持续演化，解决了运维中标签稀缺的核心痛点。直接处理原始日志、跳过解析的设计也顺应了 LLM 时代"少预处理"的趋势。局限方面：LLM 微调与推理的开销在线上日志洪流中是否可承受、聚类伪标签的噪声如何影响二阶段训练，都需量化评估。与 DeepLog 等传统深度学习方案相比，其可解释性与类型粒度是显著优势。
+
+
+#### Hardware-assisted Memory Isolation.
+- **作者**: Hongyi Lu
+- **方向**: 系统与操作系统安全
+- **解读**:
+
+现代系统越来越依赖硬件辅助的内存隔离（如 Intel MPK、Arm POE、RISC-V PMP）来保护关键数据与执行上下文，避免纯软件机制的运行时开销；但这些特性通常只有有限的可用域数量，难以同时隔离多个信任域，且主要针对 CPU 内存，与外围设备的交互（如 DMA 访问）得不到保护。
+
+作者（论文计划）围绕这些限制展开研究，据摘要推断目标是为有限的硬件域设计更高效的复用/分配策略，并将隔离能力扩展到外设交互路径。
+
+该工作是研究计划阶段，未给出实验数据。
+
+我的思考：切中硬件隔离特性"域少、只管 CPU 内存"的现实短板，DMA 与外设攻击面在系统安全中常被忽视；该方向需要真实硬件上的原型验证与性能测量，是系统安全中值得追踪的增量方向；如何在不增加硬件成本的前提下扩展可用域数量、并协调 CPU 与外设的隔离粒度，是该方向的核心研究问题，值得跟踪其后续原型与评估。
+
+#### RICSS'25: 3rd International Workshop on Re-design Industrial Control Systems with Security.
+
+- **作者**: Ruimin Sun; Mu Zhang
+- **方向**: 系统与操作系统安全
+- **解读**:
+工业控制系统（ICS）及其软件触及工业、学术界与政府关键基础设施的方方面面，但这类系统在设计之初并未考虑安全。随着 ICS 环境互联性不断扩展、新威胁层出不穷，从业者只能陷入"打补丁式"的安全修补；部分专有厂商虽已开始提供解决方案，但自由开源的方案却鲜为人知。
+
+该工作坊的目标有两条：一是收集重新设计（部分）ICS 生态系统的思路，使安全成为内建属性（security by design）而非事后补救；二是征集设计、整合与维护安全开源软件方面的贡献，壮大安全开源 ICS 生态。
+
+结果（摘要为定位性陈述，无量化数据）：确立"安全内建重构"与"安全开源生态"双线并行的推进路径。
+
+我的思考：ICS 安全的根本矛盾在于"存量系统不可重写"——因此"重新设计"与"开源替代"是比逐点加固更彻底的路线。安全开源 ICS 软件知名度低是真实痛点：企业宁愿买贵的专有方案也不愿评估开源，客观上削弱了生态的安全水平。该工作坊把开源治理纳入 ICS 安全议程，视角独到且务实。
+
+### 硬件与物理安全（17 篇）
+
+#### Synthesis of Sound and Precise Leakage Contracts for Open-Source RISC-V Processors.
+
+- **作者**: Zilong Wang, Gideon Mohr, Klaus von Gleissenthall, Jan Reineke, Marco Guarnieri
+
+- **方向**: 硬件与物理安全
+
+- **解读**: 微架构侧信道攻击利用缓存、投机执行等优化产生的时间副作用泄露秘密，而这些泄露在 ISA 层不可见。泄露契约作为 ISA 层安全抽象，为编写抗微架构攻击的软件提供依据，但手工构造既 sound（覆盖全部泄露）又 precise（只暴露真实泄露）的契约耗时易错；现有自动合成要么不保证 sound（Mohr 等人），要么极不精确（Dinesh 等人甚至禁止一切分支与访存指令）。
+
+LeaSyn 采用三阶段方法：①经验泄露刻画——基于用户提供的契约模板（一组契约原子）自动生成测试用例（程序对+输入），模拟执行判断攻击者可区分性，并计算强区分原子与 xor 区分对以刻画模板可区分性；②契约合成与有界验证交替——用整数线性规划合成"区分所有可区分用例且误报最少"的候选契约，再用自组合编码的 BMC 找漏泄露反例并迭代细化；③用 LeaVe 做无界验证保证最终 soundness。
+
+在 DarkRISCV-2/3、Sodor-2、Ibex-small/cache/mult-div 六个开源 RISC-V CPU 上，全部在 48 小时内合成通过无界验证的 sound 契约，除 Ibex-cache（精度 0.579，单行缓存泄露无法在模板内表达）外精度均高于 0.99。与 Mohr 等方法对比：2048k 测试用例时 LeaSyn 精度 0.999 vs 0.69，且后者契约全部不 sound；与 LeaVe、ConjunCT、VeloCT、RTL2µPATH 在同程序验证集上相比也显著更精确。
+
+我的思考：这是首个能自动合成既 sound 又 precise 的 RTL 级泄露契约的工具，ILP 合成+有界/无界验证闭环方法论完整、工程扎实，对硬件-软件协同的侧信道安全推理有奠基意义。局限：模板决定表达力上限（Ibex-cache 案例即受此限制）、无界验证仍需人工提供关系不变量、测试用例质量影响收敛；契约只针对"指令退休时间"一类攻击者。未来可扩展更丰富的模板类与攻击者模型。
+
+- **arXiv PDF**: [Synthesis of Sound and Precise Leakage Contracts for Open-Source RISC-V Processors.](https://arxiv.org/pdf/2509.06509)
+
+#### Securing Cryptographic Software via Typed Assembly Language.
+
+- **作者**: Shixin Song, Tingzhen Dong, Kosi Nwabueze, Julian Zanders, Andres Erbsen, Adam Chlipala, Mengjia Yan
+
+- **方向**: 硬件与物理安全
+
+- **解读**: 常量时间编码曾被视为密码学软件防时序侧信道的充分手段，但 Spectre 家族投机执行攻击使该保证失效：投机执行的瞬时指令可通过缓存等微架构状态泄露秘密。现有缓解思路是源级标注秘密数据、由硬件决定是否投机（ProSpeCT、ConTExT），但它们只能精确处理堆数据，无法正确分区栈——寄存器溢出迫使程序保守标记整个栈，且源级变换依赖难以验证的编译器内部假设，TCB 过大。
+
+SecSep 把变换下移到汇编层：新变体类型化汇编语言 Octal 通过依赖类型与 taint 类型静态细粒度追踪寄存器与内存对象的值域和指针关系（利用常量时间编程特性使指针分析可行）并证明内存安全；前端用启发式类型推断（借助 Clang 调试表）处理现成汇编，后端按 taint 类型重写访存指令，把秘密/公开数据分区到不同内存段。配合 gem5 上复刻 ProSpeCT 思想的硬件扩展（寄存器级+段级 taint 追踪），实现软件-硬件协同的安全投机。
+
+在六个密码学基准（salsa20、sha512、chacha20、poly1305、x25519、ed25519_sign，取自 BoringSSL）上，硬件防御开启时 SecSep 平均开销仅 1.2%，远低于 ProSpeCT secret-stack 方案的 151.1%；Ccallee 变换不可或缺——缺失时硬件开销增加 25%；保守的源级方案在 salsa20 上造成 70% 性能退化；注解工作量大幅下降（ed25519_sign 从 476 处降至 69 处）。
+
+我的思考：该工作把类型化汇编语言引入侧信道缓解，用汇编重写绕开源级方案的固有缺陷，工程完整且有形式化保证，1.2% 的开销结果很有说服力。局限：依赖常量时间假设与 Clang 调试表、启发式推断可能失败、原型仅覆盖基准指令、需专用硬件配合。相比源级方案显著缩小了 TCB，是投机执行软硬协同防御的代表性工作。
+
+- **arXiv PDF**: [Securing Cryptographic Software via Typed Assembly Language.](https://arxiv.org/pdf/2509.08727)
+
+#### An Empirical Study Measuring In-The-Wild Cryptographic Microarchitectural Side-Channel Patches.
+- **作者**: Sen Deng, Zhibo Liu, Shuai Wang, Yinqian Zhang
+- **方向**: 硬件与物理安全
+- **解读**: 为真实世界密码软件打微架构侧信道补丁是一项困难任务，结果未必既高效又安全；尽管研究者与开发者持续努力，此前却从未有人系统性地综合评估过侧信道补丁的安全性与性能，补丁"修了但没修好"的问题长期未被量化。
+- 论文开展首次针对真实世界补丁的测量研究：构建 SideBench 数据集，包含来自 OpenSSL、WolfSSL、MbedTLS 三个主流密码库的 165 个补丁；并提供自动化分析工具 SideEval，结合动态污点分析与静态符号执行来判定补丁是否彻底消除了泄漏。
+- 数据集含 165 个补丁（三大主流密码库）；关键发现是：即便出自经验丰富的开发者之手，仍有 25 个补丁不安全，残留泄漏可能多年未被发现。
+- 这是首个大规模的真实世界侧信道补丁安全性测量，SideBench 数据集与 SideEval 工具是领域基础设施级贡献；25/165 的不安全比例有力警示"补丁≠修复"，对开发者与审核者有直接指导；局限在于样本局限于三大库、判定依赖分析工具的完备性，残留泄漏的实际可利用性也未完全量化。
+
+
+#### TEMPEST-LoRa: Cross-Technology Covert Communication.
+- **作者**: Xieyang Sun, Yuanqing Zheng, Wei Xi, Zuhao Chen, Zhizhen Chen, Han Hao, Zhiping Jiang, Sheng Zhong
+- **方向**: 硬件与物理安全
+- **解读**: 电磁（EM）隐蔽信道对气隙网络构成严重威胁：以往工作利用视频线缆、内存总线、CPU 等组件的电磁辐射窃取敏感信息，但通常要求攻击者在受害者附近部署高度专业化的接收设备，严重限制了现实影响。
+- 论文报告一种新信道 TEMPEST-LoRa，建立在跨技术隐蔽通信（CTCC）之上：攻击者可将电磁调制的秘密数据隐蔽地传输给远处广泛部署的运营中 LoRa 网络。作者通过精确操控线缆产生目标泄漏信号等实践手段，克服了工程挑战并验证 CTCC 的可行性。
+- 摘要未给出量化数据（原文截断）；核心结论是揭示该风险并证明"借助 LoRa 基础设施做远距离 EM 窃取"的可行性。
+- 该工作的杀伤力在于把广泛部署、低成本的 LoRa 接收器"武器化"为窃听端，大幅降低攻击者设备门槛并扩展了传输距离，是对气隙安全假设的严肃挑战；与经典 TEMPEST 攻击相比，接收端复用现成物联网基础设施是显著增量；后续需关注信号强度、距离上限与抗干扰的量化评估。
+
+
+#### MOLE: Breaking GPU TEE with GPU-Embedded MCU.
+- **作者**: Hongyi Lu, Yunjie Deng, J. Sukarno Mertoguno, Shuai Wang, Fengwei Zhang
+- **方向**: 硬件与物理安全
+- **解读**: GPU 可信执行环境（TEE）被用于保护机器学习推理、隐私计算等敏感负载，其安全边界建立在 GPU 内部固件与硬件的信任之上（无摘要，据标题推断）。
+- 据标题推断，MOLE 利用 GPU 内部嵌入的微控制器（MCU）作为攻击切入点，破坏 GPU TEE 的隔离保证——GPU 上集成 MCU 负责电源管理、固件加载等，若其控制流或接口可被操纵，可能形成绕过 TEE 边界的攻击路径（无摘要，据标题推断）。
+- （无摘要，据标题推断）——暂无可用量化结果；标题表明作者在真实 GPU 平台上实现了对 TEE 的破坏。
+- GPU 供应链与固件栈高度复杂，TEE 的安全往往依赖"所有组件都可信"的隐含假设，MOLE 揭示嵌入式 MCU 这一被忽视的信任根缺口，对机密计算与 AI 推理安全有重要警示；攻击的具体前提（是否需要物理访问、固件漏洞或厂商后门接口）与影响范围（哪些 GPU 平台）是评价其现实威胁的关键。
+
+
+#### WireTap: Breaking Server SGX via DRAM Bus Interposition.
+- **作者**: Alexander Seto, Oytun Kuday Duran, Samy Amer, Jalen Chuang, Stephan van Schaik, Daniel Genkin, Christina Garman
+- **方向**: 硬件与物理安全
+- **解读**: Intel SGX 承诺即使在 root 级攻击者面前也提供强完整性与机密性；但 Intel 明确表示 SGX 不防御物理访问攻击者。现实中许多部署却发生在潜在对抗性环境——节点运营商有经济动机篡改 enclave 内计算（如 MEV、云计算计费），而流行观念认为此类物理攻击需要昂贵的实验室设备，超出业余攻击者能力。
+- 论文通过 DRAM 总线插值（DRAM bus interposition）攻击服务器 SGX：在内存总线上插入硬件设备拦截/篡改 enclave 与 DRAM 之间的数据流，从而破坏 SGX 声称的机密性/完整性属性，演示了低成本硬件攻击的可行性。
+- 摘要未给出量化数据（原文截断）；核心结论是证明服务器 SGX 在物理攻击下可被低成本手段攻破。
+- 该工作挑战"物理攻击昂贵"的普遍假设，把攻击门槛降至业余级别，对依赖 SGX 的云计算与节点运营场景是直接警示；与既有 SGX 物理攻击（如内存加密密钥提取）相比，DRAM 总线插值的区别在于无需提取密钥、直接操纵数据面；缓解（完整性校验、防篡改硬件）与真实部署威胁模型的差距是后续讨论重点。
+
+
+#### One Video to Steal Them All: 3D-Printing IP Theft through Optical Side-Channels.
+- **作者**: Twisha Chattopadhyay, Fabricio Ceschin, Marco E. Garza, Dymytriy Zyunkin, Animesh Chhotaray, Aaron P. Stebner, Saman A. Zonouz, Raheem Beyah
+- **方向**: 硬件与物理安全
+- **解读**:
+
+3D打印行业高速增长并广泛进入制造、医疗、国防等领域，但危险作业环境迫使厂商通过摄像头远程监控打印过程，这为侧信道攻击打开了大门：G-code文件是设计者的知识产权（IP），窃取它即可生产仿制品。此前除少数假设网络或切片软件被攻破的工作外，相关攻击多依赖声学等侧信道。
+
+方法上，论文训练模型跟踪打印过程中喷嘴的运动轨迹，将其映射为G-code指令序列，并识别进给率、挤出率等关键参数。为验证窃取成功，作者设计旋转与平移不变的G-code等价检查器，克服了NMSE等距离度量无法处理相机位置不同导致的起点偏移问题，量化比较两套指令在形状、外观、内部结构上的等价性。数据集包含16个物体的G-code-视频对。
+
+结果显示，该方案平均精度达90.87%，生成的指令比现有最先进方法少30.20%——现有方法往往产出有缺陷或形状结构错误的打印件。作者还从一段打印视频逆向出指令，成功打印出功能完全可用的仿制物体，端到端验证了攻击闭环。
+
+我的思考：这篇工作的成色在于证明"仅凭一段视频"即可完整恢复可打印的G-code并产出功能件，把光学侧信道从信息泄露推进到实物级别的IP窃取，等价检查器解决坐标不变性问题也很精巧；局限是数据集仅16个简单物体，对多种打印机型号、摄像头视角与光照的泛化性未充分验证。领域影响上，它提示依赖远程监控的增材制造供应链面临切实威胁，需在物理防护、视频脱敏或协议层面设计对策。
+
+- **arXiv PDF**: [One Video to Steal Them All: 3D-Printing IP Theft through Optical Side-Channels.](https://arxiv.org/pdf/2506.21897)
+
+#### Threat from Windshield: Vehicle Windows as Involuntary Attack Sources on Automotive Voice Assistants.
+- **作者**: Penghao Wang; Shuo Huai; Yetong Cao; Chao Liu; Jun Luo
+- **方向**: 硬件与物理安全
+- **解读**:
+车载语音助手（AVA）日益成为现代车辆的核心交互入口，其可被听不见的声音（inaudible sound）攻击利用的脆弱性理应受到重视。但此类威胁长期被视为低优先级，因为存在广泛共识：攻击者必须位于目标车辆内部——理由有二：一是声音信号几乎无法穿透车体（hull），二是攻击声源与 AVA 麦克风之间需要视线（LoS）路径。
+本文通过提出 ShieldSpear 攻击推翻这一共识：攻击者可在车外发起对 AVA 的攻击。其手段是在挡风玻璃外侧放置微型压电元件，将玻璃转化为扬声器——玻璃本身成为声源，声波通过玻璃传导进入车内，绕过了"信号无法穿透车体"与"需要 LoS"两道传统防线。
+将声源紧贴玻璃的布置天然把攻击声源"带入"车内声学路径，而紧凑集成的压电元件可能进一步规避驾驶员的视觉察觉，实现对车载语音助手的隐蔽外部控制。
+我的思考：这是典型的"攻破物理假设"型安全研究——把挡风玻璃当作"声学替身"构思巧妙，直接瓦解了此前界定攻击模型的两条前提。对车厂而言意味着语音助手的信任边界需重新划定（外部声学注入不再是理论风险）。局限：压电元件的布置需要物理接近车辆（短暂停留），攻击可被监控或人工发现；超声/振动注入对 AVA 实际识别成功率、不同车型玻璃的声学耦合差异等量化细节需正文评估，但方向本身对车载语音安全设计（唤醒词过滤、声源定位）有直接指导意义。
+
+
+#### Security-Aware Sensor Fusion with MATE: the Multi-Agent Trust Estimator.
+- **作者**: R. Spencer Hallyburton, Miroslav Pajic
+- **方向**: 硬件与物理安全
+- **解读**:
+
+智慧城市等多智能体网络依赖协作式传感器融合维护态势感知，但融合算法假设智能体行为符合良性感知模型，少量被攻破节点即可摧毁大规模网络的融合结果。传统拜占庭容错算法与误行检测器（MBD）只能检测恶意数据、无法恢复可信态势感知，或要求本机可信，不适用于真实传感器数据易出错、存在遮挡的自主智能体场景。
+
+方法上，MATE设计两部件安全感知融合：一是估计智能体与其跟踪目标的信任概率密度（PDF）——信任估计建模为两步隐马尔可夫模型（HMM），通过把真实感知数据映射为信任伪测量（PSM，值加置信度∈[0,1]），用Gibbs采样启发的条件分解与共轭先验-似然对做高效贝叶斯更新；二是信任加权数据融合，低信任智能体权重低、低信任轨迹被标记调查或删除。关键创新是新型视场（FOV）估计器：用光线追踪对每帧LiDAR点云在线估计受遮挡影响的动态FOV。
+
+在基于Unreal引擎CARLA的蒙特卡洛仿真与案例研究中，相比无安全感知的融合，MATE将攻击者驱动的OSPA误差降低94%（相对无攻击基线）；信任指标显示其以近90%准确率检测被攻破智能体；良性场景与对抗场景下均保持高任务性能。攻击模型覆盖持有效密钥的内部攻击者（注入假阳性/假阴性、平移物体）。
+
+我的思考：贡献成色在于首个全栈安全感知传感器融合框架，动态FOV估计与PSM映射是此前工作缺少的关键创新，94%的OSPA误差削减与近90%的检测准确率量化了其价值；局限是评估依赖CARLA仿真与参数化威胁模型，未在真实传感器噪声与长期隐蔽轨迹等复杂攻击下验证，信任先验设定对结果敏感。领域影响上，为智能城市与自动驾驶的协作感知提供了算法层面的主动防御范式；与固定FOV假设的信任估计方法相比，MATE更贴近真实遮挡环境，是感知安全从"检测"走向"恢复"的重要一步。
+
+- **arXiv PDF**: [Security-Aware Sensor Fusion with MATE: the Multi-Agent Trust Estimator.](https://arxiv.org/pdf/2503.04954)
+
+#### BLACKOUT: Data-Oblivious Computation with Blinded Capabilities.
+- **作者**: Hossam ElAtali, Merve Gülmez, Thomas Nyman, N. Asokan
+- **方向**: 硬件与物理安全
+- **解读**:
+
+内存安全缺失与侧信道泄露是安全关键软件（如密码库）的两大顽疾：C/C++内存不安全，而Rust等内存安全语言又让常数时间代码更难写——编译优化可能把本意常数时间的代码变成秘密依赖的分支，失败静默发生、难以发现。CHERI解决内存安全但不防侧信道，OISA/BliMe等数据无关计算方案需硬件管理的内存标签位、开销显著。
+
+方法上，BLACKOUT扩展CHERI能力架构引入"盲化能力"（blinded capabilities）：不增加额外内存标签位，只在CPU寄存器中增加1位blindedness位，ALU运算做污点追踪传播该位，凡源自秘密数据的数据均被标记为秘密；秘密数据只能通过盲化能力写入"盲化"内存区，任何误用（影响控制流、用作内存地址）立即触发fault。配合CheriBSD操作系统与CHERI版Clang/LLVM的非侵入编译pass及__blinded注解编程模型，在基于推测乱序CHERI-Toooba的FPGA软核上实现。
+
+硬件开销极小：逻辑面积约1.2%、功耗约5.3%；CoreMark显示非盲化负载性能几乎无影响；5个OISA基准（移植仅需1-5行代码改动）相对purecap配置几何平均开销仅1.5%，相对完全无防护基线为23.5%。安全评估中单条candperm指令即可阻止全部Spectre（BTB/RSB/STL）测试攻击，VCD波形验证不同秘密值运行产生完全相同的信号轨迹（非干扰性），并继承CHERI内存安全与OISA/BliMe的形式化保证。
+
+我的思考：贡献成色在于首个统一内存安全与侧信道机密性的硬件-软件协同方案，不增加内存标签位的设计使开销远低于OISA/BliMe（1.5% vs 数倍），"盲化即fault"的语义把静默的常数时间bug变成显式错误；局限是需硬件改造（目前仅在FPGA验证，商用CPU落地遥远），依赖纯capability模式与Cornucopia撤销机制，复杂数据结构支持有限。领域影响上，为"硬件强制数据无关计算"提供了可落地的CHERI路径，对Rust常数时间生态的困境给出系统性答案；与BliMe/OISA相比，BLACKOUT以更低开销实现同等保证，代表侧信道防御从软件约定走向硬件契约的演进方向。
+- **arXiv PDF**: [BLACKOUT: Data-Oblivious Computation with Blinded Capabilities.](https://arxiv.org/pdf/2504.14654)
+
+#### 'We just did not have that on the embedded system': Insights and Challenges for Securing Microcontroller Systems from the Embedded CTF Competitions.
+
+- **作者**: Zheyuan Ma, Gaoxiang Liu, Alex Eastman, Kai Kaufman, Md. Armanuzzaman, Xi Tan, Katherine Jesse, Robert J. Walls, Ziming Zhao
+
+- **方向**: 硬件与物理安全
+
+- **解读**: 微控制器系统支撑着车辆、医疗设备、工业控制系统等关键任务场景，其安全性至关重要。以往研究多聚焦于固件分析来识别与刻画漏洞，但对"漏洞为何会以这种方式产生"——即开发者从设计到实现全过程中的安全挑战——缺乏系统性理解。
+
+本文独特地利用 2023 与 2024 年 MITRE eCTF 竞赛的参赛队伍提交与赛后访谈数据，从技术与感知两个维度剖析微控制器系统开发的完整生命周期，揭示安全漏洞如何在开发过程中"从源头"形成。
+
+作者整合提交物分析与开发者访谈，提炼出嵌入式开发者面临的结构性挑战（如资源受限、工具链薄弱、安全知识迁移困难），并给出改进嵌入式安全开发实践的见解与建议。
+
+我的思考：用竞赛数据 + 赛后访谈的组合把"漏洞结果"回溯到"开发过程"，方法设计巧妙，能获得真实工业界难以采集的开发心智证据；对嵌入式安全教学、工具链设计与安全工程教育都有借鉴价值。局限在于 eCTF 参赛者多为学生/研究者，与工业嵌入式开发者的经验存在差距，结论的外推需谨慎；结合真实工业项目与更多职业开发者的样本是后续方向。
+
+
+#### CHaRM: Checkpointed and Hashed Counters for Flexible and Efficient Rowhammer Mitigation.
+
+- **作者**: Ali Hajiabadi, Michele Marazzi, Kaveh Razavi
+- **方向**: 硬件与物理安全
+- **解读**:
+尽管 DRAM 厂商努力缓解，Rowhammer 仍是强大的攻击向量。CPU 厂商不愿为最脆弱设备部署高成本的确定性缓解，而平均设备的脆弱性低得多；主要障碍在于随阈值恶化，需要跟踪的攻击行（aggressor row）数量不断增长，导致计数器资源开销过大。
+
+CHaRM 是 CPU 内缓解方案，通过将大量固定的哈希计数器高效映射到有限计数器，打破"一行一计数器"的规模依赖；碰撞不可避免，为此引入检查点机制：被逐出表的计数状态先保存，当行再次激活时恢复检查点值并继续跟踪，避免碰撞引发过多的缓解性刷新。
+
+评估显示 CHaRM 在所有阈值下性能开销可忽略（低于 1%）；在 1K 阈值下与现有技术相比，面积、功耗、能耗分别改善 3.8 倍、4.4 倍、8.2 倍，在低成本与确定性防护之间提供了更灵活的选择。
+
+哈希映射加检查点恢复是经典的"空间换时间"工程折中，直击 Rowhammer 缓解的成本痛点；碰撞导致的刷新放大风险被检查点机制巧妙化解。局限在于检查点存储与恢复路径自身的开销，以及攻击者是否可利用恢复窗口。与 TRRespass、Graphene 等方案相比，CHaRM 面向 CPU 内确定性部署，具备更实际的落地前景。
+
+
+#### ExfilState: Automated Discovery of Timer-Free Cache Side Channels on ARM CPUs.
+
+- **作者**: Fabian Thomas, Michael Torres, Daniel Moghimi, Michael Schwarz
+- **方向**: 硬件与物理安全
+- **解读**:
+ARM CPU 上的缓存侧信道威胁进程与隔离边界，而许多现代攻击场景（如浏览器 JavaScript）缺乏高精度定时器，传统计时型侧信道难以施展。ExfilState 针对"无需定时器"（timer-free）的缓存侧信道，研究其自动化发现方法。
+
+据标题推断，该系统在 ARM CPU 上自动发现定时器无关的缓存侧信道——这类信道不依赖计时原语，而是利用缓存状态本身（如行占用导致的延迟差异）来同步与泄露信息。（无摘要，据标题推断）
+
+摘要缺失，无法给出量化结果；工作重心在于将侧信道发现流程自动化，扩大可被攻击者利用的信道面。
+
+该方向与学界此前提出的 Prime+Scope 等定时器无关攻击一脉相承，威胁模型贴合真实环境；自动化发现工具能降低此类攻击的利用门槛，也提示防御方需关注缓存状态泄露面。若能系统化枚举 ARM 上的此类信道，对架构安全评估具有直接价值。
+
+
+#### MileSan: Detecting Exploitable Microarchitectural Leakage via Differential Hardware-Software Taint Tracking.
+
+- **作者**: Tobias Kovats, Flavien Solt, Katharina Ceesay-Seitz, Kaveh Razavi
+- **方向**: 硬件与物理安全
+- **解读**:
+微架构泄露（如 Spectre 类瞬态执行泄露）难以检测与归因：硬件侧的现象与软件侧的数据流往往被割裂分析。MileSan 致力于检测可利用的微架构泄露，帮助开发者定位真实可利用的泄露点，而非泛泛报告理论噪声。
+
+据标题推断，MileSan 采用差分硬件-软件污点追踪：同时在硬件行为与软件数据流两个视角追踪敏感数据，通过两者的差异识别真正可被利用的泄露路径，从而降低误报并给出可操作的定位。（无摘要，据标题推断）
+
+摘要缺失，无法给出量化结果；其价值在于把"可利用性"作为检测目标，而非止步于泄露现象的发现。
+
+现有 Spectre 类检测工具要么只做软件静态分析、要么依赖硬件探针，MileSan 的差分思路取两者之长；"可被利用"这一标准呼应了学术界对泄露报告泛滥、可利用性不清的批评。局限在于对硬件支持的要求与规模化分析的成本，但其方向对下一代微架构安全验证具有参考意义。
+
+
+#### RISCover: Automatic Discovery of User-exploitable Architectural Security Vulnerabilities in Closed-Source RISC-V CPUs.
+- **作者**: Fabian Thomas, Eric García Arribas, Lorenz Hetterich, Daniel Weber, Lukas Gerlach, Ruiyi Zhang, Michael Schwarz
+- **方向**: 硬件与物理安全
+- **解读**:
+RISC-V 架构的开放性与快速普及使其 CPU 实现成为攻击者关注焦点，但主流商用 RISC-V 处理器多为闭源，内部微架构与实现细节不可见，用户可利用的架构级安全漏洞难以被发现，自动化挖掘更是空白。（无摘要，据标题推断）
+
+RISCover 面向闭源 RISC-V CPU，目标是自动发现"用户可利用"的架构安全漏洞——即普通用户态程序即可触发的漏洞。推测其思路是将 CPU 视为黑盒，通过系统性输入生成、执行与结果比对来探测指令语义与状态转换中的异常，在不接触 RTL 的情况下定位漏洞。（无摘要，据标题推断）
+
+摘要缺失，无法给出量化结果；标题强调"自动发现"，预期贡献在于以黑盒方式规模化发现闭源 RISC-V 处理器中可被用户利用的架构漏洞。（无摘要，据标题推断）
+
+闭源芯片的漏洞挖掘长期依赖人工审计或侧信道，黑盒自动化是一条实用且可扩展的路线；"用户可利用"的定位使结果对真实攻击面更有意义。局限是黑盒探测的覆盖深度有限，发现的漏洞类型可能局限于可观察行为异常，且缺少摘要使方法细节与评估规模无法在此确认。
+
+
+#### GhostCache: Timer- and Counter-Free Cache Attacks Exploiting Weak Coherence on RISC-V and ARM Chips.
+- **作者**: Yu Jin, Minghong Sun, Dongsheng Wang, Pengfei Qiu, Yinqian Zhang, Shuwen Deng
+- **方向**: 硬件与物理安全
+- **解读**:
+微架构侧信道攻击日益泛滥，大多依赖高精度计时器；新兴处理器架构试图通过限制细粒度计时访问来缓解此类威胁。本文验证了 L1 缓存的弱一致性（weak coherence）在多种 RISC-V 与 ARM 芯片上普遍存在，并利用它绕过这类缓解，提出 GhostCache——完全无需计时器、无需计数器的高速缓存侧信道攻击。
+
+方法上，作者提出两个新颖且广泛适用的攻击原语 Modify+Recall 与 Call+Modify+Call，同时适用于 RISC-V 与 ARM，影响 6 款商业处理器与 3 款开源大型处理器；还发现了未公开的微架构特性，如 next-three-line 预取机制以及从数据缓存直接转发被逐出指令的行为，并据此构建四种隐蔽信道，最高速率 1.68 MB/s、错误率 0.01%。
+
+基于 GhostCache 实现了三类真实攻击：端到端网站指纹识别在 100 个类别上达到 92.02% 准确率；内核信息泄露——通过函数指针泄露任意数据、发现新的 Spectre 披露 gadget，准确率 92.91%；以及加密密钥重建。论文最后讨论了面向此类弱一致性设计的潜在对策。
+
+我的思考：这是无计时器缓存攻击的首次系统演示，意义在于证明"限制计时器"这一主流缓解思路对弱一致性微架构无效——设计者为了省电/简化一致性协议引入的行为被武器化，属于典型的"设计特性即攻击面"。网站指纹 92% 与内核泄漏 92.9% 的准确率表明攻击完全实用。与先前依赖计时器的侧信道（如 Prime+Probe、Flush+Reload）相比，本工作在威胁模型上更严格；对策（修复弱一致性或隔离）的代价与可行性需权衡，对 RISC-V 开放生态的长期安全设计有直接警示价值。
+
+
+#### Poster: Inferring On-Screen Keyboard Input via Gamepad-based Mouse Movement Traces.
+- **作者**: Gyujeong Jin, Seyoung Lee
+- **方向**: 硬件与物理安全
+- **解读**:
+
+（无摘要，据标题推断）屏幕键盘（OSK）常用于触屏设备、游戏主机、客厅电视等场景，其输入隐私面临侧信道威胁。
+
+据标题推断，该工作提出一种新的侧信道：攻击者利用游戏手柄（gamepad）充当鼠标时产生的指针移动轨迹，推断用户通过屏幕键盘输入的内容——游戏手柄作为"合法外设"可绕过传统键盘侧信道防御，攻击者甚至可能通过恶意驱动或共享手柄固件收集轨迹。方法上可能涉及采集手柄控制的光标运动信号，分析方向、速度、停顿等运动学特征与按键输入之间的统计关联，并训练分类或序列推断模型。
+
+由于没有摘要，无法引用具体精度与实验数据。
+
+我的思考：这一攻击面有趣且现实，威胁客厅/触屏场景的隐私；若推断准确率足够高，将表明输入侧信道的防御不能只盯着键盘，明确标注为无摘要推断，具体效果需以正文为准，也提示平台需重新审视外设输入侧信道的暴露面。
+
+### 移动与物联网安全（14 篇）
+
+#### WhisperTest: A Voice-Control-based Library for iOS UI Automation.
+
+- **作者**: Zahra Moti, Tom Janssen-Groesbeek, Steven Monteiro, Andrea Continella, Gunes Acar
+- **方向**: 移动与物联网安全
+- **解读**: 
+iOS应用的UI自动化测试长期依赖坐标、可访问性标识或开发框架，编写与维护成本高，且在缺少测试钩子的场景下难以开展；安全与隐私研究对大规模、低成本驱动真实iOS应用交互存在需求（无摘要，据标题推断）。
+方法上，WhisperTest提出以"语音控制"（Voice Control）这一iOS无障碍能力为基础的UI自动化库，让测试脚本通过语音控制通道驱动应用界面元素，从而减少对专用测试框架与设备特权的依赖，实现接近真实用户的交互（无摘要，据标题推断）。
+结果方面，该库面向iOS UI自动化场景，旨在以语音控制方式执行点击、输入等交互操作，降低自动化门槛并提高脚本鲁棒性；其具体性能与覆盖效果需以论文正文为准（无摘要，据标题推断）。
+我的思考：借力系统无障碍接口做自动化是实用主义思路，类似Android的Accessibility服务已被广泛用于自动测试与隐私分析，WhisperTest或可填补iOS侧同类工具缺失。风险在于Voice Control通道的速度与稳定性、以及受iOS版本限制的兼容性；若验证充分，可成为iOS大规模应用行为测量与安全测试的基础设施。
+
+
+#### Fingerprinting SDKs for Mobile Apps and Where to Find Them: Understanding the Market for Device Fingerprinting.
+- **作者**: Michael A. Specter, Mihai Christodorescu, Abbie Farr, Bo Ma, Robin Lassonde
+- **方向**: 移动与物联网安全
+- **解读**: 设备指纹是跨会话追踪用户的核心手段，苹果 ATT、谷歌隐私沙盒等干预主要瞄准广告场景，但指纹行为的真实来源与市场结构缺乏大规模实证，现有干预措施的有效性存疑。
+- 方法上，采用市场化视角聚焦第三方 SDK：从主流 Maven 仓库收集超过 228,000 个 SDK，从 Google Play 收集 178,000 个 Android 应用，用静态分析流水线检测 500+ 种设备信号的对外泄露，并对 SDK 的商业目的做分类归因；为避免主观定义偏差，采用多种技术手段保证标注的可靠性与一致性。
+- 结果上，广告 SDK 仅贡献 30.56% 的指纹行为，23.92% 来自用途不明/不清的 SDK，安全与认证类 SDK 也关联 11.7% 的疑似指纹行为——说明把反指纹政策限定在广告细分市场收效有限；此外指纹信号与 API 分布稀疏，仅 2% 的被泄露 API 被超过 75% 的 SDK 使用，使依赖用户权限或 API 清单的管控难以落地。
+- 我的思考：这是目前规模最大的 SDK 指纹行为市场级测量，其"市场归因"视角（谁在指纹、为什么）填补了先前仅测"是否有指纹"的空白，对 ATT、隐私沙盒等政策评估有直接证据价值。局限是静态分析对混淆/动态加载存在漏报，Google Play 样本的代表性、SDK 用途分类的主观性都会影响结论稳健性；30.56%/23.92% 等数字高度依赖分类口径。与 Web 端指纹研究相比，移动端 SDK 供应链异质性更强，该工作为后续策略设计与合规审计提供了基线数据。
+
+- **arXiv PDF**: [Fingerprinting SDKs for Mobile Apps and Where to Find Them: Understanding the Market for Device Fingerprinting.](https://arxiv.org/pdf/2506.22639)
+
+#### Lock the Door But Keep the Window Open: Extracting App-Protected Accessibility Information from Browser-Rendered Websites.
+- **作者**: Haichuan Xu, Runze Zhang, Mingxuan Yao, David Oygenblik, Yizhi Huang, Jeman Park, Brendan Saltaformaggio
+- **方向**: 移动与物联网安全
+- **解读**: 
+Android无障碍（a11y）服务长期被恶意软件滥用，开发者需要在原生App与移动网站中同时保护a11y内容访问。然而两类端口的保护机制存在错位：此前研究只关注原生App中a11y信息的攻防，本文发现App保护的a11y信息可经由其浏览器渲染的网站对应页面被重新获取——浏览器用户比App用户更易受攻击。
+
+作者开发SOMBRA自动化分析流水线，系统检测"App侧受a11y保护、但浏览器侧泄漏"的攻击面：对294个服务（其中29个部署了App侧保护、256个视图）进行分析，发现分别有241、402、244、251个元素对应的受保护视图在Chrome、Firefox、Brave、Edge中渲染时暴露a11y信息，泄漏内容含敏感个人可识别信息（PII）。
+
+SOMBRA还发现多数服务未部署保护的原因：现有防护要么无效，要么损害内容可用性。
+
+该工作揭示了一个被忽视的跨端攻击面——"门锁了，窗却开着"：App与Web双端防护的不对齐使整体防护失效，量化证据（四浏览器数百暴露元素、PII泄漏）扎实。局限：样本集中于294个服务，代表性有限；且a11y暴露与"可被恶意利用"之间仍有距离，需结合具体滥用场景评估危害。该研究对移动端开发者实施双端一致防护有直接指导意义。
+
+
+#### Intent-aware Fuzzing for Android Hardened Application.
+- **作者**: Seongyun Jeong, Minseong Choi, Haehyun Cho, Seokwoo Choi, Hyungsub Kim, Yuseok Jeon
+- **方向**: 移动与物联网安全
+- **解读**: 
+Android应用加固技术广泛普及，使现有静态/动态分析难以解析加固应用，覆盖率受限。核心障碍在于难以获得关于Intent的详细信息——Intent是组件间通信与特定事件执行的关键载体，缺失Intent信息导致分析无法构造有效输入。
+
+论文提出面向加固Android应用的Intent感知模糊测试：通过逆向或动态插桩等手段恢复加固应用中的Intent结构，据此生成更贴近真实调用的测试输入，提升对加固应用的覆盖率与漏洞发现能力。摘要未披露具体实现细节。
+
+摘要聚焦问题与动机，未给出量化结果；核心主张是Intent感知的输入构造可显著改善加固应用的模糊测试覆盖。
+
+加固（混淆、加壳）与模糊测试的对抗是Android安全研究的前沿问题，论文抓住Intent这一"分析盲区"切入，方向精准。局限：摘要信息有限，恢复Intent的机制对加固强度的鲁棒性、开销与漏洞发现效果需全文验证；若依赖特定加固特征，泛化性存疑。总体而言，该工作对加固应用的自动化安全分析有实际推动意义。
+
+
+#### Discovering and Exploiting IoT Device Hidden Attributes: A New Vulnerability in Smart Homes.
+- **作者**: Xuening Xu; Chenglong Fu; Xiaojiang Du; Bo Luo
+- **方向**: 移动与物联网安全
+- **解读**:
+智能家居中部署了大量 IoT 设备，其管理与控制往往依赖设备属性（attributes）的注册与查询机制。该工作指出存在一类此前未被关注的"隐藏属性"问题：设备或云平台可能持有某些属性，但既不在公开接口中暴露，也未受到与公开属性同等级的安全保护，从而形成新的攻击面。
+攻击者可能利用这些隐藏属性绕过权限检查、获取敏感状态、篡改设备配置或触发本应受限的操作，进而在智能家居环境中实现越权控制或数据泄露。由于属性机制普遍存在于设备固件、云后端与移动端 App 之间的交互中，问题具有横跨多层的传播性。
+摘要未提供实验细节，但作为"新漏洞类别"的提出者，论文通常包含真实设备/平台上的漏洞实例、利用流程与影响评估，以证明该类问题并非理论猜测而是现实存在。
+我的思考：该工作的价值在于把"隐藏属性"作为独立漏洞类别系统化研究，而不是零散地报 CVE——这有助于厂商在属性生命周期管理（注册、暴露、鉴权）上建立统一安全基线。不过摘要缺失，攻击的触发条件（是否需要本地网络、物理接触、特定协议）与受影响设备覆盖面均未知，需阅读正文判断实际危害等级。智能家居安全研究已较多，如何与既有属性注入/越权研究区分是衡量其贡献成色的关键。
+
+
+#### Leaky Apps: Large-scale Analysis of Secrets Distributed in Android and iOS Apps.
+
+- **作者**: David Schmidt, Sebastian Schrittwieser, Edgar R. Weippl
+
+- **方向**: 移动与物联网安全
+
+- **解读**: 移动应用为支撑功能会存储各类秘密，包括 API 密钥与用于认证用户、访问后端服务的密码学材料。一旦应用被分发，攻击者即可通过逆向工程获取这些秘密，带来数据泄露、服务滥用等风险。大规模量化移动生态中秘密泄露的普遍程度，是评估这一风险的基础。
+
+作者对 Android 与 iOS 应用进行大规模分析：通过批量下载与自动化逆向，从应用二进制中提取嵌入的密钥与密码学材料，并按秘密类型与来源分类统计。
+
+论文给出跨平台（Android/iOS）、跨应用类别的秘密泄露规模画像，揭示哪些类型的秘密最常被硬编码、哪些类别的应用风险最高，为开发者与平台治理提供量化依据。
+
+我的思考：移动应用秘密硬编码是长期存在的顽疾，该工作以大规模测量把问题从"个案"升级为"生态画像"，对安全审计工具与开发者规范都有参考价值。局限在于摘要未给出具体统计数字，秘密检测的误报率、以及"可被提取"与"实际可利用"（如密钥是否仍有效、是否受服务端校验）之间的差距需全文评估；结合云厂商密钥轮换与运行时动态获取的最佳实践分析，会是更有行动力的延伸。
+
+
+#### ZVDetector: State-Guided Vulnerability Detection System for Zigbee Devices.
+
+- **作者**: Hai Lin, Chenglong Li, Jiahai Yang, Zhiliang Wang, Jiaqi Bai
+- **方向**: 移动与物联网安全
+- **解读**:
+Zigbee 设备广泛用于智能家居、农业等行业，却存在大量可破坏其正常功能的漏洞。现有研究要么分析固件，要么通过网络模糊测试，但都忽略了设备状态与协议对探索空间的影响，只能探索有限空间，因而难以发现由隐藏状态、尤其是多状态组合触发的漏洞。
+
+ZVDetector 是状态引导的模糊测试系统。它通过状态感知模块，基于消息关系学习更多未知的状态转换，获得对设备内在属性的更完整理解；并开发融合语义感知与相关性分析的算法，将感知到的信息整合进探索过程，从而高效地遍历状态空间。
+
+在 10 台设备上验证，共发现 25 个漏洞，其中 19 个为零日；实验还展示了该系统发现与状态属性相关漏洞的能力，验证了状态引导思路的有效性。
+
+把协议状态机纳入模糊测试是物联网漏洞挖掘的关键进展，ZVDetector 的 19 个零日证明了其实用价值；建模质量依赖消息关系提取，设备规模有限也需谨慎看待。与已有 Zigbee 模糊测试工具相比，状态感知使其能触达"隐藏状态组合"这类此前难以覆盖的攻击面，为智能家居安全提供了重要工具。
+
+
+#### FlexEmu: Towards Flexible MCU Peripheral Emulation.
+
+- **作者**: Chongqing Lei, Zhen Ling, Xiangyu Xu, Shaofeng Li, Guangchi Liu, Kai Dong, Junzhou Luo
+- **方向**: 移动与物联网安全
+- **解读**:
+MCU（微控制器）固件动态分析高度依赖外设仿真，但外设种类繁多、行为复杂，现有仿真器覆盖不全，导致大量固件代码路径无法执行、漏洞被漏检。FlexEmu 旨在提升 MCU 外设仿真的灵活性。
+
+据标题推断，FlexEmu 提供灵活的 MCU 外设仿真框架，通过可配置、可扩展的外设模型支持更广泛的固件运行，从而提升动态分析的路径覆盖率与真实性。（无摘要，据标题推断）
+
+摘要缺失，无法给出量化结果；其贡献主要体现在外设仿真的通用性与易用性设计上。
+
+外设仿真一直是嵌入式固件分析（如工控、智能家居固件）的瓶颈，QEMU 等通用仿真器对特定 MCU 外设支持不足；FlexEmu 若能与模糊测试和动态污点分析结合，可显著扩大物联网固件漏洞的发现面。其实际价值取决于外设模型的保真度与扩展成本。
+
+
+#### Parcel Mismatch Demystified: Addressing a Decade-Old Security Challenge in Android.
+
+- **作者**: Sheng Cao, Hao Zhou, Songzhou Shi, Yanjie Zhao, Haoyu Wang
+- **方向**: 移动与物联网安全
+- **解读**:
+Android IPC 机制中的 Parcel Mismatch 漏洞已持续困扰系统安全十余年，导致大量提权利用。Google 实施了多种缓解策略，最终在 Android 13 引入 Lazy Bundle，但学界对这些漏洞及其缓解措施缺乏系统性分析。
+
+本文开展首个系统性研究，提出静态分析方案 ParcelTaint：精确建模 Intent 跨进程变换过程，从而发现攻击向量，包括绕过现有缓解、跨系统服务链式利用的路径。
+
+揭示 10 个此前未知的高危漏洞，其中 5 个被分配 CVE，全部经确认；发现该问题在 Android 13 之前的版本以及实现自定义组件的 OEM 系统中依然严重。基于研究结论，Google 修订了其缓解策略，转向解决核心漏洞模式而非仅依赖系统级修复。
+
+将"十年顽疾"系统化并驱动厂商修复，体现了安全研究直接转化为产业影响的价值；ParcelTaint 的跨进程 Intent 建模是技术亮点。局限在于静态分析固有的误报漏报与 OEM 碎片化生态的覆盖难度。与既有零散 CVE 分析相比，该工作提供了可复用的检测框架。
+
+
+#### VirtualReality,RealProblems: A Longitudinal Security Analysis of VR Firmware.
+
+- **作者**: Vamsi Shankar Simhadri, Yichang Xiong, Habiba Farrukh, Xiaokuan Zhang
+
+- **方向**: 移动与物联网安全
+
+- **解读**: VR 头显正快速进入消费市场，其固件承载摄像头、麦克风、生物特征传感器等高度敏感能力，安全失效的后果远超普通设备；而 VR 生态（供应链复杂、更新机制多样、安全配置碎片化）使固件层成为被忽视的攻击面。对 VR 固件做纵向（跨版本/跨设备）安全分析，是评估这一新兴平台真实风险的基础工作（无摘要，据标题推断）。
+
+从标题推断，本文对多款 VR 设备的固件开展纵向安全分析：跟踪固件版本演化，系统检查其安全机制（启动链、固件签名/加密、漏洞修复节奏、配置与权限）随时间的变迁与缺口，以刻画该生态的安全成熟度曲线（无摘要，据标题推断）。
+
+由于该条目没有摘要，本文无法引用任何量化结果；涉及的设备型号、固件版本跨度、发现的具体漏洞类型与严重性均需查阅原文确认（无摘要，据标题推断）。
+
+我的思考：纵向视角（而非单点快照）能揭示"安全实践是否随版本改善"这一关键问题，对评估厂商安全承诺与监管介入必要性很有价值；该团队此前在 VR 安全（如追踪注入攻击）有积累，方法可信度高。局限：固件分析通常受限于逆向工程量与设备覆盖，样本选择的代表性直接影响结论外推；无摘要也限制了对方法与发现的预判。期待其披露的具体漏洞与披露流程。
+
+
+#### Demo: Reverse Engineering Android Apps with Code Coverage.
+- **作者**: Aleksandr Pilgun
+- **方向**: 移动与物联网安全
+- **解读**:
+（无摘要，据标题推断）本演示围绕"利用代码覆盖率辅助 Android 应用逆向工程"展开。Android 应用逆向通常面对混淆、加壳与动态加载等多层防护，分析者难以判断已覆盖多少代码路径、哪些逻辑尚未被探索。该演示应展示一种将代码覆盖率信息集成进逆向工作流的工具或方法：在动态执行（如 Frida/调试器驱动的运行）中采集覆盖率数据，将其映射回反编译代码（如 smali/Java 反编译视图），帮助分析者定位未执行的敏感逻辑（如隐藏的 C&C 地址、付费墙校验、证书锁定逻辑）。
+
+方法上可推断：通过插桩或运行时跟踪收集分支/基本块级覆盖率，结合 UI 自动化或手工交互驱动应用执行，以可视化方式呈现"哪些代码被执行过"，引导分析者系统性地覆盖关键路径，从而提升恶意行为识别与漏洞挖掘的完备性。
+
+演示类论文通常侧重工具原型与使用场景而非量化实验，摘要仅含"peer reviewed"字样，无任何数据可引用。其价值体现在方法的可行性与分析效率的提升上。
+
+我的思考：覆盖率引导在模糊测试中已是标配，但在移动逆向（尤其是黑盒/灰盒分析）中仍未被充分利用——分析者常凭经验"乱撞"。将覆盖率反馈闭环引入逆向流程，能显著减少漏报（未执行的恶意路径被忽视）并加速定位逻辑开关。局限在于动态采集的覆盖率受执行环境与反调试干扰，加壳应用需先脱壳才能插桩；该方向与自动化恶意应用分析（如动态分析沙箱的路径探索）结合，有较大实用潜力。
+
+#### CPSIoTSec'25: The 7th Joint Workshop on CPS & IoT Security and Privacy.
+
+- **作者**: Kassem Fawaz; Daisuke Mashima
+- **方向**: 移动与物联网安全
+- **解读**:
+信息物理系统（CPS）与物联网（IoT）的安全与隐私问题横跨学术、工业与政府多个层面，需要一个共同的协作论坛来凝聚力量。本工作坊由 2019 年两个分别聚焦 CPS 安全隐私与 IoT 安全的研讨会合并而成，旨在搭建产学研政对话平台。
+
+2025 年第七届会议于 10 月 17 日在中国台北与 CCS'25 同期举办，征稿范围涵盖全文研究论文、进展中工作（work-in-progress）与一页摘要。最终程序包括 9 篇 CPS/IoT 方向的全文/短文论文，外加 1 篇展示虚拟网络安全测试床的演示论文，并邀请到汽车网络安全领域世界知名专家 Daniel Xiapu Luo 教授做主旨演讲。
+
+结果（摘要中的量化信息）：9 篇论文 + 1 篇测试床演示 + 1 场主旨报告；完整会议录见 doi.org/10.1145/3733801。
+
+我的思考：合并办会延续了 CPS 与 IoT 两条脉络的融合趋势；虚拟网络安全测试床的演示是本届亮点，为缺乏真实工控/IoT 环境的团队提供了低成本研究手段。主旨聚焦汽车网络安全，呼应了智能网联汽车这一高热度、高风险的现实议题。
+
+#### SaTS '25: The 3rd ACM Workshop on Security and Privacy of AI-Empowered Mobile Super Apps.
+
+- **作者**: Luyi Xing; Yue Xiao
+- **方向**: 移动与物联网安全
+- **解读**:
+移动超级应用——将多个小程序捆绑于单一平台——已成为面向消费者的数字生态核心：微信、支付宝、Grab、TikTok 等集成支付、消息、电商、娱乐等服务，同时收集处理海量敏感个人数据。功能的高度集中创造了前所未有的商业机遇，也带来显著的安全与隐私风险。
+
+更值得警惕的是，LLM 正被集成进超级应用，使其转变为"LLM 驱动的智能代理系统"：这些系统能够编排操作、与外部服务交互、代表用户执行特权任务。这虽开启了强大的新应用，却同时扩大了攻击面，引入了新的数据暴露、权限滥用与对抗性操纵形式。
+
+结果（摘要为框架性陈述，无量化数据）：明确"超级应用固有风险 + LLM 代理化新增风险"的双层威胁模型。
+
+我的思考：超级应用 + LLM agent 的组合是高价值攻击目标：权限集中、敏感数据集中、且代理化的自主决策使传统权限模型失效。摘要列出的"安全架构设计、权限框架、威胁建模、隐私保护方法"正是应对这一新型风险的最小研究集；组织者 Luyi Xing 团队在移动安全领域成果卓著，这一议题的严肃性有保障。
+
+#### CSCS '25 - Cyber Security in CarS Workshop.
+
+- **作者**: Hans-Joachim Hof; Mario Fritz; Christoph Krauß
+- **方向**: 移动与物联网安全
+- **解读**:
+现代汽车已成为移动的计算机——车载网络、自动驾驶系统、远程通信与云端服务交织，其网络安全问题复杂多样：从远程攻击面扩展到软件供应链与隐私风险，涉及汽车制造商、供应商、研究者与监管方多方博弈。
+
+第二届汽车网络安全工作坊（CSCS'25）于 2025 年 10 月 17 日在中国台北与 CCS'25 同期举办，是 2017 至 2023 年年度科学研讨会的继任者，旨在汇聚研究者、从业者、开发者及相关各方，共同探讨现代车辆网络安全的多重难题：在展示当前研究贡献之外，还提供社交、联合头脑风暴与解决方案开发的平台。
+
+结果（摘要为平台性陈述，无量化数据）：延续多年的汽车安全交流传统，本届与 CCS 同期扩大学术曝光。
+
+我的思考：智能网联汽车的攻击面正随软件定义汽车（SDV）理念而急剧扩大——OTA 更新、V2X 通信、第三方应用都成为潜在入口，安全必须前移到设计与供应链环节。组织者中 Mario Fritz 的加入带来 AI 安全视角，契合汽车安全中感知系统对抗攻击（如自动驾驶对抗样本）等新兴议题；此类工作坊是连接汽车行业与学术安全社区的关键桥梁。
+
+### 云与供应链安全（10 篇）
+
+#### NodeShield: Runtime Enforcement of Security-Enhanced SBOMs for Node.js.
+- **作者**: Eric Cornelissen, Musard Balliu
+- **方向**: 云与供应链安全
+- **解读**:
+
+软件供应链攻击（SolarWinds、Log4Shell、XZ Utils）频发，npm生态尤为严重：单个包平均信任79个第三方包、由40个维护者发布，Node.js应用默认以完整系统权限运行并传递给第三方包。SBOM作为被动透明度工具无法主动阻止恶意行为，既有沙箱/权限系统在兼容性、策略简洁性与攻击鲁棒性上各有短板，尚无系统能同时满足兼容、自动、低开销、策略简洁的目标。
+
+方法上，NodeShield在运行时强制应用依赖层级（以SBOM为准，防止组件静默滥用未声明组件）与组件能力（提出SBOM扩展CBOM——能力物料清单，记录各组件可访问的系统资源）。采用基于词法作用域的"代码外提"（outlining）而非内联方式做无侵入包级插桩，不改原始代码与Node.js运行时；经系统性分析提出7类安全敏感能力，覆盖内置模块、全局变量、原生绑定三条途径，支持CommonJS与ESModules并自动生成策略。
+
+在67个已知供应链攻击基准上预防率达98.51%；对SecBench.js中任意代码执行漏洞的利用检测率达87.50%；长生命周期服务器开销低于1ms/请求、吞吐量最大降低360请求/秒；策略语言每个依赖至多7条；维护成本上每次依赖更新平均需审查不到1个能力、新依赖0-13个；对沙箱逃逸威胁模型内的攻击全部阻止，Copay攻击端到端分析验证了实用性。
+
+我的思考：贡献成色在于首个同时保护CommonJS与ESModules的Node.js运行时防护工具，CBOM把SBOM从"清单"升级为"强制策略"，outlining加词法作用域显著降低旁路风险，98.51%预防率与亚毫秒开销的性价比很高；局限是7类能力的策略粒度仍粗，对依赖eval、间接调用等动态特性的合法包可能误报，完全兼容vanilla Node.js尚难保证。领域影响上，为npm供应链提供了轻量主动防御选项，与平台级权限方案相比在自动化与兼容性上更全面；CBOM思想也可推广到其他软件生态。
+
+- **arXiv PDF**: [NodeShield: Runtime Enforcement of Security-Enhanced SBOMs for Node.js.](https://arxiv.org/pdf/2508.13750)
+
+#### What Gets Measured Gets Managed: Mitigating Supply Chain Attacks with a Link Integrity Management System.
+
+- **作者**: Johnny So, Michael Ferdman, Nick Nikiforakis
+- **方向**: 云与供应链安全
+- **解读**:
+
+Web 持续增长，但资源完整性的依赖监控工具与标准明显滞后。目前不存在稳健的第三方资源完整性验证方法，更缺乏通用且高性能的解决方案；供应链仍是 Web 应用攻击面中最受针对的部分之一，第三方脚本一旦被篡改，影响面极大。
+
+本文构建链接完整性管理系统（link integrity management system），对 Web 页面加载的资源进行完整性测量与管理，使资源完整性验证从"一次性检查"变为可持续运营的管理流程。
+
+摘要截断，未给出具体数字；核心贡献是提出通用、可扩展、高性能的资源完整性验证与管理体系。
+
+SRI（Subresource Integrity）机制虽好但部署率低，根因之一就是缺少规模化测量与管理的工具链。"可测量才可管理"的思路切中供应链安全落地的痛点——不是发明新的密码原语，而是把完整性验证变成可运营的系统。后续需关注其对页面加载性能的影响，以及对动态内容、跨域资源的处理能力，这些决定实际部署可行性。
+
+
+#### PickleBall: Secure Deserialization of Pickle-based Machine Learning Models.
+- **作者**: Andreas D. Kellas, Neophytos Christou, Wenxin Jiang, Penghui Li, Laurent Simon, Yaniv David, Vasileios P. Kemerlis, James C. Davis, Junfeng Yang
+- **方向**: 云与供应链安全
+- **解读**:
+Python 的 pickle 是机器学习模型分发与加载的事实标准格式，但其反序列化过程可执行任意代码，攻击者可构造恶意 pickle 文件在加载模型的瞬间实现代码执行，形成严重的模型供应链攻击面。（无摘要，据标题推断）
+
+PickleBall 为基于 pickle 的机器学习模型提供安全反序列化方案。推测其核心思路是在反序列化过程中引入隔离与校验机制，在不破坏既有模型生态兼容性的前提下阻断恶意对象的构造与执行，可能通过受限执行环境、对象白名单或静态分析 pickle 指令流等方式实现。（无摘要，据标题推断）
+
+摘要缺失，无法给出量化数据；作者团队在系统安全与软件工程领域积累深厚，预期包含大规模真实模型语料上的安全性与兼容性评估。（无摘要，据标题推断）
+
+模型供应链安全是 AI 落地中的真实痛点，PyTorch 生态大量依赖 pickle，问题覆盖面极广；安全反序列化的关键权衡是"安全性与兼容性"——过度收紧会破坏现有模型加载，过松则防不住攻击。期待看到其与 torch.load 等主流加载路径的兼容性证据，以及能否处理嵌套对象与自定义类等复杂载荷。
+
+
+#### Attestable Builds: Compiling Verifiable Binaries on Untrusted Systems using Trusted Execution Environments.
+- **作者**: Daniel Hugenroth, Mario Lins, René Mayrhofer, Alastair R. Beresford
+- **方向**: 云与供应链安全
+- **解读**:
+不透明的构建流水线切断了源码与最终二进制工件之间的信任联系：源码可以被审计理解，而二进制难以检查。可复现构建（reproducible builds）虽能提供源码到二进制的对应，但通常需要耗时地修改配置与依赖，并由独立方持续对比验证，落地门槛高。本文提出"可证明构建"（attestable builds）这一新范式，为软件工件提供强的源码到二进制对应保证。
+
+核心思路是利用现代可信执行环境（TEE）中的沙箱化容器执行构建：给定特定源码快照与构建流水线，TEE 保证生成的二进制确实由该源码正确构建而来，并可近乎即时地验证所用流水线。相比可复现构建，它只要求项目做极小的改动、无需多方持续验证；作者还对设计进行了形式化建模，证明其对资源充足的对手也是安全的。
+
+评估中，作者构建了多个供应链关键且已证明可确定性构建的开源库。开销很小：42 秒启动延迟与 14% 的构建时长增加，相对总体构建时间微不足道。更重要的是，原型能够构建如 LLVM/Clang 这样复杂的项目，而无需修改它们的任何构建脚本。
+
+我的思考：可复现构建的落地门槛（全链路确定性、多方持续验证）一直阻碍其普及；attestable builds 用 TEE 的可信根换取"低侵入+即时验证"，是工程上更可行的折中。其信任模型的关键在 TEE 本身：若 TEE 被攻破或厂商不可信，保证随之失效；此外它保证"由该源码构建"，但构建工具链自身的恶意性不在覆盖范围。与供应链安全法规（如 SBOM 要求）结合，这类方案有实际落地前景。
+
+
+#### Poster: An Obfuscation Framework for Mitigating Topology Probing Attacks in Cloud-Native Systems.
+- **作者**: Xue Leng; Kaiwen Shen; Chengxuan Zhu; Xing Li; Jianguo Sun
+- **方向**: 云与供应链安全
+- **解读**:
+云原生系统中微服务通过远程调用相互通信，这种通信侧信道携带大量信息，可被攻击者利用进行拓扑探测攻击、进而实施 DDoS 等破坏。针对这一威胁，已有研究探索关键路径分析与混淆防御，但论文指出这些工作因灵活性有限、计算时间长而难以在实际场景中应用。
+
+方法上，作者提出 MeshGuard，一个缓解云原生系统拓扑探测攻击的新型混淆框架。具体而言：(1) 构建服务级动态迷宫（dynamic labyrinth），在混淆拓扑时自适应地避免泄露真实流量模式；(2) 用定制参数伪装混淆行为，使其更难被攻击者识别；(3) 设计基于标签（tag-based）的机制，确保混淆不影响正常微服务间的通信。
+
+初步实验表明该框架具备可行性，但摘要中未给出混淆效果的具体数值，属方案设计加初步验证阶段。
+
+我的思考：服务网格（service mesh）场景下的拓扑混淆是云原生安全的新兴方向，MeshGuard 的"动态迷宫 + 标签隔离"设计兼顾了防御强度与对正常业务的零影响，比静态混淆更贴合生产环境。局限在于：混淆流量模式可能被侧信道统计（如时序、包长分布）再次识别，攻防博弈永无止境；引入的延迟与资源开销在摘要中未见量化。与既有以关键路径分析为主的研究相比，其工程化的自适应方案是明显进步，但尚需更大规模部署验证。
+
+
+#### Poster: Obfuscating Function Activity States to Enhance Privacy in Serverless Applications.
+- **作者**: Xue Leng; Fengming Zhu; Xing Li; Ye Tian; Jianguo Sun; Yan Chen
+- **方向**: 云与供应链安全
+- **解读**:
+无服务器计算（FaaS）在现代应用中广泛使用，但函数实例共享底层物理基础设施，使共位（co-location）攻击成为可能，进而通过网络侧信道泄露函数活动状态等敏感信息。论文指出既有防御在无服务器场景下各有局限：检测覆盖不完整、训练时间长、或需要侵入函数运行时环境。
+
+方法上，作者提出 FaaSGuard，一个混淆框架，通过对抗网络侧信道来保护函数活动状态、增强隐私。其核心设计包括：(1) 自适应策略选择机制，使框架在不同场景下灵活调整混淆策略；(2) 流量伪装方法，使混淆后的流量与正常流量不可区分，让攻击者无法从流量模式中判断函数是否活跃。通过保持流量形态的自然性，FaaSGuard 在保护隐私的同时尽量不引入可被识别的混淆特征。
+
+作为海报论文，摘要未给出量化结果。
+
+我的思考：无服务器平台的共享基础设施使"活动状态泄露"成为真实的隐私风险——攻击者可利用流量侧信道推断业务热点与部署节奏，甚至配合其他信息实施进一步攻击。FaaSGuard 的"不侵入运行时 + 自适应 + 流量伪装"设计在部署友好性上优于需修改函数或深度检测的方案。局限在于：流量伪装以带宽/延迟开销为代价，伪装强度与真实性的权衡未见量化；强对手结合多路侧信道（时序、资源竞争）可能识破伪装。与同团队 MeshGuard 一脉相承，都是"侧信道混淆"路线的云原生应用，方向务实，需更多实证支撑。
+
+
+#### Addressing Vulnerabilities and Opacities in Quantum Service Providers.
+- **作者**: Rupshali Roy
+- **方向**: 云与供应链安全
+- **解读**:
+
+NISQ 时代量子计算需求增长，第三方云服务商提供涵盖多种量子比特架构与技术的服务，以最低成本最大化性能；但编译器（包括声称更高效的替代编译器）、映射/分配工具与通信信道可能不可信，用户电路可能遭受数据泄漏、知识产权损失、访问控制破坏与程序损坏，且电路实际在何处执行缺乏可见性，程序的成败又高度依赖所用后端。
+
+作者（博士论文）的目标是识别量子服务软件栈中的漏洞与"不透明性"（opacity），并设计防御策略保护用户程序，维持整个软件栈的完整性。
+
+这是研究计划阶段的工作，摘要未给出实验数据。
+
+我的思考：量子安全研究多聚焦算法层（量子攻击），该工作转向"量子云供应链"这一被忽视的信任层，视角新颖、问题定义扎实；但尚处问题识别阶段，需要具体的威胁模型、攻击原语与原型系统来支撑，后续进展值得关注，其威胁模型框架本身即是有价值的贡献。
+
+#### Dissertation Research Description: The Potential of SBOMs to Increase Software Supply Chain Security.
+
+- **作者**: Lukas Gehrke
+- **方向**: 云与供应链安全
+- **解读**:
+软件供应链安全是网络安全的核心领域，2024 年 XZ Utils 事件就是惨痛例证。软件物料清单（SBOM）本用于追踪软件制品，经 2021 年美国行政令 14028 获得广泛关注，且欧盟《网络韧性法案》（2024 年颁布）将自 2027 年起强制推行 SBOM——但与之形成反差的是，从业者在实际使用中困难重重，多项研究表明其采纳与流程集成面临各种挑战，工具生成结果的准确性与正确性也广受质疑。
+
+针对"SBOM 到底能带来什么好处、未来还能提供什么安全价值"这一核心问题，论文提出四项贡献：(1) 系统化梳理计算机科学中关于 SBOM 历史与相关概念的全部知识；(2) 提出 SBOM 使用模型及其参与者的抽象视图，为 SBOM 的实用化奠定理论基础；(3) 开展 BOM2VULN 漏洞映射现状分析并引入新工具，帮助工程师快速查找并评估漏洞相关性；(4) 提出 Nutri Score 评分，用于评估拟使用的第三方代码风险。
+
+论文结论性陈述（基于摘要，无量化数字）集中在"监管强制与实用脱节"这一现实矛盾上。
+
+我的思考：这篇工作直面"立法先行、工具滞后"的典型困境，理论模型与实用工具（BOM2VULN、Nutri Score）并举，落地导向明确。SBOM 的准确性本身是痛点——物料清单不准，一切下游分析都是空中楼阁，作者把这一点作为研究切入点相当敏锐。未来若能与漏洞数据库和生态工具链深度集成，价值会更突出。
+
+#### SCORED '25: Workshop on Software Supply Chain Offensive Research and Ecosystem Defenses.
+
+- **作者**: Aditya Sirish A Yelgundhalli; Behnaz Hassanshahi; Dennis Roellke; Drew Davidson; Kathleen Moriarty; Lorenzo De Carli; Marcela S. Melara; Santiago Torres-Arias; Sarah Evans; Yuchen Zhang
+- **方向**: 云与供应链安全
+- **解读**:
+（无摘要，据标题推断）软件供应链已成为攻击者的首选目标，供应链投毒、依赖混淆、构建系统入侵等攻击手段层出不穷，而生态级防御（签名、SBOM、包管理器治理、构建可复现性等）尚在演进之中。该工作坊专门聚焦供应链的进攻性研究与生态防御两个方向。
+
+方法上，据标题推断，会议汇集学术与工业研究者，一方面探讨真实的进攻技术与攻击面，另一方面讨论生态层面的防御机制设计与落地，形成"以攻促防"的闭环。
+
+结果：无具体数据可引用，具体论文内容无法从标题确认。
+
+我的思考：组织者阵容堪称供应链安全领域的名人录（Torres-Arias、Melara、Moriarty 等均为供应链/软件签名方向的权威），议题设置兼具攻击纵深与生态治理视角。"Offensive Research"与"Ecosystem Defenses"并置，反映出领域共识：不了解真实攻击，防御设计就缺乏锚点。供应链攻击往往潜伏期长、影响面呈指数扩散，且攻击后的取证与归因极为困难，这要求防御研究覆盖从构建、分发到运行期的全生命周期，而不仅仅是单一环节的加固。
+
+#### CCSW '25: Cloud Computing Security Workshop.
+
+- **作者**: Paolo Palmieri; Shivam Bhasin
+- **方向**: 云与供应链安全
+- **解读**:
+云计算环境的广泛采用带来了安全与隐私的多方面挑战——从基础设施共享风险、外包数据保护到云端应用的入侵检测，都需要专门研究支撑。
+
+第 16 届云计算安全工作坊（CCSW '25）于 2025 年 10 月 17 日在中国台北与 CCS 同期举办，共收录 6 篇全文论文，涵盖云环境安全与隐私的多个方面：包括人工智能驱动的入侵检测测试新进展、用于数据外包计算的高级密码学、以及安全编码与网络技术。
+
+结果（摘要中的量化信息）：6 篇全文论文 + 2 位特邀主旨演讲者（Tianwei Zhang 与 Matthias Kannwischer），完整会议录见 doi.org/10.1145/3733812。
+
+我的思考：本届选题折射出云安全的两个主线——AI 赋能防御（智能入侵检测）与密码学赋能外包（同态/可搜索加密等高级密码原语）；Kannwischer 是后量子密码实现领域的权威，其主旨演讲与 NIST 后量子迁移进程相呼应，表明云环境的 PQC 迁移已提上日程。CCSW 作为运行 16 年的经典工作坊，仍是云安全学术-产业对话的重要节点；论文数量精简（6 篇）也反映出该领域已从广度铺开转向深度聚焦。
+
+### 认证与访问控制（7 篇）
+
+#### PipID: Light-Pupillary Response Based User Authentication for Virtual Reality.
+- **作者**: Muchen Pan, Yan Meng, Yuxia Zhan, Guoxing Chen, Haojin Zhu
+- **方向**: 认证与访问控制
+- **解读**: VR 应用（游戏、教育、军事训练）中敏感信息可能由 VR 传感器生成或采集，用户担忧数据泄露，亟需有效认证阻止未授权访问；现有方法要么繁琐（用手柄输入密码）、要么依赖专用硬件（虹膜识别）、要么易受凭证重放攻击。
+- 论文提出 PipID：利用头显内置的商用现货（COTS）眼动追踪器，基于用户瞳孔对视觉刺激的独特光反射反应进行身份认证——随机显示不同颜色的光刺激，记录瞳孔响应曲线作为生物特征，无需额外硬件。
+- 摘要未给出量化数据（原文截断）；核心思路是以瞳孔光反射作为个体化活体特征完成轻量认证。
+- 以瞳孔光反射作生物特征是"活体+行为"双重特性，天然抗凭证重放与照片/视频欺骗，且零额外硬件、对 VR 场景侵入小，设计巧妙；鲁棒性（光照环境、疲劳、药物、情绪对瞳孔反应的干扰）、长期稳定性与认证精度（EER）是评价要点，与既有 VR 认证（手势、注视模式）的对比有待原文实验。
+
+
+#### Breaking and Provably Restoring Authentication: A Formal Analysis of SPDM 1.2 including Cross-Protocol Attacks.
+- **作者**: Cas Cremers, Alexander Dax, Aurora Naska
+- **方向**: 认证与访问控制
+- **解读**: 
+SPDM（Security Protocol and Data Model）是DMTF联盟制定的安全协议标准，得到Broadcom、Cisco、Dell、Google、HP、IBM、Intel、NVIDIA等主要厂商支持，用于硬件组件通信与云计算等场景的平台安全，也是PCIe/CXL计算链路的核心安全机制。SPDM 1.2协议复杂，其认证机制的安全性至关重要。
+
+论文对SPDM 1.2做形式化分析，发现其认证可被攻破，且攻击包括跨协议攻击（cross-protocol attacks）；随后给出协议修改并证明其能恢复认证安全。方法应是基于符号模型的自动协议验证（作者Cremers团队以Tamarin等工具著称）。
+
+摘要未给出攻击具体形态与数据；核心结论是SPDM 1.2的认证存在可证明的缺陷，而修订后的协议可被形式化证明恢复安全。
+
+硬件平台安全协议的认证缺陷影响深远——SPDM部署于服务器基板管理、CXL内存扩展等关键路径，跨协议攻击尤其危险（同一设备上的多协议会话可被交叉利用）。Cremers团队的Tamarin分析在协议社区信誉卓著，"攻破+修复+证明"的闭环是高质量形式化工作的标准形态。局限：形式化模型对协议的抽象程度决定结论适用范围，实际实现中的细节偏差仍需关注。该工作是硬件协议形式化验证的范例。
+
+
+#### Passwords and FIDO2 Are Meant To Be Secret: A Practical Secure Authentication Channel for Web Browsers.
+- **作者**: Anuj Gautam; Tarun Kumar Yadav; Garrett Smith; Kent E. Seamons; Scott Ruoti
+- **方向**: 认证与访问控制
+- **解读**:
+密码管理器为用户带来显著安全收益，但恶意客户端脚本与浏览器扩展可以在密码管理器自动填充密码后，从网页中窃取凭据。本文扩展了 Stock 与 Johns 的早期工作，展示如何加固密码自动填充流程以抵御这类本地攻击。
+作者在 Firefox 中实现了该防御并开展实验，证明其能成功抵御 XSS 攻击与恶意扩展的窃取；同时验证实现与 Alexa 前 1000 网站中 97% 兼容，说明加固方案没有破坏主流网站的正常登录流程。
+随后作者将设计泛化，构造了第二个防御机制以抵御近期发现的针对 FIDO2 协议的攻击。该机制在 Firefox 中支持所有网站的 FIDO2 流程，但要求实现 FIDO2 的服务器做小幅修改（2-3 行代码）。
+我的思考：凭据在浏览器内的"最后一跳"保护长期被忽视——密码管理器防护再强，自动填充后的明文暴露于页面脚本之下，XSS 即可一击致命。该工作以"凭据应保持机密直到真正提交"为原则，给出了兼容性极佳（97%）的工程方案，并推广到 FIDO2，覆盖面广。局限是浏览器原生实现的推广依赖厂商采纳，且服务器端修改虽小仍需生态配合；未来 WebAuthn 条件式 UI 等新机制是否削弱其保护，值得跟踪。
+
+
+#### Dangers Behind Access Control: Understanding and Exploiting Implicit Permissions in Kubernetes.
+- **作者**: Nanzi Yang, Xingyu Liu, Wenbo Shen, Jinku Li, Kangjie Lu
+- **方向**: 认证与访问控制
+- **解读**:
+Kubernetes 作为容器编排的事实标准，被大量企业与云厂商广泛采用，其安全性至关重要。本文定义了一个新攻击面——"隐式权限"（implicit permission）：显式授予的权限在动态执行过程中会进而导致对其他资源的操作，使实体获得超出预期范围的能力，这类权限可转化为真实漏洞，攻击者可利用其攻陷整个集群。
+
+作者系统化研究隐式权限的产生机制：梳理 Kubernetes 中权限在动态执行链路中的传播与放大路径，理解并利用这些隐式权限构建攻击，并评估其影响范围。摘要截断，具体分析维度（如 RBAC、控制器、webhook 交互）无法完全确认。
+
+摘要未给出量化数据；预期贡献包括隐式权限的分类学、真实集群中的可利用性分析及缓解建议。
+
+K8s 权限模型的复杂度（RBAC 与控制器、准入机制的叠加）使"授予的权限"与"实际的能力"之间出现鸿沟，本文把这一鸿沟系统化定义为攻击面，对云原生安全有直接价值。局限在于隐式权限的语义边界较难严格界定，自动化检测与修复落地仍有挑战；摘要信息不全，攻击链的构造细节需以全文为准。
+
+
+#### Harnessing Vital Sign Vibration Harmonics for Effortless and Inbuilt XR User Authentication.
+- **作者**: Tianfang Zhang, Qiufan Ji, Md Mojibur Rahman Redoy Akanda, Zhengkun Ye, Ahmed Tanvir Mahdad, Cong Shi, Yan Wang, Nitesh Saxena, Yingying Chen
+- **方向**: 认证与访问控制
+- **解读**:
+扩展现实（XR）头显正日益成为大量敏感数据的仓库与 Web 应用网关，迫切需要便捷、安全的用户认证。传统口令/PIN 不适合 XR 的手势/语音界面且易遭肩窥；部分新系统引入双因素认证，但需要第二台设备（如手机或可穿戴）上的额外操作。
+
+本文提出首个"零操作、内置式"认证系统：利用生命体征（呼吸与心跳）自然激发的低频机械振动——这些振动使人类颅骨产生谐波信号，头显内建的运动传感器即可捕获携带佩戴者头面部结构与软组织生物特征的谐波。与直接使用原始信号不同，系统从不同频率间的比值提取更可靠的"谐波比值"特征，对周期性与幅度波动不敏感；并设计自适应滤波器减轻常见交互中的身体失真，结合注意力机制的深度学习模型实现鲁棒认证。
+
+10 个月、52 名被试、两款主流头显的评估显示：真阳性率超过 95%，对未授权用户的拒绝率达 98%，且在多种场景与长期使用中保持一致性。
+
+免打扰、免额外硬件的认证体验是该工作最大亮点，谐波比值特征巧妙地把"生理信号幅度波动"这一干扰转化为不变特征；局限是 52 人样本对生物认证而言偏小、缺乏跨年龄/体型多样性验证，且运动剧烈场景下身体失真可能仍影响鲁棒性，实用性需更大规模部署检验。
+
+
+#### May the ForceNotBe With You: Brute-Force Resistant Biometric Authentication and Key Reconstruction.
+- **作者**: Alexandra Boldyreva, Deep Inder Mohan, Tianxin Tang
+- **方向**: 认证与访问控制
+- **解读**:
+生物特征认证中，生物样本的噪声特性使密钥重建成为攻击突破口——攻击者可通过暴力枚举候选密钥/模板破坏认证安全或恢复密钥材料，而现有方案往往缺少针对这一攻击模式的系统防护。（无摘要，据标题推断）
+
+论文提出抗暴力破解（brute-force resistant）的生物认证与密钥重建方案。从标题"May the ForceNotBe With You"推断，其核心可能是结合模糊提取器或可验证秘密共享等密码原语，使每次尝试的成本可调、攻击者无法并行放大暴力破解收益，同时保证合法用户能稳定重建密钥。（无摘要，据标题推断）
+
+摘要缺失，无法给出量化结果；预期贡献在于抗暴力破解的安全模型与相应构造及其复杂度下界证明。（无摘要，据标题推断）
+
+生物认证的暴力破解风险在现实中常被低估——生物特征熵有限，若无抗枚举设计，公开模板即可被离线穷举；该工作与前一条（虹膜模糊提取器）同属"生物特征+密码学"主线，说明领域正从"防泄露"走向"防滥用"。局限是缺少摘要，具体原语、威胁模型与效率开销均无法在此评估，需以全文为准。
+
+#### How to Design Secure Honey Vault Schemes.
+
+- **作者**: Zhenduo Hou, Tingwei Fan, Fei Duan, Ding Wang
+
+- **方向**: 认证与访问控制
+
+- **解读**: 密码库（password vault）用一个主密码保护多个口令；蜜罐加密（HE）保护的"蜜罐密码库"通过让错误解密产生看似合理的诱饵内容来抵抗离线猜测攻击——攻击者必须在线验证才能判断解密结果真假。但如何系统化设计安全的蜜罐方案，此前缺乏原则性指导。
+
+作者以严谨理论为基础识别出三类主要漏洞，并提出针对性的设计准则：①采用准确的概率模型（PPM）自然语言编码器，抵御分布感知的区分攻击；②使用基于序列的 PPM 抵御"复用模型编码攻击"（源自 USENIX SEC'19）；③隐藏与用户真实密码库相关的自适应 PPM 提取（对抗 SEC'21 的攻击）。据此提出 VaultGuard，分别以创新的 NLE、HE-Adaptive 与自适应 PPM 满足三条准则，其中后两条分别消除与缓解对应漏洞。
+
+真实数据安全评估显示，VaultGuard 显著增强安全性，使攻击者需要执行 1.10–3.98 倍的在线验证次数；并提供高效的客户端概念验证实现。
+
+我的思考：把蜜罐密码库设计从"经验调参"提升为"准则驱动的可审计设计"，并直接回应两项 USENIX 攻击，攻防对应关系清晰、可复现性强。局限：3.98 倍验证开销提升的实际威慑力取决于在线验证成本（如服务端限速、2FA），对高价值目标仍需叠加其他措施；PPM 的通用性与语言覆盖也限制其适用范围。这是口令安全方向少见的"设计理论+工程实现"兼备的工作。
+
+
+### 数字取证（11 篇）
+
+#### OCR-APT: Reconstructing APT Stories from Audit Logs using Subgraph Anomaly Detection and LLMs.
+
+- **作者**: Ahmed Aly, Essam Mansour, Amr M. Youssef
+
+- **方向**: 数字取证
+
+- **解读**: APT 隐蔽、持久、常利用零日漏洞，传统基于节点属性（文件路径、IP）的异常检测易被混淆操纵且误报率高；分析人员不仅需要检测，更需要可解释、类人叙事的完整攻击故事支撑取证。现有系统要么输出碎片化告警，要么产生难以解读的密集图，缺乏上下文与叙事连贯性。
+
+OCR-APT 由两个组件构成：①OCRGCN 子图异常检测——将关系图卷积网络（RGCN）与一类 SVM 结合，按节点类型分别训练模型，使用结构/行为特征而非易变属性，提升对抗鲁棒性；异常节点按拓扑与行为一致性聚合为子图并按异常度过滤。②LLM 攻击调查器——六阶段 RAG 流水线：子图序列化为事件日志并建向量索引→LLM 提取 IOC 并核对源子图以过滤幻觉→逐子图生成报告→按 APT kill-chain 阶段聚合→LLM 法官补充图上下文→生成综合叙事报告，每阶段验证后推进。
+
+在 DARPA TC3、OpTC 与模拟 NODLINK 三个数据集上，平均 F1 0.96，优于 NODLINK（0.248）与 FLASH（0.945）；TC3 CADETS 主机 F1 达 1.00（FLASH 0.79）。重建报告覆盖大部分 kill-chain 阶段（如 TRACE 主机完整覆盖初始入侵、持久化、C&C、内网侦察）并标注 IOC；多阶段验证完全消除早期端到端方案的幻觉（基线会编造 malicious.exe 等不存在的实体）；GPT-4o-mini 与本地模型可检测出与 ChatGPT 相同的阶段（仅 OpTC 501 少两个）。
+
+我的思考：将 GNN 子图异常检测与 LLM 叙事重建结合是 APT 调查的新范式：不依赖脆弱属性增强鲁棒性、阶段式验证克制幻觉、报告直接服务 SOC 分析流程，设计完整且评测多基准。局限：训练需要无攻击日志、模拟 NODLINK 上最低 F1 0.82（漏 3/47 恶意实体）、不处理网络流量日志故漏检横向移动、TC3 部分阶段缺失源于 OS 日志解析问题。整体是 APT 检测可解释化方向的重要进展。
+
+- **arXiv PDF**: [OCR-APT: Reconstructing APT Stories from Audit Logs using Subgraph Anomaly Detection and LLMs.](https://arxiv.org/pdf/2510.15188)
+
+#### Unmask Tampering: Efficient Document Tampering Localization under Recapturing Attacks with Real Distortion Knowledge.
+- **作者**: Changsheng Chen; Wenyu Chen; Yinyin Lin; Bin Li; Jiwu Huang
+- **方向**: 数字取证
+- **解读**:
+文档图像篡改取证的目标是精确定位图像中被编辑/拼接的区域。现实中的攻击者常采用"重拍（recapturing）"手段：对篡改后的文档进行翻拍，以引入真实的光学失真来掩盖篡改痕迹，使现有检测与定位算法失效。该工作聚焦于此对抗场景下的高效篡改定位问题。（无摘要，据标题推断）
+核心思路是利用"真实失真知识"：通过建模重拍过程中引入的失真（如重采样、摩尔纹、镜头模糊、色彩偏差等）来训练/设计定位方法，使模型学会区分"自然重拍失真"与"真实篡改痕迹"，从而在被重拍破坏的取证线索中仍能定位篡改区域。
+标题强调"efficient"，意味着方法在定位精度之外还追求计算效率，使其可用于批量取证或移动端场景。摘要缺失，具体的精度指标、抗重拍鲁棒性提升幅度与效率数据需查阅正文。
+我的思考：重拍攻击是文档取证中的经典难题，现有检测器在其面前鲁棒性大幅下降，该工作针对性建模真实失真分布属于对症下药。潜在局限：失真模型若在训练分布与真实重拍条件存在 gap（不同相机、不同翻拍角度），泛化性存疑；"真实失真知识"的获取成本（需要大规模重拍数据配对）也是工程挑战。作为取证对抗研究，与既有重拍检测工作（如莫尔纹、JPEG 重压缩特征）的差异点值得细读。
+
+
+#### Rethinking Tamper-Evident Logging: A High-Performance, Co-Designed Auditing System.
+
+- **作者**: Rui Zhao, Muhammad Shoaib, Viet Tung Hoang, Wajih Ul Hassan
+- **方向**: 数字取证
+- **解读**:
+现有防篡改日志系统在高负载下开销高、数据丢失严重，且只能提供粗粒度的篡改检测；部署还需要重编译内核，落地门槛高。
+
+Nitro 是一个高性能审计系统，支持对日志篡改的细粒度检测，并通过 eBPF 技术避免内核重编译。作者在全新的定义框架下正式论证系统安全性，并给出满足该目标的实用密码学构造；与前作只关注日志处理不同，Nitro 与日志的前处理、后处理协同设计，充分利用系统级优化。高级变体 Nitro-R 引入内核内归约技术，进一步降低运行时开销。
+
+评估显示 Nitro 在高压力条件下取得 10 到 25 倍的性能提升，在真实场景中为 2 到 10 倍，同时保持近零日志丢失，并实现细粒度篡改检测。
+
+eBPF 免重编译与前后处理协同设计是实用创新，直击审计系统部署与性能两大痛点；近零丢失对取证场景尤为关键。细粒度检测配合正式安全性论证，使 Nitro 在同类防篡改日志工作中具备更强的可信度。局限在于 eBPF 环境的能力边界与内核版本依赖。
+
+
+#### A Decade-long Landscape of Advanced Persistent Threats: Longitudinal Analysis and Global Trends.
+
+- **作者**: Shakhzod Yuldoshkhujaev, Mijin Jeon, Doowon Kim, Nick Nikiforakis, Hyungjoon Koo
+- **方向**: 数字取证
+- **解读**:
+
+高级持续性威胁（APT）指由国家资助行为者实施的隐蔽长期攻击，常针对关键部门并长期不被发现。全球集体情报协作持续追踪这些活动，在公开网络上产生了大量 APT 行动文档。既有工作多聚焦特定方面（检测、评估、网络情报、数据集构建），很少对这些分散的档案进行纵向（longitudinal）系统考察。
+
+本文对十年间公开的 APT 档案进行纵向分析，系统梳理 APT 行动的演化模式与全球趋势，把分散的威胁情报整合为可比较的长期图景。
+
+摘要截断，未给出具体数字；核心产出是十年尺度上 APT 格局的纵向画像与全球趋势分析。
+
+把分散的威胁情报档案系统化、纵向化是威胁情报研究的重要补缺——单案例研究难以揭示攻击模式的长期演化与地缘趋势。十年跨度足以捕捉 APT 战术演变（如供应链攻击与零日利用的兴起）。挑战在于公开档案的覆盖偏差（主要反映已披露活动）与数据清洗质量，分析结论的可信度取决于对偏差的处理，需正文说明方法论。
+
+
+#### Combating Falsification of Speech Videos with Live Optical Signatures.
+- **作者**: Hadleigh Schwartz, Xiaofeng Yan, Charles J. Carver, Xia Zhou
+- **方向**: 数字取证
+- **解读**:
+高知名度演讲视频因其可及性与影响力成为伪造的首要目标。现有伪造检测多为纯数字方法，被动且易被先进编辑工具绕过；本文提出 VeriLight，一个低开销、不引人注目的系统，用于抵御对说话者身份、唇部与面部运动的视觉篡改。
+
+与纯数字检测不同，VeriLight 在活动现场通过不可感知的调制光创建动态物理签名，并将其嵌入所有视频录制。签名编码事件特有的语义特征（含说话者运动），并以密码学方式保护以防欺骗；核心要素包括：(1) 基于局部敏感哈希生成 150 位、姿态不变的紧凑特征；(2) 光学调制方案，速率超过 200 bps 且在实时场景中保持不可感知。下游可从任意录制中提取签名并与所展示内容比对以校验完整性。
+
+在大规模数据集上，VeriLight 检测伪造视频的 AUC 达到 0.99 以上、真阳性率 100%；对录制条件差异、后处理、白盒对抗攻击及不同特征提取方法均高度鲁棒。演示见 mobilex.cs.columbia.edu/verilight。
+
+物理层"在场签名"把可信锚点从数字域移到物理域，天然抵抗数字后处理与白盒对抗，是与纯数字检测互补的原创路线；局限是需要活动主办方部署调制光源、覆盖范围受照明条件限制，且对完全脱离现场录制场景的伪造无能为力。
+
+
+#### Hidden in Plain Bytes: Investigating Interpersonal Account Compromise with Data Exports.
+
+- **作者**: Julia Nonnenkamp, Naman Gupta, Abhimanyu Dev Gupta, Rahul Chatterjee
+
+- **方向**: 数字取证
+
+- **解读**: 技术辅助虐待（TFA）的幸存者怀疑账号被入侵时，通常依赖平台内置账户安全界面（ASI，如可信设备列表）评估风险，但这些界面提供的访问历史与安全事件信息有限且含糊。本文探索：能否利用数据保护法赋予的"数据出口权"获取结构化个人数据，来补充甚至超越 ASI，支持入侵调查。
+
+作者在六个主流平台上模拟四类攻击，对比分析攻击后的 ASI 与数据出口。结果显示数据出口始终包含比 ASI 更细粒度的登录历史与更丰富的设备/网络标识符；部分平台的数据出口还能将密码修改等安全动作与其他认证后活动关联到具体设备，提供识别攻击者的取证价值。
+
+研究同时讨论了在 TFA 干预中使用数据出口的可用性与实际挑战。
+
+我的思考：把"数据出口权"从合规工具重新定位为受害者赋权工具，角度新颖且社会价值明确——对求助无门的 TFA 幸存者，更细粒度的登录/设备数据可能直接支撑报警与追责。局限：跨平台格式不一致、用户需具备技术能力解析数据、平台可能压缩出口数据的字段；四类攻击的平台覆盖面有限。该工作为平台 ASI 设计（展示更完整安全事件）提供了实证改进建议，也提示平台应反思"数据出口到底出口了什么"。
+
+
+#### Poster: Recapture Detection Using Disparity Map Obtained from Dual-Pixel Image Sensors.
+- **作者**: Tetsu Ishizue; Sara Rampazzi; Takeshi Sugawara
+- **方向**: 数字取证
+- **解读**:
+用相机翻拍（recapture）显示器画面，是对用于验证图像来源、抵御 AI 生成深伪（deepfake）的密码学与取证技术的常见威胁。深度信息本可区分真实三维场景与平面屏幕，但额外加装深度传感器成本高昂，难以普及。论文提出利用智能手机摄像头中为快速对焦而普遍存在的双像素（dual-pixel, DP）传感器，在不增加任何硬件成本的前提下提取可区分真实场景与翻拍画面的线索。
+
+方法上，作者构建了一条信号处理流水线：首先通过立体匹配（stereo matching）算法，利用 DP 传感器生成的一对（左右）视图计算视差图（disparity map）；随后对场景进行平面拟合（plane fitting），评估其"平坦度"——真实场景视差分布立体、翻拍的屏幕则呈现平面特征，从而判别图像是否经过翻拍。
+
+初步概念验证（proof-of-concept）在数据集上的实验表明，该方法能够有效检测翻拍（摘要未给出具体准确率数字）。
+
+我的思考：该工作的巧妙之处在于"零成本复用"——DP 传感器本为对焦而生，却被用于取证对抗，落地门槛极低，适合大规模部署。与依赖额外深度硬件或学习型判别器的方案相比，其物理建模（平面拟合）思路更可解释、更稳健。局限也明显：翻拍角度、屏幕曲率、DP 传感器型号差异及后期处理都可能削弱视差信号；概念验证的规模有限。总体上是硬件侧取证的一个新颖且务实的补充方向。
+
+
+#### Poster: When Logs Misbehave: Retrieving Known APTs from Noisy Graphs.
+- **作者**: Guo-Wei Wong; Yi-Ting Huang; Ying-Ren Guo; Ming-Chuan Yang; Shou-De Lin; Wang-Chien Lee; Meng Chang Chen
+- **方向**: 数字取证
+- **解读**:
+从系统活动图中检索已知的高级持续性威胁（APT）攻击活动，是威胁狩猎的关键任务：图中节点表示 MITRE ATT&CK 技术，边编码时间或资源级关系，检索需要对图结构进行推理。论文指出，真实运营环境中的目标图往往是"脏"的——存在检测不完整、技术误分类以及良性活动造成的结构伪影，这使精确的结构匹配难以奏效。
+
+方法上，作者将该任务形式化为"近似子图匹配"：在带噪、部分可观测的目标图中，寻找与 APT 查询图（由已知攻击模式的 ATT&CK 技术序列构成）近似匹配的子图。文中提出一种基于嵌入（embedding-based）的初步检索方法，将图结构映射到向量空间，以容忍噪声与缺失的方式度量查询图与候选子图的相似度，旨在推动其成为实际环境中的鲁棒 APT 检索框架。
+
+作为海报论文，摘要未给出检索精度等量化结果，属初步方法展示。
+
+我的思考：APT 狩猎长期依赖人工规则与威胁情报匹配，"从日志图到已知攻击模式"的自动检索是安全运营的重要需求。该工作的务实之处在于正视日志噪声——现实中的检测缺失与误报是常态，近似匹配比精确匹配更贴近实战。局限方面：嵌入方法的可解释性差，安全分析人员难以理解"为什么匹配"；图规模与实时性也是落地瓶颈；与既有的 ATT&CK 序列比对工具相比，其鲁棒性是卖点，但缺乏基准数据集上的量化对比。方向正确，期待后续完整评估。
+
+
+#### Poster: High-Fidelity and Contextual User Activity Memory Forensics.
+- **作者**: Min-Chieh Wu, Jui-An Chang, Yu-Sung Wu
+- **方向**: 数字取证
+- **解读**:
+
+从内存转储中恢复应用的用户活动传统上是高度劳动密集的过程，原因在于转储数据量庞大且内部结构不透明，取证人员需要手工逆向各种应用的对象与数据结构。
+
+作者提出 RAM-Weaver：先从原始内存转储中蒸馏出关键信息，再利用大型语言模型（LLM）导航内存结构、支持交互式查询，实现上下文感知的用户活动检索，将"翻内存"变成"问内存"。
+
+结果表明，蒸馏过程可将数据量减少最高 99.9%，信噪比提升近 37 dB，使得小型离线模型也能处理；当与云端全规模模型结合时，能以极高的准确率恢复用户活动。
+
+我的思考：亮点在于"蒸馏 + 小模型本地化 + 云端大模型"的分层管线，把内存取证从人工逆向变为可查询的对话式分析，99.9% 缩减与 37 dB 信噪比是硬指标；局限是 LLM 输出的可信度与可复现性、以及面对反取证混淆时的鲁棒性，仍需在更大规模转储与对抗场景中进一步检验。
+
+#### Towards Explainable and Robust Deepfake Detection and Attribution: Enhancing Multimedia Forensics for the Next Generation of Synthetic Media.
+- **作者**: Raphael Antonius Frick
+- **方向**: 数字取证
+- **解读**:
+
+生成式 AI 制造的合成音频、图像与视频几乎与真实媒体难以区分，威胁数字信任、隐私与安全；现有深伪检测多为数据驱动的二分类，难以满足高利害场景对归因与可解释性的要求——例如法庭上需要证明"这段媒体由哪个模型生成"。
+
+作者（博士论文）旨在构建鲁棒、可泛化、可解释的取证框架，做到：1) 不仅检测 AI 生成媒体，还能将攻击归因到具体模型或方法；2) 为法律语境提供可解释的证据；3) 对对抗性操纵具有韧性。方法上整合基于模型的技术、外部数据利用与多媒体取证的既有成果。
+
+论文展示了关键挑战、目标与早期发现，推动可信取证的发展。
+
+我的思考：从"检测"升级到"归因 + 解释"是深伪取证的必经之路；如何在法庭证据标准下让解释可信、可复现是核心难点，当前处于早期阶段，具体方法的有效性有待后续实验验证，其框架若落地将为执法与平台审核提供可操作的取证工具。
+
+#### Towards Explainable and Effective Anti-Money Laundering for Cryptocurrency.
+- **作者**: Qishuang Fu
+- **方向**: 数字取证
+- **解读**:
+
+加密货币洗钱对去中心化金融系统的安全与合规构成严重威胁，助长勒索软件、欺诈等地下经济；现有检测方法要么缺乏可解释性，难以支撑监管与执法决策，要么难以有效处理隐私币。
+
+作者（博士论文）提出两个研究方向：其一，面向非隐私币的可解释反洗钱（AML）框架，通过交易语义解析与基于 LLM 的分类提升检测的可解释性；其二，探索追踪涉及隐私币（如 Monero）的非法资金流的新方法，聚焦提升去匿名化精度与识别跨链路径。
+
+初步结果表明，语义感知模块与微调模型在检测复杂洗钱行为上具有可行性；摘要未给出具体数值。
+
+我的思考："可解释性"与"隐私币追踪"双管齐下，覆盖了 AML 的两端痛点；用 LLM 做交易语义解析为图特征补充了上下文理解，Monero 追踪则极具挑战性；初步可行性值得期待，但跨链与隐私币场景的量化评估（精度、误报）是判断其价值的关键。
+
+### 无线与通信安全（8 篇）
+
+#### Uncovering Hidden Paths in 5G: Exploiting Protocol Tunneling and Network Boundary Bridging.
+
+- **作者**: Altaf Shaik, Robert Jaschek, Jean-Pierre Seifert
+- **方向**: 无线与通信安全
+- **解读**: 
+5G网络在设计上严格区分控制面与用户面、各接口与核心网功能，期望各自运行于隔离的信任边界内；但一旦边界未被正确强制，来自终端设备的恶意流量就可能沿非预期路径抵达敏感组件，破坏隔离假设。
+方法上，本文演示攻击者控制的UE（用户设备）如何利用协议隧道（protocol tunneling）与网络边界桥接（network boundary bridging）技术，突破网络隔离，绕过接口限制，与核心网内部元素直接交互。
+结果方面，作者成功展示了经攻击者控制的UE，通过协议隧道与边界桥接绕开隔离、访问核心网内部组件的完整攻击链，证实了5G信任边界在实际部署中可被穿透（摘要未提供量化指标）。
+我的思考：5G的"切片化、服务化"架构把信任边界设计得层层分明，但协议隧道与边界桥接正是穿越这些边界的天然载体——2G/3G时代的隧道攻击在5G语境下被重新激活，说明新架构并未自动消灭旧问题。局限是攻击依赖具体部署的边界配置，真实运营商网络的可利用性需进一步验证。该工作提示5G核心网需将"跨边界流量"纳入持续监测。
+
+
+#### CITesting: Systematic Testing of Context Integrity Violations in LTE Core Networks.
+
+- **作者**: Mincheol Son, Kwangmin Kim, Beomseok Oh, CheolJun Park, Yongdae Kim
+- **方向**: 无线与通信安全
+- **解读**: 
+蜂窝网络日益支撑关键基础设施，但安全研究多聚焦下行链路，上行链路——用户设备（UE）如何影响核心网——长期被忽视；作者定义一类称为上下文完整性违例（CIV）的漏洞：未认证或认证不当的UE篡改其他用户/订阅者的内部状态。此前只发现零星CIV实例，攻击面远未被探索。
+方法上，提出CITesting，首个在LTE网络中系统性检测CIV的框架：探索多样化的信令过程链（procedure chains），测试广泛的信息单元（Information Elements，IEs），并跨连接状态验证行为，从而自动化地发现UE能否篡改核心网内部状态。
+结果方面，CITesting系统化地覆盖了此前手工遗漏的CIV攻击面，发现并验证了若干新的上下文完整性违例（具体CIV清单与影响以论文正文为准）。
+我的思考：把"上行链路的上下文完整性"作为独立漏洞类别提出，是对蜂窝安全研究范式的重要补充——此前下行链路研究假设"核心网可信、UE不可信"的单向威胁模型，CIV揭示UE同样能污染核心网内部状态。过程链×IE×连接状态的系统化框架比手工挖掘更可复现。局限是限于LTE，5G与VoLTE等变体的可迁移性待验证。
+
+
+#### 5G-RNAKA : A Random Number-based Authentication and Key Agreement Protocol for 5G Systems.
+- **作者**: Hui Li; Haotian Li; Chi Ma; Jingjing Guan; Junchi Zeng; Haonan Feng; Ziming Zhao
+- **方向**: 无线与通信安全
+- **解读**:
+3GPP 定义的 5G-AKA 协议是 5G 网络认证与密钥协商的基础，但仍存在可链接性（linkability）、同步失败、序列号（SQN）暴露等攻击面，威胁用户隐私与服务可用性。已有改进方案往往保留这些缺陷，或因为继续沿用 3G 时代的 SQN 机制而带来高昂开销。
+5G-RNAKA 提出一种安全高效的 AKA 协议：与 5G-AKA 不同，它彻底取消计数器机制，改用 USIM 与用户设备（UE）生成的随机数进行会话标识。该随机数被嵌入网络（SN）的应答消息中，用于防止针对 UE 的重放攻击。
+移除 SQN 机制还带来额外的防护收益——消除了与序列号相关的同步失败与暴露攻击面，同时降低协议实现与维护开销。摘要强调其在不依赖旧有状态机制的前提下同时解决隐私与可用性两类问题。
+我的思考：SQN 机制是 5G-AKA 诸多问题的共同根源，直接"去 SQN、换随机数"是对症下药，设计方向简洁有力。但随机数方案需重新论证不可链接性与前向/后向安全，形式化安全证明与标准兼容性是关键；5G-AKA 的修改涉及跨运营商互操作，任何偏离 3GPP 规范的改动都面临落地阻力，需评估其被标准采纳的可能性。
+
+
+#### BFId: Identity Inference Attacks Utilizing Beamforming Feedback Information.
+
+- **作者**: Julian Todt, Felix Morsbach, Thorsten Strufe
+
+- **方向**: 无线与通信安全
+
+- **解读**: 自 WiFi 5 引入的波束成形要求客户端广播其信道特征的观测结果（Beamforming Feedback Information, BFI），这为感知引入了全新的信息源，也带来此前未被探索的隐私威胁。由于 WiFi 网络无处不在，该威胁的实际影响可能相当严重——攻击者无需主动探测即可被动获取可用于身份推断的无线信道特征。
+
+作者提出 BFId，首个基于 BFI 的身份推断攻击：利用客户端周期性广播的波束成形反馈作为生物特征信号，在包含 197 名个体录制的全新数据集上评估其有效性。
+
+实验表明，BFId 能以非常高的准确率推断个体身份，且在不同行走风格、不同视角下依然有效，即使样本规模很大也能保持性能，展示了 BFI 作为身份指纹的强判别力。
+
+我的思考：把"为性能而设计"的波束成形反馈重新解读为"为隐私而泄漏"的生物特征，视角新颖且攻击完全被动、无需与目标交互，威胁模型非常现实；197 人的数据集规模在同类感知攻击中也属扎实。局限在于实验环境（室内/特定天线配置）对泛化性的影响、以及随时间与设备更换的稳定性尚需更多分析；该工作也为后续提出 BFI 匿名化或加扰缓解措施提供了基线。
+
+
+#### Don't Look Up: There Are Sensitive Internal Links in the Clear on GEO Satellites.
+- **作者**: Wenyi Morty Zhang, Annie Dai, Keegan Ryan, Dave Levin, Nadia Heninger, Aaron Schulman
+- **方向**: 无线与通信安全
+- **解读**:
+地球同步轨道（GEO）卫星链路为电力、电信、政府、军事与商业等领域的远程关键基础设施提供 IP 回程。此前对 GEO 卫星的学术研究仅聚焦少数卫星与特定用例，其内部安全实践长期处于盲区。本文首次用消费级设备对 GEO 卫星流量进行大规模扫描。
+
+作者扫描了 25 个不同经度上的 39 颗卫星、覆盖 411 个转发器，并克服此前工作受限于信号质量差的问题，构建了能解析异构端点产生的多种协议的通用解析器，从而获得对组织内部安全实践的独特观察视角。
+
+结果发现 50% 的卫星存在明文流量；尽管链路层加密在电视广播领域已标准化数十年，这些回程链路通常在链路层与网络层都缺乏加密。具体观察到：多家运营商的未加密蜂窝流量（含呼叫与短信内容）、工业控制系统（utility 基础设施）的作业调度、军事资产跟踪、全球零售库存管理以及机载 WiFi 等敏感内部流量。
+
+我的思考：50% 卫星明文、且覆盖呼叫内容与工控调度，说明卫星回程这一"基础设施的基础设施"存在严重的加密债务——攻击者只需地面接收即可窥探关键行业内部运作，威胁模型简单而致命。与 Starlink 等现代低轨系统默认加密相比，传统 GEO 运营商的实践明显滞后。局限：扫描为被动观测，无法评估主动攻击的实际利用难度与具体受害者身份；该工作为监管与运营商推动"卫星链路默认加密"提供了有力证据，也提示卫星厂商应把网络安全纳入设计而非事后补救。
+
+
+#### Amigo: Secure Group Mesh Messaging in Realistic Protest Settings.
+
+- **作者**: David Inyangson, Sarah Radway, Tushar M. Jois, Nelly Fazio, James Mickens
+
+- **方向**: 无线与通信安全
+
+- **解读**: 大规模抗议中，镇压性政府常切断互联网以阻断抗议者通信；智能手机网状网络通过短距离、可能瞬时的无线电连接在邻近手机间路由消息，使抗议者无需中心化基础设施即可通信。但先前工作未能充分支持"高效私有群组通信"这一抗议刚需，且仿真环境未能真实刻画链路抖动、频谱争用与移动模型。
+
+Amigo 通过去中心化连续密钥协商（decentralized continuous key agreement）与路由协议支持安全群组消息：密钥协商在动态拓扑中持续进行，路由则应对节点频繁加入/离开的 ad-hoc 环境，专门针对抗议场景的挑战设计。
+
+大量仿真揭示：先前方法的扩展性很差，而 Amigo 的抗议专用优化带来明显收益；同时研究也表明，要在数千参与者的抗议规模网络中实现安全通信，仍有必须解决的开放问题。
+
+我的思考：作者（James Mickens 团队）把"真实抗议环境"的约束（链路抖动、频谱争用、拓扑剧变）作为一等设计输入，而非事后仿真装饰，方法论的严谨性是显著优点；对先前工作扩展性的否定性结论同样有价值。局限：仿真规模与实际部署（真实设备、射频环境）仍有距离，且"安全"保证对设备丢失、恶意节点渗透等对抗行为的具体强度需细读。这是"安全+人本"交叉领域少见的扎实系统工作。
+
+
+#### Security and Privacy Measurements in Cellular Networks: Novel Approaches in a Global Roaming Context.
+- **作者**: Gabriel K. Gegenhuber
+- **方向**: 无线与通信安全
+- **解读**:
+
+蜂窝网络是全球通信的骨干，为缺乏替代接入方式的地区提供电话与互联网访问，其安全直接影响数十亿用户；但架构创新（VoIP、eSIM 等）与商业动态（漫游、虚拟运营商、零费率）带来的复杂度，因缺乏开放、可扩展、地理多样的测量工具而难以被理解。
+
+作者（博士论文）计划开发新的测量方法，在全球漫游情境下开展蜂窝网络的安全与隐私测量（如漫游信令、eSIM 配置与运营商策略），覆盖此前难以触及的网络切片与运营商间信任边界。
+
+这是研究计划阶段的工作，摘要未给出实验数据。
+
+我的思考：测量型安全研究的价值在于揭示"理论安全与现实暴露"之间的差距；漫游场景横跨运营商信任链，是安全薄弱环节，eSIM 又扩大了攻击面，选题及时且实际；后续需要覆盖足够多样的国家/运营商样本才能支撑有说服力的结论，测量方法的开放性本身也将推动社区协作与重复验证。
+
+#### free5GC '25: The 1st free5GC World Forum.
+
+- **作者**: Jyh-Cheng Chen; K. K. Ramakrishnan
+- **方向**: 无线与通信安全
+- **解读**:
+5G 核心网是新一代移动通信的枢纽，其安全性与开源创新生态的成熟度直接影响 5G 及未来网络的可靠运行。首届 free5GC 世界论坛汇聚研究者、行业专家与开源贡献者，聚焦 5G 核心网（特别是安全）的挑战与最新进展。
+
+free5GC 是由 Linux 基金会托管、完全符合 3GPP 标准的 5G 独立组网（SA）网络平台，为开发者与企业提供构建下一代连接方案的强健原型环境；论坛以 L25GC+ 等近期架构为例——该架构在保持 3GPP 合规的同时显著降低控制面时延——展示了 free5GC 如何支撑前沿想法在接近生产级的核心网环境中开发与测试。
+
+结果（摘要中的例证性信息）：以 L25GC+ 架构作为平台支撑创新的典型案例（未给出具体时延量化数据）。
+
+我的思考：开源 5G 核心网是安全研究的理想靶场与测试床——研究者可以合法地在其上测试信令攻击、切片隔离漏洞与协议实现缺陷。L25GC+ 证明"开源合规 + 性能优化"可以兼得，这对运营商评估开源方案至关重要；论坛的长期价值在于为 5G 核心网安全社区提供一个共享、可复现的实验底座。
+
+### 数据安全（2 篇）
+
+#### End-to-End Encrypted Git Services.
+- **作者**: Ya-Nan Li, Yaqing Song, Qiang Tang, Moti Yung
+- **方向**: 数据安全
+- **解读**: Git 服务（如 GitHub）被广泛用于项目管理与多方协作，仓库内容乃至由其承载的代码/数据供应链价值极高，而系统被攻破已司空见惯。正如消息与云存储领域对端到端（E2E）安全日益重视，Git 服务也亟需同等强度的保护；然而现有方案（多为开源项目）要么只提供很弱的安全性，要么引入过大开销，难以落地。
+- 方法上，论文为 Git 服务设计端到端加密方案，目标是让服务端无法访问仓库明文内容，同时尽量保留 Git 的协作语义（克隆、推送、拉取等）。摘要侧重阐述动机与现状对比，具体密码学构造与系统设计细节未展开（原文摘要截断），核心是解决"加密存储"与"版本控制可用性"之间的矛盾。
+- 摘要未给出量化实验结果；论文的论证主线是现有方案在安全强度与开销两方面的不足，以及新方案在二者之间的更好权衡。
+- 该工作把端到端加密从消息/云存储延伸至高价值的代码托管场景，方向切中供应链安全关切，安全模型（是否覆盖元数据、协作方合谋、供应链完整性）与可用性平衡是成败关键；与同类加密仓库工具相比，如何在保持 Git 原生工作流的前提下实现 E2E 保护是其差异化价值所在。
+
+
+#### Poster: LogCraft: Crafting CVE-Aware Synthetic Worlds (Logs).
+- **作者**: Kai-Xian Wong, Chan-Jien Tan, Yi-Ting Huang, Ying-Ren Guo, Yu-Zih Jheng, Guo-Wei Wong, Meng Chang Chen
+- **方向**: 数据安全
+- **解读**:
+
+（无摘要，据标题推断）安全日志（系统、网络、应用日志）是威胁检测的基础，但真实日志数据稀缺、标注昂贵，严重制约日志异常检测模型的训练与评估，也影响安全运营人员对检测能力的验证。
+
+据标题推断，LogCraft 面向"CVE 感知的合成日志"生成：构建包含已知漏洞（CVE）攻击场景的合成"世界/日志"语料，使生成的日志既贴近真实分布又带有明确的攻击语义锚点，从而支持基于日志的检测系统训练与评测。方法上可能涉及模板化日志生成、CVE 攻击路径建模与日志结构仿真等。
+
+由于没有摘要，具体技术路线无法确认，也没有可引用的数据。
+
+我的思考：数据合成是日志分析领域的活跃方向，CVE 感知让合成日志天然带有可解释的"攻击标签"，与 LogCADA 等跨域日志异常检测工作可形成互补；风险在于合成分布与真实分布的系统性偏移，还需结合真实日志评测其保真度与下游检测收益。
+
+### 社会工程与人类因素（20 篇）
+
+#### Quantifying Security Training in Organizations Through the Analysis of U.S. SEC 10-K Filings.
+
+- **作者**: Jonas Hielscher, Maximilian Golla
+- **方向**: 社会工程与人类因素
+- **解读**: 
+安全意识与培训（SAT）市场年规模达数十亿美元，但组织实际采用情况缺乏可靠数据，现有调查多来自安全厂商且彼此矛盾，令研究者和决策者难以判断真实状况。2023年底生效的美国SEC新规要求公司在年报10-K中披露网络安全策略，提供了更一致的数据源。
+方法上，作者爬取并分析了 5,286 份覆盖不同行业与规模的公司10-K申报文件，结合关键词搜索与主题分析，得出相关主题在申报文本中的出现率，作为组织安全培训投入的下限估计，并比较行业、规模等维度差异。
+结果方面，78% 的公司报告实施了安全培训，27% 开展了钓鱼模拟演练，且普及率随行业与公司规模显著变化；作者将结果与厂商宣称对照，帮助组织审慎评估供应商说法，并为政策制定者提供可操作见解，同时发布了编码数据集与爬取工具以支持纵向研究。
+我的思考：以监管披露文本作为测量窗口相当聪明——10-K受法律约束、口径一致，弥补了调查数据的主观偏差，其"下限估计"的定位也诚实。局限是披露策略未必等于实际执行，关键词法只能反映"提及"而非"落地"，且受SEC规则刚生效、样本时段短的限制。对安全经济与人类因素研究提供了可复用的纵向测量基础。
+
+
+#### Automatically Detecting Online Deceptive Patterns.
+
+- **作者**: Asmit Nayak, Yash Wani, Shirley Zhang, Rishabh Khandelwal, Kassem Fawaz
+
+- **方向**: 社会工程与人类因素
+
+- **解读**: 欺骗性设计（dark patterns）利用认知偏差操纵用户做出非本意决策，造成经济损失与隐私侵害，在网购、社交等平台泛滥；法律与技术缓解手段缺乏可用、可规模化的方案。现有方法或依赖不稳定且多样的 HTML 代码，或直接提示视觉大模型（VLLM）——后者在截图上频繁幻觉、无法精确定位 UI 元素。
+
+AutoBot 采用两阶段管线：视觉模块用 Google Vision OCR 提取文本块（含坐标、字号、背景/字体色），再用合成数据训练的 YOLOv10 集成检测按钮、复选框、单选、开关等 7 类 UI 元素，合并生成结构化 ElementMap；语言模块让 LLM 按过滤后的 4 大类 11 子类分类法对每个元素分类并给出推理。数据集上用 GPT-4 生成 2.5K 网站创意、v0 生成 7.5K 网站、随机化 UI 库渲染 62K 截图训练；并用 Gemini 作 teacher 蒸馏到 Qwen2.5-1.5B 与 Flan-T5，落地浏览器扩展、Lighthouse audit 与 11,000+ 网站规模测量。
+
+欺骗模式检测 F1 达 0.93；YOLOv10 集成在人工标注的 Real-UI 数据集上总 F1 0.91（Molmo 仅 0.57）；直接提示 VLLM 的并发工作 DPGuard 宏 F1 仅 0.3452；测量显示大量网站单页存在多个欺骗模式。
+
+我的思考：核心创新是以截图为不变锚点、把"定位"与"分类"解耦到专业视觉模型与 LLM，既规避 VLLM 幻觉与定位缺陷，又绕开 HTML 不稳定问题；蒸馏使本地实时部署成为可能，推理文本还可训练小模型，方法链完整。局限：只能检测静态模式（nagging、hard-to-cancel 等动态模式需时序分析）、合成数据与真实分布存在偏移、仍需二次校验控制误报。对监管执法与用户赋权有直接价值，也为动态欺骗模式检测提供基础。
+
+- **arXiv PDF**: [Automatically Detecting Online Deceptive Patterns.](https://arxiv.org/pdf/2411.07441)
+
+#### A Sea of Cyber Threats: Maritime Cybersecurity from the Perspective of Mariners.
+
+- **作者**: Anna Raymaker, Akshaya Kumar, Miuyin Yong Wong, Ryan Pickren, Animesh Chhotaray, Frank Li, Saman A. Zonouz, Raheem Beyah
+
+- **方向**: 社会工程与人类因素
+
+- **解读**: 全球 80% 以上的货物经海路运输，船舶与港口是支撑国际贸易与互联网（海底电缆）的关键设施，Maersk 遭勒索软件攻击等事件表明其网络威胁真实存在。但海事网络安全研究远落后于汽车、航空等其他信息物理系统，缺乏从海员视角的系统性理解；大量物理接入点、碎片化国际监管、IT/OT 融合、远海孤立等特点使其不能简单套用传统 CPS 安全框架。
+
+作者采用定性用户研究：对 21 名军官级海员（含民用与军运）进行半结构化访谈（另有 2 名试点），迭代开放编码、双编码者独立编码并计算一致性（κ=0.837），按 Guest 标准达到饱和后额外访谈 5 人；围绕感知与实践、培训、监管展开分析。
+
+10 名海员报告了亲身经历的网络攻击（GPS/AIS/雷达欺骗与干扰、勒索软件等）；8 人提及恶意软件/勒索软件威胁，10 人担心邮件钓鱼，11 人指出物理接入是风险向量。系统性问题突出：全部 21 人描述其培训仅聚焦邮件与 USB 威胁且"泛化"；仅 10/21 知晓 IMO 标准；13 人认为海上比岸上更安全（与网络威胁感知脱节）；6 人担忧自主船舶。据此提出海员视角威胁分类，并给出改进培训、响应协议与监管框架的建议。
+
+我的思考：这是首个系统的海事网络安全海员视角研究，填补了"人"的空白；方法严谨（饱和准则、编码一致性、军民样本融合），发现"培训-现实脱节"与"过度自信"并给出可操作建议，呼应 USCG/DHS 2024 法规修订征求意见。局限：21 人样本有限、自我报告与社会期望偏差、外效度受限于定性范式；与 ICS 操作者研究结论相互印证，后续可扩展到更大样本量化验证。
+- **arXiv PDF**: [A Sea of Cyber Threats: Maritime Cybersecurity from the Perspective of Mariners.](https://arxiv.org/pdf/2506.15842)
+
+#### Noise and Stress Don't Help With Learning: A Qualitative Study to Inform Design of Effective Cybersecurity Awareness in Manufacturing Environments.
+- **作者**: Lina Brunken, Markus Schöps, Annalina Buckmann, Florian Meißner, M. Angela Sasse
+- **方向**: 社会工程与人类因素
+- **解读**: 工业 4.0 使制造业的网络安全风险快速上升，强制安全意识培训（CAP）被视为最佳实践，企业急于为一线工人群体调整培训方案；但制造业工人并非典型"办公"用户，其工作场景、技术接触面与信息环境截然不同，培训设计缺乏实证依据。
+- 论文在 6 个地点对 33 名工人开展半结构化访谈，了解他们对风险的认知、对风险相关性的判断、对现有培训措施的体验与看法，并用质性内容分析处理访谈数据。发现多数受访者仅在日常工作中偶尔接触"办公"类 ICT，主要触点是工资、休假等人事事务，以及车间共享的 kiosk 电脑。
+- 样本为 n=33 名工人、覆盖 6 个地点；核心发现是制造业工人的 ICT 接触面窄、培训与工作现实脱节，"噪音与压力无助于学习"（标题主旨）。
+- 该研究为制造业安全意识培训提供了稀缺的质性证据，指出"通用办公式培训"的错位并强调培训设计须贴合工人真实技术环境；局限在于样本量小、质性方法难以推广，且未量化培训效果差异，但其对 CAP 内容与形式设计的启示（减少噪音与压力、贴近实操触达点）具有直接实践价值。
+
+
+#### Empowering Parents to Support Children's Online Security and Privacy: Findings from a Randomized Controlled Trial.
+- **作者**: Xiaowei Chen; Verena Distler; Chloe Gordon; Yaxing Yao; Ziwen Teuber
+- **方向**: 社会工程与人类因素
+- **解读**:
+在普适计算社会，"数字原住民"的养育面临前所未有的挑战。家长常依赖在线资源来支持与引导孩子学习安全与隐私（S&P）相关内容，但海量信息使家长难以找到高质量、与孩子 S&P 需求匹配的资源；同时，家长在 S&P 议题上的能力与应对策略如何随时间纵向发展，此前鲜有研究。
+该工作采用随机对照试验（RCT）方法，为家长提供经过筛选的高质量 S&P 教育资源或干预手段，并通过纵向测量评估其在家长能力与应对策略上的因果效应——RCT 设计使其区别于常见的相关性调查。
+研究产出聚焦于：干预是否提升家长的 S&P 能力、能否改善其与孩子沟通与共同应对在线风险的策略，以及这些效果在时间维度上的持续性与演化。
+我的思考：儿童网络安全研究多聚焦孩子本身或描述性调查，用 RCT 严格检验"赋能家长"类干预的因果效果是该领域的稀缺贡献，方法论上值得肯定。局限：家长自报告测量可能存在社会期望偏差，S&P 行为改变的真实程度需客观指标佐证；样本代表性（人群、文化背景）决定结论可推广性。对设计儿童 S&P 教育产品与政策的从业者而言，其"什么干预真正有效"的证据非常实用。
+
+
+#### Security and Privacy Perceptions of Pakistani Facebook Matrimony Group Users.
+- **作者**: Mah Jan Dorazahi, Deepthi Mungara, Yasemin Acar, Harshini Sri Ramulu
+- **方向**: 社会工程与人类因素
+- **解读**:
+
+巴基斯坦2020年封禁Tinder等约会应用后，Facebook婚恋群组（如Soul Wonders、Two Rings、Soul Sisters）成为寻找伴侣的主要虚拟空间，参与者需公开照片、地址、电话等敏感信息，面临诈骗、敲诈、身份盗窃、人肉搜索与骚扰风险；这些风险与性别、文化规范（家族荣誉观念）交织，女性受到更多审视。该人群的安全与隐私认知此前缺乏系统研究。
+
+方法上，论文对23名巴基斯坦Facebook婚恋群组用户进行半结构化访谈，围绕四个研究问题展开：用户分享或保留哪些信息及其动因、对安全隐私风险的感知、影响资料真实性信任的因素、平台与管理员如何支持用户安全，并分析文化规范与期望如何塑造群组内行为。
+
+研究发现参与者隐私担忧强烈，因此只分享有限个人信息，并由此对潜在伴侣产生不信任；普遍担忧资料真实性与身份盗窃、骚扰、社会评判等重大风险；采取跨平台验证身份（如LinkedIn、Instagram）、避免分享财务信息、渐进式披露等自我保护策略。建议包括管理员更强身份验证、更严格网络安全法律、明确平台准则，以及限制截图与图片下载、匿名聊天等技术改进。
+
+我的思考：贡献成色在于首个系统研究巴基斯坦婚恋群组安全隐私认知的质性工作，揭示了"平台-文化-性别"多重压力下的风险应对策略，访谈带来丰富细节；局限是23个样本的代表性有限、自述与实际行为可能存在偏差，也未深入对比非参与者与男性视角。领域影响上，为南亚高语境文化中的在线婚恋安全提供了实证基础，直接指导平台设计（匿名聊天、防截图）与政策建议；与西方约会应用研究相比，凸显了家族介入与文化审查对隐私行为的独特塑造，为跨文化安全研究补充了稀缺数据点。
+
+- **arXiv PDF**: [Security and Privacy Perceptions of Pakistani Facebook Matrimony Group Users.](https://arxiv.org/pdf/2509.08782)
+
+#### 'Is this a scam?': The Nature and Quality of Reddit Discussion about Scams.
+
+- **作者**: Elijah Robert Bouma-Sims, Mandy Lanyon, Lorrie Faith Cranor
+
+- **方向**: 社会工程与人类因素
+
+- **解读**: 人们常通过社交媒体平台寻求关于电商欺诈、钓鱼等骗局的建议，但针对这类讨论本身性质的研究非常缺乏。理解受害者在真实社区中如何识别骗局、求助与互相支持，对于改进预防与补救措施具有重要意义。
+
+作者对四个专注骗局讨论的 Reddit 社区（主要来自 /r/Scams）中 1,525 篇帖子进行多阶段主题分析，考察发帖者如何识别骗局、讨论骗子策略、以及如何获得应对受害的心理支持。
+
+分析发现：帖文中的骗局大多通过互联网相关技术媒介传播；社区用户尤其提供信息支持与对受害者的安抚，但部分评论也强化了"受害者有罪"的态度；不同社区求助类型存在质性差异，例如 /r/Sextortion 板块更被用于情感支持。作者据此总结 Reddit 作为骗局预防与补救资源的价值，并讨论了执法机构未来参与社区的可能性。
+
+我的思考：这是少有的从受害者社区视角系统研究骗局求助生态的工作，主题分析编码严谨，样本量（1,525 篇）在定性研究中相当可观；对反欺诈教育、受害者心理支持与执法介入策略都有直接启示。局限在于 Reddit 用户群的代表性偏差、帖子自我报告的可信度、以及平台算法对讨论可见性的影响需注意；与求助热线、银行反欺诈部门的数据结合可形成更完整的补救闭环。
+
+
+#### It Should Be Easy but... New Users' Experiences and Challenges with Secret Management Tools.
+
+- **作者**: Lorenzo Neil, Deepthi Mungara, Laurie A. Williams, Yasemin Acar, Bradley Reaves
+- **方向**: 社会工程与人类因素
+- **解读**:
+软件开发者面临泄露软件秘密（如 API 密钥、密码）的风险，可能造成重大损害。行业、学术界与安全指南强烈推荐使用秘密管理工具（SMT，如 HashiCorp Vault、Infisical）在集中位置安全管理秘密，然而秘密泄露仍屡见不鲜，新手用户普遍反映学习搭建和使用 SMT 很困难。
+
+本研究聚焦新用户使用 SMT 的体验与挑战，考察公开可用资源（如工具文档、界面）能否真正帮助新手有效学习。尽管此类工具通常附带官方文档等资源，研究质疑其实际学习效果——缺少可用的入门引导时，快速采用并有效使用 SMT 可能并不现实。
+
+摘要层面未给出量化数据。核心发现是现有资源未能有效支持新用户掌握 SMT，可用性缺口成为安全实践落地的现实障碍，导致业界推荐与实际采用之间存在明显鸿沟。
+
+该工作把可用性（usability）置于安全工具研究的中心，延续了密码学工具"人因失效"的研究脉络：安全机制再好，开发者若无法上手就只是纸面防御。局限在于样本规模与工具生态的代表性，且缺少对特定 SMT 交互设计的纵向测量。对社区而言，投入 onboarding 设计与以用户为中心的安全评估，可能比堆叠更多功能更为迫切。
+
+
+#### How Blind and Low-Vision Users Manage Their Passwords.
+
+- **作者**: Alexander Ponticello, Filipo Sharevski, Simon Anell, Katharina Krombholz
+- **方向**: 社会工程与人类因素
+- **解读**:
+
+安全且便捷地管理密码仍是众多用户未解的问题。既有研究考察了普通用户的密码管理策略并识别出痛点（如安全顾虑导致不安全实践），但对盲人与低视力（BLV）用户如何使用密码管理器缺乏了解——他们的可访问性需求可能根本改变密码管理的可行方案。
+
+本文对 N = 33 位 BLV 参与者进行定性访谈研究，考察其密码管理实践与密码管理器的使用体验。
+
+研究发现：所有参与者都在一定程度上使用密码管理器，并认为其相当可访问；但采用主要由存储与取回密码的便利性驱动；生成强随机密码等核心优势因缺乏实用的可访问性而被回避；密码管理器未能满足用户对自主性（agency）的底层需求，这源于过往不可访问的使用体验。
+
+"便利性驱动采用、可访问性缺失阻碍优势发挥"揭示了无障碍设计与安全设计的错位——生成强密码本是管理器核心价值，BLV 用户却无法利用。33 人访谈规模在定性研究中可接受，发现具有明确设计指导意义：无障碍设计应覆盖完整密码生命周期（生成、输入、双因素认证）。该研究填补了安全可用性研究中常被忽视的群体盲区。
+
+
+#### HW-Spy: Handwriting Inference by Tracing Pen-Tail Movements.
+- **作者**: Long Huang, Kang G. Shin
+- **方向**: 社会工程与人类因素
+- **解读**:
+键盘输入虽是主流文本录入方式，但手写仍在生成、录入或记录信息（如填写重要或私人表单）中扮演重要角色。学界对击键推断攻击已有大量研究，却对手写推断关注甚少，而手写同样可能泄露高度敏感的信息，是一个被低估的泄露面。
+
+本文提出新型手写推断攻击 HW-Spy，通过追踪受害者的笔尾（pen-tail）运动来重建书写内容。攻击场景中笔尖与书写面均不在攻击者摄像头视野内——例如受害者在线上会议中多任务处理时、公共空间被远程监控记录时，或银行、经销商、地产办公室的监控摄像头捕获其书写行为时，攻击者仅凭笔尾摆动这一间接信号即可推断内容。
+
+摘要未给出具体量化指标，作者强调这是对手写推断这一未充分探索泄露面的首次系统评估，并展示了在多种现实监控场景下重建手写内容的可行性。
+
+HW-Spy 的价值在于填补手写推断的研究空白，且威胁模型非常现实——监控摄像头无处不在，无需看到纸面即可恢复书写内容，颇具危险性；局限是攻击效果依赖书写者习惯、书写面材质与摄像头视角，且摘要缺乏量化数据支撑，攻击精度与泛化能力需以全文实验为准。
+
+
+#### Competing for Attention: An Interview Study with Participants of Cryptography Competitions.
+- **作者**: Ivana Trummová, Juliane Schmüser, Nicolas Huaman, Sascha Fahl
+- **方向**: 社会工程与人类因素
+- **解读**:
+密码学竞赛（如 NIST 主办的多轮征集）长期以来推动新密码学的发展与标准化，从候选提交中筛选出安全高效的对称/非对称加密、哈希、数字签名乃至后量子算法。但学界对竞赛过程的人类因素所知甚少：参与者的动机、评审互动、流程如何塑造最终结果，以及这些过程对安全性的感知影响，都是空白。本文用访谈研究填补这一空白。
+
+作者对密码学竞赛参与者进行半结构化访谈，系统收集其参赛经历、对竞赛流程（提交、评审、轮次筛选）的看法，以及竞赛结果对个人与社区安全实践的感知影响，属于典型的定性用户研究（usable security 方向）。
+
+摘要未给出访谈样本量、主题编码等量化或结构化发现，结果以质性主题为主。
+
+我的思考：这是密码学标准化研究中罕见的"人"的视角——标准化不只是数学，也是社会过程；评审注意力有限、早期提交的路径依赖、社区激励都可能实质影响哪个算法胜出。Fahl 团队在可用安全与人类因素研究上积累深厚，方法可信度较高。局限在于访谈样本的代表性与自我报告偏差；该研究对 NIST 等组织改进竞赛流程（如盲审、结构化反馈）有直接参考价值，也提示后量子标准化中同样存在此类人文风险。
+
+
+#### Digital Safety for Children with Intellectual Disabilities When Using Mobile Devices from Parents' and Teachers' Perspectives.
+
+- **作者**: Janice Jianing Si, Xin Lin, Haorui Cui, Xiaobo Zhou, Kanye Ye Wang
+
+- **方向**: 社会工程与人类因素
+
+- **解读**: 移动设备日益融入儿童日常，数字安全问题凸显；智力障碍（ID）儿童因认知与行为挑战更易受害，但针对这一群体的专门研究几乎空白。本文以家长与特教老师——ID 儿童数字使用的关键监护者——为对象，系统探索其面临的独特数字风险。
+
+作者对家长和特教老师开展半结构化访谈，从监护者视角归纳风险与应对。研究发现四大主要担忧：模仿有害行为、设备误操作、诈骗风险以及网络欺凌暴露。
+
+针对这些风险，监护者主要依赖主动教育策略（proactive educational strategies）辅以技术管控（如设备限制）。作者强调需要随技术演进调整实践，并提出可推广到其他风险弱势用户群体的包容性建议。
+
+我的思考：以访谈方法为"被忽视群体"建立证据基础，是社会工程与人类因素方向里扎实的定性贡献——ID 儿童的数字风险（误操作、模仿）确实与普通儿童显著不同，监护者视角填补了研究空白。局限：样本代表性（国家/地区、家长 vs 老师差异）、访谈规模未在摘要披露；"对策有效性"缺乏实证测量。结论呼吁的包容性设计原则对行业有参考价值，但落地为可评估的干预方案仍需后续工作。
+
+
+#### Phishing Susceptibility and the (In-)Effectiveness of Common Anti-Phishing Interventions in a Large University Hospital.
+
+- **作者**: Jan Tolsdorf, David Langer, Luigi Lo Iacono
+
+- **方向**: 社会工程与人类因素
+
+- **解读**: 钓鱼邮件是医院安全事件的主要入口；欧盟监管施压与网络安全资源有限的双重约束下，医院常采用警告横幅、[EXTERNAL] 标记等"最小努力"的现成干预措施，但其有效性在由医护、护理、行政、IT 等多类人群构成的医院环境中缺乏实证。本文以大规模仿真回答"哪些干预真正有效"。
+
+作者在德国一所大学医院对 7,044 个账户开展大规模钓鱼仿真，分析易感性在群体间的差异，以及邮件时机、语气、语境、说服框架等特征与 11 种常见就地干预措施对风险行为的影响。
+
+结果显示：易感性在不同员工群体间差异显著，且干预效果也大不相同；即使少量邮件也构成实质风险，且风险约持续三天。最有效的是稳健的技术检测（垃圾邮件过滤、邮件内警告）；禁用链接等摩擦式措施效果混合；显示名抑制与通用 [EXTERNAL] 标记则无效或不一致。问卷还揭示部分员工产生恐惧、羞耻、内疚甚至敌意反应，凸显仿真实验的伦理挑战。
+
+我的思考：7,044 账户的规模与"干预×人群×邮件特征"的多维测量，为医院这类复杂组织的安全投入提供了稀缺的实证依据——"最小努力干预"效果不佳的结论直接支持将预算投向技术检测。局限：单机构、仿真邮件与真实钓鱼的生态效度差异、未披露点击率的绝对水平；对"恐惧/羞耻"情绪反应的伦理边界讨论很有价值，也为未来组织级安全培训提供了设计约束。
+
+
+#### Poster: Longitudinal Analysis of Romance Scam Infrastructure Evolution: Evidence of Strategic Legitimization.
+- **作者**: Nayeon Ryu; Heeyeong Suh; Seyoung Lee
+- **方向**: 社会工程与人类因素
+- **解读**:
+浪漫诈骗（Romance Scam）是造成重大经济损失的网络犯罪类型，据报道每年损失超过 6.5 亿美元，但针对其基础设施的系统性纵向研究十分匮乏。论文对 2012-2024 年间 ScamDigger 收录的 11,674 个浪漫诈骗者档案进行了长达 12 年的基础设施演化分析，利用 IP 地理定位与 ASN 分类揭示出 2019 年这一显著拐点。
+
+与"技术日益先进"的直觉相反，研究观察到诈骗基础设施正策略性地向合法基础设施迁移：传统 ISP 的使用比例大幅上升，而代理（proxy）使用率从 2019 年前的平均 90.6% 降至 2019 年后的 53.1%，对应 37.5 个百分点的降幅。分析还揭示了地域专业化：运营基地高度集中于西非 ISP（尼日利亚 94.2%、加纳 94.6%），并利用欺骗性的西方云服务基础设施开展活动。
+
+这一"战略合法化"趋势说明诈骗者正主动利用看似正常的 ISP 与云资源来规避检测，传统的以代理/恶意基础设施为特征的检测规则将日益失效。
+
+我的思考：该工作以 12 年、上万档案的规模提供了难得的纵向证据，拐点识别与地理专业化分析对执法与平台防御有直接参考价值。局限在于：ScamDigger 档案的采样偏差、IP 地理定位精度以及档案更新滞后都可能影响结论的稳健性；此外 2019 年拐点与 COVID-19 等外部因素的混淆效应未被剥离。与同类网络犯罪基础设施研究相比，其"合法化迁移"的叙事具有独特的新意，但也提示未来的诈骗检测必须融入对合法基础设施上行为特征的建模。
+
+
+#### Poster: Computer Security Researchers' Experiences with Vulnerability Disclosures.
+- **作者**: Harshini Sri Ramulu; Anna Lena Rotthaler; Jost Rossel; Rachel Gonzalez Rodriguez; Dominik Wermke; Sascha Fahl; Tadayoshi Kohno; Juraj Somorovsky; Yasemin Acar
+- **方向**: 社会工程与人类因素
+- **解读**:
+漏洞披露是改善数字生态安全的必要环节，但对研究者而言过程可能充满挑战：有时甚至难以确定受影响的当事方是谁、如何联系他们，研究者还可能被忽视或遭遇阻力。论文聚焦安全研究者在漏洞披露过程中的真实经历，试图理解这一"人的环节"如何影响漏洞修复的最终成效。
+
+方法上，作者对计算机安全研究者开展实证调查，系统收集其披露经历、遇到的障碍与成功经验，从中提炼最佳实践（best practices），并面向四类受众提出建议：研究者本人、雇佣他们的机构、产业界以及监管机构，目标是使漏洞披露机制更顺畅、更有效。
+
+作为海报论文，摘要未给出样本规模与统计结果，属质性/实证研究的设计陈述。
+
+我的思考：漏洞披露研究多聚焦技术流程（CVE 编号、协调时间线），而"谁负责联系、如何被对待"这类人类因素同样决定漏洞能否及时修复。该工作的价值在于把社会科学方法引入安全流程研究，其建议对协调披露（CVD）政策的完善有直接参考意义。局限在于：样本代表性（自选参与者的幸存者偏差）与自我报告的主观性需谨慎对待；跨文化、跨厂商的披露体验差异也值得细分。与同类披露调查相比，其面向"研究者群体"的视角补全了以往偏重厂商视角的研究版图。
+
+
+#### Poster: Impulse in the Clickstream: Behavioral Insights from Browsing History.
+- **作者**: Shubham Malaviya; Anuj Bagad; Manish Shukla; Sachin Lodha
+- **方向**: 社会工程与人类因素
+- **解读**:
+钓鱼攻击常利用用户的冲动性（impulsivity）：用户在未经审慎评估的情况下条件反射式点击恶意链接。既有研究多关注用户的钓鱼安全意识与识别能力，却较少探究"冲动点击"这一行为本身的发生模式。论文利用浏览器历史数据刻画用户的冲动性特征，填补这一空白。
+
+方法上，作者提出基于浏览历史的冲动性表征方法，并进行会话级（session-level）分析。关键发现是：用户的冲动行为具有情境性与上下文依赖性——同一用户在不同会话、不同情境下的点击冲动程度差异显著，而非稳定的个人特质。这一发现为自适应安全干预提供了依据：防御措施不应"千人一面"，而应根据用户当前行为状态动态调整。
+
+作为海报论文，摘要未给出量化指标，属行为学研究的初步成果。
+
+我的思考：把"冲动性"从稳定人格特质重新定义为情境化状态，是这篇工作的核心洞见——它直接挑战了"高风险用户"静态画像的常见做法，支持"实时状态感知"的防御思路。与既有钓鱼研究相比，其用真实浏览历史（而非实验室问卷）度量行为，生态效度更高。局限在于：浏览历史无法直接观测"冲动"，只能间接推断，度量效度需验证；隐私敏感数据的使用与用户知情同意也是研究伦理上的现实约束。方向有价值，后续可与实时干预系统结合验证效果。
+
+
+#### Poster: Decoding Social Engineering: A Multi-Level Framework for Tactic Generation, Annotation, and Evaluation.
+- **作者**: Yicun Tian, Youyang Qu, Ming Ding, Shigang Liu, Pei-Wei Tsai, Jun Zhang
+- **方向**: 社会工程与人类因素
+- **解读**:
+
+钓鱼邮件越来越多地嵌入复杂的社会工程（SE）策略来操纵收件人，但现有的组织训练模拟与检测系统很少纳入策略复杂度，也未揭示策略是如何以语言形式嵌入的，导致训练与检测脱节。
+
+作者开发了在三个层级（Level 1 浅显、Level 2 中等、Level 3 深层）生成、标注与评估 SE 策略的方法：通过"生成—交叉验证—高亮"管线构建可靠标注数据集，确保标签与嵌入策略的语义对齐；触发片段随后被聚类、合成为细粒度模式，刻画每个策略在各层级的呈现方式，支撑多层级框架，并经 LLM 实验验证。
+
+结果显示，检测准确率随策略复杂度增加而下降，证实了框架的分层能力及其在训练、模拟与策略感知设计中的价值；摘要未给出具体数字。
+
+我的思考：把"策略复杂度"作为显式维度引入钓鱼研究，填补了训练模拟与检测之间的断层，三级分层与可标注管线有实用迁移价值；但 LLM 实验的规模与基线的充分性需在正文中核实。
+
+#### S2S-SED: A Speech-to-Speech Approach for Detection of Social Engineering Attacks in Audio Conversations.
+- **作者**: Leonardo Erlacher
+- **方向**: 社会工程与人类因素
+- **解读**:
+
+语音社会工程攻击因生成式语音合成、神经语音克隆与心理自适应操纵而日益复杂，成为电信诈骗与冒充攻击的主要载体；虽然 LLM 在文本欺骗检测上表现出色，但它们依赖转写文本，丢失了重音、紧迫感、话轮切换等对识别操纵意图至关重要的韵律与交互线索。
+
+作者提出 S2S-SED：直接编码原始语音为连续潜在表征（隐式保留韵律模式、情绪基调与语义内容），再由统一推理模型评估对话动力学（如话轮转换），全程不依赖中间文本或辅助子系统；项目还计划构建领域标注的语音攻击数据集，训练音频原生 LLM。
+
+这是博士研究计划，无最终数据。
+
+我的思考：直击"转写即丢信息"的检测盲区，语音原生建模是生成式语音攻击时代的重要方向；成败关键在数据集质量——话轮与韵律标注的成本和一致性是现实挑战，值得跟踪其后续实验，其数据集与模型也将构成领域的公共资源。
+
+#### Postmortem Voice Cloning: Individuals Perspectives of Ownership and Deceptive Harms.
+- **作者**: Jennifer Vander Loop
+- **方向**: 社会工程与人类因素
+- **解读**:
+
+语音克隆技术只需几秒音频即可复现他人声音，已被用于冒充诈骗（如冒充亲属急需求助的"家人紧急"骗局）；死后克隆带来新的滥用机会——不良行为者可冒充逝者、对遗属进行情感操纵，甚至影响遗产与身份相关的信任关系。
+
+作者采用混合方法（调查与参与者访谈），在既有伤害分类法的指导下进行主题分析，探究人们如何看待语音所有权、死后克隆的风险，以及对未经授权使用的隐私期望、监管与预防机制。
+
+这是进行中的论文研究，摘要未给出最终数据。
+
+我的思考：把"语音克隆"的伦理与法律讨论延伸到逝者场景，聚焦遗属这一受害视角是独特贡献；实证结果可为平台责任、法律保护提供依据；样本的代表性与文化差异是这类研究的常见挑战，结论外推需谨慎，未来还可扩展跨文化样本以检验结论的普适性；随着克隆技术门槛降低，此类研究的政策意义将持续上升。
+
+#### HAIPS '25: First ACM CCS Workshop on Human-Centered AI Privacy and Security.
+
+- **作者**: Tianshi Li; Toby Jia-Jun Li; Yaxing Yao; Sauvik Das
+- **方向**: 社会工程与人类因素
+- **解读**:
+AI/ML 的快速发展催生了一系列新颖而紧迫的隐私与安全挑战：生成式 AI 被用于制造有害内容、编码助手生成不安全代码、与 ChatGPT 的过度共享引发意外泄露、LLM 智能代理出现意外数据外泄等。与此同时，AI 也为解决长期存在的终端用户关切、赋能从业者采纳更佳实践提供了新机会。
+
+首届 HAIPS 工作坊旨在围绕"以人为本"视角，构建并壮大关注这些议题的社区，推动跨学科研究议程——在应对这些挑战时切实纳入人的因素（用户认知、行为与决策）。
+
+结果（摘要为议题框架性陈述，无量化数据）：明确列出了生成式 AI 滥用、不安全代码生成、过度共享泄露、LLM 代理泄露四大挑战方向。
+
+我的思考：主流 AI 安全研究多聚焦模型层面（对抗样本、越狱、对齐），而 HAIPS 补充了关键的"人"的一环——很多泄露与滥用根源于人机交互设计。组织者兼具人机交互（HCI）与安全背景，议题设置能触及真实用户痛点；与 AISec、LAMPS 等模型中心的工作坊形成良好互补。
+
+### 程序分析与形式化验证（15 篇）
+
+#### Wanilla: Sound Noninterference Analysis for WebAssembly.
+
+- **作者**: Markus Scherer, Jeppe Fredsgaard Blaabjerg, Alexander Sjösten, Matteo Maffei
+
+- **方向**: 程序分析与形式化验证
+
+- **解读**: WebAssembly 正成为插件系统、智能合约、边缘计算等安全关键场景的发行格式，但模块内所有函数共享同一可变线性内存，内存不安全语言编译后可能越界破坏任意数据，且缺乏 ASLR 与只读页缓解；模块与宿主之间的信息流也需要形式化保证。此前 Wasm 尚无 sound 的纯静态非干涉分析：Wassail 为性能放弃部分内存流失去 soundness，SecWasm 依赖运行时动态组件。
+
+核心思路是把基于抽象解释的流敏感、值敏感可达性分析（以 Wappler 为例）提升为非干涉分析：为值附加 taint 标签，控制流依赖 tainted 值时提升上下文 taint 以追踪隐式流；创新在于 Join 规则——在控制流汇合点比较各相关执行中同位置的 taint 与具体值，若所有相关运行在 tainted 位置取值一致则移除 taint（值敏感的关系推理），从而兼得 soundness 与精度，避免传统类型系统的过度保守。实现为基于 Horn 子句与 Z3 的 Wanilla，并给出记忆级与事件轨迹级两条 soundness 定理。
+
+作为首个自动、sound、纯静态的 Wasm 非干涉分析，Wanilla 在两个非干涉数据集上验证了性能与精度：与通用 hyperproperty 检查器相比终止性更优；在 82 个智能合约"坏随机数"完整性基准上，比 Wassail 与 SecWasm 在精度和 soundness 上更胜一筹；并发布含 57 个 Wasm 模块、311 个测试用例的新基准，能验证含隐式流与 secret 清零逻辑的真实程序。
+
+我的思考：理论贡献在于将 taint 追踪与值敏感关系推理统一，证明"精确可达性分析可提升为 sound 非干涉分析"；对智能合约、边缘计算等 Wasm 生态的安全验证有直接实用价值。局限：文本为技术报告版、实验章节不完整；浮点被过度近似；循环需保守预分析帮助 SMT 终止。
+
+- **arXiv PDF**: [Wanilla: Sound Noninterference Analysis for WebAssembly.](https://arxiv.org/pdf/2509.08758)
+
+#### RVISmith: Fuzzing Compilers for RVV Intrinsics.
+- **作者**: Yibo He, Cunjian Huang, Xianmiao Qu, Hongdeng Chen, Wei Yang, Tao Xie
+- **方向**: 程序分析与形式化验证
+- **解读**:
+
+现代处理器普遍配备SIMD指令以实现细粒度数据并行，但编译器自动向量化因编译期信息不足而性能受限，程序员常借助编译器内建函数（intrinsics）手动操纵SIMD指令。编译器对SIMD intrinsics的bug会产生错误计算结果、数据丢失、程序崩溃等安全威胁。此前Csmith、YARPGen等生成式测试与EMI等变异式测试都无法生成含SIMD intrinsics的程序，该领域缺乏系统测试手段。
+
+RVISmith是基于已批准的RVV（RISC-V向量扩展）intrinsic规范实现的随机化模糊测试器，生成包含各种RVV intrinsic调用序列的定义良好C程序，追求三个目标：高intrinsic覆盖率、序列多样性强、避免已知未定义行为。评估覆盖GCC、LLVM、XuanTie三款现代编译器，通过跨编译器、跨优化级别及等价程序的差分测试定位bug。
+
+实验结果显示，RVISmith的intrinsic覆盖率比现有最先进RVVS fuzzer高11.5倍；通过差分测试迄今发现并报告了13个此前未知的编译器bug，其中10个已被确认，另外3个已被编译器开发者修复。
+
+我的思考：贡献成色在于首次系统化填补了SIMD intrinsic编译器测试的空白，覆盖率11.5倍与13个真实bug（10确认3修复）说明方法有效且生态反响良好；局限是生成受规范约束的调用序列可能漏掉规范外或边界语义bug，未定义行为规避策略也会缩小探索空间。领域影响上，RISC-V生态快速扩张、安全关键软件越来越依赖向量化，编译器正确性直接关系软件供应链安全；与Csmith/YARPGen/EMI相比，RVISmith开辟了SIMD intrinsic这一新维度，为同类扩展（如SVE、AVX intrinsics）的测试提供了可复用范式。
+
+- **arXiv PDF**: [RVISmith: Fuzzing Compilers for RVV Intrinsics.](https://arxiv.org/pdf/2507.03773)
+
+#### Logical Relations for Formally Verified Authenticated Data Structures.
+- **作者**: Simon Oddershede Gregersen, Chaitanya Agarwal, Joseph Tassarotti
+- **方向**: 程序分析与形式化验证
+- **解读**: 认证数据结构（ADS）允许不可信第三方执行操作并产出可验证证明，但正确实现极难；λ• 编译器可自动生成认证版本，却受限于自定义编译器前端的维护负担、关键优化未被安全/正确性定理覆盖，且生成代码慢于手写实现（如树结构验证器耗时约为手写 C 版的 2 倍）。
+- 方法上，基于 Atkey 的模块系统编码（免去自定义编译器），提出新的关系分离逻辑，用于推理使用抗碰撞加密哈希函数的程序；基于该逻辑构造类型系统的两个语义模型，论证类型抽象如何强制安全性与正确性；进而证明库中若干优化的正确性，并把优化的手写实现与自动生成代码做可靠链接；全部结果在 Coq（Rocq）证明助手中用 Iris 框架机械化。
+- 结果上，首次给出"用类型化模块系统生成认证数据结构"的安全性与正确性的完整形式化证明：安全性——若验证者接受证明并返回值 v，则要么理想执行也返回 v，要么发生了哈希碰撞；正确性——若证明者生成证明并返回 v，则理想版本也返回 v 且验证者接受该证明。证明同时覆盖优化与手写-生成混合链接，弥补了 λ• 的两项局限并补全了 Atkey 缺失的形式化证明。
+- 我的思考：该工作把 ADS 正确性证明推进到"可组合、可优化、可混合链接"的工程可用层次，关系分离逻辑对哈希碰撞推理的抽象是关键理论贡献，机械化保证了可信度。局限是证明针对核心语义模型，未覆盖完整 OCaml 生态与并发场景；优化正确性依赖抗碰撞假设，实际安全强度由底层哈希函数承担。相比 λ• 的直接语法扩展路线，模块系统+参数性路线免去自定义编译器维护，是更可持续的形式化验证路径。
+- **arXiv PDF**: [Logical Relations for Formally Verified Authenticated Data Structures.](https://arxiv.org/pdf/2501.10802)
+
+#### Jazzline: Composable CryptoLine Functional Correctness Proofs for Jasmin Programs.
+- **作者**: José Bacelar Almeida, Manuel Barbosa, Gilles Barthe, Lionel Blatter, Gustavo Xavier Delerue Marinho Alves, João Diogo Duarte, Benjamin Grégoire, Tiago Oliveira, Miguel Quaresma, Pierre-Yves Strub, Ming-Hsien Tsai, Bow-Yaw Wang, Bo-Yin Yang
+- **方向**: 程序分析与形式化验证
+- **解读**: 
+Jasmin是面向高速高保证密码学编程的语言，其程序正确性证明通常在EasyCrypt中以演绎方式进行，通用、模块化、可组合，但难以扩展到低层、架构特定的例程。CryptoLine则提供半自动的形式化验证方法，适合代数密集型密码学代码，但此前未能与高层验证开发集成。
+
+Jazzline展示如何把CryptoLine的证明能力可靠地用于证明复杂Jasmin程序的功能正确性子目标：扩展CryptoLine的注解，提供到验证模型的自动翻译（大部分变换经认证）；同时形式化并实现提取语义的证明。其动机用例是X-Wing混合KEM，给出了首个经验证的X-Wing实现。
+
+摘要未给出具体证明时间等数据；核心成果是打通"CryptoLine半自动证明→高层形式化验证"的管道，并以X-Wing实现作为端到端示范。
+
+该工作解决的是密码学形式化验证中的工程难题：让自动工具与交互式证明器各司其职、无缝衔接。X-Wing首个验证实现具有直接价值（该KEM是NIST后量子迁移中的实际部署候选）。作者阵容横跨多个验证团队，方法可信度高。局限：可扩展性取决于CryptoLine注解覆盖率与翻译认证的自动化程度，摘要未量化；对架构特定例程的覆盖面仍需全文评估。
+
+
+#### Approximate Algorithms for Verifying Differential Privacy with Gaussian Distributions.
+- **作者**: Bishnu Bhusal, Rohit Chadha, A. Prasad Sistla, Mahesh Viswanathan
+- **方向**: 程序分析与形式化验证
+- **解读**:
+
+差分隐私（DP）已成为敏感数据集隐私保护的标准框架，但许多已发布DP算法与证明被发现有缺陷，促使形式化验证工具兴起。此前已有工具能自动验证使用Laplace噪声的程序，却没有工具能分析Gaussian噪声程序——高斯分布CDF无闭式表达式，使既有符号积分方法失效。论文研究验证采样高斯分布的无环DP程序的自动验证问题。
+
+方法上，论文引入DiPGauss语言（无环程序、有限域输入输出、可采样有限均值方差且PDF可计算的连续分布，含高斯与Laplace）。核心算法把输出概率分解为执行路径概率的迭代积分，用Chernoff/Chebyshev尾界将无穷积分区间截断为有限区间，从而以任意精度计算概率；并证明验证(ε,δ)-DP对这类程序"几乎可判定"（除有限个δ取值外可判定）。工具DiPApprox基于FLINT高精度库实现，并用依赖图拓扑排序优化积分嵌套深度。
+
+实验表明，DiPApprox成功验证了SVT-Gauss、SVT-Laplace、混合噪声SVT、Noisy Max/Min、k-Min-Max、m-Range等算法在不同输入长度下的DP性质，并确认了不安全SVT-Gauss版本违反DP。单输入对下SVT-Gauss可验证至N=25（超时上限10分钟），优化使SVT-Gauss的积分嵌套深度不超过3层；高斯取th=4、Laplace取th=8的尾界截断，精度16位可细化至32位。全输入对场景因组合数指数增长出现内存溢出。
+
+我的思考：贡献成色在于首次为高斯噪声DP程序提供自动化验证工具，并给出"几乎可判定"的理论刻画，填补了仅支持Laplace的工具空白；局限是无环程序与有限输入域限制较严，扩展到N=25即超时、全输入对内存爆炸，可扩展性是主要瓶颈。领域影响上，SVT/Noisy Max是LLM隐私等实际应用的基础原语，该工作为验证更复杂机制打下基础；与基于搜索/近似的工具相比，DiPApprox走严格数值计算路线，在可判定性与实用性之间做了有价值的折中。
+
+- **arXiv PDF**: [Approximate Algorithms for Verifying Differential Privacy with Gaussian Distributions.](https://arxiv.org/pdf/2509.08804)
+
+#### Protocols to Code: Formal Verification of a Secure Next-Generation Internet Router.
+- **作者**: João C. Pereira, Tobias Klenze, Sofia Giampietro, Markus Limbeck, Dionysios Spiliopoulos, Felix A. Wolf, Marco Eilers, Christoph Sprenger, David A. Basin, Peter Müller, Adrian Perrig
+- **方向**: 程序分析与形式化验证
+- **解读**: 
+SCION是下一代互联网架构，其路由器运行加密协议在敌对环境（含恶意AS）中保障安全分组转发。路由器协议与实现的安全性是整个架构可信度的基石，但此前没有任何路由器经过端到端形式化验证。
+
+论文给出首个经形式化验证的互联网路由器：在Isabelle/HOL中通过一系列精化（refinement）模型验证协议的"全网"安全属性；同时用自动化程序验证器证明路由器的Go实现满足无崩溃（crash freedom）、无数据竞争（data race freedom），并与最具体精化模型一致。两层验证被可靠地链接（soundly linked），形成从协议规范到代码的完整验证链。
+
+摘要未给出代码规模与验证成本数据；核心成果是协议层加实现层的端到端形式化验证闭环。
+
+这是"protocols to code"范式的典范工程：多数验证工作止步于协议模型，本文把验证推进到真实Go实现，且两层soundly linked，杜绝"模型正确、代码有错"的鸿沟。SCION作为有真实部署的架构，该路由器验证具有直接实用价值。局限：精化链的完整性、Go代码覆盖范围（是否含全部数据面路径）需全文评估；此类验证在协议演进时的维护成本也是长期挑战。
+
+
+#### Formal Security and Functional Verification of Cryptographic Protocol Implementations in Rust.
+
+- **作者**: Karthikeyan Bhargavan, Lasse Letager Hansen, Franziskus Kiefer, Jonas Schneider-Bensch, Bas Spitters
+- **方向**: 程序分析与形式化验证
+- **解读**:
+密码协议实现的安全性与功能性验证长期割裂，实用级 Rust 实现缺乏同时覆盖两者的机器可检查证明。
+
+作者提出一套面向 Rust 密码协议实现的形式化验证方法论：在单一证明框架内，开发者只需在 Rust 源码中书写注解、为每类任务选择后端证明器——从通用证明助理 F* 到面向密码学的 ProVerif、SSProve。核心贡献是将此方法论应用于 Bert13，一个可移植的后量子 TLS 1.3 实现，同时验证其安全性与功能正确性。
+
+据作者所述，这是首个在 Rust 库上同时完成安全性与功能正确性机器检查证明的结果；摘要未给出具体数字。
+
+多证明器组合（通用+协议专用）按任务分工，缓解了单一工具表达力不足的问题；后量子 TLS 1.3 的选择贴合迁移窗口期的现实需求。局限在于注解负担与证明规模的可扩展性。与 HACL*、EverCrypt 等 C/汇编验证体系相比，本文把验证栈整体搬进 Rust 生态，具有清晰的工程价值。
+
+
+#### Secure Parsing and Serializing with Separation Logic Applied to CBOR, CDDL, and COSE.
+
+- **作者**: Tahina Ramananandro, Gabriel Ebner, Guido Martínez, Nikhil Swamy
+- **方向**: 程序分析与形式化验证
+- **解读**:
+对安全关键数据格式的错误处理，尤其发生在低级语言中时，是大量安全漏洞的根源；面向 C 的可证明正确的解析与序列化工具能够从源头消除这类缺陷。
+
+PulseParse 是一个经分离逻辑验证的解析器/序列化器组合子库，面向不可塑性（non-malleable）二进制格式；规格与证明全部以分离逻辑书写，提供更抽象、可组合的接口，完整支持校验、解析与序列化。它支持递归格式类，并针对对抗性输入展示了如何仅用常量栈空间完成解析。
+
+摘要未给出量化数字；核心承诺是解析/序列化器件的端到端机器验证与常量栈空间的抗对抗输入保障。
+
+与同团队先前的 EverParse（F* 生成 C 解析器）一脉相承，但组合子风格显著降低开发者门槛；"不可塑性"防止同一数据存在多种合法编码，直击协议解析不一致漏洞。常量栈空间对受限嵌入式环境尤为重要。局限在于分离逻辑证明的成本与格式覆盖面，但该方向对 TLS、CBOR/COSE 生态有直接加固价值。
+
+
+#### Looping for Good: Cyclic Proofs for Security Protocols.
+
+- **作者**: Felix Linker, Christoph Sprenger, Cas Cremers, David A. Basin
+- **方向**: 程序分析与形式化验证
+- **解读**:
+安全协议常包含循环结构，例如密钥滚转（ratcheting）或对归纳定义数据结构的操作，但自动化安全分析难以处理这些特性；现有最先进方法依赖构造抽象，并大量使用辅助性的、用户自定义引理，验证负担沉重。
+
+本文提出用循环证明（cyclic proofs）分析安全协议：将循环推理形式化为证明规则，使涉及循环的协议性质可以自动或半自动地得到证明，减少对手工引理的依赖。
+
+摘要未给出量化数字；贡献在于为带循环的安全协议提供循环证明框架。
+
+ratcheting 协议（如 Signal）的验证长期依赖大量手工工作，循环证明有望把这类推理系统化；与 Tamarin、Squirrel 等工具相比，本文在证明表达力与自动化之间寻找新平衡点。局限在于循环条件的判定复杂度与工具可用性，但其思路对状态型协议验证社区有明确的牵引作用。
+
+
+#### Generalized Security-Preserving Refinement for Concurrent Systems.
+
+- **作者**: Huan Sun, David Sanán, Jingyi Wang, Yongwang Zhao, Jun Sun, Wenhai Wang
+- **方向**: 程序分析与形式化验证
+- **解读**:
+确保系统符合信息流安全（IFS）要求极具挑战，尤其对于并发系统与多核操作系统内核这类大型代码库；精化（refinement）验证——证明实现保持抽象规范的性质——是应对之道，但现有面向安全属性的精化技术要么局限于顺序程序，要么缺乏表达复杂安全策略的能力。
+
+本文提出泛化的安全保持精化方法，将精化框架推广到并发系统：在并发执行与调度干扰下证明实现保持抽象规范的信息流性质，并支持复杂策略的表达。
+
+摘要未给出量化数字；贡献在于理论框架的推广与表达力扩展。
+
+并发环境下的信息流验证是长期难题——线程间干扰使经典非干涉难以直接套用；该工作与 SecCSL、Iris 等并发分离逻辑脉络相关，但以精化为主线更贴近"规范-实现"的工程实践。若与 seL4 式内核验证结合，有望为多核操作系统提供可扩展的 IFS 保证路径。
+
+
+#### Recover Function Signature from Combined Constraints.
+- **作者**: Haohui Huang, Yue Liu, Yuxi Cheng, Haiyang Wei, Jiamu Liu, Yu Wang, Linzhang Wang
+- **方向**: 程序分析与形式化验证
+- **解读**:
+恢复函数签名（参数个数、类型与调用约定）是二进制程序分析的基石，但现有方法存在明显短板：基于反汇编约束的方法跨架构兼容性差、可扩展性有限；学习式方法则资源开销大且常不准确。
+
+论文提出从"组合约束"（combined constraints）中恢复函数签名——将多种来源的约束统一到同一框架中联合求解，以兼顾跨架构的通用性与分析的可扩展性。摘要在此处截断，具体约束类型与求解机制无法完整确认。
+
+摘要截断，未给出量化实验数据；其目标是在准确性、跨架构支持与分析效率上同时超越反汇编约束法与学习式方法。
+
+函数签名恢复长期是逆向工程与自动漏洞挖掘的"卡脖子"环节，把异构约束（反汇编语义、调用点上下文、运行时行为）组合求解的思路切中要害——单一信号源的不确定性可用多源交叉验证弥补。局限是摘要信息不全，组合约束的求解复杂度与在混淆代码上的表现需全文验证；若能与学习式方法结合，可能进一步取长补短。
+
+
+#### A System Framework to Symbolically Explore Intel TDX Module Execution.
+- **作者**: Pansilu Pitigalaarachchi, Xuhua Ding
+- **方向**: 程序分析与形式化验证
+- **解读**:
+Intel TDX Module 是 TDX（可信域扩展）机密计算技术的软件可信计算基（TCB），负责管理可信域的创建、内存保护与密钥等核心功能，其安全性直接决定 TDX 的整体可信度。本文提出 TDXplorer——首个针对 TDX Module 的动态符号执行分析系统，且无需真实硬件即可运行。
+
+TDXplorer 使分析者不仅能控制和插桩 TDX Module 的执行，还能进行执行路径探索与安全功能推理；这两类能力被无缝集成，直接作用于二进制代码与运行时状态之上，而这些状态由相关技术（符号执行与具体执行混合）塑造。系统在 Linux 上实现，并对照真实平台上的执行进行性能与正确性测量。
+
+案例研究包括对安全 EPT（扩展页表）创建过程与 KeyHole 区域管理建模，展示了该工具支持多种分析任务的通用能力。
+
+我的思考：无硬件即可对固件级 TCB 做符号执行，是方法论上的重要贡献——TDX Module 以二进制形式分发且不公开源码，动态符号执行是理解其行为与验证安全性质的现实途径；"控制+插桩+路径探索+安全推理"的一体化设计比零散逆向更系统。与直接手工逆向或静态分析相比，符号执行能自动发现深路径上的行为差异。局限：符号执行固有的路径爆炸与约束求解开销会限制覆盖率，且与真实硬件的行为一致性依赖测量验证；后续若能结合形式化验证工具链，价值更大。
+
+
+#### Poster: Code HarvETHter: Corpus-Driven Decompilation of Ethereum Smart Contracts.
+- **作者**: Jens-Rene Giesen; Christian Scholz; Lucas Davi
+- **方向**: 程序分析与形式化验证
+- **解读**:
+以太坊等 EVM 平台上的智能合约漏洞频发，反编译是安全审计理解未知合约的重要手段，但传统反编译器依赖人工编写的模式规则，对多样化、混淆化的合约字节码覆盖有限。论文提出 HarvETHter，一个面向 EVM 平台（以太坊、币安智能链、Polygon）的智能合约反编译器，并提出了"语料完备性假设"（corpus completeness hypothesis）：即从区块链上可获取的合约源码语料足以覆盖绝大多数实际部署的合约结构。
+
+方法上，HarvETHter 借助其掌握的以太坊区块链源码知识库，将反编译问题转化为基于语料的匹配与重构：面对未知字节码时，利用大规模已标注源码语料推断其对应的 Solidity 结构，从而实现比纯模式匹配更准确、更完整地还原源码。
+
+作为海报论文，摘要未给出量化结果（如还原准确率、语料规模）。
+
+我的思考："语料驱动"是反编译研究中有意思的转向——把"写规则"变成"用数据"，与深度学习反编译一脉相承但更强调可解释的源码匹配。其"语料完备性假设"是否成立是关键：长尾、混淆或由非 Solidity 语言（如 Vyper、Yul）编译的合约可能超出语料覆盖。与既有的 Ethersplay、Panoramix 等方案相比，HarvETHter 的差异化在于把"区块链本身"当作训练语料来源，数据规模优势明显，但泛化性与性能仍需后续评估验证。
+
+
+#### AI-Augmented Static Analysis: Bridging Heuristics and Completeness for Practical Reverse Engineering.
+- **作者**: Monika Santra
+- **方向**: 程序分析与形式化验证
+- **解读**:
+
+逆向工程面临代码与数据交错、缺少符号名/类型/栈帧、激进编译器优化与各种混淆等难题；传统静态分析工具依赖启发式缓解，而纯 AI 方案常缺乏安全关键二进制分析所需的完整性与可靠性，两者都难以独立满足安全应用的需求。
+
+作者提出建立 AI 与静态分析的协同：用 AI 替代脆弱的启发式以提升泛化能力，同时用静态分析以 best-effort 方式兜底完整性，满足安全应用的严格要求；论文聚焦三个被研究界与工具忽视的任务——指令边界识别、函数控制流图（CFG）构建，尤其是间接调用目标识别。
+
+目标是构建端到端反汇编框架；论文处于计划阶段，无最终结果数据。
+
+我的思考："AI 提供泛化、形式化方法兜底完整性"的混合路线是二进制分析的大方向，选题精准地命中指令边界与间接调用这两个长期痛点；需要关注可证明性的边界以及在大型真实二进制上的规模化评估。
+
+#### The 20th Workshop on Programming Languages and Analysis for Security (PLAS 2025).
+
+- **作者**: Abhishek Bichhawat; Jana Hofmann
+- **方向**: 程序分析与形式化验证
+- **解读**:
+编程语言与程序分析技术如何促进从编译器、运行时到机器学习模型、智能合约等全谱系软件系统的安全性，是 PLAS 工作坊二十年来持续追问的核心问题——信息流控制、类型系统、静态分析等语言层技术为安全提供了比运行时补丁更根本的保障。
+
+PLAS 2025 为第 20 届会议（首届于 2007 年在圣迭戈举办），鼓励新颖、思辨性的想法，对新方法在实践场景中的评估，以及对新兴威胁与问题的讨论；同时欢迎激进、前瞻的立场论文，以激发语言与安全交叉领域有影响力的未来研究。
+
+结果（摘要中的量化信息）：本届为第 20 届，设有 2 场主旨演讲（Limin Jia、Jan Reineke）与 5 篇论文报告。
+
+我的思考：20 年历史使 PLAS 成为语言安全领域的活化石级阵地——其议题从早期的信息流与类型系统，延伸到机器学习模型与智能合约等新对象，折射出"程序分析的安全应用"随软件形态演进而不断扩展。机器学习模型的安全性质（如鲁棒性验证、隐私信息流）正是当下最有活力的交叉点；本体的生命力在于始终保持对新软件形态的敏锐。
+
+### 其他（6 篇）
+
+#### The Challenges and Opportunities with Cybersecurity Regulations: A Case Study of the US Electric Power Sector.
+
+- **作者**: Sena Sahin, Burak Sahin, Robin Berthier, Kate Davis, Saman A. Zonouz, Frank Li
+- **方向**: 其他
+- **解读**: 
+各行业相继出台网络安全法规以推动组织安全能力提升，但组织如何与这些法规互动、面临哪些实际挑战，此前研究甚少。理解这些因素对评估法规实效并加以改进至关重要，本文以美国电力行业为案例进行考察。
+方法上，作者对美国电力部门展开案例研究，收集组织在应对网络安全法规过程中的经验，识别其面临的挑战与机遇，分析法规对组织安全实践的实际影响。
+结果方面，论文刻画了电力行业组织与网络安全法规互动的图景，揭示法规带来的合规压力、资源约束等挑战，以及提升安全水平的机遇（摘要未提供具体量化数据）。
+我的思考：法规类实证研究对安全政策制定有直接价值——电力作为关键基础设施，其监管经验可外推至其他受规管行业。局限在于摘要信息有限，案例范围与方法细节需看正文，受访样本也可能偏向合规负担较重的机构。相比纯技术研究，此类工作为"法规如何真正改善安全"提供了罕见的组织视角证据。
+
+
+#### Probabilistic Skipping-Based Data Structures with Robust Efficiency Guarantees.
+- **作者**: Marc Fischlin, Moritz Huppert, Sam A. Markelon
+- **方向**: 其他
+- **解读**: 
+哈希表、跳表与treap等概率数据结构通过随机化层级实现"跳跃"，平均意义下获得亚线性查询复杂度，是性能敏感系统中的关键组件。但传统分析假设输入与结构内部随机状态相互独立——在恶意环境中这一假设并不可靠，攻击者可利用适应性输入显著恶化复杂度，形成算法复杂性攻击。
+
+论文对三类结构提出适应性攻击，其中哈希表在攻击下相对输入无关场景出现指数级退化；跳表与treap的分析则揭示了"基于跳跃的概率结构"共有的脆弱性。随后论文提出简单修改并给出可证明安全：形式化为"适应性敌手性质守恒"（AAPC）框架，刻画敌手下期望保证的偏离，并据此完成严格鲁棒性证明。
+
+实验与理论分析高度吻合，验证了攻击的有效性与防御修改的证明结论。
+
+该工作把密码学中"恶意敌手"的分析范式带入数据结构设计，AAPC概念具有一般性，可推广到其他随机化算法。贡献成色在于攻击（尤其哈希表指数退化）与修复并重、理论-实验闭环。局限是防御修改可能带来常数开销，且未涉及时序侧信道等现实部署细节。与经典算法复杂性攻击文献相比，其"性质守恒"框架更系统，值得算法安全领域借鉴。
+
+
+#### Ethics in Computer Security Research: A Data-Driven Assessment of the Past, the Present, and the Possible Future.
+
+- **作者**: Harshini Sri Ramulu, Helen Schmitt, Bogdan Rerich, Rachel Gonzalez Rodriguez, Tadayoshi Kohno, Yasemin Acar
+- **方向**: 其他
+- **解读**:
+
+安全研究中伦理问题讨论频繁，但研究者缺乏关于如何做出、记录与评估伦理决策的清晰指导，尤其在道德上"何为正确或可接受"并不明确的情况下。伦理决策多依赖个人判断，缺少系统化的方法支撑。
+
+作者综述了 2024 年顶级 4 个会议的全部 1154 篇论文，考察其伦理讨论与报告状况，发现伦理报告水平参差不齐，且高度聚焦于机构审查委员会（IRB）批准、受试者保护、负责任披露与危害/收益平衡等特定环节；此外对 24 位隐私/安全研究者（其中包含审稿人、委员会成员与程序主席）进行半结构化访谈，考察其作为作者与同行评审阶段的决策过程。
+
+基于 1154 篇论文的系统综述与 24 位研究者的访谈，发现伦理报告存在明显不一致，且集中于 IRB 等流程性合规而缺乏深层的伦理推理。
+
+该研究把"伦理实践"本身变成可度量的对象，用数据揭示"重流程合规、轻伦理推理"的现状，对顶会审稿标准与作者指南有直接改进价值。局限在于样本限于一年四会、访谈规模有限，且"伦理报告程度"的编码存在主观性。作为安全界自我审视的研究，其价值在于推动更结构化的伦理决策支持机制。
+
+
+#### On Defining Reproducible Outcomes for the Computer Security Community.
+- **作者**: Daniel Olszewski
+- **方向**: 其他
+- **解读**:
+
+可复现性对科学进步至关重要，它增强对看似矛盾结果的信心并拓展已知发现的边界；安全社区天然受益于创建支持计算可复现性的工件——让他人用代码与数据以相对直接的方式独立重现结果，从而加速验证与迭代。虽然社区近期提升了关注度，但现行方法是否真的有效仍是开放问题，许多已发表结果难以被第三方复现。
+
+作者（博士论文）将测量现行方法对可复现性的影响、构建提升可复现性的框架与工具、并分析社区已经采取的做法，目标是帮助安全研究者简化可复现研究。
+
+这是研究计划阶段，无实验数据。
+
+我的思考：元科学研究直击安全社区"结果难以复现"的顽疾，有直接价值；难点在于度量本身——"什么算复现成功"需要先行定义，这正是论文题目点出的核心问题，其度量框架的设计将决定该工作的影响力，度量工具的社区采用度将是实际检验标准。
+
+#### ACM CCS Young Scholars Development Program.
+
+- **作者**: F. Betül Durak; Fengjun Li; Sophie Stephenson
+- **方向**: 其他
+- **解读**:
+计算机安全社区中的早期职业研究者（青年学者）长期面临资源稀缺、人脉匮乏与职业发展路径不明等困境，本报告介绍的新倡议旨在系统性地支持这一群体。
+
+ACM CCS 青年学者发展计划（YSDP）由专职主席创建并组织，通过结构化活动——讲座、专题讨论、分组技术交流等——促进学者间的协作、沟通与职业成长，强调技能培养与建立人脉，重点是将青年学者融入更广泛的学术生态体系。
+
+报告详述了该计划的规划、遴选与执行全过程，并强调其在塑造更强研究环境中的作用（基于摘要陈述，无量化评估数据）。
+
+我的思考：社区建设类工作虽不产出具体攻防成果，但对学科长期健康发展至关重要——青年学者是安全研究的未来供给。以正式文献形式记录计划运作细节，体现了 CCS 对学术社区建设的制度性投入。其局限在于效果难以量化衡量，未来若跟踪参与者的职业轨迹、发表产出等指标，将更有说服力。
+
+#### DeFi '25: 5th ACM Workshop on Decentralized Finance and Security.
+
+- **作者**: Hao Chung; Yajin Zhou; Liyi Zhou
+- **方向**: 其他
+- **解读**:
+去中心化金融（DeFi）已从小众市场演变为复杂的替代金融生态，涵盖去中心化交易所、借贷平台、稳定币、衍生品、收益优化、预测市场乃至代币混币器等隐私增强技术。DeFi 协议锁定的总价值（TVL）估计约 770 亿美元，规模之巨既凸显其重要性，也凸显了健全安全措施的极端必要性。
+
+本届工作坊召集密码学、博弈论、经济学与网络安全等领域的顶尖专家，旨在通过跨学科对话严格审视 DeFi 现状并规划前进路径：促进理论进展与工程实现的结合，产出优先级研究议程与战略路线图。
+
+结果（摘要中的量化信息）：TVL 约 770 亿美元；程序包括 Vassilis Zikas 教授主旨演讲、两个最佳论文奖（理论与应用轨）获奖者的受邀报告，以及 4 篇原创论文报告。
+
+我的思考：770 亿美元的 TVL 让 DeFi 的经济攻击面变得具体可感——智能合约漏洞、闪电贷攻击、预言机操纵的损失动辄数亿美元。跨学科（密码学 + 博弈论 + 经济学 + 安全）正是 DeFi 安全的正确打开方式：很多攻击不是纯代码漏洞，而是经济激励机制的失效。最佳论文分设理论与应用两轨，也体现了该领域"机制设计 + 工程实现"双轮驱动的特征。
